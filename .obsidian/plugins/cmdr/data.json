@@ -1,0 +1,45 @@
+{
+  "confirmDeletion": false,
+  "showAddCommand": true,
+  "debug": false,
+  "editorMenu": [],
+  "fileMenu": [],
+  "leftRibbon": [],
+  "rightRibbon": [],
+  "titleBar": [],
+  "statusBar": [],
+  "pageHeader": [],
+  "macros": [],
+  "explorer": [],
+  "hide": {
+    "statusbar": [
+      "obsidian-git",
+      "obsidian-git",
+      "editor-status"
+    ],
+    "leftRibbon": [
+      "Publish changes...",
+      "Toggle Focus Mode (Shift + Click to show active pane only)",
+      "Omnisearch",
+      "Open Git source control",
+      "Open command palette",
+      "Advanced Tables Toolbar",
+      "Open in Headings Mode",
+      "Open Symbols for the active editor",
+      "Insert template",
+      "Open quick switcher",
+      "New drawing"
+    ]
+  },
+  "spacing": "7",
+  "advancedToolbar": {
+    "rowHeight": 48,
+    "rowCount": 1,
+    "spacing": 0,
+    "buttonWidth": 48,
+    "columnLayout": false,
+    "mappedIcons": [],
+    "tooltips": false,
+    "heightOffset": 0
+  }
+}

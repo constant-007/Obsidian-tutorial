@@ -1,0 +1,18 @@
+/* 针对实时预览模式的代码块 */
+.markdown-source-view.mod-cm6 .cm-content .HyperMD-codeblock {
+  white-space: pre;
+  overflow-x: auto !important;
+  overflow-y: hidden !important;
+}
+
+/* 针对预览模式的代码块 */
+.markdown-preview-view pre {
+  white-space: pre;
+  overflow-x: auto !important;
+  overflow-y: hidden !important;
+}
+
+/* 隐藏单独行的滚动条 */
+.markdown-source-view.mod-cm6 .cm-line {
+  overflow-x: visible !important;
+}

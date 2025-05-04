@@ -1,0 +1,12 @@
+{
+  "pinned": [
+    "editor:attach-file",
+    "editor:toggle-numbered-list",
+    "editor:toggle-bullet-list",
+    "editor:insert-codeblock",
+    "obsidian-tasks-plugin:edit-task",
+    "open-with-default-app:show",
+    "editor:insert-callout",
+    "obsidian-git:push"
+  ]
+}

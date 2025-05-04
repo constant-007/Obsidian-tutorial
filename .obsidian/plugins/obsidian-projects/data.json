@@ -1,0 +1,141 @@
+{
+  "version": 2,
+  "projects": [
+    {
+      "fieldConfig": {
+        "Status": {
+          "options": [
+            "In Progress",
+            "Not Started"
+          ],
+          "richText": true
+        }
+      },
+      "defaultName": "",
+      "templates": [],
+      "excludedNotes": [],
+      "isDefault": false,
+      "dataSource": {
+        "kind": "folder",
+        "config": {
+          "path": "CSV笔记",
+          "recursive": false
+        }
+      },
+      "newNotesFolder": "",
+      "views": [
+        {
+          "config": {
+            "fieldConfig": {
+              "path": {
+                "hide": true
+              },
+              "Created_time": {
+                "hide": true
+              },
+              "cssclasses": {
+                "hide": true
+              },
+              "Last_edited_time": {
+                "hide": true
+              },
+              "备注_1": {
+                "hide": true
+              }
+            },
+            "orderFields": [
+              "name",
+              "URL",
+              "Clicks",
+              "CTR",
+              "Impressions",
+              "Position",
+              "Status",
+              "下载数",
+              "下载转化率",
+              "主关键词",
+              "优化优先级",
+              "优化前指标",
+              "优化动作",
+              "优化后指标",
+              "优化指标",
+              "优化目标",
+              "会话数",
+              "其他重要变体",
+              "备注",
+              "备注_1",
+              "总搜索量",
+              "时间安排",
+              "每次会话的平均互动时长_秒_",
+              "类别",
+              "跳出率"
+            ]
+          },
+          "filter": {
+            "conjunction": "and",
+            "conditions": []
+          },
+          "colors": {
+            "conditions": []
+          },
+          "sort": {
+            "criteria": []
+          },
+          "id": "5d017cc4-2e96-4e58-817c-440f0634b7c3",
+          "name": "Table",
+          "type": "table"
+        }
+      ],
+      "id": "d84bcaf1-a0ed-4294-9160-6124109152d3",
+      "name": "优化"
+    }
+  ],
+  "archives": [
+    {
+      "fieldConfig": {},
+      "defaultName": "",
+      "templates": [],
+      "excludedNotes": [],
+      "isDefault": false,
+      "dataSource": {
+        "kind": "folder",
+        "config": {
+          "path": "独立站运营/外链发布",
+          "recursive": false
+        }
+      },
+      "newNotesFolder": "",
+      "views": [
+        {
+          "config": {},
+          "filter": {
+            "conjunction": "and",
+            "conditions": []
+          },
+          "colors": {
+            "conditions": []
+          },
+          "sort": {
+            "criteria": []
+          },
+          "id": "0e28f3f3-57f1-4747-a7ec-484773cc2415",
+          "name": "Table",
+          "type": "table"
+        }
+      ],
+      "id": "1a3d0357-e7ba-4f63-843d-1f545b6db74c",
+      "name": "外链"
+    }
+  ],
+  "preferences": {
+    "projectSizeLimit": 1000,
+    "frontmatter": {
+      "quoteStrings": "PLAIN"
+    },
+    "locale": {
+      "firstDayOfWeek": "default"
+    },
+    "commands": [],
+    "linkBehavior": "open-editor"
+  }
+}

@@ -1,0 +1,342 @@
+{
+  "workspaces": {
+    "我的工作区": {
+      "main": {
+        "id": "a761ca1dcd0261e1",
+        "type": "split",
+        "children": [
+          {
+            "id": "2523d85f1f4dbca5",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "c4930ac2ba6b1af2",
+                "type": "leaf",
+                "pane-relief:history-v1": {
+                  "pos": 0,
+                  "stack": [
+                    {
+                      "state": "{}",
+                      "eState": "{}"
+                    }
+                  ]
+                },
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "文章/一文讲明白无限谷歌账号注册.md",
+                    "mode": "preview",
+                    "source": false,
+                    "backlinks": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "一文讲明白无限谷歌账号注册"
+                }
+              },
+              {
+                "id": "6091103c219c6f9a",
+                "type": "leaf",
+                "pane-relief:history-v1": {
+                  "pos": 0,
+                  "stack": [
+                    {
+                      "state": "{}",
+                      "eState": "{}"
+                    }
+                  ]
+                },
+                "state": {
+                  "type": "webviewer",
+                  "state": {
+                    "url": "https://www.drmare.com/spotify-music/get-spotify-premium-free.html",
+                    "title": "How to Get Spotify Premium Free Lifetime via 5 Ways",
+                    "mode": "webview"
+                  },
+                  "icon": "globe-2",
+                  "title": "How to Get Spotify Premium Free Lifetime via 5 Ways"
+                }
+              },
+              {
+                "id": "3edfbf895dc4b40f",
+                "type": "leaf",
+                "pane-relief:history-v1": {
+                  "pos": 0,
+                  "stack": [
+                    {
+                      "state": "{}",
+                      "eState": "{}"
+                    },
+                    {
+                      "title": "Pasted image 20250426110647",
+                      "icon": "lucide-image",
+                      "state": "{\"type\":\"image\",\"state\":{\"file\":\"Attachment/Pasted image 20250426110647.png\"},\"icon\":\"lucide-image\",\"title\":\"Pasted image 20250426110647\"}",
+                      "eState": "{}"
+                    },
+                    {
+                      "title": "Untitled",
+                      "icon": "lucide-layout-dashboard",
+                      "state": "{\"type\":\"canvas\",\"state\":{\"file\":\"Canvas/Untitled.canvas\",\"viewState\":{\"x\":201,\"y\":-159.5,\"zoom\":0}},\"icon\":\"lucide-layout-dashboard\",\"title\":\"Untitled\"}",
+                      "eState": "{}"
+                    }
+                  ]
+                },
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Untitled.md",
+                    "mode": "source",
+                    "source": false,
+                    "backlinks": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Untitled"
+                }
+              }
+            ],
+            "currentTab": 2
+          }
+        ],
+        "direction": "vertical"
+      },
+      "left": {
+        "id": "a2355d84e468a911",
+        "type": "split",
+        "children": [
+          {
+            "id": "768c88a8aae39c44",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "48453f9efc0ca02f",
+                "type": "leaf",
+                "pane-relief:history-v1": {
+                  "pos": 0,
+                  "stack": [
+                    {
+                      "state": "{}",
+                      "eState": "{}"
+                    }
+                  ]
+                },
+                "state": {
+                  "type": "search",
+                  "state": {
+                    "query": "",
+                    "matchingCase": false,
+                    "explainSearch": false,
+                    "collapseAll": false,
+                    "extraContext": false,
+                    "sortOrder": "alphabetical"
+                  },
+                  "icon": "lucide-search",
+                  "title": "Search"
+                }
+              },
+              {
+                "id": "fff5927f5421ad84",
+                "type": "leaf",
+                "pane-relief:history-v1": {
+                  "pos": 0,
+                  "stack": [
+                    {
+                      "state": "{}",
+                      "eState": "{}"
+                    }
+                  ]
+                },
+                "state": {
+                  "type": "bookmarks",
+                  "state": {},
+                  "icon": "lucide-bookmark",
+                  "title": "Bookmarks"
+                }
+              },
+              {
+                "id": "d6a1fc52b6b397fe",
+                "type": "leaf",
+                "pane-relief:history-v1": {
+                  "pos": 0,
+                  "stack": [
+                    {
+                      "state": "{}",
+                      "eState": "{}"
+                    }
+                  ]
+                },
+                "state": {
+                  "type": "webviewer-history",
+                  "state": {},
+                  "icon": "lucide-clock",
+                  "title": "Web history"
+                }
+              },
+              {
+                "id": "c4957c069f820ef3",
+                "type": "leaf",
+                "pane-relief:history-v1": {
+                  "pos": 0,
+                  "stack": [
+                    {
+                      "state": "{}",
+                      "eState": "{}"
+                    }
+                  ]
+                },
+                "state": {
+                  "type": "file-explorer",
+                  "state": {
+                    "sortOrder": "alphabetical",
+                    "autoReveal": false
+                  },
+                  "icon": "lucide-folder-closed",
+                  "title": "Files"
+                }
+              }
+            ],
+            "currentTab": 3
+          }
+        ],
+        "direction": "horizontal",
+        "width": 200,
+        "collapsed": true
+      },
+      "right": {
+        "id": "91b7e194ff3ffefc",
+        "type": "split",
+        "children": [
+          {
+            "id": "41fb2c5636600ad8",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "23c9bbbb0b5b78e5",
+                "type": "leaf",
+                "pane-relief:history-v1": {
+                  "pos": 0,
+                  "stack": [
+                    {
+                      "state": "{}",
+                      "eState": "{}"
+                    }
+                  ]
+                },
+                "state": {
+                  "type": "outline",
+                  "state": {
+                    "file": "文章/一文讲明白无限谷歌账号注册.md",
+                    "followCursor": true,
+                    "showSearch": true,
+                    "searchQuery": ""
+                  },
+                  "icon": "lucide-list",
+                  "title": "Outline of 一文讲明白无限谷歌账号注册"
+                }
+              },
+              {
+                "id": "d77dc35c539ae02a",
+                "type": "leaf",
+                "pane-relief:history-v1": {
+                  "pos": 0,
+                  "stack": [
+                    {
+                      "state": "{}",
+                      "eState": "{}"
+                    }
+                  ]
+                },
+                "state": {
+                  "type": "reminder-list",
+                  "state": {},
+                  "icon": "clock",
+                  "title": "Reminders"
+                }
+              },
+              {
+                "id": "f8ffea6a5e04fc9a",
+                "type": "leaf",
+                "pane-relief:history-v1": {
+                  "pos": 0,
+                  "stack": [
+                    {
+                      "state": "{}",
+                      "eState": "{}"
+                    }
+                  ]
+                },
+                "state": {
+                  "type": "todo",
+                  "state": {},
+                  "icon": "checkmark",
+                  "title": "Todo List"
+                }
+              },
+              {
+                "id": "228b501e62b17709",
+                "type": "leaf",
+                "pane-relief:history-v1": {
+                  "pos": 0,
+                  "stack": [
+                    {
+                      "state": "{}",
+                      "eState": "{}"
+                    }
+                  ]
+                },
+                "state": {
+                  "type": "calendar",
+                  "state": {},
+                  "icon": "calendar-with-checkmark",
+                  "title": "Calendar"
+                }
+              },
+              {
+                "id": "fa39bd91bbd9ff49",
+                "type": "leaf",
+                "pane-relief:history-v1": {
+                  "pos": 0,
+                  "stack": [
+                    {
+                      "state": "{}",
+                      "eState": "{}"
+                    }
+                  ]
+                },
+                "state": {
+                  "type": "git-view",
+                  "state": {},
+                  "icon": "git-pull-request",
+                  "title": "Source Control"
+                }
+              }
+            ],
+            "currentTab": 4
+          }
+        ],
+        "direction": "horizontal",
+        "width": 258.5,
+        "collapsed": true
+      },
+      "left-ribbon": {
+        "hiddenItems": {
+          "switcher:Open quick switcher": false,
+          "canvas:Create new canvas": false,
+          "daily-notes:Open today's daily note": false,
+          "templates:Insert template": false,
+          "command-palette:Open command palette": false,
+          "obsidian-projects:Open projects": false,
+          "obsidian-importer:Open Importer": false,
+          "obsidian-git:Open Git source control": false,
+          "templater-obsidian:Templater": false,
+          "markdown-importer:Open format converter": false,
+          "publish:Publish changes...": false,
+          "workspaces:Manage workspace layouts": false,
+          "omnisearch:Omnisearch": false,
+          "obsidian-excalidraw-plugin:New drawing": false
+        }
+      },
+      "active": "3edfbf895dc4b40f",
+      "mtime": "2025-04-26T21:15:34+08:00"
+    }
+  },
+  "active": "我的工作区"
+}

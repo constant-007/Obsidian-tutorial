@@ -1,0 +1,14 @@
+{
+  "cssTheme": "Minimal",
+  "theme": "obsidian",
+  "enabledCssSnippets": [
+    "image_resize",
+    "code_scrollbar"
+  ],
+  "accentColor": "",
+  "showViewHeader": true,
+  "showRibbon": true,
+  "nativeMenus": false,
+  "baseFontSize": 19,
+  "baseFontSizeAction": true
+}

@@ -1,0 +1,53 @@
+{
+  "frames": [
+    {
+      "url": "https://twitter.com",
+      "displayName": "Twitter",
+      "icon": "twitter",
+      "hideOnMobile": false,
+      "addRibbonIcon": false,
+      "openInCenter": true,
+      "zoomLevel": 1,
+      "forceIframe": false,
+      "customCss": "",
+      "customJs": ""
+    },
+    {
+      "url": "https://www.youtube.com/",
+      "displayName": "YouTube",
+      "icon": "youtube",
+      "hideOnMobile": false,
+      "addRibbonIcon": false,
+      "openInCenter": false,
+      "zoomLevel": 1,
+      "forceIframe": false,
+      "customCss": "",
+      "customJs": ""
+    },
+    {
+      "url": "https://mms.imykit.com/login",
+      "displayName": "MMS",
+      "icon": "mms",
+      "hideOnMobile": true,
+      "addRibbonIcon": false,
+      "openInCenter": true,
+      "zoomLevel": 1,
+      "forceIframe": false,
+      "customCss": "",
+      "customJs": ""
+    },
+    {
+      "url": "https://www.google.com/",
+      "displayName": "Google",
+      "icon": "google",
+      "hideOnMobile": true,
+      "addRibbonIcon": false,
+      "openInCenter": true,
+      "zoomLevel": 1,
+      "forceIframe": false,
+      "customCss": "",
+      "customJs": ""
+    }
+  ],
+  "padding": 5
+}

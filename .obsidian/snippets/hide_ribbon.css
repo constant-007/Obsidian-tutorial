@@ -1,0 +1,4 @@
+/* 隐藏最左侧功能区 */
+.workspace-ribbon {
+    display: none !important;
+  }

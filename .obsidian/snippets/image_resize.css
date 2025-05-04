@@ -1,0 +1,10 @@
+/* 同时为阅读视图和实时预览设置图片最大宽度 */
+.markdown-preview-view img,
+.markdown-source-view .cm-embed-block img { /* 可能需要根据实际情况微调实时预览的选择器 */
+    max-width: 600px !important;  /* 尝试添加 !important 强制覆盖 */
+    width: 100%; /* 让图片尝试利用可用宽度，直到达到 max-width */
+    height: auto !important; /* 保持宽高比 */
+    display: block; /* 确保图片是块级元素，便于控制 */
+    margin-left: auto; /* 尝试居中图片 */
+    margin-right: auto; /* 尝试居中图片 */
+}
