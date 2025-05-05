@@ -18,4 +18,4 @@
 
 由此我想到做一个GitHub仓库，以Obsidian Vault（Obsidian笔记库）的形式呈现，专门用于介绍Obsidian基础设置，最热门第三方插件的用法（包含每个插件后台设置选项介绍）。对于Dataview，Kanban，Projects这种复杂插件，配上案例以帮助读者真正体验、理解插件。这样新入坑Obsidian的小伙伴就不用自己一个个问AI，让AI想案例啥的，直接从Obsidian Vault中统一查看可以节省大家很多时间
 
-如前所述，这个仓库以Obsidian Vault的形式呈现，这个Vault和我平时使用的Obsidian Vault设置上一模一样，大多数Obsidian实用插件都已安装，界面也很简洁。好处是大家不用在自己安装，我写教程时也趁手一点
+如前所述，仓库将以Obsidian Vault的形式呈现，这个Vault和我平时使用的Obsidian Vault设置上一模一样，大多数Obsidian实用插件都已安装，界面也很简洁。好处是大家不用在自己安装，我写教程时也趁手一点
