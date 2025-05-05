@@ -4,7 +4,7 @@
 1. Always focus new tabs: 打开链接时，自动在新标签页打开并切换到新标签页视图
 2. Default view for new tabs: 新标签页默认视图，有两个选项，“Editing view"（编辑模式）和"Reading view"（阅读模式）。只有在编辑模式下才能编辑笔记内容，阅读模式下只能查看
 笔记右上角的图标可以切换编辑视图与阅读视图，快捷键ctrl + e 也可以
-
+![](Pasted%20image%2020250505230537.png)
 3. Default editing mode: 默认编辑模式。
 这里有必要展开来说一下。编辑模式默认有两个选项，源码模式（Source mode）与实时预览（Live Preview）。源码模式指使用纯Markdown语法，没有任何渲染，只呈现文字。实时预览模式则是边编辑边渲染，大多数人都是用这个模式
 
