@@ -23,7 +23,7 @@
     {
       "height": 659,
       "id": "3335a636846b9a04",
-      "label": "基础设置选项",
+      "label": "设置选项",
       "styleAttributes": {
       },
       "type": "group",
@@ -37,7 +37,7 @@
       "id": "2426bad6077803f2",
       "styleAttributes": {
       },
-      "text": "Obsidian基础设置",
+      "text": "Obsidian设置",
       "type": "text",
       "width": 260,
       "x": -120,
@@ -97,7 +97,7 @@
       "id": "d195ddd70ef12aa1",
       "styleAttributes": {
       },
-      "text": "Community plugins",
+      "text": "[[Community plugins]]",
       "type": "text",
       "width": 260,
       "x": 740,
