@@ -1,0 +1,109 @@
+{
+  "edges": [
+    {
+      "fromNode": "2426bad6077803f2",
+      "fromSide": "right",
+      "id": "bc7a26d5796b69d4",
+      "styleAttributes": {
+      },
+      "toNode": "adf2df711ad6ec8d",
+      "toSide": "left"
+    }
+  ],
+  "nodes": [
+    {
+      "autoResizeHeight": true,
+      "height": 60,
+      "id": "2426bad6077803f2",
+      "styleAttributes": {
+      },
+      "text": "Obsidian基础设置",
+      "type": "text",
+      "width": 260,
+      "x": -120,
+      "y": -20
+    },
+    {
+      "autoResizeHeight": true,
+      "height": 60,
+      "id": "5c6ddd125dfe288b",
+      "styleAttributes": {
+      },
+      "text": "General",
+      "type": "text",
+      "width": 260,
+      "x": 640,
+      "y": -160
+    },
+    {
+      "autoResizeHeight": true,
+      "file": "Attachment/Pasted image 20250505163831.png",
+      "height": 377,
+      "id": "adf2df711ad6ec8d",
+      "type": "file",
+      "width": 400,
+      "x": 200,
+      "y": -178
+    },
+    {
+      "autoResizeHeight": true,
+      "height": 60,
+      "id": "9d6c6a85be418d87",
+      "styleAttributes": {
+      },
+      "text": "Editor",
+      "type": "text",
+      "width": 260,
+      "x": 640,
+      "y": -80
+    },
+    {
+      "autoResizeHeight": true,
+      "height": 60,
+      "id": "2b628ebffda9affa",
+      "styleAttributes": {
+      },
+      "text": "Files and links",
+      "type": "text",
+      "width": 260,
+      "x": 640,
+      "y": 11
+    },
+    {
+      "autoResizeHeight": true,
+      "height": 60,
+      "id": "3539184e7037d907",
+      "styleAttributes": {
+      },
+      "text": "Appearence",
+      "type": "text",
+      "width": 260,
+      "x": 640,
+      "y": 100
+    },
+    {
+      "autoResizeHeight": true,
+      "height": 60,
+      "id": "e66c7374e70ef4f0",
+      "styleAttributes": {
+      },
+      "text": "Hotkeys",
+      "type": "text",
+      "width": 260,
+      "x": 640,
+      "y": 199
+    },
+    {
+      "autoResizeHeight": true,
+      "height": 60,
+      "id": "d2b89216b9c8a832",
+      "styleAttributes": {
+      },
+      "text": "Core pl",
+      "type": "text",
+      "width": 260,
+      "x": 640,
+      "y": 300
+    }
+  ]
+}
