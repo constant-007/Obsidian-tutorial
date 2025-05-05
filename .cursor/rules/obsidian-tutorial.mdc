@@ -1,0 +1,6 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+我现在需要做一个obsidian的教程，主要是解释obsidian后台设置中的选项，每个插件的作用，你可以查看项目README了解这个项目。你需要从obsidian配置文件，以及插件的配置文件中读取它们的配置项，并且写在项目根目录下“Obsidian设置”文件夹下的对应位置。
