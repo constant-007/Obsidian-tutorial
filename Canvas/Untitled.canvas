@@ -61,7 +61,7 @@
       "id": "3539184e7037d907",
       "styleAttributes": {
       },
-      "text": "Appearence",
+      "text": "[Appearance](Appearance.md)",
       "type": "text",
       "width": 260,
       "x": 740,
@@ -73,7 +73,7 @@
       "id": "e66c7374e70ef4f0",
       "styleAttributes": {
       },
-      "text": "Hotkeys",
+      "text": "[HotKeys](HotKeys.md)",
       "type": "text",
       "width": 260,
       "x": 740,
@@ -85,7 +85,7 @@
       "id": "d2b89216b9c8a832",
       "styleAttributes": {
       },
-      "text": "Core plugins",
+      "text": "[[Core plugins]]",
       "type": "text",
       "width": 260,
       "x": 740,
@@ -121,7 +121,7 @@
       "id": "9d6c6a85be418d87",
       "styleAttributes": {
       },
-      "text": "Editor",
+      "text": "[Editor](Editor.md)",
       "type": "text",
       "width": 260,
       "x": 740,
@@ -133,7 +133,7 @@
       "id": "2b628ebffda9affa",
       "styleAttributes": {
       },
-      "text": "Files and links",
+      "text": "[Files and links](Files%20and%20links.md)",
       "type": "text",
       "width": 260,
       "x": 740,
