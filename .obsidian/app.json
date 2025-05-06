@@ -13,7 +13,7 @@
   "rightToLeft": false,
   "smartIndentList": true,
   "uriCallbacks": true,
-  "strictLineBreaks": false,
+  "strictLineBreaks": true,
   "pdfExportSettings": {
     "pageSize": "A4",
     "landscape": false,
