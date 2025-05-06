@@ -13,12 +13,13 @@
   "rightToLeft": false,
   "smartIndentList": true,
   "uriCallbacks": true,
-  "strictLineBreaks": true,
+  "strictLineBreaks": false,
   "pdfExportSettings": {
     "pageSize": "A4",
     "landscape": false,
     "margin": "0",
     "downscalePercent": 100
   },
-  "livePreview": true
+  "livePreview": true,
+  "propertiesInDocument": "visible"
 }
