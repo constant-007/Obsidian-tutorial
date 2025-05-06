@@ -8,13 +8,13 @@
 ## App
 ![](Pasted%20image%2020250505222108.png)
 
-1. **Current version：** 当前软件版本，旁边有更新按钮（check for updates），点击可手动更新
+1. **Current version（当前版本）：** 当前软件版本，旁边有更新按钮（check for updates），点击可手动更新
 
-2. Automatic updates: 自动更新按钮
+2. **Automatic updates（自动更新）：** 自动更新按钮
 
-3. Language: 语言选择
+3. **Language（语言）：** 语言选择
 
-4. Help: 打开帮助
+4. **Help（帮助）：** 打开帮助
 这和你直接点击左侧边栏下方的问号图标效果一样：
 
 ![](Pasted%20image%2020250505204528.png)
@@ -33,9 +33,9 @@
 
 ## Account
 ![](Pasted%20image%2020250505222124.png)
-1. Your account: 在这里你可以登录自己的obsidian账号，但如果你不想使用obsidian同步服务，或者说不想充钱的话，完全没必要登录。这一项以及下一项都跟不想充钱玩家没关系
+1. **Your account（你的账号）：** 在这里你可以登录自己的obsidian账号，但如果你不想使用obsidian同步服务，或者说不想充钱的话，完全没必要登录。这一项以及下一项都跟不想充钱玩家没关系
 
-2. Commercial licens: 买会员/买了会员之后可以在这里激活
+2. **Commercial license（许可证）：** 买会员/买了会员之后可以在这里激活
 
 ## Advanced
 ![](Pasted%20image%2020250505222150.png)
