@@ -1,3 +1,27 @@
+>[!SUMMARY] 目录
+>    - [[Appearance#顶部|顶部]]
+>        - [[Appearance#1. Base color scheme|1. Base color scheme]]
+>        - [[Appearance#2. Accent color|2. Accent color]]
+>        - [[Appearance#3. Theme|3. Theme]]
+>        - [[Appearance#4. Current community themes|4. Current community themes]]
+>    - [[Appearance#Font|Font]]
+>        - [[Appearance#1. Interface font|1. Interface font]]
+>        - [[Appearance#2. Text font|2. Text font]]
+>        - [[Appearance#3. Monospace font|3. Monospace font]]
+>        - [[Appearance#4. Font size|4. Font size]]
+>        - [[Appearance#5. Quick font size adjustment|5. Quick font size adjustment]]
+>    - [[Appearance#Interface|Interface]]
+>        - [[Appearance#1. Show inline title|1. Show inline title]]
+>        - [[Appearance#2. Show tab title bar|2. Show tab title bar]]
+>        - [[Appearance#3. Show Ribbon ^ribbon|3. Show Ribbon ^ribbon]]
+>        - [[Appearance#4. Ribbon menu configuration|4. Ribbon menu configuration]]
+>    - [[Appearance#Advanced|Advanced]]
+>        - [[Appearance#1. Zoom level|1. Zoom level]]
+>        - [[Appearance#2. Native menus|2. Native menus]]
+>        - [[Appearance#3. Window frame style|3. Window frame style]]
+>        - [[Appearance#4. Custom app icon|4. Custom app icon]]
+>        - [[Appearance#5. Hardware acceleration|5. Hardware acceleration]]
+>    - [[Appearance#CSS snipets|CSS snipets]]
 ## 顶部
 ![[Pasted image 20250507210837.png]]
 
@@ -91,7 +115,8 @@
 
 硬件加速，描述说如果关闭可能会对软件性能有较大影响，那就开启咯
 
-## CSS snipets
+## CSS snipets ^CSS
+![[Pasted image 20250508000859.png]]
 
 重点来了，这个“CSS snippets”（CSS 代码片段）是 Obsidian 中一个非常强大的自定义外观功能。不会写脚本不要紧，毕竟现在有AI
 
@@ -113,4 +138,5 @@ CSS 代码片段是一些简短的、用户自定义的 CSS 代码，它们允�
 
 点击文件夹图标会直接在你的电脑文件管理器中打开 `VAULT_PATH/.obsidian/snippets/` 文件夹，方便你添加新的 `.css` 文件或编辑已有的文件
 
-我写的image_resize.css这个脚本用于在阅读模式下将图片居中，但发现这样会导致第三方插件Image toolkit放大图片的时候出问题，所以暂时禁用；hide_ribbon这个脚本用于隐藏上面说的[[#^ribbon|Ribbon]]。我之前没发现设置里有这个选项就写了这个脚本，所以这个脚本实际可以删除；还有一个code_scrollbar.css，这个用于让三个反引号”```"包裹的代码在超长时
+我写的image_resize.css这个脚本用于在阅读模式下将图片居中，但发现这样会导致第三方插件Image toolkit放大图片的时候出问题，所以暂时禁用；hide_ribbon这个脚本用于隐藏上面说的[[#^ribbon|Ribbon]]。我之前没发现设置里有这个选项就写了这个脚本，因此这个脚本可以删除；还有一个code_scrollbar.css，这个用于让三个反引号"```" 包裹的代码在超长时不换行，继续往后写， 同时在下方呈现一个滑块。如果要在代码块中查看超长文本有时会比较有用
+
