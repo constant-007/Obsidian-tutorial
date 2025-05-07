@@ -1,3 +1,18 @@
+>[!SUMMARY] 目录
+>    - [[Files and links#顶部|顶部]]
+>        - [[Files and links#1. Confirm file deletion|1. Confirm file deletion]]
+>        - [[Files and links#2. Deleted files|2. Deleted files]]
+>        - [[Files and links#3. Automatically update internal links|3. Automatically update internal links]]
+>        - [[Files and links#4. Default location for new notes|4. Default location for new notes]]
+>        - [[Files and links#5. New link format|5. New link format]]
+>        - [[Files and links#6. Use Wikilinks|6. Use Wikilinks]]
+>        - [[Files and links#7. Detect all file extensions|7. Detect all file extensions]]
+>        - [[Files and links#8. Default location for new attachments|8. Default location for new attachments]]
+>        - [[Files and links#9. Excluded files|9. Excluded files]]
+>        - [[Files and links#10. Override config folder|10. Override config folder]]
+>    - [[Files and links#Advanced|Advanced]]
+>        - [[Files and links#1. Allow URI callbacks|1. Allow URI callbacks]]
+>        - [[Files and links#2. Rebuild vault cache |2. Rebuild vault cache ]]
 ## 顶部
 ![](Pasted%20image%2020250506232354.png)
 
@@ -23,7 +38,7 @@
 - In the folder specified below（在下方指定的文件夹中）：新笔记将保存在你指定的特定文件夹中
 - Root folder（根文件夹）：新笔记将保存在笔记库的根目录
 
-## 5. New link format
+### 5. New link format
 
 设置自动生成内部链接时使用的格式。比如在你从文件浏览器拖拽文件到笔记编辑器中或使用 `[[` 自动完成来插入链接时：
 - Shortest path when possible（尽可能使用最短路径）：使用到目标笔记的最短可能路径
@@ -133,21 +148,66 @@ Obsidian 即使在你选择了其中一种格式作为默认设置后，通常�
 
 大多数 Obsidian 用户倾向于启用 Wikilinks，因为它们更简洁，并且 Obsidian 对这种格式有很好的支持（比如自动更新链接、显示反向链接等）。但选择哪种取决于你的个人偏好和工作流程。
 
-### 7. Detect all file extensions：
+### 7. Detect all file extensions
 
 显示任何扩展名的文件，即使Obsidian无法原生打开它们。启用后，你可以在文件浏览器中看到所有文件，点击一般会使用对应的外部程序打开
 
-### 8. Default location for new attachments：
+### 8. Default location for new attachments
 
 设置新上传附件的默认保存位置。
 - Same folder as current file（与当前文件相同文件夹）：附件将与引用它的笔记保存在同一文件夹
 - In the folder specified below（在下方指定的文件夹中）：附件将保存在你指定的特定文件夹中，选择此项，下方会出现“Attachment folder path（附件文件夹路径）”，可以在这里指定文件夹存放附件
 - In subfolder under current folder（当前文件夹的子文件夹中）：附件将保存在当前笔记所在文件夹的一个子文件夹中。选择此项，Obsidian会在你上传附件的时候，自动在当前文件夹中创建一个子文件夹用于保存附件。如果你想指定这个子文件的名称，可以在选择这个选项后，在下方的“Subfolder name（子文件夹名称）"中指定
 
-### 9. Excluded files： 
+### 9. Excluded files
 
 这个主要是说在搜索的时候排除的文件。被排除的文件不管你在哪里搜索，一般都不会在出现在搜索结果中。可以通过右边的“Manage"按钮管理被排除的文件
 
-### 10. Override config folder：
+### 10. Override config folder
 
 覆盖配置文件夹。使用与默认配置文件夹不同的文件夹。该文件夹必须以点开头，图片显示设置为".obsidian"。这个设置允许你指定一个自定义的文件夹来存储Obsidian的配置文件，而不是使用默认的.obsidian文件夹。一般来说不用动这个
+
+## Advanced
+![[Pasted image 20250507205355.png]]
+
+
+### 1. Allow URI callbacks
+
+这个设置与 Obsidian 的 URL Scheme（也称为 Obsidian URI）功能有关。Obsidian URI 允许你通过特殊的链接（以 obsidian:// 开头）从其他应用程序或脚本中控制 Obsidian，比如打开特定的笔记、搜索内容、创建新笔记等。
+
+`x-callback-url` 是一种跨应用通信的规范。当一个应用（比如快捷指令、Alfred 或其他自动化工具）通过 Obsidian URI 向 Obsidian 发送一个命令后，如果启用了“URI 回调”，Obsidian 可以在完成该命令（成功或失败）后，通过一个预先定义好的 URL（即回调 URL，通常包含 `x-success` 或 `x-error` 参数）通知原来的应用。
+ 
+当你启用这个选项（开关打开）时，就允许 Obsidian 在处理完来自其他应用的 URI 命令后，使用 x-success (成功时) 或 x-error (失败时) 参数中指定的 URL 来“回调”或“通知”那个发起命令的应用。
+
+- **`x-success`**：如果 Obsidian 成功执行了 URI 命令，它会打开 `x-success` 参数后面跟着的 URL。
+- **`x-error`**：如果执行过程中发生错误，它会打开 `x-error` 参数后面跟着的 URL，并可能附带错误信息。
+   
+这个功能主要面向那些希望将 Obsidian 与其他工具进行更深度集成和自动化的用户。例如：
+
+- 如果你在 iOS/macOS 上使用“快捷指令”（Shortcuts）应用来创建一个包含多个步骤的工作流，其中一步是让 Obsidian 创建一个笔记。启用回调后，快捷指令可以知道 Obsidian 是否成功创建了笔记，然后决定下一步是继续执行还是提示错误。
+- 类似的，其他自动化工具（如 Tasker、Alfred、Keyboard Maestro 等）或你自己编写的脚本，也可以利用这个回调机制来确保与 Obsidian 的交互按预期进行。
+
+对于普通用户，如果你不使用这类复杂的自动化流程，这个开关保持默认（通常是开启）或关闭，对日常使用影响不大。
+
+### 2. Rebuild vault cache 
+
+重建库缓存。Obsidian 为了提高运行效率（比如快速搜索、准确显示链接和反向链接、列出标签等），会在后台为你的整个笔记库（Vault）维护一个索引或缓存。这个缓存存储了关于你的文件、文件夹、链接、标签等的元数据信息。
+
+点击“Rebuild”按钮后，Obsidian 会：
+
+- 清除现有的缓存
+- 重新扫描你笔记库中的所有文件和文件夹
+- 根据扫描结果，从头开始建立一个新的缓存
+
+在正常情况下，你不需要手动重建缓存。但是，在某些特殊情况下，这个缓存可能会出现不同步或损坏的问题，导致：
+ 
+- 搜索结果不准确或不完整
+- 链接或反向链接显示不正确
+- 标签面板中的标签列表有误
+- Obsidian 的某些功能表现异常
+
+遇到这些问题时，重建缓存是一个常见的故障排除步骤，它能强制 Obsidian 重新索引所有内容，通常可以解决因缓存问题导致的小毛病
+
+如描述中所说，重建过程可能需要几秒钟到几分钟，具体时间取决于你笔记库的大小和复杂程度。在重建过程中，Obsidian 的某些功能可能会暂时无法使用或响应变慢
+
+这通常是一个安全的操作，不会影响你笔记的实际内容。这是一个在遇到问题时才需要使用的工具，不需要定期进行
