@@ -2,7 +2,6 @@
   "cssTheme": "Minimal",
   "theme": "obsidian",
   "enabledCssSnippets": [
-    "image_resize",
     "code_scrollbar"
   ],
   "accentColor": "",
