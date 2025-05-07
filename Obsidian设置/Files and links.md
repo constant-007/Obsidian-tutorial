@@ -25,7 +25,7 @@
 
 ## 5. New link format
 
-设置自动生成内部链接时使用的格式。
+设置自动生成内部链接时使用的格式。比如在你从文件浏览器拖拽文件到笔记编辑器中或使用 `[[` 自动完成来插入链接时：
 - Shortest path when possible（尽可能使用最短路径）：使用到目标笔记的最短可能路径
 - Relative path to file（相对于文件的路径）：使用相对于当前笔记的路径
 - Absolute path in vault（库中的绝对路径）：使用从库根目录开始的完整路径
