@@ -77,7 +77,7 @@
 
 ![[Pasted image 20250508234549.png]]
 
-比如我现在已经将图中“Pinned commands"下的命令置顶，你可以在这里重新配置需要置顶的命令以及它们的顺序
+比如我现在已经将图中“Pinned commands"下的命令置顶，你可以在这里重新配置需要置顶的命令以及它们的顺序 ^pinned-commands
 
 ## 5. Daily notes
 
@@ -87,7 +87,7 @@
 
 ![[Pasted image 20250508235102.png]]
 
-### 1. Date format ^date-format
+### 1. Date format
 
 这个设置决定了当你创建每日笔记时，笔记文件的名称会使用什么样的日期格式。
 
@@ -134,15 +134,15 @@
 > 
 > 总而言之，Moment.js 是一个帮你处理和格式化日期时间的 JavaScript 工具，Obsidian 借用了它的日期格式化规则，让你能够灵活定义每日笔记文件名等场景下的日期展现形式。
 
-### 2. New file location ^new-daily-notes-location
+### 2. New file location
 
 新的每日笔记将放置在此处。这个设置让你指定新创建的每日笔记默认保存在你 Obsidian 库（Vault）中的哪个文件夹下，你可以在后方输入框中选择
 
-### 3. Template location ^daily-note-template
+### 3. Template location
 
 选择用作模板的文件。选择后，每当你创建一个日记，Obsidian 会自动将这个模板文件的所有内容复制到新的每日笔记开头
 
-### 4. Open daily note on startup ^open-daily-note-on-startup
+### 4. Open daily note on startup
 
 如果启用这个选项（打开开关），那么每次你启动 Obsidian 并打开这个库的时候，它会自动为你创建（如果当天还没有的话）并打开当天的每日笔记
 
@@ -156,7 +156,7 @@ Notion也有类似的页面版本历史功能，但如果不是会员，好像�
 
 ![[Pasted image 20250509000606.png]]
 
-### 1. Snapshot interval ^snapshot-interval
+### 1. Snapshot interval
 
 两个快照之间的最小间隔分钟数。这个设置决定了 Obsidian 多久为你的笔记文件创建一个快照（版本备份）。例如，设置为5分钟，意味着 Obsidian 会尝试每隔5分钟检查一次文件是否有改动，如果有改动，则保存一个新的快照。如果文件在这5分钟内没有变化，则不会创建新的快照
 
@@ -170,4 +170,20 @@ Notion也有类似的页面版本历史功能，但如果不是会员，好像�
 
 ### 4. Clear history
 
-擦除所有快照。点击“Clear”按钮会删除你库中所有笔记的所有已保存快照。
+擦除所有快照。点击“Clear”按钮会删除你库中所有笔记的所有已保存快照
+
+## 7. Files
+
+文件浏览器。就是左边边栏这个最核心的东西：
+
+![[Pasted image 20250509002624.png]]
+
+没想到吧，这也是一个插件。当之无愧的核心插件，当然要开启啦！
+
+## 8. Format converter
+
+将来自其他应用的 Markdown 转换为 Obsidian 格式。这个插件主要用于帮助你导入和清理从其他笔记软件（如 Roam Research, Bear, Zettelkasten 系统等）迁移过来的 Markdown 文件。它会尝试修复一些不兼容的 Markdown 语法或将其转换为 Obsidian 更偏好的格式，例如处理特定的链接格式或标签格式
+
+这个稍微和[[Editor#1. Convert pasted HTML to Markdown|convert pasted HTML to markdown]]有些重复，具体区别可参考对这一项的详细解释：
+
+

@@ -88,9 +88,13 @@
 ## Advanced
 ![](Pasted%20image%2020250506220512.png)
 
-1. **Convert pasted HTML to Markdown（把粘贴的HTML转换为Markdown）：** 开启后，当你从网页上复制内容到Obsidian笔记中，Obsidian会自动将HTML内容转换为markdown以便更好地在Obsidian中显示。如果你不想让它自动转换，可以在粘贴内容时，使用Ctrl + Shift +V，而不是Ctrl + V。你也可以关闭这个选项，完全不进行HTML转Markdown操作
+### 1. Convert pasted HTML to Markdown
 
-2. **Vim key bindings（Vim按键绑定）：** 启用时，支持使用Vim命令进行文本编辑。我也不知道Vim是什么，不过看了AI的回答后，感觉挺想学的 #有待学习：
+把粘贴的HTML转换为Markdown。 开启后，当你从网页上复制内容到Obsidian笔记中，Obsidian会自动将HTML内容转换为markdown以便更好地在Obsidian中显示。如果你不想让它自动转换，可以在粘贴内容时，使用Ctrl + Shift +V，而不是Ctrl + V。你也可以关闭这个选项，完全不进行HTML转Markdown操作
+
+### 2. Vim key bindings：
+
+Vim按键绑定。启用时，支持使用Vim命令进行文本编辑。我也不知道Vim是什么，不过看了AI的回答后，感觉挺想学的 #有待学习：
 
 
 > [!faq]+ Vim是什么？
