@@ -1,3 +1,5 @@
 {
-  "folder": "日历"
+  "folder": "日历",
+  "template": "",
+  "autorun": false
 }
