@@ -239,6 +239,14 @@ Notion也有类似的页面版本历史功能，但如果不是会员，好像�
 
 笔记合并/拆分。合并两个笔记或将一个笔记拆分为两个。
 
+这插件一共有三个功能
+
+![[Pasted image 20250510082025.png]]
+
+1.  Extract current selections: 用于将当前选中内容合并到指定笔记的**末尾**，只有选中笔记中的文字时按ctrl + p才会出现这个选项
+2. Extract this heading: 将选中的标题及这部分的内容提取为一个新文件
+3. Merge current file with another file: 将当前笔记与另外一个选中的笔记合并（置于末尾），合并后当前笔记将被删除
+
 ![[Pasted image 20250510075303.png]]
 
 ### 1. Text after extraction
@@ -251,4 +259,4 @@ Notion也有类似的页面版本历史功能，但如果不是会员，好像�
 
 ###  2. Template file location 
 
-模板文件位置。这个选项允许你指定一个模板笔记，当执行“合并笔记”或“提取文本到新笔记”的操作时，新生成的笔记会基于这个模板来创建
+模板文件位置。这个选项允许你指定一个模板笔记，当执行“extract current selection”或“merge current file with another file”的操作时，新生成的笔记会基于这个模板来创建
