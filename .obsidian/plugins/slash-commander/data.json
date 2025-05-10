@@ -112,7 +112,25 @@
       "id": "templater-obsidian:insert-templater",
       "icon": "templater-icon",
       "name": "Templater",
-      "mode": "any"
+      "mode": "any",
+      "chosen": false,
+      "selected": false
+    },
+    {
+      "id": "editor:toggle-bullet-list",
+      "icon": "lucide-list",
+      "name": "bullet",
+      "mode": "any",
+      "chosen": false,
+      "selected": false
+    },
+    {
+      "id": "editor:toggle-numbered-list",
+      "icon": "lucide-list-ordered",
+      "name": "numbered",
+      "mode": "any",
+      "chosen": false,
+      "selected": false
     }
   ]
 }

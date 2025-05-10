@@ -28,5 +28,6 @@
   "slash-commander",
   "advanced-canvas",
   "quickadd",
-  "metaedit"
+  "metaedit",
+  "remember-cursor-position"
 ]
