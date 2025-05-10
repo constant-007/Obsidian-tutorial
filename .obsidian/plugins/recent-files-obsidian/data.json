@@ -1,12 +1,28 @@
 {
   "recentFiles": [
     {
-      "basename": "Core plugins",
-      "path": "Obsidian设置/Core plugins.md"
+      "basename": "Admonition",
+      "path": "Obsidian设置/Community plugins/Admonition.md"
+    },
+    {
+      "basename": "Outliner",
+      "path": "Obsidian设置/Community plugins/Outliner.md"
+    },
+    {
+      "basename": "Untitled",
+      "path": "Obsidian设置/Community plugins/Untitled.md"
+    },
+    {
+      "basename": "Community plugins",
+      "path": "Obsidian设置/Community plugins.md"
     },
     {
       "basename": "Outliner演示",
       "path": "示例/Outliner演示.md"
+    },
+    {
+      "basename": "Core plugins",
+      "path": "Obsidian设置/Core plugins.md"
     },
     {
       "basename": "README",
