@@ -1,7 +1,57 @@
+>[!SUMMARY] 目录
+>    - [[Core plugins#1. Audio recorder |1. Audio recorder ]]
+>    - [[Core plugins#2. Backlinks|2. Backlinks]]
+>    - [[Core plugins#3. Canvas|3. Canvas]]
+>    - [[Core plugins#4. Command palette|4. Command palette]]
+>    - [[Core plugins#5. Daily notes|5. Daily notes]]
+>        - [[Core plugins#1. Date format|1. Date format]]
+>        - [[Core plugins#2. New file location|2. New file location]]
+>        - [[Core plugins#3. Template location|3. Template location]]
+>        - [[Core plugins#4. Open daily note on startup|4. Open daily note on startup]]
+>    - [[Core plugins#6. File recovery|6. File recovery]]
+>        - [[Core plugins#1. Snapshot interval|1. Snapshot interval]]
+>        - [[Core plugins#2. History length|2. History length]]
+>        - [[Core plugins#3. Snapshots|3. Snapshots]]
+>        - [[Core plugins#4. Clear history|4. Clear history]]
+>    - [[Core plugins#7. Files|7. Files]]
+>    - [[Core plugins#8. Format converter|8. Format converter]]
+>    - [[Core plugins#9. Graph view|9. Graph view]]
+>    - [[Core plugins#10. Note composer|10. Note composer]]
+>        - [[Core plugins#1. Text after extraction|1. Text after extraction]]
+>        - [[Core plugins# 2. Template file location | 2. Template file location ]]
+>        - [[Core plugins#3. Confirm file merge|3. Confirm file merge]]
+>    - [[Core plugins#11. Outgoing links|11. Outgoing links]]
+>    - [[Core plugins#12. Outline|12. Outline]]
+>    - [[Core plugins#13. Page view|13. Page view]]
+>    - [[Core plugins#14. Properties view|14. Properties view]]
+>    - [[Core plugins#15. Publish|15. Publish]]
+>    - [[Core plugins#16. Quick switcher|16. Quick switcher]]
+>    - [[Core plugins#17. Random note|17. Random note]]
+>    - [[Core plugins#18. Search|18. Search]]
+>    - [[Core plugins#19. Slash commands|19. Slash commands]]
+>    - [[Core plugins#20. Slides|20. Slides]]
+>    - [[Core plugins#21. Sync|21. Sync]]
+>    - [[Core plugins#22. Tags view|22. Tags view]]
+>    - [[Core plugins#23. Templates|23. Templates]]
+>        - [[Core plugins#1. Template folder location|1. Template folder location]]
+>        - [[Core plugins#2. Date format|2. Date format]]
+>        - [[Core plugins#3. Time format|3. Time format]]
+>    - [[Core plugins#24. Unique note creator|24. Unique note creator]]
+>    - [[Core plugins#25. Web viewer|25. Web viewer]]
+>        - [[Core plugins#1. Open external links|1. Open external links]]
+>        - [[Core plugins#2. Homepage|2. Homepage]]
+>        - [[Core plugins#3. Saved page folder|3. Saved page folder]]
+>        - [[Core plugins#4. Search engine|4. Search engine]]
+>        - [[Core plugins#5. Enable ad blocker|5. Enable ad blocker]]
+>        - [[Core plugins#6. Ad blocking rules|6. Ad blocking rules]]
+>        - [[Core plugins#7. Ad block update frequency|7. Ad block update frequency]]
+>        - [[Core plugins#8. Web viewer data|8. Web viewer data]]
+>    - [[Core plugins#26. Word count|26. Word count]]
+>    - [[Core plugins#27. Workspaces|27. Workspaces]]
+
 核心插件，这些插件是Obsidian官方开发并内置的功能。虽然叫“核心插件”，但它们实现的基本是一些基础功能。如果Obsidian官方不开发这些插件，我想第三方插件商店中也会有相应替代品。而且第三方插件商店实际有好几个专门针对官方核心插件的强化插件，我们下面也会提到
 
-![[Pasted image 20250508215727.png]]
-
+![[Pasted image 20250510134256.png]]
 ## 1. Audio recorder 
 
 录音机，允许你直接在 Obsidian 中录制音频。录制的音频文件会作为附件保存在你的库（Vault）中，并且可以嵌入到笔记里。这功能适合喜欢在移动段用Obsidian的用户。用来录制会议、课堂等内容比较合适
@@ -180,9 +230,6 @@ Notion也有类似的页面版本历史功能，但如果不是会员，好像�
 ![[Pasted image 20250509002624.png]]
 
 没想到吧，这也是一个插件。当之无愧的核心插件，当然要开启啦！
-
-
-![[Pasted image 20250510110545.png]]
 ## 8. Format converter
 
 将来自其他应用的 Markdown 转换为 Obsidian 格式。这个插件主要用于帮助你导入和清理从其他笔记软件（如 Roam Research, Bear, Zettelkasten 系统等）迁移过来的 Markdown 文件。它会尝试修复一些不兼容的 Markdown 语法或将其转换为 Obsidian 更偏好的格式，例如处理特定的链接格式或标签格式
@@ -309,6 +356,8 @@ Notion也有类似的页面版本历史功能，但如果不是会员，好像�
 
 这样你就可以快速了解链接指向的内容，而不需要实际点击并跳转到那个笔记，从而避免打断当前的工作流程。在编辑模式下，通常需要按住 `Ctrl` (Windows/Linux) 或 `Cmd` (macOS) 键再进行悬停才能触发预览，以免在正常编辑时光标移动时频繁触发
 
+##
+![[Pasted image 20250510134331.png]]
 ## 14. Properties view
 
 属性视图。这个插件提供了一个专门的界面（通常在右侧边栏）来集中查看和编辑当前笔记的“属性”（[[Editor#Properties in document|Properties]]）。笔记属性就是笔记的元数据，通常以 YAML frontmatter 的形式写在笔记的最顶部（由 `---` 包裹），或者通过 Obsidian 的属性编辑界面添加。这些属性可以是标签、别名、创建日期、作者，或者任何你自定义的键值对信息（例如 `status: ongoing`，`priority: high`）。属性视图使得管理这些结构化数据更加方便直观
@@ -379,7 +428,6 @@ Notion也有类似的页面版本历史功能，但如果不是会员，好像�
 ### 3. Time format
 
 时间格式。模板文件中的 `{{time}}` 将被替换为此值。你也可以使用 `{{time:HH:mm}}` 来单次覆盖格式。更多语法，参考[格式参考](https://momentjs.com/docs/#/displaying/format/)
-
 
 > [!faq]- 单次覆盖格式是什么意思？
 > “单次覆盖格式”这句话的意思是，即使你在 Obsidian“Templates”（模板）插件的设置中为 `{{date}}`（日期）和 `{{time}}`（时间）设定了一个**全局的默认显示格式**，你依然可以在某一个具体的模板文件中的**某一个特定位置**，为那一次的日期或时间插入指定一个**与默认设置不同的、临时的格式**。
@@ -457,7 +505,45 @@ Notion也有类似的页面版本历史功能，但如果不是会员，好像�
 
 ### 1. Open external links
 
-打开外部链接。
+打开外部链接。当这个选项开启时，如果你在笔记中点击一个指向外部网站的普通链接 (例如 `https://www.google.com`)，该链接会在 Obsidian 应用内的一个新标签页或面板中打开，而不是像通常那样跳转到你电脑上安装的 Chrome, Safari, Edge 等默认浏览器。如果关闭此选项，外部链接将总是在系统默认浏览器中打开
+
+### 2. Homepage
+
+这里设置的是当你新打开一个空白的网页查看器标签页时，默认加载的网址。你可以把它设置成你常用的搜索引擎、个人门户网站或任何你希望快速访问的网页。当前设置为谷歌搜索引擎
+
+### 3. Saved page folder
+
+已保存页面的文件夹。作为 markdown 保存的网站将放置在此处。Web viewer有一个按钮（打开网页后点击右上方三个点，选择”Save to Vault"）允许你将网页以markdown格式保存到指定文件夹中。如果这里的文件夹为空则保存到Vault根目录
+
+### 4. Search engine
+
+默认搜索引擎。当你在网页查看器的地址栏中直接输入搜索词（而不是一个完整的网址）并按回车时，这个设置决定了会使用哪个搜索引擎来进行搜索。你可以从预设的选项中选择，如 Google, DuckDuckGo, Bing 等
+
+### 5. Enable ad blocker
+
+启用广告拦截器。启用后，网页查看器会尝试根据下面“广告拦截规则”中定义的列表来拦截网页上的广告内容
+
+### 6. Ad blocking rules
+
+广告拦截规则。里你可以指定一个或多个广告拦截规则列表的URL。这些列表（如 EasyList, EasyPrivacy）包含了大量已知的广告域名、URL模式等，广告拦截器会根据这些规则来判断并阻止广告的加载。这些规则是公开维护的，你可以添加或修改这些URL。这些规则会被你所有库中的网页查看器共享
+
+### 7. Ad block update frequency
+
+广告拦截更新频率。这个设置决定了网页查看器插件自动从上面指定的URL更新广告拦截规则列表的频率（以天为单位）。设置为0表示禁用自动更新。这个设置同样是所有库共享的
+
+### 8. Web viewer data
+
+网页查看器数据。点击这个按钮会清除网页查看器插件存储的浏览数据，包括cookies、缓存文件、浏览历史（如果插件记录的话）等
+
+## 26. Word count
+
+字数统计。启用后，会在 Obsidian 窗口底部的状态栏实时显示当前打开笔记（或选中文字）的字数统计、字符数统计等信息
+
+第三方插件商店中有一个插件叫Better Word Count，是这个插件的加强版，建议使用这个插件 #链接回来 
+
+## 27. Workspaces
+
+工作区。允许你保存当前 Obsidian 界面的整体布局——包括打开了哪些笔记和面板（如文件浏览器、大纲、反向链接面板等）、这些面板的位置和大小、侧边栏的显隐状态等——作为一个“工作区”。你可以创建多个不同的工作区预设（例如，“写作模式”、“研究模式”、“规划模式”），并在它们之间快速切换。这对于针对不同任务优化工作环境非常方便
 
 
 
