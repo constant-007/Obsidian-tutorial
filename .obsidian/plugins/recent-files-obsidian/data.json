@@ -5,12 +5,12 @@
       "path": "Obsidian设置/Community plugins/Git.md"
     },
     {
-      "basename": "Homepage",
-      "path": "Obsidian设置/Community plugins/Homepage.md"
-    },
-    {
       "basename": "Community plugins",
       "path": "Obsidian设置/Community plugins.md"
+    },
+    {
+      "basename": "Homepage",
+      "path": "Obsidian设置/Community plugins/Homepage.md"
     },
     {
       "basename": "Editor",
