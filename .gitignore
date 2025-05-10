@@ -2,3 +2,12 @@
 .tmp.driveupload/
 .tmp.drivedownload/
 .obsidian/plugins/remember-cursor-position/cursor-positions.json
+
+# Obsidian specific files
+.obsidian/cache
+.obsidian/plugins/remotely-save/
+
+# General files
+.DS_Store
+desktop.ini
+thumbs.db
