@@ -1,6 +1,14 @@
 {
   "recentFiles": [
     {
+      "basename": "Git",
+      "path": "Obsidian设置/Community plugins/Git.md"
+    },
+    {
+      "basename": "Homepage",
+      "path": "Obsidian设置/Community plugins/Homepage.md"
+    },
+    {
       "basename": "Community plugins",
       "path": "Obsidian设置/Community plugins.md"
     },
@@ -15,10 +23,6 @@
     {
       "basename": "General",
       "path": "Obsidian设置/General.md"
-    },
-    {
-      "basename": "Untitled",
-      "path": "Obsidian设置/Community plugins/Untitled.md"
     },
     {
       "basename": "Tag Wrangler",
@@ -39,10 +43,6 @@
     {
       "basename": "Homepage插件演示",
       "path": "示例/Homepage插件演示.md"
-    },
-    {
-      "basename": "Homepage",
-      "path": "Obsidian设置/Community plugins/Homepage.md"
     },
     {
       "basename": "Core plugins",
