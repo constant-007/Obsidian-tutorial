@@ -76,7 +76,7 @@ function hello() {
 
 ## 图片和图表
 
-![示例图片](avatar.jpg)
+![示例图片](../Attachment/avatar.jpg)
 
 ---
 
@@ -260,9 +260,7 @@ Advanced Slides 提供多种内置主题：
 
 ## 幻灯片网格导航
 
-按 `O` 键切换幻灯片网格概览
-
-按 `ESC` 键进入概览模式
+按 `O` 或`ESC` 键切换幻灯片网格概览
 
 ---
 
@@ -311,16 +309,66 @@ margin: 0.1
 
 ## 高级功能：分屏模式
 
-:::split
+<grid drag="50 100" drop="0 0">
 左侧内容
-![左侧图片](https://help.obsidian.md/images/obsidian-logo.png)
-:::
 
-:::split
+![左侧图片](../Attachment/avatar.jpg)
+</grid>
+
+<grid drag="50 100" drop="50 0">
 右侧内容
 - 第一点
 - 第二点
-:::
+</grid>
+
+---
+
+## 双栏布局
+
+<grid drag="40 100" drop="0 0" bg="orange">
+左栏内容
+
+可以放置文本、图表等
+</grid>
+
+<grid drag="60 100" drop="40 0" bg="pink">
+右栏内容
+
+- 便于对比内容
+- 更有效利用空间
+</grid>
+
+---
+
+## 网格布局示例
+
+<grid drag="30 25" drop="5 15" bg="red">
+区块1
+</grid>
+
+<grid drag="30 25" drop="65 15" bg="green">
+区块2
+</grid>
+
+<grid drag="30 25" drop="35 50" bg="blue">
+区块3
+</grid>
+
+---
+
+## 复杂布局
+
+<grid drag="40 30" drop="5 15" bg="#134896">
+左上区域
+</grid>
+
+<grid drag="40 30" drop="55 15" bg="#4a9f44">
+右上区域
+</grid>
+
+<grid drag="90 30" drop="5 55" bg="#9a4293">
+底部长条区域
+</grid>
 
 ---
 

@@ -5,7 +5,7 @@
   "vimMode": false,
   "promptDelete": false,
   "showInlineTitle": true,
-  "useMarkdownLinks": false,
+  "useMarkdownLinks": true,
   "alwaysUpdateLinks": true,
   "showUnsupportedFiles": true,
   "showLineNumber": false,
