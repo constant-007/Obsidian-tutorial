@@ -5,6 +5,10 @@
       "path": "Obsidian设置/Community plugins/Git.md"
     },
     {
+      "basename": "Core plugins",
+      "path": "Obsidian设置/Core plugins.md"
+    },
+    {
       "basename": "Community plugins",
       "path": "Obsidian设置/Community plugins.md"
     },
@@ -43,10 +47,6 @@
     {
       "basename": "Homepage插件演示",
       "path": "示例/Homepage插件演示.md"
-    },
-    {
-      "basename": "Core plugins",
-      "path": "Obsidian设置/Core plugins.md"
     },
     {
       "basename": "Hotkeys",
