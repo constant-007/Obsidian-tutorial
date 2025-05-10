@@ -1,6 +1,14 @@
 {
   "recentFiles": [
     {
+      "basename": "Slides插件演示",
+      "path": "示例/Slides插件演示.md"
+    },
+    {
+      "basename": "Core plugins",
+      "path": "Obsidian设置/Core plugins.md"
+    },
+    {
       "basename": "Admonition",
       "path": "Obsidian设置/Community plugins/Admonition.md"
     },
@@ -21,16 +29,8 @@
       "path": "示例/Outliner演示.md"
     },
     {
-      "basename": "Core plugins",
-      "path": "Obsidian设置/Core plugins.md"
-    },
-    {
       "basename": "README",
       "path": "README.md"
-    },
-    {
-      "basename": "Slides插件演示",
-      "path": "示例/Slides插件演示.md"
     }
   ],
   "omittedPaths": [],
