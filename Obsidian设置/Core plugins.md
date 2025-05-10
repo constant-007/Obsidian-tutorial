@@ -311,4 +311,35 @@ Notion也有类似的页面版本历史功能，但如果不是会员，好像�
 
 ## 14. Properties view
 
-属性视图。这个插件提供了一个专门的界面（通常在右侧边栏）来集中查看和编辑当前笔记的“属性”（Properties）。笔记属性就是笔记的元数据，通常以 YAML frontmatter 的形式写在笔记的最顶部（由 `---` 包裹），或者通过 Obsidian 的属性编辑界面添加。这些属性可以是标签、别名、创建日期、作者，或者任何你自定义的键值对信息（例如 `status: ongoing`，`priority: high`）。属性视图使得管理这些结构化数据更加方便直观
+属性视图。这个插件提供了一个专门的界面（通常在右侧边栏）来集中查看和编辑当前笔记的“属性”（[[Editor#Properties in document|Properties]]）。笔记属性就是笔记的元数据，通常以 YAML frontmatter 的形式写在笔记的最顶部（由 `---` 包裹），或者通过 Obsidian 的属性编辑界面添加。这些属性可以是标签、别名、创建日期、作者，或者任何你自定义的键值对信息（例如 `status: ongoing`，`priority: high`）。属性视图使得管理这些结构化数据更加方便直观
+
+可以通过Ctrl + p[[Hotkeys|快捷键]]调出命令面板[[Core plugins#4. Command palette|Command palette]]，然后输入Properties view来调出这个插件支持的操作
+
+![[Pasted image 20250510120835.png]]
+
+- Show all properties: 列出你的Vault中所有笔记包含的属性
+- Show file properties: 列出当前笔记包含的属性
+
+## 15. Publish
+
+这是 Obsidian 官方提供的**付费服务**的配套核心插件。如果你订阅了 Obsidian Publish 服务，就可以通过这个插件像Notion那样选择性地将你的笔记、附件和整个知识库发布到互联网上，创建一个公开的、可在线访问的个人网站、知识库、博客或项目文档。你可以控制哪些笔记被发布，并对发布站点进行一些自定义
+
+由于我没有订阅过Obsidian付费服务，这个和下面的Sync都是大概介绍一下，不详细展开
+
+## 16. Quick switcher
+
+快速切换器。这是一个导航工具。默认[[Hotkeys|快捷键]]通常是 `Ctrl/Cmd + O`。按下后会弹出一个简洁的搜索框，你可以通过输入笔记文件名（或其一部分）的关键词来快速模糊搜索并定位到你库中的任何一篇笔记。选中后按回车即可快速打开该笔记
+
+## 17. Random note
+
+随机笔记。启用此插件后，[[Appearance#3. Show Ribbon}左侧Ribbon]]会出现一个图标，点击它或通过[[Core plugins#4. Command palette|Command palette]]执行Random note命令会随机从你的整个笔记库中挑选并打开一篇笔记
+
+## 18. Search
+
+提供全局搜索功能。你可以在左侧或右侧边栏的放大镜面板中输入关键词、标签、路径或其他搜索条件，Obsidian 会在你的整个笔记库中进行查找，并列出所有匹配的笔记及其中的匹配上下文。搜索功能支持布尔操作符（AND, OR, NOT）、正则表达式、按路径或标签搜索等高级语法
+
+![[Pasted image 20250510122124.png]]
+
+## 19. Slash commands
+
+斜杠命令。使用过Notion的小伙伴应该对这个不陌生，启用此插件后，当你在笔记编辑器中输入正斜杠 `/` 时，会自动弹出一个小型的命令菜单，列出一些常用的编辑命令或格式化操作（例如插入模板、设置标题级别、创建列表、插入表格等）。你可以通过继续输入命令的关键词来筛选列表，然后选择并执行相应的命令，你可以在[[Core plugins#4. Command palette|Command palette]]面板中，设置将哪些你常用的命令在斜杠命令中[[Core plugins#^pinned-commands|置顶]]以便更好地调用
