@@ -16,9 +16,11 @@ Obsidian几乎完全免费，唯独同步与将笔记发布成网页需要付费
 > - **合并 (Merge)**：将不同分支的修改合并到一起
 > - **远程仓库 (Remote Repository)**：可以将你的本地 Git 仓库与一个在线的代码托管平台（如 GitHub, GitLab, Gitea 等）连接，将你的提交推送到远程服务器进行备份或协作
 
-作为一个版本控制工具，它的主要功能其实是提供类似Obsidian自带的[[Core plugins#6. File recovery|File recovery]]那种文件快照功能。Git能将整个Obsidian Vault以快照形式保存，并且理论上可永久保存。像Notion这种商业软件，实际快照保存功能一般也收费，但Git是免费的
+作为一个版本控制工具，它的主要功能其实是提供类似Obsidian自带的[[Core plugins#6. File recovery|File recovery]]那种文件快照功能。Git能将整个Obsidian Vault以快照形式保存，并且理论上可永久保存。像Notion这种商业软件，一般快照保存功能只能保存7填，更长时间要收费。但Git是免费的
 
-Obsidian中的这个Git插件实现同步的逻辑是通过自动化推送本地更新、拉取远程更新完成的
+那Obsidian中的这个Git插件是怎么实现同步的呢？
+
+逻辑是自动化推送本地更新、拉取远程更新
 
 **Obsidian Git 插件的功能：**
 
