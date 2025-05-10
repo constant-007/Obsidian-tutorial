@@ -76,7 +76,7 @@ function hello() {
 
 ## 图片和图表
 
-![示例图片](https://help.obsidian.md/images/obsidian-logo.png)
+![示例图片](avatar.jpg)
 
 ---
 
@@ -110,6 +110,8 @@ $$
 ## 幻灯片注释
 
 <!-- 这是一条不会显示在幻灯片中的注释 -->
+
+以“<!-- -->” 包裹
 
 注: 可以为演讲者添加笔记
 note: 这是演讲者笔记，只有演讲者可见
