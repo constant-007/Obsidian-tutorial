@@ -2,7 +2,8 @@
   "cssTheme": "Minimal",
   "theme": "obsidian",
   "enabledCssSnippets": [
-    "code_scrollbar"
+    "code_scrollbar",
+    "homepage"
   ],
   "accentColor": "",
   "showViewHeader": true,

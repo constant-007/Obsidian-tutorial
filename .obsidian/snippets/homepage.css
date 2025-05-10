@@ -1,0 +1,82 @@
+.homepage {
+    --card-bg: rgba(var(--canvas-color), 0.05);
+    --card-border-radius: 8px;
+    --card-padding: 20px;
+    --card-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .home-header {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  .home-date {
+    font-size: 1.2em;
+    color: var(--text-muted);
+  }
+  
+  .home-greeting h3 {
+    margin: 10px 0;
+    font-size: 1.8em;
+  }
+  
+  .home-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  .home-card {
+    background: var(--card-bg);
+    border-radius: var(--card-border-radius);
+    padding: var(--card-padding);
+    box-shadow: var(--card-shadow);
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .home-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .home-card h3 {
+    margin-top: 0;
+    border-bottom: 1px solid var(--background-modifier-border);
+    padding-bottom: 8px;
+  }
+  
+  .homepage-button {
+    background: var(--interactive-accent);
+    color: var(--text-on-accent);
+    border: none;
+    border-radius: 4px;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background 0.2s;
+  }
+  
+  .homepage-button:hover {
+    background: var(--interactive-accent-hover);
+  }
+  
+  /* 定制化不同类型的卡片 */
+  .home-card:nth-child(1) {
+    border-left: 3px solid #5a67d8;
+  }
+  
+  .home-card:nth-child(2) {
+    border-left: 3px solid #f6ad55;
+  }
+  
+  .home-card:nth-child(3) {
+    border-left: 3px solid #48bb78;
+  }
+  
+  .home-card:nth-child(4) {
+    border-left: 3px solid #ed64a6;
+  }
+  
+  .home-card:nth-child(5) {
+    border-left: 3px solid #667eea;
+  }

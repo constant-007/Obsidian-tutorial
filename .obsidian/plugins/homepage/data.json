@@ -2,9 +2,9 @@
   "version": 4,
   "homepages": {
     "Main Homepage": {
-      "value": "Home",
+      "value": "homepage",
       "kind": "File",
-      "openOnStartup": false,
+      "openOnStartup": true,
       "openMode": "Replace all open notes",
       "manualOpenMode": "Keep open notes",
       "view": "Default view",

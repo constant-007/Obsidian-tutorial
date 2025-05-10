@@ -1,6 +1,62 @@
 {
   "recentFiles": [
     {
+      "basename": "Editor",
+      "path": "Obsidian设置/Editor.md"
+    },
+    {
+      "basename": "Files and links",
+      "path": "Obsidian设置/Files and links.md"
+    },
+    {
+      "basename": "General",
+      "path": "Obsidian设置/General.md"
+    },
+    {
+      "basename": "Untitled",
+      "path": "Obsidian设置/Community plugins/Untitled.md"
+    },
+    {
+      "basename": "Tag Wrangler",
+      "path": "Obsidian设置/Community plugins/Tag Wrangler.md"
+    },
+    {
+      "basename": "Outliner",
+      "path": "Obsidian设置/Community plugins/Outliner.md"
+    },
+    {
+      "basename": "homepage",
+      "path": "homepage.md"
+    },
+    {
+      "basename": "Outliner演示",
+      "path": "示例/Outliner演示.md"
+    },
+    {
+      "basename": "Homepage插件演示",
+      "path": "示例/Homepage插件演示.md"
+    },
+    {
+      "basename": "Homepage",
+      "path": "Obsidian设置/Community plugins/Homepage.md"
+    },
+    {
+      "basename": "Community plugins",
+      "path": "Obsidian设置/Community plugins.md"
+    },
+    {
+      "basename": "Core plugins",
+      "path": "Obsidian设置/Core plugins.md"
+    },
+    {
+      "basename": "Hotkeys",
+      "path": "Obsidian设置/Hotkeys.md"
+    },
+    {
+      "basename": "README",
+      "path": "README.md"
+    },
+    {
       "basename": "Advanced Slides",
       "path": "Obsidian设置/Community plugins/Advanced Slides.md"
     },
@@ -11,30 +67,6 @@
     {
       "basename": "Admonition",
       "path": "Obsidian设置/Community plugins/Admonition.md"
-    },
-    {
-      "basename": "Core plugins",
-      "path": "Obsidian设置/Core plugins.md"
-    },
-    {
-      "basename": "Outliner",
-      "path": "Obsidian设置/Community plugins/Outliner.md"
-    },
-    {
-      "basename": "Untitled",
-      "path": "Obsidian设置/Community plugins/Untitled.md"
-    },
-    {
-      "basename": "Community plugins",
-      "path": "Obsidian设置/Community plugins.md"
-    },
-    {
-      "basename": "Outliner演示",
-      "path": "示例/Outliner演示.md"
-    },
-    {
-      "basename": "README",
-      "path": "README.md"
     }
   ],
   "omittedPaths": [],
