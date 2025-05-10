@@ -18,7 +18,9 @@ Obsidian几乎完全免费，唯独同步与将笔记发布成网页需要付费
 
 作为一个版本控制工具，它的主要功能其实是提供类似Obsidian自带的[[Core plugins#6. File recovery|File recovery]]那种文件快照功能。Git能将整个Obsidian Vault以快照形式保存，而且理论上可永久保存。像Notion这种商业软件，一般快照保存功能只能保存7天，更长时间要收费。但Git是免费的
 
-在同步时，Git插件会自动从远程拉取更新到本地或将本地仓库推送到远程。
+在同步时，Git插件会自动从远程拉取更新到本地或将本地仓库推送到远程，同时记录下每次仓库变化前后的状态，以快照形式保存在Git历史中。如果是使用Remotely Save提供的Google Drive，One Drive或者iCloud这种云服务，它们只会单纯同步本地文件与远程文件，不会保存仓库快照
+
+当然，使用其他云服务的话，配合[[Core plugins#6. File recovery|File recovery]]插件的快照功能，也能da
 
 逻辑是自动化推送本地更新、拉取远程更新
 
