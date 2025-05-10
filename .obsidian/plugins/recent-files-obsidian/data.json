@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "Community plugins",
+      "path": "Obsidian设置/Community plugins.md"
+    },
+    {
       "basename": "Editor",
       "path": "Obsidian设置/Editor.md"
     },
@@ -39,10 +43,6 @@
     {
       "basename": "Homepage",
       "path": "Obsidian设置/Community plugins/Homepage.md"
-    },
-    {
-      "basename": "Community plugins",
-      "path": "Obsidian设置/Community plugins.md"
     },
     {
       "basename": "Core plugins",
