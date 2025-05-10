@@ -80,7 +80,7 @@
 ![[Pasted image 20250507214815.png]]
 这个用来在标签页之间切换（左边剪头）还是挺有用的，建议开启
 
-### 3. Show Ribbon ^ribbon
+### 3. Show Ribbon
 
 最左边的这个：
 ![[Pasted image 20250507214934.png]]
@@ -115,7 +115,7 @@
 
 硬件加速，描述说如果关闭可能会对软件性能有较大影响，那就开启咯
 
-## CSS snipets ^CSS
+## CSS snipets
 ![[Pasted image 20250508000859.png]]
 
 重点来了，这个“CSS snippets”（CSS 代码片段）是 Obsidian 中一个非常强大的自定义外观功能。不会写脚本不要紧，毕竟现在有AI
