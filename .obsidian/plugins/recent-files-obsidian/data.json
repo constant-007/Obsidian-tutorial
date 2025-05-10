@@ -5,12 +5,12 @@
       "path": "Obsidian设置/Community plugins/Advanced Slides.md"
     },
     {
-      "basename": "Admonition",
-      "path": "Obsidian设置/Community plugins/Admonition.md"
-    },
-    {
       "basename": "Slides插件演示",
       "path": "示例/Slides插件演示.md"
+    },
+    {
+      "basename": "Admonition",
+      "path": "Obsidian设置/Community plugins/Admonition.md"
     },
     {
       "basename": "Core plugins",

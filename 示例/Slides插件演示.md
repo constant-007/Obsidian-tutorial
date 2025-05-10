@@ -16,9 +16,9 @@ Advanced Slides 是 Obsidian 中强大的演示文稿创建工具，基于 [Reve
 
 1. 使用 `---` 分隔幻灯片
 2. 使用 `--` 创建垂直幻灯片
-3. 点击右下角的 "Open as Slides" 按钮预览
+3. 点击左侧Ribbon中的Show Slide Preview按钮可预览PPT
 
-注: 在编辑器右上角也有幻灯片按钮可快速预览
+注: 也可通过Command palette调用幻灯片预览功能
 
 ---
 
@@ -118,23 +118,29 @@ note: 这是演讲者笔记，只有演讲者可见
 
 ---
 
-## 布局控制
+<!-- slide template="[[tpl-columns-2]]" -->
 
-<!-- slide 支持多种布局 -->
+## 布局控制：列布局
 
-:::columns
-:::: column
-左侧内容
+左栏内容
 - 第一点
 - 第二点
-::::
 
-:::: column
-右侧内容
+右栏内容
 1. 首先
 2. 其次
-::::
-:::
+
+---
+
+<!-- slide template="[[tpl-columns-3]]" -->
+
+## 三栏布局示例
+
+左栏内容
+
+中栏内容
+
+右栏内容
 
 ---
 
@@ -266,6 +272,8 @@ Advanced Slides 提供多种内置主题：
 
 ## 自动播放
 
+以下三页包含yaml代码的PPT主要是演示源码，这里显示会有问题，请忽略
+
 设置自动播放和循环播放：
 
 ```yaml
@@ -309,13 +317,13 @@ margin: 0.1
 
 ## 高级功能：分屏模式
 
-<grid drag="50 100" drop="0 0">
+<grid drag="50 100" drop="0 50">
 左侧内容
 
 ![左侧图片](../Attachment/avatar.jpg)
 </grid>
 
-<grid drag="50 100" drop="50 0">
+<grid drag="50 100" drop="50 17">
 右侧内容
 - 第一点
 - 第二点
@@ -350,7 +358,7 @@ margin: 0.1
 区块2
 </grid>
 
-<grid drag="30 25" drop="35 50" bg="blue">
+<grid drag="30 25" drop="35 60" bg="blue">
 区块3
 </grid>
 
@@ -372,9 +380,9 @@ margin: 0.1
 
 ---
 
-## 元素类控制
+## 对齐控制
 
-段落 <!-- element class="align-left" -->
+左对齐 <!-- element class="align-left" -->
 
 居中 <!-- element class="align-center" -->
 
