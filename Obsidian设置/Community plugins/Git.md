@@ -86,12 +86,21 @@ Obsidian几乎完全免费，唯独同步与将笔记发布成网页需要付费
 	
 	没有报错就行
 	
-4. 为实现同步，我们需要有一个远程Git仓库，这里选择GitHub作为仓库托管平台
+4. 为实现同步，我们需要有一个远程Git仓库，这里选择GitHub作为仓库托管平台 ^crate-github-repo
 	
 	1. 在GitHub[创建一个新仓库](https://www.aiexplorernote.com/article/how-to-upload-pics-with-github-pages-picgo-obsidian#:~:text=%E9%A6%96%E5%85%88%EF%BC%8C%E6%88%91%E4%BB%AC%E6%96%B0%E5%BB%BA,%E7%84%B6%E5%90%8E%E2%80%9CCreate%20repository%22)，注意，创建时一定要选择私人仓库，否则你的笔记可以被别人在GitHub被别人查看
 		   
 		![](https://img.aiexplorernote.com/%E4%BD%BF%E7%94%A8Git%E6%8F%92%E4%BB%B6%E8%AE%A9Obsidian%E5%AE%9E%E7%8E%B0%E5%90%8C%E6%AD%A5/create-git-repo-as-private-repo.jpg)
-	2. 下面需要将本地仓库与这个新建的远程仓库相关联。同样有两种方法，通过git插件命令面板或者命令行实现
+	2. 下面需要将本地仓库与这个新建的远程仓库相关联。同样有两种方法，通过git插件命令面板或者命令行实现 ^track-upstream
+		1. 这是使用Git插件命令面板的方法：
+			- 按Ctrl + P调出[[Core plugins#4. Command palette|Command palette]]，在其中输入“git:"
+			- 在下方出现的命令列表中，选择"Git: Edit remotes"
+			- 首先为你的远程仓库输入一个本地别名，比如"Obsidian"
+			- 然后下一个输入框填写你GitHub仓库的URL，这样我们就设置好了远程仓库
+			- 但现在还要指定本地分支跟踪的远程分支。继续打开Command palette，找到”Git: Set upstream branch"命令并运行
+			- 它会让你选择远程仓库，选择我们刚才指定的本地别名为Obsidian的仓库
+			- 接下来它会让你选需要跟踪的分支，以这样的格式写“远程仓库本地别名/远程仓库分支名（随意）"，比如我这里应该是”Obsidian/master"（远程仓库分支名随意。在我们指定远程仓库分支名后，如果没有该远程分支，Git会自动创建它会
+	3. 下面需要将本地仓库与这个新建的远程仓库相关联。同样有两种方法，通过git插件命令面板或者命令行实现
 		1. 这是使用Git插件命令面板的方法：
 			- 按Ctrl + P调出[[Core plugins#4. Command palette|Command palette]]，在其中输入“git:"
 			- 在下方出现的命令列表中，选择"Git: Edit remotes"
@@ -101,27 +110,28 @@ Obsidian几乎完全免费，唯独同步与将笔记发布成网页需要付费
 			- 它会让你选择远程仓库，选择我们刚才指定的本地别名为Obsidian的仓库
 			- 接下来它会让你选需要跟踪的分支，以这样的格式写“远程仓库本地别名/远程仓库分支名（随意）"，比如我这里应该是”Obsidian/master"（远程仓库分支名随意。在我们指定远程仓库分支名后，如果没有该远程分支，Git会自动创建它会
 		2. 接下来是通过命令行操作的方法
-		- 在终端导航到Obsidian库文件夹
-		- 执行第一个命令添加远程仓库:
-		```
-		   git remote add origin <你的仓库URL>
-		```
-		 - 将你的笔记文件添加到 Git 暂存区:
-		```
-		    git add .
-		```
-		- 创建一个初始提交：
-		```
-		   git commit -m "初始化"
-		```
-		-  为了统一，我们这里把本地分支名称强制命名为main:
-		```
-		   git branch -M main
-		```
-		-  将本地提交推送到远程仓库，并让git自动创建指定的远程分支:
-		```
-		   git push -u origin main
-		```
+			- 在终端导航到Obsidian库文件夹
+			- 执行第一个命令添加远程仓库:
+			```
+			 git remote add origin <你的仓库URL>
+			```
+			 - 将你的笔记文件添加到 Git 暂存区:
+			```
+			 git add .
+			```
+			- 创建一个初始提交：
+			```
+			 git commit -m "初始化"
+			```
+			-  为了统一，我们这里把本地分支名称强制命名为main:
+			```
+			 git branch -M main
+			```
+			-  将本地提交推送到远程仓库，并让git自动创建指定的远程分支:
+			```
+			git push -u origin main
+			```
+			
 		现在我们已成功使本地分支与远程仓库分支关联起来，Git插件能够正常实现拉取远程更新/推送本地更新到远程
 
 如果你想直接用我的这个仓库，不想自己完全重新配置仓库，可以这样做：
@@ -130,8 +140,9 @@ Obsidian几乎完全免费，唯独同步与将笔记发布成网页需要付费
 ```
 git clone https://github.com/cjjj9330/Obsidian-tutorial.git
 ```
-2. 确保你已经按上面的步骤创建了一个私有git
+2. 确保你已经按上面的步骤[[Git#^crate-github-repo|]创建了一个私有GitHub仓库]]
 3. 打开Obsidian，在Command palette中找到"Git: Remove remote“命令并运行
+4. 继续按上面的步骤重新将你新建的私有仓库[[Git#^track-upstream|设置为远程仓库并跟踪特定分支]]
 ## Git插件后台设置详解
 
 ![](https://img.aiexplorernote.com/%E4%BD%BF%E7%94%A8Git%E6%8F%92%E4%BB%B6%E8%AE%A9Obsidian%E5%AE%9E%E7%8E%B0%E5%90%8C%E6%AD%A5/screenshot-of-obsidan-git-settings.jpg)
