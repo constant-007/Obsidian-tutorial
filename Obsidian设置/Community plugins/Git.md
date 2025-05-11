@@ -1,12 +1,9 @@
 Obsidian几乎完全免费，唯独同步与将笔记发布成网页需要付费，这是因为这两项功能都需要维护服务器与数据库，收费合情合理。那有没有办法实现免费同步呢？有，Git以及Remotely Save这类插件专门用与实现同步服务
 
-个人更推荐使用Git，因为Remotely Save并不完全免费，而且我感觉比Git难配置一点 #链接回来 
-
-下面我们开始介绍Git插件
-
+个人更推荐使用Git，因为Remotely Save并不完全免费，而且对国内用户并不友好 #链接回来 
 ## Git插件介绍
 
-首先，如果你不知道Git是什么，需要简单了解一下 Git：
+首先，如果你不知道Git是什么，需要简单了解一下：
 
 > [!faq]+ Git是什么
 > Git 是一个版本控制系统。简单来说，它被设计用来追踪文件（尤其是文本文件，如代码或 Markdown 笔记）的每一次修改历史。你可以：
@@ -18,13 +15,36 @@ Obsidian几乎完全免费，唯独同步与将笔记发布成网页需要付费
 > - **合并 (Merge)**：将不同分支的修改合并到一起
 > - **远程仓库 (Remote Repository)**：可以将你的本地 Git 仓库与一个在线的代码托管平台（如 GitHub, GitLab, Gitea 等）连接，将你的提交推送到远程服务器进行备份或协作
 
-作为一个版本控制工具，它的主要功能是提供类似Obsidian自带的[[Core plugins#6. File recovery|File recovery]]那种文件快照功能。Git能将整个Obsidian Vault以快照形式保存，而且理论上可永久保存。像Notion这种商业软件，一般快照保存功能只能保存7天，更长时间要收费。但Git是免费的
+作为一个版本控制工具，它的主要功能是提供类似Obsidian自带的[[Core plugins#6. File recovery|File recovery]]那种文件快照功能。Git能将整个Obsidian Vault以快照形式保存，而且理论上可永久保存。像Notion这种商业软件，一般快照保存功能只能保存7天，更长时间要收费，但Git是免费的
 
-在同步时，Git插件会自动从远程拉取更新到本地或将本地仓库推送到远程，同时记录下每次仓库变化前后的状态，以快照形式保存在Git历史中。如果是使用Remotely Save提供的Google Drive，One Drive或者iCloud这种云服务，它们只会单纯同步本地文件与远程文件，不会保存仓库快照
+这也是Git相对于其他同步插件的一大优势。如果使用Remotely Save提供的Google Drive，One Drive或者iCloud这种云服务进行同步，它们只会单纯同步本地文件与远程文件，不会保存仓库快照
 
 当然，使用其他云服务的话，配合[[Core plugins#6. File recovery|File recovery]]插件的快照功能也能实现类似效果，但使用Git插件理论上可以完全舍弃File recovery 插件，精简一个插件也不错，还能节省空间
 
 ## 如何使用Git插件
+
+第一步，如果你没有安装Git，需要先去[Git官网](https://git-scm.com/downloads)下载
+
+![](https://img.aiexplorernote.com/%E4%BD%BF%E7%94%A8Git%E6%8F%92%E4%BB%B6%E8%AE%A9Obsidian%E5%AE%9E%E7%8E%B0%E5%90%8C%E6%AD%A5/download-git.jpg)
+
+第二步，在Obsidian中安装Git插件
+
+1. 到Obsidian设置页的第三方社区插件“Community plugins”部分
+2. 关闭安全模式，点击浏览，在社区插件中搜索Git插件安装并启用
+
+第三步，将Obsidian库文件夹初始化为Git仓库，有两种方式实现
+
+最简单的方法是通过Git插件在Obsidian中的命令实现，这样可以不用接触命令行。按Ctrl + P打开[[Core plugins#4. Command palette|Command palette]]，输入“Git:init"，选择第一个选项按回车就行
+
+![](https://img.aiexplorernote.com/%E4%BD%BF%E7%94%A8Git%E6%8F%92%E4%BB%B6%E8%AE%A9Obsidian%E5%AE%9E%E7%8E%B0%E5%90%8C%E6%AD%A5/initialize-obsdian-vault-as-git-repository.jpg)
+
+你也可以通过终端导航到Obsidian库文件夹，然后在终端执行下面这个命令：
+
+```
+git init
+```
+
+没有报错就行
 
 **Obsidian Git 插件的功能：**
 
