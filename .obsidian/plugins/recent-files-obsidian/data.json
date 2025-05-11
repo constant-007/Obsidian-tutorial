@@ -5,6 +5,14 @@
       "path": "Obsidian设置/Community plugins/Git.md"
     },
     {
+      "basename": "Advanced Slides",
+      "path": "Obsidian设置/Community plugins/Advanced Slides.md"
+    },
+    {
+      "basename": "Homepage",
+      "path": "Obsidian设置/Community plugins/Homepage.md"
+    },
+    {
       "basename": "Outliner",
       "path": "Obsidian设置/Community plugins/Outliner.md"
     },
@@ -15,10 +23,6 @@
     {
       "basename": "Community plugins",
       "path": "Obsidian设置/Community plugins.md"
-    },
-    {
-      "basename": "Homepage",
-      "path": "Obsidian设置/Community plugins/Homepage.md"
     },
     {
       "basename": "Editor",
@@ -55,10 +59,6 @@
     {
       "basename": "README",
       "path": "README.md"
-    },
-    {
-      "basename": "Advanced Slides",
-      "path": "Obsidian设置/Community plugins/Advanced Slides.md"
     },
     {
       "basename": "Slides插件演示",
