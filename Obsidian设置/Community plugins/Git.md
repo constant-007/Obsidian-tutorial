@@ -91,7 +91,16 @@ Obsidian几乎完全免费，唯独同步与将笔记发布成网页需要付费
 	1. 在GitHub[创建一个新仓库](https://www.aiexplorernote.com/article/how-to-upload-pics-with-github-pages-picgo-obsidian#:~:text=%E9%A6%96%E5%85%88%EF%BC%8C%E6%88%91%E4%BB%AC%E6%96%B0%E5%BB%BA,%E7%84%B6%E5%90%8E%E2%80%9CCreate%20repository%22)，注意，创建时一定要选择私人仓库，否则你的笔记可以被别人在GitHub被别人查看
 		   
 		![](https://img.aiexplorernote.com/%E4%BD%BF%E7%94%A8Git%E6%8F%92%E4%BB%B6%E8%AE%A9Obsidian%E5%AE%9E%E7%8E%B0%E5%90%8C%E6%AD%A5/create-git-repo-as-private-repo.jpg)
-	2. 下面需要将本地仓库与这个新建的远程仓库相关联。我感觉完全使用Git插件替代命令行的操作有点困难，这里就通过尽量通过命令行实现。移动端用户不用担心，只要在桌面端配置好，移动端直接设置个远程仓库就好
+	2. 下面需要将本地仓库与这个新建的远程仓库相关联。同样有两种方法，通过git插件命令面板或者命令行实现
+		1. 这是使用Git插件命令面板的方法：
+			- 按Ctrl + P调出[[Core plugins#4. Command palette|Command palette]]，在其中输入“git:"
+			- 在下方出现的命令列表中，选择"Git: Edit remotes"
+			- 首先为你的远程仓库输入一个本地别名，比如"Obsidian"
+			- 然后下一个输入框填写你GitHub仓库的URL，这样我们就设置好了远程仓库
+			- 但现在还要指定本地分支跟踪的远程分支。继续打开Command palette，找到”Git: Set upstream branch"命令并运行
+			- 它会让你选择远程仓库，选择我们刚才指定的本地别名为Obsidian的仓库
+			- 接下来它会让你选需要跟踪的分支，以这样的格式写“远程仓库本地别名/远程仓库分支名（随意）"，比如我这里应该是”Obsidian/master"（远程仓库分支名随意。在我们指定远程仓库分支名后，如果没有该远程分支，Git会自动创建它会
+		2. 接下来是通过命令行操作的方法
 		- 在终端导航到Obsidian库文件夹
 		- 执行第一个命令添加远程仓库:
 		```
@@ -114,8 +123,15 @@ Obsidian几乎完全免费，唯独同步与将笔记发布成网页需要付费
 		   git push -u origin main
 		```
 		现在我们已成功使本地分支与远程仓库分支关联起来，Git插件能够正常实现拉取远程更新/推送本地更新到远程
-		
-		在移动端使用时，可以使用GitSync这个APP（安卓）在移动设备上下载这个仓库，或者直接将整个文件夹从电脑转移到手机，让后在Obsidian的文件浏览器中选择该文件夹作为库文件
+
+如果你想直接用我的这个仓库，不想自己完全重新配置仓库，可以这样做：
+
+1. 首先，在GitHub上克隆我的仓库到本地：
+```
+git clone https://github.com/cjjj9330/Obsidian-tutorial.git
+```
+2. 确保你已经按上面的步骤创建了一个私有git
+3. 打开Obsidian，在Command palette中找到"Git: Remove remote“命令并运行
 ## Git插件后台设置详解
 
 ![](https://img.aiexplorernote.com/%E4%BD%BF%E7%94%A8Git%E6%8F%92%E4%BB%B6%E8%AE%A9Obsidian%E5%AE%9E%E7%8E%B0%E5%90%8C%E6%AD%A5/screenshot-of-obsidan-git-settings.jpg)
