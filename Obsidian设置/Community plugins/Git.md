@@ -152,11 +152,32 @@ Obsidian几乎完全免费，唯独同步与将笔记发布成网页需要付费
 
 ### Specify custom commit message on auto commit-and-sync
 
-在自动提交并同步时指定自定义提交信息。
+在自动提交并同步时指定自定义提交信息。如果开启，那么每次插件执行自动提交并同步操作之前，都会弹出一个对话框，让你输入本次提交的描述信息。如果关闭，自动提交会使用下面 "Commit message on auto commit-and-sync" 中设置的模板来自动生成提交信息
 
+### Commit message on auto commit-and-sync
 
+自动提交并同步时的提交信息。这里设置的是当插件执行自动提交操作时，默认使用的提交信息模板。你可以使用一些预设的占位符，插件在提交时会自动替换它们：
 
+- `{{date}}`: 当前日期和时间 (格式由下面的 `{{date}} placeholder format` 设置)
+- `{{hostname}}`: 当前电脑的主机名 (由下面的 `{{hostname}} placeholder replacement` 设置)
+- `{{numFiles}}`: 本次提交中包含的已更改文件的数量
+- `{{files}}`: 本次提交中已更改文件的列表（通常是文件名）
 
+### Commit message on manual commit
+
+手动提交时的提交信息。这里设置的是当你通过插件的命令执行手动提交操作时，预填充到提交信息输入框中的默认模板。你可以在这个预填充的模板基础上再进行修改
+
+### `{{date}}` placeholder format
+
+`{{date}}` 占位符格式。定义了上面提交信息模板中 `{{date}}` 占位符实际输出的日期和时间格式。它使用 [Moment.js](https://momentjs.com/) 的格式化标准
+
+### `{{hostname}}` placeholder replacement
+
+默认情况下，`{{hostname}}` 占位符会尝试获取你当前操作系统的真实主机名。如果你希望在提交信息中使用一个自定义的、更友好或更简洁的设备标识名称，而不是系统自动获取的主机名，可以在这里输入。例如，你可以为你的台式机输入 "Desktop-PC"，为你的笔记本输入 "MyLaptop"
+
+### Preview commit message
+
+预览提交信息。点击这个按钮，插件会根据你当前的提交信息模板设置和占位符，在右上方生成一个示例的提交信息给你看，让你检查格式和内容是否符合预期
 
 
 
