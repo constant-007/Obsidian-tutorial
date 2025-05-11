@@ -29,9 +29,8 @@ Obsidian几乎完全免费，唯独同步与将笔记发布成网页需要付费
 	
 2. 在Obsidian中安装Git插件
 	
-	1. 到Obsidian设置页的第三方社区插件“Community plugins”部分
-	2. 关闭安全模式，点击浏览，在社区插件中搜索Git插件安装并启用
-	
+	- 到Obsidian设置页的第三方社区插件“Community plugins”部分
+	- 关闭安全模式，点击浏览，在社区插件中搜索Git插件安装并启用
 3. 将Obsidian库文件夹初始化为Git仓库，有两种方式实现
 	
 	最简单的方法是通过Git插件在Obsidian中的命令实现，这样可以不用接触命令行。按Ctrl + P打开[[Core plugins#4. Command palette|Command palette]]，输入“Git:init"，选择第一个选项按回车就行
