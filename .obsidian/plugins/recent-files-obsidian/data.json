@@ -5,6 +5,10 @@
       "path": "Obsidian设置/Community plugins/Git.md"
     },
     {
+      "basename": "Outliner",
+      "path": "Obsidian设置/Community plugins/Outliner.md"
+    },
+    {
       "basename": "Core plugins",
       "path": "Obsidian设置/Core plugins.md"
     },
@@ -31,10 +35,6 @@
     {
       "basename": "Tag Wrangler",
       "path": "Obsidian设置/Community plugins/Tag Wrangler.md"
-    },
-    {
-      "basename": "Outliner",
-      "path": "Obsidian设置/Community plugins/Outliner.md"
     },
     {
       "basename": "homepage",

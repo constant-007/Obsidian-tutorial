@@ -48,7 +48,9 @@ Obsidian几乎完全免费，唯独同步与将笔记发布成网页需要付费
 	
 4. 为实现同步，我们需要有一个远程Git仓库，这里选择GitHub作为仓库托管平台
 	
-	1. 在GitHub创建一个新仓库，注意，创建时一定要选择私人仓库，否则你的笔记可以被别人在GitHub被别人查看，另外建议不要创建
+	1. 在GitHub[创建一个新仓库](https://www.aiexplorernote.com/article/how-to-upload-pics-with-github-pages-picgo-obsidian#:~:text=%E9%A6%96%E5%85%88%EF%BC%8C%E6%88%91%E4%BB%AC%E6%96%B0%E5%BB%BA,%E7%84%B6%E5%90%8E%E2%80%9CCreate%20repository%22)，注意，创建时一定要选择私人仓库，否则你的笔记可以被别人在GitHub被别人查看
+		![](https://img.aiexplorernote.com/%E4%BD%BF%E7%94%A8Git%E6%8F%92%E4%BB%B6%E8%AE%A9Obsidian%E5%AE%9E%E7%8E%B0%E5%90%8C%E6%AD%A5/create-git-repo-as-private-repo.jpg)
+	2. 下面需要将本地仓库与这个新建的远程仓库相关联
 
 **Obsidian Git 插件的功能：**
 
