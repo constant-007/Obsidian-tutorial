@@ -23,28 +23,32 @@ Obsidian几乎完全免费，唯独同步与将笔记发布成网页需要付费
 
 ## 如何使用Git插件
 
-第一步，如果你没有安装Git，需要先去[Git官网](https://git-scm.com/downloads)下载
-
-![](https://img.aiexplorernote.com/%E4%BD%BF%E7%94%A8Git%E6%8F%92%E4%BB%B6%E8%AE%A9Obsidian%E5%AE%9E%E7%8E%B0%E5%90%8C%E6%AD%A5/download-git.jpg)
-
-第二步，在Obsidian中安装Git插件
-
-1. 到Obsidian设置页的第三方社区插件“Community plugins”部分
-2. 关闭安全模式，点击浏览，在社区插件中搜索Git插件安装并启用
-
-第三步，将Obsidian库文件夹初始化为Git仓库，有两种方式实现
-
-最简单的方法是通过Git插件在Obsidian中的命令实现，这样可以不用接触命令行。按Ctrl + P打开[[Core plugins#4. Command palette|Command palette]]，输入“Git:init"，选择第一个选项按回车就行
-
-![](https://img.aiexplorernote.com/%E4%BD%BF%E7%94%A8Git%E6%8F%92%E4%BB%B6%E8%AE%A9Obsidian%E5%AE%9E%E7%8E%B0%E5%90%8C%E6%AD%A5/initialize-obsdian-vault-as-git-repository.jpg)
-
-你也可以通过终端导航到Obsidian库文件夹，然后在终端执行下面这个命令：
-
-```
-git init
-```
-
-没有报错就行
+1.  如果你没有安装Git，需要先去[Git官网](https://git-scm.com/downloads)下载
+	
+	![](https://img.aiexplorernote.com/%E4%BD%BF%E7%94%A8Git%E6%8F%92%E4%BB%B6%E8%AE%A9Obsidian%E5%AE%9E%E7%8E%B0%E5%90%8C%E6%AD%A5/download-git.jpg)
+	
+2. 在Obsidian中安装Git插件
+	
+	1. 到Obsidian设置页的第三方社区插件“Community plugins”部分
+	2. 关闭安全模式，点击浏览，在社区插件中搜索Git插件安装并启用
+	
+3. 将Obsidian库文件夹初始化为Git仓库，有两种方式实现
+	
+	最简单的方法是通过Git插件在Obsidian中的命令实现，这样可以不用接触命令行。按Ctrl + P打开[[Core plugins#4. Command palette|Command palette]]，输入“Git:init"，选择第一个选项按回车就行
+	
+	![](https://img.aiexplorernote.com/%E4%BD%BF%E7%94%A8Git%E6%8F%92%E4%BB%B6%E8%AE%A9Obsidian%E5%AE%9E%E7%8E%B0%E5%90%8C%E6%AD%A5/initialize-obsdian-vault-as-git-repository.jpg)
+	
+	你也可以通过终端导航到Obsidian库文件夹，然后在终端执行下面这个命令：
+	
+	```
+	git init
+	```
+	
+	没有报错就行
+	
+4. 为实现同步，我们需要有一个远程Git仓库，这里选择GitHub作为仓库托管平台
+	
+	1. 在GitHub创建一个新仓库，注意，创建时一定要选择私人仓库，否则你的笔记可以被别人在GitHub被别人查看，另外建议不要创建
 
 **Obsidian Git 插件的功能：**
 
