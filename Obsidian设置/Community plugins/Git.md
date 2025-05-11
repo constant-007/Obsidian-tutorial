@@ -50,8 +50,28 @@ Obsidian几乎完全免费，唯独同步与将笔记发布成网页需要付费
 	1. 在GitHub[创建一个新仓库](https://www.aiexplorernote.com/article/how-to-upload-pics-with-github-pages-picgo-obsidian#:~:text=%E9%A6%96%E5%85%88%EF%BC%8C%E6%88%91%E4%BB%AC%E6%96%B0%E5%BB%BA,%E7%84%B6%E5%90%8E%E2%80%9CCreate%20repository%22)，注意，创建时一定要选择私人仓库，否则你的笔记可以被别人在GitHub被别人查看
 		![](https://img.aiexplorernote.com/%E4%BD%BF%E7%94%A8Git%E6%8F%92%E4%BB%B6%E8%AE%A9Obsidian%E5%AE%9E%E7%8E%B0%E5%90%8C%E6%AD%A5/create-git-repo-as-private-repo.jpg)
 	2. 下面需要将本地仓库与这个新建的远程仓库相关联。我感觉完全使用Git插件替代命令行的操作有点困难，这里就通过尽量通过命令行实现。移动端用户不用担心，只要在桌面端配置好，移动端直接设置个远程仓库就好
-		1. 按
-
+		1. 在终端导航到Obsidian库文件夹
+		2. 执行第一个命令添加远程仓库:
+		```
+		   git remote add origin <你的仓库URL>
+		```
+		 3. 将你的笔记文件添加到 Git 暂存区:
+		```
+		    git add .
+		```
+		4. 创建一个初始提交：
+		```
+		   git commit -m "初始化"
+		```
+		5. 为了统一，我们这里把本地分支名称强制命名为main:
+		```
+		   git branch -M main
+		```
+		6. 将本地提交推送到远程仓库，并让git自动创建指定的远程分支:
+		```
+		   git push -u origin main
+		```
+		现在我们就成功使本地分支与远程仓库分支关联起来了。在移动端使用时，只需安装Git插件，然后
 **Obsidian Git 插件的功能：**
 
 "Obsidian Git" 插件将 Git 的这些核心功能直接集成到了 Obsidian 的用户界面中，让你无需离开 Obsidian 或频繁使用命令行就能管理你的笔记库版本。
