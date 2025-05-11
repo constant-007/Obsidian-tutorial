@@ -1,4 +1,4 @@
-大多数功能已被Obsidian官方整合成默认功能，只有一个drag and drop 是额外的
+大多数功能已被Obsidian官方整合成默认功能，只有一个drag and drop 是额外的。总的来说这个插件作用不大
 
 ![[Pasted image 20250510165854.png]]
 
