@@ -97,7 +97,8 @@ Obsidian几乎完全免费，唯独同步与将笔记发布成网页需要付费
 			- 在下方出现的命令列表中，选择"Git: Edit remotes"
 			- 首先为你的远程仓库输入一个本地别名，比如"Obsidian"
 			- 然后下一个输入框填写你GitHub仓库的URL，这样我们就设置好了远程仓库
-			- 但现在还要指定本地分支跟踪的远程分支。继续打开Command palette，找到”Git: Set upstream branch"命令并运行
+			- 接下来，需要让Git插件执行"git add"与"git commit"来确保推送之前有提交信息：打开Command palette，执行“Git: Commit all changes"
+			- 指定本地分支跟踪的远程分支：继续打开Command palette，找到”Git: Set upstream branch"命令并运行
 			- 它会让你选择远程仓库，选择我们刚才指定的本地别名为Obsidian的仓库
 			- 接下来它会让你选需要跟踪的分支，以这样的格式写“远程仓库本地别名/远程仓库分支名（随意）"，比如我这里应该是”Obsidian/master"（远程仓库分支名随意。在我们指定远程仓库分支名后，如果没有该远程分支，Git会自动创建它会
 		2. 接下来是通过命令行操作的方法
