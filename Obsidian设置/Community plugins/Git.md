@@ -133,8 +133,9 @@ Obsidian几乎完全免费，唯独同步与将笔记发布成网页需要付费
 git clone https://github.com/cjjj9330/Obsidian-tutorial.git
 ```
 1. 确保你已经按上面的步骤[[Git#^crate-github-repo|]创建了一个私有GitHub仓库]]
-2. 打开Obsidian，在Command palette中找到"Git: Remove remote“命令并运行
-3. 继续按上面的步骤重新将你新建的私有仓库[[Git#^track-upstream|设置为远程仓库并跟踪特定分支]]
+2. 打开Obsidian，选择你克隆到本地的文件夹作为Obsidian Vault
+3. 在Command palette中找到"Git: Remove remote“命令并运行
+4. 继续按上面的步骤重新将你新建的私有仓库[[Git#^track-upstream|设置为远程仓库并跟踪特定分支]]
 
 在桌面端完成对Git插件的设置后，在移动端同步时，可以这样做：
 1. 在手机上下载Obsidian软件
