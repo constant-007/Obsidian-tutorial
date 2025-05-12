@@ -126,6 +126,10 @@ Obsidian几乎完全免费，唯独同步与将笔记发布成网页需要付费
 			
 		现在我们已成功使本地分支与远程仓库分支关联起来，Git插件能够正常实现拉取远程更新/推送本地更新到远程
 
+> [!important]+ 注意
+> 以上内容均为从零开始创建一个Obsidian笔记仓库并追踪它，如果你想让Obsidian追踪现有Obsidian笔记仓库，请继续往下阅读
+
+
 如果你想直接用我的这个仓库，不想自己完全重新配置仓库，可以这样做：
 
 1. 首先，在GitHub上克隆我的仓库到本地：
@@ -137,12 +141,9 @@ git clone https://github.com/cjjj9330/Obsidian-tutorial.git
 3. 在Command palette中找到"Git: Remove remote“命令并运行
 4. 继续按上面的步骤重新将你新建的私有仓库[[Git#^track-upstream|设置为远程仓库并跟踪特定分支]]
 
-在桌面端完成对Git插件的设置后，在移动端同步时，可以这样做：
-1. 在手机上下载Obsidian软件
-2. 按照上面的步骤在第三方社区插件商店中下载Git插件
-3. 在应用内从屏幕顶部向下拉动，调出命令面板[[Core plugins#4. Command palette|Command palette]]
-4. 输入“git: clone"，选择"Git: clone an existing repo"
-5. 输入你仓库的URL
+
+
+
 ## Git插件后台设置详解
 
 ![](https://img.aiexplorernote.com/%E4%BD%BF%E7%94%A8Git%E6%8F%92%E4%BB%B6%E8%AE%A9Obsidian%E5%AE%9E%E7%8E%B0%E5%90%8C%E6%AD%A5/screenshot-of-obsidan-git-settings.jpg)
