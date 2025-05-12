@@ -67,7 +67,7 @@ Obsidian几乎完全免费，唯独同步与将笔记发布成网页需要付费
 	
 	![](https://img.aiexplorernote.com/%E4%BD%BF%E7%94%A8Git%E6%8F%92%E4%BB%B6%E8%AE%A9Obsidian%E5%AE%9E%E7%8E%B0%E5%90%8C%E6%AD%A5/download-git.jpg)
 	
-2. 在Obsidian中安装Git插件
+2. 在Obsidian中安装Git插件 ^ded78c
 	
 	- 到Obsidian设置页的第三方社区插件“Community plugins”部分
 	- 关闭安全模式，点击浏览，在社区插件中搜索Git插件安装并启用
@@ -129,21 +129,23 @@ Obsidian几乎完全免费，唯独同步与将笔记发布成网页需要付费
 > [!important]+ 注意
 > 以上内容均为从零开始创建一个Obsidian笔记仓库并追踪它，如果你想让Obsidian追踪现有Obsidian笔记仓库，请继续往下阅读
 
-如果你想让新建的Obsidian库跟踪现有的Obsidian笔记仓库，可以这样做：
-1. 使用Obsidian新建一个库，注意，这里要使用一个空文件夹创建，不要直接创建Obsidian库，否则后面会报错![Uploading file...90v4m]()
+如果你想让新建的Obsidian库跟踪现有的Obsidian笔记仓库，可以这样做： ^596f07
+1. 使用Obsidian新建一个库，注意，这里要使用一个空文件夹创建，不要直接创建Obsidian库，否则后面会报错![](https://img.aiexplorernote.com/%E4%BD%BF%E7%94%A8Git%E6%8F%92%E4%BB%B6%E8%AE%A9Obsidian%E5%AE%9E%E7%8E%B0%E5%90%8C%E6%AD%A5/creat-obsidian-vault-via-existing-folder.jpg)
+2. 打开新创建的**空仓库**，在第三方社区插件商店中[[Git#^ded78c|安装git插件]]并启用
+3. 按Ctrl + P打开[[Core plugins#4. Command palette|Command palette]]，输入“git: clone"，选择”Git: clone an existing repository"并运行
+4. 它会首先提示你输入远程仓库URL
+5. 然后让你输入想把这个仓库克隆到哪里，由于我们想让远程仓库一整个变成我们的Obsidian库，我们需要把这个远程仓库克隆到Obsidian 库的根目录，所以输入一个点"."
+6. 它会询问远程分支是否包含“.obsidian"文件夹，这里这个插件有一个bug，我们的远程仓库的确是有“.obsidian"文件夹的，但是如果这里选择”YES"，后面删除目录的时候会报错找不到目录，因此这里选“NO"，这样可以直接完成克隆
+7. 重新打开这个库你就会发现主题和插件都装好了
 
-2. 
+
 
 如果你想直接用我的这个仓库，不想自己完全重新配置仓库，可以这样做：
 
-1. 首先，在GitHub上克隆我的仓库到本地：
-```
-git clone https://github.com/cjjj9330/Obsidian-tutorial.git
-```
-1. 确保你已经按上面的步骤[[Git#^crate-github-repo|]创建了一个私有GitHub仓库]]
-2. 打开Obsidian，选择你克隆到本地的文件夹作为Obsidian Vault
+1. 首先，按上面的步骤[[Git#^596f07|让你的Obsidian库追踪我的GitHub仓库]]
+2. 确保你已经[[Git#^crate-github-repo|]创建了一个私有GitHub仓库]]
 3. 在Command palette中找到"Git: Remove remote“命令并运行
-4. 继续按上面的步骤重新将你新建的私有仓库[[Git#^track-upstream|设置为远程仓库并跟踪特定分支]]
+4. 最后，按上面的步骤将你新建的私有仓库[[Git#^track-upstream|设置为远程仓库并跟踪特定分支]]
 
 
 
