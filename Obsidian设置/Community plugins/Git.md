@@ -147,7 +147,9 @@ git clone https://github.com/cjjj9330/Obsidian-tutorial.git
 在桌面端完成对Git插件的设置后，在移动端同步时，可以这样做：
 1. 在手机上下载Obsidian软件
 2. 按照上面的步骤在第三方社区插件商店中下载Git插件
-3. 
+3. 在应用内从屏幕顶部向下拉动，调出命令面板[[Core plugins#4. Command palette|Command palette]]
+4. 输入“git: clone"，选择"Git: clone an existing repo"
+5. 输入你仓库的URL
 ## Git插件后台设置详解
 
 ![](https://img.aiexplorernote.com/%E4%BD%BF%E7%94%A8Git%E6%8F%92%E4%BB%B6%E8%AE%A9Obsidian%E5%AE%9E%E7%8E%B0%E5%90%8C%E6%AD%A5/screenshot-of-obsidan-git-settings.jpg)
