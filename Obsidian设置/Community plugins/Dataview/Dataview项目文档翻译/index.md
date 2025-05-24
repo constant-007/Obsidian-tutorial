@@ -1,3 +1,9 @@
+
+> [!important]+ "Dataview项目文档翻译“目录内容说明
+> "Dataview项目文档翻译“目录下的内容都是官方Dataview插件文档的翻译，最新内容请认准：https://blacksmithgu.github.io/obsidian-dataview/
+> 
+> 如果发现需要更新可以在项目issue中提出
+
 # 概览
 
 Dataview是一个基于您个人知识库的实时索引和查询引擎。您可以向笔记中[**添加元数据**](annotation/add-metadata.md)，并使用[**Dataview查询语言**](queries/structure.md)来列出、过滤、排序或分组您的数据。Dataview保持您的查询始终最新，使数据聚合变得轻而易举。

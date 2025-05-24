@@ -1,6 +1,34 @@
 {
   "recentFiles": [
     {
+      "basename": "Dataview插件综述",
+      "path": "Obsidian设置/Community plugins/Dataview/Dataview插件综述.md"
+    },
+    {
+      "basename": "friends",
+      "path": "Obsidian设置/Community plugins/Dataview/Dataview项目文档翻译/friends.md"
+    },
+    {
+      "basename": "index",
+      "path": "Obsidian设置/Community plugins/Dataview/Dataview项目文档翻译/index.md"
+    },
+    {
+      "basename": "literals",
+      "path": "Obsidian设置/Community plugins/Dataview/Dataview项目文档翻译/reference/literals.md"
+    },
+    {
+      "basename": "expressions",
+      "path": "Obsidian设置/Community plugins/Dataview/Dataview项目文档翻译/reference/expressions.md"
+    },
+    {
+      "basename": "sources",
+      "path": "Obsidian设置/Community plugins/Dataview/Dataview项目文档翻译/reference/sources.md"
+    },
+    {
+      "basename": "functions",
+      "path": "Obsidian设置/Community plugins/Dataview/Dataview项目文档翻译/reference/functions.md"
+    },
+    {
       "basename": "项目管理总视图",
       "path": "Obsidian设置/Community plugins/Dataview/DataView演示/项目管理总视图.md"
     },
@@ -11,10 +39,6 @@
     {
       "basename": "README",
       "path": "Obsidian设置/Community plugins/Dataview/DataView演示/README.md"
-    },
-    {
-      "basename": "Dataview插件综述",
-      "path": "Obsidian设置/Community plugins/Dataview/Dataview插件综述.md"
     },
     {
       "basename": "README",
