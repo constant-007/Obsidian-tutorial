@@ -1,68 +1,67 @@
-# Expressions
+# 表达式
 
-Dataview query language **expressions** are anything that yields a value:
+Dataview查询语言**表达式**是任何产生值的东西：
 
-- all [fields](../annotation/add-metadata.md)
-- all [literals](./literals.md) 
-- and computed values, like `field - 9` of [function calls](./functions.md). 
+- 所有[字段](../annotation/add-metadata.md)
+- 所有[字面量](./literals.md) 
+- 以及计算值，如`field - 9`或[函数调用](./functions.md)。 
 
-Basically, everything that is not a [Query Type](../queries/query-types.md), nor a [data command](../queries/data-commands.md) is an expression.
+基本上，除了[查询类型](../queries/query-types.md)和[数据命令](../queries/data-commands.md)之外的所有内容都是表达式。
 
-For a very high level summary, following is considered an **expression** in DQL:
+对于一个非常高级的摘要，以下在DQL中被认为是**表达式**：
 
 ```
-# Literals
-1                   (number)
-true/false          (boolean)
-"text"              (text)
-date(2021-04-18)    (date)
-dur(1 day)          (duration)
-[[Link]]            (link)
-[1, 2, 3]           (list)
-{ a: 1, b: 2 }      (object)
+# 字面量
+1                   (数字)
+true/false          (布尔值)
+"text"              (文本)
+date(2021-04-18)    (日期)
+dur(1 day)          (持续时间)
+[[Link]]            (链接)
+[1, 2, 3]           (列表)
+{ a: 1, b: 2 }      (对象)
 
-# Lambdas
+# Lambda表达式
 (x1, x2) => ...     (lambda)
 
-# References
-field               (directly refer to a field)
-simple-field        (refer to fields with spaces/punctuation in them like "Simple Field!")
-a.b                 (if a is an object, retrieve field named 'b')
-a[expr]             (if a is an object or array, retrieve field with name specified by expression 'expr')
-f(a, b, ...)        (call a function called `f` on arguments a, b, ...)
+# 引用
+field               (直接引用字段)
+simple-field        (引用有空格/标点符号的字段，如"Simple Field!")
+a.b                 (如果a是对象，检索名为'b'的字段)
+a[expr]             (如果a是对象或数组，检索由表达式'expr'指定名称的字段)
+f(a, b, ...)        (在参数a, b, ...上调用名为`f`的函数)
 
-# Arithmetic
-a + b               (addition)
-a - b               (subtraction)
-a * b               (multiplication)
-a / b               (division)
-a % b               (modulo / remainder of division)
+# 算术运算
+a + b               (加法)
+a - b               (减法)
+a * b               (乘法)
+a / b               (除法)
+a % b               (取模/除法余数)
 
-# Comparison
-a > b               (check if a is greater than b)
-a < b               (check if a is less than b)
-a = b               (check if a equals b)
-a != b              (check if a does not equal b)
-a <= b              (check if a is less than or equal to b)
-a >= b              (check if a is greater than or equal to b)
+# 比较
+a > b               (检查a是否大于b)
+a < b               (检查a是否小于b)
+a = b               (检查a是否等于b)
+a != b              (检查a是否不等于b)
+a <= b              (检查a是否小于或等于b)
+a >= b              (检查a是否大于或等于b)
 
-# Strings
+# 字符串
 
-a + b               (string concatenation)
-a * num             (repeat string <num> times)
+a + b               (字符串连接)
+a * num             (重复字符串<num>次)
 
-# Special Operations
-[[Link]].value      (fetch `value` from page `Link`)
+# 特殊操作
+[[Link]].value      (从页面`Link`获取`value`)
 ```
 
-More detailed explanations of each follow.
+以下是对每个的更详细解释。
 
-## Expression Types
+## 表达式类型
 
-### Fields as Expressions
+### 字段作为表达式
 
-The simplest expression is one that just directly refers to a field. If you have a field called "duedate", then you can
-refer to it directly by name - `duedate`. 
+最简单的表达式是直接引用字段的表达式。如果您有一个名为"duedate"的字段，那么您可以直接通过名称引用它 - `duedate`。 
 
 ~~~
 ```dataview
@@ -70,13 +69,12 @@ TABLE duedate, class, field-with-space
 ```
 ~~~
 
-!!! info "Field names with spaces and punctuations"
-    If the field name has spaces, punctuation, or other non-letter/number characters, then you can refer to it using Dataview's simplified name, which is all lower case with spaces replaced with "-". For example, `this is a field` becomes `this-is-a-field`; `Hello!` becomes `hello`, and so on. Read more under [Field names](../annotation/add-metadata.md#field-names)
+> [!info] 带空格和标点符号的字段名称
+> 如果字段名称有空格、标点符号或其他非字母/数字字符，那么您可以使用Dataview的简化名称来引用它，简化名称全部为小写，空格用"-"替换。例如，`this is a field`变为`this-is-a-field`；`Hello!`变为`hello`，等等。在[字段名称](../annotation/add-metadata.md#field-names)下了解更多。
 
-### Literals
+### 字面量
 
-Constant values - things like `1` or `"hello"` or `date(som)` ("start of month"). There are literals for each data type
-that dataview supports; read more about them [here](./literals.md).
+常量值 - 如`1`或`"hello"`或`date(som)`（"月初"）。dataview支持的每种数据类型都有字面量；在[这里](./literals.md)了解更多。
 
 ~~~
 ```dataview
@@ -85,10 +83,9 @@ WHERE file.name = "Scribble"
 ```
 ~~~
 
-### Arithmetic
+### 算术运算
 
-You can use standard arithmetic operators to combine fields: addition (`+`), subtraction (`-`), multiplication (`*`),
-and division (`/`). For example `field1 + field2` is an expression which computes the sum of the two fields.
+您可以使用标准算术运算符组合字段：加法（`+`）、减法（`-`）、乘法（`*`）和除法（`/`）。例如`field1 + field2`是计算两个字段之和的表达式。
 
 ~~~
 ```dataview
@@ -102,10 +99,9 @@ FROM "30 Projects"
 ```
 ~~~
 
-### Comparisons
+### 比较
 
-You can compare most values using the various comparison operators: `<`, `>`, `<=`, `>=`, `=`, `!=`. This yields a
-boolean true or false value which can be used in `WHERE` blocks in queries.
+您可以使用各种比较运算符比较大多数值：`<`、`>`、`<=`、`>=`、`=`、`!=`。这会产生一个布尔真或假值，可以在查询的`WHERE`块中使用。
 
 ~~~
 ```dataview
@@ -126,25 +122,25 @@ WHERE status != "done"
 ```
 ~~~
 
-!!! hint "Comparing different types"
-    Comparing different [data types](../annotation/types-of-metadata.md) with each other can lead to unexpected results. Take the second example: If `due` is not set (neither on page nor task level), it is `null` and `null <= date(today)` returns true, including tasks without any due date. If this is not wanted, add a type check to make sure you're always comparing the same types:
-    ~~~
-    ```dataview
-    TASK
-    WHERE typeof(due) = "date" AND due <= date(today)
-    ```
-    ~~~
-    Most often, it is sufficient to check if the meta data is available via `WHERE due AND due <= date(today)`, but checking the type is the safer way to get foreseeable results. 
+> [!hint] 比较不同类型
+> 将不同的[数据类型](../annotation/types-of-metadata.md)相互比较可能导致意外结果。以第二个例子为例：如果`due`未设置（在页面或任务级别都没有），它是`null`，而`null <= date(today)`返回true，包括没有任何截止日期的任务。如果不希望这样，请添加类型检查以确保您总是比较相同的类型：
+> ~~~
+> ```dataview
+> TASK
+> WHERE typeof(due) = "date" AND due <= date(today)
+> ```
+> ~~~
+> 大多数情况下，通过`WHERE due AND due <= date(today)`检查元数据是否可用就足够了，但检查类型是获得可预见结果的更安全方法。
 
-### List/Object Indexing
+### 列表/对象索引
 
-You can retrieve data from [lists/arrays](../annotation/types-of-metadata.md#list) via the index operator `list[<index>]`, where `<index>` is any computed expression.
-Lists are 0-indexed, so the first element is index 0, the second element is index 1, and so on.
-For example `list("A", "B", "C")[0] = "A"`.
+您可以通过索引运算符`list[<index>]`从[列表/数组](../annotation/types-of-metadata.md#list)检索数据，其中`<index>`是任何计算表达式。
+列表是从0开始索引的，所以第一个元素是索引0，第二个元素是索引1，依此类推。
+例如`list("A", "B", "C")[0] = "A"`。
 
-A similar notation style works for [objects](../annotation/types-of-metadata.md#object).
-You can use `field["nestedfield"]` to reference fields inside an object or otherwise similarly nested.
-For example, in the YAML defined below, we can reference `previous` via `episode_metadata["previous"]`.
+类似的符号样式适用于[对象](../annotation/types-of-metadata.md#object)。
+您可以使用`field["nestedfield"]`来引用对象内部或其他类似嵌套的字段。
+例如，在下面定义的YAML中，我们可以通过`episode_metadata["previous"]`引用`previous`。
 ```yaml
 ---
 aliases:
@@ -156,14 +152,14 @@ episode_metadata:
 ---
 ```
 
-You can also retrieve data from objects (which map text to data values) also using the index operator, where indexes are now strings/text instead of numbers.
-You can also use the shorthand `object.<name>`, where `<name>` is the name of the value to retrieve.
-For the previous frontmatter example, we could also use `episode_metadata.previous` to obtain the same value.
+您还可以从对象（将文本映射到数据值）使用索引运算符检索数据，其中索引现在是字符串/文本而不是数字。
+您还可以使用简写`object.<name>`，其中`<name>`是要检索的值的名称。
+对于前面的前端数据示例，我们也可以使用`episode_metadata.previous`来获得相同的值。
 
-Index expressions also work on objects which have fields that are not directly supported by the query language.
-A good example is `where`, since it is a keyword.
-If your frontmatter/metadata contains a field `where`, you can reference it via the `row` syntax: `row["where"]`.
-See the [note in the FAQ](../resources/faq.md#how-do-i-use-fields-with-the-same-name-as-keywords-like-from-where) and [the corresponding issue](https://github.com/blacksmithgu/obsidian-dataview/issues/1164) for further information.
+索引表达式也适用于具有查询语言不直接支持的字段的对象。
+一个很好的例子是`where`，因为它是一个关键字。
+如果您的前端数据/元数据包含字段`where`，您可以通过`row`语法引用它：`row["where"]`。
+有关更多信息，请参见[FAQ中的注释](../resources/faq.md#how-do-i-use-fields-with-the-same-name-as-keywords-like-from-where)和[相应的问题](https://github.com/blacksmithgu/obsidian-dataview/issues/1164)。
 
 ~~~
 ```dataview
@@ -171,11 +167,9 @@ TABLE id, episode_metadata.next, aliases[0]
 ```
 ~~~
 
-### Function Calls
+### 函数调用
 
-Dataview supports various functions for manipulating data, which are described in full in the [functions
-documentation](functions.md). They have the general syntax `function(arg1, arg2, ...)` - i.e., `lower(file.name)` or
-`regexmatch("A.+", file.folder)`.
+Dataview支持各种操作数据的函数，这些函数在[函数文档](functions.md)中有完整描述。它们具有一般语法`function(arg1, arg2, ...)` - 即`lower(file.name)`或`regexmatch("A.+", file.folder)`。
 
 ~~~
 ```dataview
@@ -189,23 +183,22 @@ WHERE string(file.day.year) = split(this.file.name, "-W")[0]
 ```
 ~~~
 
-### Lambdas
+### Lambda表达式
 
-Lambdas are advanced literals which let you define a function that takes some number of inputs, and produces an output.
-They have the general form:
-
-```
-(arg1, arg2, arg3, ...) => <expression using args>
-```
-
-Lambdas are used in several advanced operators like `reduce` and `map` to allow for complex transformations of data. A
-few examples:
+Lambda是高级字面量，让您定义一个接受一些输入并产生输出的函数。
+它们具有一般形式：
 
 ```
-(x) => x.field                  (return field of x, often used for map)
-(x, y) => x + y                 (sum x and y)
-(x) => 2 * x                    (double x)
-(value) => length(value) = 4    (return true if value is length 4)
+(arg1, arg2, arg3, ...) => <使用args的表达式>
+```
+
+Lambda在几个高级运算符（如`reduce`和`map`）中使用，以允许对数据进行复杂转换。几个例子：
+
+```
+(x) => x.field                  (返回x的字段，通常用于map)
+(x, y) => x + y                 (x和y的和)
+(x) => 2 * x                    (x的两倍)
+(value) => length(value) = 4    (如果value长度为4则返回true)
 ```
 
 ~~~
@@ -218,17 +211,14 @@ WHERE !allCompleted
 
 ---
 
-## Type-specific Interactions & Values
+## 类型特定的交互和值
 
-Most dataview types have special interactions with operators, or have additional fields that can be retrieved using the
-index operator. This is true for [dates](../annotation/types-of-metadata.md#date) and [durations](../annotation/types-of-metadata.md#duration) and as well for links. Read more about date and durations on their respective section in [Types of Metadata](../annotation/types-of-metadata.md).
+大多数dataview类型与运算符有特殊交互，或者有可以使用索引运算符检索的其他字段。这对于[日期](../annotation/types-of-metadata.md#date)和[持续时间](../annotation/types-of-metadata.md#duration)以及链接都是如此。在[元数据类型](../annotation/types-of-metadata.md)的相应部分中了解更多关于日期和持续时间的信息。
 
-### Links
+### 链接
 
-You can "index through" a link to get values on the corresponding page. For example `[[Assignment Math]].duedate` would get the value
-`duedate` from page `Assignment Math`.
+您可以通过链接"索引"来获取相应页面上的值。例如`[[Assignment Math]].duedate`将从页面`Assignment Math`获取值`duedate`。
 
-!!! note "Link Indexing in Expressions"
-    If your link is a field that you defined in an inline field or in front-matter, like `Class:: [[Math]]` and you want to get the field `timetable`, then you
-    index into it by writing `Class.timetable`.
-    Using `[[Class]].timetable` would look up the page literally called `Class`, and not `Math`!
+> [!note] 表达式中的链接索引
+> 如果您的链接是在内联字段或前端数据中定义的字段，如`Class:: [[Math]]`，并且您想获取字段`timetable`，那么您通过写`Class.timetable`来索引它。
+> 使用`[[Class]].timetable`将查找字面上称为`Class`的页面，而不是`Math`！

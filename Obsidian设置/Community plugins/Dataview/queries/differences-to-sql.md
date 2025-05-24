@@ -6,22 +6,22 @@
  * @FilePath: \obsidian-dataview\docs\docs\queries\differences-to-sql.md
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
 -->
-# Dataview Query Language (DQL) and SQL
+# Dataview查询语言（DQL）与SQL
 
-If you are familiar with SQL and experienced in writing SQL queries, you might approach writing a DQL query in a similar way. However, DQL is significantly different from SQL.
+如果您熟悉SQL并且有编写SQL查询的经验，您可能会以类似的方式来编写DQL查询。然而，DQL与SQL有显著差异。
 
-A DQL query is **executed from top to bottom**, line-by-line. It is more like a computer program than a typical SQL query.
+DQL查询是**从上到下逐行执行**的。它更像是一个计算机程序而不是典型的SQL查询。
 
-When a line is evaluated, it produces a result set and **passes the whole set on to the next DQL line** which will manipulate the set that it received from the previous line. This is why in DQL it is possible, for example, to have multiple WHERE clauses. But in DQL it is not a 'clause' but a 'data command'. Every line of a DQL query (except the 1st and 2nd lines) is a 'data command'.
+当一行被评估时，它产生一个结果集并**将整个集合传递给下一行DQL**，下一行将操作从前一行接收到的集合。这就是为什么在DQL中可以有多个WHERE子句的原因。但在DQL中，它不是"子句"而是"数据命令"。DQL查询的每一行（除了第1和第2行）都是一个"数据命令"。
 
-## Anatomy of a DQL query
+## DQL查询的结构
 
-Instead of starting with SELECT, a DQL query starts with a word determining the Query Type, which determines how your final result will be rendered on screen (a table, a list, a task list, or a calendar). Then follows the list of fields, which is actually very similar to the column list you put after a SELECT statement.
+DQL查询不是以SELECT开始，而是以确定查询类型的词开始，该词决定最终结果如何在屏幕上呈现（表格、列表、任务列表或日历）。然后是字段列表，这实际上与您在SELECT语句后放置的列列表非常相似。
 
-The next line starts with FROM which is not followed by a table name but by a complex expression, similar to an SQL WHERE clause. Here you can filter on many things, like tags in files, file names, path names, etc. In the background, this command already produces a result set which will be our initial set for further data manipulation by 'data commands' on subsequent lines.
+下一行以FROM开始，后面跟的不是表名，而是一个复杂的表达式，类似于SQL WHERE子句。在这里您可以过滤许多内容，如文件中的标签、文件名、路径名等。在后台，此命令已经产生了一个结果集，这将是我们在后续行中由"数据命令"进行进一步数据操作的初始集合。
 
-You can have as many following lines as you want. Each will start with a [data command](data-commands.md) and will re-shape the result set it received from the previous line. For example:
+您可以有任意多的后续行。每行都将以[数据命令](data-commands.md)开始，并将重新塑造从前一行接收到的结果集。例如：
 
-- The WHERE data command will only keep those lines from the result set which match a given condition. This means that, unless all data in the result set matches the condition, this command will pass on a smaller result set to the next line than it received from the previous line. Unlike in SQL, you can have as many WHERE commands as you like.
-- The FLATTEN data command is not found in common SQL but in DQL you can use it to reduce the depth of the result set.
-- DQL, similarly to SQL, has a GROUP BY command but this can also be used multiple times, which is not possible in common SQL. You can even do several SORT or GROUP BY commands one after the other.
+- WHERE数据命令将只保留结果集中匹配给定条件的那些行。这意味着，除非结果集中的所有数据都匹配条件，否则此命令将向下一行传递比从前一行接收到的更小的结果集。与SQL不同，您可以有任意多的WHERE命令。
+- FLATTEN数据命令在常见的SQL中没有，但在DQL中您可以使用它来降低结果集的深度。
+- DQL与SQL类似，有GROUP BY命令，但这也可以多次使用，这在常见的SQL中是不可能的。您甚至可以依次执行多个SORT或GROUP BY命令。

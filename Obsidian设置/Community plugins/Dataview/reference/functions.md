@@ -1,22 +1,20 @@
-# Functions
+# 函数
 
-Dataview functions provide more advanced ways to manipulate data. You can use functions **in [data commands](../queries/data-commands.md)** (except FROM) to filter or group or use them **as [additional information](../queries/query-types.md)** like TABLE columns or extra output for LIST queries to see your data in a new light.
+Dataview函数提供了操作数据的更高级方法。您可以在**[数据命令](../queries/data-commands.md)**（除了FROM）中使用函数来过滤或分组，或将它们用作**[附加信息](../queries/query-types.md)**，如TABLE列或LIST查询的额外输出，以全新的角度查看您的数据。
 
-## How functions work
+## 函数如何工作
 
-Functions are another form of [expression](expressions.md) and can be used everywhere you can use an expression. A function always gives you back a new value and follows this format:
+函数是[表达式](expressions.md)的另一种形式，可以在任何可以使用表达式的地方使用。函数总是返回一个新值，并遵循以下格式：
 
 ```
 functionname(parameter1, parameter2)
 ```
 
-Parameters are again [expressions](expressions.md) and you can use literals, meta data fields, or even another function as parameter. You'll find out which [data type](../annotation/types-of-metadata.md) your parameters need to have on the documentation of this page. Pay attention to the information inside the function brackets. Parameters in square brackets, i.e. `link(path, [display])` means they are *optional* and can be omitted. Find out more about the default behavior of each function on their explanation.
+参数又是[表达式](expressions.md)，您可以使用字面量、元数据字段，甚至另一个函数作为参数。您将在本页面的文档中了解到您的参数需要具有哪种[数据类型](../annotation/types-of-metadata.md)。请注意函数括号内的信息。方括号中的参数，即`link(path, [display])`意味着它们是*可选的*，可以省略。在每个函数的解释中了解更多关于默认行为的信息。
 
-## Calling functions on lists of values
+## 在值列表上调用函数
 
-Most functions can be applied either to single values (like `number`, `string`, `date`, etc.) OR to lists of those
-values. If a function is applied to a list, it also returns a list after the function is applied to each element
-in the list. For example:
+大多数函数可以应用于单个值（如`number`、`string`、`date`等）或这些值的列表。如果函数应用于列表，它也会在函数应用于列表中的每个元素后返回一个列表。例如：
 
 ```js
 lower("YES") = "yes"
@@ -26,67 +24,65 @@ replace("yes", "e", "a") = "yas"
 replace(["yes", "ree"], "e", "a") = ["yas", "raa"]
 ```
 
-This so-called "function vectorization" will not be mentioned explicitly on the following definitions and is possible for a wide range of these functionalities implicitly.
+这种所谓的"函数向量化"在以下定义中不会明确提及，并且对于广泛的这些功能隐式地是可能的。
 
-## Constructors
+## 构造函数
 
-Constructors which create values.
+创建值的构造函数。
 
 ### `object(key1, value1, ...)`
 
-Creates a new object with the given keys and values. Keys and values should alternate in the call, and keys should
-always be strings/text.
+使用给定的键和值创建一个新对象。键和值应在调用中交替出现，键应始终是字符串/文本。
 
 ```js
-object() => empty object
-object("a", 6) => object which maps "a" to 6
-object("a", 4, "c", "yes") => object which maps a to 4, and c to "yes"
+object() => 空对象
+object("a", 6) => 将"a"映射到6的对象
+object("a", 4, "c", "yes") => 将a映射到4，c映射到"yes"的对象
 ```
 
 ### `list(value1, value2, ...)`
 
-Creates a new list with the given values in it. `array` can be used an alias for `list`.
+使用给定值创建一个新列表。`array`可以用作`list`的别名。
 
 ```js
-list() => empty list
-list(1, 2, 3) => list with 1, 2, and 3
-array("a", "b", "c") => list with "a", "b", and "c"
+list() => 空列表
+list(1, 2, 3) => 包含1、2和3的列表
+array("a", "b", "c") => 包含"a"、"b"和"c"的列表
 ```
 
 ### `date(any)`
 
-Parses a date from the provided string, date, or link object, if possible, returning null otherwise.
+如果可能，从提供的字符串、日期或链接对象解析日期，否则返回null。
 
 ```js
-date("2020-04-18") = <date object representing April 18th, 2020>
-date([[2021-04-16]]) = <date object for the given page, referring to file.day>
+date("2020-04-18") = <表示2020年4月18日的日期对象>
+date([[2021-04-16]]) = <给定页面的日期对象，引用file.day>
 ```
 
 ### `date(text, format)`
 
-Parses a date from text to luxon `DateTime` with the specified format. Note localized formats might not work.
-Uses [Luxon tokens](https://moment.github.io/luxon/#/formatting?id=table-of-tokens).
+使用指定格式从文本解析日期为luxon `DateTime`。注意本地化格式可能不起作用。
+使用[Luxon标记](https://moment.github.io/luxon/#/formatting?id=table-of-tokens)。
 
 ```js
-date("12/31/2022", "MM/dd/yyyy") => DateTime for December 31th, 2022
-date("210313", "yyMMdd") => DateTime for March 13th, 2021
-date("946778645000", "x") => DateTime for "2000-01-02T03:04:05"
+date("12/31/2022", "MM/dd/yyyy") => 2022年12月31日的DateTime
+date("210313", "yyMMdd") => 2021年3月13日的DateTime
+date("946778645000", "x") => "2000-01-02T03:04:05"的DateTime
 ```
 
 ### `dur(any)`
 
-Parses a duration from the provided string or duration, returning null on failure.
+从提供的字符串或持续时间解析持续时间，失败时返回null。
 
 ```js
-dur(8 minutes) = <8 minutes>
-dur("8 minutes, 4 seconds") = <8 minutes, 4 seconds>
-dur(dur(8 minutes)) = dur(8 minutes) = <8 minutes>
+dur(8 minutes) = <8分钟>
+dur("8 minutes, 4 seconds") = <8分钟4秒>
+dur(dur(8 minutes)) = dur(8 minutes) = <8分钟>
 ```
 
 ### `number(string)`
 
-Pulls the first number out of the given string, returning it if possible. Returns null if there are no numbers in the
-string.
+从给定字符串中提取第一个数字，如果可能则返回它。如果字符串中没有数字则返回null。
 
 ```js
 number("18 years") = 18
@@ -96,9 +92,7 @@ number("hmm") = null
 
 ### `string(any)`
 
-Converts any value into a "reasonable" string representation. This sometimes produces less pretty results than just directly using
-the value in a query - it is mostly useful for coercing dates, durations, numbers, and so on into strings for
-manipulation.
+将任何值转换为"合理的"字符串表示。这有时会产生不如直接在查询中使用值那么漂亮的结果 - 它主要用于将日期、持续时间、数字等强制转换为字符串进行操作。
 
 ```js
 string(18) = "18"
@@ -108,36 +102,33 @@ string(date(2021-08-15)) = "August 15th, 2021"
 
 ### `link(path, [display])`
 
-Construct a link object from the given file path or name. If provided with two arguments, the second argument is the
-display name for the link.
+从给定的文件路径或名称构造链接对象。如果提供两个参数，第二个参数是链接的显示名称。
 
 ```js
-link("Hello") => link to page named 'Hello'
-link("Hello", "Goodbye") => link to page named 'Hello', displays as 'Goodbye'
+link("Hello") => 指向名为'Hello'的页面的链接
+link("Hello", "Goodbye") => 指向名为'Hello'的页面的链接，显示为'Goodbye'
 ```
 
 ### `embed(link, [embed?])`
 
-Convert a link object into an embedded link; support for embedded links is somewhat spotty in Dataview views, though
-embedding of images should work.
+将链接对象转换为嵌入式链接；Dataview视图对嵌入式链接的支持有些不完整，但图像的嵌入应该可以工作。
 
 ```js
-embed(link("Hello.png")) => embedded link to the "Hello.png" image, which will render as an actual image.
+embed(link("Hello.png")) => 指向"Hello.png"图像的嵌入式链接，将呈现为实际图像。
 ```
 
 ### `elink(url, [display])`
 
-Construct a link to an external url (like `www.google.com`). If provided with two arguments, the second
-argument is the display name for the link.
+构造指向外部url（如`www.google.com`）的链接。如果提供两个参数，第二个参数是链接的显示名称。
 
 ```js
-elink("www.google.com") => link element to google.com
-elink("www.google.com", "Google") => link element to google.com, displays as "Google"
+elink("www.google.com") => 指向google.com的链接元素
+elink("www.google.com", "Google") => 指向google.com的链接元素，显示为"Google"
 ```
 
 ### `typeof(any)`
 
-Get the type of any object for inspection. Can be used in conjunction with other operators to change behavior based on type.
+获取任何对象的类型以供检查。可以与其他运算符一起使用以根据类型改变行为。
 
 ```js
 typeof(8) => "number"
@@ -150,12 +141,11 @@ typeof(dur(8 minutes)) => "duration"
 
 ---
 
-## Numeric Operations
+## 数值运算
 
 ### `round(number, [digits])`
 
-Round a number to a given number of digits. If the second argument is not specified, rounds to the nearest whole number;
-otherwise, rounds to the given number of digits.
+将数字四舍五入到给定的位数。如果未指定第二个参数，则四舍五入到最接近的整数；否则，四舍五入到给定的位数。
 
 ```js
 round(16.555555) = 17
@@ -164,7 +154,7 @@ round(16.555555, 2) = 16.56
 
 ### `trunc(number)`
 
-Truncates ("cuts off") the decimal point from a number.
+从数字中截断（"切掉"）小数点。
 
 ```js
 trunc(12.937) = 12
@@ -174,8 +164,8 @@ trunc(-0.837764) = 0
 
 ### `floor(number)`
 
-Always rounds down and returns the largest integer less than or equal to a given number.
-This means that negative numbers become more negative.
+总是向下舍入并返回小于或等于给定数字的最大整数。
+这意味着负数变得更负。
 
 ```js
 floor(12.937) = 12
@@ -185,8 +175,8 @@ floor(-0.837764) = -1
 
 ### `ceil(number)`
 
-Always rounds up and returns the smallest integer greater than or equal to a given number.
-This means negative numbers become less negative.
+总是向上舍入并返回大于或等于给定数字的最小整数。
+这意味着负数变得不那么负。
 
 ```js
 ceil(12.937) = 13
@@ -196,7 +186,7 @@ ceil(-0.837764) = 0
 
 ### `min(a, b, ..)`
 
-Compute the minimum value of a list of arguments, or an array.
+计算参数列表或数组的最小值。
 
 ```js
 min(1, 2, 3) = 1
@@ -207,7 +197,7 @@ min("a", "ab", "abc") = "a"
 
 ### `max(a, b, ...)`
 
-Compute the maximum value of a list of arguments, or an array.
+计算参数列表或数组的最大值。
 
 ```js
 max(1, 2, 3) = 3
@@ -218,7 +208,7 @@ max("a", "ab", "abc") = "abc"
 
 ### `sum(array)`
 
-Sums all numeric values in the array. If you have null values in your sum, you can eliminate them via the `nonnull` function.
+对数组中的所有数值求和。如果您的总和中有null值，您可以通过`nonnull`函数消除它们。
 
 ```js
 sum([1, 2, 3]) = 6
@@ -229,7 +219,7 @@ sum(nonnull([null, 1, 8])) = 9
 
 ### `product(array)`
 
-Calculates the product of a list of numbers. If you have null values in your average, you can eliminate them via the `nonnull` function.
+计算数字列表的乘积。如果您的平均值中有null值，您可以通过`nonnull`函数消除它们。
 
 ```js
 product([1,2,3]) = 6
@@ -240,7 +230,7 @@ product(nonnull([null, 1, 2, 4])) = 8
 
 ### `reduce(array, operand)`
 
-A generic function to reduce a list into a single value, valid operands are `"+"`, `"-"`, `"*"`, `"/"` and the boolean operands `"&"` and `"|"`. Note that using `"+"` and `"*"` equals the `sum()` and `product()` functions, and using `"&"` and `"|"` matches `all()` and `any()`.
+一个通用函数，用于将列表减少为一个值，有效操作数为`"+"`, `"-"`, `"*"`, `"/"`和布尔操作数`"&"`和`"|"`。请注意，使用`"+"`和`"*"`等于`sum()`和`product()`函数，使用`"&"`和`"|"`匹配`all()`和`any()`。
 
 ```js
 reduce([100, 20, 3], "-") = 77
@@ -254,8 +244,7 @@ reduce([1]), "+") = 1, has the side effect of reducing the list into a single el
 
 ### `average(array)`
 
-Computes the numeric average of numeric values. If you have null values in your average, you can eliminate them via the
-`nonnull` function.
+计算数值的数值平均值。如果您的平均值中有null值，您可以通过`nonnull`函数消除它们。
 
 ```js
 average([1, 2, 3]) = 2
@@ -266,7 +255,7 @@ average(nonnull([null, 1, 2])) = 1.5
 
 ### `minby(array, function)`
 
-Compute the minimum value of an array, using the provided function.
+计算数组的数值最小值，使用提供的函数。
 
 ```js
 minby([1, 2, 3], (k) => k) = 1
@@ -277,7 +266,7 @@ minby(this.file.tasks, (k) => k.due) => (earliest due)
 
 ### `maxby(array, function)`
 
-Compute the maximum value of an array, using the provided function.
+计算数组的数值最大值，使用提供的函数。
 
 ```js
 maxby([1, 2, 3], (k) => k) = 3
@@ -873,12 +862,10 @@ meta([[My Project]]).subpath = null
 
 This can be used to select tasks under specific headings.
 
-````
 ```dataview
 task
 where meta(section).subpath = "Next Actions"
 ```
-````
 
 #### `meta(link).type`
 

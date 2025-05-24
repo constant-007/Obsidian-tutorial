@@ -1,154 +1,154 @@
-# Literals
+# 字面量
 
-Dataview query language *literals* are **expressions** which represent constant values like a text (`"Science"`) or a number (`2021`). They can be used as part as [functions](functions.md) or of [expressions like comparison](./expressions.md). Some examples of [Queries](../queries/structure.md) that use **literals**:
+Dataview查询语言*字面量*是代表常量值（如文本（`"Science"`）或数字（`2021`））的**表达式**。它们可以作为[函数](functions.md)或[比较等表达式](./expressions.md)的一部分使用。一些使用**字面量**的[查询](../queries/structure.md)示例：
 
 ~~~
 
-Literal (number) 2022 used in a comparison
+比较中使用的字面量（数字）2022
 ```dataview
 LIST
 WHERE file.day.year = 2022
 ```
 
-Literal (text) "Math" used in a function call
+函数调用中使用的字面量（文本）"Math"
 ```dataview
 LIST
 WHERE contains(file.name, "Math")
 ```
 
-Literal (link) [[Study MOC]] used as a source
+作为源使用的字面量（链接）[[Study MOC]]
 ```dataview
 LIST
 FROM [[Study MOC]]
 ```
 
-Literal (date) date(yesterday) used in a comparison
+比较中使用的字面量（日期）date(yesterday)
 ```dataview
 TASK
 WHERE !completed AND file.day = date(yesterday)
 ```
 
-Literal (duration) dur(2 days) used in a comparison
+比较中使用的字面量（持续时间）dur(2 days)
 ```dataview
 LIST
 WHERE end - start > dur(2 days)
 ```
 ~~~
 
-!!! summary "Literals"
-    Literals are **static values** that can be used as part of the Dataview Query Language (DQL), i.e. for comparisons.
+> [!summary] 字面量
+> 字面量是可以作为Dataview查询语言（DQL）一部分使用的**静态值**，例如用于比较。
 
-The following is an extensive, but non-exhaustive list of possible literals in DQL.
+以下是DQL中可能的字面量的详尽但非穷尽列表。
 
-### General
-Literal|Description
+### 通用
+字面量|描述
 -|-
-`0`|The number zero
-`1337`|The positive number 1337
-`-200`| The negative number -200
-`"The quick brown fox jumps over the lazy dog"`| Text (sometimes referred to as "string")
-`[[Science]]`|A link to the file named "Science"
-`[[]]`| A link to the current file
-`[1, 2, 3]`|A list of numbers 1, 2, and 3
-`[[1, 2],[3, 4]]`|A list of list [1, 2] and [3, 4]
-`{ a: 1, b: 2 }`| An object with keys a and b, whereas a has value 1, b 2. |
-`date(2021-07-14)`| A date (read more below) |
-`dur(2 days 4 hours)` | A duration (read more below) | 
+`0`|数字零
+`1337`|正数1337
+`-200`| 负数-200
+`"The quick brown fox jumps over the lazy dog"`| 文本（有时称为"字符串"）
+`[[Science]]`|指向名为"Science"的文件的链接
+`[[]]`| 指向当前文件的链接
+`[1, 2, 3]`|数字1、2和3的列表
+`[[1, 2],[3, 4]]`|列表[1, 2]和[3, 4]的列表
+`{ a: 1, b: 2 }`| 具有键a和b的对象，其中a的值为1，b为2。 |
+`date(2021-07-14)`| 日期（在下面阅读更多） |
+`dur(2 days 4 hours)` | 持续时间（在下面阅读更多） | 
 
-!!! attention "Literals as field values"
-    Literals are only interpreted this way when used inside a Query, not when used as a meta data value. For possible values and their data types for fields, please refer to [Types of Metadata](../annotation/types-of-metadata.md).
+> [!attention] 字面量作为字段值
+> 字面量只有在查询内使用时才会被这样解释，而不是在用作元数据值时。有关字段的可能值及其数据类型，请参考[元数据类型](../annotation/types-of-metadata.md)。
 
-### Dates
+### 日期
 
-Whenever you use a [field value in Date ISO format](../annotation/types-of-metadata.md#date), you'll need to compare these fields against date objects. Dataview provides some shorthands for common use cases like tomorrow, start of current week etc. Please note that `date()` is also a [function](functions.md#dateany), which can be called on **text** to extract dates.
+当您使用[ISO日期格式的字段值](../annotation/types-of-metadata.md#date)时，您需要将这些字段与日期对象进行比较。Dataview为常见用例（如明天、当前周的开始等）提供了一些简写。请注意，`date()`也是一个[函数](functions.md#dateany)，可以在**文本**上调用以提取日期。
 
-Literal|Description
+字面量|描述
 -|-
-`date(2021-11-11)`|A date, November 11th, 2021
-`date(2021-09-20T20:17)`| A date, September 20th, 2021 at 20:17
-`date(today)`|A date representing the current date
-`date(now)`|A date representing the current date and time
-`date(tomorrow)`|A date representing tomorrow's date
-`date(yesterday)`|A date representing yesterday's date
-`date(sow)`|A date representing the start of the current week
-`date(eow)`|A date representing the end of the current week
-`date(som)`|A date representing the start of the current month
-`date(eom)`|A date representing the end of the current month
-`date(soy)`|A date representing the start of the current year
-`date(eoy)`|A date representing the end of the current year
+`date(2021-11-11)`|日期，2021年11月11日
+`date(2021-09-20T20:17)`| 日期，2021年9月20日20:17
+`date(today)`|代表当前日期的日期
+`date(now)`|代表当前日期和时间的日期
+`date(tomorrow)`|代表明天日期的日期
+`date(yesterday)`|代表昨天日期的日期
+`date(sow)`|代表当前周开始的日期
+`date(eow)`|代表当前周结束的日期
+`date(som)`|代表当前月开始的日期
+`date(eom)`|代表当前月结束的日期
+`date(soy)`|代表当前年开始的日期
+`date(eoy)`|代表当前年结束的日期
 
-### Durations
+### 持续时间
 
-Durations are representatives of a time span. You can either [define them directly](../annotation/types-of-metadata.md#duration) or create them due to [calculating with dates](../annotation/types-of-metadata.md#duration), and use these for i.e. comparisons.
+持续时间是时间跨度的代表。您可以[直接定义它们](../annotation/types-of-metadata.md#duration)或通过[日期计算](../annotation/types-of-metadata.md#duration)创建它们，并将这些用于比较等操作。
 
-#### Seconds
-Literal|Description
+#### 秒
+字面量|描述
 -|-
-`dur(1 s)`|one second
-`dur(3 s)`|three seconds
-`dur(1 sec)`|one second
-`dur(3 secs)`|three seconds
-`dur(1 second)`|one second
-`dur(3 seconds)`|three seconds
+`dur(1 s)`|一秒
+`dur(3 s)`|三秒
+`dur(1 sec)`|一秒
+`dur(3 secs)`|三秒
+`dur(1 second)`|一秒
+`dur(3 seconds)`|三秒
 
-#### Minutes
-Literal|Description
+#### 分钟
+字面量|描述
 -|-
-`dur(1 m)`|one minute
-`dur(3 m)`|three minutes
-`dur(1 min)`|one minute
-`dur(3 mins)`|three minutes
-`dur(1 minute)`|one minute
-`dur(3 minutes)`|three minutes
+`dur(1 m)`|一分钟
+`dur(3 m)`|三分钟
+`dur(1 min)`|一分钟
+`dur(3 mins)`|三分钟
+`dur(1 minute)`|一分钟
+`dur(3 minutes)`|三分钟
 
-#### Hours
-Literal|Description
+#### 小时
+字面量|描述
 -|-
-`dur(1 h)`|one hour
-`dur(3 h)`|three hours
-`dur(1 hr)`|one hour
-`dur(3 hrs)`|three hours
-`dur(1 hour)`|one hour
-`dur(3 hours)`|three hours
+`dur(1 h)`|一小时
+`dur(3 h)`|三小时
+`dur(1 hr)`|一小时
+`dur(3 hrs)`|三小时
+`dur(1 hour)`|一小时
+`dur(3 hours)`|三小时
 
-#### Days
-Literal|Description
+#### 天
+字面量|描述
 -|-
-`dur(1 d)`|one day
-`dur(3 d)`|three days
-`dur(1 day)`|one day
-`dur(3 days)`|three days
+`dur(1 d)`|一天
+`dur(3 d)`|三天
+`dur(1 day)`|一天
+`dur(3 days)`|三天
 
-#### Weeks
-Literal|Description
+#### 周
+字面量|描述
 -|-
-`dur(1 w)`|one week
-`dur(3 w)`|three weeks
-`dur(1 wk)`|one week
-`dur(3 wks)`|three weeks
-`dur(1 week)`|one week
-`dur(3 weeks)`|three weeks
+`dur(1 w)`|一周
+`dur(3 w)`|三周
+`dur(1 wk)`|一周
+`dur(3 wks)`|三周
+`dur(1 week)`|一周
+`dur(3 weeks)`|三周
 
-#### Months
-Literal|Description
+#### 月
+字面量|描述
 -|-
-`dur(1 mo)`|one month
-`dur(3 mo)`|three month
-`dur(1 month)`|one month
-`dur(3 months)`|three months
+`dur(1 mo)`|一个月
+`dur(3 mo)`|三个月
+`dur(1 month)`|一个月
+`dur(3 months)`|三个月
 
-#### Years
-Literal|Description
+#### 年
+字面量|描述
 -|-
-`dur(1 yr)`|one year
-`dur(3 yrs)`|three years
-`dur(1 year)`|one year
-`dur(3 years)`|three years
+`dur(1 yr)`|一年
+`dur(3 yrs)`|三年
+`dur(1 year)`|一年
+`dur(3 years)`|三年
 
-#### Combinations
-Literal|Description
+#### 组合
+字面量|描述
 -|-
-`dur(1 s, 2 m, 3 h)`|three hours, two minutes, and one second
-`dur(1 s 2 m 3 h)`|three hours, two minutes, and one second
-`dur(1s 2m 3h)`|three hours, two minutes, and one second
-`dur(1second 2min 3h)`|three hours, two minutes, and one second
+`dur(1 s, 2 m, 3 h)`|三小时、两分钟和一秒
+`dur(1 s 2 m 3 h)`|三小时、两分钟和一秒
+`dur(1s 2m 3h)`|三小时、两分钟和一秒
+`dur(1second 2min 3h)`|三小时、两分钟和一秒
