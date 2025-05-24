@@ -1,80 +1,28 @@
 {
   "recentFiles": [
     {
-      "basename": "friends",
-      "path": "Obsidian设置/Community plugins/Dataview/friends.md"
+      "basename": "项目管理总视图",
+      "path": "Obsidian设置/Community plugins/Dataview/DataView演示/项目管理总视图.md"
     },
     {
-      "basename": "index",
-      "path": "Obsidian设置/Community plugins/Dataview/index.md"
+      "basename": "Git",
+      "path": "Obsidian设置/Community plugins/Git.md"
     },
     {
-      "basename": "data-array",
-      "path": "Obsidian设置/Community plugins/Dataview/api/data-array.md"
+      "basename": "README",
+      "path": "Obsidian设置/Community plugins/Dataview/DataView演示/README.md"
     },
     {
-      "basename": "intro",
-      "path": "Obsidian设置/Community plugins/Dataview/api/intro.md"
-    },
-    {
-      "basename": "code-examples",
-      "path": "Obsidian设置/Community plugins/Dataview/api/code-examples.md"
-    },
-    {
-      "basename": "dql-js-inline",
-      "path": "Obsidian设置/Community plugins/Dataview/queries/dql-js-inline.md"
-    },
-    {
-      "basename": "query-types",
-      "path": "Obsidian设置/Community plugins/Dataview/queries/query-types.md"
-    },
-    {
-      "basename": "differences-to-sql",
-      "path": "Obsidian设置/Community plugins/Dataview/queries/differences-to-sql.md"
-    },
-    {
-      "basename": "data-commands",
-      "path": "Obsidian设置/Community plugins/Dataview/queries/data-commands.md"
-    },
-    {
-      "basename": "add-metadata",
-      "path": "Obsidian设置/Community plugins/Dataview/annotation/add-metadata.md"
-    },
-    {
-      "basename": "metadata-pages",
-      "path": "Obsidian设置/Community plugins/Dataview/annotation/metadata-pages.md"
-    },
-    {
-      "basename": "metadata-tasks",
-      "path": "Obsidian设置/Community plugins/Dataview/annotation/metadata-tasks.md"
-    },
-    {
-      "basename": "types-of-metadata",
-      "path": "Obsidian设置/Community plugins/Dataview/annotation/types-of-metadata.md"
-    },
-    {
-      "basename": "code-reference",
-      "path": "Obsidian设置/Community plugins/Dataview/api/code-reference.md"
-    },
-    {
-      "basename": "calendar_query_type",
-      "path": "Obsidian设置/Community plugins/Dataview/assets/calendar_query_type.png"
+      "basename": "Dataview插件综述",
+      "path": "Obsidian设置/Community plugins/Dataview/Dataview插件综述.md"
     },
     {
       "basename": "README",
       "path": "README.md"
     },
     {
-      "basename": "Dataview",
-      "path": "Obsidian设置/Community plugins/Dataview.md"
-    },
-    {
       "basename": "Outliner",
       "path": "Obsidian设置/Community plugins/Outliner.md"
-    },
-    {
-      "basename": "Git",
-      "path": "Obsidian设置/Community plugins/Git.md"
     },
     {
       "basename": "Advanced Slides",
