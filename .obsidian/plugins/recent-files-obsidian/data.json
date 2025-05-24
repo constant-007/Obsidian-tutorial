@@ -1,6 +1,14 @@
 {
   "recentFiles": [
     {
+      "basename": "friends",
+      "path": "Obsidian设置/Community plugins/Dataview/friends.md"
+    },
+    {
+      "basename": "index",
+      "path": "Obsidian设置/Community plugins/Dataview/index.md"
+    },
+    {
       "basename": "data-array",
       "path": "Obsidian设置/Community plugins/Dataview/api/data-array.md"
     },
@@ -51,10 +59,6 @@
     {
       "basename": "calendar_query_type",
       "path": "Obsidian设置/Community plugins/Dataview/assets/calendar_query_type.png"
-    },
-    {
-      "basename": "index",
-      "path": "Obsidian设置/Community plugins/Dataview/index.md"
     },
     {
       "basename": "README",
