@@ -1,31 +1,28 @@
-# Metadata on Tasks and Lists
+# 任务和列表上的元数据
 
-Just like pages, you can also add **fields** on list item and task level to bind it to a specific task as context. For this you need to use the [inline field syntax](add-metadata.md#inline-fields):
+就像页面一样，您也可以在列表项和任务级别上添加**字段**，以将其绑定到特定任务作为上下文。为此，您需要使用[内联字段语法](add-metadata.md#inline-fields)：
 
 ```markdown
 - [ ] Hello, this is some [metadata:: value]!
 - [X] I finished this on [completion:: 2021-08-15].
 ```
 
-Tasks and list items are the same data wise, so all your bullet points have all the information described here available, too.
+任务和列表项在数据方面是相同的，因此您的所有项目符号也都有这里描述的所有信息。
 
-## Field Shorthands
+## 字段简写
 
-The [Tasks](https://publish.obsidian.md/tasks/Introduction) plugin introduced a different [notation by using Emoji](https://publish.obsidian.md/tasks/Reference/Task+Formats/Tasks+Emoji+Format) to configure the different dates related to a task. In the context of Dataview, this notation is called `Field Shorthands`. The current version of Dataview only support the dates shorthands as shown below. The priorities and recurrence shorthands are not supported.
+[Tasks](https://publish.obsidian.md/tasks/Introduction)插件引入了一种不同的[使用表情符号的标记法](https://publish.obsidian.md/tasks/Reference/Task+Formats/Tasks+Emoji+Format)来配置与任务相关的不同日期。在Dataview的上下文中，这种标记法称为`字段简写`。当前版本的Dataview仅支持如下所示的日期简写。不支持优先级和重复简写。
 
-=== "Example"
-
-
-=== "Example"
+=== "示例"
     - [ ] Due this Saturday 🗓️2021-08-29
     - [x] Completed last Saturday ✅2021-08-22
     - [ ] I made this on ➕1990-06-14
     - [ ] Task I can start this weekend 🛫2021-08-29
     - [x] Task I finished ahead of schedule ⏳2021-08-29 ✅2021-08-22
 
-There are two specifics to these emoji-shorthands. First, they omit the inline field syntax (no `[🗓️:: YYYY-MM-DD]` needed) and secondly, they map to a **textual** field name data-wise:
+这些表情符号简写有两个特点。首先，它们省略了内联字段语法（不需要`[🗓️:: YYYY-MM-DD]`），其次，在数据方面它们映射到**文本**字段名称：
 
-| Field name | Short hand syntax |
+| 字段名称 | 简写语法 |
 | ---------- | ----------------- |
 | due | `🗓️YYYY-MM-DD` |
 | completion |  `✅YYYY-MM-DD` |
@@ -33,7 +30,7 @@ There are two specifics to these emoji-shorthands. First, they omit the inline f
 | start | `🛫YYYY-MM-DD` |
 | scheduled | `⏳YYYY-MM-DD` |
 
-This means if you want to query for all tasks that are completed 2021-08-22, you'll write:
+这意味着如果您想查询所有在2021-08-22完成的任务，您将编写：
 
 ~~~markdown
 ```dataview
@@ -42,53 +39,52 @@ WHERE completion = date("2021-08-22")
 ```
 ~~~
 
-Which will list both variants - shorthands and textual annotation:
+这将列出两种变体——简写和文本注释：
 
 ```markdown
 - [x] Completed last Saturday ✅2021-08-22
 - [x] Some Done Task [completion:: 2021-08-22]
 ```
 
-## Implicit Fields
+## 隐式字段
 
-As with pages, Dataview adds a number of implicit fields to each task or list item:
+与页面一样，Dataview向每个任务或列表项添加了许多隐式字段：
 
-!!! info "Inheritance of Fields"
-    Tasks inherit *all fields* from their parent page - so if you have a `rating` field in your page, you can also access it on your task in a `TASK` Query.
+> [!info] 字段的继承
+> 任务从其父页面继承*所有字段*——因此如果您的页面中有`rating`字段，您也可以在`TASK`查询中的任务上访问它。
 
-
-| Field name | Data Type | Description |
+| 字段名称 | 数据类型 | 描述 |
 | ---------- | --------- | ----------- |
-| `status` |  Text | The completion status of this task, as determined by the character inside the `[ ]` brackets. Generally a space `" "` for incomplete tasks and an `"x"` for completed tasks, but allows for plugins which support alternative task statuses. |
-| `checked` |  Boolean  | Whether or not this task's status is **not** empty, meaning it has some `status` character (which may or may not be `"x"`) instead of a space in its `[ ]` brackets. |
-| `completed` |  Boolean  | Whether or not this *specific* task has been completed; this does not consider the completion or non-completion of any child tasks. A task is explicitly considered "completed" if it has been marked with an `"x"`. If you use a custom status, e.g. `[-]`, `checked` will be true, whereas `completed` will be false. |
-| `fullyCompleted` |  Boolean  | Whether or not this task and **all** of its subtasks are completed. |
-| `text` |  Text  | The plain text of this task, including any metadata field annotations. |
-| `visual` | Text | The text of this task, which is rendered by Dataview. This field can be overridden in DataviewJS to allow for different task text to be rendered than the regular task text, while still allowing the task to be checked (since Dataview validation logic normally checks the text against the text in-file). |
-| `line` |  Number  | The line of the file this task shows up on. |
-| `lineCount` |  Number  | The number of Markdown lines that this task takes up. |
-| `path` |  Text  | The full path of the file this task is in. Equals to `file.path` for [pages](./metadata-pages.md). |
-| `section` | Link |  Link to the section this task is contained in. |
-| `tags` | List  | Any tags inside the task text. |
-| `outlinks` | List |  Any links defined in this task. |
-| `link` | Link  |  Link to the closest linkable block near this task; useful for making links which go to the task. |
-| `children` | List  | Any subtasks or sublists of this task. |
-| `task` | Boolean  | If true, this is a task; otherwise, it is a regular list element. |
-| `annotated` | Boolean  | True if the task text contains any metadata fields, false otherwise. |
-| `parent` | Number |  The line number of the task above this task, if present; will be null if this is a root-level task. |
-| `blockId` | Text | The block ID of this task / list element, if one has been defined with the `^blockId` syntax; otherwise null. |
+| `status` |  文本 | 此任务的完成状态，由`[ ]`括号内的字符确定。通常对于未完成的任务是空格`" "`，对于已完成的任务是`"x"`，但允许支持替代任务状态的插件。 |
+| `checked` |  布尔值  | 此任务的状态是否**不**为空，意味着它在其`[ ]`括号中有某个`status`字符（可能是也可能不是`"x"`）而不是空格。 |
+| `completed` |  布尔值  | 这个*特定*任务是否已完成；这不考虑任何子任务的完成或未完成。如果任务标记为`"x"`，则明确被认为是"已完成"。如果您使用自定义状态，例如`[-]`，`checked`将为true，而`completed`将为false。 |
+| `fullyCompleted` |  布尔值  | 此任务和**所有**其子任务是否都已完成。 |
+| `text` |  文本  | 此任务的纯文本，包括任何元数据字段注释。 |
+| `visual` | 文本 | 此任务的文本，由Dataview呈现。此字段可以在DataviewJS中被覆盖，以允许渲染与常规任务文本不同的任务文本，同时仍然允许检查任务（因为Dataview验证逻辑通常检查文本与文件中的文本）。 |
+| `line` |  数字  | 此任务出现在文件的行号。 |
+| `lineCount` |  数字  | 此任务占用的Markdown行数。 |
+| `path` |  文本  | 此任务所在文件的完整路径。对于[页面](./metadata-pages.md)等于`file.path`。 |
+| `section` | 链接 |  指向包含此任务的部分的链接。 |
+| `tags` | 列表  | 任务文本内的任何标签。 |
+| `outlinks` | 列表 |  此任务中定义的任何链接。 |
+| `link` | 链接  |  指向此任务附近最近的可链接块的链接；对于创建指向任务的链接很有用。 |
+| `children` | 列表  | 此任务的任何子任务或子列表。 |
+| `task` | 布尔值  | 如果为true，这是一个任务；否则，它是一个常规列表元素。 |
+| `annotated` | 布尔值  | 如果任务文本包含任何元数据字段则为true，否则为false。 |
+| `parent` | 数字 |  此任务上方任务的行号（如果存在）；如果这是根级任务，则为null。 |
+| `blockId` | 文本 | 此任务/列表元素的块ID（如果已使用`^blockId`语法定义了一个）；否则为null。 |
 
-With usage of the [shorthand syntax](#field-shorthands), following additional properties may be available:
+使用[简写语法](#字段简写)时，以下附加属性可能可用：
 
-- `completion`: The date a task was completed.
-- `due`: The date a task is due, if it has one.
-- `created`: The date a task was created.
-- `start`: The date a task can be started.
-- `scheduled`: The date a task is scheduled to work on.
+- `completion`：任务完成的日期。
+- `due`：任务的截止日期（如果有）。
+- `created`：任务创建的日期。
+- `start`：任务可以开始的日期。
+- `scheduled`：任务计划工作的日期。
 
-### Accessing Implicit Fields in Queries
+### 在查询中访问隐式字段
 
-If you're using a [TASK](../queries/query-types.md#task) Query, your tasks are the top level information and can be used without any prefix:
+如果您使用[TASK](../queries/query-types.md#task)查询，您的任务是顶级信息，可以不带任何前缀使用：
 
 ~~~markdown
 ```dataview
@@ -97,7 +93,7 @@ WHERE !fullyCompleted
 ```
 ~~~
 
-For every other Query type, you first need to access the implicit field `file.lists` or `file.tasks` to check for these list item specific implicit fields:
+对于其他每种查询类型，您首先需要访问隐式字段`file.lists`或`file.tasks`来检查这些列表项特定的隐式字段：
 
 ~~~markdown
 ```dataview
@@ -106,4 +102,4 @@ WHERE any(file.tasks, (t) => !t.fullyCompleted)
 ```
 ~~~
 
-This will give you back all the file links that have unfinished tasks inside. We get back a list of tasks on page level and thus need to use a [list function](../reference/functions.md) to look at each element.
+这将给您返回所有内部有未完成任务的文件链接。我们在页面级别获得任务列表，因此需要使用[列表函数](../reference/functions.md)来查看每个元素。

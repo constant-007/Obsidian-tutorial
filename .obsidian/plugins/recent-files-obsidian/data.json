@@ -1,6 +1,30 @@
 {
   "recentFiles": [
     {
+      "basename": "types-of-metadata",
+      "path": "Obsidian设置/Community plugins/Dataview/annotation/types-of-metadata.md"
+    },
+    {
+      "basename": "index",
+      "path": "Obsidian设置/Community plugins/Dataview/index.md"
+    },
+    {
+      "basename": "README",
+      "path": "README.md"
+    },
+    {
+      "basename": "add-metadata",
+      "path": "Obsidian设置/Community plugins/Dataview/annotation/add-metadata.md"
+    },
+    {
+      "basename": "metadata-tasks",
+      "path": "Obsidian设置/Community plugins/Dataview/annotation/metadata-tasks.md"
+    },
+    {
+      "basename": "data-commands",
+      "path": "Obsidian设置/Community plugins/Dataview/queries/data-commands.md"
+    },
+    {
       "basename": "Dataview",
       "path": "Obsidian设置/Community plugins/Dataview.md"
     },
@@ -63,10 +87,6 @@
     {
       "basename": "Hotkeys",
       "path": "Obsidian设置/Hotkeys.md"
-    },
-    {
-      "basename": "README",
-      "path": "README.md"
     },
     {
       "basename": "Slides插件演示",

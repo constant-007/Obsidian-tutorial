@@ -1,22 +1,22 @@
-# Adding Metadata to your Pages
+# 向您的页面添加元数据
 
-Dataview cannot query all content of your vault. In order to be able to search, filter and display content, this content needs to be **indexed**. Some content is indexed automatically, like bullet points or task lists - so called **Implicit fields**, more on that below - and other data needs to be saved in a metadata **field** to be accessible through dataview. 
+Dataview无法查询您库中的所有内容。为了能够搜索、过滤和显示内容，这些内容需要被**索引**。一些内容会自动索引，如项目符号或任务列表——所谓的**隐式字段**，下面会详细介绍——而其他数据需要保存在元数据**字段**中才能通过dataview访问。
 
-## What is a "field"?
+## 什么是"字段"？
 
-A metadata field is a pair of a **key** and a **value**. The _value_ of a field has a data type (more on that [here](./types-of-metadata.md)) that determines how this field will behave when querying it. 
+元数据字段是一个**键**和一个**值**的配对。字段的_值_具有数据类型（更多信息[在这里](./types-of-metadata.md)），这决定了在查询该字段时它的行为方式。
 
-You can add any number of fields to a **note**, a **list item** or a **task**. 
+您可以向**笔记**、**列表项**或**任务**添加任意数量的字段。
 
-## How do I add fields?
+## 如何添加字段？
 
-You can add fields to a **note** in three different ways. How a field look like depends on the way you add it.
+您可以通过三种不同方式向**笔记**添加字段。字段的外观取决于您添加它们的方式。
 
-On **tasks or list items**, you will have YAML Frontmatter information available, but won't be able to add them to a specific list item. If you want to add metadata to one list item or task only, use [Inline Fields](#inline-fields).
+在**任务或列表项**上，您将可以使用YAML前端数据信息，但无法将它们添加到特定的列表项。如果您想仅向一个列表项或任务添加元数据，请使用[内联字段](#内联字段)。
 
-### Frontmatter
+### 前端数据
 
-Frontmatter is a common Markdown extension which allows for YAML metadata to be added to the top of a page. It is natively supported by Obsidian and explained in its [official documentation](https://help.obsidian.md/Advanced+topics/YAML+front+matter). All YAML Frontmatter fields will be automatically available as Dataview fields.
+前端数据是一种常见的Markdown扩展，允许在页面顶部添加YAML元数据。它由Obsidian原生支持，并在其[官方文档](https://help.obsidian.md/Advanced+topics/YAML+front+matter)中有详细说明。所有YAML前端数据字段将自动作为Dataview字段可用。
 
 ```yaml
     ---
@@ -28,13 +28,13 @@ Frontmatter is a common Markdown extension which allows for YAML metadata to be 
     ---
 ```
 
-With this your note has metadata fields named `alias`, `last-reviewed`, and `thoughts`. Each of these have different **data types**:
+通过这个，您的笔记具有名为`alias`、`last-reviewed`和`thoughts`的元数据字段。这些字段中的每一个都有不同的**数据类型**：
 
-- `alias` is a [text](types-of-metadata.md#text), because its wrapped in ""
-- `last-reviewed` is a [date](types-of-metadata.md#date), because it follows the ISO date format
-- `thoughts` is a [object](types-of-metadata.md#object) field, because it uses the YAML Frontmatter object syntax
+- `alias`是一个[文本](types-of-metadata.md#text)，因为它被包装在""中
+- `last-reviewed`是一个[日期](types-of-metadata.md#date)，因为它遵循ISO日期格式
+- `thoughts`是一个[对象](types-of-metadata.md#object)字段，因为它使用了YAML前端数据对象语法
 
-You could query for this note with the following query:
+您可以用以下查询来查询此笔记：
 
 ~~~
 ```dataview
@@ -43,11 +43,11 @@ WHERE thoughts.rating = 8
 ```
 ~~~
 
-### Inline Fields
+### 内联字段
 
-For those wanting a more natural-looking annotation, Dataview supports "inline" fields via a `Key:: Value` syntax that you can use everywhere in your file. This allows you to write your queryable data right where you need it - for example in the middle of a sentence. 
+对于那些想要更自然外观注释的人，Dataview通过`Key:: Value`语法支持"内联"字段，您可以在文件中的任何地方使用。这允许您将可查询的数据写在需要的地方——例如在句子中间。
 
-If your inline field has an own line, without any content beforehand, you can write it like this: 
+如果您的内联字段有自己的行，前面没有任何内容，您可以这样写：
 
 ```markdown
 # Markdown Page
@@ -56,63 +56,62 @@ Basic Field:: Some random Value
 **Bold Field**:: Nice!
 ```
 
-All content after the `::` is the value of the field until the next line break.
+`::`后的所有内容都是字段的值，直到下一个换行符。
 
-!!! hint "Mind the `::`"
-    Note that you need to use a double colon `::` between key and value when using inline fields, contrary to YAML Frontmatter fields where one colon is enough. 
+> [!hint] 注意`::`
+> 注意在使用内联字段时，您需要在键和值之间使用双冒号`::`，这与YAML前端数据字段只需要一个冒号不同。
 
-If you want to embed metadata inside sentences, or multiple fields on the same line, you can use the bracket syntax and wrap your field in square brackets:
+如果您想在句子内嵌入元数据，或在同一行上有多个字段，您可以使用括号语法并将您的字段包装在方括号中：
 
 ```markdown
 I would rate this a [rating:: 9]! It was [mood:: acceptable].
 ```
 
-!!! info "Fields on list items and tasks"
-    When you want to annotate a list item, e.g. a task, with metadata, you always need to use the bracket syntax (because the field is not the only information in this line)
-    ```markdown
-    - [ ] Send an mail to David about the deadline [due:: 2022-04-05].
-    ```
-    Bracketed inline fields are the only way to explicitly add fields to specific list items, YAML frontmatter always applies to the whole page (but is also available in context of list items.)
+> [!info] 列表项和任务上的字段
+> 当您想要用元数据注释列表项，例如任务时，您总是需要使用括号语法（因为字段不是该行中的唯一信息）
+> ```markdown
+> - [ ] Send an mail to David about the deadline [due:: 2022-04-05].
+> ```
+> 括号内联字段是向特定列表项显式添加字段的唯一方法，YAML前端数据总是应用于整个页面（但在列表项的上下文中也可用。）
 
-There is also the alternative parenthesis syntax, which hides the key when
-rendered in Reader mode:
+还有替代的括号语法，它在阅读模式下呈现时隐藏键：
 
 ```markdown
 This will not show the (longKeyIDontNeedWhenReading:: key).
 ```
 
-will render to:
+将呈现为：
 
 ```markdown
 This will not show the key.
 ```
 
-You can use YAML Frontmatter and Inline fields with all syntax variants together in one file. You do not need to decide for one and can mix them to fit your workflow.
+您可以在一个文件中将YAML前端数据和内联字段与所有语法变体一起使用。您不需要决定使用其中一种，可以混合使用它们以适应您的工作流程。
 
-## Field names
+## 字段名称
 
-Imagine you used all the examples for Inline fields you see above in one note, then following metadata would be available to you:
+假设您在一个笔记中使用了上面内联字段的所有示例，那么以下元数据将对您可用：
 
-| Metadata Key | Sanitized Metadata key | Value | Data Type of Value |
+| 元数据键 | 清理后的元数据键 | 值 | 值的数据类型 |
 | ----------- | ------------------------|----------- | ----------- |
-| `Basic Field` | `basic-field`  | Some random Value | Text |
-| `Bold Field` | `bold-field`  | Nice! | Text |
-| `rating` | - | 9 | Number |
-| `mood` | - | acceptable | Text |
-| `due` | - | Date Object for 2022-04-05 | Date |
-| `longKeyIDontNeedWhenReading` | `longkeyidontneedwhenreading` | key | Text |
+| `Basic Field` | `basic-field`  | Some random Value | 文本 |
+| `Bold Field` | `bold-field`  | Nice! | 文本 |
+| `rating` | - | 9 | 数字 |
+| `mood` | - | acceptable | 文本 |
+| `due` | - | 2022-04-05的日期对象 | 日期 |
+| `longKeyIDontNeedWhenReading` | `longkeyidontneedwhenreading` | key | 文本 |
 
-Like you can see in the table, if you are using **spaces or capitalized letters** in your metadata key name, dataview will provide you with a **sanitized version** of the key. 
+如您在表格中所见，如果您在元数据键名称中使用**空格或大写字母**，dataview将为您提供该键的**清理版本**。
 
-**Keys with spaces** cannot be used in a query as-is. You have two possibilities here: Either use the sanitized name, that is always all lowercase and with dashes instead of spaces or use the **row** variable syntax. Find out more [in the FAQ](../resources/faq.md).
+**有空格的键**不能在查询中直接使用。您有两种可能性：要么使用清理后的名称，它总是全小写并用破折号代替空格，要么使用**row**变量语法。在[FAQ](../resources/faq.md)中了解更多。
 
-**Keys with capitalized letters** can be used as-is, if you wish. The sanitized version allows you to query for a key independent of its capitalization and makes it easier to use: You can query the same field that's, for example, in one file named `someMetadata` and in another `someMetaData` when using the sanitized key `somemetadata`. 
+**有大写字母的键**如果您愿意，可以直接使用。清理版本允许您独立于大小写查询键，并使其更容易使用：例如，当使用清理键`somemetadata`时，您可以查询在一个文件中名为`someMetadata`而在另一个文件中名为`someMetaData`的同一字段。
 
-In addition, the **bold field key is missing its formatting tokens**. Even though the `**` used to make it appear bold are part of the key name in the file, they are left out when indexing your note. The same goes for all other built-in formatting, like strike through or italic. This means formatted keys can only be queried without their formatting. This allows you to format the key in context of the note without worrying that you might create different keys for the same type of information. 
+此外，**粗体字段键缺少其格式标记**。即使用于使其显示为粗体的`**`是文件中键名称的一部分，在索引您的笔记时它们也会被忽略。其他所有内置格式也是如此，如删除线或斜体。这意味着格式化的键只能在没有格式的情况下查询。这允许您在笔记的上下文中格式化键，而不用担心可能为同一类型的信息创建不同的键。
 
-### Usage of emojis and non-latin characters
+### 表情符号和非拉丁字符的使用
 
-You are not limited to latin characters when naming your metadata fields. You can use all characters available in UTF-8:
+在命名元数据字段时，您不仅限于拉丁字符。您可以使用UTF-8中可用的所有字符：
 
 ```markdown
 Noël:: Un jeu de console
@@ -121,19 +120,19 @@ Noël:: Un jeu de console
 [xmas🎄:: a console game]
 ```
 
-**Using emojis as metadata keys** is possible, but it comes with some limitations. When using emojis in field names, you need to put them into square brackets so that dataview recognize them correctly. 
-Also, please be aware when switching the OS (i.e. from Windows to Android), the same emoji could use another character code and you might not find your metadata when querying it.
+**使用表情符号作为元数据键**是可能的，但它有一些限制。在字段名称中使用表情符号时，您需要将它们放在方括号中，以便dataview正确识别它们。
+另外，请注意在切换操作系统时（即从Windows到Android），同一个表情符号可能使用另一个字符代码，您在查询时可能找不到您的元数据。
 
-!!! info "Task Field Shorthands"
-    An exception to this are the [shorthand syntax](./metadata-tasks.md#field-shorthands) in Tasks. You can use shorthands without bracketing. Please mind though that this only counts for listed shorthands - every other field (if with emojis or not) need to use the `[key:: value]` syntax.
+> [!info] 任务字段简写
+> 对此的一个例外是任务中的[简写语法](./metadata-tasks.md#field-shorthands)。您可以使用简写而无需括号。但请注意，这仅适用于列出的简写——每个其他字段（无论是否带有表情符号）都需要使用`[key:: value]`语法。
 
-## Implicit fields
+## 隐式字段
 
-Even if you do not add any metadata explicitly to your note, dataview provides you with a big amount of indexed data out of the box. Some examples for implicit fields are:
+即使您没有向笔记中显式添加任何元数据，dataview也为您提供了大量的开箱即用的索引数据。隐式字段的一些示例包括：
 
-- day the file was created (`file.cday`)
-- links in the file (`file.outlinks`)
-- tags in the file (`file.etags`)
-- all list items in the file (`file.lists` and `file.tasks`)
+- 文件创建日期 (`file.cday`)
+- 文件中的链接 (`file.outlinks`)
+- 文件中的标签 (`file.etags`)
+- 文件中的所有列表项 (`file.lists`和`file.tasks`)
 
-and many more. Available implicit fields differ depending if you look at a page or a list item. Find the full list of available implicit fields on [Metadata on pages](metadata-pages.md) and [Metadata on Tasks and Lists](metadata-tasks.md).
+以及更多。可用的隐式字段根据您是查看页面还是列表项而有所不同。在[页面上的元数据](metadata-pages.md)和[任务和列表上的元数据](metadata-tasks.md)上找到可用隐式字段的完整列表。

@@ -1,22 +1,22 @@
-# Query Types
+# 查询类型
 
-The **Query Type** determines how the output of your dataview query looks like. It is the **first and only mandatory** specification you give to a dataview query. There are four available: `LIST`, `TABLE`, `TASK` and `CALENDAR`.
+**查询类型**决定了您的dataview查询输出的外观。它是您给dataview查询的**第一个也是唯一必需的**规范。有四种可用类型：`LIST`、`TABLE`、`TASK`和`CALENDAR`。
 
-The Query Type also determines which **information level** a query is executed on. `LIST`, `TABLE` and `CALENDAR` operate at **page level** whereas `TASK` queries operate at the `file.tasks` level. More on that in the `TASK` Query Type.
+查询类型还决定了查询执行的**信息级别**。`LIST`、`TABLE`和`CALENDAR`在**页面级别**操作，而`TASK`查询在`file.tasks`级别操作。更多信息请参见`TASK`查询类型。
 
-You can combine **every Query Type with all available [Data Commands](data-commands.md)** to refine your result set. Read more about the interconnection between Query Types and Data Commands on [How to Use Dataview](../index.md#how-to-use-dataview) and the [structure page](structure.md).
+您可以将**每种查询类型与所有可用的[数据命令](data-commands.md)组合**来细化您的结果集。在[如何使用Dataview](../index.md#how-to-use-dataview)和[结构页面](structure.md)上阅读有关查询类型和数据命令之间相互关系的更多信息。
 
-!!! summary "Query Type"
-    The Query Type determines the output format of a query. It's the only mandatory information for a query.
+> [!summary] 查询类型
+> 查询类型决定查询的输出格式。它是查询的唯一必需信息。
 
 ## LIST
 
-`LIST` queries output a bullet point list consisting of your file links or the group name, if you decided to [group](data-commands.md#group-by). You can specify up to **one additional information** to output alongside your file or group information.
+`LIST`查询输出一个项目符号列表，包含您的文件链接或组名（如果您决定[分组](data-commands.md#group-by)）。您可以指定**最多一个附加信息**与您的文件或组信息一起输出。
 
-!!! summary "Query Type `LIST`"
-    `LIST` outputs a bullet point list of page links or Group keys. You can specify one additional information to show for each result.
+> [!summary] 查询类型`LIST`
+> `LIST`输出页面链接或组键的项目符号列表。您可以指定为每个结果显示的一个附加信息。
 
-The simplest LIST query outputs a bullet point list of all files in your vault:
+最简单的LIST查询输出您库中所有文件的项目符号列表：
 
 ~~~
 ```dataview
@@ -24,7 +24,7 @@ LIST
 ```
 ~~~
 
-**Output**
+**输出**
 
 
 - [Classic Cheesecake](#)
@@ -36,7 +36,7 @@ LIST
 - [Dashboard](#)
 
 
-but you can, of course, use [data commands](data-commands.md) to restrict which pages you want to have listed:
+但是您当然可以使用[数据命令](data-commands.md)来限制您想要列出的页面：
 
 ~~~
 ```dataview
@@ -45,14 +45,14 @@ FROM #games/mobas OR #games/crpg
 ```
 ~~~
 
-**Output**
+**输出**
 
 - [League of Legends](#)
 - [Pillars of Eternity 2](#)
 
-### Output an additional information
+### 输出附加信息
 
-To add a **additional information** to your query, specify it right after the `LIST` command and before possibly available data commands:
+要向您的查询添加**附加信息**，请在`LIST`命令之后和可能可用的数据命令之前指定它：
 
 ~~~
 ```dataview
@@ -60,7 +60,7 @@ LIST file.folder
 ```
 ~~~
 
-**Output**
+**输出**
 
 
 - [Classic Cheesecake](#): Baking/Recipes
@@ -71,7 +71,7 @@ LIST file.folder
 - [Stardew Valley](#): Games/finished
 - [Dashboard](#):
 
-You can only add **one** additional information, not multiple. But you can **specify a computed value** instead of a plain meta data field, which can contain information of multiple fields:
+您只能添加**一个**附加信息，不能添加多个。但您可以**指定计算值**而不是纯元数据字段，它可以包含多个字段的信息：
 
 ~~~
 ```dataview
@@ -80,15 +80,15 @@ FROM "Games"
 ```
 ~~~
 
-**Output**
+**输出**
 
 - [League of Legends](#): File Path: Games _(created: May 13, 2021)_
 - [Pillars of Eternity 2](#): File Path: Games _(created: February 02, 2022)_
 - [Stardew Valley](#): File Path: Games/finished _(created: April 04, 2021)_
 
-### Grouping
+### 分组
 
-A **grouped list** shows their group keys, and only the group keys, by default:
+默认情况下，**分组列表**显示其组键，且仅显示组键：
 
 ~~~
 ```dataview
@@ -97,7 +97,7 @@ GROUP BY type
 ```
 ~~~
 
-**Output**
+**输出**
 
 - game
 - knowledge
@@ -105,7 +105,7 @@ GROUP BY type
 - recipe
 - summary
 
-A common use-case on grouped `LIST` queries is to add the file links to the output by specifying them as the additional information:
+分组`LIST`查询的常见用例是通过将文件链接指定为附加信息来将其添加到输出中：
 
 ~~~
 ```dataview
@@ -129,7 +129,7 @@ GROUP BY type
 
 ### LIST WITHOUT ID
 
-If you don't want the file name or group key included in the list view, you can use `LIST WITHOUT ID`. `LIST WITHOUT ID` works the same as `LIST`, but it does not output the file link or group name if you add an additional information.
+如果您不希望在列表视图中包含文件名或组键，可以使用`LIST WITHOUT ID`。`LIST WITHOUT ID`的工作方式与`LIST`相同，但如果您添加附加信息，它不会输出文件链接或组名。
 
 ~~~
 ```dataview
@@ -137,7 +137,7 @@ LIST WITHOUT ID
 ```
 ~~~
 
-**Output**
+**输出**
 
 
 - [Classic Cheesecake](#)
@@ -148,7 +148,7 @@ LIST WITHOUT ID
 - [Stardew Valley](#)
 - [Dashboard](#)
 
-It's the same as `LIST`, because it does not contain an additional information!
+这与`LIST`相同，因为它不包含附加信息！
 
 ~~~
 ```dataview
@@ -156,7 +156,7 @@ LIST WITHOUT ID type
 ```
 ~~~
 
-**Output**
+**输出**
 
 - moc
 - recipe
@@ -166,7 +166,7 @@ LIST WITHOUT ID type
 - game
 - game
 
-`LIST WITHOUT ID` can be handy if you want to output computed values, for example.
+例如，如果您想输出计算值，`LIST WITHOUT ID`会很方便。
 
 ~~~
 ```dataview
@@ -175,7 +175,7 @@ GROUP BY type
 ```
 ~~~
 
-**Output**
+**输出**
 
 - 3 pages of type game
 - 1 pages of type knowledge
@@ -185,10 +185,10 @@ GROUP BY type
 
 ## TABLE
 
-The `TABLE` query types outputs page data as a tabular view. You can add zero to multiple meta data fields to your `TABLE` query by adding them as a **comma separated list**. You can not only use plain meta data fields as columns, but specify **calculations** as well. Optionally, you can specify a **table header** via the `AS <header>` syntax. Like all other query types, you can refine your result set for your query with [data commands](data-commands.md).
+`TABLE`查询类型将页面数据输出为表格视图。您可以通过将其添加为**逗号分隔的列表**来向您的`TABLE`查询添加零到多个元数据字段。您不仅可以使用纯元数据字段作为列，还可以指定**计算**。可选地，您可以通过`AS <header>`语法指定**表头**。与所有其他查询类型一样，您可以使用[数据命令](data-commands.md)为您的查询细化结果集。
 
-!!! summary "`TABLE` Query Type"
-    `TABLE` queries render a tabular view of any number of meta data values or calculations. It is possible to specify column headers via `AS <header>`.
+> [!summary] `TABLE`查询类型
+> `TABLE`查询呈现任意数量的元数据值或计算的表格视图。可以通过`AS <header>`指定列标题。
 
 ~~~
 ```dataview
@@ -196,7 +196,7 @@ TABLE
 ```
 ~~~
 
-**Output**
+**输出**
 
 | File (7) |
 | ----- |
@@ -208,14 +208,14 @@ TABLE
 | [Stardew Valley](#) |
 | [Dashboard](#) |
 
-!!! hint "Changing the first column header name"
-    You can change the name of the first column header (by default "File" or "Group") via the Dataview Settings under Table Settings -> Primary Column Name / Group Column Name.
-    If you want to change the name only for one specific `TABLE` query, have a look at `TABLE WITHOUT ID`.
+> [!hint] 更改第一列标题名称
+> 您可以通过Dataview设置在表格设置 -> 主列名称/组列名称下更改第一列标题的名称（默认为"File"或"Group"）。
+> 如果您只想为一个特定的`TABLE`查询更改名称，请查看`TABLE WITHOUT ID`。
 
-!!! info "Disabling Result count"
-    The first column always shows the result count. If you do not want to get it displayed, you can disable it in Dataview's settings ("Display result count", available since 0.5.52).
+> [!info] 禁用结果计数
+> 第一列总是显示结果计数。如果您不想显示它，可以在Dataview的设置中禁用它（"显示结果计数"，自0.5.52版本起可用）。
 
-Of course, a `TABLE` is made for specifying one to multiple additional information:
+当然，`TABLE`是为指定一到多个附加信息而设计的：
 
 ~~~
 ```dataview
@@ -224,7 +224,7 @@ FROM #games
 ```
 ~~~
 
-**Output**
+**输出**
 
 | File (3) | started | file.folder | file.etags |
 | --- | --- | --- | --- |
@@ -232,12 +232,12 @@ FROM #games
 | [Pillars of Eternity 2](#)  | 	April 21, 2022 | 	Games	 | - #games/crpg |
 | [Stardew Valley](#) | 	April 04, 2021 | 	Games/finished	 |  - #games/simulation |
 
-!!! hint "Implicit fields"
-    Curious about `file.folder` and `file.etags`? Learn more about [implicit fields on pages](../annotation/metadata-pages.md).
+> [!hint] 隐式字段
+> 对`file.folder`和`file.etags`感到好奇？在[页面上的隐式字段](../annotation/metadata-pages.md)中了解更多。
 
-### Custom Column Headers
+### 自定义列标题
 
-You can specify **custom headings** for your columns by using the `AS` syntax:
+您可以使用`AS`语法为您的列指定**自定义标题**：
 
 ~~~
 ```dataview
@@ -246,7 +246,7 @@ FROM #games
 ```
 ~~~
 
-**Output**
+**输出**
 
 | File (3) | started | Path | File Tags |
 | --- | --- | --- | --- |
@@ -254,10 +254,10 @@ FROM #games
 | [Pillars of Eternity 2](#)  | 	April 21, 2022 | 	Games	 | - #games/crpg |
 | [Stardew Valley](#) | 	April 04, 2021 | 	Games/finished	 |  - #games/simulation |
 
-!!! info "Custom headers with spaces"
-    If you want to use a custom header with spaces, like `File Tags`, you need to wrap it into double quotes: `"File Tags"`.
+> [!info] 带空格的自定义标题
+> 如果您想使用带空格的自定义标题，如`File Tags`，您需要将其包装在双引号中：`"File Tags"`。
 
-This is especially useful when you want to use **calculations or expressions as column values**:
+当您想使用**计算或表达式作为列值**时，这特别有用：
 
 ~~~
 ```dataview
@@ -269,7 +269,7 @@ FROM #games
 ```
 ~~~
 
-**Output**
+**输出**
 
 | File (3) | Played for | Path | File Tags |
 | --- | --- | --- | --- |
@@ -277,14 +277,14 @@ FROM #games
 | [Pillars of Eternity 2](#)  | 	7 months, 2 days | 	Games	 | - #games/crpg |
 | [Stardew Valley](#) | 	4 months, 3 weeks, 3 days | 	Games/finished	 |  - #games/simulation |
 
-!!! hint "Calculations and expressions"
-    Learn more about the capability of computing expressions and calculations under [expressions](../reference/expressions.md) and [functions](../reference/functions.md).
+> [!hint] 计算和表达式
+> 在[表达式](../reference/expressions.md)和[函数](../reference/functions.md)下了解更多关于计算表达式和计算能力的信息。
 
 ### TABLE WITHOUT ID
 
-If you don't want the first column ("File" or "Group" by default), you can use `TABLE WITHOUT ID`. `TABLE WITHOUT ID` works the same as `TABLE`, but it does not output the file link or group name as a first column if you add additional information.
+如果您不想要第一列（默认为"File"或"Group"），可以使用`TABLE WITHOUT ID`。`TABLE WITHOUT ID`的工作方式与`TABLE`相同，但如果您添加附加信息，它不会将文件链接或组名作为第一列输出。
 
-You can use this if you, for example, output another identifying value:
+例如，如果您输出另一个标识值，可以使用此功能：
 
 ~~~
 ```dataview
@@ -295,7 +295,7 @@ FROM #games
 ```
 ~~~
 
-**Output**
+**输出**
 
 | steamid (3)  | File Tags |
 | --- | --- |
@@ -303,7 +303,7 @@ FROM #games
 | - |  - #games/moba |
 | 413150 |   - #games/simulation |
 
-Also, you can use `TABLE WITHOUT ID` if you want to **rename the first column for one specific query**.
+另外，如果您想为**一个特定查询重命名第一列**，也可以使用`TABLE WITHOUT ID`。
 
 ~~~
 ```dataview
@@ -314,7 +314,7 @@ FROM #games
 ```
 ~~~
 
-**Output**
+**输出**
 
 | Game (3) | File Tags |
 | --- | --- |
@@ -322,17 +322,17 @@ FROM #games
 | [Pillars of Eternity 2](#)  | - #games/crpg |
 | [Stardew Valley](#) |  - #games/simulation |
 
-!!! info "Renaming the first column in general"
-    If you want to rename the first column in all cases, change the name in Dataviews settings under Table Settings.
+> [!info] 一般情况下重命名第一列
+> 如果您想在所有情况下重命名第一列，请在Dataview设置的表格设置下更改名称。
 
 ## TASK
 
-The `TASK` Query outputs **an interactive list of all tasks in your vault** that match the given [data commands](data-commands.md) (if any). `TASK` queries are special compared to the other Query Types because they do give back **Tasks as results and not pages**. This implies that all [data commands](data-commands.md) operate on **Task level** and makes it possible to granularly filter your tasks i.e. for their status or meta data specified on the task itself.
+`TASK`查询输出**您库中所有任务的交互式列表**，这些任务匹配给定的[数据命令](data-commands.md)（如果有的话）。与其他查询类型相比，`TASK`查询是特殊的，因为它们返回的是**任务作为结果而不是页面**。这意味着所有[数据命令](data-commands.md)都在**任务级别**操作，使得可以细粒度地过滤您的任务，例如根据它们的状态或在任务本身上指定的元数据。
 
-Also, `TASK` Queries are the only possibility to **manipulate your files through DQL**. Normally, Dataview does not touch the content of your files; however, if you check a task through a dataview query, it'll get **checked in its original file, too**. In the Dataview Settings under "Task Settings", you can opt-in to automatically set a `completion` meta data field when checking a task in dataview. Mind though that this only works if you check the task inside a dataview block.
+另外，`TASK`查询是**通过DQL操作您的文件**的唯一可能性。通常，Dataview不会触及您文件的内容；然而，如果您通过dataview查询检查任务，它也会**在其原始文件中被检查**。在Dataview设置的"任务设置"下，您可以选择在dataview中检查任务时自动设置`completion`元数据字段。但请注意，这只有在您在dataview块内检查任务时才有效。
 
-!!! summary "`TASK` Query Type"
-    `TASK` queries render an interactive list of all tasks in your vault. `TASK` Queries are executed on **task level**, not page level, allowing for task-specific filtering. This is the only command in dataview that modifies your original files if interacted with.
+> [!summary] `TASK`查询类型
+> `TASK`查询呈现您库中所有任务的交互式列表。`TASK`查询在**任务级别**执行，而不是页面级别，允许任务特定的过滤。这是dataview中唯一在交互时修改您原始文件的命令。
 
 ~~~
 ```dataview
@@ -340,7 +340,7 @@ TASK
 ```
 ~~~
 
-**Output**
+**输出**
 
 - [ ] Buy new shoes #shopping
 - [ ] Mail Paul about training schedule
@@ -353,7 +353,7 @@ TASK
 - [ ] Get new pillows for mom #shopping
 - [x] Buy some working pencils #shopping
 
-You can use [data commands](data-commands.md) like for all other Query Types. Data Commands are executed on task level, making [implicit fields on tasks](../annotation/metadata-tasks.md) directly available.
+您可以像所有其他查询类型一样使用[数据命令](data-commands.md)。数据命令在任务级别执行，使[任务上的隐式字段](../annotation/metadata-tasks.md)直接可用。
 
 ~~~
 ```dataview
@@ -362,12 +362,12 @@ WHERE !completed AND contains(tags, "#shopping")
 ```
 ~~~
 
-**Output**
+**输出**
 
 - [ ] Buy new shoes #shopping
 - [ ] Get new pillows for mom #shopping
 
-A common use case for tasks is to **group tasks by their originating file**:
+任务的常见用例是**按其来源文件对任务进行分组**：
 
 ~~~
 ```dataview
@@ -377,7 +377,7 @@ GROUP BY file.link
 ```
 ~~~
 
-**Output**
+**输出**
 
 [2022-07-30](#) (1)
 
@@ -394,23 +394,22 @@ GROUP BY file.link
 
 - [ ] Get new pillows for mom #shopping
 
-!!! hint "Counting tasks with subtask"
-    Noticing the (1) on the header of `2022-07-30`? Child tasks belong to their parent task and are not counted separately. Also, they **behave differently** on filtering.
+> [!hint] 计算带有子任务的任务
+> 注意到`2022-07-30`标题上的(1)吗？子任务属于其父任务，不会单独计算。另外，它们在过滤时**行为不同**。
 
-### Child Tasks
+### 子任务
 
-A task is considered a **child task** if it is **indented by a tab** and is below an unindented task.
+如果任务**用制表符缩进**并且在未缩进的任务下方，则被视为**子任务**。
 
 - [ ] clean up the house
 	- [ ] kitchen
 	- [x] living room
 	- [ ] Bedroom [urgent:: true]
 
+> [!info] 项目符号列表项的子项
+> 虽然项目符号列表项下的缩进任务严格来说也是子任务，但Dataview在大多数情况下会将它们作为普通任务处理。
 
-!!! info "Children of a bullet point item"
-    While indented tasks under a bulleted list item are, strictly speaking, also child tasks, Dataview will handle them like normal tasks in most cases.
-
-Child Tasks **belong to their parent**. This means if you're querying for tasks, you'll get child tasks as part of their parent back.
+子任务**属于其父任务**。这意味着如果您查询任务，您将获得子任务作为其父任务的一部分。
 
 ~~~
 ```dataview
@@ -418,7 +417,7 @@ TASK
 ```
 ~~~
 
-**Output**
+**输出**
 
 - [ ] clean up the house
 	- [ ] kitchen
@@ -427,7 +426,7 @@ TASK
 - [ ] Call the insurance about the car
 - [x] Find out the transaction number
 
-This specifically means that child task will be part of your result set **as long as the parent matches the query** - even if the child task itself doesn't.
+这特别意味着，只要父任务匹配查询，子任务就会成为您结果集的一部分——**即使子任务本身不匹配**。
 
 ~~~
 ```dataview
@@ -436,7 +435,7 @@ WHERE !completed
 ```
 ~~~
 
-**Output**
+**输出**
 
 - [ ] clean up the house
 	- [ ] kitchen
@@ -444,9 +443,9 @@ WHERE !completed
 	- [ ] Bedroom [urgent:: true]
 - [ ] Call the insurance about the car
 
-Here, `living room` does **not match** the query, but is included anyway, because its parent `clean up the house` does match.
+在这里，`living room`**不匹配**查询，但仍然被包括在内，因为其父任务`clean up the house`匹配。
 
-Mind that you'll get individual children tasks back, if the child matches your predicate but the parent doesn't:
+请注意，如果子任务匹配您的谓词但父任务不匹配，您将获得单独的子任务：
 
 ~~~
 ```dataview
@@ -455,18 +454,16 @@ WHERE urgent
 ```
 ~~~
 
-**Output**
+**输出**
 
 - [ ] Bedroom [urgent:: true]
 
 ## CALENDAR
 
-The `CALENDAR` Query outputs a monthly based calendar where every result is depicted as a dot on it referring date. The `CALENDAR` is the only Query Type that requires an additional information. This additional information needs to be a [date](../annotation/types-of-metadata.md#date) (or unset) on all queried pages.
+`CALENDAR`查询输出一个基于月份的日历，其中每个结果都以点的形式描绘在其引用日期上。`CALENDAR`是唯一需要附加信息的查询类型。这个附加信息需要是所有查询页面上的[日期](../annotation/types-of-metadata.md#date)（或未设置）。
 
-!!! summary "`CALENDAR` Query Type"
-    The `CALENDAR` Query Types renders a calendar view where every result is represented by a dot on the given meta data field date.
-
-
+> [!summary] `CALENDAR`查询类型
+> `CALENDAR`查询类型呈现一个日历视图，其中每个结果由给定元数据字段日期上的点表示。
 
 ~~~
 ```dataview
@@ -474,11 +471,11 @@ CALENDAR file.ctime
 ```
 ~~~
 
-**Output**
+**输出**
 
 ![](../assets/calendar_query_type.png)
 
-While it is possible to use `SORT` and `GROUP BY` in combination with `CALENDAR`, it has **no effect**. Additionally, the calendar query does not render if the given meta data field contains something else than a valid [date](../annotation/types-of-metadata.md#date) (but the field can be empty). To make sure you're only taking valid pages into account, you can filter for valid meta data values:
+虽然可以将`SORT`和`GROUP BY`与`CALENDAR`组合使用，但它**没有效果**。另外，如果给定的元数据字段包含除有效[日期](../annotation/types-of-metadata.md#date)之外的其他内容，日历查询将不会渲染（但字段可以为空）。为了确保您只考虑有效的页面，您可以过滤有效的元数据值：
 
 ~~~
 ```dataview
