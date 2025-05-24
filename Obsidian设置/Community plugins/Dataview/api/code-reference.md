@@ -1,6 +1,6 @@
-# Codeblock Reference
+# 代码块参考
 
-Dataview JavaScript Codeblocks are created using the `dataviewjs` language specification for a codeblock:
+Dataview JavaScript代码块使用`dataviewjs`语言规范创建：
 
 ~~~
 ```dataviewjs
@@ -8,96 +8,92 @@ dv.table([], ...)
 ```
 ~~~
 
-The API is available through the implicitly provided `dv` (or `dataview`) variable, through which you can query for
-information, render HTML, and configure the view.
+API通过隐式提供的`dv`（或`dataview`）变量可用，通过该变量您可以查询信息、渲染HTML并配置视图。
 
-Asynchronous API calls are marked with `⌛`.
+异步API调用用`⌛`标记。
 
-## Query
-Query methods allow you to query the Dataview index for page metadata; to render this data, use the methods in the [render section](#render).
+## 查询
+查询方法允许您查询Dataview索引以获取页面元数据；要渲染此数据，请使用[渲染部分](#render)中的方法。
 
 ### `dv.current()`
 
-Get page information (via `dv.page()`) for the page the script is currently executing on.
+获取脚本当前执行页面的页面信息（通过`dv.page()`）。
 
 ### `dv.pages(source)`
 
-Take a single string argument, `source`, which is the same form as a [query language source](../reference/sources.md).
-Return a [data array](data-array.md) of page objects, which are plain objects with all of the page fields as
-values.
+接受单个字符串参数`source`，其形式与[查询语言源](../reference/sources.md)相同。
+返回页面对象的[数据数组](data-array.md)，这些是包含所有页面字段作为值的普通对象。
 
 ```js
-dv.pages() => all pages in your vault
-dv.pages("#books") => all pages with tag 'books'
-dv.pages('"folder"') => all pages from folder "folder"
-dv.pages("#yes or -#no") => all pages with tag #yes, or which DON'T have tag #no
-dv.pages('"folder" or #tag') => all pages with tag #tag, or from folder "folder"
+dv.pages() => 库中的所有页面
+dv.pages("#books") => 所有带有'books'标签的页面
+dv.pages('"folder"') => 来自文件夹"folder"的所有页面
+dv.pages("#yes or -#no") => 所有带有#yes标签或没有#no标签的页面
+dv.pages('"folder" or #tag') => 所有带有#tag标签或来自文件夹"folder"的页面
 ```
 
-Note that folders need to be double-quoted inside the string (i.e., `dv.pages("folder")` does not work, but
-`dv.pages('"folder"')` does) - this is to exactly match how sources are written in the query language.
+请注意，文件夹需要在字符串内用双引号引起来（即，`dv.pages("folder")`不起作用，但`dv.pages('"folder"')`起作用）——这是为了完全匹配源在查询语言中的写法。
 
 ### `dv.pagePaths(source)`
 
-As with `dv.pages`, but just returns a [data array](data-array.md) of paths of pages that match the given source.
+与`dv.pages`相同，但只返回匹配给定源的页面路径的[数据数组](data-array.md)。
 
 ```js
-dv.pagePaths("#books") => the paths of pages with tag 'books'
+dv.pagePaths("#books") => 带有'books'标签的页面路径
 ```
 
 ### `dv.page(path)`
 
-Map a simple path or link to the full page object, which includes all of the pages fields. Automatically does link resolution,
-and will figure out the extension automatically if not present.
+将简单路径或链接映射到完整的页面对象，其中包括所有页面字段。自动进行链接解析，如果未提供扩展名，将自动确定扩展名。
 
 ```js
-dv.page("Index") => The page object for /Index
-dv.page("books/The Raisin.md") => The page object for /books/The Raisin.md
+dv.page("Index") => /Index的页面对象
+dv.page("books/The Raisin.md") => /books/The Raisin.md的页面对象
 ```
 
-## Render
+## 渲染
 
 ### `dv.el(element, text)`
 
-Render arbitrary text in the given html element.
+在给定的html元素中渲染任意文本。
 ```js
-dv.el("b", "This is some bold text");
+dv.el("b", "这是一些粗体文本");
 ```
 
-You can specify custom classes to add to the element via `cls`, and additional attributes via `attr`:
+您可以通过`cls`指定要添加到元素的自定义类，通过`attr`指定附加属性：
 
 ```js
-dv.el("b", "This is some text", { cls: "dataview dataview-class", attr: { alt: "Nice!" } });
+dv.el("b", "这是一些文本", { cls: "dataview dataview-class", attr: { alt: "很好！" } });
 ```
 
 ### `dv.header(level, text)`
 
-Render a header of level 1 - 6 with the given text.
+渲染给定文本的1-6级标题。
 
 ```js
-dv.header(1, "Big!");
-dv.header(6, "Tiny");
+dv.header(1, "大！");
+dv.header(6, "小");
 ```
 
 ### `dv.paragraph(text)`
 
-Render arbitrary text in a paragraph.
+在段落中渲染任意文本。
 
 ```js
-dv.paragraph("This is some text");
+dv.paragraph("这是一些文本");
 ```
 
 ### `dv.span(text)`
 
-Render arbitrary text in a span (no padding above/below, unlike a paragraph).
+在span中渲染任意文本（上方/下方无填充，与段落不同）。
 
 ```js
-dv.span("This is some text");
+dv.span("这是一些文本");
 ```
 
 ### `dv.execute(source)`
 
-Execute an arbitrary dataview query and embed the view into the current page.
+执行任意dataview查询并将视图嵌入到当前页面中。
 
 ```js
 dv.execute("LIST FROM #tag");
@@ -106,7 +102,7 @@ dv.execute("TABLE field1, field2 FROM #thing");
 
 ### `dv.executeJs(source)`
 
-Execute an arbitrary DataviewJS query and embed the view into the current page.
+执行任意DataviewJS查询并将视图嵌入到当前页面中。
 
 ```js
 dv.executeJs("dv.list([1, 2, 3])");
@@ -114,17 +110,13 @@ dv.executeJs("dv.list([1, 2, 3])");
 
 ### `dv.view(path, input)`
 
-Complex function which allows for custom views. Will attempt to load a JavaScript file at the given path, passing it
-`dv` and `input` and allowing it to execute. This allows for you to re-use custom view code across multiple pages. Note
-that this is an asynchronous function since it involves file I/O - make sure to `await` the result!
-
+复杂函数，允许自定义视图。将尝试在给定路径加载JavaScript文件，传递`dv`和`input`并允许其执行。这允许您在多个页面中重用自定义视图代码。请注意，这是一个异步函数，因为它涉及文件I/O——确保`await`结果！
 
 ```js
 await dv.view("views/custom", { arg1: ..., arg2: ... });
 ```
 
-If you want to also include custom CSS in your view, you can instead pass a path to a folder containing `view.js` and
-`view.css`; the CSS will be added to the view automatically:
+如果您还想在视图中包含自定义CSS，可以传递包含`view.js`和`view.css`的文件夹路径；CSS将自动添加到视图中：
 
 ```
 views/custom
@@ -132,26 +124,25 @@ views/custom
  -> view.css
 ```
 
-View scripts have access to the `dv` object (the API object), and an `input` object which is exactly whatever the second
-argument of `dv.view()` was.
+视图脚本可以访问`dv`对象（API对象）和`input`对象，`input`对象正是`dv.view()`第二个参数的内容。
 
-Bear in mind, `dv.view()` cannot read from directories starting with a dot, like `.views`. Example of an incorrect usage:
+请记住，`dv.view()`无法从以点开头的目录（如`.views`）读取。错误用法示例：
 
 ```js
 await dv.view(".views/view1", { arg1: 'a', arg2: 'b' });
 ```
-Attempting this will yield the following exception:
+尝试这样做将产生以下异常：
 
 ```
 Dataview: custom view not found for '.views/view1/view.js' or '.views/view1.js'.
 ```
 
-Also note, directory paths always originate from the vault root.
+另外请注意，目录路径始终从库根目录开始。
 
-#### Example
-In this example, we have a custom script file named `view1.js` in the `scripts` directory. 
+#### 示例
+在此示例中，我们在`scripts`目录中有一个名为`view1.js`的自定义脚本文件。
 
-**File:** `scripts/view1.js`
+**文件：** `scripts/view1.js`
 ```js
 console.log(`Loading view1`);
 
@@ -161,94 +152,124 @@ function foo(...args) {
 foo(input)
 ```
 
-And we have an Obsidian document located under `projects`. We'll call `dv.view()` from this document using the `scripts/view1.js` path.
+我们在`projects`下有一个Obsidian文档。我们将使用`scripts/view1.js`路径从该文档调用`dv.view()`。
 
-**Document:** `projects/customViews.md`
+**文档：** `projects/customViews.md`
 ```js
 await dv.view("scripts/view1", { arg1: 'a', arg2: 'b' }) 
 ```
 
-When the above script is executed, it will print the following:
+执行上述脚本时，它将打印以下内容：
 
 ```
 Loading view1
 foo is called with args {arg1: 'a', arg2: 'b'}
 ```
 
-## Dataviews
+## 数据视图
 
 ### `dv.list(elements)`
 
-Render a dataview list of elements; accept both vanilla arrays and data arrays.
+渲染元素的dataview列表；接受普通数组和数据数组。
 
 ```js
-dv.list([1, 2, 3]) => list of 1, 2, 3
-dv.list(dv.pages().file.name) => list of all file names
-dv.list(dv.pages().file.link) => list of all file links
-dv.list(dv.pages("#book").where(p => p.rating > 7)) => list of all books with rating greater than 7
+dv.list([1, 2, 3]) => 1, 2, 3的列表
+dv.list(dv.pages().file.name) => 所有文件名的列表
+dv.list(dv.pages().file.link) => 所有文件链接的列表
+dv.list(dv.pages("#book").where(p => p.rating > 7)) => 评分大于7的所有书籍的列表
 ```
 
 ### `dv.taskList(tasks, groupByFile)`
 
-Render a dataview list of `Task` objects, as obtained by `page.file.tasks`. By default, this view will automatically
-group the tasks by their origin file. If you provide `false` as a second argument explicitly, it will instead render them
-as a single unified list.
+渲染`Task`对象的dataview列表，如通过`page.file.tasks`获得的。默认情况下，此视图将自动按任务的原始文件分组。如果您明确提供`false`作为第二个参数，它将以单个统一列表的形式渲染它们。
 
 ```js
-// List all tasks from pages marked '#project'
+// 列出标记为'#project'的页面中的所有任务
 dv.taskList(dv.pages("#project").file.tasks)
 
-// List all *uncompleted* tasks from pages marked #project
+// 列出标记为#project的页面中所有*未完成*的任务
 dv.taskList(dv.pages("#project").file.tasks
     .where(t => !t.completed))
 
-// List all tasks tagged with '#tag' from pages marked #project
+// 列出标记为#project的页面中所有带有'#tag'标签的任务
 dv.taskList(dv.pages("#project").file.tasks
     .where(t => t.text.includes("#tag")))
 
-// List all tasks from pages marked '#project', without grouping.
+// 列出标记为'#project'的页面中的所有任务，不进行分组。
 dv.taskList(dv.pages("#project").file.tasks, false)
 ```
 
 ### `dv.table(headers, elements)`
 
-Renders a dataview table. `headers` is an array of column headers. `elements` is an array of rows. Each row is itself an array of columns. Inside a row, every column which is an array will be rendered with bullet points.
+使用给定的标题列表和元素的2D数组渲染表格。标题应该是字符串列表，元素应该是任意dataview值（可能是链接、字符串、数字等）的2D数组。
 
 ```js
-dv.table(
-	["Col1", "Col2", "Col3"],
-		[
-			["Row1", "Dummy", "Dummy"],
-			["Row2", 
-				["Bullet1",
-				 "Bullet2",
-				 "Bullet3"],
-			 "Dummy"],
-			["Row3", "Dummy", "Dummy"]
+dv.table(["Name", "Value"], [["A", 1], ["B", 2]])
+```
+
+您还可以使用表格来渲染嵌套列表，而无需显式创建列表字符串：
+
+```js
+dv.table(["文件", "任务"],
+	dv.pages("#project").map(p => [
+		p.file.link,
+		p.file.tasks.map(t => t.text)
+	])
+);
+```
+
+如果您要渲染包含数组的任何表格行，渲染器将呈现这些数组中的项目列表：
+
+```js
+	dv.table(["Name", "Phone Numbers", "Age"],
+		[["Pete", 
+			["555-123-4567", 
+			 "555-123-4568", 
+			 "555-123-4569"], 
+		  20],
+		 ["Joan", 
+			["555-193-3419"],
+		  25],
+		 ["Maverick", 
+			["555-1923-3487"], 
+		  35]
 		]
 	);
 ```
 
-An example of how to render a simple table of book info sorted by rating.
+这将渲染为：
 
 ```js
-dv.table(["File", "Genre", "Time Read", "Rating"], dv.pages("#book")
+	dv.table(["Name", "Lists", "Dummy"],
+		[["Pete", 
+				["项目符号1",
+				 "项目符号2",
+				 "项目符号3"],
+			 "虚拟"],
+			["行3", "虚拟", "虚拟"]
+		]
+	);
+```
+
+一个如何渲染按评分排序的简单书籍信息表格的示例。
+
+```js
+dv.table(["文件", "流派", "阅读时间", "评分"], dv.pages("#book")
     .sort(b => b.rating)
     .map(b => [b.file.link, b.genre, b["time-read"], b.rating]))
 ```
 
-## Markdown Dataviews
+## Markdown数据视图
 
-Functions which render to plain Markdown strings which you can then render or manipulate as desired.
+渲染为您可以按需渲染或操作的纯Markdown字符串的函数。
 
 ### `dv.markdownTable(headers, values)`
 
-Equivalent to `dv.table()`, which renders a table with the given list of headers and 2D array of elements, but
-returns plain Markdown.
+等效于`dv.table()`，使用给定的标题列表和元素的2D数组渲染表格，但返回纯Markdown。
 
 ```js
-// Render a simple table of book info sorted by rating.
-const table = dv.markdownTable(["File", "Genre", "Time Read", "Rating"], dv.pages("#book")
+// 渲染按评分排序的简单书籍信息表格。
+const table = dv.markdownTable(["文件", "流派", "阅读时间", "评分"], dv.pages("#book")
     .sort(b => b.rating)
     .map(b => [b.file.link, b.genre, b["time-read"], b.rating]))
 
@@ -257,7 +278,7 @@ dv.paragraph(table);
 
 ### `dv.markdownList(values)`
 
-Equivalent to `dv.list()`, which renders a list of the given elements, but returns plain Markdown.
+等效于`dv.list()`，渲染给定元素的列表，但返回纯Markdown。
 
 ```js
 const markdown = dv.markdownList([1, 2, 3]);
@@ -266,27 +287,26 @@ dv.paragraph(markdown);
 
 ### `dv.markdownTaskList(tasks)`
 
-Equivalent to `dv.taskList()`, which renders a task list, but returns plain Markdown.
+等效于`dv.taskList()`，渲染任务列表，但返回纯Markdown。
 
 ```js
 const markdown = dv.markdownTaskList(dv.pages("#project").file.tasks);
 dv.paragraph(markdown);
 ```
  
-## Utility
+## 实用工具
 
 ### `dv.array(value)`
 
-Convert a given value or array into a Dataview [data array](data-array.md). If the value is already a data array, returns
-it unchanged.
+将给定值或数组转换为Dataview[数据数组](data-array.md)。如果值已经是数据数组，则返回不变。
 
 ```js
-dv.array([1, 2, 3]) => dataview data array [1, 2, 3]
+dv.array([1, 2, 3]) => dataview数据数组[1, 2, 3]
 ```
 
 ### `dv.isArray(value)`
 
-Returns true if the given value is an array or dataview array.
+如果给定值是数组或dataview数组，则返回true。
 
 ```js
 dv.isArray(dv.array([1, 2, 3])) => true
@@ -296,19 +316,17 @@ dv.isArray({ x: 1 }) => false
 
 ### `dv.fileLink(path, [embed?], [display-name])`
 
-Converts a textual path into a Dataview `Link` object; you can optionally also specify if the link is embedded as well
-as it's display name.
+将文本路径转换为Dataview`Link`对象；您还可以可选地指定链接是否嵌入以及它的显示名称。
 
 ```js
-dv.fileLink("2021-08-08") => link to file named "2021-08-08"
-dv.fileLink("book/The Raisin", true) => embed link to "The Raisin"
-dv.fileLink("Test", false, "Test File") => link to file "Test" with display name "Test File"
+dv.fileLink("2021-08-08") => 指向名为"2021-08-08"的文件的链接
+dv.fileLink("book/The Raisin", true) => 指向"The Raisin"的嵌入链接
+dv.fileLink("Test", false, "Test File") => 指向文件"Test"的链接，显示名称为"Test File"
 ```
 
 ### `dv.sectionLink(path, section, [embed?], [display?])`
 
-Converts a textual path + section name into a Dataview `Link` object; you can optionally also specify if the link is embedded and
-it's display name.
+将文本路径+节名称转换为Dataview`Link`对象；您还可以可选地指定链接是否嵌入以及它的显示名称。
 
 ```js
 dv.sectionLink("Index", "Books") => [[Index#Books]]
@@ -317,8 +335,7 @@ dv.sectionLink("Index", "Books", false, "My Books") => [[Index#Books|My Books]]
 
 ### `dv.blockLink(path, blockId, [embed?], [display?])`
 
-Converts a textual path + block ID into a Dataview `Link` object; you
-can optionally also specify if the link is embedded and it's display name.
+将文本路径+块ID转换为Dataview`Link`对象；您还可以可选地指定链接是否嵌入以及它的显示名称。
 
 ```js
 dv.blockLink("Notes", "12gdhjg3") => [[Index#^12gdhjg3]]
@@ -326,16 +343,16 @@ dv.blockLink("Notes", "12gdhjg3") => [[Index#^12gdhjg3]]
 
 ### `dv.date(text)`
 
-Coerce text and links to luxon `DateTime`; if provided with a `DateTime`, return it unchanged.
+将文本和链接强制转换为luxon`DateTime`；如果提供`DateTime`，则返回不变。
 
 ```js
-dv.date("2021-08-08") => DateTime for August 8th, 2021
-dv.date(dv.fileLink("2021-08-07")) => dateTime for August 8th, 2021
+dv.date("2021-08-08") => 2021年8月8日的DateTime
+dv.date(dv.fileLink("2021-08-07")) => 2021年8月8日的dateTime
 ```
 
 ### `dv.duration(text)`
 
-Coerce text to a luxon `Duration`; uses the same parsing rules as Dataview duration types.
+将文本强制转换为luxon`Duration`；使用与Dataview持续时间类型相同的解析规则。
 
 ```js
 dv.duration("8 minutes") => Duration { 8 minutes }
@@ -344,9 +361,7 @@ dv.duration("9 hours, 2 minutes, 3 seconds") => Duration { 9 hours, 2 minutes, 3
 
 ### `dv.compare(a, b)`
 
-Compare two arbitrary JavaScript values according to dataview's default comparison rules; useful if you are writing a
-custom comparator and want to fall back to the default behavior. Returns a negative value if `a < b`, 0 if `a = b`, and
-a positive value if `a > b`.
+根据dataview的默认比较规则比较两个任意JavaScript值；如果您正在编写自定义比较器并希望回退到默认行为，这很有用。如果`a < b`返回负值，如果`a = b`返回0，如果`a > b`返回正值。
 
 ```js
 dv.compare(1, 2) = -1
@@ -356,8 +371,7 @@ dv.compare({ what: 0 }, { what: 0 }) = 0
 
 ### `dv.equal(a, b)`
 
-Compare two arbitrary JavaScript values and return true if they are equal according to Dataview's default comparison
-rules.
+比较两个任意JavaScript值，如果根据Dataview的默认比较规则它们相等，则返回true。
 
 ```js
 dv.equal(1, 2) = false
@@ -366,7 +380,7 @@ dv.equal(1, 1) = true
 
 ### `dv.clone(value)`
 
-Deep clone any Dataview value, including dates, arrays, and links.
+深度克隆任何Dataview值，包括日期、数组和链接。
 
 ```js
 dv.clone(1) = 1
@@ -375,8 +389,7 @@ dv.clone({ a: 1 }) = { a: 1 }
 
 ### `dv.parse(value)`
 
-Parse an arbitrary string object into a complex Dataview type
-(mainly supporting links, dates, and durations).
+将任意字符串对象解析为复杂的Dataview类型（主要支持链接、日期和持续时间）。
 
 ```js
 dv.parse("[[A]]") = Link { path: A }
@@ -384,13 +397,13 @@ dv.parse("2020-08-14") = DateTime { 2020-08-14 }
 dv.parse("9 seconds") = Duration { 9 seconds }
 ```
 
-## File I/O
+## 文件I/O
 
-These utility methods are all contained in the `dv.io` sub-API, and are all *asynchronous* (marked by ⌛).
+这些实用方法都包含在`dv.io`子API中，并且都是*异步的*（用⌛标记）。
 
 ### ⌛ `dv.io.csv(path, [origin-file])`
 
-Load a CSV from the given path (a link or string). Relative paths will be resolved relative to the optional origin file (defaulting to the current file if not provided). Return a dataview array, each element containing an object of the CSV values; if the file does not exist, return `undefined`.
+从给定路径（链接或字符串）加载CSV。相对路径将相对于可选的原始文件解析（如果未提供，则默认为当前文件）。返回dataview数组，每个元素包含CSV值的对象；如果文件不存在，返回`undefined`。
 
 ```js
 await dv.io.csv("hello.csv") => [{ column1: ..., column2: ...}, ...]
@@ -398,9 +411,7 @@ await dv.io.csv("hello.csv") => [{ column1: ..., column2: ...}, ...]
 
 ### ⌛ `dv.io.load(path, [origin-file])`
 
-Load the contents of the given path (a link or string) asynchronously. Relative paths will be resolved relative to the
-optional origin file (defaulting to the current file if not provided). Returns the string contents of the file, or
-`undefined` if the file does not exist.
+异步加载给定路径（链接或字符串）的内容。相对路径将相对于可选的原始文件解析（如果未提供，则默认为当前文件）。返回文件的字符串内容，如果文件不存在则返回`undefined`。
 
 ```js
 await dv.io.load("File") => "# File\nThis is an example file..."
@@ -408,21 +419,18 @@ await dv.io.load("File") => "# File\nThis is an example file..."
 
 ### `dv.io.normalize(path, [origin-file])`
 
-Convert a relative link or path into an absolute path. If `origin-file` is provided, then the resolution is doing as if
-you were resolving the link from that file; if not, the path is resolved relative to the current file.
+将相对链接或路径转换为绝对路径。如果提供了`origin-file`，则解析就像您从该文件解析链接一样进行；如果没有，路径相对于当前文件解析。
 
 ```js
-dv.io.normalize("Test") => "dataview/test/Test.md", if inside "dataview/test"
-dv.io.normalize("Test", "dataview/test2/Index.md") => "dataview/test2/Test.md", irrespective of the current file
+dv.io.normalize("Test") => "dataview/test/Test.md"，如果在"dataview/test"内
+dv.io.normalize("Test", "dataview/test2/Index.md") => "dataview/test2/Test.md"，不管当前文件
 ```
 
-## Query Evaluation
+## 查询求值
 
 ### ⌛ `dv.query(source, [file, settings])`
 
-Execute a Dataview query and return the results as a structured return.
-The return type of this function varies by the query type being executed,
-though will always be an object with a `type` denoting the return type. This version of `query` returns a result type - you may want `tryQuery`, which instead throws an error on failed query execution.
+执行Dataview查询并以结构化返回的形式返回结果。此函数的返回类型根据执行的查询类型而变化，但总是一个带有表示返回类型的`type`的对象。此版本的`query`返回结果类型——您可能需要`tryQuery`，它在查询执行失败时抛出错误。
 
 ```javascript
 await dv.query("LIST FROM #tag") =>
@@ -435,20 +443,17 @@ await dv.query("TASK WHERE due") =>
     { successful: true, value: { type: "task", values: [task1, task2, ...] } }
 ```
 
-`dv.query` accepts two additional, optional arguments:
-1. `file`: The file path to resolve the query from (in case of references to `this`). Defaults to the current file.
-2. `settings`: Execution settings for running the query. This is largely an advanced use case (where I recommend you
-   directly check the API implementation to see all available options).
+`dv.query`接受两个额外的可选参数：
+1. `file`：解析查询的文件路径（在引用`this`的情况下）。默认为当前文件。
+2. `settings`：运行查询的执行设置。这主要是高级用例（我建议您直接检查API实现以查看所有可用选项）。
 
 ### ⌛ `dv.tryQuery(source, [file, settings])`
 
-Exactly the same as `dv.query`, but more convenient in short scripts as
-execution failures will be raised as JavaScript exceptions instead of a
-result type.
+与`dv.query`完全相同，但在短脚本中更方便，因为执行失败将作为JavaScript异常抛出，而不是结果类型。
 
 ### ⌛ `dv.queryMarkdown(source, [file], [settings])`
 
-Equivalent to `dv.query()`, but returns rendered Markdown.
+等效于`dv.query()`，但返回渲染的Markdown。
 
 ```js
 await dv.queryMarkdown("LIST FROM #tag") =>
@@ -457,24 +462,21 @@ await dv.queryMarkdown("LIST FROM #tag") =>
 
 ### ⌛ `dv.tryQueryMarkdown(source, [file], [settings])`
 
-Exactly the same as `dv.queryMarkdown()`, but throws an error on parse failure.
+与`dv.queryMarkdown()`完全相同，但在解析失败时抛出错误。
 
 ### `dv.tryEvaluate(expression, [context])`
 
-Evaluate an arbitrary dataview expression (like `2 + 2` or `link("text")` or `x * 9`); throws an `Error` on parse or
-evaluation failure. `this` is an always-available implicit variable which refers to the current file.
+求值任意dataview表达式（如`2 + 2`或`link("text")`或`x * 9`）；在解析或求值失败时抛出`Error`。`this`是一个总是可用的隐式变量，引用当前文件。
 
 ```js
 dv.tryEvaluate("2 + 2") => 4
 dv.tryEvaluate("x + 2", {x: 3}) => 5
-dv.tryEvaluate("length(this.file.tasks)") => number of tasks in the current file
+dv.tryEvaluate("length(this.file.tasks)") => 当前文件中的任务数量
 ```
 
 ### `dv.evaluate(expression, [context])`
 
-Evaluate an arbitrary dataview expression (like `2 + 2` or `link("text")` or `x * 9`), returning a `Result` object of
-the result. You can unwrap the result type by checking `result.successful` (and then fetching either `result.value`
-or `result.error`). If you want a simpler API that throws an error on a failed evaluation, use `dv.tryEvaluate`.
+求值任意dataview表达式（如`2 + 2`或`link("text")`或`x * 9`），返回结果的`Result`对象。您可以通过检查`result.successful`（然后获取`result.value`或`result.error`）来解包结果类型。如果您想要一个在求值失败时抛出错误的更简单API，请使用`dv.tryEvaluate`。
 
 ```js
 dv.evaluate("2 + 2") => Successful { value: 4 }

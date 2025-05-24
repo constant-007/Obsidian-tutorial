@@ -1,142 +1,129 @@
-# Data Arrays
+# 数据数组
 
-The general representation of result lists in Dataview is the `DataArray`, which is a [proxied](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy) version of the JavaScript array with expanded
-functionality. Data arrays support indexing and iteration (via `for` and `for ... of` loops), like normal arrays do, but
-also include many data manipulation operators like `sort`, `groupBy`, `distinct`, `where`, and so on to make
-manipulating tabular data easier.
+Dataview中结果列表的一般表示是`DataArray`，它是JavaScript数组的[代理](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy)版本，具有扩展功能。数据数组支持索引和迭代（通过`for`和`for ... of`循环），就像普通数组一样，但也包括许多数据操作运算符，如`sort`、`groupBy`、`distinct`、`where`等，以使操作表格数据更容易。
 
-## Creation
+## 创建
 
-Data arrays are returned by most Dataview APIs that can return multiple results, such as `dv.pages()`. You can also
-explicitly convert a normal JavaScript array into a Dataview array using `dv.array(<array>)`. If you want to convert a
-Data array back to a normal array, use `DataArray#array()`.
+大多数可以返回多个结果的Dataview API（如`dv.pages()`）都会返回数据数组。您也可以使用`dv.array(<array>)`将普通JavaScript数组显式转换为Dataview数组。如果您想将数据数组转换回普通数组，请使用`DataArray#array()`。
 
-## Indexing and Swizzling
+## 索引和变换
 
-Data arrays support regular indexing just like normal arrays (like `array[0]`), but importantly, they also support
-query-language-style "swizzling": if you index into a data array with a field name (like `array.field`), it
-automatically maps every element in the array to `field`, flattening `field` if it itself is also an array.
+数据数组支持像普通数组一样的常规索引（如`array[0]`），但重要的是，它们还支持查询语言风格的"变换"：如果您使用字段名称（如`array.field`）索引到数据数组中，它会自动将数组中的每个元素映射到`field`，如果`field`本身也是数组，则展平`field`。
 
-For example, `dv.pages().file.name` will return a data array of all file names in your vault;
-`dv.pages("#books").genres` will return a flattened list of all genres in your books.
+例如，`dv.pages().file.name`将返回库中所有文件名的数据数组；`dv.pages("#books").genres`将返回书籍中所有流派的展平列表。
 
-## Raw Interface
+## 原始接口
 
-The full interface for the data array implementation is provided below for reference:
+下面提供了数据数组实现的完整接口供参考：
 
 ```ts
-/** A function which maps an array element to some value. */
+/** 将数组元素映射到某个值的函数。 */
 export type ArrayFunc<T, O> = (elem: T, index: number, arr: T[]) => O;
 
-/** A function which compares two types. */
+/** 比较两个类型的函数。 */
 export type ArrayComparator<T> = (a: T, b: T) => number;
 
 /**
- * Proxied interface which allows manipulating array-based data. All functions on a data array produce a NEW array
- * (i.e., the arrays are immutable).
+ * 允许操作基于数组的数据的代理接口。数据数组上的所有函数都产生一个新数组
+ * （即，数组是不可变的）。
  */
 export interface DataArray<T> {
-    /** The total number of elements in the array. */
+    /** 数组中元素的总数。 */
     length: number;
 
-    /** Filter the data array down to just elements which match the given predicate. */
+    /** 将数据数组筛选为仅匹配给定谓词的元素。 */
     where(predicate: ArrayFunc<T, boolean>): DataArray<T>;
-    /** Alias for 'where' for people who want array semantics. */
+    /** 'where'的别名，适用于想要数组语义的人。 */
     filter(predicate: ArrayFunc<T, boolean>): DataArray<T>;
 
-    /** Map elements in the data array by applying a function to each. */
+    /** 通过对每个元素应用函数来映射数据数组中的元素。 */
     map<U>(f: ArrayFunc<T, U>): DataArray<U>;
-    /** Map elements in the data array by applying a function to each, then flatten the results to produce a new array. */
+    /** 通过对每个元素应用函数来映射数据数组中的元素，然后展平结果以产生新数组。 */
     flatMap<U>(f: ArrayFunc<T, U[]>): DataArray<U>;
-    /** Mutably change each value in the array, returning the same array which you can further chain off of. */
+    /** 可变地更改数组中的每个值，返回可以进一步链式调用的相同数组。 */
     mutate(f: ArrayFunc<T, any>): DataArray<any>;
 
-    /** Limit the total number of entries in the array to the given value. */
+    /** 将数组中的条目总数限制为给定值。 */
     limit(count: number): DataArray<T>;
     /**
-     * Take a slice of the array. If `start` is undefined, it is assumed to be 0; if `end` is undefined, it is assumed
-     * to be the end of the array.
+     * 获取数组的切片。如果`start`未定义，则假定为0；如果`end`未定义，则假定为数组的末尾。
      */
     slice(start?: number, end?: number): DataArray<T>;
-    /** Concatenate the values in this data array with those of another iterable / data array / array. */
+    /** 将此数据数组中的值与另一个可迭代对象/数据数组/数组的值连接起来。 */
     concat(other: Iterable<T>): DataArray<T>;
 
-    /** Return the first index of the given (optionally starting the search) */
+    /** 返回给定元素的第一个索引（可选择开始搜索的位置） */
     indexOf(element: T, fromIndex?: number): number;
-    /** Return the first element that satisfies the given predicate. */
+    /** 返回满足给定谓词的第一个元素。 */
     find(pred: ArrayFunc<T, boolean>): T | undefined;
-    /** Find the index of the first element that satisfies the given predicate. Returns -1 if nothing was found. */
+    /** 查找满足给定谓词的第一个元素的索引。如果没有找到则返回-1。 */
     findIndex(pred: ArrayFunc<T, boolean>, fromIndex?: number): number;
-    /** Returns true if the array contains the given element, and false otherwise. */
+    /** 如果数组包含给定元素则返回true，否则返回false。 */
     includes(element: T): boolean;
 
     /**
-     * Return a string obtained by converting each element in the array to a string, and joining it with the
-     * given separator (which defaults to ', ').
+     * 通过将数组中的每个元素转换为字符串，并用给定的分隔符（默认为', '）连接它们来返回字符串。
      */
     join(sep?: string): string;
 
     /**
-     * Return a sorted array sorted by the given key; an optional comparator can be provided, which will
-     * be used to compare the keys in lieu of the default dataview comparator.
+     * 返回按给定键排序的已排序数组；可以提供可选的比较器，它将用于比较键以代替默认的dataview比较器。
      */
     sort<U>(key: ArrayFunc<T, U>, direction?: "asc" | "desc", comparator?: ArrayComparator<U>): DataArray<T>;
 
     /**
-     * Return an array where elements are grouped by the given key; the resulting array will have objects of the form
-     * { key: <key value>, rows: DataArray }.
+     * 返回按给定键分组的数组；结果数组将具有形式为{ key: <键值>, rows: DataArray }的对象。
      */
     groupBy<U>(key: ArrayFunc<T, U>, comparator?: ArrayComparator<U>): DataArray<{ key: U; rows: DataArray<T> }>;
 
     /**
-     * Return distinct entries. If a key is provided, then rows with distinct keys are returned.
+     * 返回不同的条目。如果提供了键，则返回具有不同键的行。
      */
     distinct<U>(key?: ArrayFunc<T, U>, comparator?: ArrayComparator<U>): DataArray<T>;
 
-    /** Return true if the predicate is true for all values. */
+    /** 如果谓词对所有值都为真则返回true。 */
     every(f: ArrayFunc<T, boolean>): boolean;
-    /** Return true if the predicate is true for at least one value. */
+    /** 如果谓词对至少一个值为真则返回true。 */
     some(f: ArrayFunc<T, boolean>): boolean;
-    /** Return true if the predicate is FALSE for all values. */
+    /** 如果谓词对所有值都为假则返回true。 */
     none(f: ArrayFunc<T, boolean>): boolean;
 
-    /** Return the first element in the data array. Returns undefined if the array is empty. */
+    /** 返回数据数组中的第一个元素。如果数组为空则返回undefined。 */
     first(): T;
-    /** Return the last element in the data array. Returns undefined if the array is empty. */
+    /** 返回数据数组中的最后一个元素。如果数组为空则返回undefined。 */
     last(): T;
 
-    /** Map every element in this data array to the given key, and then flatten it.*/
+    /** 将此数据数组中的每个元素映射到给定键，然后展平它。*/
     to(key: string): DataArray<any>;
     /**
-     * Recursively expand the given key, flattening a tree structure based on the key into a flat array. Useful for handling
-     * hierarchical data like tasks with 'subtasks'.
+     * 递归展开给定键，基于键将树结构展平为平面数组。对于处理层次数据（如具有'子任务'的任务）很有用。
      */
     expand(key: string): DataArray<any>;
 
-    /** Run a lambda on each element in the array. */
+    /** 对数组中的每个元素运行lambda函数。 */
     forEach(f: ArrayFunc<T, void>): void;
 
-    /** Calculate the sum of the elements in the array. */
+    /** 计算数组中元素的总和。 */
     sum(): number;
 
-    /** Calculate the average of the elements in the array. */
+    /** 计算数组中元素的平均值。 */
     avg(): number;
 
-    /** Calculate the minimum of the elements in the array. */
+    /** 计算数组中元素的最小值。 */
     min(): number;
 
-    /** Calculate the maximum of the elements in the array. */
+    /** 计算数组中元素的最大值。 */
     max(): number;
 
-    /** Convert this to a plain javascript array. */
+    /** 将其转换为普通的javascript数组。 */
     array(): T[];
 
-    /** Allow iterating directly over the array. */
+    /** 允许直接在数组上迭代。 */
     [Symbol.iterator](): Iterator<T>;
 
-    /** Map indexes to values. */
+    /** 将索引映射到值。 */
     [index: number]: any;
-    /** Automatic flattening of fields. Equivalent to implicitly calling `array.to("field")` */
+    /** 字段的自动展平。等效于隐式调用`array.to("field")` */
     [field: string]: any;
 }
 ```

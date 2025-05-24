@@ -1,25 +1,24 @@
-# Codeblock Examples
+# 代码块示例
 
-## Grouped Books
+## 分组书籍
 
-Group your books by genre, then create a table for each sorted by rating via a straightforward usage of
-the dataview rendering API:
+通过流派对书籍进行分组，然后为每个分组创建一个按评分排序的表格，这是dataview渲染API的直接用法：
 
 ```js
 for (let group of dv.pages("#book").groupBy(p => p.genre)) {
 	dv.header(3, group.key);
-	dv.table(["Name", "Time Read", "Rating"],
+	dv.table(["名称", "阅读时间", "评分"],
 		group.rows
 			.sort(k => k.rating, 'desc')
 			.map(k => [k.file.link, k["time-read"], k.rating]))
 }
 ```
 
-![Grouped Books Example](../assets/grouped-book-example.png)
+![分组书籍示例](../assets/grouped-book-example.png)
 
-## Find All Direct And Indirectly Linked Pages
+## 查找所有直接和间接链接的页面
 
-Use a simple set + stack depth first search to find all notes linked to the current note, or a note of your choosing:
+使用简单的集合+栈深度优先搜索来查找链接到当前笔记或您选择的笔记的所有笔记：
 
 ```js
 let page = dv.current().file.path;
@@ -39,6 +38,6 @@ while (stack.length > 0) {
 	}
 }
 
-// Data is now the file metadata for every page that directly OR indirectly links to the current page.
+// 数据现在是直接或间接链接到当前页面的每个页面的文件元数据。
 let data = dv.array(Array.from(pages)).map(p => dv.page(p));
 ```
