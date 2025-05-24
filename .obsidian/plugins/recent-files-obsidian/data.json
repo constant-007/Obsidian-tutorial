@@ -1,6 +1,14 @@
 {
   "recentFiles": [
     {
+      "basename": "query-types",
+      "path": "Obsidian设置/Community plugins/Dataview/queries/query-types.md"
+    },
+    {
+      "basename": "dql-js-inline",
+      "path": "Obsidian设置/Community plugins/Dataview/queries/dql-js-inline.md"
+    },
+    {
       "basename": "types-of-metadata",
       "path": "Obsidian设置/Community plugins/Dataview/annotation/types-of-metadata.md"
     },
@@ -27,10 +35,6 @@
     {
       "basename": "Dataview",
       "path": "Obsidian设置/Community plugins/Dataview.md"
-    },
-    {
-      "basename": "query-types",
-      "path": "Obsidian设置/Community plugins/Dataview/queries/query-types.md"
     },
     {
       "basename": "Outliner",

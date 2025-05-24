@@ -1,15 +1,14 @@
-# Sources
+# 源
 
-A dataview **source** is something that identifies a set of files, tasks, or other data. Sources are indexed internally by
-Dataview, so they are fast to query. The most prominent use of sources is the [FROM data command](../../queries/data-commands.md#from). They are also used in various JavaScript API query calls.
+dataview **源**是标识一组文件、任务或其他数据的东西。源在内部由Dataview索引，因此查询速度很快。源最突出的用途是[FROM数据命令](../../queries/data-commands.md#from)。它们也用于各种JavaScript API查询调用中。
 
-## Types of Sources
+## 源的类型
 
-Dataview currently supports **four source types**.
+Dataview目前支持**四种源类型**。
 
-### Tags
+### 标签
 
-Sources of the form `#tag`. These match all files / sections / tasks with the given tag.
+形式为`#tag`的源。这些匹配所有具有给定标签的文件/部分/任务。
 
 ~~~
 ```dataview
@@ -18,9 +17,9 @@ FROM #homework
 ```
 ~~~
 
-### Folders
+### 文件夹
 
-Sources of the form `"folder"`. These match all files / sections / tasks contained in the given folder and its sub folders. The full vault path is expected instead of just the folder name. Note that trailing slashes are not supported, i.e. `"Path/To/Folder/"` will not work but `"Path/To/Folder"` will.
+形式为`"folder"`的源。这些匹配给定文件夹及其子文件夹中包含的所有文件/部分/任务。期望的是完整的库路径而不仅仅是文件夹名称。请注意，不支持尾随斜杠，即`"Path/To/Folder/"`不起作用，但`"Path/To/Folder"`起作用。
 
 ~~~
 ```dataview
@@ -29,12 +28,11 @@ FROM "projects/brainstorming"
 ```
 ~~~
 
+### 特定文件
 
-### Specific Files
+您可以通过指定完整路径从特定文件中选择：`"folder/File"`。
 
-You can select from a specific file by specifying it's full path: `"folder/File"`.
-
-- If you have both a file and a folder with the exact same path, Dataview will prefer the folder. You can force it to read from the file by specifying an extension: `folder/File.md`.
+- 如果您有一个文件和一个文件夹具有完全相同的路径，Dataview将优先选择文件夹。您可以通过指定扩展名强制它从文件读取：`folder/File.md`。
 
 ~~~
 ```dataview
@@ -43,14 +41,13 @@ FROM "30 Hobbies/Games/Dashboard"
 ```
 ~~~
 
+### 链接
 
-### Links
+您可以选择链接**到**文件的链接，或**来自**文件的所有链接。
 
- You can either select links **to** a file, or all links **from** a file.
- 
-- To obtain all pages which link **to** `[[note]]`, use `[[note]]`.
-- To obtain all pages which link **from** `[[note]]` (i.e., all the links in that file), use `outgoing([[note]])`.
-- You can implicitly reference the current file via `[[#]]` or `[[]]`, i.e. `[[]]` lets you query from all files linking to the current file.
+- 要获取所有链接**到**`[[note]]`的页面，使用`[[note]]`。
+- 要获取所有**来自**`[[note]]`的链接页面（即该文件中的所有链接），使用`outgoing([[note]])`。
+- 您可以通过`[[#]]`或`[[]]`隐式引用当前文件，即`[[]]`让您从所有链接到当前文件的文件中查询。
 
 ~~~
 ```dataview
@@ -64,16 +61,15 @@ FROM outgoing([[Dashboard]])
 ```
 ~~~
 
+## 组合源
 
-## Combining Sources
+您可以使用`and`和`or`组合这些过滤器以获得更高级的源。
 
-You can compose these filters in order to get more advanced sources using `and` and `or`.
+- 例如，`#tag and "folder"`将返回`folder`中具有`#tag`的所有页面。
+- 从`#food and !#fastfood`查询将只返回包含`#food`但不包含`#fastfood`的页面。
+- `[[Food]] or [[Exercise]]`将给出链接到`[[Food]]`或`[[Exercise]]`的任何页面。
 
-- For example, `#tag and "folder"` will return all pages in `folder` and with `#tag`.
-- Querying from `#food and !#fastfood` will only return pages that contain `#food` but does not contain `#fastfood`.
-- `[[Food]] or [[Exercise]]` will give any pages which link to `[[Food]]` OR `[[Exercise]]`.
-
-If you have complex queries where grouping or precedence matters, you can use parenthesis to logically group them:
+如果您有复杂的查询，其中分组或优先级很重要，您可以使用括号对它们进行逻辑分组：
 
 - `#tag and ("folder" or #other-tag)`
 - `(#tag1 or #tag2) and (#tag3 or #tag4)`
