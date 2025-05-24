@@ -1,24 +1,28 @@
 {
   "recentFiles": [
     {
-      "basename": "Advanced Slides",
-      "path": "Obsidian设置/Community plugins/Advanced Slides.md"
+      "basename": "Dataview",
+      "path": "Obsidian设置/Community plugins/Dataview.md"
+    },
+    {
+      "basename": "query-types",
+      "path": "Obsidian设置/Community plugins/Dataview/queries/query-types.md"
+    },
+    {
+      "basename": "Outliner",
+      "path": "Obsidian设置/Community plugins/Outliner.md"
     },
     {
       "basename": "Git",
       "path": "Obsidian设置/Community plugins/Git.md"
     },
     {
-      "basename": "Dataview",
-      "path": "Obsidian设置/Community plugins/Dataview.md"
+      "basename": "Advanced Slides",
+      "path": "Obsidian设置/Community plugins/Advanced Slides.md"
     },
     {
       "basename": "Homepage",
       "path": "Obsidian设置/Community plugins/Homepage.md"
-    },
-    {
-      "basename": "Outliner",
-      "path": "Obsidian设置/Community plugins/Outliner.md"
     },
     {
       "basename": "Core plugins",
