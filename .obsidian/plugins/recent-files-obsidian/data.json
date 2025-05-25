@@ -1,8 +1,24 @@
 {
   "recentFiles": [
     {
+      "basename": "add-metadata",
+      "path": "Obsidian设置/Community plugins/Dataview/Dataview项目文档翻译/annotation/add-metadata.md"
+    },
+    {
+      "basename": "code-examples",
+      "path": "Obsidian设置/Community plugins/Dataview/Dataview项目文档翻译/api/code-examples.md"
+    },
+    {
+      "basename": "calendar_query_type",
+      "path": "Obsidian设置/Community plugins/Dataview/Dataview项目文档翻译/assets/calendar_query_type.png"
+    },
+    {
       "basename": "Dataview插件综述",
       "path": "Obsidian设置/Community plugins/Dataview/Dataview插件综述.md"
+    },
+    {
+      "basename": "项目管理总视图",
+      "path": "示例/DataView演示/项目管理总视图.md"
     },
     {
       "basename": "Git",
@@ -33,12 +49,8 @@
       "path": "Obsidian设置/Community plugins/Dataview/Dataview项目文档翻译/reference/functions.md"
     },
     {
-      "basename": "项目管理总视图",
-      "path": "Obsidian设置/Community plugins/Dataview/DataView演示/项目管理总视图.md"
-    },
-    {
       "basename": "README",
-      "path": "Obsidian设置/Community plugins/Dataview/DataView演示/README.md"
+      "path": "示例/DataView演示/README.md"
     },
     {
       "basename": "README",
