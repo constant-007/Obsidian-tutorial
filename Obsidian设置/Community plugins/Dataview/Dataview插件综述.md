@@ -1,29 +1,26 @@
-
-了解完通过[Git插件](https://www.aiexplorernote.com/article/obsidian-git)在不同设备间同步Obsidian笔记，解决使用方面最基本的问题。下一个我想介绍的插件是Dataview。这个插件可以为工作进度、会议、读书笔记等信息创建数据库视图，增强Obsidian的信息管理和知识连接能力。它也是我个人觉得最有用的插件
+了解完通过[Git插件](https://www.aiexplorernote.com/article/obsidian-git)在不同设备间同步Obsidian笔记，解决使用方面最基本的问题，下一个我想介绍的插件是Dataview。因为它是我个人觉得最有用的Obsidian插件。这个插件可以为工作进度、会议、读书笔记等信息创建数据库视图，增强Obsidian的信息管理和知识连接能力
 
 对我来说，笔记软件的数据库功能在工作上发挥的作用最直接、有效。它允许用户系统地组织任务信息，跟踪任务进度。转到Obsidian之前，我通过Notion的数据库功能帮我管理每月工作任务
 
 ![](https://img.aiexplorernote.com/%E4%BD%BF%E7%94%A8Git%E6%8F%92%E4%BB%B6%E8%AE%A9Obsidian%E5%AE%9E%E7%8E%B0%E5%90%8C%E6%AD%A5/notion-databse-view.jpg)
 
-在Obsidian中，Dataview插件对标Notion数据库功能。它能实现Notion数据库的大部分核心功能。这是我用Dataview生成的数据库视图，包含筛选、排序、实时更新信息等核心功能：
+在Obsidian中，Dataview插件对标Notion数据库功能。它能实现Notion数据库的大部分核心功能。下面是我按照Notion的数据库功能，用Dataview生成的数据库视图，包含前者的筛选、排序、实时更新信息等核心功能：
 
 ![](https://img.aiexplorernote.com/%E4%BD%BF%E7%94%A8Git%E6%8F%92%E4%BB%B6%E8%AE%A9Obsidian%E5%AE%9E%E7%8E%B0%E5%90%8C%E6%AD%A5/dataview-database-view.jpg)
 
-我在[Obsidian tutorial]([cjjj9330/Obsidian-tutorial](https://github.com/cjjj9330/Obsidian-tutorial))这个项目中还做了一个模板，感兴趣的小伙伴可以去GitHub克隆这个项目，在Obsidian笔记中实操，这样能更深刻地体会到Dataview插件的能力
+我还在这里做了一个[[项目管理总视图|示例]]，感兴趣的小伙伴可以去玩一下，在Obsidian笔记中实操，这样能更深刻地体会到Dataview插件的能力
 
 ![](https://img.aiexplorernote.com/%E4%BD%BF%E7%94%A8Git%E6%8F%92%E4%BB%B6%E8%AE%A9Obsidian%E5%AE%9E%E7%8E%B0%E5%90%8C%E6%AD%A5/dataview-database-template.jpg)
 
-
-
 ## Dataview基本介绍
 
-下面我们具体看下Dataview插件的介绍
+下面我们看下Dataview插件的具体介绍
 
-Dataview插件允许你将你的笔记库（Vault）视为一个数据库，并从中提取、筛选、排序和展示数据。通过使用类似 SQL 的查询语言 (Dataview Query Language - DQL) 或者 JavaScript，你可以动态地生成笔记列表、表格、任务列表等，极大地增强了 Obsidian 的组织和知识管理能力。
+Dataview插件允许你将你的笔记库（Vault）视为一个数据库，并从中提取、筛选、排序和展示数据。通过使用类似 SQL 的查询语言 (Dataview Query Language - DQL) 或者 JavaScript，你可以动态地生成笔记列表、表格、任务列表等，极大地增强了 Obsidian 的组织和知识管理能力
 
 核心功能：
 
-- **动态数据提取与展示：** Dataview 最核心的功能就是能够根据你设定的条件，从你的笔记中动态地提取信息并以多种格式展示。这意味着你不需要手动维护索引或列表，Dataview 会自动更新
+- **动态数据提取与展示：** Dataview 最核心的功能就是能够根据你设定的条件，从你的笔记中动态地提取信息并以多种格式展示
 - **灵活的查询语言 (DQL)：** Dataview 提供了自己的一套查询语言，它借鉴了 SQL 的一些概念，但更为简洁易懂。你可以通过 DQL 来指定数据来源 (FROM)、筛选条件 (WHERE)、排序方式 (SORT) 等
 - **多种视图格式：**
     - **LIST (列表):** 将符合条件的笔记以简单的列表形式展示
@@ -40,7 +37,7 @@ Dataview插件允许你将你的笔记库（Vault）视为一个数据库，并�
     - **行内字段 (Inline Fields):** 在笔记正文中，使用 `Key:: Value` 格式定义的字段，例如 `完成状态:: 进行中`
 - **JavaScript 查询 (DataviewJS):** 对于更复杂的需求，DQL 可能不够用。DataviewJS 允许你使用 JavaScript 来编写查询逻辑，提供了几乎无限的灵活性和控制力。你可以访问 Obsidian 的 API 和 Dataview 提供的函数
 
-然而，普通Dataview生成的查询是一个只读性视图，不具备Notion数据库那样在视图层面直接进行数据条目创建、属性编辑等复杂交互能力。好消息是我发现通过Dataviewjs + Meta Edit插件，实际上可以“曲线救国”，实现和Notion数据库一样的交互能力。所以下面我们单独把Dataviewjs拎出来说一下
+然而，普通Dataview生成的查询是一个**只读性视图**，不具备Notion数据库那样在视图层面直接进行数据条目创建、属性编辑等复杂交互能力。好消息是我发现通过Dataviewjs + Meta Edit插件，实际上可以“曲线救国”，实现和Notion数据库一样的交互能力。所以下面我们单独把Dataviewjs拎出来说一下
 
 ## DataviewJS：Dataview 插件的“超级马力模式”
 
@@ -58,12 +55,14 @@ Dataview插件允许你将你的笔记库（Vault）视为一个数据库，并�
 4. **与 Obsidian API 或其他插件的潜在交互：** 作为 JavaScript，理论上它有更大的潜力去调用 Obsidian 自身的 API (尽管Dataview本身封装了主要交互) 或与其他插件进行更深度的集成 (比如Meta Edit插件API)
 5. **访问更底层的元数据：** 有时某些文件的特定属性或计算值可能不直接暴露给DQL，但可以通过DataviewJS的API获取
 
-Notion数据库那样直接直接编辑视图数据的能力能够通过Dataview与其他插件结合实现，但我也是最近才发现这个玩法，还没有系统研究过，等我成功实现后再更新一下吧 #有待更新 
-
-
+Notion数据库那样直接编辑视图数据的能力能够通过Dataview与其他插件结合实现，但我也是最近才发现这个玩法，还没有系统研究过，等我成功实现后再更新一下吧 #有待更新 
 
 总而言之，DataviewJS 是 Dataview 插件的进阶功能，它通过 JavaScript 的强大编程能力，将你的笔记查询和知识组织提升到了一个全新的高度，让你几乎可以实现任何你能想到的数据聚合与展示需求
 
 ## 氛围编程轻松解决Dataview查询编写
 
 尽管Dataview与Dataviewjs功能强大，但使用它们都需要有一定的编程基础。好在现在有AI，即使不懂代码的编程小白也可以通过[氛围编程](https://www.aiexplorernote.com/article/cursor-basics)轻松编写Dataview查询，创建数据库视图
+
+## 小结
+
+对于想更进一步了解Dataview插件的小伙伴，可以去阅读[官方文档](https://blacksmithgu.github.io/obsidian-dataview/)。同时，我在“Obsidian设置/Community plugins/Dataview/Dataview项目文档翻译”目录下做了对官方文档的翻译，与官方的markdown文档一模一样，想看中文的小伙伴可以直接在那里查看
