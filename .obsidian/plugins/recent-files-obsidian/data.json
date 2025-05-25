@@ -5,6 +5,10 @@
       "path": "Obsidian设置/Community plugins/Dataview/Dataview插件综述.md"
     },
     {
+      "basename": "Git",
+      "path": "Obsidian设置/Community plugins/Git.md"
+    },
+    {
       "basename": "friends",
       "path": "Obsidian设置/Community plugins/Dataview/Dataview项目文档翻译/friends.md"
     },
@@ -31,10 +35,6 @@
     {
       "basename": "项目管理总视图",
       "path": "Obsidian设置/Community plugins/Dataview/DataView演示/项目管理总视图.md"
-    },
-    {
-      "basename": "Git",
-      "path": "Obsidian设置/Community plugins/Git.md"
     },
     {
       "basename": "README",
