@@ -1,10 +1,10 @@
-了解完通过[Git插件](https://www.aiexplorernote.com/article/obsidian-git)在不同设备间同步Obsidian笔记，解决使用方面最基本的问题，下一个我想介绍的插件是Dataview。因为它是我个人觉得最有用的Obsidian插件。这个插件可以为工作进度、会议、读书笔记等信息创建数据库视图，增强Obsidian的信息管理和知识连接能力
+了解完通过[[Git|Git插件]]在不同设备间同步Obsidian笔记，解决使用方面最基本的问题，下一个我想介绍的插件是Dataview。因为它是我个人觉得最有用的Obsidian插件。这个插件可以为工作进度、会议、读书笔记等信息创建数据库视图，增强Obsidian的信息管理和知识连接能力
 
 对我来说，笔记软件的数据库功能在工作上发挥的作用最直接、有效。它允许用户系统地组织任务信息，跟踪任务进度。转到Obsidian之前，我通过Notion的数据库功能帮我管理每月工作任务
 
 ![](https://img.aiexplorernote.com/%E4%BD%BF%E7%94%A8Git%E6%8F%92%E4%BB%B6%E8%AE%A9Obsidian%E5%AE%9E%E7%8E%B0%E5%90%8C%E6%AD%A5/notion-databse-view.jpg)
 
-在Obsidian中，Dataview插件对标Notion数据库功能。它能实现Notion数据库的大部分核心功能。下面是我按照Notion的数据库功能，用Dataview生成的数据库视图，包含前者的筛选、排序、实时更新信息等核心功能：
+使用Obsidian后，我发现Dataview插件可以对标Notion数据库功能。它能实现Notion数据库的大部分核心功能。下面是我仿照Notion的数据库功能，用Dataview生成的数据库视图，包含前者的筛选、排序、实时更新信息等核心功能：
 
 ![](https://img.aiexplorernote.com/%E4%BD%BF%E7%94%A8Git%E6%8F%92%E4%BB%B6%E8%AE%A9Obsidian%E5%AE%9E%E7%8E%B0%E5%90%8C%E6%AD%A5/dataview-database-view.jpg)
 
