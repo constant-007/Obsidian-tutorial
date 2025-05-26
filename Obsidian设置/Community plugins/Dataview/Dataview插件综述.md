@@ -66,23 +66,95 @@ Notion数据库那样直接编辑视图数据的能力能够通过Dataview与其
 
 ### Enable inline queries
 
-启用或禁用常规的行内 Dataview 查询。如果开启（开关为绿色），你就可以在笔记的普通文本行中使用特定的前缀（默认为 `=`）来直接执行 Dataview 查询，而无需创建完整的代码块。例如，`= [[任务]].due` 可能会显示链接到“任务”笔记的 `due` 字段。如果关闭，以 `=` 开头的行内查询将不会被解析或执行。
+启用或禁用常规的行内 Dataview 查询。如果开启，你就可以在笔记的普通文本行中使用特定的前缀（默认为 =``）来直接执行 Dataview 查询，而无需创建完整的代码块。例如，``= [[任务]].due`` 会显示链接到“任务”笔记的`due`字段。如果关闭，以``=`` 开头的行内查询将不会被解析或执行
 
 ### Enable JavaScript queries
 
-启用或禁用执行 DataviewJS 查询。如果开启（开关为绿色），你可以使用 `dataviewjs` 语言代码块来运行基于 JavaScript 的更复杂、更灵活的查询。如果关闭，所有 `dataviewjs` 代码块都将失效，这可以用于提升安全性或在不使用 JS 查询时简化环境。
+启用或禁用执行 DataviewJS 查询。如果开启，你可以使用 `dataviewjs` 语言代码块来运行基于 JavaScript 的更复杂、更灵活的查询。如果关闭，所有 `dataviewjs` 代码块都将失效
 
 ### Enable inline JavaScript queries
 
-启用或禁用行内 DataviewJS 查询。如果开启（开关为绿色），你可以在笔记的普通文本行中使用特定的前缀（默认为 `$=`）来直接执行简短的 JavaScript Dataview 查询。**重要提示：** 此选项的生效依赖于上面的 “Enable JavaScript queries” 选项也必须处于开启状态。
+启用或禁用行内 DataviewJS 查询。如果开启（开关为绿色），你可以在笔记的普通文本行中使用特定的前缀（默认为 =``）来直接执行简短的 JavaScript Dataview 查询。注意： 此选项的生效依赖于上面的 “Enable JavaScript queries” 选项也必须处于开启状态
 
 ### Enable inline field highlighting in reading view
 
-在阅读视图中启用或禁用行内字段的视觉高亮/美化渲染。如果开启（开关为绿色），当你在 Obsidian 的阅读视图（Reading view）查看笔记时，符合 Dataview 行内字段格式的文本（例如 `优先级:: 高` 或 `创建日期:: 2025-05-25`）会以更醒目或格式化的方式显示。关闭则使其显示为普通文本。
+在阅读视图中启用或禁用行内字段的视觉高亮/美化渲染。如果开启，当你在 Obsidian 的阅读视图（Reading view）查看笔记时，符合 Dataview 行内字段格式的文本（例如 `优先级:: 高` 或 `创建日期:: 2025-05-25`）会以更醒目或格式化的方式显示。关闭则使其显示为普通文本
 
 ### Enable inline field highlighting in Live Preview
 
-在实时预览模式下启用或禁用行内字段的视觉高亮/美化渲染。如果开启（开关为绿色），当你在 Obsidian 的实时预览模式（Live Preview）下编辑或查看笔记时，行内字段会得到特殊的高亮或美化处理。这与阅读视图中的高亮是分别控制的。
+在实时预览模式下启用或禁用行内字段的视觉高亮/美化渲染。如果开启，当你在 Obsidian 的实时预览模式（Live Preview）下编辑或查看笔记时，行内字段会得到特殊的高亮或美化处理。这与阅读视图中的高亮是分别控制的
+
+### DataviewJS keyword
+
+DataviewJS 代码块的关键字。默认值为 `dataviewjs`。这个设置决定了当你想要创建一个 Dataview JavaScript 查询代码块时，需要在代码块声明语言时使用的标识符。例如，` dataviewjs `。如果修改了这个关键字，需要重载 Obsidian才能使更改生效
+
+### Inline query prefix
+
+行内查询的前缀。默认值为 =``。这个字符（或字符串）标志着一个普通 Dataview 行内查询的开始。例如，如果你想直接在文本中查询某个文件的创建日期，可以写 `= [[文件名]].file.cday`
+
+### JavaScript inline query prefix
+
+JavaScript 行内查询的前缀。默认值为 \$=``。这个字符（或字符串）标志着一个 DataviewJS 行内查询的开始。例如，你可以使用 `$= dv.current().file.mtime` 来获取当前文件的修改时间
+
+### Code block inline queries
+
+代码块内的行内查询。如果开启（开关为绿色），那么即使是写在**完整代码块内部**的行内查询（即以 =``或``$=`` 开头的行），也会被 Dataview 解析和执行。在大多数标准用例中，这个选项可能不太常用，主要用于一些高级或特定的代码块编写技巧
+
+### Display result count 
+
+显示结果计数。如果关闭此选项，则在 `TASK`（任务）和 `TABLE`（表格）类型查询的结果头部将隐藏显示结果数量的小数字。默认开启时，你会看到类似“3个结果”或“10个任务”这样的提示
+
+### Warn on empty result 
+
+空结果时发出警告。如果开启此选项，当一个 Dataview 查询返回0个结果时，插件会在页面上渲染一条警告消息
+
+### Render null as
+
+Null值渲染为。此设置定义了在 Dataview 表格中，当某个字段的值为 `null`（空）或不存在时，默认显示什么内容。默认值是 `\`-`` (一个反斜杠加一个连字符)，这在 Markdown 中通常会渲染成一个短横线。你可以修改这个值，它支持 Markdown 标记。例如，你可以将其设置为空白，或者其他你认为合适的占位符
+
+### Automatic view refreshing
+
+自动视图刷新。如果启用此选项，当你的 Obsidian 知识库中的文件发生更改时，Dataview 视图（如图表、列表等）将会自动刷新以显示最新的数据。**注意：** 这可能会对某些功能产生负面影响，比如在 Dataview 视图中嵌入其他内容。如果遇到这类功能不正常工作的情况，可以尝试关闭此选项
+
+### Refresh interval
+
+刷新间隔。此设置定义了在文件停止更改后，Dataview 需要等待多长时间（以毫秒为单位）才更新视图。默认值是 `2500` 毫秒（即2.5秒）。这意味着在你停止编辑文件2.5秒后，相关的 Dataview 视图才会开始刷新。增加这个值可以减少频繁编辑时的刷新次数，降低性能开销；减少这个值可以更快地看到更新，但可能会更频繁地触发刷新
+
+### Date format
+
+日期格式。设置默认的日期显示格式。这里使用的是 Luxon 库的日期格式化选项。当前格式示例是 `MMMM dd, yyyy` (例如，渲染为 "May 27, 2025")。你可以在此修改为你偏好的日期显示方式，例如 `yyyy-MM-dd` 会显示为 "2025-05-27"
+
+### Date + time format
+
+日期 + 时间格式。设置默认的日期和时间显示格式，同样基于 Luxon 库。图片中显示的当前格式示例是 `h:mm a - MMMM dd, yyyy` (例如，渲染为 "7:34 AM - May 27, 2025")。你可以根据自己的需要调整这个格式字符串
+
+### Primary column name
+
+主列名称。在通过 Dataview 生成的表格中，这个设置定义了默认的“ID 列”的名称。这个 ID 列是自动生成的第一列，它包含了指向源文件（即数据来源的那个笔记）的链接。默认值为 `File`
+
+### Grouped column name
+
+分组列名称。当 Dataview 表格是基于分组数据生成时（使用 `GROUP BY` 子句），这个设置定义了默认的“ID 列”的名称。这个 ID 列同样是自动生成的第一列，它链接到源文件或代表该分组的键。默认值为 `Group`
+
+### Automatic task completion tracking
+
+自动任务完成跟踪。如果启用此选项，当你在 Dataview 生成的视图中勾选完成一个任务时，Dataview 会自动在该任务的文本末尾附加一个包含完成日期的字段。该字段的默认名称和日期格式如示例所示：`- [x] my task \`[completion:: 2022-01-01]``。这个功能可以帮助你记录任务的实际完成时间。如果关闭，勾选任务仅改变其完成状态，不会自动添加完成日期
+
+### Use emoji shorthand for completion
+
+使用表情符号作为完成简写。此选项仅在上面的 “Automatic task completion tracking” 启用时才可用。如果开启，Dataview 可能会使用特定的表情符号（例如 ✅）配合简化的日期格式来标记任务的完成，而不是完整的 `[completion:: yyyy-MM-dd]` 字段
+
+### Completion field name (完成字段名称)
+
+此选项仅在 “Automatic task completion tracking” 启用 **且** “Use emoji shorthand for completion” (使用表情符号作为完成简写) **禁用** 时才可用。它允许你自定义在任务完成时自动添加的那个元数据字段的名称。默认情况下，这个字段名是 `completion` (如示例中的 `[completion:: ...]`)。你可以在这里修改为你偏好的字段名，例如 `完成于`。在当前图片中，此输入框是禁用的。
+
+### Completion date format (完成日期格式)
+
+此选项仅在 “Automatic task completion tracking” 启用 **且** “Use emoji shorthand for completion” (使用表情符号作为完成简写) **禁用** 时才可用。它允许你自定义在任务完成时自动记录的日期的格式，这里同样遵循 Luxon 库的日期格式化规则。例如，你可以设置为 `yyyy-MM-dd HH:mm` 来同时记录时间和日期。在当前图片中，此输入框是禁用的。
+
+### Recursive sub-task completion (递归子任务完成)
+
+如果启用此选项（开关为绿色），当你在 Dataview 视图中完成一个父任务时，其下所有的子任务（sub-tasks）也会被自动标记为完成。这对于管理具有层级结构的任务列表非常有用，可以节省逐个勾选子任务的时间。如果关闭，完成父任务不会影响其子任务的状态。
 
 ## 氛围编程轻松解决Dataview查询编写
 
