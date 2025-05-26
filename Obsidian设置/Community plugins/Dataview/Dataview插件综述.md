@@ -59,6 +59,31 @@ Notion数据库那样直接编辑视图数据的能力能够通过Dataview与其
 
 总而言之，DataviewJS 是 Dataview 插件的进阶功能，它通过 JavaScript 的强大编程能力，将你的笔记查询和知识组织提升到了一个全新的高度，让你几乎可以实现任何你能想到的数据聚合与展示需求
 
+## Dataview插件后台设置
+
+![](https://img.aiexplorernote.com/%E4%BD%BF%E7%94%A8Git%E6%8F%92%E4%BB%B6%E8%AE%A9Obsidian%E5%AE%9E%E7%8E%B0%E5%90%8C%E6%AD%A5/dataview-settings-1.jpg)
+
+
+### Enable inline queries
+
+启用或禁用常规的行内 Dataview 查询。如果开启（开关为绿色），你就可以在笔记的普通文本行中使用特定的前缀（默认为 `=`）来直接执行 Dataview 查询，而无需创建完整的代码块。例如，`= [[任务]].due` 可能会显示链接到“任务”笔记的 `due` 字段。如果关闭，以 `=` 开头的行内查询将不会被解析或执行。
+
+### Enable JavaScript queries
+
+启用或禁用执行 DataviewJS 查询。如果开启（开关为绿色），你可以使用 `dataviewjs` 语言代码块来运行基于 JavaScript 的更复杂、更灵活的查询。如果关闭，所有 `dataviewjs` 代码块都将失效，这可以用于提升安全性或在不使用 JS 查询时简化环境。
+
+### Enable inline JavaScript queries
+
+启用或禁用行内 DataviewJS 查询。如果开启（开关为绿色），你可以在笔记的普通文本行中使用特定的前缀（默认为 `$=`）来直接执行简短的 JavaScript Dataview 查询。**重要提示：** 此选项的生效依赖于上面的 “Enable JavaScript queries” 选项也必须处于开启状态。
+
+### Enable inline field highlighting in reading view
+
+在阅读视图中启用或禁用行内字段的视觉高亮/美化渲染。如果开启（开关为绿色），当你在 Obsidian 的阅读视图（Reading view）查看笔记时，符合 Dataview 行内字段格式的文本（例如 `优先级:: 高` 或 `创建日期:: 2025-05-25`）会以更醒目或格式化的方式显示。关闭则使其显示为普通文本。
+
+### Enable inline field highlighting in Live Preview
+
+在实时预览模式下启用或禁用行内字段的视觉高亮/美化渲染。如果开启（开关为绿色），当你在 Obsidian 的实时预览模式（Live Preview）下编辑或查看笔记时，行内字段会得到特殊的高亮或美化处理。这与阅读视图中的高亮是分别控制的。
+
 ## 氛围编程轻松解决Dataview查询编写
 
 尽管Dataview与Dataviewjs功能强大，但使用它们都需要有一定的编程基础。好在现在有AI，即使不懂代码的编程小白也可以通过[氛围编程](https://www.aiexplorernote.com/article/cursor-basics)轻松编写Dataview查询，创建数据库视图

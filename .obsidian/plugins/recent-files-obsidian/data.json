@@ -5,6 +5,18 @@
       "path": "Obsidian设置/Community plugins/Dataview/Dataview插件综述.md"
     },
     {
+      "basename": "Git",
+      "path": "Obsidian设置/Community plugins/Git.md"
+    },
+    {
+      "basename": "Advanced Slides",
+      "path": "Obsidian设置/Community plugins/Advanced Slides.md"
+    },
+    {
+      "basename": "Admonition",
+      "path": "Obsidian设置/Community plugins/Admonition.md"
+    },
+    {
       "basename": "add-metadata",
       "path": "Obsidian设置/Community plugins/Dataview/Dataview项目文档翻译/annotation/add-metadata.md"
     },
@@ -19,10 +31,6 @@
     {
       "basename": "项目管理总视图",
       "path": "示例/DataView演示/项目管理总视图.md"
-    },
-    {
-      "basename": "Git",
-      "path": "Obsidian设置/Community plugins/Git.md"
     },
     {
       "basename": "friends",
@@ -59,10 +67,6 @@
     {
       "basename": "Outliner",
       "path": "Obsidian设置/Community plugins/Outliner.md"
-    },
-    {
-      "basename": "Advanced Slides",
-      "path": "Obsidian设置/Community plugins/Advanced Slides.md"
     },
     {
       "basename": "Homepage",
@@ -111,10 +115,6 @@
     {
       "basename": "Slides插件演示",
       "path": "示例/Slides插件演示.md"
-    },
-    {
-      "basename": "Admonition",
-      "path": "Obsidian设置/Community plugins/Admonition.md"
     }
   ],
   "omittedPaths": [],
