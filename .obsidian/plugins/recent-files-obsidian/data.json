@@ -1,6 +1,14 @@
 {
   "recentFiles": [
     {
+      "basename": "Templater",
+      "path": "Obsidian设置/Community plugins/Templater.md"
+    },
+    {
+      "basename": "Tag Wrangler",
+      "path": "Obsidian设置/Community plugins/Tag Wrangler.md"
+    },
+    {
       "basename": "Dataview插件综述",
       "path": "Obsidian设置/Community plugins/Dataview/Dataview插件综述.md"
     },
@@ -91,10 +99,6 @@
     {
       "basename": "General",
       "path": "Obsidian设置/General.md"
-    },
-    {
-      "basename": "Tag Wrangler",
-      "path": "Obsidian设置/Community plugins/Tag Wrangler.md"
     },
     {
       "basename": "homepage",

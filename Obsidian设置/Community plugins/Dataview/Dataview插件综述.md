@@ -144,17 +144,17 @@ Null值渲染为。此设置定义了在 Dataview 表格中，当某个字段的
 
 使用表情符号作为完成简写。此选项仅在上面的 “Automatic task completion tracking” 启用时才可用。如果开启，Dataview 可能会使用特定的表情符号（例如 ✅）配合简化的日期格式来标记任务的完成，而不是完整的 `[completion:: yyyy-MM-dd]` 字段
 
-### Completion field name (完成字段名称)
+### Completion field name
 
-此选项仅在 “Automatic task completion tracking” 启用 **且** “Use emoji shorthand for completion” (使用表情符号作为完成简写) **禁用** 时才可用。它允许你自定义在任务完成时自动添加的那个元数据字段的名称。默认情况下，这个字段名是 `completion` (如示例中的 `[completion:: ...]`)。你可以在这里修改为你偏好的字段名，例如 `完成于`。在当前图片中，此输入框是禁用的。
+完成字段名称。此选项仅在 “Automatic task completion tracking” 启用 **且** “Use emoji shorthand for completion” (使用表情符号作为完成简写) **禁用** 时才可用。它允许你自定义在任务完成时自动添加的那个元数据字段的名称。默认情况下，这个字段名是 `completion` (如示例中的 `[completion:: ...]`)。你可以在这里修改为你偏好的字段名，例如 `完成于`
 
-### Completion date format (完成日期格式)
+### Completion date format
 
-此选项仅在 “Automatic task completion tracking” 启用 **且** “Use emoji shorthand for completion” (使用表情符号作为完成简写) **禁用** 时才可用。它允许你自定义在任务完成时自动记录的日期的格式，这里同样遵循 Luxon 库的日期格式化规则。例如，你可以设置为 `yyyy-MM-dd HH:mm` 来同时记录时间和日期。在当前图片中，此输入框是禁用的。
+完成日期格式。此选项仅在 “Automatic task completion tracking” 启用 **且** “Use emoji shorthand for completion” (使用表情符号作为完成简写) **禁用** 时才可用。它允许你自定义在任务完成时自动记录的日期的格式，这里同样遵循 Luxon 库的日期格式化规则。例如，你可以设置为 `yyyy-MM-dd HH:mm` 来同时记录时间和日期
 
-### Recursive sub-task completion (递归子任务完成)
+### Recursive sub-task completion
 
-如果启用此选项（开关为绿色），当你在 Dataview 视图中完成一个父任务时，其下所有的子任务（sub-tasks）也会被自动标记为完成。这对于管理具有层级结构的任务列表非常有用，可以节省逐个勾选子任务的时间。如果关闭，完成父任务不会影响其子任务的状态。
+递归子任务完成。如果启用此选项（开关为绿色），当你在 Dataview 视图中完成一个父任务时，其下所有的子任务（sub-tasks）也会被自动标记为完成
 
 ## 氛围编程轻松解决Dataview查询编写
 
