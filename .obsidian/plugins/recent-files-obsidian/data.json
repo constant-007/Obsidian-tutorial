@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "Callout",
+      "path": "Templates/Callout.md"
+    },
+    {
       "basename": "Templater",
       "path": "Obsidian设置/Community plugins/Templater.md"
     },
