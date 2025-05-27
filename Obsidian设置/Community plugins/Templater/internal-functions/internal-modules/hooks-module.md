@@ -1,0 +1,32 @@
+# Hooks模块
+
+{{ tp.hooks.description }}
+
+<!-- toc -->
+
+## 文档
+
+函数文档使用特定语法。更多信息请参见[这里](../../syntax.md#function-documentation-syntax)。
+
+
+{%- for key, fn in tp.hooks.functions %}
+### `{{ fn.definition }}` 
+
+{{ fn.description }}
+
+{% if fn.args %}
+##### 参数
+
+{% for arg in fn.args %}
+- `{{ arg.name }}`：{{ arg.description }}
+{% endfor %}
+{% endif %}
+{%- endfor %}
+
+## 示例
+
+```javascript
+// 在模板执行完成后更新frontmatter
+
+// 在Templater更新文件后，运行另一个插件中修改当前文件的命令
+```

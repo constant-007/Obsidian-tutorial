@@ -1,0 +1,89 @@
+# Frontmatter模块
+
+{{ tp.frontmatter.description }}
+
+<!-- toc -->
+
+## 文档
+
+函数文档使用特定语法。更多信息请参见[这里](../../syntax.md#function-documentation-syntax)。
+
+{%- for key, fn in tp.frontmatter.functions %}
+### `{{ fn.definition }}` 
+
+{{ fn.description }}
+
+{% if fn.args %}
+##### 参数
+
+{% for arg in fn.args %}
+- `{{ arg.name }}`：{{ arg.description }}
+{% endfor %}
+{% endif %}
+
+{% if fn.examples %}
+##### 示例
+
+```javascript
+{% for example in fn.examples -%}
+// {{ example.name}}
+{{ example.example }}
+{% endfor -%}
+```
+{% endif %}
+{%- endfor %}
+
+## 示例
+
+```javascript
+{%- for key, fn in tp.frontmatter.functions %}
+{% for example in fn.examples -%}
+// {{ example.name}}
+{{ example.example }}
+{% endfor -%}
+{%- endfor %}
+```
+
+### `tp.frontmatter.<frontmatter_variable_name>` 
+
+获取文件的frontmatter变量值。
+
+如果您的frontmatter变量名包含空格，可以使用括号表示法引用它，如下所示：
+
+````
+<% tp.frontmatter["variable name with spaces"] %>
+````
+
+## 示例
+
+假设您有以下文件：
+
+````
+---
+alias: myfile
+note type: seedling
+---
+
+文件内容
+````
+
+然后您可以使用以下模板：
+
+````
+文件的元数据别名：<% tp.frontmatter.alias %>
+笔记类型：<% tp.frontmatter["note type"] %>
+````
+
+对于frontmatter中的列表，您可以使用JavaScript数组原型方法来操作数据的显示方式。
+
+```
+---
+categories:
+  - book
+  - movie
+---
+```
+
+```
+<% tp.frontmatter.categories.map(prop => `  - "${prop}"`).join("\n") %>
+```

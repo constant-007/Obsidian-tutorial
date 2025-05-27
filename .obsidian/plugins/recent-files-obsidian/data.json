@@ -1,12 +1,40 @@
 {
   "recentFiles": [
     {
+      "basename": "introduction",
+      "path": "Obsidian设置/Community plugins/Templater/introduction.md"
+    },
+    {
+      "basename": "installation",
+      "path": "Obsidian设置/Community plugins/Templater/installation.md"
+    },
+    {
+      "basename": "Templater插件综述",
+      "path": "Obsidian设置/Community plugins/Templater/Templater插件综述.md"
+    },
+    {
+      "basename": "URL",
+      "path": "Templates/URL.md"
+    },
+    {
       "basename": "Callout",
       "path": "Templates/Callout.md"
     },
     {
-      "basename": "Templater",
-      "path": "Obsidian设置/Community plugins/Templater.md"
+      "basename": "YouTube",
+      "path": "Templates/YouTube.md"
+    },
+    {
+      "basename": "变为纯文本",
+      "path": "Templates/变为纯文本.md"
+    },
+    {
+      "basename": "计算时间范围",
+      "path": "Templates/计算时间范围.md"
+    },
+    {
+      "basename": "目录",
+      "path": "Templates/目录.md"
     },
     {
       "basename": "Tag Wrangler",
