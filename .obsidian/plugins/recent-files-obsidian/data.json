@@ -1,16 +1,8 @@
 {
   "recentFiles": [
     {
-      "basename": "introduction",
-      "path": "Obsidian设置/Community plugins/Templater/introduction.md"
-    },
-    {
-      "basename": "installation",
-      "path": "Obsidian设置/Community plugins/Templater/installation.md"
-    },
-    {
-      "basename": "Templater插件综述",
-      "path": "Obsidian设置/Community plugins/Templater/Templater插件综述.md"
+      "basename": "计算时间范围",
+      "path": "Templates/计算时间范围.md"
     },
     {
       "basename": "URL",
@@ -27,10 +19,6 @@
     {
       "basename": "变为纯文本",
       "path": "Templates/变为纯文本.md"
-    },
-    {
-      "basename": "计算时间范围",
-      "path": "Templates/计算时间范围.md"
     },
     {
       "basename": "目录",
