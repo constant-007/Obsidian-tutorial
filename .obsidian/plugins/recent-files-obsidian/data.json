@@ -1,6 +1,22 @@
 {
   "recentFiles": [
     {
+      "basename": "4.overview",
+      "path": "Obsidian设置/Community plugins/Templater/4.commands/4.overview.md"
+    },
+    {
+      "basename": "1.2.terminology",
+      "path": "Obsidian设置/Community plugins/Templater/1.introduction/1.2.terminology.md"
+    },
+    {
+      "basename": "1.1.installation",
+      "path": "Obsidian设置/Community plugins/Templater/1.introduction/1.1.installation.md"
+    },
+    {
+      "basename": "Templater插件综述",
+      "path": "Obsidian设置/Community plugins/Templater/Templater插件综述.md"
+    },
+    {
       "basename": "add-metadata",
       "path": "Obsidian设置/Community plugins/Dataview/Dataview项目文档翻译/annotation/add-metadata.md"
     },
@@ -15,10 +31,6 @@
     {
       "basename": "Git",
       "path": "Obsidian设置/Community plugins/Git.md"
-    },
-    {
-      "basename": "Templater插件综述",
-      "path": "Obsidian设置/Community plugins/Templater/Templater插件综述.md"
     },
     {
       "basename": "4.3.whitespace-control",
@@ -43,14 +55,6 @@
     {
       "basename": "1.5.faq",
       "path": "Obsidian设置/Community plugins/Templater/1.introduction/1.5.faq.md"
-    },
-    {
-      "basename": "1.1.installation",
-      "path": "Obsidian设置/Community plugins/Templater/1.introduction/1.1.installation.md"
-    },
-    {
-      "basename": "1.2.terminology",
-      "path": "Obsidian设置/Community plugins/Templater/1.introduction/1.2.terminology.md"
     },
     {
       "basename": "1.4.settings",
