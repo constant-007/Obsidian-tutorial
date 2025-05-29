@@ -18,7 +18,6 @@
   "obsidian-reminder-plugin",
   "obsidian-style-settings",
   "obsidian-tasks-plugin",
-  "templater-obsidian",
   "obsidian-custom-frames",
   "dataview",
   "obsidian-enhancing-export",
@@ -35,5 +34,6 @@
   "recent-files-obsidian",
   "tag-wrangler",
   "obsidian-outliner",
-  "obsidian-meta-bind-plugin"
+  "obsidian-meta-bind-plugin",
+  "templater-obsidian"
 ]
