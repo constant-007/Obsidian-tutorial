@@ -5,6 +5,10 @@
       "path": "Obsidian设置/Community plugins/Templater.md"
     },
     {
+      "basename": "YouTube",
+      "path": "Templates/YouTube.md"
+    },
+    {
       "basename": "Tag Wrangler",
       "path": "Obsidian设置/Community plugins/Tag Wrangler.md"
     },
@@ -39,10 +43,6 @@
     {
       "basename": "Callout",
       "path": "Templates/Callout.md"
-    },
-    {
-      "basename": "YouTube",
-      "path": "Templates/YouTube.md"
     },
     {
       "basename": "变为纯文本",
