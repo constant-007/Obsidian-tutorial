@@ -1,6 +1,14 @@
 {
   "recentFiles": [
     {
+      "basename": "Tasks",
+      "path": "Obsidian设置/Community plugins/Tasks.md"
+    },
+    {
+      "basename": "Homepage",
+      "path": "Obsidian设置/Community plugins/Homepage.md"
+    },
+    {
       "basename": "Templater",
       "path": "Obsidian设置/Community plugins/Templater.md"
     },
@@ -111,10 +119,6 @@
     {
       "basename": "Outliner",
       "path": "Obsidian设置/Community plugins/Outliner.md"
-    },
-    {
-      "basename": "Homepage",
-      "path": "Obsidian设置/Community plugins/Homepage.md"
     },
     {
       "basename": "Community plugins",
