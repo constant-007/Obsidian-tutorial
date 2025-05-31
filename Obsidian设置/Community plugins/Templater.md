@@ -2,17 +2,14 @@
 
 这个插件是官方的[[Core plugins#23. Templates|Templates]]插件加强版，使用它可以完全平替官方Templates插件。且Templater支持完整的JavaScript API，有编程基础的用户可以用它实现许多复杂逻辑
 
-最近使用下来，个人感觉这插件最大的作用就是自动化一些重复性工作。比如增重期间，想记录每天的锻炼、补充量、体重变化等，方便后期更好地制定专属计划。在记录时，一般使用[[Dataview插件综述]]的结构化语法，这样后面就可以用Dataview快速整理成图表，便于分析
-
-如果我每次都使用这样的模板记录：
-
-```
-[时间:: 2025-05-30] [锻炼量:: 两组俯卧撑（xx/组）；xx个引体；xx次哑铃；一组保加利亚蹲（xx/每次）] [补充:: 一勺增肌粉] [体重:: xxx斤]
-```
-
-我们可以把这个模板保存到固定位置，每次要记录时去复制粘贴，但也能把它保存为一个Templater模板，通过快捷键调用。这样就不用来回复制粘贴。但如果只是保存为模板文件，需要时调用，官方Templates插件就可以实现
+如前所说，个人暂时没发现有什么很大用处。这插件应该主要是用来自动化一些重复性工作。以下是Templater的一些社区，感兴趣的小伙伴可以看看有什么能激发你灵感，做一些有用的Templater模板：
 
 
+> [!tip] 温馨提示
+> 不会编程的小伙伴可以用AI[氛围编程](https://www.aiexplorernote.com/article/cursor-basics)来编写复杂Templater模板哦
+
+1. Templater插件官方文档：[Introduction - Templater](https://silentvoid13.github.io/Templater/)
+2. 
 
 
 
