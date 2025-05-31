@@ -5,6 +5,10 @@
       "path": "Obsidian设置/Community plugins/Templater.md"
     },
     {
+      "basename": "Core plugins",
+      "path": "Obsidian设置/Core plugins.md"
+    },
+    {
       "basename": "Git",
       "path": "Obsidian设置/Community plugins/Git.md"
     },
@@ -15,10 +19,6 @@
     {
       "basename": "Tag Wrangler",
       "path": "Obsidian设置/Community plugins/Tag Wrangler.md"
-    },
-    {
-      "basename": "Core plugins",
-      "path": "Obsidian设置/Core plugins.md"
     },
     {
       "basename": "add-metadata",
