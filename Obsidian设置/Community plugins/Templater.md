@@ -64,36 +64,24 @@
 
 ### Startup templates
 
-启动模板 - 功能区。配置在 Templater 插件（通常是 Obsidian 启动时）自动执行的模板。
+启动模板。配置在 Templater 插件（通常是 Obsidian 启动时）自动执行的模板。启动模板是一种特殊的模板，它们会在 Templater 插件加载并开始运行时自动执行一次。与普通模板不同，这些启动模板通常**不用于向笔记中输出任何内容**。它们的主要用途是执行一些初始化任务，例如，设置一些全局变量、注册事件监听器（即“添加对 Obsidian 事件的挂钩”），或者运行一些需要在 Obsidian 启动后立即执行的脚本逻辑。你需要在下方的输入框中（示例为 `Example: folder1/template_file`）指定要作为启动模板的模板文件路径，然后通过 "Add new startup template" 按钮添加
 
-启动模板是一种特殊的模板，它们会在 Templater 插件加载并开始运行时自动执行一次。与普通模板不同，这些启动模板通常**不用于向笔记中输出任何内容**。它们的主要用途是执行一些初始化任务，例如，设置一些全局变量、注册事件监听器（即“添加对 Obsidian 事件的挂钩”），或者运行一些需要在 Obsidian 启动后立即执行的脚本逻辑。你需要在下方的输入框中（示例为 `Example: folder1/template_file`）指定要作为启动模板的模板文件路径，然后通过 "Add new startup template" 按钮添加。
+### User script functions
 
-### User script functions (用户脚本函数 - 功能区)
+用户脚本函数。配置用于存放自定义 JavaScript 函数文件的文件夹，这些函数可在 Templater 模板中通过 `tp.user` 对象进行调用。这个功能区允许你通过编写自己的 JavaScript 模块来扩展 Templater 的功能。你可以在指定的文件夹中创建 `.js` 文件，在这些文件中定义函数并导出它们，然后在任何 Templater 模板中通过 `tp.user.你的函数名()` 的方式来调用这些自定义函数
 
-配置用于存放自定义 JavaScript 函数文件的文件夹，这些函数可在 Templater 模板中通过 `tp.user` 对象进行调用。
+### Script files folder location
 
-这个功能区允许你通过编写自己的 JavaScript 模块来扩展 Templater 的功能。你可以在指定的文件夹中创建 `.js` 文件，在这些文件中定义函数并导出它们，然后在任何 Templater 模板中通过 `tp.user.你的函数名()` 的方式来调用这些自定义函数。这对于封装常用逻辑、复杂的计算或与外部 API 的交互非常有用。
+脚本文件文件夹位置。指定存放用户自定义 JavaScript 脚本文件的文件夹路径。你需要在这里设置一个您库中的文件夹，Templater 会从这个文件夹中加载所有的 `.js` 文件作为 CommonJS 模块，以便你在模板中使用其中导出的函数。这个文件夹需要从你的库根目录可以访问到
 
-### Script files folder location (脚本文件文件夹位置)
+### User script intellisense
 
-指定存放用户自定义 JavaScript 脚本文件的文件夹路径。
+用户脚本智能提示。决定在模板编辑器中如何为用户脚本函数提供代码智能提示（如函数描述、参数列表和返回值）。此设置控制当你在 Templater 模板中输入并调用用户脚本函数时，Obsidian 编辑器如何显示这些函数的提示信息。例如，它可以显示函数的用途说明、需要的参数以及函数会返回什么类型的值。如果脚本中的 JSDoc 注释不符合特定格式，或者此设置配置为不显示某些信息，那么相关的提示可能不会完整渲染出来
 
-您需要在这里设置一个您库中的文件夹，Templater 会从这个文件夹中加载所有的 `.js` 文件作为 CommonJS 模块，以便您在模板中使用其中导出的函数。这个文件夹需要从您的库根目录可以访问到。更详细的说明可以查阅插件的官方文档。图示中的搜索框示例为 `Example: folder1/folder2`，而其下方有一行灰色小字（截图中为 "No user scripts folder set"）会显示当前是否已设置脚本文件夹。
+### User system command functions
 
-### User script intellisense (用户脚本智能提示)
+用户系统命令函数，允许创建能调用操作系统级别命令的用户函数。这是一个高级且需要谨慎使用的功能，它赋予了 Templater 执行本地计算机上系统命令的能力，通常是通过你定义的用户脚本函数来实现
 
-决定在模板编辑器中如何为用户脚本函数提供代码智能提示（如函数描述、参数列表和返回值）。
+### Enable user system command functions
 
-此设置控制当您在 Templater 模板中输入并调用用户脚本函数时，Obsidian 编辑器（如果支持）如何显示这些函数的提示信息。例如，它可以显示函数的用途说明、需要的参数以及函数会返回什么类型的值。如果脚本中的 JSDoc 注释不符合特定格式，或者此设置配置为不显示某些信息，那么相关的提示可能不会完整渲染出来。图中下拉框显示的当前选项是 "Render method description, parameters list, and return"，意味着会尝试显示包括方法描述、参数列表和返回值的完整提示。
-
-### User system command functions (用户系统命令函数 - 功能区)
-
-允许创建能调用操作系统级别命令的用户函数。
-
-这是一个高级且需要谨慎使用的功能区域，它赋予了 Templater 执行本地计算机上系统命令的能力，通常是通过你定义的用户脚本函数来实现。
-
-### Enable user system command functions (启用用户系统命令函数)
-
-开启或关闭执行操作系统级别命令的用户函数功能。
-
-只有当此选项启用后，您才能在 Templater 的用户脚本中创建并调用那些能够执行操作系统命令的函数。描述中附有非常重要的**警告**：“Warning: It can be dangerous to execute arbitrary system commands from untrusted sources. Only run system commands that you understand, from trusted sources.” 这强调了执行来自不可信来源的任意系统命令具有潜在危险性，您应该只运行那些您完全理解并且来源绝对可靠的系统命令，以避免安全风险。
+启用用户系统命令函数，开启或关闭执行操作系统级别命令的用户函数功能。只有当此选项启用后，你才能在 Templater 的用户脚本中创建并调用那些能够执行操作系统命令的函数
