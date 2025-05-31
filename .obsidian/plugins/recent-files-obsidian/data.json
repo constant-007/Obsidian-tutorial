@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "Git",
+      "path": "Obsidian设置/Community plugins/Git.md"
+    },
+    {
       "basename": "Templater",
       "path": "Obsidian设置/Community plugins/Templater.md"
     },
@@ -27,10 +31,6 @@
     {
       "basename": "types-of-metadata",
       "path": "Obsidian设置/Community plugins/Dataview/Dataview项目文档翻译/annotation/types-of-metadata.md"
-    },
-    {
-      "basename": "Git",
-      "path": "Obsidian设置/Community plugins/Git.md"
     },
     {
       "basename": "计算时间范围",

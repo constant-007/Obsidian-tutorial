@@ -5,12 +5,14 @@
 如前所说，个人暂时没发现有什么很大用处。这插件应该主要是用来自动化一些重复性工作。以下是Templater的一些社区，感兴趣的小伙伴可以看看有什么能激发你灵感，做一些有用的Templater模板：
 
 
+1. Templater插件官方文档：[Introduction - Templater](https://silentvoid13.github.io/Templater/)
+2. 其他用户分享的模板：[SilentVoid13/Templater Templates Showcase · Discussions](https://github.com/SilentVoid13/Templater/discussions/categories/templates-showcase)
+
+
 > [!tip] 温馨提示
 > 不会编程的小伙伴可以用AI[氛围编程](https://www.aiexplorernote.com/article/cursor-basics)来编写复杂Templater模板哦
 
-1. Templater插件官方文档：[Introduction - Templater](https://silentvoid13.github.io/Templater/)
-2. 
-
+下面是Templater插件设置项的介绍：
 
 
 
