@@ -35,7 +35,7 @@
 
 ### 3. Theme
 
-这里称“皮肤”应该更适合一点，我预装了Blue Topaz，Minimal，和Things三个主题。大差不差这些主题。不过建议选Minimal，因为配合后面要介绍的Style Settings、Minimal Theme这两个插件，Minimal允许你对这个皮肤做颗粒度极高的控制
+这里称“皮肤”应该更适合一点，我预装了Blue Topaz，Minimal，和Things三个主题。大差不差这些主题。不过建议选Minimal，因为配合后面要介绍的[[Style Settings|Style Settings]]、Minimal Theme这两个插件，Minimal允许你对这个皮肤做颗粒度极高的控制
 
 点击“Manage"按钮会打开一个”皮肤商店"，你可以在这里找到更多皮肤
 

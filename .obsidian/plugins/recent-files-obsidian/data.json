@@ -1,24 +1,52 @@
 {
   "recentFiles": [
     {
-      "basename": "Tasks插件综述",
-      "path": "Obsidian设置/Community plugins/Tasks/Tasks插件综述.md"
+      "basename": "Style Settings",
+      "path": "Obsidian设置/Community plugins/Style Settings.md"
     },
     {
-      "basename": "Kanban生活管理示例",
-      "path": "示例/Kanban演示、/Kanban生活管理示例.md"
+      "basename": "Appearance",
+      "path": "Obsidian设置/Appearance.md"
     },
     {
-      "basename": "Tasks Plugin - Review and check your Statuses 2025-06-01 20-05-01",
-      "path": "Tasks Plugin - Review and check your Statuses 2025-06-01 20-05-01.md"
+      "basename": "Tag Wrangler",
+      "path": "Obsidian设置/Community plugins/Tag Wrangler.md"
     },
     {
-      "basename": "Kanban快速上手指南",
-      "path": "示例/Kanban演示、/Kanban快速上手指南.md"
+      "basename": "README",
+      "path": "示例/Kanban演示/README.md"
     },
     {
       "basename": "Kanban",
       "path": "Obsidian设置/Community plugins/Kanban.md"
+    },
+    {
+      "basename": "Kanban插件功能说明",
+      "path": "示例/Kanban演示/Kanban插件功能说明.md"
+    },
+    {
+      "basename": "团队协作看板",
+      "path": "示例/Kanban演示/团队协作看板.md"
+    },
+    {
+      "basename": "项目管理看板示例",
+      "path": "示例/Kanban演示/项目管理看板示例.md"
+    },
+    {
+      "basename": "学习计划看板",
+      "path": "示例/Kanban演示/学习计划看板.md"
+    },
+    {
+      "basename": "生活事务管理",
+      "path": "示例/Kanban演示/生活事务管理.md"
+    },
+    {
+      "basename": "Tasks插件综述",
+      "path": "Obsidian设置/Community plugins/Tasks/Tasks插件综述.md"
+    },
+    {
+      "basename": "Tasks Plugin - Review and check your Statuses 2025-06-01 20-05-01",
+      "path": "Tasks Plugin - Review and check your Statuses 2025-06-01 20-05-01.md"
     },
     {
       "basename": "Custom Sorting",
@@ -161,18 +189,6 @@
       "path": "Obsidian设置/Community plugins/Git.md"
     },
     {
-      "basename": "Kanban项目管理示例",
-      "path": "示例/Kanban演示、/Kanban项目管理示例.md"
-    },
-    {
-      "basename": "Kanban看板演示",
-      "path": "示例/Kanban演示、/Kanban看板演示.md"
-    },
-    {
-      "basename": "Kanban学习计划示例",
-      "path": "示例/Kanban演示、/Kanban学习计划示例.md"
-    },
-    {
       "basename": "项目管理总视图",
       "path": "示例/DataView演示/项目管理总视图.md"
     },
@@ -183,18 +199,6 @@
     {
       "basename": "Templater",
       "path": "Obsidian设置/Community plugins/Templater.md"
-    },
-    {
-      "basename": "Community plugins",
-      "path": "Obsidian设置/Community plugins.md"
-    },
-    {
-      "basename": "Core plugins",
-      "path": "Obsidian设置/Core plugins.md"
-    },
-    {
-      "basename": "Appearance",
-      "path": "Obsidian设置/Appearance.md"
     }
   ],
   "omittedPaths": [],
