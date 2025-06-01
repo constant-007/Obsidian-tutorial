@@ -1004,7 +1004,7 @@ group by function (task.heading + '.md' === task.file.filename) ? '' : task.head
 > [!info]
 > 标题按区分大小写的字母顺序显示，而不是原始顺序。
 
-## Refining groups
+## 细化分组
 
 ### Reversing groups
 
@@ -1045,7 +1045,7 @@ group by function (task.heading + '.md' === task.file.filename) ? '' : task.head
 > 1. 然后运行任何分组指令
 > 1. 然后运行任何`limit groups`指令
 
-## Screenshots
+## 截图
 
 ### Before
 
@@ -1061,7 +1061,7 @@ group by function (task.heading + '.md' === task.file.filename) ? '' : task.head
 ![Tasks Grouped](../images/tasks_grouped.png)
 已分组的任务。
 
-## Examples
+## 示例
 
 给我三个级别的分组，以指示我任务的位置：
 

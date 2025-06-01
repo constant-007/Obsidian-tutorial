@@ -1,6 +1,62 @@
 {
   "recentFiles": [
     {
+      "basename": "Custom Sorting",
+      "path": "Obsidian设置/Community plugins/Tasks/Scripting/Custom Sorting.md"
+    },
+    {
+      "basename": "About Scripting",
+      "path": "Obsidian设置/Community plugins/Tasks/Scripting/About Scripting.md"
+    },
+    {
+      "basename": "About Reference",
+      "path": "Obsidian设置/Community plugins/Tasks/Reference/About Reference.md"
+    },
+    {
+      "basename": "ITS Theme",
+      "path": "Obsidian设置/Community plugins/Tasks/Reference/Status Collections/ITS Theme.md"
+    },
+    {
+      "basename": "About Status Collections",
+      "path": "Obsidian设置/Community plugins/Tasks/Reference/Status Collections/About Status Collections.md"
+    },
+    {
+      "basename": "AnuPpuccin Theme",
+      "path": "Obsidian设置/Community plugins/Tasks/Reference/Status Collections/AnuPpuccin Theme.md"
+    },
+    {
+      "basename": "Sorting",
+      "path": "Obsidian设置/Community plugins/Tasks/Queries/Sorting.md"
+    },
+    {
+      "basename": "Regular Expressions",
+      "path": "Obsidian设置/Community plugins/Tasks/Queries/Regular Expressions.md"
+    },
+    {
+      "basename": "Line Continuations",
+      "path": "Obsidian设置/Community plugins/Tasks/Queries/Line Continuations.md"
+    },
+    {
+      "basename": "Layout",
+      "path": "Obsidian设置/Community plugins/Tasks/Queries/Layout.md"
+    },
+    {
+      "basename": "Examples",
+      "path": "Obsidian设置/Community plugins/Tasks/Queries/Examples.md"
+    },
+    {
+      "basename": "Comments",
+      "path": "Obsidian设置/Community plugins/Tasks/Queries/Comments.md"
+    },
+    {
+      "basename": "About Queries",
+      "path": "Obsidian设置/Community plugins/Tasks/Queries/About Queries.md"
+    },
+    {
+      "basename": "Backlinks",
+      "path": "Obsidian设置/Community plugins/Tasks/Queries/Backlinks.md"
+    },
+    {
       "basename": "Grouping",
       "path": "Obsidian设置/Community plugins/Tasks/Queries/Grouping.md"
     },
@@ -11,10 +67,6 @@
     {
       "basename": "Filters",
       "path": "Obsidian设置/Community plugins/Tasks/Queries/Filters.md"
-    },
-    {
-      "basename": "About Queries",
-      "path": "Obsidian设置/Community plugins/Tasks/Queries/About Queries.md"
     },
     {
       "basename": "README",
@@ -147,58 +199,6 @@
     {
       "basename": "Calendar",
       "path": "Obsidian设置/Community plugins/Calendar.md"
-    },
-    {
-      "basename": "Homepage",
-      "path": "Obsidian设置/Community plugins/Homepage.md"
-    },
-    {
-      "basename": "YouTube",
-      "path": "Templates/YouTube.md"
-    },
-    {
-      "basename": "add-metadata",
-      "path": "Obsidian设置/Community plugins/Dataview/Dataview项目文档翻译/annotation/add-metadata.md"
-    },
-    {
-      "basename": "metadata-tasks",
-      "path": "Obsidian设置/Community plugins/Dataview/Dataview项目文档翻译/annotation/metadata-tasks.md"
-    },
-    {
-      "basename": "types-of-metadata",
-      "path": "Obsidian设置/Community plugins/Dataview/Dataview项目文档翻译/annotation/types-of-metadata.md"
-    },
-    {
-      "basename": "计算时间范围",
-      "path": "Templates/计算时间范围.md"
-    },
-    {
-      "basename": "URL",
-      "path": "Templates/URL.md"
-    },
-    {
-      "basename": "Callout",
-      "path": "Templates/Callout.md"
-    },
-    {
-      "basename": "变为纯文本",
-      "path": "Templates/变为纯文本.md"
-    },
-    {
-      "basename": "目录",
-      "path": "Templates/目录.md"
-    },
-    {
-      "basename": "Dataview插件综述",
-      "path": "Obsidian设置/Community plugins/Dataview/Dataview插件综述.md"
-    },
-    {
-      "basename": "Admonition",
-      "path": "Obsidian设置/Community plugins/Admonition.md"
-    },
-    {
-      "basename": "code-examples",
-      "path": "Obsidian设置/Community plugins/Dataview/Dataview项目文档翻译/api/code-examples.md"
     }
   ],
   "omittedPaths": [],
