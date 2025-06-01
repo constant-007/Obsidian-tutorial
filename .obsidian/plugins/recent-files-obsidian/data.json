@@ -1,6 +1,14 @@
 {
   "recentFiles": [
     {
+      "basename": "Iconize",
+      "path": "Obsidian设置/Community plugins/Iconize.md"
+    },
+    {
+      "basename": "Callout",
+      "path": "Templates/Callout.md"
+    },
+    {
       "basename": "Style Settings",
       "path": "Obsidian设置/Community plugins/Style Settings.md"
     },
@@ -191,14 +199,6 @@
     {
       "basename": "项目管理总视图",
       "path": "示例/DataView演示/项目管理总视图.md"
-    },
-    {
-      "basename": "Homepage插件演示",
-      "path": "示例/Homepage插件演示.md"
-    },
-    {
-      "basename": "Templater",
-      "path": "Obsidian设置/Community plugins/Templater.md"
     }
   ],
   "omittedPaths": [],
