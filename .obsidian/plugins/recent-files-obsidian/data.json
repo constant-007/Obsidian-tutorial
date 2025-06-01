@@ -5,28 +5,36 @@
       "path": "Obsidian设置/Community plugins/Iconize.md"
     },
     {
-      "basename": "Callout",
-      "path": "Templates/Callout.md"
-    },
-    {
-      "basename": "Style Settings",
-      "path": "Obsidian设置/Community plugins/Style Settings.md"
-    },
-    {
-      "basename": "Appearance",
-      "path": "Obsidian设置/Appearance.md"
+      "basename": "Templater",
+      "path": "Obsidian设置/Community plugins/Templater.md"
     },
     {
       "basename": "Tag Wrangler",
       "path": "Obsidian设置/Community plugins/Tag Wrangler.md"
     },
     {
-      "basename": "README",
-      "path": "示例/Kanban演示/README.md"
+      "basename": "Style Settings",
+      "path": "Obsidian设置/Community plugins/Style Settings.md"
+    },
+    {
+      "basename": "Outliner",
+      "path": "Obsidian设置/Community plugins/Outliner.md"
     },
     {
       "basename": "Kanban",
       "path": "Obsidian设置/Community plugins/Kanban.md"
+    },
+    {
+      "basename": "Callout",
+      "path": "Templates/Callout.md"
+    },
+    {
+      "basename": "Appearance",
+      "path": "Obsidian设置/Appearance.md"
+    },
+    {
+      "basename": "README",
+      "path": "示例/Kanban演示/README.md"
     },
     {
       "basename": "Kanban插件功能说明",
@@ -191,14 +199,6 @@
     {
       "basename": "Advanced Table",
       "path": "Obsidian设置/Community plugins/Advanced Table.md"
-    },
-    {
-      "basename": "Git",
-      "path": "Obsidian设置/Community plugins/Git.md"
-    },
-    {
-      "basename": "项目管理总视图",
-      "path": "示例/DataView演示/项目管理总视图.md"
     }
   ],
   "omittedPaths": [],

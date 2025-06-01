@@ -36,5 +36,6 @@
   "obsidian-outliner",
   "obsidian-meta-bind-plugin",
   "templater-obsidian",
-  "obsidian-kanban"
+  "obsidian-kanban",
+  "remotely-save"
 ]
