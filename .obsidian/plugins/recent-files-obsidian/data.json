@@ -1,12 +1,28 @@
 {
   "recentFiles": [
     {
-      "basename": "Advanced Table",
-      "path": "Obsidian设置/Community plugins/Advanced Table.md"
+      "basename": "Kanban",
+      "path": "Obsidian设置/Community plugins/Kanban.md"
+    },
+    {
+      "basename": "Outliner",
+      "path": "Obsidian设置/Community plugins/Outliner.md"
+    },
+    {
+      "basename": "Tag Wrangler",
+      "path": "Obsidian设置/Community plugins/Tag Wrangler.md"
+    },
+    {
+      "basename": "Tasks",
+      "path": "Obsidian设置/Community plugins/Tasks.md"
     },
     {
       "basename": "Advanced Slides",
       "path": "Obsidian设置/Community plugins/Advanced Slides.md"
+    },
+    {
+      "basename": "Advanced Table",
+      "path": "Obsidian设置/Community plugins/Advanced Table.md"
     },
     {
       "basename": "Calendar",
@@ -21,16 +37,8 @@
       "path": "Obsidian设置/Community plugins/Homepage.md"
     },
     {
-      "basename": "Tasks",
-      "path": "Obsidian设置/Community plugins/Tasks.md"
-    },
-    {
       "basename": "YouTube",
       "path": "Templates/YouTube.md"
-    },
-    {
-      "basename": "Tag Wrangler",
-      "path": "Obsidian设置/Community plugins/Tag Wrangler.md"
     },
     {
       "basename": "Templater",
@@ -123,10 +131,6 @@
     {
       "basename": "README",
       "path": "README.md"
-    },
-    {
-      "basename": "Outliner",
-      "path": "Obsidian设置/Community plugins/Outliner.md"
     },
     {
       "basename": "Community plugins",

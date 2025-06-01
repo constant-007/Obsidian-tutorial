@@ -1,10 +1,8 @@
 大多数功能已被Obsidian官方整合成默认功能，只有一个drag and drop 是额外的。总的来说这个插件作用不大
 
+下面是outliner插件的设置项解释
+
 ![[Pasted image 20250510165854.png]]
-
-好的，这张图片展示的是 Obsidian 社区插件 "Outliner" (通常指 Vladi Stepanchenko 开发的那个版本) 的一些后台设置选项。这些设置可以让你微调插件的行为和外观，使其更符合你的使用习惯。
-
-让我们逐一解释这些设置：
 
 1. **Stick the cursor to the content (光标粘贴到内容)**
     
