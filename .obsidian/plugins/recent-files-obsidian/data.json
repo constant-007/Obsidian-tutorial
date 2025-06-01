@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "Tag Wrangler",
+      "path": "Obsidian设置/Community plugins/Tag Wrangler.md"
+    },
+    {
       "basename": "Tasks",
       "path": "Obsidian设置/Community plugins/Tasks.md"
     },
@@ -23,10 +27,6 @@
     {
       "basename": "YouTube",
       "path": "Templates/YouTube.md"
-    },
-    {
-      "basename": "Tag Wrangler",
-      "path": "Obsidian设置/Community plugins/Tag Wrangler.md"
     },
     {
       "basename": "add-metadata",
