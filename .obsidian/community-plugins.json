@@ -35,5 +35,6 @@
   "tag-wrangler",
   "obsidian-outliner",
   "obsidian-meta-bind-plugin",
-  "templater-obsidian"
+  "templater-obsidian",
+  "obsidian-kanban"
 ]

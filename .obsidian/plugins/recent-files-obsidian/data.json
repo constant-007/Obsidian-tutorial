@@ -1,20 +1,40 @@
 {
   "recentFiles": [
     {
-      "basename": "Kanban",
-      "path": "Obsidian设置/Community plugins/Kanban.md"
+      "basename": "Templater",
+      "path": "Obsidian设置/Community plugins/Templater.md"
     },
     {
-      "basename": "Outliner",
-      "path": "Obsidian设置/Community plugins/Outliner.md"
+      "basename": "Community plugins",
+      "path": "Obsidian设置/Community plugins.md"
+    },
+    {
+      "basename": "Core plugins",
+      "path": "Obsidian设置/Core plugins.md"
+    },
+    {
+      "basename": "Appearance",
+      "path": "Obsidian设置/Appearance.md"
+    },
+    {
+      "basename": "Tasks",
+      "path": "Obsidian设置/Community plugins/Tasks.md"
     },
     {
       "basename": "Tag Wrangler",
       "path": "Obsidian设置/Community plugins/Tag Wrangler.md"
     },
     {
-      "basename": "Tasks",
-      "path": "Obsidian设置/Community plugins/Tasks.md"
+      "basename": "Outliner",
+      "path": "Obsidian设置/Community plugins/Outliner.md"
+    },
+    {
+      "basename": "Homepage插件演示",
+      "path": "示例/Homepage插件演示.md"
+    },
+    {
+      "basename": "Kanban",
+      "path": "Obsidian设置/Community plugins/Kanban.md"
     },
     {
       "basename": "Advanced Slides",
@@ -39,14 +59,6 @@
     {
       "basename": "YouTube",
       "path": "Templates/YouTube.md"
-    },
-    {
-      "basename": "Templater",
-      "path": "Obsidian设置/Community plugins/Templater.md"
-    },
-    {
-      "basename": "Core plugins",
-      "path": "Obsidian设置/Core plugins.md"
     },
     {
       "basename": "add-metadata",
@@ -133,10 +145,6 @@
       "path": "README.md"
     },
     {
-      "basename": "Community plugins",
-      "path": "Obsidian设置/Community plugins.md"
-    },
-    {
       "basename": "Editor",
       "path": "Obsidian设置/Editor.md"
     },
@@ -155,10 +163,6 @@
     {
       "basename": "Outliner演示",
       "path": "示例/Outliner演示.md"
-    },
-    {
-      "basename": "Homepage插件演示",
-      "path": "示例/Homepage插件演示.md"
     },
     {
       "basename": "Hotkeys",
