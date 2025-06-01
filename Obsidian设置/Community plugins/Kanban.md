@@ -1,3 +1,4 @@
+这插件我还没用起来，就不做介绍了。
 
 下面是kanban插件的设置项介绍
 
@@ -80,3 +81,140 @@
 
 
 ![[Pasted image 20250601162120.png]]
+
+**Date & Time (日期与时间)**
+
+---
+
+1. **Move dates to card footer (将日期移动到卡片页脚)**
+    
+    - **描述：** When toggled, dates will be displayed in the card's footer instead of the card's body.
+    - **中文解释：** 当启用此选项（开关打开）时，卡片上的日期信息将显示在卡片的页脚区域，而不是在卡片的主要内容区域（正文）。这有助于保持卡片正文的整洁，并将日期这类元数据信息统一放置。
+    - **图片状态：** 未启用 (灰色开关)，所以日期默认会显示在卡片正文中或根据其在文本中的位置显示。
+2. **Date trigger (日期触发符)**
+    
+    - **描述：** When this is typed, it will trigger the date selector.
+    - **中文解释：** 当你在卡片中输入这里设置的字符（或字符串）时，会自动触发日期选择器，方便你快速插入日期。
+    - **图片状态：** `@` (默认情况下，输入 `@` 会弹出日期选择器)。
+3. **Time trigger (时间触发符)**
+    
+    - **描述：** When this is typed, it will trigger the time selector.
+    - **中文解释：** 当你在卡片中输入这里设置的字符（或字符串）时，会自动触发时间选择器，方便你快速插入时间。
+    - **图片状态：** `@@` (默认情况下，输入 `@@` 会弹出时间选择器)。
+4. **Date format (日期格式)**
+    
+    - **描述：** This format will be used when saving dates in markdown. For more syntax, refer to format reference. Your current syntax looks like this: 2025-06-01
+    - **中文解释：** 此设置定义了在 Markdown 文件中保存日期时所使用的格式。图片中显示的当前格式为 `YYYY-MM-DD`（年-月-日），例如 `2025-06-01`。你可以参考插件或 Moment.js/Luxon 等库的格式参考来了解更多语法选项。
+    - **图片状态：** `YYYY-MM-DD`。
+5. **Time format (时间格式)**
+    
+    - **描述：** For more syntax, refer to format reference. Your current syntax looks like this: 16:20
+    - **中文解释：** 此设置定义了在 Markdown 文件中保存时间时所使用的格式。图片中显示的当前格式为 `HH:mm`（24小时制的小时:分钟），例如 `16:20`。
+    - **图片状态：** `HH:mm`。
+6. **Date display format (日期显示格式)**
+    
+    - **描述：** This format will be used when displaying dates in Kanban cards. For more syntax, refer to format reference. Your current syntax looks like this: 2025-06-01
+    - **中文解释：** 此设置定义了日期在看板卡片上实际显示出来的格式。这可能与存储在 Markdown 文件中的格式不同，允许你以更易读或更简洁的方式展示日期。图片中显示的当前显示格式也为 `YYYY-MM-DD`。
+    - **图片状态：** `YYYY-MM-DD`。
+7. **Show relative date (显示相对日期)**
+    
+    - **描述：** When toggled, cards will display the distance between today and the card's date. e.g. 'In 3 days', 'A month ago'. Relative dates will not be shown for dates from the Tasks and Dataview plugins.
+    - **中文解释：** 当启用此选项时，卡片上将显示日期相对于今天的距离，例如“3天后”、“一个月前”。但请注意，来自 Obsidian Tasks 插件或 Dataview 插件的日期将不会以相对日期的形式显示（它们会保持其原始格式）。
+    - **图片状态：** 未启用 (灰色开关)。
+8. **Link dates to daily notes (将日期链接到每日笔记)**
+    
+    - **描述：** When toggled, dates will link to daily notes. Eg. [2021-04-26]
+    - **中文解释：** 当启用此选项时，如果你的 Obsidian 知识库中存在对应日期的每日笔记，那么看板卡片上的日期文本将自动链接到该每日笔记。例如，卡片上的日期 `2021-04-26` 会变成一个指向 `2021-04-26.md` 每日笔记的链接。
+    - **图片状态：** 未启用 (灰色开关)。
+9. **Display date colors (显示日期颜色)**
+    
+    - **描述：** Set colors for dates displayed in cards based on the rules below.
+    - **中文解释：** 此功能允许你根据预设的规则为卡片上显示的日期设置不同的颜色。例如，你可以设置规则使得即将到期的日期显示为黄色，已过期的日期显示为红色等。通过下方的 "Add date color" 按钮来添加颜色规则。
+    - **图片状态：** 当前没有预设的日期颜色规则。
+
+![[Pasted image 20250601164326.png]]
+1. **Add date and time to archived cards (将日期和时间添加到已归档卡片)**
+    
+    - **描述：** When toggled, the current date and time will be added to the card title when it is archived. Eg. - `[ ] 2021-05-14 10:00am My card title`
+    - **中文解释：** 当启用此选项时，在卡片被归档的那一刻，当前的日期和时间会自动添加到该卡片的标题中。示例显示，它通常会加在标题的前面，并且可能包含一个任务完成的标记（如 `[ ]` 或 `[x]`，具体取决于卡片状态和插件实现）。
+    - **图片状态：** 未启用 (灰色开关)。
+2. **Add archive date/time after card title (在卡片标题后添加归档日期/时间)**
+    
+    - **描述：** When toggled, the archived date/time will be added after the card title, e.g. - `[ ] My card title 2021-05-14 10:00am`. By default, it is inserted before the title.
+    - **中文解释：** 当启用此选项时，归档的日期和时间将被添加到卡片标题的 _后面_，而不是默认的前面。这只有在上面的“Add date and time to archived cards”启用时才有意义，或者如果插件逻辑允许独立控制位置。
+    - **图片状态：** 未启用 (灰色开关)。
+3. **Archive date/time separator (归档日期/时间分隔符)**
+    
+    - **描述：** This will be used to separate the archived date/time from the title.
+    - **中文解释：** 在这里输入的字符（或字符串）将被用作归档日期/时间与原始卡片标题之间的分隔符。例如，如果你输入 `|`，那么归档后的标题可能看起来像 `2021-05-14 10:00am | My card title` (如果日期在前) 或 `My card title | 2021-05-14 10:00am` (如果日期在后)。
+    - **图片状态：** 输入框为空，意味着可能使用默认的空格或其他预设分隔符。
+4. **Archive date/time format (归档日期/时间格式)**
+    
+    - **描述：** For more syntax, refer to format reference. Your current syntax looks like this: 2025-06-01 16:43
+    - **中文解释：** 此设置定义了添加到已归档卡片上的日期和时间的具体格式。图片中显示的当前格式为 `YYYY-MM-DD HH:mm`（年-月-日 时:分，24小时制），例如 `2025-06-01 16:43`。
+    - **图片状态：** `YYYY-MM-DD HH:mm`。
+5. **Calendar: first day of week (日历：每周的第一天)**
+    
+    - **描述：** Override which day is used as the start of the week.
+    - **中文解释：** 此设置允许你覆盖插件中日历视图或日期选择器默认的“每周第一天”。例如，你可以将每周的第一天设置为周一而不是周日（或反之），以符合你个人的习惯或地区设置。
+    - **图片状态：** `default` (使用插件或系统的默认设置)。你可以点击下拉菜单选择其他选项，如 "Sunday" 或 "Monday"。
+
+![[Pasted image 20250601164802.png]]
+
+**Inline Metadata (内联元数据)**
+
+---
+
+1. **Inline metadata position (内联元数据位置)**
+    
+    - **描述：** Controls where the inline metadata (from the Dataview plugin) will be displayed.
+    - **中文解释：** 此设置控制来自 [[Dataview插件综述|Dataview]] 插件的内联元数据显示在卡片上的哪个位置。例如，你可以选择将其显示在卡片正文、页脚或其他指定区域。
+    - **图片状态：** `Card body` (内联元数据将显示在卡片正文中)。
+2. **Move task data to card footer (将任务数据移动到卡片页脚)**
+    
+    - **描述：** When toggled, task data (from the Tasks plugin) will be displayed in the card's footer instead of the card's body.
+    - **中文解释：** 当启用此选项时，来自 [[Tasks|Tasks]] 插件的任务数据（例如截止日期、优先级等）将显示在卡片的页脚区域，而不是在卡片的主要内容区域（正文）。
+    - **图片状态：** 未启用 (灰色开关)。
+
+**Linked Page Metadata (链接页面元数据)**
+
+---
+
+- **描述：** Display metadata for the first note linked within a card. Specify which metadata keys to display below. An optional label can be provided, and labels can be hidden altogether.
+- **中文解释：** 此功能允许你在看板的卡片上直接显示该卡片链接到的第一个笔记文件中的元数据（通常是 [[Core plugins#14. Properties view|YAML frontmatter]] 中的字段）。
+    - 你可以在下方的 "Metadata key" 输入框中指定要显示的元数据字段的键名（例如 `status`, `project`, `due_date` 等），然后点击 "Add key" 添加。
+    - 你可以为显示的元数据提供一个可选的标签（别名），也可以选择完全隐藏标签，只显示元数据的值。
+- **图片状态：** 当前没有添加任何元数据键。
+
+**Board Header Buttons (看板头部按钮)**
+
+---
+
+这一部分控制看板视图顶部标题栏中显示哪些快捷操作按钮。
+
+1. **Add a list (添加列表)**
+    
+    - **描述：** （隐式）控制是否显示用于在看板上添加新列表（泳道）的按钮。
+    - **图片状态：** 已启用 (绿色开关)，表示会显示“添加列表”按钮。
+2. **Archive completed cards (归档已完成卡片)**
+    
+    - **描述：** （隐式）控制是否显示用于一键归档看板中所有已完成卡片的按钮。
+    - **图片状态：** 已启用 (绿色开关)，表示会显示“归档已完成卡片”按钮。
+3. **Open as markdown (以 Markdown 形式打开)**
+    
+    - **描述：** （隐式）控制是否显示用于直接打开当前看板的原始 Markdown 文件的按钮。
+    - **图片状态：** 已启用 (绿色开关)，表示会显示“以 Markdown 形式打开”按钮。
+4. **Open board settings (打开看板设置)**
+    
+    - **描述：** （隐式）控制是否显示用于打开当前特定看板的设置界面的按钮（这会覆盖插件的全局默认设置）。
+    - **图片状态：** 已启用 (绿色开关)，表示会显示“打开看板设置”按钮。
+5. **Search... (搜索...)**
+    
+    - **描述：** （隐式）控制是否显示用于在当前看板内搜索卡片的按钮。
+    - **图片状态：** 已启用 (绿色开关)，表示会显示“搜索”按钮。
+6. **Board view (看板视图)**
+    
+    - **描述：** （隐式）控制是否显示与看板视图相关的按钮。这可能是一个刷新视图的按钮，或者如果插件支持多种看板视图模式，则用于切换视图模式。
+    - **图片状态：** 已启用 (绿色开关)。
+
+通过这些设置，你可以精细地控制看板卡片上显示哪些元数据信息，以及看板顶部的常用操作按钮，从而使看板界面更符合你的工作流程和信息展示需求。

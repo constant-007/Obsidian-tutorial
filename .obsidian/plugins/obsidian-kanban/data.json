@@ -1,3 +1,4 @@
 {
-  "show-checkboxes": true
+  "show-checkboxes": true,
+  "date-picker-week-start": 1
 }
