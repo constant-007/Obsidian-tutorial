@@ -42,14 +42,7 @@
       "key": "T"
     }
   ],
-  "switcher:open": [
-    {
-      "modifiers": [
-        "Mod"
-      ],
-      "key": "O"
-    }
-  ],
+  "switcher:open": [],
   "workspace:close": [
     {
       "modifiers": [
@@ -164,6 +157,14 @@
         "Mod"
       ],
       "key": "U"
+    }
+  ],
+  "outline:open-for-current": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "O"
     }
   ]
 }

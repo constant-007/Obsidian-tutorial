@@ -1,6 +1,82 @@
 {
   "recentFiles": [
     {
+      "basename": "Grouping",
+      "path": "Obsidian设置/Community plugins/Tasks/Queries/Grouping.md"
+    },
+    {
+      "basename": "Global Query",
+      "path": "Obsidian设置/Community plugins/Tasks/Queries/Global Query.md"
+    },
+    {
+      "basename": "Filters",
+      "path": "Obsidian设置/Community plugins/Tasks/Queries/Filters.md"
+    },
+    {
+      "basename": "About Queries",
+      "path": "Obsidian设置/Community plugins/Tasks/Queries/About Queries.md"
+    },
+    {
+      "basename": "README",
+      "path": "Obsidian设置/Community plugins/Tasks/README.md"
+    },
+    {
+      "basename": "Quick Reference",
+      "path": "Obsidian设置/Community plugins/Tasks/Quick Reference.md"
+    },
+    {
+      "basename": "Introduction",
+      "path": "Obsidian设置/Community plugins/Tasks/Introduction.md"
+    },
+    {
+      "basename": "Make a query user interface",
+      "path": "Obsidian设置/Community plugins/Tasks/How To/Make a query user interface.md"
+    },
+    {
+      "basename": "How to style buttons",
+      "path": "Obsidian设置/Community plugins/Tasks/How To/How to style buttons.md"
+    },
+    {
+      "basename": "How to style backlinks",
+      "path": "Obsidian设置/Community plugins/Tasks/How To/How to style backlinks.md"
+    },
+    {
+      "basename": "How to get tasks in current file",
+      "path": "Obsidian设置/Community plugins/Tasks/How To/How to get tasks in current file.md"
+    },
+    {
+      "basename": "Find tasks with invalid data",
+      "path": "Obsidian设置/Community plugins/Tasks/How To/Find tasks with invalid data.md"
+    },
+    {
+      "basename": "Find tasks for coming 7 days",
+      "path": "Obsidian设置/Community plugins/Tasks/How To/Find tasks for coming 7 days.md"
+    },
+    {
+      "basename": "About How Tos",
+      "path": "Obsidian设置/Community plugins/Tasks/How To/About How Tos.md"
+    },
+    {
+      "basename": "Tasks Api",
+      "path": "Obsidian设置/Community plugins/Tasks/Advanced/Tasks Api.md"
+    },
+    {
+      "basename": "Styling",
+      "path": "Obsidian设置/Community plugins/Tasks/Advanced/Styling.md"
+    },
+    {
+      "basename": "Notifications",
+      "path": "Obsidian设置/Community plugins/Tasks/Advanced/Notifications.md"
+    },
+    {
+      "basename": "Daily Agenda",
+      "path": "Obsidian设置/Community plugins/Tasks/Advanced/Daily Agenda.md"
+    },
+    {
+      "basename": "About Advanced",
+      "path": "Obsidian设置/Community plugins/Tasks/Advanced/About Advanced.md"
+    },
+    {
       "basename": "Advanced Slides",
       "path": "Obsidian设置/Community plugins/Advanced Slides.md"
     },
@@ -35,10 +111,6 @@
     {
       "basename": "Kanban",
       "path": "Obsidian设置/Community plugins/Kanban.md"
-    },
-    {
-      "basename": "Tasks",
-      "path": "Obsidian设置/Community plugins/Tasks.md"
     },
     {
       "basename": "项目管理总视图",
@@ -127,70 +199,6 @@
     {
       "basename": "code-examples",
       "path": "Obsidian设置/Community plugins/Dataview/Dataview项目文档翻译/api/code-examples.md"
-    },
-    {
-      "basename": "calendar_query_type",
-      "path": "Obsidian设置/Community plugins/Dataview/Dataview项目文档翻译/assets/calendar_query_type.png"
-    },
-    {
-      "basename": "friends",
-      "path": "Obsidian设置/Community plugins/Dataview/Dataview项目文档翻译/friends.md"
-    },
-    {
-      "basename": "index",
-      "path": "Obsidian设置/Community plugins/Dataview/Dataview项目文档翻译/index.md"
-    },
-    {
-      "basename": "literals",
-      "path": "Obsidian设置/Community plugins/Dataview/Dataview项目文档翻译/reference/literals.md"
-    },
-    {
-      "basename": "expressions",
-      "path": "Obsidian设置/Community plugins/Dataview/Dataview项目文档翻译/reference/expressions.md"
-    },
-    {
-      "basename": "sources",
-      "path": "Obsidian设置/Community plugins/Dataview/Dataview项目文档翻译/reference/sources.md"
-    },
-    {
-      "basename": "functions",
-      "path": "Obsidian设置/Community plugins/Dataview/Dataview项目文档翻译/reference/functions.md"
-    },
-    {
-      "basename": "README",
-      "path": "示例/DataView演示/README.md"
-    },
-    {
-      "basename": "README",
-      "path": "README.md"
-    },
-    {
-      "basename": "Editor",
-      "path": "Obsidian设置/Editor.md"
-    },
-    {
-      "basename": "Files and links",
-      "path": "Obsidian设置/Files and links.md"
-    },
-    {
-      "basename": "General",
-      "path": "Obsidian设置/General.md"
-    },
-    {
-      "basename": "homepage",
-      "path": "homepage.md"
-    },
-    {
-      "basename": "Outliner演示",
-      "path": "示例/Outliner演示.md"
-    },
-    {
-      "basename": "Hotkeys",
-      "path": "Obsidian设置/Hotkeys.md"
-    },
-    {
-      "basename": "Slides插件演示",
-      "path": "示例/Slides插件演示.md"
     }
   ],
   "omittedPaths": [],
