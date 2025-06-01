@@ -1,16 +1,28 @@
 {
   "recentFiles": [
     {
+      "basename": "Advanced Table",
+      "path": "Obsidian设置/Community plugins/Advanced Table.md"
+    },
+    {
+      "basename": "Advanced Slides",
+      "path": "Obsidian设置/Community plugins/Advanced Slides.md"
+    },
+    {
       "basename": "Calendar",
       "path": "Obsidian设置/Community plugins/Calendar.md"
     },
     {
-      "basename": "Tasks",
-      "path": "Obsidian设置/Community plugins/Tasks.md"
+      "basename": "Git",
+      "path": "Obsidian设置/Community plugins/Git.md"
     },
     {
       "basename": "Homepage",
       "path": "Obsidian设置/Community plugins/Homepage.md"
+    },
+    {
+      "basename": "Tasks",
+      "path": "Obsidian设置/Community plugins/Tasks.md"
     },
     {
       "basename": "YouTube",
@@ -27,10 +39,6 @@
     {
       "basename": "Core plugins",
       "path": "Obsidian设置/Core plugins.md"
-    },
-    {
-      "basename": "Git",
-      "path": "Obsidian设置/Community plugins/Git.md"
     },
     {
       "basename": "add-metadata",
@@ -67,10 +75,6 @@
     {
       "basename": "Dataview插件综述",
       "path": "Obsidian设置/Community plugins/Dataview/Dataview插件综述.md"
-    },
-    {
-      "basename": "Advanced Slides",
-      "path": "Obsidian设置/Community plugins/Advanced Slides.md"
     },
     {
       "basename": "Admonition",
