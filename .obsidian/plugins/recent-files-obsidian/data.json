@@ -9,8 +9,16 @@
       "path": "示例/Kanban演示、/Kanban生活管理示例.md"
     },
     {
+      "basename": "Tasks Plugin - Review and check your Statuses 2025-06-01 20-05-01",
+      "path": "Tasks Plugin - Review and check your Statuses 2025-06-01 20-05-01.md"
+    },
+    {
       "basename": "Kanban快速上手指南",
       "path": "示例/Kanban演示、/Kanban快速上手指南.md"
+    },
+    {
+      "basename": "Kanban",
+      "path": "Obsidian设置/Community plugins/Kanban.md"
     },
     {
       "basename": "Custom Sorting",
@@ -165,10 +173,6 @@
       "path": "示例/Kanban演示、/Kanban学习计划示例.md"
     },
     {
-      "basename": "Kanban",
-      "path": "Obsidian设置/Community plugins/Kanban.md"
-    },
-    {
       "basename": "项目管理总视图",
       "path": "示例/DataView演示/项目管理总视图.md"
     },
@@ -191,14 +195,6 @@
     {
       "basename": "Appearance",
       "path": "Obsidian设置/Appearance.md"
-    },
-    {
-      "basename": "Tag Wrangler",
-      "path": "Obsidian设置/Community plugins/Tag Wrangler.md"
-    },
-    {
-      "basename": "Outliner",
-      "path": "Obsidian设置/Community plugins/Outliner.md"
     }
   ],
   "omittedPaths": [],
