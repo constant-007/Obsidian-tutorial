@@ -1,6 +1,18 @@
 {
   "recentFiles": [
     {
+      "basename": "Tasks插件综述",
+      "path": "Obsidian设置/Community plugins/Tasks/Tasks插件综述.md"
+    },
+    {
+      "basename": "Kanban生活管理示例",
+      "path": "示例/Kanban演示、/Kanban生活管理示例.md"
+    },
+    {
+      "basename": "Kanban快速上手指南",
+      "path": "示例/Kanban演示、/Kanban快速上手指南.md"
+    },
+    {
       "basename": "Custom Sorting",
       "path": "Obsidian设置/Community plugins/Tasks/Scripting/Custom Sorting.md"
     },
@@ -145,16 +157,8 @@
       "path": "示例/Kanban演示、/Kanban项目管理示例.md"
     },
     {
-      "basename": "Kanban生活管理示例",
-      "path": "示例/Kanban演示、/Kanban生活管理示例.md"
-    },
-    {
       "basename": "Kanban看板演示",
       "path": "示例/Kanban演示、/Kanban看板演示.md"
-    },
-    {
-      "basename": "Kanban快速上手指南",
-      "path": "示例/Kanban演示、/Kanban快速上手指南.md"
     },
     {
       "basename": "Kanban学习计划示例",
@@ -195,10 +199,6 @@
     {
       "basename": "Outliner",
       "path": "Obsidian设置/Community plugins/Outliner.md"
-    },
-    {
-      "basename": "Calendar",
-      "path": "Obsidian设置/Community plugins/Calendar.md"
     }
   ],
   "omittedPaths": [],

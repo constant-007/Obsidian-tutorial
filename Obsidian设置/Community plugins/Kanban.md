@@ -173,7 +173,7 @@
 2. **Move task data to card footer (将任务数据移动到卡片页脚)**
     
     - **描述：** When toggled, task data (from the Tasks plugin) will be displayed in the card's footer instead of the card's body.
-    - **中文解释：** 当启用此选项时，来自 [[Tasks|Tasks]] 插件的任务数据（例如截止日期、优先级等）将显示在卡片的页脚区域，而不是在卡片的主要内容区域（正文）。
+    - **中文解释：** 当启用此选项时，来自 [[Tasks插件综述|Tasks插件综述]] 插件的任务数据（例如截止日期、优先级等）将显示在卡片的页脚区域，而不是在卡片的主要内容区域（正文）。
     - **图片状态：** 未启用 (灰色开关)。
 
 **Linked Page Metadata (链接页面元数据)**
