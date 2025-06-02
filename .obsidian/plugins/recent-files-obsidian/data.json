@@ -1,24 +1,56 @@
 {
   "recentFiles": [
     {
-      "basename": "Ominisearch",
-      "path": "Obsidian设置/Community plugins/Ominisearch.md"
+      "basename": "Admonition",
+      "path": "Obsidian设置/Community plugins/Admonition.md"
     },
     {
-      "basename": "QuickAdd",
-      "path": "Obsidian设置/Community plugins/QuickAdd.md"
+      "basename": "Advanced Table",
+      "path": "Obsidian设置/Community plugins/Advanced Table.md"
+    },
+    {
+      "basename": "Calendar",
+      "path": "Obsidian设置/Community plugins/Calendar.md"
+    },
+    {
+      "basename": "Git",
+      "path": "Obsidian设置/Community plugins/Git.md"
+    },
+    {
+      "basename": "Iconize",
+      "path": "Obsidian设置/Community plugins/Iconize.md"
+    },
+    {
+      "basename": "Kanban",
+      "path": "Obsidian设置/Community plugins/Kanban.md"
     },
     {
       "basename": "Minimal Theme Settings",
       "path": "Obsidian设置/Community plugins/Minimal Theme Settings.md"
     },
     {
+      "basename": "Outliner",
+      "path": "Obsidian设置/Community plugins/Outliner.md"
+    },
+    {
+      "basename": "QuickAdd",
+      "path": "Obsidian设置/Community plugins/QuickAdd.md"
+    },
+    {
       "basename": "Remotely Save",
       "path": "Obsidian设置/Community plugins/Remotely Save.md"
     },
     {
-      "basename": "Iconize",
-      "path": "Obsidian设置/Community plugins/Iconize.md"
+      "basename": "homepage",
+      "path": "homepage.md"
+    },
+    {
+      "basename": "README",
+      "path": "README.md"
+    },
+    {
+      "basename": "Ominisearch",
+      "path": "Obsidian设置/Community plugins/Ominisearch.md"
     },
     {
       "basename": "Templater",
@@ -31,14 +63,6 @@
     {
       "basename": "Style Settings",
       "path": "Obsidian设置/Community plugins/Style Settings.md"
-    },
-    {
-      "basename": "Outliner",
-      "path": "Obsidian设置/Community plugins/Outliner.md"
-    },
-    {
-      "basename": "Kanban",
-      "path": "Obsidian设置/Community plugins/Kanban.md"
     },
     {
       "basename": "Callout",
@@ -175,30 +199,6 @@
     {
       "basename": "How to get tasks in current file",
       "path": "Obsidian设置/Community plugins/Tasks/How To/How to get tasks in current file.md"
-    },
-    {
-      "basename": "Find tasks with invalid data",
-      "path": "Obsidian设置/Community plugins/Tasks/How To/Find tasks with invalid data.md"
-    },
-    {
-      "basename": "Find tasks for coming 7 days",
-      "path": "Obsidian设置/Community plugins/Tasks/How To/Find tasks for coming 7 days.md"
-    },
-    {
-      "basename": "About How Tos",
-      "path": "Obsidian设置/Community plugins/Tasks/How To/About How Tos.md"
-    },
-    {
-      "basename": "Tasks Api",
-      "path": "Obsidian设置/Community plugins/Tasks/Advanced/Tasks Api.md"
-    },
-    {
-      "basename": "Styling",
-      "path": "Obsidian设置/Community plugins/Tasks/Advanced/Styling.md"
-    },
-    {
-      "basename": "Notifications",
-      "path": "Obsidian设置/Community plugins/Tasks/Advanced/Notifications.md"
     }
   ],
   "omittedPaths": [],
