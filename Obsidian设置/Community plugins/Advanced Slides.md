@@ -1,6 +1,4 @@
-Advanced Slides旨在让你能够直接在 Obsidian 中使用 Markdown 笔记创建复杂且富有表现力的演示文稿。它基于著名的开源 HTML 演示框架 **Reveal.js** 构建，因此继承了 Reveal.js 的许多高级特性
-
-与 Obsidian 自带的“Slides”（幻灯片）核心插件相比，"Advanced Slides" 提供了远为丰富的功能和更高的自定义度
+这个插件是Obsidian自带的[[Core plugins#20. Slides|Slides]]插件的极大加强。用于在Obsidian中制作幻灯片，理论上可以制作像在office powerpoint中那样专业的精美PPT，不过掌握reveal.js，学习曲线比较陡峭（或者你可以直接让AI帮你写）。可以在[[Advanced Slides 插件演示|Advanced Slides 插件演示]]中查看这个插件做的PPT的示例
 
 **"Advanced Slides" 插件的核心功能和特点：**
 
@@ -188,3 +186,4 @@ Advanced Slides旨在让你能够直接在 Obsidian 中使用 Markdown 笔记创
     - **状态**：图片中此选项的开关为**开启**状态。
     - **功能**：启用后，在演示过程中，你可以按下指定的快捷键（如描述中的 `Q` 键）来将你的鼠标光标变成一个模拟的激光笔红点效果。移动鼠标时，这个红点会跟随移动，方便你指向幻灯片上的特定内容以引导观众的注意力。再次按下该快捷键可以关闭激光笔效果。
     - **作用**：提供一个虚拟的指示工具，替代物理激光笔。
+

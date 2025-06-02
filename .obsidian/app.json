@@ -21,7 +21,7 @@
     "downscalePercent": 100
   },
   "livePreview": true,
-  "propertiesInDocument": "visible",
+  "propertiesInDocument": "source",
   "autoPairMarkdown": false,
   "autoPairBrackets": false
 }

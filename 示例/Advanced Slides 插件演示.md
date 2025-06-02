@@ -1,426 +1,376 @@
-# Advanced Slides 插件演示
-
-这个文件展示了 Obsidian 中 Advanced Slides 插件的功能和用法，可以直接用作幻灯片演示。
-
 ---
-
-## 基本介绍
-
-Advanced Slides 是 Obsidian 中强大的演示文稿创建工具，基于 [Reveal.js](https://revealjs.com/)。
-
-使用 Markdown 语法创建专业级幻灯片演示！
-
----
-
-## 基本用法
-
-1. 使用 `---` 分隔幻灯片
-2. 使用 `--` 创建垂直幻灯片
-3. 点击左侧Ribbon中的Show Slide Preview按钮可预览PPT
-
-注: 也可通过Command palette调用幻灯片预览功能
-
----
-
-## 文本格式
-
-支持所有标准 Markdown 格式：
-
-- **粗体文本**
-- *斜体文本*
-- ~~删除线~~
-- ==高亮文本==
-- [[内部链接]]
-- [外部链接](https://obsidian.md)
-
----
-
-## 列表和引用
-
-### 无序列表
-- 项目 1
-- 项目 2
-  - 子项目 A
-  - 子项目 B
-
-### 有序列表
-1. 第一步
-2. 第二步
-3. 第三步
-
-> 这是一个引用块
-
----
-
-## 代码块
-
-```javascript
-function hello() {
-  console.log("Hello, Advanced Slides!");
-}
-```
-
-支持代码高亮！
-
----
-
-## 表格支持
-
-| 特性 | 描述 | 难度 |
-| --- | --- | --- |
-| 基本布局 | 幻灯片布局结构 | 简单 |
-| 主题 | 预设和自定义主题 | 中等 |
-| 动画 | 元素动画和转场 | 高级 |
-
----
-
-## 图片和图表
-
-![示例图片](../Attachment/avatar.jpg)
-
----
-
-## Mermaid 图表支持
-
-```mermaid
-graph TD
-    A[开始] --> B{决策}
-    B -->|是| C[行动]
-    B -->|否| D[不行动]
-    C --> E[结果]
-    D --> E
-```
-
----
-
-## 数学公式支持
-
-使用 $\LaTeX$ 插入公式：
-
-$$
-E = mc^2
-$$
-
-$$
-\frac{d}{dx}e^x = e^x
-$$
-
----
-
-## 幻灯片注释
-
-<!-- 这是一条不会显示在幻灯片中的注释 -->
-
-以包裹
-
-注: 可以为演讲者添加笔记
-note: 这是演讲者笔记，只有演讲者可见
-
----
-
-<!-- slide template="[[tpl-columns-2]]" -->
-
-## 布局控制：列布局
-
-左栏内容
-- 第一点
-- 第二点
-
-右栏内容
-1. 首先
-2. 其次
-
----
-
-<!-- slide template="[[tpl-columns-3]]" -->
-
-## 三栏布局示例
-
-左栏内容
-
-中栏内容
-
-右栏内容
-
----
-
-## 背景设置
-
-<!-- slide bg="https://source.unsplash.com/1600x900/?nature" -->
-
-## 自定义背景
-
-可以设置图片、颜色或渐变作为背景
-
----
-
-<!-- slide bg="#A7C5BD" -->
-
-## 颜色背景
-
-不同的颜色可以强调不同的部分
-
----
-
-## 分段显示
-
-<!-- slide -->
-
-- 点击后显示第一点 <!-- element class="fragment" -->
-- 点击后显示第二点 <!-- element class="fragment" -->
-- 点击后显示第三点 <!-- element class="fragment" -->
-
----
-
-## 动画效果
-
-- 淡入效果 <!-- element class="fragment fade-in" -->
-- 向上淡入 <!-- element class="fragment fade-up" -->
-- 向右淡入 <!-- element class="fragment fade-right" -->
-
----
-
-## 强调动画
-
-突出显示 <!-- element class="fragment highlight-red" -->
-
-变淡效果 <!-- element class="fragment fade-out" -->
-
----
-
-## 转场效果
-
-<!-- slide transition="zoom" -->
-
-### 缩放转场
-
-<!-- slide transition="fade" -->
-
-### 淡入淡出
-
-<!-- slide transition="slide" -->
-
-### 滑动效果
-
----
-
-## 主题设置
-
-Advanced Slides 提供多种内置主题：
-
-- 简单
-- 黑色
-- 白色
-- 联盟
-- 月亮
-- 太阳花
-
----
-
-## 自定义 CSS
-
-可以使用CSS片段自定义样式：
-
-```css
-.slide {
-  background-color: #f5f5f5;
-}
-.slide h1 {
-  color: #1a5dad;
-}
-```
-
-存储在 `.obsidian/snippets/` 文件夹
-
----
-
-## 导出选项
-
-- 导出为 PDF
-- 导出为 HTML
-- 导出为独立 HTML 文件
-- 打印幻灯片
-
----
-
-## 演讲者视图
-
-按 `S` 键打开演讲者视图，包含：
-
-- 当前和下一张幻灯片预览
-- 演讲者笔记
-- 计时器
-- 放大和缩小控制
-
----
-
-## 交互式元素
-
-可以嵌入交互元素：
-
-- 复选框
-- [x] 已完成任务
-- [ ] 未完成任务
-
----
-
-## 幻灯片网格导航
-
-按 `O` 或`ESC` 键切换幻灯片网格概览
-
----
-
-## 自动播放
-
-以下三页包含yaml代码的PPT主要是演示源码，这里显示会有问题，请忽略
-
-设置自动播放和循环播放：
-
-```yaml
----
-presentation:
-  autoSlide: 5000
-  loop: true
----
-```
-
----
-
-## YAML 前置元数据
-
-```yaml
----
-theme: moon
-transition: slide
-highlight: monokai
-autoSlide: 5000
+theme: black
+transition: convex
+autoSlide: 0
 controls: true
 progress: true
+center: true
+hash: true
+overview: true
+touch: true
+hideAddressBar: true
+parallaxBackgroundImage: "https://images.unsplash.com/photo-1507499739999-097706ad8914?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80"
+parallaxBackgroundSize: "2100px 900px"
+parallaxBackgroundHorizontal: 200
+parallaxBackgroundVertical: 50
+width: 1920
+height: 1080
+margin: 0.04
+minScale: 0.2
+maxScale: 2.0
 ---
+
+<!-- slide bg="linear-gradient(135deg, #667eea 0%, #764ba2 100%)" -->
+
+# <span style="font-size: 4em; background: linear-gradient(45deg, #FFD700, #FFA500); -webkit-background-clip: text; -webkit-text-fill-color: transparent; text-shadow: 2px 2px 4px rgba(0,0,0,0.5);">✨ Advanced Slides</span>
+
+## <span style="color: #FFD700; font-size: 2em;">极致演示体验</span>
+
+### <span style="color: #E6E6FA; opacity: 0.9;">将 Obsidian 变身为专业演示利器</span>
+
+<div style="margin-top: 50px;">
+  <span style="background: rgba(255,255,255,0.1); padding: 15px 30px; border-radius: 50px; border: 2px solid #FFD700; color: #FFD700; font-weight: bold;">🚀 开启精彩之旅</span>
+</div>
+
+note: 欢迎来到 Advanced Slides 的精美演示世界
+
+---
+
+<!-- slide bg="https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-4.0.3&auto=format&fit=crop&w=2074&q=80" transition="zoom" -->
+
+<div style="background: rgba(0,0,0,0.7); padding: 40px; border-radius: 20px; backdrop-filter: blur(10px);">
+
+# <span style="color: #00D4FF; font-size: 3.5em;">🎯 核心功能</span>
+
+<grid drag="45 80" drop="5 20" style="background: linear-gradient(135deg, rgba(255,107,107,0.9), rgba(255,142,83,0.9)); border-radius: 15px; padding: 30px; box-shadow: 0 10px 30px rgba(0,0,0,0.3);">
+
+## <span style="color: white; font-size: 2em;">🎨 视觉设计</span>
+
+- ✨ 渐变背景与视差滚动
+- 🖼️ 高清图片背景
+- 🌈 自定义色彩方案
+- 💫 流畅动画效果
+
+</grid>
+
+<grid drag="45 80" drop="50 20" style="background: linear-gradient(135deg, rgba(74,144,226,0.9), rgba(80,170,204,0.9)); border-radius: 15px; padding: 30px; box-shadow: 0 10px 30px rgba(0,0,0,0.3);">
+
+## <span style="color: white; font-size: 2em;">⚡ 交互体验</span>
+
+- 🎪 分段显示动画
+- 🔄 多种转场效果
+- 📱 触控手势支持
+- 🎬 演讲者视图
+
+</grid>
+
+</div>
+
+---
+
+<!-- slide bg="https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&auto=format&fit=crop&w=2072&q=80" transition="slide-in fade-out" -->
+
+<div style="background: linear-gradient(135deg, rgba(17,24,39,0.95), rgba(31,41,55,0.95)); padding: 50px; border-radius: 25px; border: 3px solid #60A5FA; backdrop-filter: blur(15px); box-shadow: 0 25px 50px rgba(0,0,0,0.5);">
+
+# <span style="background: linear-gradient(45deg, #60A5FA, #34D399); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-size: 3.5em;">🏗️ 布局系统</span>
+
+<grid drag="30 70" drop="5 25" style="background: linear-gradient(135deg, #8B5CF6, #A855F7); border-radius: 20px; padding: 25px; transform: perspective(1000px) rotateY(-5deg); box-shadow: 10px 10px 30px rgba(0,0,0,0.3);">
+
+## <span style="color: white; font-size: 1.8em;">📐 网格布局</span>
+
+- 精确定位控制
+- 响应式设计
+- 3D 视觉效果
+- 弹性容器
+
+</grid>
+
+<grid drag="30 70" drop="37.5 25" style="background: linear-gradient(135deg, #F59E0B, #EF4444); border-radius: 20px; padding: 25px; transform: perspective(1000px) rotateY(0deg) rotateX(5deg); box-shadow: 10px 10px 30px rgba(0,0,0,0.3);">
+
+## <span style="color: white; font-size: 1.8em;">🎭 多栏分布</span>
+
+- 双栏对比布局
+- 三栏均匀分配
+- 自由组合排列
+- 视觉层次清晰
+
+</grid>
+
+<grid drag="30 70" drop="65 25" style="background: linear-gradient(135deg, #10B981, #059669); border-radius: 20px; padding: 25px; transform: perspective(1000px) rotateY(5deg); box-shadow: 10px 10px 30px rgba(0,0,0,0.3);">
+
+## <span style="color: white; font-size: 1.8em;">🎨 自定义样式</span>
+
+- CSS 完全控制
+- 动态背景效果
+- 字体渐变处理
+- 阴影投射效果
+
+</grid>
+
+</div>
+
+---
+
+<!-- slide bg="https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" transition="concave" -->
+
+<div style="text-align: center; color: white;">
+
+# <span style="font-size: 4em; text-shadow: 3px 3px 6px rgba(0,0,0,0.8); background: linear-gradient(45deg, #FF6B6B, #4ECDC4, #45B7D1, #96CEB4, #FFEAA7); -webkit-background-clip: text; -webkit-text-fill-color: transparent; animation: rainbow 3s ease-in-out infinite alternate;">🎪 动画展示</span>
+
+<div style="margin-top: 60px;">
+
+<div style="display: inline-block; margin: 20px; padding: 30px; background: rgba(255,255,255,0.1); border-radius: 15px; backdrop-filter: blur(10px); border: 2px solid rgba(255,255,255,0.2);" class="fragment fade-up">
+  <span style="font-size: 3em;">🌟</span><br>
+  <span style="font-size: 1.5em; color: #FFD700;">淡入向上</span>
+</div>
+
+<div style="display: inline-block; margin: 20px; padding: 30px; background: rgba(255,255,255,0.1); border-radius: 15px; backdrop-filter: blur(10px); border: 2px solid rgba(255,255,255,0.2);" class="fragment fade-right">
+  <span style="font-size: 3em;">🚀</span><br>
+  <span style="font-size: 1.5em; color: #00D4FF;">向右滑入</span>
+</div>
+
+<div style="display: inline-block; margin: 20px; padding: 30px; background: rgba(255,255,255,0.1); border-radius: 15px; backdrop-filter: blur(10px); border: 2px solid rgba(255,255,255,0.2);" class="fragment zoom-in">
+  <span style="font-size: 3em;">💫</span><br>
+  <span style="font-size: 1.5em; color: #FF6B9D;">缩放进入</span>
+</div>
+
+<div style="display: inline-block; margin: 20px; padding: 30px; background: rgba(255,255,255,0.1); border-radius: 15px; backdrop-filter: blur(10px); border: 2px solid rgba(255,255,255,0.2);" class="fragment highlight-red">
+  <span style="font-size: 3em;">✨</span><br>
+  <span style="font-size: 1.5em; color: #90EE90;">高亮强调</span>
+</div>
+
+</div>
+
+<div style="margin-top: 60px; font-size: 1.5em; color: #E6E6FA;" class="fragment fade-in">
+  🎭 每个元素都可以拥有独特的出场方式
+</div>
+
+</div>
+
+---
+
+<!-- slide bg="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" transition="zoom" -->
+
+<grid drag="100 20" drop="0 0" style="background: linear-gradient(135deg, rgba(139,69,19,0.9), rgba(160,82,45,0.9)); border-radius: 0 0 50px 50px; padding: 30px; text-align: center; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
+  <h1 style="color: #FFD700; font-size: 3.5em; margin: 0; text-shadow: 2px 2px 4px rgba(0,0,0,0.8);">📊 数据可视化</h1>
+</grid>
+
+<grid drag="45 60" drop="5 25" style="background: rgba(255,255,255,0.95); border-radius: 20px; padding: 30px; box-shadow: 0 15px 35px rgba(0,0,0,0.3);">
+
+## <span style="color: #2563EB; font-size: 2.2em;">📈 Mermaid 图表</span>
+
+```mermaid
+graph LR
+    A[用户需求] --> B{分析}
+    B -->|复杂| C[高级方案]
+    B -->|简单| D[基础方案]
+    C --> E[Advanced Slides]
+    D --> E
+    E --> F[精美演示]
+    F --> G[💼 商业成功]
+    
+    style A fill:#e1f5fe
+    style E fill:#f3e5f5
+    style G fill:#e8f5e8
 ```
 
+</grid>
+
+<grid drag="45 60" drop="52 25" style="background: rgba(17,24,39,0.95); border-radius: 20px; padding: 30px; border: 2px solid #60A5FA; box-shadow: 0 15px 35px rgba(0,0,0,0.3);">
+
+## <span style="color: #60A5FA; font-size: 2.2em;">🧮 数学公式</span>
+
+<div style="color: white; font-size: 1.2em; margin: 20px 0;">
+演示效果评分公式：
+</div>
+
+<div style="color: #34D399; font-size: 1.8em; margin: 30px 0;">
+$$\text{美感} = \frac{\text{设计}^2 + \text{动画} \times \text{布局}}{\text{复杂度}} + \text{创意}$$
+</div>
+
+<div style="color: #FBBF24; font-size: 1.1em;">
+当 Advanced Slides 参数达到最优时：
+$$\lim_{t \to \infty} \text{演示效果} = \text{完美}$$
+</div>
+
+</grid>
+
 ---
 
-## 自定义尺寸
+<!-- slide bg="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" transition="convex" -->
 
-```yaml
+<div style="background: linear-gradient(135deg, rgba(0,0,0,0.8), rgba(31,41,55,0.8)); padding: 50px; border-radius: 30px; border: 3px solid #10B981; backdrop-filter: blur(20px); box-shadow: 0 30px 60px rgba(0,0,0,0.6);">
+
+# <span style="color: #10B981; font-size: 3.5em; text-shadow: 2px 2px 4px rgba(0,0,0,0.8);">💼 实战应用</span>
+
+<div style="margin-top: 40px;">
+
+<div style="display: flex; justify-content: space-between; flex-wrap: wrap; gap: 30px;">
+
+<div style="flex: 1; min-width: 300px; background: linear-gradient(135deg, #667eea, #764ba2); border-radius: 20px; padding: 30px; text-align: center; transform: perspective(1000px) rotateY(-10deg); box-shadow: 15px 15px 30px rgba(0,0,0,0.4);" class="fragment fade-up">
+  <div style="font-size: 4em; margin-bottom: 20px;">🎓</div>
+  <h3 style="color: white; font-size: 1.8em; margin-bottom: 15px;">教育培训</h3>
+  <p style="color: #E6E6FA; font-size: 1.1em;">课程内容生动展示<br>学员注意力持续集中<br>知识点层层递进</p>
+</div>
+
+<div style="flex: 1; min-width: 300px; background: linear-gradient(135deg, #f093fb, #f5576c); border-radius: 20px; padding: 30px; text-align: center; transform: perspective(1000px) rotateY(0deg); box-shadow: 15px 15px 30px rgba(0,0,0,0.4);" class="fragment fade-up" data-fragment-index="1">
+  <div style="font-size: 4em; margin-bottom: 20px;">🏢</div>
+  <h3 style="color: white; font-size: 1.8em; margin-bottom: 15px;">商业汇报</h3>
+  <p style="color: #FFE6E6; font-size: 1.1em;">数据图表专业呈现<br>决策方案清晰对比<br>客户印象深刻难忘</p>
+</div>
+
+<div style="flex: 1; min-width: 300px; background: linear-gradient(135deg, #4facfe, #00f2fe); border-radius: 20px; padding: 30px; text-align: center; transform: perspective(1000px) rotateY(10deg); box-shadow: 15px 15px 30px rgba(0,0,0,0.4);" class="fragment fade-up" data-fragment-index="2">
+  <div style="font-size: 4em; margin-bottom: 20px;">🚀</div>
+  <h3 style="color: white; font-size: 1.8em; margin-bottom: 15px;">产品发布</h3>
+  <p style="color: #E6F9FF; font-size: 1.1em;">功能特性动态展示<br>用户体验流畅演示<br>品牌形象专业提升</p>
+</div>
+
+</div>
+
+</div>
+
+<div style="margin-top: 50px; text-align: center;" class="fragment fade-in" data-fragment-index="3">
+  <span style="background: linear-gradient(45deg, #FFD700, #FFA500); padding: 15px 40px; border-radius: 50px; color: #000; font-weight: bold; font-size: 1.3em; box-shadow: 0 10px 25px rgba(255,215,0,0.4);">✨ 让每次演示都成为艺术品</span>
+</div>
+
+</div>
+
 ---
-height: 800
-width: 1400
-margin: 0.1
----
+
+<!-- slide bg="https://images.unsplash.com/photo-1486312338219-ce68e2c6b4d3?ixlib=rb-4.0.3&auto=format&fit=crop&w=2072&q=80" transition="zoom" -->
+
+<div style="background: rgba(0,0,0,0.85); padding: 60px; border-radius: 25px; backdrop-filter: blur(15px); border: 2px solid #8B5CF6; box-shadow: 0 25px 50px rgba(0,0,0,0.7);">
+
+# <span style="background: linear-gradient(45deg, #8B5CF6, #EC4899); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-size: 3.5em;">🛠️ 高级技巧</span>
+
+<grid drag="48 70" drop="2 25" style="background: linear-gradient(135deg, rgba(59,130,246,0.9), rgba(147,51,234,0.9)); border-radius: 20px; padding: 30px; box-shadow: 0 15px 30px rgba(0,0,0,0.4);">
+
+## <span style="color: white; font-size: 2em;">⌨️ 快捷操作</span>
+
+<div style="color: #E6E6FA; font-size: 1.2em; line-height: 1.8;">
+
+- <span style="background: rgba(255,255,255,0.2); padding: 5px 10px; border-radius: 8px; margin-right: 10px;">F</span> 全屏模式 <!-- element class="fragment fade-in-then-semi-out" -->
+- <span style="background: rgba(255,255,255,0.2); padding: 5px 10px; border-radius: 8px; margin-right: 10px;">S</span> 演讲者视图 <!-- element class="fragment fade-in-then-semi-out" -->
+- <span style="background: rgba(255,255,255,0.2); padding: 5px 10px; border-radius: 8px; margin-right: 10px;">ESC</span> 幻灯片概览 <!-- element class="fragment fade-in-then-semi-out" -->
+- <span style="background: rgba(255,255,255,0.2); padding: 5px 10px; border-radius: 8px; margin-right: 10px;">B</span> 黑屏暂停 <!-- element class="fragment fade-in-then-semi-out" -->
+
+</div>
+
+</grid>
+
+<grid drag="48 70" drop="52 25" style="background: linear-gradient(135deg, rgba(236,72,153,0.9), rgba(251,191,36,0.9)); border-radius: 20px; padding: 30px; box-shadow: 0 15px 30px rgba(0,0,0,0.4);">
+
+## <span style="color: white; font-size: 2em;">🎨 样式秘籍</span>
+
+<div style="color: #FFF; font-size: 1.1em; line-height: 1.6;">
+
+```css
+/* 渐变文字效果 */
+background: linear-gradient(45deg, #FF6B6B, #4ECDC4);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+
+/* 毛玻璃效果 */
+backdrop-filter: blur(10px);
+background: rgba(255,255,255,0.1);
+
+/* 3D变换 */
+transform: perspective(1000px) rotateY(-10deg);
 ```
 
-适配不同的屏幕和投影需求
+</div>
+
+</grid>
+
+<div style="margin-top: 40px; text-align: center;" class="fragment zoom-in">
+  <span style="font-size: 1.5em; color: #FBBF24; text-shadow: 2px 2px 4px rgba(0,0,0,0.5);">🌟 掌握这些技巧，你就是演示大师！</span>
+</div>
+
+</div>
 
 ---
 
-## 高级功能：分屏模式
+<!-- slide bg="https://images.unsplash.com/photo-1419242902214-272b3f66ee7a?ixlib=rb-4.0.3&auto=format&fit=crop&w=2013&q=80" transition="slide" -->
 
-<grid drag="50 100" drop="0 50">
-左侧内容
+<div style="text-align: center; color: white; background: rgba(0,0,0,0.7); padding: 60px; border-radius: 30px; backdrop-filter: blur(20px); border: 3px solid #60A5FA; box-shadow: 0 30px 60px rgba(0,0,0,0.8);">
 
-![左侧图片](../Attachment/avatar.jpg)
-</grid>
+# <span style="font-size: 5em; background: linear-gradient(45deg, #FFD700, #FFA500, #FF6B6B, #4ECDC4); -webkit-background-clip: text; -webkit-text-fill-color: transparent; text-shadow: 3px 3px 6px rgba(0,0,0,0.8);">🎊 结语</span>
 
-<grid drag="50 100" drop="50 17">
-右侧内容
-- 第一点
-- 第二点
-</grid>
+<div style="margin: 50px 0; font-size: 1.8em; color: #E6E6FA; line-height: 1.6;" class="fragment fade-up">
+  <span style="color: #60A5FA; font-weight: bold;">Advanced Slides</span> 不仅仅是一个演示工具<br>
+  它是您<span style="color: #34D399; font-weight: bold;">创意表达</span>的无限舞台
+</div>
 
----
+<div style="margin: 50px 0;" class="fragment zoom-in">
+  <div style="background: linear-gradient(135deg, #667eea, #764ba2); padding: 30px; border-radius: 20px; display: inline-block; box-shadow: 0 15px 35px rgba(0,0,0,0.5);">
+    <span style="font-size: 2.5em; color: #FFD700;">✨ 从今天开始</span><br>
+    <span style="font-size: 1.8em; color: white;">让每一次演示都震撼人心</span>
+  </div>
+</div>
 
-## 双栏布局
+<div style="margin-top: 60px; display: flex; justify-content: center; gap: 40px; flex-wrap: wrap;" class="fragment fade-in">
+  
+  <div style="background: rgba(255,255,255,0.1); padding: 20px 30px; border-radius: 15px; border: 2px solid #10B981;">
+    <span style="font-size: 2em;">🚀</span><br>
+    <span style="color: #10B981; font-weight: bold;">开始创造</span>
+  </div>
+  
+  <div style="background: rgba(255,255,255,0.1); padding: 20px 30px; border-radius: 15px; border: 2px solid #F59E0B;">
+    <span style="font-size: 2em;">💡</span><br>
+    <span style="color: #F59E0B; font-weight: bold;">持续创新</span>
+  </div>
+  
+  <div style="background: rgba(255,255,255,0.1); padding: 20px 30px; border-radius: 15px; border: 2px solid #EF4444;">
+    <span style="font-size: 2em;">🎯</span><br>
+    <span style="color: #EF4444; font-weight: bold;">完美演示</span>
+  </div>
 
-<grid drag="40 100" drop="0 0" bg="orange">
-左栏内容
+</div>
 
-可以放置文本、图表等
-</grid>
+<div style="margin-top: 50px; font-size: 1.3em; color: #FBBF24; font-style: italic;" class="fragment fade-in">
+  "优秀的演示不仅传达信息，更能激发灵感与行动"
+</div>
 
-<grid drag="60 100" drop="40 0" bg="pink">
-右栏内容
-
-- 便于对比内容
-- 更有效利用空间
-</grid>
-
----
-
-## 网格布局示例
-
-<grid drag="30 25" drop="5 15" bg="red">
-区块1
-</grid>
-
-<grid drag="30 25" drop="65 15" bg="green">
-区块2
-</grid>
-
-<grid drag="30 25" drop="35 60" bg="blue">
-区块3
-</grid>
+</div>
 
 ---
 
-## 复杂布局
+<!-- slide bg="linear-gradient(135deg, #1e3c72 0%, #2a5298 100%)" class="end-slide" -->
 
-<grid drag="40 30" drop="5 15" bg="#134896">
-左上区域
-</grid>
+<div style="text-align: center; padding: 80px 40px;">
 
-<grid drag="40 30" drop="55 15" bg="#4a9f44">
-右上区域
-</grid>
+<div style="font-size: 6em; margin-bottom: 30px;" class="fragment zoom-in">
+  🙏
+</div>
 
-<grid drag="90 30" drop="5 55" bg="#9a4293">
-底部长条区域
-</grid>
+<h1 style="font-size: 4em; color: #FFD700; text-shadow: 3px 3px 6px rgba(0,0,0,0.8); margin-bottom: 40px;" class="fragment fade-up">谢谢观看</h1>
 
----
+<div style="font-size: 1.8em; color: #E6E6FA; margin-bottom: 50px; line-height: 1.6;" class="fragment fade-up" data-fragment-index="1">
+  希望这个演示能够激发您的创作灵感<br>
+  <span style="color: #60A5FA;">让我们一起创造更美好的演示体验</span>
+</div>
 
-## 对齐控制
+<div style="background: rgba(255,255,255,0.1); padding: 30px; border-radius: 20px; backdrop-filter: blur(10px); border: 2px solid rgba(255,255,255,0.2); display: inline-block; margin-top: 40px;" class="fragment fade-in" data-fragment-index="2">
+  <div style="font-size: 1.4em; color: #FBBF24; margin-bottom: 15px;">📧 联系方式</div>
+  <div style="color: #E6E6FA; font-size: 1.2em;">
+    有任何问题或建议，欢迎随时交流讨论<br>
+    <span style="color: #34D399;">让我们共同推进演示艺术的边界</span>
+  </div>
+</div>
 
-左对齐 <!-- element class="align-left" -->
+<div style="margin-top: 60px; font-size: 1.1em; color: #94A3B8;" class="fragment fade-in" data-fragment-index="3">
+  <em>Powered by Advanced Slides & Obsidian</em>
+</div>
 
-居中 <!-- element class="align-center" -->
+</div>
 
-右对齐 <!-- element class="align-right" -->
+<style>
+@keyframes rainbow {
+  0% { filter: hue-rotate(0deg); }
+  100% { filter: hue-rotate(360deg); }
+}
 
----
-
-## 幻灯片内导航
-
-点击数字导航到指定幻灯片：
-
-[点击前往第一张幻灯片](#/0)
-
-[点击前往"基本用法"](#/2)
-
----
-
-## 实用快捷键
-
-- `F` - 全屏
-- `ESC` - 概览
-- `S` - 演讲者视图
-- `B` 或 `.` - 暂停(黑屏)
-- `Alt+点击` - 放大
-
----
-
-## 如何使用本演示
-
-1. 安装 Advanced Slides 插件
-2. 复制此文件内容
-3. 点击预览幻灯片按钮
-4. 享受专业演示体验！
-
----
-
-<!-- slide class="thank-you" -->
-
-# 谢谢观看!
-
-有任何问题欢迎讨论
+.end-slide {
+  background-attachment: fixed !important;
+}
+</style>

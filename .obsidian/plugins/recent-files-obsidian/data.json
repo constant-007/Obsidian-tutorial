@@ -1,20 +1,52 @@
 {
   "recentFiles": [
     {
-      "basename": "Admonition插件演示",
-      "path": "示例/Admonition插件演示.md"
+      "basename": "Homepage插件演示",
+      "path": "示例/Homepage插件演示.md"
+    },
+    {
+      "basename": "homepage",
+      "path": "homepage.md"
+    },
+    {
+      "basename": "Outliner演示",
+      "path": "示例/Outliner演示.md"
     },
     {
       "basename": "Advanced Slides 插件演示",
       "path": "示例/Advanced Slides 插件演示.md"
     },
     {
-      "basename": "Kanban插件功能说明",
-      "path": "示例/Kanban演示/Kanban插件功能说明.md"
+      "basename": "Editor",
+      "path": "Obsidian设置/Editor.md"
+    },
+    {
+      "basename": "Community plugins",
+      "path": "Obsidian设置/Community plugins.md"
+    },
+    {
+      "basename": "Untitled",
+      "path": "Canvas/Untitled.canvas"
+    },
+    {
+      "basename": "QuickAdd",
+      "path": "Obsidian设置/Community plugins/QuickAdd.md"
+    },
+    {
+      "basename": "Homepage",
+      "path": "Obsidian设置/Community plugins/Homepage.md"
     },
     {
       "basename": "Advanced Slides",
       "path": "Obsidian设置/Community plugins/Advanced Slides.md"
+    },
+    {
+      "basename": "Admonition插件演示",
+      "path": "示例/Admonition插件演示.md"
+    },
+    {
+      "basename": "Kanban插件功能说明",
+      "path": "示例/Kanban演示/Kanban插件功能说明.md"
     },
     {
       "basename": "Admonition",
@@ -53,16 +85,8 @@
       "path": "Obsidian设置/Community plugins/Outliner.md"
     },
     {
-      "basename": "QuickAdd",
-      "path": "Obsidian设置/Community plugins/QuickAdd.md"
-    },
-    {
       "basename": "Remotely Save",
       "path": "Obsidian设置/Community plugins/Remotely Save.md"
-    },
-    {
-      "basename": "homepage",
-      "path": "homepage.md"
     },
     {
       "basename": "README",
@@ -175,30 +199,6 @@
     {
       "basename": "Grouping",
       "path": "Obsidian设置/Community plugins/Tasks/Queries/Grouping.md"
-    },
-    {
-      "basename": "Global Query",
-      "path": "Obsidian设置/Community plugins/Tasks/Queries/Global Query.md"
-    },
-    {
-      "basename": "Filters",
-      "path": "Obsidian设置/Community plugins/Tasks/Queries/Filters.md"
-    },
-    {
-      "basename": "README",
-      "path": "Obsidian设置/Community plugins/Tasks/README.md"
-    },
-    {
-      "basename": "Quick Reference",
-      "path": "Obsidian设置/Community plugins/Tasks/Quick Reference.md"
-    },
-    {
-      "basename": "Introduction",
-      "path": "Obsidian设置/Community plugins/Tasks/Introduction.md"
-    },
-    {
-      "basename": "Make a query user interface",
-      "path": "Obsidian设置/Community plugins/Tasks/How To/Make a query user interface.md"
     }
   ],
   "omittedPaths": [],
