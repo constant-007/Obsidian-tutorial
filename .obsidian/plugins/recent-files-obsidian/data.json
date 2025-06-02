@@ -1,6 +1,18 @@
 {
   "recentFiles": [
     {
+      "basename": "2305.14314v1",
+      "path": "Attachment/2305.14314v1.pdf"
+    },
+    {
+      "basename": "Copilot",
+      "path": "Obsidian设置/Community plugins/Copilot.md"
+    },
+    {
+      "basename": "Linter",
+      "path": "Obsidian设置/Community plugins/Linter.md"
+    },
+    {
       "basename": "Importer",
       "path": "Obsidian设置/Community plugins/Importer.md"
     },
@@ -187,14 +199,6 @@
     {
       "basename": "Layout",
       "path": "Obsidian设置/Community plugins/Tasks/Queries/Layout.md"
-    },
-    {
-      "basename": "Examples",
-      "path": "Obsidian设置/Community plugins/Tasks/Queries/Examples.md"
-    },
-    {
-      "basename": "Comments",
-      "path": "Obsidian设置/Community plugins/Tasks/Queries/Comments.md"
     }
   ],
   "omittedPaths": [],
