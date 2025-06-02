@@ -7,7 +7,7 @@
   ],
   "accentColor": "",
   "showViewHeader": true,
-  "showRibbon": true,
+  "showRibbon": false,
   "nativeMenus": false,
   "baseFontSize": 19,
   "baseFontSizeAction": true
