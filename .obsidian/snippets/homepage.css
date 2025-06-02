@@ -847,3 +847,188 @@
   position: relative;
   z-index: 2;
 }
+
+/* 简化卡片样式 */
+.homepage-premium .simple-card,
+.markdown-preview-view.homepage-premium .simple-card,
+.markdown-reading-view.homepage-premium .simple-card {
+  background: var(--card-bg) !important;
+  border-radius: var(--border-radius) !important;
+  padding: 25px !important;
+  margin: 20px 0 !important;
+  backdrop-filter: blur(10px) !important;
+  border: 1px solid var(--card-border) !important;
+  box-shadow: var(--shadow-lg) !important;
+  transition: var(--transition) !important;
+  position: relative !important;
+  z-index: 2 !important;
+}
+
+.homepage-premium .simple-card:hover,
+.markdown-preview-view.homepage-premium .simple-card:hover,
+.markdown-reading-view.homepage-premium .simple-card:hover {
+  transform: translateY(-5px) !important;
+  box-shadow: var(--shadow-xl) !important;
+  border-color: rgba(99, 102, 241, 0.3) !important;
+}
+
+/* 进度条简化样式 */
+.homepage-premium .progress-container,
+.markdown-preview-view.homepage-premium .progress-container,
+.markdown-reading-view.homepage-premium .progress-container {
+  display: flex !important;
+  align-items: center !important;
+  gap: 10px !important;
+  margin: 10px 0 !important;
+}
+
+.homepage-premium .progress-bar-simple,
+.markdown-preview-view.homepage-premium .progress-bar-simple,
+.markdown-reading-view.homepage-premium .progress-bar-simple {
+  flex: 1 !important;
+  height: 8px !important;
+  background: rgba(226, 232, 240, 0.5) !important;
+  border-radius: 4px !important;
+  overflow: hidden !important;
+}
+
+.homepage-premium .progress-fill-simple,
+.markdown-preview-view.homepage-premium .progress-fill-simple,
+.markdown-reading-view.homepage-premium .progress-fill-simple {
+  height: 100% !important;
+  background: linear-gradient(90deg, var(--primary-color), var(--accent-color)) !important;
+  border-radius: 4px !important;
+  transition: width 0.5s ease !important;
+}
+
+.homepage-premium .progress-percent,
+.markdown-preview-view.homepage-premium .progress-percent,
+.markdown-reading-view.homepage-premium .progress-percent {
+  font-size: 0.8rem !important;
+  font-weight: 600 !important;
+  color: var(--text-secondary) !important;
+  min-width: 35px !important;
+}
+
+/* 底部简化样式 */
+.homepage-premium .footer-simple,
+.markdown-preview-view.homepage-premium .footer-simple,
+.markdown-reading-view.homepage-premium .footer-simple {
+  text-align: center !important;
+  padding: 30px 20px !important;
+  background: rgba(15, 23, 42, 0.6) !important;
+  backdrop-filter: blur(10px) !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.1) !important;
+  margin: 40px -30px -20px !important;
+  color: white !important;
+  position: relative !important;
+  z-index: 2 !important;
+}
+
+/* 标签样式增强 */
+.homepage-premium code,
+.markdown-preview-view.homepage-premium code,
+.markdown-reading-view.homepage-premium code {
+  background: rgba(99, 102, 241, 0.1) !important;
+  color: var(--primary-color) !important;
+  padding: 2px 6px !important;
+  border-radius: 4px !important;
+  font-size: 0.8rem !important;
+  font-weight: 500 !important;
+}
+
+/* 复选框样式 */
+.homepage-premium input[type="checkbox"],
+.markdown-preview-view.homepage-premium input[type="checkbox"],
+.markdown-reading-view.homepage-premium input[type="checkbox"] {
+  margin-right: 8px !important;
+  transform: scale(1.1) !important;
+}
+
+/* 标题样式增强 */
+.homepage-premium h2,
+.markdown-preview-view.homepage-premium h2,
+.markdown-reading-view.homepage-premium h2 {
+  color: white !important;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3) !important;
+  font-weight: 600 !important;
+  margin: 30px 0 20px !important;
+  padding: 15px 20px !important;
+  background: rgba(15, 23, 42, 0.6) !important;
+  backdrop-filter: blur(10px) !important;
+  border-radius: var(--border-radius) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  position: relative !important;
+  z-index: 2 !important;
+}
+
+.homepage-premium h3,
+.markdown-preview-view.homepage-premium h3,
+.markdown-reading-view.homepage-premium h3 {
+  color: var(--text-primary) !important;
+  font-weight: 600 !important;
+  margin: 15px 0 10px !important;
+}
+
+/* 引用样式 */
+.homepage-premium blockquote,
+.markdown-preview-view.homepage-premium blockquote,
+.markdown-reading-view.homepage-premium blockquote {
+  border-left: 4px solid var(--primary-color) !important;
+  background: rgba(99, 102, 241, 0.05) !important;
+  padding: 15px 20px !important;
+  margin: 15px 0 !important;
+  border-radius: 0 8px 8px 0 !important;
+  font-style: italic !important;
+  color: var(--text-primary) !important;
+}
+
+/* 分隔线样式 */
+.homepage-premium hr,
+.markdown-preview-view.homepage-premium hr,
+.markdown-reading-view.homepage-premium hr {
+  border: none !important;
+  height: 1px !important;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent) !important;
+  margin: 30px 0 !important;
+}
+
+/* 强调文本样式 */
+.homepage-premium strong,
+.markdown-preview-view.homepage-premium strong,
+.markdown-reading-view.homepage-premium strong {
+  color: var(--text-primary) !important;
+  font-weight: 600 !important;
+}
+
+/* 列表样式增强 */
+.homepage-premium ul,
+.markdown-preview-view.homepage-premium ul,
+.markdown-reading-view.homepage-premium ul {
+  padding-left: 20px !important;
+}
+
+.homepage-premium li,
+.markdown-preview-view.homepage-premium li,
+.markdown-reading-view.homepage-premium li {
+  margin: 8px 0 !important;
+  color: var(--text-primary) !important;
+  line-height: 1.5 !important;
+}
+
+/* 响应式增强 */
+@media (max-width: 768px) {
+  .homepage-premium .simple-card,
+  .markdown-preview-view.homepage-premium .simple-card,
+  .markdown-reading-view.homepage-premium .simple-card {
+    margin: 15px -10px !important;
+    padding: 20px !important;
+  }
+  
+  .homepage-premium .footer-simple,
+  .markdown-preview-view.homepage-premium .footer-simple,
+  .markdown-reading-view.homepage-premium .footer-simple {
+    margin: 40px -10px -20px !important;
+    padding: 25px 15px !important;
+  }
+}
