@@ -1,6 +1,26 @@
 {
   "recentFiles": [
     {
+      "basename": "Excute code：执行代码！",
+      "path": "Obsidian设置/Community plugins/Excute code：执行代码！.md"
+    },
+    {
+      "basename": "Appearance",
+      "path": "Obsidian设置/Appearance.md"
+    },
+    {
+      "basename": "Templater：模板+自动化",
+      "path": "Obsidian设置/Community plugins/Templater：模板+自动化.md"
+    },
+    {
+      "basename": "README",
+      "path": "README.md"
+    },
+    {
+      "basename": "Outliner演示",
+      "path": "示例/Outliner演示.md"
+    },
+    {
       "basename": "学习计划看板",
       "path": "示例/Kanban演示/学习计划看板.md"
     },
@@ -9,16 +29,8 @@
       "path": "示例/Kanban演示/生活事务管理.md"
     },
     {
-      "basename": "README",
-      "path": "README.md"
-    },
-    {
       "basename": "Untitled",
       "path": "Canvas/Untitled.canvas"
-    },
-    {
-      "basename": "Excute code：执行代码！",
-      "path": "Obsidian设置/Community plugins/Excute code：执行代码！.md"
     },
     {
       "basename": "Copilot：AI辅助创作",
@@ -35,10 +47,6 @@
     {
       "basename": "Highlighter：高亮笔记内容",
       "path": "Obsidian设置/Community plugins/Highlighter：高亮笔记内容.md"
-    },
-    {
-      "basename": "Templater：模板+自动化",
-      "path": "Obsidian设置/Community plugins/Templater：模板+自动化.md"
     },
     {
       "basename": "Reminder：闹钟提醒",
@@ -91,10 +99,6 @@
     {
       "basename": "Kanban插件功能说明",
       "path": "示例/Kanban演示/Kanban插件功能说明.md"
-    },
-    {
-      "basename": "Outliner演示",
-      "path": "示例/Outliner演示.md"
     },
     {
       "basename": "homepage",
@@ -191,14 +195,6 @@
     {
       "basename": "Callout",
       "path": "Templates/Callout.md"
-    },
-    {
-      "basename": "Appearance",
-      "path": "Obsidian设置/Appearance.md"
-    },
-    {
-      "basename": "Tasks插件综述",
-      "path": "Obsidian设置/Community plugins/Tasks/Tasks插件综述.md"
     }
   ],
   "omittedPaths": [],

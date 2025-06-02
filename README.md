@@ -33,25 +33,95 @@
 - 支持 Windows、macOS、Linux、iOS、Android 等多平台
 - **推荐版本**：v1.4.0 或更高版本
 
-#### 2. 下载本教程 Vault
+#### 2. 安装 Git（推荐）
+如果您希望使用Git方式下载和同步本教程，需要先安装Git：
+
+**Windows 用户：**
+- 访问 [Git官网](https://git-scm.com/download/win) 下载安装包
+- 运行安装程序，建议使用默认设置
+- 安装完成后可以在命令提示符或Git Bash中使用
+
+**macOS 用户：**
+```bash
+# 方法1：使用Homebrew（推荐）
+brew install git
+
+# 方法2：从官网下载
+# 访问 https://git-scm.com/download/mac
+```
+
+**Linux 用户：**
+```bash
+# Ubuntu/Debian
+sudo apt update
+sudo apt install git
+
+# CentOS/RHEL
+sudo yum install git
+# 或 sudo dnf install git
+
+# Arch Linux
+sudo pacman -S git
+```
+
+**验证安装：**
+```bash
+git --version
+```
+如果显示版本信息，说明安装成功。
+
+#### 3. 下载本教程 Vault
 有两种方式获取本教程：
 
 **方法一：Git Clone（推荐）**
+> ⚠️ **前提条件**：需要先完成步骤2的Git安装
+
 ```bash
 git clone https://github.com/your-username/Obsidian-tutorial.git
 ```
 
-**方法二：直接下载**
+**Git Clone 的优势：**
+- 可以轻松获取最新更新：`git pull`
+- 可以参与项目贡献
+- 支持版本控制和冲突解决
+
+**方法二：直接下载（简单快速）**
+如果您不熟悉Git或只是想快速体验：
 - 点击 GitHub 页面右上角的绿色 **Code** 按钮
 - 选择 **Download ZIP**
 - 解压到您希望存放的位置
 
+> 💡 **建议**：如果您计划长期使用本教程或希望获取最新更新，推荐使用Git Clone方式。
+
 ### 注意事项
 
-在大家看教程并且尝试各种插件的过程中，Git同步时势必会发生各种冲突，如果发生冲突，可以通过Ctrl + P命令调出Command palatte，输入"git: discard" ，在下拉框中选择
-"Discard all changes"，丢弃所有更改
+#### Git 同步冲突解决
+在大家看教程并且尝试各种插件的过程中，Git同步时势必会发生各种冲突。如果您使用的是Git Clone方式下载的教程，遇到冲突时可以：
 
-![[Pasted image 20250602171844.png]]
+**方法1：通过Obsidian Git插件解决**
+1. 按 `Ctrl + P`（Mac: `Cmd + P`）调出命令面板
+2. 输入 "git: discard"
+3. 在下拉框中选择 "Discard all changes"，丢弃所有更改
+4. 按 `Ctrl + M`（Mac: `Cmd + M`），重新进行同步
 
-然后按Ctrl + M，重新进行同步即可。如果有其他问题，可以在项目issue中提出
+![](https://img.aiexplorernote.com/obsidian-how-good/git-discrad.jpg)
+
+**方法2：通过命令行解决**
+```bash
+# 进入项目目录
+cd Obsidian-tutorial
+
+# 丢弃所有本地更改
+git reset --hard HEAD
+
+# 获取最新更新
+git pull
+```
+
+**方法3：重新下载**
+如果遇到复杂冲突，最简单的方法是删除当前文件夹，重新执行Git Clone。
+
+> 📝 **说明**：教程文件的更新不会影响您个人的笔记内容，只是插件配置和示例文件的更新。
+
+如果有其他问题，可以在项目 [Issues](https://github.com/your-username/Obsidian-tutorial/issues) 中提出。
 
