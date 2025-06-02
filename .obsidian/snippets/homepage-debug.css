@@ -1,0 +1,56 @@
+/* ===== Homepage Debug 测试样式 ===== */
+
+/* 测试基础样式是否工作 */
+.homepage-premium .homepage-container {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 25%, #f093fb 75%, #f5576c 100%) !important;
+  min-height: 100vh !important;
+  padding: 20px !important;
+  margin: -20px -30px !important;
+  color: white !important;
+}
+
+/* 确保卡片可见 */
+.homepage-premium .content-card {
+  background: rgba(255, 255, 255, 0.95) !important;
+  border-radius: 12px !important;
+  padding: 20px !important;
+  margin: 10px !important;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2) !important;
+  border: 1px solid rgba(226, 232, 240, 0.3) !important;
+  display: block !important;
+}
+
+/* 强制显示网格 */
+.homepage-premium .content-grid {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)) !important;
+  gap: 20px !important;
+  margin: 20px 0 !important;
+}
+
+/* 确保快速操作按钮可见 */
+.homepage-premium .action-btn {
+  background: linear-gradient(135deg, #6366f1, #8b5cf6) !important;
+  color: white !important;
+  padding: 15px 25px !important;
+  border: none !important;
+  border-radius: 12px !important;
+  margin: 5px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 10px !important;
+}
+
+/* 调试信息 */
+.homepage-premium::before {
+  content: "CSS已加载" !important;
+  position: fixed !important;
+  top: 10px !important;
+  right: 10px !important;
+  background: green !important;
+  color: white !important;
+  padding: 5px 10px !important;
+  border-radius: 5px !important;
+  z-index: 9999 !important;
+  font-size: 12px !important;
+} 

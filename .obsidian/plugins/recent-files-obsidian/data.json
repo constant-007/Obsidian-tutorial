@@ -1,20 +1,16 @@
 {
   "recentFiles": [
     {
-      "basename": "Homepage插件演示",
-      "path": "示例/Homepage插件演示.md"
-    },
-    {
-      "basename": "homepage",
-      "path": "homepage.md"
-    },
-    {
       "basename": "Outliner演示",
       "path": "示例/Outliner演示.md"
     },
     {
       "basename": "Advanced Slides 插件演示",
       "path": "示例/Advanced Slides 插件演示.md"
+    },
+    {
+      "basename": "Homepage",
+      "path": "Obsidian设置/Community plugins/Homepage.md"
     },
     {
       "basename": "Editor",
@@ -31,10 +27,6 @@
     {
       "basename": "QuickAdd",
       "path": "Obsidian设置/Community plugins/QuickAdd.md"
-    },
-    {
-      "basename": "Homepage",
-      "path": "Obsidian设置/Community plugins/Homepage.md"
     },
     {
       "basename": "Advanced Slides",
