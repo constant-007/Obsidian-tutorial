@@ -1,6 +1,14 @@
 {
   "recentFiles": [
     {
+      "basename": "学习计划看板",
+      "path": "示例/Kanban演示/学习计划看板.md"
+    },
+    {
+      "basename": "生活事务管理",
+      "path": "示例/Kanban演示/生活事务管理.md"
+    },
+    {
       "basename": "README",
       "path": "README.md"
     },
@@ -91,10 +99,6 @@
     {
       "basename": "homepage",
       "path": "示例/homepage.md"
-    },
-    {
-      "basename": "生活事务管理",
-      "path": "示例/Kanban演示/生活事务管理.md"
     },
     {
       "basename": "项目管理看板示例",
@@ -191,10 +195,6 @@
     {
       "basename": "Appearance",
       "path": "Obsidian设置/Appearance.md"
-    },
-    {
-      "basename": "学习计划看板",
-      "path": "示例/Kanban演示/学习计划看板.md"
     },
     {
       "basename": "Tasks插件综述",
