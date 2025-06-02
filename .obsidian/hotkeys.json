@@ -166,5 +166,15 @@
       ],
       "key": "O"
     }
+  ],
+  "workspace:close-window": [],
+  "toggle-readable-line-length:flip-readable-line-length-setting": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "Q"
+    }
   ]
 }

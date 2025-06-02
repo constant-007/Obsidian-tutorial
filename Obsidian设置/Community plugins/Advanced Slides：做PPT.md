@@ -1,5 +1,13 @@
 这个插件是Obsidian自带的[[Core plugins#20. Slides|Slides]]插件的极大加强。用于在Obsidian中制作幻灯片，理论上可以制作像在office powerpoint中那样专业的精美PPT，不过掌握reveal.js，学习曲线比较陡峭（或者你可以直接让AI帮你写）。可以在[[Advanced Slides 插件演示|Advanced Slides 插件演示]]中查看这个插件做的PPT的示例
 
+```ad-tip
+title: 提示
+点进去演示文件后，点击左边Ribbon上的预览按钮进行预览
+
+![[Pasted image 20250602151931.png]]
+```
+
+
 **"Advanced Slides" 插件的核心功能和特点：**
 
 1. **基于 Reveal.js**：
