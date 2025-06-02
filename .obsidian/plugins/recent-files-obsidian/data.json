@@ -1,8 +1,48 @@
 {
   "recentFiles": [
     {
+      "basename": "团队协作看板",
+      "path": "示例/Kanban演示/团队协作看板.md"
+    },
+    {
+      "basename": "README",
+      "path": "示例/Kanban演示/README.md"
+    },
+    {
+      "basename": "Kanban插件功能说明",
+      "path": "示例/Kanban演示/Kanban插件功能说明.md"
+    },
+    {
+      "basename": "Outliner演示",
+      "path": "示例/Outliner演示.md"
+    },
+    {
+      "basename": "homepage",
+      "path": "示例/homepage.md"
+    },
+    {
+      "basename": "Advanced Slides 插件演示",
+      "path": "示例/Advanced Slides 插件演示.md"
+    },
+    {
+      "basename": "Admonition插件演示",
+      "path": "示例/Admonition插件演示.md"
+    },
+    {
+      "basename": "生活事务管理",
+      "path": "示例/Kanban演示/生活事务管理.md"
+    },
+    {
+      "basename": "项目管理看板示例",
+      "path": "示例/Kanban演示/项目管理看板示例.md"
+    },
+    {
       "basename": "项目管理总视图",
       "path": "示例/DataView演示/项目管理总视图.md"
+    },
+    {
+      "basename": "README",
+      "path": "示例/DataView演示/README.md"
     },
     {
       "basename": "README",
@@ -49,24 +89,12 @@
       "path": "Obsidian设置/Community plugins/Annotator：对PDF做标注.md"
     },
     {
-      "basename": "homepage",
-      "path": "示例/homepage.md"
-    },
-    {
       "basename": "Advanced Slides：做PPT",
       "path": "Obsidian设置/Community plugins/Advanced Slides：做PPT.md"
     },
     {
       "basename": "2305.14314v1",
       "path": "Attachment/2305.14314v1.pdf"
-    },
-    {
-      "basename": "Advanced Slides 插件演示",
-      "path": "示例/Advanced Slides 插件演示.md"
-    },
-    {
-      "basename": "Outliner演示",
-      "path": "示例/Outliner演示.md"
     },
     {
       "basename": "Sheet Plus：编辑excel表格",
@@ -145,10 +173,6 @@
       "path": "Obsidian设置/Community plugins.md"
     },
     {
-      "basename": "团队协作看板",
-      "path": "示例/Kanban演示/团队协作看板.md"
-    },
-    {
       "basename": "Excel 2025-06-02 14.21.30.univer",
       "path": "Excel/Excel 2025-06-02 14.21.30.univer.md"
     },
@@ -161,14 +185,6 @@
       "path": "Canvas/Untitled.canvas"
     },
     {
-      "basename": "Admonition插件演示",
-      "path": "示例/Admonition插件演示.md"
-    },
-    {
-      "basename": "Kanban插件功能说明",
-      "path": "示例/Kanban演示/Kanban插件功能说明.md"
-    },
-    {
       "basename": "Callout",
       "path": "Templates/Callout.md"
     },
@@ -177,20 +193,8 @@
       "path": "Obsidian设置/Appearance.md"
     },
     {
-      "basename": "README",
-      "path": "示例/Kanban演示/README.md"
-    },
-    {
-      "basename": "项目管理看板示例",
-      "path": "示例/Kanban演示/项目管理看板示例.md"
-    },
-    {
       "basename": "学习计划看板",
       "path": "示例/Kanban演示/学习计划看板.md"
-    },
-    {
-      "basename": "生活事务管理",
-      "path": "示例/Kanban演示/生活事务管理.md"
     },
     {
       "basename": "Tasks插件综述",
