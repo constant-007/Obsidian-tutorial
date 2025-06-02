@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "Remotely Save",
+      "path": "Obsidian设置/Community plugins/Remotely Save.md"
+    },
+    {
       "basename": "Iconize",
       "path": "Obsidian设置/Community plugins/Iconize.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "Advanced Slides",
       "path": "Obsidian设置/Community plugins/Advanced Slides.md"
-    },
-    {
-      "basename": "Advanced Table",
-      "path": "Obsidian设置/Community plugins/Advanced Table.md"
     }
   ],
   "omittedPaths": [],
