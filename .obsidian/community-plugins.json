@@ -13,7 +13,6 @@
   "obsidian-minimal-settings",
   "omnisearch",
   "obsidian-pandoc",
-  "obsidian-projects",
   "darlal-switcher-plus",
   "obsidian-reminder-plugin",
   "obsidian-style-settings",
@@ -37,10 +36,12 @@
   "obsidian-meta-bind-plugin",
   "templater-obsidian",
   "obsidian-kanban",
-  "remotely-save",
-  "obsidian-mind-map",
   "obsidian-linter",
   "homepage",
   "sheet-plus",
-  "obsidian-view-mode-by-frontmatter"
+  "obsidian-view-mode-by-frontmatter",
+  "buttons",
+  "copilot",
+  "execute-code",
+  "highlightr-plugin"
 ]

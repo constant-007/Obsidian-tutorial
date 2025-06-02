@@ -1,12 +1,36 @@
 {
   "recentFiles": [
     {
-      "basename": "Editing Toolbar",
-      "path": "Obsidian设置/Community plugins/Editing Toolbar.md"
+      "basename": "Importer",
+      "path": "Obsidian设置/Community plugins/Importer.md"
+    },
+    {
+      "basename": "Style Settings",
+      "path": "Obsidian设置/Community plugins/Style Settings.md"
+    },
+    {
+      "basename": "Community plugins",
+      "path": "Obsidian设置/Community plugins.md"
     },
     {
       "basename": "Homepage",
       "path": "Obsidian设置/Community plugins/Homepage.md"
+    },
+    {
+      "basename": "Editing Toolbar",
+      "path": "Obsidian设置/Community plugins/Editing Toolbar.md"
+    },
+    {
+      "basename": "团队协作看板",
+      "path": "示例/Kanban演示/团队协作看板.md"
+    },
+    {
+      "basename": "Tag Wrangler",
+      "path": "Obsidian设置/Community plugins/Tag Wrangler.md"
+    },
+    {
+      "basename": "Excel 2025-06-02 14.21.30.univer",
+      "path": "Excel/Excel 2025-06-02 14.21.30.univer.md"
     },
     {
       "basename": "homepage",
@@ -23,10 +47,6 @@
     {
       "basename": "Editor",
       "path": "Obsidian设置/Editor.md"
-    },
-    {
-      "basename": "Community plugins",
-      "path": "Obsidian设置/Community plugins.md"
     },
     {
       "basename": "Untitled",
@@ -101,24 +121,12 @@
       "path": "Obsidian设置/Community plugins/Templater.md"
     },
     {
-      "basename": "Tag Wrangler",
-      "path": "Obsidian设置/Community plugins/Tag Wrangler.md"
-    },
-    {
-      "basename": "Style Settings",
-      "path": "Obsidian设置/Community plugins/Style Settings.md"
-    },
-    {
       "basename": "Appearance",
       "path": "Obsidian设置/Appearance.md"
     },
     {
       "basename": "README",
       "path": "示例/Kanban演示/README.md"
-    },
-    {
-      "basename": "团队协作看板",
-      "path": "示例/Kanban演示/团队协作看板.md"
     },
     {
       "basename": "项目管理看板示例",
@@ -187,18 +195,6 @@
     {
       "basename": "Comments",
       "path": "Obsidian设置/Community plugins/Tasks/Queries/Comments.md"
-    },
-    {
-      "basename": "About Queries",
-      "path": "Obsidian设置/Community plugins/Tasks/Queries/About Queries.md"
-    },
-    {
-      "basename": "Backlinks",
-      "path": "Obsidian设置/Community plugins/Tasks/Queries/Backlinks.md"
-    },
-    {
-      "basename": "Grouping",
-      "path": "Obsidian设置/Community plugins/Tasks/Queries/Grouping.md"
     }
   ],
   "omittedPaths": [],
