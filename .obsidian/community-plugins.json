@@ -42,5 +42,6 @@
   "buttons",
   "execute-code",
   "highlightr-plugin",
-  "toggle-readable-line-length"
+  "toggle-readable-line-length",
+  "sheet-plus"
 ]

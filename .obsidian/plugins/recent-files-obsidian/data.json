@@ -1,6 +1,22 @@
 {
   "recentFiles": [
     {
+      "basename": "Excel 2025-06-02 14.21.30.univer",
+      "path": "Excel/Excel 2025-06-02 14.21.30.univer.md"
+    },
+    {
+      "basename": "Advanced Slides 插件演示",
+      "path": "示例/Advanced Slides 插件演示.md"
+    },
+    {
+      "basename": "Excalidraw：手写笔记爱好者福音",
+      "path": "Obsidian设置/Community plugins/Excalidraw：手写笔记爱好者福音.md"
+    },
+    {
+      "basename": "Admonition插件演示",
+      "path": "示例/Admonition插件演示.md"
+    },
+    {
       "basename": "团队协作看板",
       "path": "示例/Kanban演示/团队协作看板.md"
     },
@@ -19,14 +35,6 @@
     {
       "basename": "homepage",
       "path": "示例/homepage.md"
-    },
-    {
-      "basename": "Advanced Slides 插件演示",
-      "path": "示例/Advanced Slides 插件演示.md"
-    },
-    {
-      "basename": "Admonition插件演示",
-      "path": "示例/Admonition插件演示.md"
     },
     {
       "basename": "生活事务管理",
@@ -51,10 +59,6 @@
     {
       "basename": "Excute code：执行代码！",
       "path": "Obsidian设置/Community plugins/Excute code：执行代码！.md"
-    },
-    {
-      "basename": "Excalidraw：手写笔记爱好者福音",
-      "path": "Obsidian设置/Community plugins/Excalidraw：手写笔记爱好者福音.md"
     },
     {
       "basename": "Reminder：闹钟提醒",
@@ -171,10 +175,6 @@
     {
       "basename": "Community plugins",
       "path": "Obsidian设置/Community plugins.md"
-    },
-    {
-      "basename": "Excel 2025-06-02 14.21.30.univer",
-      "path": "Excel/Excel 2025-06-02 14.21.30.univer.md"
     },
     {
       "basename": "Editor",
