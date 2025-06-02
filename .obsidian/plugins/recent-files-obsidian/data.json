@@ -1,6 +1,14 @@
 {
   "recentFiles": [
     {
+      "basename": "Editing Toolbar",
+      "path": "Obsidian设置/Community plugins/Editing Toolbar.md"
+    },
+    {
+      "basename": "Homepage",
+      "path": "Obsidian设置/Community plugins/Homepage.md"
+    },
+    {
       "basename": "homepage",
       "path": "示例/homepage.md"
     },
@@ -11,10 +19,6 @@
     {
       "basename": "Outliner演示",
       "path": "示例/Outliner演示.md"
-    },
-    {
-      "basename": "Homepage",
-      "path": "Obsidian设置/Community plugins/Homepage.md"
     },
     {
       "basename": "Editor",

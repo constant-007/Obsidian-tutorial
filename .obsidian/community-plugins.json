@@ -41,5 +41,6 @@
   "obsidian-mind-map",
   "obsidian-linter",
   "homepage",
-  "sheet-plus"
+  "sheet-plus",
+  "obsidian-view-mode-by-frontmatter"
 ]
