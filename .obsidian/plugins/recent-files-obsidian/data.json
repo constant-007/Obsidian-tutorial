@@ -1,44 +1,104 @@
 {
   "recentFiles": [
     {
+      "basename": "Tag Wrangler：管理标签",
+      "path": "Obsidian设置/Community plugins/Tag Wrangler：管理标签.md"
+    },
+    {
+      "basename": "Style Settings：管理主题",
+      "path": "Obsidian设置/Community plugins/Style Settings：管理主题.md"
+    },
+    {
+      "basename": "Templater：模板+自动化",
+      "path": "Obsidian设置/Community plugins/Templater：模板+自动化.md"
+    },
+    {
+      "basename": "Sheet Plus：编辑excel表格",
+      "path": "Obsidian设置/Community plugins/Sheet Plus：编辑excel表格.md"
+    },
+    {
+      "basename": "Remotely Save：同步",
+      "path": "Obsidian设置/Community plugins/Remotely Save：同步.md"
+    },
+    {
+      "basename": "QuickAdd：自动化法宝",
+      "path": "Obsidian设置/Community plugins/QuickAdd：自动化法宝.md"
+    },
+    {
+      "basename": "Outliner：增强大纲功能",
+      "path": "Obsidian设置/Community plugins/Outliner：增强大纲功能.md"
+    },
+    {
+      "basename": "Ominisearch：增强搜索功能",
+      "path": "Obsidian设置/Community plugins/Ominisearch：增强搜索功能.md"
+    },
+    {
+      "basename": "Minimal Theme Settings：Minimal主题帮手",
+      "path": "Obsidian设置/Community plugins/Minimal Theme Settings：Minimal主题帮手.md"
+    },
+    {
+      "basename": "Linter：自动规范笔记",
+      "path": "Obsidian设置/Community plugins/Linter：自动规范笔记.md"
+    },
+    {
+      "basename": "Kanban：创建看板视图",
+      "path": "Obsidian设置/Community plugins/Kanban：创建看板视图.md"
+    },
+    {
+      "basename": "Importer：导入文件",
+      "path": "Obsidian设置/Community plugins/Importer：导入文件.md"
+    },
+    {
+      "basename": "Iconize：万物皆可图标",
+      "path": "Obsidian设置/Community plugins/Iconize：万物皆可图标.md"
+    },
+    {
+      "basename": "Homepage：建立精美主页",
+      "path": "Obsidian设置/Community plugins/Homepage：建立精美主页.md"
+    },
+    {
+      "basename": "Git：同步",
+      "path": "Obsidian设置/Community plugins/Git：同步.md"
+    },
+    {
+      "basename": "Editing Toolbar：像Word一样编辑笔记",
+      "path": "Obsidian设置/Community plugins/Editing Toolbar：像Word一样编辑笔记.md"
+    },
+    {
+      "basename": "Copilot：AI辅助创作",
+      "path": "Obsidian设置/Community plugins/Copilot：AI辅助创作.md"
+    },
+    {
+      "basename": "Calendar：日历视图",
+      "path": "Obsidian设置/Community plugins/Calendar：日历视图.md"
+    },
+    {
+      "basename": "Annotator：对PDF做标注",
+      "path": "Obsidian设置/Community plugins/Annotator：对PDF做标注.md"
+    },
+    {
+      "basename": "Advanced Table：高级表格",
+      "path": "Obsidian设置/Community plugins/Advanced Table：高级表格.md"
+    },
+    {
+      "basename": "Advanced Slides：做PPT",
+      "path": "Obsidian设置/Community plugins/Advanced Slides：做PPT.md"
+    },
+    {
+      "basename": "Admonition：标出注意事项",
+      "path": "Obsidian设置/Community plugins/Admonition：标出注意事项.md"
+    },
+    {
       "basename": "2305.14314v1",
       "path": "Attachment/2305.14314v1.pdf"
-    },
-    {
-      "basename": "Copilot",
-      "path": "Obsidian设置/Community plugins/Copilot.md"
-    },
-    {
-      "basename": "Linter",
-      "path": "Obsidian设置/Community plugins/Linter.md"
-    },
-    {
-      "basename": "Importer",
-      "path": "Obsidian设置/Community plugins/Importer.md"
-    },
-    {
-      "basename": "Style Settings",
-      "path": "Obsidian设置/Community plugins/Style Settings.md"
     },
     {
       "basename": "Community plugins",
       "path": "Obsidian设置/Community plugins.md"
     },
     {
-      "basename": "Homepage",
-      "path": "Obsidian设置/Community plugins/Homepage.md"
-    },
-    {
-      "basename": "Editing Toolbar",
-      "path": "Obsidian设置/Community plugins/Editing Toolbar.md"
-    },
-    {
       "basename": "团队协作看板",
       "path": "示例/Kanban演示/团队协作看板.md"
-    },
-    {
-      "basename": "Tag Wrangler",
-      "path": "Obsidian设置/Community plugins/Tag Wrangler.md"
     },
     {
       "basename": "Excel 2025-06-02 14.21.30.univer",
@@ -65,14 +125,6 @@
       "path": "Canvas/Untitled.canvas"
     },
     {
-      "basename": "QuickAdd",
-      "path": "Obsidian设置/Community plugins/QuickAdd.md"
-    },
-    {
-      "basename": "Advanced Slides",
-      "path": "Obsidian设置/Community plugins/Advanced Slides.md"
-    },
-    {
       "basename": "Admonition插件演示",
       "path": "示例/Admonition插件演示.md"
     },
@@ -81,56 +133,12 @@
       "path": "示例/Kanban演示/Kanban插件功能说明.md"
     },
     {
-      "basename": "Admonition",
-      "path": "Obsidian设置/Community plugins/Admonition.md"
-    },
-    {
       "basename": "Callout",
       "path": "Templates/Callout.md"
     },
     {
-      "basename": "Advanced Table",
-      "path": "Obsidian设置/Community plugins/Advanced Table.md"
-    },
-    {
-      "basename": "Calendar",
-      "path": "Obsidian设置/Community plugins/Calendar.md"
-    },
-    {
-      "basename": "Git",
-      "path": "Obsidian设置/Community plugins/Git.md"
-    },
-    {
-      "basename": "Iconize",
-      "path": "Obsidian设置/Community plugins/Iconize.md"
-    },
-    {
-      "basename": "Kanban",
-      "path": "Obsidian设置/Community plugins/Kanban.md"
-    },
-    {
-      "basename": "Minimal Theme Settings",
-      "path": "Obsidian设置/Community plugins/Minimal Theme Settings.md"
-    },
-    {
-      "basename": "Outliner",
-      "path": "Obsidian设置/Community plugins/Outliner.md"
-    },
-    {
-      "basename": "Remotely Save",
-      "path": "Obsidian设置/Community plugins/Remotely Save.md"
-    },
-    {
       "basename": "README",
       "path": "README.md"
-    },
-    {
-      "basename": "Ominisearch",
-      "path": "Obsidian设置/Community plugins/Ominisearch.md"
-    },
-    {
-      "basename": "Templater",
-      "path": "Obsidian设置/Community plugins/Templater.md"
     },
     {
       "basename": "Appearance",
@@ -191,14 +199,6 @@
     {
       "basename": "Regular Expressions",
       "path": "Obsidian设置/Community plugins/Tasks/Queries/Regular Expressions.md"
-    },
-    {
-      "basename": "Line Continuations",
-      "path": "Obsidian设置/Community plugins/Tasks/Queries/Line Continuations.md"
-    },
-    {
-      "basename": "Layout",
-      "path": "Obsidian设置/Community plugins/Tasks/Queries/Layout.md"
     }
   ],
   "omittedPaths": [],

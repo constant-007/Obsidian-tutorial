@@ -1,2 +1,0 @@
-这是一款非常好用的官方导入插件，支持导入HTML、Markdown文件。以及从Apple Notes (苹果备忘录)，Bear，Evernote (印象笔记)，Google Keep，Microsoft OneNote
-，Notion (通常需要导出为 Markdown & CSV 或 HTML)，Roam Research (通常导出为 JSON)导入笔记，使得从这些笔记软件迁移到Obsidian变得非常简单
