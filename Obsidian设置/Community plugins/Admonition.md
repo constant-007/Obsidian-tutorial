@@ -1,3 +1,4 @@
+这插件是Obsidian原生支持Callout的极大加强。与我在Templates文件夹中放的通过[[Templater|Templater]]插件支持的Callout有点重复
 
 
 **Admonition 插件的主要功能和作用：**
@@ -68,10 +69,12 @@ color: 可选的自定义颜色 (十六进制代码或RGB值)
     ````
     ```ad-warning
     title: 注意事项
-    在执行此操作前，请确保已备份所有重要数据。
+    在执行此操作前，请确保已
+4. 
+5. 备份所有重要数据。
     ````
     
-4. **危险/错误 (Danger/Error/Bug)**：指出严重错误、危险操作或已知的缺陷。
+6. **危险/错误 (Danger/Error/Bug)**：指出严重错误、危险操作或已知的缺陷。
     
     Markdown
     
@@ -89,7 +92,7 @@ color: 可选的自定义颜色 (十六进制代码或RGB值)
     当前版本在处理超大附件时可能会出现卡顿。
     ````
     
-5. **笔记/注释 (Note/Abstract/Summary/TLDR)**：用于补充说明、摘要或重点概括。
+7. **笔记/注释 (Note/Abstract/Summary/TLDR)**：用于补充说明、摘要或重点概括。
     
     Markdown
     
@@ -106,7 +109,7 @@ color: 可选的自定义颜色 (十六进制代码或RGB值)
     本文主要讨论了 Admonition 插件的安装和基本用法。
     ````
     
-6. **示例 (Example)**：展示代码示例或其他类型的例子。
+8. **示例 (Example)**：展示代码示例或其他类型的例子。
     
     Markdown
     
@@ -119,7 +122,7 @@ color: 可选的自定义颜色 (十六进制代码或RGB值)
     hello()
     ````
     
-7. **引言 (Quote)**：引用他人的话或文章段落。
+9. **引言 (Quote)**：引用他人的话或文章段落。
     
     Markdown
     

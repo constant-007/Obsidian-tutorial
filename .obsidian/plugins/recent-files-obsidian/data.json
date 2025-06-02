@@ -5,6 +5,14 @@
       "path": "Obsidian设置/Community plugins/Admonition.md"
     },
     {
+      "basename": "Admonition插件演示",
+      "path": "示例/Admonition插件演示.md"
+    },
+    {
+      "basename": "Callout",
+      "path": "Templates/Callout.md"
+    },
+    {
       "basename": "Advanced Table",
       "path": "Obsidian设置/Community plugins/Advanced Table.md"
     },
@@ -63,10 +71,6 @@
     {
       "basename": "Style Settings",
       "path": "Obsidian设置/Community plugins/Style Settings.md"
-    },
-    {
-      "basename": "Callout",
-      "path": "Templates/Callout.md"
     },
     {
       "basename": "Appearance",
@@ -195,10 +199,6 @@
     {
       "basename": "How to style backlinks",
       "path": "Obsidian设置/Community plugins/Tasks/How To/How to style backlinks.md"
-    },
-    {
-      "basename": "How to get tasks in current file",
-      "path": "Obsidian设置/Community plugins/Tasks/How To/How to get tasks in current file.md"
     }
   ],
   "omittedPaths": [],
