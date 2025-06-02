@@ -1,8 +1,16 @@
 {
   "recentFiles": [
     {
+      "basename": "Admonition插件演示",
+      "path": "示例/Admonition插件演示.md"
+    },
+    {
       "basename": "Advanced Slides 插件演示",
       "path": "示例/Advanced Slides 插件演示.md"
+    },
+    {
+      "basename": "Kanban插件功能说明",
+      "path": "示例/Kanban演示/Kanban插件功能说明.md"
     },
     {
       "basename": "Advanced Slides",
@@ -11,10 +19,6 @@
     {
       "basename": "Admonition",
       "path": "Obsidian设置/Community plugins/Admonition.md"
-    },
-    {
-      "basename": "Admonition插件演示",
-      "path": "示例/Admonition插件演示.md"
     },
     {
       "basename": "Callout",
@@ -87,10 +91,6 @@
     {
       "basename": "README",
       "path": "示例/Kanban演示/README.md"
-    },
-    {
-      "basename": "Kanban插件功能说明",
-      "path": "示例/Kanban演示/Kanban插件功能说明.md"
     },
     {
       "basename": "团队协作看板",

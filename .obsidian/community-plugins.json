@@ -38,5 +38,6 @@
   "templater-obsidian",
   "obsidian-kanban",
   "remotely-save",
-  "obsidian-mind-map"
+  "obsidian-mind-map",
+  "obsidian-linter"
 ]
