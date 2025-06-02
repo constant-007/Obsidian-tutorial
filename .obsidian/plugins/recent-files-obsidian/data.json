@@ -1,6 +1,14 @@
 {
   "recentFiles": [
     {
+      "basename": "Advanced Slides 插件演示",
+      "path": "示例/Advanced Slides 插件演示.md"
+    },
+    {
+      "basename": "Advanced Slides",
+      "path": "Obsidian设置/Community plugins/Advanced Slides.md"
+    },
+    {
       "basename": "Admonition",
       "path": "Obsidian设置/Community plugins/Admonition.md"
     },
@@ -191,14 +199,6 @@
     {
       "basename": "Make a query user interface",
       "path": "Obsidian设置/Community plugins/Tasks/How To/Make a query user interface.md"
-    },
-    {
-      "basename": "How to style buttons",
-      "path": "Obsidian设置/Community plugins/Tasks/How To/How to style buttons.md"
-    },
-    {
-      "basename": "How to style backlinks",
-      "path": "Obsidian设置/Community plugins/Tasks/How To/How to style backlinks.md"
     }
   ],
   "omittedPaths": [],

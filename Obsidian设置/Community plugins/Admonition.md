@@ -1,5 +1,8 @@
-这插件是Obsidian原生支持Callout的极大加强。与我在Templates文件夹中放的通过[[Templater|Templater]]插件支持的Callout有点重复
+这插件是Obsidian原生支持Callout的极大加强。与我在Templates文件夹中放的通过[[Templater|Templater]]插件支持的Callout有点重复，但admonition的Callout更加强大，它的Callout支持放入几乎所有内容，比如图片、表格，甚至嵌套Callout。你可以在[[Admonition插件演示|Admonition插件演示]]中看到示例
 
+## 基本介绍
+
+以下是admonition插件的基本介绍
 
 **Admonition 插件的主要功能和作用：**
 
