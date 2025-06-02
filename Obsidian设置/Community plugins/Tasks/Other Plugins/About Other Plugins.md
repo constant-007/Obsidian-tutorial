@@ -14,7 +14,7 @@ aliases:
 - [[Kanban Plugin|Kanban插件]]
 - [[Meta Bind Plugin|Meta Bind插件]]
   - 轻松修改您的Tasks搜索的[[layout|布局]]，无需编辑指令。
-- [[QuickAdd|QuickAdd插件]]
+- [[Obsidian设置/Community plugins/Tasks/Other Plugins/QuickAdd|QuickAdd插件]]
   - 使用Quickadd插件帮助创建任务
 
 ## 与其他Obsidian插件配合使用

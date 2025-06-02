@@ -79,7 +79,7 @@ console.log(taskLine);
 最常见的使用场景之一可能是与[QuickAdd](https://github.com/chhoumann/quickadd)插件结合使用，
 自动将任务添加到特定文件。
 
-有关如何执行此操作的完整详细信息，请参阅[[QuickAdd#Launching the Edit task modal via QuickAdd|通过QuickAdd启动编辑任务模态框]]。
+有关如何执行此操作的完整详细信息，请参阅[[Obsidian设置/Community plugins/Tasks/Other Plugins/QuickAdd#Launching the Edit task modal via QuickAdd|通过QuickAdd启动编辑任务模态框]]。
 
 ## `executeToggleTaskDoneCommand: (line: string, path: string) => string;`
 

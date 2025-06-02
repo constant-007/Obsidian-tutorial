@@ -1,6 +1,14 @@
 {
   "recentFiles": [
     {
+      "basename": "QuickAdd",
+      "path": "Obsidian设置/Community plugins/QuickAdd.md"
+    },
+    {
+      "basename": "Minimal Theme Settings",
+      "path": "Obsidian设置/Community plugins/Minimal Theme Settings.md"
+    },
+    {
       "basename": "Remotely Save",
       "path": "Obsidian设置/Community plugins/Remotely Save.md"
     },
@@ -191,14 +199,6 @@
     {
       "basename": "Daily Agenda",
       "path": "Obsidian设置/Community plugins/Tasks/Advanced/Daily Agenda.md"
-    },
-    {
-      "basename": "About Advanced",
-      "path": "Obsidian设置/Community plugins/Tasks/Advanced/About Advanced.md"
-    },
-    {
-      "basename": "Advanced Slides",
-      "path": "Obsidian设置/Community plugins/Advanced Slides.md"
     }
   ],
   "omittedPaths": [],
