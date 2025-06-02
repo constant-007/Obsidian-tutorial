@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "Ominisearch",
+      "path": "Obsidian设置/Community plugins/Ominisearch.md"
+    },
+    {
       "basename": "QuickAdd",
       "path": "Obsidian设置/Community plugins/QuickAdd.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "Notifications",
       "path": "Obsidian设置/Community plugins/Tasks/Advanced/Notifications.md"
-    },
-    {
-      "basename": "Daily Agenda",
-      "path": "Obsidian设置/Community plugins/Tasks/Advanced/Daily Agenda.md"
     }
   ],
   "omittedPaths": [],

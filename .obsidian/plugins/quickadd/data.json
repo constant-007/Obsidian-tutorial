@@ -1,6 +1,82 @@
 {
-  "choices": [],
-  "macros": [],
+  "choices": [
+    {
+      "id": "fa295969-ff20-4beb-8fcf-ef4112a88126",
+      "name": "youtube",
+      "type": "Template",
+      "command": false,
+      "templatePath": "",
+      "fileNameFormat": {
+        "enabled": false,
+        "format": ""
+      },
+      "folder": {
+        "enabled": false,
+        "folders": [],
+        "chooseWhenCreatingNote": false,
+        "createInSameFolderAsActiveFile": false,
+        "chooseFromSubfolders": false
+      },
+      "appendLink": false,
+      "openFileInNewTab": {
+        "enabled": false,
+        "direction": "vertical",
+        "focus": true
+      },
+      "openFile": false,
+      "openFileInMode": "default",
+      "fileExistsMode": "Increment the file name",
+      "setFileExistsBehavior": false
+    }
+  ],
+  "macros": [
+    {
+      "name": "YouTube",
+      "id": "3141ab4f-9e68-42f3-97b2-d7c277c2b945",
+      "commands": [
+        {
+          "name": "Templater: Open insert template modal",
+          "type": "Obsidian",
+          "id": "b672cff6-ede7-4d48-8f1e-c0221d7de2da",
+          "commandId": "templater-obsidian:insert-templater"
+        },
+        {
+          "name": "Untitled Template Choice",
+          "type": "NestedChoice",
+          "id": "697415eb-7c4b-4140-93b7-f66f9fd65160",
+          "choice": {
+            "id": "fabfbce2-335c-44da-aec6-06850ddcec78",
+            "name": "Untitled Template Choice",
+            "type": "Template",
+            "command": false,
+            "templatePath": "Templates/YouTube.md",
+            "fileNameFormat": {
+              "enabled": false,
+              "format": ""
+            },
+            "folder": {
+              "enabled": false,
+              "folders": [],
+              "chooseWhenCreatingNote": false,
+              "createInSameFolderAsActiveFile": false,
+              "chooseFromSubfolders": false
+            },
+            "appendLink": false,
+            "openFileInNewTab": {
+              "enabled": false,
+              "direction": "vertical",
+              "focus": true
+            },
+            "openFile": false,
+            "openFileInMode": "default",
+            "fileExistsMode": "Increment the file name",
+            "setFileExistsBehavior": false
+          }
+        }
+      ],
+      "runOnStartup": false
+    }
+  ],
   "inputPrompt": "single-line",
   "devMode": false,
   "templateFolderPath": "Templates",
