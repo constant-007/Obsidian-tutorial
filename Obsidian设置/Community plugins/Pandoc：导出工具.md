@@ -1,4 +1,6 @@
-好的，Obsidian 的 Pandoc 插件允许用户直接在 Obsidian内部利用 Pandoc 的强大文档转换功能。Pandoc 被誉为文档转换领域的“瑞士军刀”，它可以在数十种标记语言格式之间进行转换。
+## 基本介绍
+
+Obsidian 的 Pandoc 插件允许用户直接在 Obsidian内部利用 Pandoc 的强大文档转换功能。Pandoc 被誉为文档转换领域的“瑞士军刀”，它可以在数十种标记语言格式之间进行转换。
 
 以下是对 Obsidian Pandoc 插件的介绍：
 
@@ -50,3 +52,56 @@
 - **查看插件文档：** 务必阅读你所安装的具体 Pandoc 插件的文档，因为不同的开发者实现的插件在细节和功能上可能会有所差异。
 
 总而言之，Obsidian Pandoc 插件是连接 Obsidian 笔记与广阔文档世界的重要桥梁。对于需要高质量、多格式输出的用户，尤其是学术研究者和内容创作者，这是一个非常有价值的工具。它免去了手动复制粘贴和格式调整的麻烦，让你专注于内容创作本身。
+
+## 设置项介绍
+
+![[Pasted image 20250603192441.png]] 
+1. **Custom CSS file for HTML output (自定义 HTML 输出的 CSS 文件)**：
+    
+    - 这里你可以指定一个本地 CSS 文件的路径。
+    - 当你将笔记导出为 HTML 格式时，这个 CSS 文件中的样式规则会被用来美化输出的 HTML 页面。这允许你完全自定义 HTML 导出件的外观。
+    - 输入框提示 "File name"，你可以使用绝对路径或相对于 Obsidian 库的路径。
+2. **Inject app CSS (HTML output only) (注入应用 CSS - 仅限 HTML 输出)**：
+    
+    - 这个选项允许你将 Obsidian 应用本身的部分或全部 CSS 样式（包括你当前使用的主题样式和自定义 CSS 片段）也应用到导出的 HTML 文件中。
+    - 旁边的下拉菜单（图中显示 "Light theme"）可能允许你选择注入亮色主题、暗色主题或当前主题的 CSS。
+    - 说明中提到 "the files become a little bigger"，这是因为额外的 CSS 代码会增加 HTML 文件的大小。
+3. **Internal link processing (内部链接处理)**：
+    
+    - 这个选项控制 Obsidian 中的内部链接（例如 `[[wikilinks]]`）在导出时如何被处理。
+    - 下拉菜单（图中显示 "Turn into text"）提供了不同的处理方式，例如：
+        - **Turn into text**：将链接文字直接转换为普通文本。
+        - **Remove links**：移除链接，只保留链接文本。
+        - **HTML links**：转换为标准的 HTML 链接 (可能需要进一步配置如何解析这些链接的目标)。
+4. **Export files from HTML or markdown? (从 HTML 还是 Markdown 导出？)**：
+    
+    - 这个下拉选项（图中显示 "HTML"）决定了 Pandoc 转换的源头。
+    - **HTML**：Obsidian 首先将其内部的 Markdown 渲染成 HTML（这会包含一些 Obsidian 特有的渲染效果或插件渲染的元素），然后再将这个 HTML 交给 Pandoc 处理。这有助于保留你在 Obsidian 中看到的“所见即所得”的效果，但可能不完全是纯净的 Markdown。
+    - **Markdown**：插件直接将你的原始 Markdown 文件交给 Pandoc 处理。这更接近 Pandoc 的标准工作方式，对于使用 Pandoc 特有的 Markdown 扩展（如引文）会更直接。
+5. **Export folder (导出文件夹)**：
+    
+    - 这里你可以指定一个绝对路径，所有通过此插件导出的文件都将保存到这个文件夹中。
+    - 如果留空，导出的文件会保存在原始笔记所在的文件夹旁边，通常会创建一个名为 `/pandoc`（如图中占位符所示）的子文件夹来存放导出文件。
+6. **Show Pandoc command line interface commands (显示 Pandoc 命令行命令)**：
+    
+    - 这是一个开关选项（图中为关闭状态）。
+    - 如果开启，当你执行导出操作时，插件可能会显示它在后台实际执行的 Pandoc 命令行命令。这对于调试或学习 Pandoc 命令非常有帮助。
+    - 说明提到 "Doesn't apply to HTML exports"，意味着此功能可能不适用于 HTML 导出，或者 HTML 导出的命令显示方式不同。
+7. **Pandoc path (Pandoc 路径)**：
+    
+    - 非常关键的设置。这里需要填写你系统中 Pandoc 可执行文件的路径。
+    - 说明中给出了提示：在 Mac/Linux 上，可以在终端使用 `which pandoc` 命令找到路径；在 Windows 上，可以在 PowerShell 中使用 `Get-Command pandoc`。
+    - 如果 Pandoc 已经正确添加到系统环境变量中，这里可能留空或填写 `pandoc` 即可。
+8. **PDFLaTeX path (PDFLaTeX 路径)**：
+    
+    - 如果你打算通过 LaTeX 来生成高质量的 PDF 文件，这里需要指定 `pdflatex` 可执行文件的路径。
+    - 与 Pandoc 路径类似，可以使用 `which pdflatex` (Mac/Linux) 或相应命令 (Windows) 查找。
+    - 这是使用 LaTeX 引擎输出 PDF 时的必要配置。
+9. **Extra Pandoc arguments (额外 Pandoc 参数)**：
+    
+    - 这是一个非常强大的功能。你可以在这里添加任何 Pandoc 支持的命令行参数，以进一步自定义导出过程。
+    - 每一行会被视为一个或多个参数（空格分隔）。
+    - 图片右侧的示例文字给出了很好的例子：
+        - `--bibliography "Zotero ExportsMy Library.json"`: 指定参考文献数据库文件（例如 Zotero 导出的 JSON 或 .bib 文件）。
+        - `--template letter`: 指定使用一个名为 "letter" 的自定义模板。
+    - 你可以用它来指定 CSL 文件 (用于引文样式)、PDF 引擎、设置变量、启用或禁用特定的 Pandoc 扩展等。
