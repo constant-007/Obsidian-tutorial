@@ -1,16 +1,28 @@
 {
   "recentFiles": [
     {
-      "basename": "Pandoc：导出工具",
-      "path": "Obsidian设置/Community plugins/Pandoc：导出工具.md"
+      "basename": "Reminder：闹钟提醒",
+      "path": "Obsidian设置/Community plugins/Reminder：闹钟提醒.md"
+    },
+    {
+      "basename": "Remotely Save：同步",
+      "path": "Obsidian设置/Community plugins/Remotely Save：同步.md"
+    },
+    {
+      "basename": "Linter：自动规范笔记",
+      "path": "Obsidian设置/Community plugins/Linter：自动规范笔记.md"
+    },
+    {
+      "basename": "QuickAdd：自动化法宝",
+      "path": "Obsidian设置/Community plugins/QuickAdd：自动化法宝.md"
     },
     {
       "basename": "Outliner：增强大纲功能",
       "path": "Obsidian设置/Community plugins/Outliner：增强大纲功能.md"
     },
     {
-      "basename": "QuickAdd：自动化法宝",
-      "path": "Obsidian设置/Community plugins/QuickAdd：自动化法宝.md"
+      "basename": "Pandoc：导出工具",
+      "path": "Obsidian设置/Community plugins/Pandoc：导出工具.md"
     },
     {
       "basename": "Excute code：执行代码！",
@@ -59,14 +71,6 @@
     {
       "basename": "Highlighter：高亮笔记内容",
       "path": "Obsidian设置/Community plugins/Highlighter：高亮笔记内容.md"
-    },
-    {
-      "basename": "Reminder：闹钟提醒",
-      "path": "Obsidian设置/Community plugins/Reminder：闹钟提醒.md"
-    },
-    {
-      "basename": "Remotely Save：同步",
-      "path": "Obsidian设置/Community plugins/Remotely Save：同步.md"
     },
     {
       "basename": "Remember cursor position：一定要装！",
@@ -151,10 +155,6 @@
     {
       "basename": "Minimal Theme Settings：Minimal主题帮手",
       "path": "Obsidian设置/Community plugins/Minimal Theme Settings：Minimal主题帮手.md"
-    },
-    {
-      "basename": "Linter：自动规范笔记",
-      "path": "Obsidian设置/Community plugins/Linter：自动规范笔记.md"
     },
     {
       "basename": "Kanban：创建看板视图",

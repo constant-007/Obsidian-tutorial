@@ -105,3 +105,11 @@ Obsidian 的 Pandoc 插件允许用户直接在 Obsidian内部利用 Pandoc 的�
         - `--bibliography "Zotero ExportsMy Library.json"`: 指定参考文献数据库文件（例如 Zotero 导出的 JSON 或 .bib 文件）。
         - `--template letter`: 指定使用一个名为 "letter" 的自定义模板。
     - 你可以用它来指定 CSL 文件 (用于引文样式)、PDF 引擎、设置变量、启用或禁用特定的 Pandoc 扩展等。
+
+```ad-note
+title: 注意
+这插件导出的时候老是报路径找不到的错误，情况似乎有很多种，建议问大模型。我是把导出文件及设置为“/pandoc"，然后在D盘创建一个名为”pandoc"的文件夹后成功导出HTML文件，但其他格式依然无法导出。而且具体为什么是D盘我也不太清楚。
+```
+
+
+
