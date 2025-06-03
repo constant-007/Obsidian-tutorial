@@ -7,7 +7,10 @@
       "name": "Markdown (Hugo)"
     },
     {
-      "name": "Html"
+      "name": "Html",
+      "openExportedFileLocation": true,
+      "openExportedFile": true,
+      "runCommand": false
     },
     {
       "name": "TextBundle"
@@ -53,8 +56,8 @@
   "openExportedFile": true,
   "env": {},
   "showExportProgressBar": true,
-  "openExportedFileLocation": false,
-  "lastEditName": "Markdown",
+  "openExportedFileLocation": true,
+  "lastEditName": "Html",
   "customDefaultExportDirectory": {
     "win32": "C:\\Users\\34897\\Documents"
   }
