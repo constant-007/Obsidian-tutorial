@@ -1,16 +1,32 @@
 {
   "recentFiles": [
     {
+      "basename": "Advanced Table：高级表格",
+      "path": "Obsidian设置/Community plugins/Advanced Table：高级表格.md"
+    },
+    {
+      "basename": "Annotator：对PDF做标注",
+      "path": "Obsidian设置/Community plugins/Annotator：对PDF做标注.md"
+    },
+    {
+      "basename": "Buttons：自动化工具之一",
+      "path": "Obsidian设置/Community plugins/Buttons：自动化工具之一.md"
+    },
+    {
+      "basename": "Calendar：日历视图",
+      "path": "Obsidian设置/Community plugins/Calendar：日历视图.md"
+    },
+    {
+      "basename": "Copilot：AI辅助创作",
+      "path": "Obsidian设置/Community plugins/Copilot：AI辅助创作.md"
+    },
+    {
       "basename": "Excalidraw：手写笔记爱好者福音",
       "path": "Obsidian设置/Community plugins/Excalidraw：手写笔记爱好者福音.md"
     },
     {
       "basename": "Excute code：执行代码！",
       "path": "Obsidian设置/Community plugins/Excute code：执行代码！.md"
-    },
-    {
-      "basename": "Buttons：自动化工具之一",
-      "path": "Obsidian设置/Community plugins/Buttons：自动化工具之一.md"
     },
     {
       "basename": "Highlighter：高亮笔记内容",
@@ -85,28 +101,12 @@
       "path": "Obsidian设置/Community plugins/Editing Toolbar：像Word一样编辑笔记.md"
     },
     {
-      "basename": "Copilot：AI辅助创作",
-      "path": "Obsidian设置/Community plugins/Copilot：AI辅助创作.md"
-    },
-    {
-      "basename": "Calendar：日历视图",
-      "path": "Obsidian设置/Community plugins/Calendar：日历视图.md"
-    },
-    {
       "basename": "Admonition：标出注意事项",
       "path": "Obsidian设置/Community plugins/Admonition：标出注意事项.md"
     },
     {
       "basename": "Advanced Slides：做PPT",
       "path": "Obsidian设置/Community plugins/Advanced Slides：做PPT.md"
-    },
-    {
-      "basename": "Advanced Table：高级表格",
-      "path": "Obsidian设置/Community plugins/Advanced Table：高级表格.md"
-    },
-    {
-      "basename": "Annotator：对PDF做标注",
-      "path": "Obsidian设置/Community plugins/Annotator：对PDF做标注.md"
     },
     {
       "basename": "Remember cursor position：一定要装！",

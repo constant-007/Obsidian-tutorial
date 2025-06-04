@@ -162,3 +162,85 @@
     - **开关状态：** 开启 (ON)
     - **作用：** 当你在 Markdown 中注释一个图片时（通常意味着用 Excalidraw 绘图替换原始图片链接），启用此选项后，替换后的 Excalidraw 嵌入链接将包含原始图片的宽度信息，以尝试保持视觉上的尺寸一致性。
 
+![[Pasted image 20250604225052.png]]
+**“AI Settings - Experimental (AI 设置 - 实验性)”**。
+
+顶部的说明文字提到，在“AI”设置中，你可以配置使用 OpenAI GPT API 的选项。需要注意的是，OpenAI API 目前（在插件说明的上下文中）可能仍处于测试阶段，其使用受到严格限制——你需要使用自己的 API 密钥。你可以创建一个 OpenAI 账户，存入少量金额（最低5美元），然后生成你自己的 API 密钥。设置好 API 密钥后，你就可以在 Excalidraw 中使用 AI 工具了。
+
+下面是对这些具体设置项的解释：
+
+---
+
+- **OpenAI API key (OpenAI API 密钥)**
+    - **当前值：** `Enter your OpenAI API key` (请输入你的 OpenAI API 密钥 - 这是占位符)
+    - **作用：** 这个字段用于输入你个人的 OpenAI API 密钥。插件会使用这个密钥来调用 OpenAI 的服务。
+    - **获取方式：** 说明中提到你可以从你的 [OpenAI account (OpenAI 账户)](https://platform.openai.com/account/api-keys) 获取 API 密钥。
+
+---
+
+- **Default AI model (默认 AI 模型)**
+    - **当前值：** `gpt-3.5-turbo-1106`
+    - **作用：** 设置在生成文本时默认使用的 AI 模型。这是一个自由文本字段，所以你可以输入任何有效的 OpenAI 模型名称。
+    - **更多信息：** 你可以访问 [OpenAI website (OpenAI 官网)](https://platform.openai.com/docs/models) 了解更多可用的模型。
+
+---
+
+- **Default AI vision model (默认 AI 视觉模型)**
+    - **当前值：** `gpt-4o`
+    - **作用：** 设置在从图片生成文本时（例如，图片描述、分析图片内容等）默认使用的 AI 视觉模型。这也是一个自由文本字段。
+    - **更多信息：** 你可以访问 [OpenAI website (OpenAI 官网)](https://platform.openai.com/docs/models) 了解更多可用的视觉模型。
+
+---
+
+- **Default Image Generation AI model (默认图像生成 AI 模型)**
+    - **当前值：** `dall-e-3`
+    - **作用：** 设置在生成图像时默认使用的 AI 模型。
+    - **特别注意：** 说明中提到，目前（在插件说明的上下文中）图像编辑和变体功能仅由 `dall-e-2` 支持。因此，即使这里设置了其他模型，在进行图像编辑或生成变体图像时，插件也会自动使用 `dall-e-2`。这是一个自由文本字段。
+    - **更多信息：** 你可以访问 [OpenAI website (OpenAI 官网)](https://platform.openai.com/docs/models) 了解更多可用的图像生成模型。
+
+---
+
+- **OpenAI API URL (OpenAI API 地址)**
+    - **当前值：** `https://api.openai.com/v1`
+    - **作用：** 设置默认的 OpenAI API 请求地址。Excalidraw 在向 OpenAI 发送 API 请求时将使用此 URL。这是一个自由文本字段，你可以输入任何有效的、与 OpenAI API 兼容的 URL。
+    - **重要警告：** 插件开发者明确指出，他们没有对此字段做任何错误处理。因此，请确保你输入的是一个有效的 URL，并且只在你清楚自己在做什么的情况下才修改它。通常情况下，保持默认值即可，除非 OpenAI 更改了其 API 端点或你使用了兼容的第三方代理服务。
+
+![[Pasted image 20250604225413.png]]
+ **“Excalidraw appearance and behavior (Excalidraw 外观与行为)”** 
+
+顶部的说明文字提到，在“外观与行为”部分，你可以微调 Excalidraw 的显示和操作方式。这包括动态样式、左手模式、匹配 Excalidraw 与 Obsidian 主题、默认模式等选项。
+
+下面是对这些具体设置项的解释：
+
+---
+
+- **Render as image when in markdown reading mode of an Excalidraw file (在 Excalidraw 文件的 Markdown 阅读模式下渲染为图像)**
+    - **开关状态：** 关闭 (OFF)
+    - **作用：** 当你处于 Excalidraw 文件本身的 Markdown 阅读模式时（即查看绘图文件的“背面”Markdown 代码时），此设置决定是否应将 Excalidraw 绘图渲染为一张图片。
+    - **不影响范围：** 此设置不会影响你在 Excalidraw 编辑模式下查看绘图、将绘图嵌入到其他 Markdown 文档中，或在渲染悬浮预览时的显示。
+    - **相关设置：** 提到了一个相关的 PDF 导出设置，位于下方的 "Embedding and Exporting (嵌入与导出)" 部分。
+    - **生效条件：** 你必须关闭当前活动的 Excalidraw/Markdown 文件，然后重新打开它，此更改才会生效。
+
+---
+
+- **Render Excalidraw file as an image in hover preview... (在悬浮预览中将 Excalidraw 文件渲染为图像...)**
+    - **开关状态：** 关闭 (OFF)
+    - **作用：** 这个设置控制当鼠标悬停在链接到 Excalidraw 文件的内部链接上时，弹出的预览窗口中显示的是绘图的图像，还是该文件的 Markdown 内容。
+    - **详细说明：** 即使文件的前置元数据 (frontmatter) 中包含 `excalidraw-open-md: true` (表示默认以 Markdown 模式打开)，并且此设置本身是关闭的，同时文件默认设置为以 Markdown 模式打开，悬浮预览仍将显示文档的 Markdown 那一面。
+        - 简单来说：如果此开关**开启**，悬浮预览将显示为**图像**。
+        - 如果此开关**关闭**，悬浮预览更可能显示为**Markdown 内容**，特别是当文件本身倾向于以 Markdown 模式打开时。
+
+---
+
+- **Left-handed mode (左手模式)**
+    - **开关状态：** 关闭 (OFF)
+    - **作用：** 此设置目前仅对 "tray-mode (工具盘模式)" 生效。如果开启，Excalidraw 的工具盘（包含各种绘图工具的面板）将会显示在绘图区域的右侧，方便左手用户使用鼠标或绘图笔进行操作。
+        - **Toggle ON (开启时)：** 左手模式，工具盘在右侧。
+        - **Toggle OFF (关闭时)：** 右手模式（默认），工具盘在左侧。
+
+---
+
+- **Show splash screen in new drawings (在新绘图中显示启动画面)**
+    - **开关状态：** 开启 (ON)
+    - **作用：** 当你创建一个新的 Excalidraw 绘图时，是否显示一个启动画面（通常包含一些基本提示或插件信息）。
+
