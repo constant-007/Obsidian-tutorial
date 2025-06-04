@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "Linter：自动规范笔记",
+      "path": "Obsidian设置/Community plugins/Linter：自动规范笔记.md"
+    },
+    {
       "basename": "Pandoc：导出工具",
       "path": "Obsidian设置/Community plugins/Pandoc：导出工具.md"
     },
@@ -55,10 +59,6 @@
     {
       "basename": "Kanban：创建看板视图",
       "path": "Obsidian设置/Community plugins/Kanban：创建看板视图.md"
-    },
-    {
-      "basename": "Linter：自动规范笔记",
-      "path": "Obsidian设置/Community plugins/Linter：自动规范笔记.md"
     },
     {
       "basename": "Minimal Theme Settings：Minimal主题帮手",
