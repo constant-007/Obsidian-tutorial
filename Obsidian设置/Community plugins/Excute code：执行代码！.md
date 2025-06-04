@@ -15,22 +15,23 @@ Execute Code 插件的主要特点：
 ### Python 示例
 
 ```python
+# -*- coding: utf-8 -*-
 # 基本计算和输出
-print("🐍 Python 代码执行演示")
+print("Python Code Execution Demo")
 print("=" * 30)
 
 # 数学计算
 result = 2 ** 10
-print(f"2的10次方 = {result}")
+print(f"2^10 = {result}")
 
 # 列表操作
 numbers = [1, 2, 3, 4, 5]
 squared = [x**2 for x in numbers]
-print(f"平方数列表: {squared}")
+print(f"Squared list: {squared}")
 
 # 字符串处理
 text = "Hello Obsidian!"
-print(f"反转字符串: {text[::-1]}")
+print(f"Reversed: {text[::-1]}")
 ```
 
 ### JavaScript 示例
@@ -93,47 +94,49 @@ echo "临时文件已清理"
 ### Python 数据处理
 
 ```python
+# -*- coding: utf-8 -*-
 import json
 from datetime import datetime, timedelta
 
-# 模拟学习数据
+# Simulate learning data
 learning_data = {
     "Obsidian": {"hours": 25, "difficulty": 7, "progress": 85},
     "Python": {"hours": 40, "difficulty": 8, "progress": 70},
     "JavaScript": {"hours": 30, "difficulty": 6, "progress": 65},
-    "数据分析": {"hours": 20, "difficulty": 9, "progress": 45}
+    "DataAnalysis": {"hours": 20, "difficulty": 9, "progress": 45}
 }
 
-print("📊 学习进度分析")
+print("Learning Progress Analysis")
 print("=" * 40)
 
-# 计算总学习时间
+# Calculate total learning time
 total_hours = sum(data["hours"] for data in learning_data.values())
-print(f"总学习时间: {total_hours} 小时")
+print(f"Total hours: {total_hours}")
 
-# 找出最难的科目
+# Find the most difficult subject
 hardest_subject = max(learning_data.items(), key=lambda x: x[1]["difficulty"])
-print(f"最难科目: {hardest_subject[0]} (难度: {hardest_subject[1]['difficulty']}/10)")
+print(f"Hardest: {hardest_subject[0]} (difficulty: {hardest_subject[1]['difficulty']}/10)")
 
-# 计算平均进度
+# Calculate average progress
 avg_progress = sum(data["progress"] for data in learning_data.values()) / len(learning_data)
-print(f"平均进度: {avg_progress:.1f}%")
+print(f"Average progress: {avg_progress:.1f}%")
 
-# 推荐下一步学习
+# Recommend next step
 incomplete = [(name, data) for name, data in learning_data.items() if data["progress"] < 80]
 incomplete.sort(key=lambda x: x[1]["progress"], reverse=True)
 
 if incomplete:
     next_study = incomplete[0]
-    print(f"\n💡 建议优先学习: {next_study[0]} (当前进度: {next_study[1]['progress']}%)")
+    print(f"Recommend: {next_study[0]} (progress: {next_study[1]['progress']}%)")
 ```
 
 ### 简单数据可视化
 
 ```python
-# 创建简单的ASCII图表
-def create_bar_chart(data, title="图表"):
-    print(f"\n📈 {title}")
+# -*- coding: utf-8 -*-
+# Simple ASCII chart
+def create_bar_chart(data, title="Chart"):
+    print(f"\n{title}")
     print("-" * 50)
     
     max_value = max(data.values())
@@ -143,12 +146,20 @@ def create_bar_chart(data, title="图表"):
         bar = "█" * bar_length + "░" * (30 - bar_length)
         print(f"{label:12} |{bar}| {value}")
 
-# 使用学习数据创建图表
+# Learning data
+learning_data = {
+    "Obsidian": {"hours": 25, "progress": 85},
+    "Python": {"hours": 40, "progress": 70},
+    "JavaScript": {"hours": 30, "progress": 65},
+    "DataAnalysis": {"hours": 20, "progress": 45}
+}
+
+# Create charts
 progress_data = {name: data["progress"] for name, data in learning_data.items()}
-create_bar_chart(progress_data, "学习进度对比")
+create_bar_chart(progress_data, "Progress Comparison")
 
 hours_data = {name: data["hours"] for name, data in learning_data.items()}
-create_bar_chart(hours_data, "学习时间对比")
+create_bar_chart(hours_data, "Hours Comparison")
 ```
 
 ---
@@ -158,11 +169,12 @@ create_bar_chart(hours_data, "学习时间对比")
 ### 密码生成器
 
 ```python
+# -*- coding: utf-8 -*-
 import random
 import string
 
 def generate_password(length=12, include_symbols=True):
-    """生成安全密码"""
+    """Generate secure password"""
     chars = string.ascii_letters + string.digits
     if include_symbols:
         chars += "!@#$%^&*"
@@ -171,91 +183,92 @@ def generate_password(length=12, include_symbols=True):
     return password
 
 def check_password_strength(password):
-    """检查密码强度"""
+    """Check password strength"""
     score = 0
     feedback = []
     
     if len(password) >= 8:
         score += 1
     else:
-        feedback.append("密码长度至少8位")
+        feedback.append("At least 8 characters")
     
     if any(c.isupper() for c in password):
         score += 1
     else:
-        feedback.append("包含大写字母")
+        feedback.append("Include uppercase")
         
     if any(c.islower() for c in password):
         score += 1
     else:
-        feedback.append("包含小写字母")
+        feedback.append("Include lowercase")
         
     if any(c.isdigit() for c in password):
         score += 1
     else:
-        feedback.append("包含数字")
+        feedback.append("Include digits")
         
     if any(c in "!@#$%^&*" for c in password):
         score += 1
     else:
-        feedback.append("包含特殊字符")
+        feedback.append("Include symbols")
     
-    strength = ["很弱", "弱", "一般", "强", "很强"][score]
+    strength = ["Very Weak", "Weak", "Fair", "Strong", "Very Strong"][score]
     
     return score, strength, feedback
 
-# 生成并分析密码
-print("🔐 密码生成器演示")
+# Generate and analyze passwords
+print("Password Generator Demo")
 print("=" * 30)
 
 for i in range(3):
     pwd = generate_password(12, True)
     score, strength, tips = check_password_strength(pwd)
-    print(f"\n密码 {i+1}: {pwd}")
-    print(f"强度: {strength} ({score}/5)")
+    print(f"\nPassword {i+1}: {pwd}")
+    print(f"Strength: {strength} ({score}/5)")
     if tips:
-        print(f"建议: {', '.join(tips)}")
+        print(f"Tips: {', '.join(tips)}")
 ```
 
 ### 时间计算器
 
 ```python
+# -*- coding: utf-8 -*-
 from datetime import datetime, timedelta
 
 def time_calculator():
-    """时间计算工具"""
-    print("⏰ 时间计算器")
+    """Time calculator tool"""
+    print("Time Calculator")
     print("=" * 25)
     
-    # 当前时间
+    # Current time
     now = datetime.now()
-    print(f"当前时间: {now.strftime('%Y-%m-%d %H:%M:%S')}")
+    print(f"Current time: {now.strftime('%Y-%m-%d %H:%M:%S')}")
     
-    # 重要日期计算
+    # Important dates calculation
     important_dates = {
-        "新年": datetime(2025, 1, 1),
-        "春节": datetime(2025, 1, 29),
-        "劳动节": datetime(2025, 5, 1),
-        "国庆节": datetime(2025, 10, 1)
+        "New Year": datetime(2025, 1, 1),
+        "Spring Festival": datetime(2025, 1, 29),
+        "Labor Day": datetime(2025, 5, 1),
+        "National Day": datetime(2025, 10, 1)
     }
     
-    print("\n📅 距离重要节日:")
+    print("\nDays to important holidays:")
     for event, date in important_dates.items():
         if date > now:
             delta = date - now
-            print(f"{event}: {delta.days} 天 {delta.seconds//3600} 小时")
+            print(f"{event}: {delta.days} days {delta.seconds//3600} hours")
     
-    # 学习时间规划
-    print("\n📚 学习时间规划:")
+    # Study time planning
+    print("\nStudy time planning:")
     study_plan = [
-        ("每日复习", timedelta(hours=1)),
-        ("周末深度学习", timedelta(hours=4)),
-        ("月度总结", timedelta(days=1))
+        ("Daily review", timedelta(hours=1)),
+        ("Weekend deep learning", timedelta(hours=4)),
+        ("Monthly summary", timedelta(days=1))
     ]
     
     for activity, duration in study_plan:
         end_time = now + duration
-        print(f"{activity}: {duration} -> 结束时间 {end_time.strftime('%H:%M')}")
+        print(f"{activity}: {duration} -> End time {end_time.strftime('%H:%M')}")
 
 time_calculator()
 ```
@@ -267,36 +280,37 @@ time_calculator()
 ### 文本处理工具
 
 ```python
+# -*- coding: utf-8 -*-
 import re
 from collections import Counter
 
 def text_analyzer(text):
-    """文本分析工具"""
-    print("📝 文本分析结果")
+    """Text analysis tool"""
+    print("Text Analysis Results")
     print("=" * 25)
     
-    # 基本统计
+    # Basic statistics
     words = re.findall(r'\b\w+\b', text.lower())
     chars = len(text)
     lines = text.count('\n') + 1
     
-    print(f"字符数: {chars}")
-    print(f"单词数: {len(words)}")
-    print(f"行数: {lines}")
+    print(f"Characters: {chars}")
+    print(f"Words: {len(words)}")
+    print(f"Lines: {lines}")
     
-    # 词频统计
+    # Word frequency statistics
     word_freq = Counter(words)
-    print(f"\n🔥 最常用词汇 (前5个):")
+    print(f"\nMost common words (top 5):")
     for word, freq in word_freq.most_common(5):
-        print(f"  {word}: {freq} 次")
+        print(f"  {word}: {freq} times")
     
-    # 可读性评估
+    # Readability assessment
     avg_word_length = sum(len(word) for word in words) / len(words) if words else 0
-    print(f"\n📊 平均单词长度: {avg_word_length:.1f} 字符")
+    print(f"\nAverage word length: {avg_word_length:.1f} characters")
     
     return word_freq
 
-# 示例文本分析
+# Example text analysis
 sample_text = """
 Obsidian is a powerful note-taking application that uses linked thought.
 It helps you organize your knowledge and ideas effectively.
@@ -355,10 +369,11 @@ console.log(JSON.stringify(report, null, 2));
 ### ASCII 艺术生成器
 
 ```python
+# -*- coding: utf-8 -*-
 def create_ascii_art(text, style="*"):
-    """生成ASCII艺术字"""
+    """Generate ASCII art text"""
     
-    # 简单的ASCII字体映射
+    # Simple ASCII font mapping
     font_map = {
         'A': ["  *  ", " *** ", "*   *", "*****", "*   *"],
         'B': ["**** ", "*   *", "**** ", "*   *", "**** "],
@@ -372,7 +387,7 @@ def create_ascii_art(text, style="*"):
     text = text.upper()
     height = 5
     
-    # 生成每一行
+    # Generate each line
     lines = []
     for row in range(height):
         line = ""
@@ -385,15 +400,15 @@ def create_ascii_art(text, style="*"):
     
     return "\n".join(lines)
 
-# 生成标题艺术字
+# Generate title art
 title_art = create_ascii_art("CODE")
-print("🎨 ASCII 艺术生成器")
+print("ASCII Art Generator")
 print("=" * 30)
 print(title_art)
 
-# 生成边框
+# Generate border
 def create_border(text, char="*"):
-    """为文本创建装饰边框"""
+    """Create decorative border for text"""
     lines = text.split('\n')
     max_width = max(len(line) for line in lines)
     
@@ -407,50 +422,51 @@ def create_border(text, char="*"):
     result.append(border)
     return '\n'.join(result)
 
-bordered_text = create_border("Execute Code Plugin\n功能强大的代码执行器", "🌟")
+bordered_text = create_border("Execute Code Plugin\nPowerful Code Executor", "*")
 print(f"\n{bordered_text}")
 ```
 
 ### 随机名言生成器
 
 ```python
+# -*- coding: utf-8 -*-
 import random
 
-# 编程相关的名言库
+# Programming quotes library
 programming_quotes = [
     {
-        "quote": "代码就像幽默。当你不得不解释它时，它就不好了。",
+        "quote": "Code is like humor. When you have to explain it, it's bad.",
         "author": "Cory House"
     },
     {
-        "quote": "程序必须为人们阅读而写，只是偶然地为机器执行。",
+        "quote": "Programs must be written for people to read, and only incidentally for machines to execute.",
         "author": "Harold Abelson"
     },
     {
-        "quote": "任何傻瓜都能写出计算机能理解的代码。好的程序员写出人类能理解的代码。",
+        "quote": "Any fool can write code that a computer can understand. Good programmers write code that humans can understand.",
         "author": "Martin Fowler"
     },
     {
-        "quote": "经验是一个严厉的老师，她先考试，后讲课。",
+        "quote": "Experience is a hard teacher because she gives the test first, the lesson afterward.",
         "author": "Vernon Law"
     },
     {
-        "quote": "学习的最大敌人是已经知道。",
+        "quote": "The greatest enemy of learning is knowing.",
         "author": "John Maxwell"
     }
 ]
 
 def generate_daily_quote():
-    """生成每日编程名言"""
+    """Generate daily programming quote"""
     quote_data = random.choice(programming_quotes)
     
-    print("💡 今日编程名言")
+    print("Daily Programming Quote")
     print("=" * 30)
     print(f'"{quote_data["quote"]}"')
     print(f"\n— {quote_data['author']}")
     
-    # 添加装饰
-    print("\n" + "✨" * 15)
+    # Add decoration
+    print("\n" + "*" * 15)
 
 generate_daily_quote()
 ```
@@ -535,3 +551,98 @@ Execute Code 插件为 Obsidian 带来了强大的代码执行能力，让笔记
 ---
 
 *💡 提示：记得在插件设置中配置好各种编程语言的执行环境，享受在笔记中编程的乐趣！* 
+
+## 设置项解释
+
+![[Pasted image 20250604194430.png]]
+
+### General Settings (常规设置)
+
+1. **Timeout (in seconds) / 超时 (秒)**
+    
+    - **解释**: 这个设置项允许你指定一个时间限制 (以秒为单位)，超过这个时间后，正在执行的代码程序将被自动关闭。
+    - **目的**: 主要目的是防止代码陷入无限循环或执行时间过长导致 Obsidian 卡死或资源过度消耗。例如，设置为 `10` 表示如果一段代码运行超过10秒钟，插件会自动终止它。
+2. **Allow Input / 允许输入**
+    
+    - **解释**: 这个开关决定了在运行代码块时，是否会提供一个标准输入 (stdin) 的输入框。
+    - **目的**: 如果你的代码需要用户在运行时输入数据 (例如，Python 中的 `input()` 函数或 C++ 中的 `std::cin`)，你需要开启这个选项。开启后，执行这类代码时通常会弹出一个输入框让你输入内容。关闭此选项后，需要输入的代码可能会直接报错或无法按预期工作。
+    - **注意**: 更改此设置后，通常需要刷新 Obsidian (或者重启 Obsidian) 才能生效。
+3. **WSL Mode / WSL 模式**
+    
+    - **解释**: 这个开关决定了是否在 Windows Subsystem for Linux (WSL) 环境中运行代码。
+    - **目的**: 如果你在 Windows 系统上，并且安装了 WSL，同时希望你的代码（尤其是那些依赖 Linux 环境或工具链的脚本，如 Shell 脚本）在 WSL 环境中执行，那么可以开启这个选项。
+    - **注意**: 如果你没有安装 WSL，或者不确定这是什么，请不要开启此选项，否则代码可能无法执行。
+4. **[Experimental] Persistent Output / [实验性] 持久化输出**
+    
+    - **解释**: 这是一个实验性功能。如果启用，代码块的输出结果将被直接写入 Markdown 文件本身。
+    - **目的**: 通常情况下，代码执行的输出是动态显示的，并不会保存到 `.md` 文件中。启用此选项后，输出会成为笔记内容的一部分，即使关闭并重新打开笔记，输出依然存在。这对于希望将代码结果固化在文档中的场景很有用。
+    - **注意**: 因为是实验性功能，它可能不像其他功能那样稳定，使用时可能会遇到一些预期之外的行为或 bug。
+
+---
+
+### Language-Specific Settings (特定语言设置)
+
+- **解释**: 这个区域允许你为不同的编程语言进行特定的配置。图片中显示了 "Javascript" 作为例子，并且有一个下拉箭头，暗示你可以选择其他语言进行设置。
+- **目的**: 不同语言的执行可能需要不同的环境、编译器/解释器路径或其他参数。例如：
+    - 对于 Python，你可能需要指定 Python 解释器的路径 (例如 `C:\Python39\python.exe` 或 `/usr/bin/python3`)。
+    - 对于 C++，可能需要指定编译器路径和编译参数。
+    - 对于 JavaScript (Node.js)，可能需要指定 Node 的路径。
+- **操作**: 通常你需要从下拉列表中选择你想要配置的语言，然后插件会展现出针对该语言的可配置项。
+
+---
+
+![[Pasted image 20250604195008.png]]
+
+### JavaScript / Node Settings (JavaScript / Node 设置)
+
+这些设置专门用于配置 JavaScript 代码（通常是通过 Node.js 环境）的执行方式。
+
+1. **Node path / Node 路径**
+    
+    - **解释**: 这个设置项允许你指定 `node` 可执行文件的路径。
+    - **默认值**: 图片中显示默认值为 `node`。这意味着插件会假定 `node` 命令已经在你的系统环境变量 `PATH` 中配置好了，可以直接通过在终端输入 `node` 来调用。
+    - **目的**: 如果你的 Node.js 安装在非标准位置，或者你希望使用特定版本的 Node.js (例如通过 nvm 等版本管理器管理，且未设置为全局默认)，你可能需要在这里填写 `node` 可执行文件的完整路径。
+        - 例如，在 Windows 上可能类似：`C:\Program Files\nodejs\node.exe`
+        - 在 macOS 或 Linux 上可能类似：`/usr/local/bin/node` 或 `~/.nvm/versions/node/v18.17.0/bin/node`
+    - **如果留空或设为 `node`**: 插件会尝试从系统路径中找到 Node.js。如果找不到，执行 JavaScript 代码块时会失败。
+2. **Node arguments / Node 参数**
+    
+    - **解释**: 在这里，你可以指定在执行 Node.js 时传递给 `node` 命令的额外参数。
+    - **目的**: 这允许你启用 Node.js 的特定功能或标志。例如：
+        - 你可能想传递一些 V8引擎的选项 (如 `--harmony` 来启用一些实验性的 JavaScript 特性)。
+        - 指定内存限制 (如 `--max-old-space-size=4096` 来设置最大老生代内存为 4GB)。
+        - 启用调试模式相关的参数。
+    - **示例**: 如果你想启用所有 staging (harmony) 特性，可以填入 `--harmony`。
+3. **Run Javascript blocks in Notebook Mode / 在 Notebook 模式下运行 JavaScript 代码块**
+    
+    - **解释**: 这是一个开关选项，决定了 JavaScript 代码块的执行上下文和持久性，模拟了类似 Jupyter Notebook 的行为。
+    - **目的**:
+        - **开启状态 (如图片所示)**:
+            - **状态持久化**: 在同一个笔记中，一个 JavaScript 代码块中定义的变量、函数或进行的状态修改，可以被后续的 JavaScript 代码块访问和使用。就像在一个连续的 Notebook session 中运行代码一样。
+            - **适合场景**: 当你希望将一个复杂的 JavaScript 任务分解到多个代码块中，并且后续代码块依赖于前面代码块的执行结果时，此模式非常有用。
+        - **关闭状态**:
+            - **独立执行**: 每个 JavaScript 代码块都会在一个全新的、隔离的 Node.js 环境中执行。一个代码块中的变量或状态不会影响到其他代码块。
+            - **适合场景**: 当你希望每个代码块都是完全独立的，或者不希望不同代码块之间产生意外的相互影响时。
+    - **注意**: 启用 Notebook 模式可能会消耗更多资源，因为需要维护一个持续的执行上下文。
+4. **Inject Javascript code / 注入 JavaScript 代码**
+    
+    - **解释**: 这个文本框允许你输入一段 JavaScript 代码，这段代码会在**每个** JavaScript 代码块执行之前自动添加到其顶部。
+    - **目的**:
+        - **通用初始化**: 如果你有很多 JavaScript 代码块都需要相同的初始设置、导入相同的模块、或者定义一些通用的辅助函数，你可以把这些通用代码放在这里。这样就无需在每个代码块中重复编写它们。
+        - **全局配置**: 例如，你可以预设一些全局变量或配置。
+    - **示例**:
+        
+        JavaScript
+        
+        ```
+        // 示例：自动引入常用的 'fs' 和 'path' 模块
+        const fs = require('fs');
+        const path = require('path');
+        console.log('Global setup executed.');
+        ```
+        
+        如果你在这里输入了上面的代码，那么你笔记中的任何可执行 JavaScript 代码块在实际运行时，都会先执行这段注入的代码。
+
+---
+
+这些针对 JavaScript 和 Node.js 的特定设置，使得用户可以更灵活地控制 JavaScript 代码在 Obsidian 笔记中的执行环境和行为，无论是简单的脚本测试，还是更复杂的、具有上下文依赖的 Notebook 式执行流程。

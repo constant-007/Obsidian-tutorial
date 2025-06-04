@@ -5,40 +5,20 @@
       "path": "Obsidian设置/Community plugins/Excalidraw：手写笔记爱好者福音.md"
     },
     {
-      "basename": "Excute code：执行代码！",
-      "path": "Obsidian设置/Community plugins/Excute code：执行代码！.md"
-    },
-    {
-      "basename": "Editing Toolbar：像Word一样编辑笔记",
-      "path": "Obsidian设置/Community plugins/Editing Toolbar：像Word一样编辑笔记.md"
-    },
-    {
-      "basename": "Copilot：AI辅助创作",
-      "path": "Obsidian设置/Community plugins/Copilot：AI辅助创作.md"
-    },
-    {
-      "basename": "Calendar：日历视图",
-      "path": "Obsidian设置/Community plugins/Calendar：日历视图.md"
-    },
-    {
-      "basename": "Admonition：标出注意事项",
-      "path": "Obsidian设置/Community plugins/Admonition：标出注意事项.md"
-    },
-    {
-      "basename": "Advanced Slides：做PPT",
-      "path": "Obsidian设置/Community plugins/Advanced Slides：做PPT.md"
-    },
-    {
-      "basename": "Advanced Table：高级表格",
-      "path": "Obsidian设置/Community plugins/Advanced Table：高级表格.md"
-    },
-    {
-      "basename": "Annotator：对PDF做标注",
-      "path": "Obsidian设置/Community plugins/Annotator：对PDF做标注.md"
-    },
-    {
       "basename": "Buttons：自动化工具之一",
       "path": "Obsidian设置/Community plugins/Buttons：自动化工具之一.md"
+    },
+    {
+      "basename": "Highlighter：高亮笔记内容",
+      "path": "Obsidian设置/Community plugins/Highlighter：高亮笔记内容.md"
+    },
+    {
+      "basename": "Homepage：建立精美主页",
+      "path": "Obsidian设置/Community plugins/Homepage：建立精美主页.md"
+    },
+    {
+      "basename": "Iconize：万物皆可图标",
+      "path": "Obsidian设置/Community plugins/Iconize：万物皆可图标.md"
     },
     {
       "basename": "Importer：导入文件",
@@ -73,16 +53,64 @@
       "path": "Obsidian设置/Community plugins/QuickAdd：自动化法宝.md"
     },
     {
-      "basename": "Remember cursor position：一定要装！",
-      "path": "Obsidian设置/Community plugins/Remember cursor position：一定要装！.md"
-    },
-    {
       "basename": "Reminder：闹钟提醒",
       "path": "Obsidian设置/Community plugins/Reminder：闹钟提醒.md"
     },
     {
+      "basename": "Templater：模板+自动化",
+      "path": "Obsidian设置/Community plugins/Templater：模板+自动化.md"
+    },
+    {
+      "basename": "Tag Wrangler：管理标签",
+      "path": "Obsidian设置/Community plugins/Tag Wrangler：管理标签.md"
+    },
+    {
+      "basename": "Style Settings：管理主题",
+      "path": "Obsidian设置/Community plugins/Style Settings：管理主题.md"
+    },
+    {
       "basename": "Remotely Save：同步",
       "path": "Obsidian设置/Community plugins/Remotely Save：同步.md"
+    },
+    {
+      "basename": "Git：同步",
+      "path": "Obsidian设置/Community plugins/Git：同步.md"
+    },
+    {
+      "basename": "Excute code：执行代码！",
+      "path": "Obsidian设置/Community plugins/Excute code：执行代码！.md"
+    },
+    {
+      "basename": "Editing Toolbar：像Word一样编辑笔记",
+      "path": "Obsidian设置/Community plugins/Editing Toolbar：像Word一样编辑笔记.md"
+    },
+    {
+      "basename": "Copilot：AI辅助创作",
+      "path": "Obsidian设置/Community plugins/Copilot：AI辅助创作.md"
+    },
+    {
+      "basename": "Calendar：日历视图",
+      "path": "Obsidian设置/Community plugins/Calendar：日历视图.md"
+    },
+    {
+      "basename": "Admonition：标出注意事项",
+      "path": "Obsidian设置/Community plugins/Admonition：标出注意事项.md"
+    },
+    {
+      "basename": "Advanced Slides：做PPT",
+      "path": "Obsidian设置/Community plugins/Advanced Slides：做PPT.md"
+    },
+    {
+      "basename": "Advanced Table：高级表格",
+      "path": "Obsidian设置/Community plugins/Advanced Table：高级表格.md"
+    },
+    {
+      "basename": "Annotator：对PDF做标注",
+      "path": "Obsidian设置/Community plugins/Annotator：对PDF做标注.md"
+    },
+    {
+      "basename": "Remember cursor position：一定要装！",
+      "path": "Obsidian设置/Community plugins/Remember cursor position：一定要装！.md"
     },
     {
       "basename": "项目管理总视图",
@@ -91,10 +119,6 @@
     {
       "basename": "Appearance",
       "path": "Obsidian设置/Appearance.md"
-    },
-    {
-      "basename": "Templater：模板+自动化",
-      "path": "Obsidian设置/Community plugins/Templater：模板+自动化.md"
     },
     {
       "basename": "README",
@@ -115,14 +139,6 @@
     {
       "basename": "Untitled",
       "path": "Canvas/Untitled.canvas"
-    },
-    {
-      "basename": "Homepage：建立精美主页",
-      "path": "Obsidian设置/Community plugins/Homepage：建立精美主页.md"
-    },
-    {
-      "basename": "Highlighter：高亮笔记内容",
-      "path": "Obsidian设置/Community plugins/Highlighter：高亮笔记内容.md"
     },
     {
       "basename": "Excel 2025-06-02 14.21.30.univer",
@@ -167,22 +183,6 @@
     {
       "basename": "Sheet Plus：编辑excel表格",
       "path": "Obsidian设置/Community plugins/Sheet Plus：编辑excel表格.md"
-    },
-    {
-      "basename": "Tag Wrangler：管理标签",
-      "path": "Obsidian设置/Community plugins/Tag Wrangler：管理标签.md"
-    },
-    {
-      "basename": "Style Settings：管理主题",
-      "path": "Obsidian设置/Community plugins/Style Settings：管理主题.md"
-    },
-    {
-      "basename": "Iconize：万物皆可图标",
-      "path": "Obsidian设置/Community plugins/Iconize：万物皆可图标.md"
-    },
-    {
-      "basename": "Git：同步",
-      "path": "Obsidian设置/Community plugins/Git：同步.md"
     },
     {
       "basename": "Community plugins",
