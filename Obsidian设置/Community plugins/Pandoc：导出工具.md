@@ -1,3 +1,7 @@
+```ad-tip
+title: 提示
+建议配合Enhancing-export这个插件使用
+```
 ## 基本介绍
 
 Obsidian 的 Pandoc 插件允许用户直接在 Obsidian内部利用 Pandoc 的强大文档转换功能。Pandoc 被誉为文档转换领域的“瑞士军刀”，它可以在数十种标记语言格式之间进行转换。

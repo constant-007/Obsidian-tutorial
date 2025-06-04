@@ -1,6 +1,14 @@
 {
   "recentFiles": [
     {
+      "basename": "Pandoc：导出工具",
+      "path": "Obsidian设置/Community plugins/Pandoc：导出工具.md"
+    },
+    {
+      "basename": "Templater：模板+自动化",
+      "path": "Obsidian设置/Community plugins/Templater：模板+自动化.md"
+    },
+    {
       "basename": "Advanced Table：高级表格",
       "path": "Obsidian设置/Community plugins/Advanced Table：高级表格.md"
     },
@@ -65,20 +73,12 @@
       "path": "Obsidian设置/Community plugins/Outliner：增强大纲功能.md"
     },
     {
-      "basename": "Pandoc：导出工具",
-      "path": "Obsidian设置/Community plugins/Pandoc：导出工具.md"
-    },
-    {
       "basename": "QuickAdd：自动化法宝",
       "path": "Obsidian设置/Community plugins/QuickAdd：自动化法宝.md"
     },
     {
       "basename": "Reminder：闹钟提醒",
       "path": "Obsidian设置/Community plugins/Reminder：闹钟提醒.md"
-    },
-    {
-      "basename": "Templater：模板+自动化",
-      "path": "Obsidian设置/Community plugins/Templater：模板+自动化.md"
     },
     {
       "basename": "Tag Wrangler：管理标签",
