@@ -99,4 +99,66 @@
     - **无法保存的条件：** 如果直接终止 Obsidian 应用 (例如从后台向上滑动关闭)，Excalidraw 可能无法保存当前工作。
     - **特别注意：** 有时移动操作系统 (Android 和 iOS) 为了节省系统资源，可能会在后台关闭 Obsidian 应用，这可能导致最新的更改无法保存。因此，在移动设备上更频繁的自动保存是有益的。
 
-这些保存设置对于确保你的工作不会意外丢失非常重要，同时也允许你通过压缩来优化存储和搜索体验。
+![[Pasted image 20250604214350.png]]
+
+**文件名设置 (Filename Settings - 在“保存”标签下)**
+
+该部分顶部提供了一个链接 “date and time format reference”，点击它可以查看日期和时间格式的详细参考，以便你自定义文件名中的日期时间部分。
+
+紧接着展示了两个文件名示例：
+
+- **新绘图的文件名示例：** `Drawing 2025-06-04 21.43.35.excalidraw.md`
+- **新嵌入绘图的文件名示例：** `(NOTE NAME) 2025-06-04 21.43.35.excalidraw.md` (其中 `(NOTE NAME)` 代表当前活动笔记的名称)
+
+---
+
+- **Filename prefix (文件名前缀)**
+    - **当前值：** `Drawing`
+    - **作用：** 这是为独立创建的新 Excalidraw 绘图设置的文件名第一部分（即前缀）。
+
+---
+
+- **Filename prefix when embedding a new drawing into a markdown note (将新绘图嵌入 Markdown 笔记时的文件名前缀)**
+    - **开关状态：** 开启 (ON)
+    - **作用：** 此选项决定了当你使用命令面板操作“创建新绘图并嵌入到活动文档”时，新插入绘图的文件名是否应以当前活动 Markdown 笔记的名称开头。
+        - **Toggle ON (开启时)：** 新绘图的文件名将以活动文档的文件名作为前缀。
+        - **Toggle OFF (关闭时)：** 新绘图的文件名将不包含活动文档的文件名。
+
+---
+
+- **Custom text after markdown Note's name when embedding (嵌入时在 Markdown 笔记名称后的自定义文本)**
+    - **当前值：** (空)
+    - **作用：** 此设置仅在将绘图嵌入到 Markdown 文档时影响文件名。这里输入的文本将被插入到笔记名称之后，但在日期之前。例如，如果笔记名为 `MyNote`，自定义文本为 `_diagram`，日期为 `2025-06-04`，则文件名可能类似于 `MyNote_diagram 2025-06-04...`。
+
+---
+
+- **Filename Date (文件名日期)**
+    - **当前值：** `YYYY-MM-DD HH.mm.ss`
+    - **作用：** 这是文件名的最后一部分，用于添加日期和时间戳。你可以将其留空，如果你不希望文件名中包含日期。显示的格式 `YYYY-MM-DD HH.mm.ss` 表示年-月-日 时.分.秒。你可以使用顶部提供的日期时间格式参考链接中的代码来自定义此格式。
+
+---
+
+- **.excalidraw.md or .md (使用 .excalidraw.md 或 .md 后缀)**
+    - **开关状态：** 开启 (ON)
+    - **作用：** 决定 Excalidraw 文件的扩展名。
+        - **Toggle ON (开启时)：** 文件名将以 `.excalidraw.md` 结尾。说明中提到，此设置不适用于以兼容模式使用 Excalidraw（即不使用 Excalidraw Markdown 文件）的情况。
+        - **Toggle OFF (关闭时)：** 文件名将以 `.md` 结尾。
+
+---
+
+- **Crop file prefix (裁剪文件前缀)**
+    - **当前值：** `cropped_`
+    - **作用：** 为通过裁剪图片创建的新绘图设置文件名的第一部分（前缀）。如果留空，将使用默认的 `cropped_` 作为前缀。
+
+---
+
+- **Annotation file prefix (注释文件前缀)**
+    - **当前值：** `annotated_`
+    - **作用：** 为通过注释图片创建的新绘图设置文件名的第一部分（前缀）。如果留空，将使用默认的 `annotated_` 作为前缀。
+
+---
+
+- **Preserve image size when annotating (注释时保留图片尺寸)**
+    - **开关状态：** 开启 (ON)
+    - **作用：** 当你在 Markdown 中注释一个图片时（通常意味着用 Excalidraw 绘图替换原始图片链接），启用此选项后，替换后的 Excalidraw 嵌入链接将包含原始图片的宽度信息，以尝试保持视觉上的尺寸一致性。
+
