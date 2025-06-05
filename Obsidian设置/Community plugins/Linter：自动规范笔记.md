@@ -97,3 +97,46 @@ Obsidian Linter 插件是一款非常实用的社区插件，旨在帮助用户�
     - 右侧的 `+` 号图标：点击可以添加一个新的文件忽略规则。
     - 垃圾桶图标 (如果已有条目)：用于删除已添加的文件忽略规则。
 
+![[Pasted image 20250605230952.png]]
+
+- **Add Blank Line After YAML (在 YAML 后添加空行)**
+    
+    - **解释：** 此选项会在 YAML Frontmatter 区域结束后自动添加一个空行。前提条件是 YAML 区域不是文件的末尾，并且其后还没有至少一个空行。这有助于将元数据与正文内容清晰地分开。
+    - **状态：** 在图片中，这个选项是 **开启** 的。
+- **Dedupe YAML Array Values (YAML 数组成员去重)**
+    
+    - **解释：** 此选项会移除 YAML 数组中的重复值。根据描述，这个去重操作是区分大小写的。例如，如果一个数组中有 `[tag1, Tag1, tag2, tag1]`，它可能会变成 `[tag1, Tag1, tag2]` (如果 "tag1" 和 "Tag1" 被视为不同的话，或者如果它只移除完全相同的重复项，则变为 `[Tag1, tag2, tag1]`)。具体行为取决于其区分大小写的实现。
+    - **状态：** 在图片中，这个选项是 **关闭** 的。
+- **Escape YAML Special Characters (转义 YAML 特殊字符)**
+    
+    - **解释：** 此选项会自动转义 YAML 值中的特定特殊字符，以避免它们被 YAML 解析器错误地解读。描述中提到了会转义后面跟着空格的冒号 (`:`)、单引号 (`'`) 和双引号 (`"`)。这意味着如果你的 YAML 字段值中直接包含了这些字符（而非作为 YAML 语法的一部分），Linter 会尝试通过添加转义符或用引号包裹的方式来确保它们被视为普通文本。
+    - **状态：** 在图片中，这个选项是 **开启** 的。
+- **Force YAML Escape (强制 YAML 转义)**
+    
+    - **解释：** 这个选项会强制对指定的 YAML 键 (keys) 对应的值 (values) 进行转义。即使这些值可能不包含第一眼看上去需要转义的字符，这个选项也会确保它们被适当地引号包裹或转义，以保证其作为纯字符串处理。这对于某些特定键，如果其值可能包含特殊字符或易产生歧义的模式，会特别有用。用户需要自行指定哪些键需要强制转义。
+    - **状态：** 在图片中，这个选项是 **关闭** 的。
+- **Format Tags in YAML (格式化 YAML 中的标签)**
+    
+    - **解释：** 此选项会从 YAML frontmatter 的标签 (tags) 中移除井号 (`#`)。在 YAML 中，标签通常不需要也不应该带有井号，井号在笔记正文中才用于标识标签。例如，如果 YAML 中有 `tags: [#tag1, #tag2]`，启用此选项后会将其格式化为 `tags: [tag1, tag2]`。
+    - **状态：** 在图片中，这个选项是 **开启** 的。
+- **Format YAML Array (格式化 YAML 数组)**
+    
+    - **解释：** 这个选项用于统一常规 YAML 数组的格式，可以设置为多行 (multi-line) 或单行 (single-line)。特别指出，`tags` 和 `aliases` 这两个 Obsidian 特定的 YAML 键允许有它们自己的特定格式（这通常通过前面我们讨论过的 `YAML tags section style` 和 `YAML aliases section style` 设置）。描述中还提到一个重要的规则：“Note: that single string to single-line goes from a single string entry to a single-line array if more than 1 entry is present. The same is true for single string to multi-line except it becomes a multi-line array.” 这意味着：
+        - 如果一个键只有一个字符串值（例如 `myKey: value1`），并且你设置了将其格式化为单行数组，Linter 可能不会改变它，除非有多个条目。但如果原文是 `myKey: - value1` 且设置单行，它会变成 `myKey: [value1]`。
+        - 如果原本是 `myKey: value1` 且有多个值，如通过其他方式添加后变成 `myKey: value1, value2`，且设置了单行数组，它会被规范为 `myKey: [value1, value2]`。
+        - 如果设置了多行数组，并且有多个值，它会被格式化为每个值占一行的形式。
+    - **状态：** 在图片中，这个选项是 **开启** 的。
+- **Insert YAML attributes (插入 YAML 属性)**
+    
+    - **解释：** 此选项允许你定义一些 YAML 属性（键值对），Linter 会自动将它们插入到笔记的 YAML frontmatter 中。每个属性需要单独定义在一行。这对于确保所有笔记都包含某些基本元数据（如创建日期、模板类型等）非常有用。
+    - **状态：** 在图片中，这个选项是 **关闭** 的。
+- **Move Tags to YAML (移动标签到 YAML)**
+    
+    - **解释：** 这个选项会将文档正文中的所有标签（通常以 `#` 开头）移动到 YAML frontmatter 的 `tags` 字段中。这有助于集中管理标签，并保持正文的整洁。
+    - **状态：** 在图片中，这个选项是 **关闭** 的。
+- **Remove YAML Keys (移除 YAML 键)**
+    
+    - **解释：** 这个选项允许你指定一个或多个 YAML 键，Linter 会在执行时从 frontmatter 中移除这些键及其对应的值。这可以用于清理不再需要或者不希望保留的元数据。
+    - **状态：** 在图片中，这个选项是 **开启** 的。（虽然是开启的，但用户还需要在具体设置中指定要移除哪些键才会有实际效果）。
+
+这些设置项提供了对 YAML frontmatter 区域非常细致的格式化控制，帮助用户保持元数据的一致性和规范性。
