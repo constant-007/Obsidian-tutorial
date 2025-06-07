@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "2025-06-07",
+      "path": "日历/2025-06-07.md"
+    },
+    {
       "basename": "Excute code：执行代码！",
       "path": "Obsidian设置/Community plugins/Excute code：执行代码！.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "Community plugins",
       "path": "Obsidian设置/Community plugins.md"
-    },
-    {
-      "basename": "Editor",
-      "path": "Obsidian设置/Editor.md"
     }
   ],
   "omittedPaths": [],
