@@ -52,6 +52,23 @@
     - **当前值：** `Excalidraw/Scripts` (这是占位符或默认值)
     - **作用：** 指定存放 Excalidraw 自动化脚本的文件夹。放在这个文件夹里的脚本可以通过 Obsidian 的命令面板访问，并且可以为最常用的脚本分配快捷键，就像其他 Obsidian 命令一样。这些脚本可以用来执行更复杂或自动化的绘图操作。
 
+关于图中视频的简介：
+
+这个视频详细讲解了在 Excalidraw 中创建和使用模板的四种不同方法，旨在帮助用户，特别是那些需要重复创建相似绘图（如视频中以世界地图为例）的用户，提升工作效率。
+
+以下是视频中介绍的四种方法：
+
+1. **使用内置模板库**：这是最直接的方法。你可以将任何现有的绘图保存为模板，并在需要时直接从模板库中调用。视频还演示了如何锁定模板，以防止在绘图时不小心修改到模板本身 [[00:34](http://www.youtube.com/watch?v=jgUpYznHP9A&t=34)]。
+    
+2. **设置默认模板文件**：通过在 Excalidraw 的插件设置中指定一个模板文件，你可以让每次新建绘图时都自动加载这个预设的模板，省去了手动选择的步骤 [[03:38](http://www.youtube.com/watch?v=jgUpYznHP9A&t=218)]。
+    
+3. **将模板作为图像嵌入**：如果你的模板包含图片，可以将其作为图像文件嵌入到新的绘图中。这种方法的好处是，你可以通过 Obsidian 的反向链接功能，轻松找到所有使用了该模板的绘图。视频还提到了一个技巧，即在模板中添加隐藏的标签，以实现类似链接的功能，方便导航 [[05:40](http://www.youtube.com/watch?v=jgUpYznHP9A&t=340), [08:09](http://www.youtube.com/watch?v=jgUpYznHP9A&t=489)]。
+    
+4. **结合使用 Templater 插件**：这是功能最强大、最灵活但也是最复杂的方法。通过强大的 Templater 插件，你可以创建和管理多个不同的模板，甚至可以在模板中动态插入时间戳或自定义文本。Templater 还可以自动将新创建的 Markdown 文件转换为 Excalidraw 绘图视图，极大地提升了自动化程度 [[10:41](http://www.youtube.com/watch?v=jgUpYznHP9A&t=641)]。
+    
+
+视频最后对这四种方法的优缺点进行了总结，并特别强调了 Templater 插件在实现 Excalidraw 自动化方面的巨大潜力 [[20:38](http://www.youtube.com/watch?v=jgUpYznHP9A&t=1238)]。
+
 ![[Pasted image 20250604213507.png]]
 
 **保存设置 (Saving Section)**
@@ -243,4 +260,38 @@
 - **Show splash screen in new drawings (在新绘图中显示启动画面)**
     - **开关状态：** 开启 (ON)
     - **作用：** 当你创建一个新的 Excalidraw 绘图时，是否显示一个启动画面（通常包含一些基本提示或插件信息）。
+
+关于图中视频的简介：
+
+这个视频介绍了 Obsidian 的 Excalidraw 插件中18个非常实用但又鲜为人知的功能和脚本，可以大大提升你的绘图效率和体验。
+
+**核心技巧概览:**
+
+- **自动化与脚本:**
+    
+    - **一键图表生成:** [[00:10](http://www.youtube.com/watch?v=H8Njp7ZXYag&t=10)] 无需手动绘制，直接将剪贴板中的数据粘贴生成图表。
+    - **强大的脚本库:** [[00:56](http://www.youtube.com/watch?v=H8Njp7ZXYag&t=56)] 视频展示了如何将常用脚本固定到侧边栏以便快速访问 [[01:00](http://www.youtube.com/watch?v=H8Njp7ZXYag&t=60)]，以及如何通过在文件浏览器中整理脚本文件来创建自定义的脚本分类库 [[02:30](http://www.youtube.com/watch?v=H8Njp7ZXYag&t=150)]。
+    - **多样化的脚本应用:** 介绍了诸如创建弧形文字 [[04:10](http://www.youtube.com/watch?v=H8Njp7ZXYag&t=250)]、填充未闭合图形 [[09:08](http://www.youtube.com/watch?v=H8Njp7ZXYag&t=548)]、为文字添加描边 [[28:24](http://www.youtube.com/watch?v=H8Njp7ZXYag&t=1704)] 等实用脚本。
+- **增强的编辑与自定义功能:**
+    
+    - **形状与填充:** [[05:15](http://www.youtube.com/watch?v=H8Njp7ZXYag&t=315)] 不仅可以改变元素的形状，还展示了隐藏的“之字形”填充效果 [[06:44](http://www.youtube.com/watch?v=H8Njp7ZXYag&t=404)]。
+    - **字体与画笔:**
+        - **自定义字体:** [[20:45](http://www.youtube.com/watch?v=H8Njp7ZXYag&t=1245)] 可以在 Obsidian 中安装并使用你自己的字体。
+        - **自定义画笔:** [[22:39](http://www.youtube.com/watch?v=H8Njp7ZXYag&t=1359)] 提供了多种类型的自定义画笔，如荧光笔、思维导图专用笔等，并且可以进行详细设置。
+    - **OCR 文字识别:** [[18:14](http://www.youtube.com/watch?v=H8Njp7ZXYag&t=1094)] 能够识别手写或图片中的文字，并将其转化为可搜索的文本。
+    - **高级图像操作:**
+        - **图像引用:** [[15:22](http://www.youtube.com/watch?v=H8Njp7ZXYag&t=922)] 可以创建指向绘图特定区域的链接，方便在其他笔记中引用。
+        - **颜色修改:** [[24:27](http://www.youtube.com/watch?v=H8Njp7ZXYag&t=1467)] 可以通过特定语法直接修改嵌入到笔记中的 SVG 或 Excalidraw 图像的颜色。
+        - **可编辑的导出:** [[29:43](http://www.youtube.com/watch?v=H8Njp7ZXYag&t=1783)] 导出的 PNG 或 SVG 文件可以包含原始绘图数据，方便日后再次编辑。
+- **提升效率的工作流技巧:**
+    
+    - **选择与管理:**
+        - **批量选择相似元素:** [[10:29](http://www.youtube.com/watch?v=H8Njp7ZXYag&t=629)] 可以根据颜色、类型等属性快速选中多个相似元素。
+        - **灵活的框架管理:** [[13:49](http://www.youtube.com/watch?v=H8Njp7ZXYag&t=829)] 可以轻松地隐藏框架或禁用其裁剪功能。
+    - **精细控制:**
+        - **箭头绑定控制:** [[12:29](http://www.youtube.com/watch?v=H8Njp7ZXYag&t=749)] 绘制箭头时可以临时禁用或反转默认的吸附行为。
+    - **界面布局:** [[16:44](http://www.youtube.com/watch?v=H8Njp7ZXYag&t=1004)] 提供了普通模式、左手模式和托盘模式三种界面布局，以适应不同用户习惯。
+    - **文件清理:** [[31:37](http://www.youtube.com/watch?v=H8Njp7ZXYag&t=1897)] 提供了一个快捷方式，可以一键将绘图中的图像及其源文件从 Obsidian Vault 中彻底删除。
+
+总的来说，这个视频深入挖掘了 Excalidraw 插件的潜力，展示了许多能够让用户从“会用”到“精通”的高级技巧
 

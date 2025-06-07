@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "Excalidraw：手写笔记爱好者福音",
+      "path": "Obsidian设置/Community plugins/Excalidraw：手写笔记爱好者福音.md"
+    },
+    {
       "basename": "Linter：自动规范笔记（没啥用）",
       "path": "Obsidian设置/Community plugins/Linter：自动规范笔记（没啥用）.md"
     },
@@ -31,10 +35,6 @@
     {
       "basename": "Copilot：AI辅助创作",
       "path": "Obsidian设置/Community plugins/Copilot：AI辅助创作.md"
-    },
-    {
-      "basename": "Excalidraw：手写笔记爱好者福音",
-      "path": "Obsidian设置/Community plugins/Excalidraw：手写笔记爱好者福音.md"
     },
     {
       "basename": "Excute code：执行代码！",
