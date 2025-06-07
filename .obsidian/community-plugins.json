@@ -39,7 +39,6 @@
   "obsidian-linter",
   "homepage",
   "obsidian-view-mode-by-frontmatter",
-  "buttons",
   "execute-code",
   "highlightr-plugin",
   "toggle-readable-line-length",
@@ -47,5 +46,7 @@
   "obsidian-annotator",
   "copilot",
   "various-complements",
-  "media-extended"
+  "media-extended",
+  "obsidian-banners",
+  "easy-typing-obsidian"
 ]

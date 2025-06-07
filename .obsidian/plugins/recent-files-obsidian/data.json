@@ -1,6 +1,22 @@
 {
   "recentFiles": [
     {
+      "basename": "团队协作看板",
+      "path": "示例/Kanban演示/团队协作看板.md"
+    },
+    {
+      "basename": "UI设计师-王明",
+      "path": "示例/Kanban演示/UI设计师-王明.md"
+    },
+    {
+      "basename": "README",
+      "path": "示例/Kanban演示/README.md"
+    },
+    {
+      "basename": "Kanban插件功能说明",
+      "path": "示例/Kanban演示/Kanban插件功能说明.md"
+    },
+    {
       "basename": "Excalidraw：手写笔记爱好者福音",
       "path": "Obsidian设置/Community plugins/Excalidraw：手写笔记爱好者福音.md"
     },
@@ -151,18 +167,6 @@
     {
       "basename": "Admonition插件演示",
       "path": "示例/Admonition插件演示.md"
-    },
-    {
-      "basename": "团队协作看板",
-      "path": "示例/Kanban演示/团队协作看板.md"
-    },
-    {
-      "basename": "README",
-      "path": "示例/Kanban演示/README.md"
-    },
-    {
-      "basename": "Kanban插件功能说明",
-      "path": "示例/Kanban演示/Kanban插件功能说明.md"
     },
     {
       "basename": "homepage",
