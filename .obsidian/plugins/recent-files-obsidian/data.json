@@ -5,16 +5,20 @@
       "path": "示例/Meta Bind演示/Meta Bind插件完整功能演示.md"
     },
     {
-      "basename": "README",
-      "path": "示例/Meta Bind演示/README.md"
+      "basename": "Meta Bind实际应用场景",
+      "path": "示例/Meta Bind演示/Meta Bind实际应用场景.md"
+    },
+    {
+      "basename": "Meta Bind实际应用模板",
+      "path": "示例/Meta Bind演示/Meta Bind实际应用模板.md"
     },
     {
       "basename": "Meta Bind按钮高级功能演示",
       "path": "示例/Meta Bind演示/Meta Bind按钮高级功能演示.md"
     },
     {
-      "basename": "Meta Bind实际应用场景",
-      "path": "示例/Meta Bind演示/Meta Bind实际应用场景.md"
+      "basename": "README",
+      "path": "示例/Meta Bind演示/README.md"
     },
     {
       "basename": "Files and links",
