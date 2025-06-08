@@ -1,12 +1,16 @@
 {
   "recentFiles": [
     {
-      "basename": "Meta Bind",
-      "path": "Obsidian设置/Community plugins/Meta Bind.md"
+      "basename": "Meta Bind插件完整功能演示",
+      "path": "示例/Meta Bind演示/Meta Bind插件完整功能演示.md"
     },
     {
       "basename": "DB Folder",
       "path": "Obsidian设置/Community plugins/DB Folder.md"
+    },
+    {
+      "basename": "Meta Bind",
+      "path": "Obsidian设置/Community plugins/Meta Bind.md"
     },
     {
       "basename": "团队协作看板",
@@ -175,30 +179,6 @@
     {
       "basename": "Appearance",
       "path": "Obsidian设置/Appearance.md"
-    },
-    {
-      "basename": "README",
-      "path": "README.md"
-    },
-    {
-      "basename": "Outliner演示",
-      "path": "示例/Outliner演示.md"
-    },
-    {
-      "basename": "Untitled",
-      "path": "Canvas/Untitled.canvas"
-    },
-    {
-      "basename": "Excel 2025-06-02 14.21.30.univer",
-      "path": "Excel/Excel 2025-06-02 14.21.30.univer.md"
-    },
-    {
-      "basename": "Advanced Slides 插件演示",
-      "path": "示例/Advanced Slides 插件演示.md"
-    },
-    {
-      "basename": "Admonition插件演示",
-      "path": "示例/Admonition插件演示.md"
     }
   ],
   "omittedPaths": [],
