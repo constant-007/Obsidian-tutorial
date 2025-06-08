@@ -5,6 +5,10 @@
       "path": "示例/Meta Bind演示/Meta Bind插件完整功能演示.md"
     },
     {
+      "basename": "README",
+      "path": "示例/Meta Bind演示/README.md"
+    },
+    {
       "basename": "Meta Bind按钮高级功能演示",
       "path": "示例/Meta Bind演示/Meta Bind按钮高级功能演示.md"
     },
@@ -13,8 +17,16 @@
       "path": "示例/Meta Bind演示/Meta Bind实际应用场景.md"
     },
     {
+      "basename": "Files and links",
+      "path": "Obsidian设置/Files and links.md"
+    },
+    {
+      "basename": "Hotkeys",
+      "path": "Obsidian设置/Hotkeys.md"
+    },
+    {
       "basename": "README",
-      "path": "示例/Meta Bind演示/README.md"
+      "path": "示例/DataView演示/README.md"
     },
     {
       "basename": "DB Folder",
@@ -183,14 +195,6 @@
     {
       "basename": "Advanced Slides：做PPT",
       "path": "Obsidian设置/Community plugins/Advanced Slides：做PPT.md"
-    },
-    {
-      "basename": "项目管理总视图",
-      "path": "示例/DataView演示/项目管理总视图.md"
-    },
-    {
-      "basename": "Appearance",
-      "path": "Obsidian设置/Appearance.md"
     }
   ],
   "omittedPaths": [],

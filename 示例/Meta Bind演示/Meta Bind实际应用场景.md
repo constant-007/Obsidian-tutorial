@@ -58,7 +58,7 @@ sleep_hours: 8
 - 学习状态：`VIEW[{completion_rate} >= 100 ? "✅ 已完成" : ({completion_rate} >= 80 ? "🎯 即将完成" : ({completion_rate} >= 50 ? "📚 进行中" : "🚀 刚开始"))]`
 
 ### 学习笔记
-`INPUT[textArea(placeholder(Learning notes and key points)):notes]`
+`INPUT[textArea(placeholder(LearningNotes)):notes]`
 
 ## 📊 项目管理系统
 
@@ -81,7 +81,11 @@ INPUT[multiSelect(option(张三), option(李四), option(王五), option(赵六)
 - 当前项目：`VIEW[{project_name}]`
 - 项目状态：`VIEW[{project_status}]`
 - 进度显示：`VIEW[{project_progress}]`% 
-- 进度条：`INPUT[progressBar:project_progress]`
+- 进度条：
+
+```meta-bind
+INPUT[progressBar:project_progress]
+```
 - 完成度评估：`VIEW[{project_progress} >= 90 ? "🎉 项目即将完成" : ({project_progress} >= 70 ? "⚡ 快速推进中" : ({project_progress} >= 30 ? "📈 稳步进行" : "🚀 项目启动"))]`
 - 预算状态：`VIEW[{budget}]`元
 
@@ -118,7 +122,11 @@ INPUT[multiSelect(option(25%), option(50%), option(75%), option(90%)):milestones
 ### 目标追踪显示
 - 当前目标：`VIEW[{goal_title}]`
 - 完成比例：`VIEW[{current_value} / {target_value} * 100]`%
-- 完成进度：`INPUT[progressBar:current_value]`
+- 完成进度：
+
+```meta-bind
+INPUT[progressBar:current_value]
+```
 - 目标状态：`VIEW[{current_value} >= {target_value} ? "🎉 目标达成！" : ({current_value} / {target_value} >= 0.8 ? "🔥 即将达成" : ({current_value} / {target_value} >= 0.5 ? "📈 进展良好" : "💪 继续努力"))]`
 - 剩余数量：`VIEW[{target_value} - {current_value}]`
 - 截止日期：`VIEW[{goal_deadline}]`
