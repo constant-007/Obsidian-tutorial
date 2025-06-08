@@ -1,390 +1,219 @@
+---
+# 学习管理
+course_name: ""
+study_hours: 0
+completion_rate: 0
+last_study_date: ""
+difficulty: "medium"
+notes: ""
+
+# 项目管理
+project_name: ""
+project_status: "planning"
+start_date: ""
+end_date: ""
+team_members: []
+project_progress: 0
+budget: 0
+
+# 个人效率
+daily_energy: 5
+focus_time: 0
+interruptions: 0
+mood: "neutral"
+productivity_score: 0
+
+# 目标追踪
+goal_title: ""
+target_value: 100
+current_value: 0
+goal_deadline: ""
+milestones: []
+
+# 阅读追踪
+book_title: ""
+total_pages: 0
+pages_read: 0
+reading_start: ""
+reading_status: "未开始"
+
+# 财务追踪
+income: 0
+expenses: 0
+savings_goal: 1000
+current_savings: 0
+
+# 健康追踪
+weight: 0
+target_weight: 0
+exercise_minutes: 0
+water_intake: 0
+sleep_hours: 0
+---
+
 # Meta Bind实际应用场景
 
-本文件展示Meta Bind插件在各种实际场景中的应用，提供具体的使用案例和模板。
+这个文件展示了Meta Bind在各种实际场景中的应用，包括学习管理、项目管理、个人效率追踪等。
 
-## 📚 学习管理系统
+## 🎓 学习管理系统
 
-### 课程跟踪器
+### 课程信息
+- 课程名称：`INPUT[text:course_name]`
+- 学习时长：`INPUT[number:study_hours]` 小时
+- 完成率：`INPUT[slider(minValue(0), maxValue(100), stepSize(5)):completion_rate]`%
+- 最后学习日期：`INPUT[date:last_study_date]`
+- 难度等级：`INPUT[inlineSelect(option(easy, 简单), option(medium, 中等), option(hard, 困难)):difficulty]`
 
-```meta-bind
-INPUT[text(placeholder(课程名称)):courseName]
-INPUT[text(placeholder(讲师姓名)):instructor]
-INPUT[select(option(在线), option(线下), option(混合)):courseType]
-INPUT[date:startDate]
-INPUT[date:endDate]
-INPUT[slider(minValue(0), maxValue(100), stepSize(5)):progress]
-INPUT[list(option(初学), option(理解), option(熟练), option(精通)):skillLevel]
-INPUT[multiSelect(option(视频), option(文档), option(练习), option(项目)):completedMaterials]
-INPUT[toggle:certified]
-INPUT[number(minValue(0), stepSize(0.5)):studyHours]
-INPUT[textArea(placeholder(学习笔记和心得)):notes]
-```
+### 学习进度显示
+- 当前课程：`VIEW[{course_name}][text]`
+- 学习进度：`VIEW[{completion_rate}]`% (`VIEW[{study_hours}]`小时)
+- 剩余进度：`VIEW[100 - {completion_rate}]`%
+- 学习状态：`VIEW[{completion_rate} >= 100 ? "✅ 已完成" : {completion_rate} >= 80 ? "🎯 即将完成" : {completion_rate} >= 50 ? "📚 进行中" : "🚀 刚开始"][text]`
 
-**课程信息显示：**
-- 课程名称：`VIEW[text:courseName]`
-- 讲师：`VIEW[text:instructor]`
-- 类型：`VIEW[text:courseType]`
-- 进度：`VIEW[text:progress]`%
-- 技能水平：`VIEW[text:skillLevel]`
-- 已完成材料：`VIEW[text:completedMaterials]`
-- 是否认证：`VIEW[text:certified]`
-- 学习时长：`VIEW[text:studyHours]`小时
+### 学习笔记
+`INPUT[textArea(placeholder(记录学习心得和重点)):notes]`
 
-**进度管理按钮：**
+## 📊 项目管理系统
 
-```meta-bind-button
-style: primary
-label: +10% 进度
-id: increase-course-progress
-action:
-  type: inlineJS
-  code: |
-    const current = context.bound.progress || 0;
-    const newProgress = Math.min(current + 10, 100);
-    engine.updateMetadata('progress', newProgress, context.file.path);
-    if (newProgress >= 100) {
-      new Notice('恭喜！课程已完成！');
-    }
-```
+### 项目基本信息
+- 项目名称：`INPUT[text:project_name]`
+- 项目状态：`INPUT[inlineSelect(option(planning, 规划中), option(in_progress, 进行中), option(testing, 测试中), option(completed, 已完成), option(suspended, 暂停)):project_status]`
+- 开始日期：`INPUT[date:start_date]`
+- 结束日期：`INPUT[date:end_date]`
+- 项目进度：`INPUT[slider(minValue(0), maxValue(100), stepSize(5)):project_progress]`%
 
-```meta-bind-button
-style: default
-label: 记录学习时长
-id: log-study-time
-action:
-  type: inlineJS
-  code: |
-    const hours = prompt('今天学习了多少小时？');
-    if (hours && !isNaN(hours)) {
-      const current = context.bound.studyHours || 0;
-      const newTotal = current + parseFloat(hours);
-      engine.updateMetadata('studyHours', newTotal, context.file.path);
-      new Notice(`已记录${hours}小时，总计${newTotal}小时`);
-    }
-```
+### 团队与预算
+- 团队成员：`INPUT[multiSelect(option(张三), option(李四), option(王五), option(赵六)):team_members]`
+- 项目预算：`INPUT[number:budget]` 元
 
----
+### 项目概览
+- 当前项目：`VIEW[{project_name}][text]`
+- 项目状态：`VIEW[{project_status}][text]`
+- 进度显示：`VIEW[{project_progress}]`% 
+- 进度条：`INPUT[progressBar:project_progress]`
+- 完成度评估：`VIEW[{project_progress} >= 90 ? "🎉 项目即将完成" : {project_progress} >= 70 ? "⚡ 快速推进中" : {project_progress} >= 30 ? "📈 稳步进行" : "🚀 项目启动"][text]`
+- 团队规模：`VIEW[{team_members}.length]`人
+- 预算状态：`VIEW[{budget}]`元
 
-## 💼 项目管理系统
+## ⚡ 个人效率追踪
 
-### 项目看板
+### 每日状态记录
+- 精力水平：`INPUT[slider(minValue(1), maxValue(10), stepSize(1)):daily_energy]`/10
+- 专注时间：`INPUT[number:focus_time]` 分钟
+- 被打断次数：`INPUT[number:interruptions]` 次
+- 心情状态：`INPUT[inlineSelect(option(great, 很棒), option(good, 不错), option(neutral, 一般), option(tired, 疲惫), option(stressed, 压力大)):mood]`
 
-```meta-bind
-INPUT[text(placeholder(项目名称)):projectName]
-INPUT[textArea(placeholder(项目描述)):projectDescription]
-INPUT[select(option(策划), option(开发), option(测试), option(部署), option(维护)):projectStage]
-INPUT[list(option(低), option(中), option(高), option(紧急)):priority]
-INPUT[date:deadline]
-INPUT[multiSelect(option(前端), option(后端), option(数据库), option(UI设计), option(测试)):techStack]
-INPUT[number(minValue(0)):estimatedHours]
-INPUT[number(minValue(0)):actualHours]
-INPUT[slider(minValue(0), maxValue(100), stepSize(5)):completion]
-INPUT[toggle:onTrack]
-```
+### 效率分析
+- 今日精力：`VIEW[{daily_energy}]`/10 `VIEW[{daily_energy} >= 8 ? "🔥" : {daily_energy} >= 6 ? "⚡" : {daily_energy} >= 4 ? "😐" : "😴"][text]`
+- 专注表现：`VIEW[{focus_time}]`分钟 `VIEW[{focus_time} >= 120 ? "🎯 专注达人" : {focus_time} >= 60 ? "📚 不错" : "⏰ 需要改进"][text]`
+- 干扰程度：`VIEW[{interruptions}]`次 `VIEW[{interruptions} <= 2 ? "✅ 很好" : {interruptions} <= 5 ? "⚠️ 一般" : "🚨 太多干扰"][text]`
+- 当前心情：`VIEW[{mood}][text]`
 
-**项目状态显示：**
-- 项目：`VIEW[text:projectName]`
-- 阶段：`VIEW[text:projectStage]`
-- 优先级：`VIEW[text:priority]`
-- 截止日期：`VIEW[text:deadline]`
-- 完成度：`VIEW[text:completion]`%
-- 进度正常：`VIEW[text:onTrack]`
-- 效率：`VIEW[math:actualHours > 0 ? Math.round((estimatedHours/actualHours)*100) : 0]`%
-
-**项目控制面板：**
-
-```meta-bind-button
-style: primary
-label: 推进到下一阶段
-id: next-stage
-action:
-  type: inlineJS
-  code: |
-    const stages = ['策划', '开发', '测试', '部署', '维护'];
-    const current = context.bound.projectStage;
-    const currentIndex = stages.indexOf(current);
-    if (currentIndex < stages.length - 1) {
-      const nextStage = stages[currentIndex + 1];
-      engine.updateMetadata('projectStage', nextStage, context.file.path);
-      new Notice(`项目已推进到：${nextStage}`);
-    } else {
-      new Notice('项目已完成所有阶段！');
-    }
-```
-
-```meta-bind-button
-style: destructive
-label: 标记为延期
-id: mark-delayed
-action:
-  type: inlineJS
-  code: |
-    engine.updateMetadata('onTrack', false, context.file.path);
-    const reason = prompt('延期原因：');
-    if (reason) {
-      engine.updateMetadata('delayReason', reason, context.file.path);
-    }
-    new Notice('项目已标记为延期');
-```
-
----
-
-## 📊 个人效率追踪
-
-### 番茄工作法计时器
-
-```meta-bind
-INPUT[text(placeholder(任务名称)):taskName]
-INPUT[number(minValue(1), maxValue(10), defaultValue(4)):pomodoroTarget]
-INPUT[number(minValue(0)):completedPomodoros]
-INPUT[toggle:inProgress]
-INPUT[time:startTime]
-INPUT[textArea(placeholder(任务总结)):taskSummary]
-```
-
-**番茄钟状态：**
-- 当前任务：`VIEW[text:taskName]`
-- 目标番茄钟：`VIEW[text:pomodoroTarget]`
-- 已完成：`VIEW[text:completedPomodoros]`
-- 进行中：`VIEW[text:inProgress]`
-- 完成率：`VIEW[math:Math.round((completedPomodoros/pomodoroTarget)*100)]`%
-
-**番茄钟控制：**
-
-```meta-bind-button
-style: primary
-label: 开始番茄钟
-id: start-pomodoro
-hidden: "inProgress == true"
-action:
-  type: inlineJS
-  code: |
-    engine.updateMetadata('inProgress', true, context.file.path);
-    engine.updateMetadata('startTime', new Date().toLocaleTimeString(), context.file.path);
-    new Notice('番茄钟开始！25分钟后休息');
-    setTimeout(() => {
-      new Notice('番茄钟结束！休息5分钟', 10000);
-    }, 1500000); // 25分钟
-```
-
-```meta-bind-button
-style: default
-label: 完成番茄钟
-id: complete-pomodoro
-hidden: "inProgress != true"
-action:
-  type: inlineJS
-  code: |
-    const completed = (context.bound.completedPomodoros || 0) + 1;
-    engine.updateMetadata('completedPomodoros', completed, context.file.path);
-    engine.updateMetadata('inProgress', false, context.file.path);
-    const target = context.bound.pomodoroTarget || 4;
-    if (completed >= target) {
-      new Notice('恭喜！今日番茄钟目标达成！');
-    } else {
-      new Notice(`番茄钟 ${completed}/${target} 完成`);
-    }
-```
-
----
+### 效率得分计算
+生产力得分：`VIEW[({daily_energy} * 10 + {focus_time} / 2 - {interruptions} * 5)][math:productivity_score]`
 
 ## 🎯 目标追踪系统
 
-### SMART目标管理
+### 目标设定
+- 目标标题：`INPUT[text:goal_title]`
+- 目标数值：`INPUT[number:target_value]`
+- 当前进度：`INPUT[number:current_value]`
+- 截止日期：`INPUT[date:goal_deadline]`
+- 里程碑：`INPUT[multiSelect(option(25%), option(50%), option(75%), option(90%)):milestones]`
 
-```meta-bind
-INPUT[text(placeholder(目标描述)):goalDescription]
-INPUT[select(option(职业发展), option(学习成长), option(健康生活), option(人际关系), option(财务规划)):goalCategory]
-INPUT[date:targetDate]
-INPUT[slider(minValue(0), maxValue(100), stepSize(5)):progress]
-INPUT[textArea(placeholder(具体行动计划)):actionPlan]
-INPUT[multiSelect(option(每日), option(每周), option(每月)):trackingFrequency]
-INPUT[toggle:achieved]
-INPUT[number(minValue(1), maxValue(5)):difficulty]
-INPUT[number(minValue(1), maxValue(10)):importance]
-```
+### 目标追踪显示
+- 当前目标：`VIEW[{goal_title}][text]`
+- 完成比例：`VIEW[{current_value} / {target_value} * 100]`%
+- 完成进度：`INPUT[progressBar:current_value]`
+- 目标状态：`VIEW[{current_value} >= {target_value} ? "🎉 目标达成！" : {current_value} / {target_value} >= 0.8 ? "🔥 即将达成" : {current_value} / {target_value} >= 0.5 ? "📈 进展良好" : "💪 继续努力"][text]`
+- 剩余数量：`VIEW[{target_value} - {current_value}]`
+- 截止日期：`VIEW[{goal_deadline}][text]`
 
-**目标状态：**
-- 目标：`VIEW[text:goalDescription]`
-- 类别：`VIEW[text:goalCategory]`
-- 截止日期：`VIEW[text:targetDate]`
-- 进度：`VIEW[text:progress]`%
-- 难度：`VIEW[text:difficulty]`/5
-- 重要性：`VIEW[text:importance]`/10
-- 已达成：`VIEW[text:achieved]`
+## 📚 阅读追踪器
 
-**目标管理：**
+### 图书信息
+- 书名：`INPUT[text:book_title]`
+- 总页数：`INPUT[number:total_pages]`
+- 已读页数：`INPUT[number:pages_read]`
+- 开始日期：`INPUT[date:reading_start]`
+- 阅读状态：`INPUT[inlineSelect(option(未开始), option(阅读中), option(已完成), option(暂停中)):reading_status]`
 
+### 阅读进度
+- 当前图书：`VIEW[{book_title}][text]`
+- 阅读进度：`VIEW[{pages_read} / {total_pages} * 100]`% (`VIEW[{pages_read}]`/`VIEW[{total_pages}]`页)
+- 剩余页数：`VIEW[{total_pages} - {pages_read}]`页
+- 阅读状态：`VIEW[{reading_status}][text]`
+- 完成情况：`VIEW[{pages_read} >= {total_pages} ? "✅ 已读完" : {pages_read} / {total_pages} >= 0.8 ? "📖 快读完了" : {pages_read} / {total_pages} >= 0.5 ? "📚 过半了" : "🚀 刚开始"][text]`
+
+## 💰 财务追踪器
+
+### 收支记录
+- 本月收入：`INPUT[number:income]` 元
+- 本月支出：`INPUT[number:expenses]` 元
+- 储蓄目标：`INPUT[number:savings_goal]` 元
+- 当前储蓄：`INPUT[number:current_savings]` 元
+
+### 财务分析
+- 本月收入：¥`VIEW[{income}][text]`
+- 本月支出：¥`VIEW[{expenses}][text]`
+- 本月结余：¥`VIEW[{income} - {expenses}][math]`
+- 储蓄进度：`VIEW[{current_savings} / {savings_goal} * 100]`%
+- 储蓄状态：`VIEW[{current_savings} >= {savings_goal} ? "🎉 储蓄目标达成" : {current_savings} / {savings_goal} >= 0.8 ? "💰 接近目标" : {current_savings} / {savings_goal} >= 0.5 ? "💳 进展不错" : "💪 继续努力"][text]`
+- 距离目标：¥`VIEW[{savings_goal} - {current_savings}][math]`
+
+## 🏃‍♀️ 健康追踪器
+
+### 健康数据录入
+- 当前体重：`INPUT[number:weight]` kg
+- 目标体重：`INPUT[number:target_weight]` kg
+- 运动时长：`INPUT[number:exercise_minutes]` 分钟
+- 饮水量：`INPUT[number:water_intake]` 杯
+- 睡眠时长：`INPUT[number:sleep_hours]` 小时
+
+### 健康状况分析
+- 体重情况：`VIEW[{weight}]`kg (目标：`VIEW[{target_weight}]`kg)
+- 体重差距：`VIEW[{weight} - {target_weight}]`kg
+- 今日运动：`VIEW[{exercise_minutes}]`分钟 `VIEW[{exercise_minutes} >= 60 ? "🔥 运动达人" : {exercise_minutes} >= 30 ? "💪 不错" : "🚶 需要加强"][text]`
+- 饮水情况：`VIEW[{water_intake}]`杯 `VIEW[{water_intake} >= 8 ? "💧 补水充足" : {water_intake} >= 6 ? "🥤 还不错" : "🚰 需要多喝水"][text]`
+- 睡眠质量：`VIEW[{sleep_hours}]`小时 `VIEW[{sleep_hours} >= 8 ? "😴 睡眠充足" : {sleep_hours} >= 7 ? "😊 还可以" : "⏰ 睡眠不足"][text]`
+
+## 📝 快速操作按钮
+
+### 学习管理操作
 ```meta-bind-button
 style: primary
-label: 更新进度
-id: update-goal-progress
-action:
-  type: inlineJS
-  code: |
-    const increment = prompt('进度增加多少%？');
-    if (increment && !isNaN(increment)) {
-      const current = context.bound.progress || 0;
-      const newProgress = Math.min(current + parseInt(increment), 100);
-      engine.updateMetadata('progress', newProgress, context.file.path);
-      if (newProgress >= 100) {
-        engine.updateMetadata('achieved', true, context.file.path);
-        new Notice('🎉 恭喜！目标已达成！');
-      } else {
-        new Notice(`进度更新为 ${newProgress}%`);
-      }
-    }
+label: 完成今日学习
+actions:
+  - type: updateMetadata
+    bindTarget: completion_rate
+    evaluate: true
+    value: "{completion_rate} + 10"
+  - type: updateMetadata
+    bindTarget: last_study_date
+    evaluate: true
+    value: "moment().format('YYYY-MM-DD')"
 ```
 
----
-
-## 📖 阅读跟踪器
-
-### 读书进度管理
-
-```meta-bind
-INPUT[text(placeholder(书名)):bookTitle]
-INPUT[text(placeholder(作者)):author]
-INPUT[select(option(小说), option(非虚构), option(技术), option(传记), option(历史)):genre]
-INPUT[number(minValue(1)):totalPages]
-INPUT[number(minValue(0)):currentPage]
-INPUT[date:startDate]
-INPUT[date:finishDate]
-INPUT[slider(minValue(1), maxValue(5), stepSize(0.5)):rating]
-INPUT[textArea(placeholder(读书笔记)):readingNotes]
-INPUT[toggle:recommended]
-```
-
-**阅读状态：**
-- 书名：`VIEW[text:bookTitle]`
-- 作者：`VIEW[text:author]`
-- 类型：`VIEW[text:genre]`
-- 进度：`VIEW[text:currentPage]`/`VIEW[text:totalPages]` (`VIEW[math:Math.round((currentPage/totalPages)*100)]`%)
-- 评分：`VIEW[text:rating]`⭐
-- 推荐：`VIEW[text:recommended]`
-
-**阅读控制：**
-
+### 项目管理操作
 ```meta-bind-button
 style: primary
-label: 更新阅读进度
-id: update-reading-progress
-action:
-  type: inlineJS
-  code: |
-    const pages = prompt('今天读了多少页？');
-    if (pages && !isNaN(pages)) {
-      const current = context.bound.currentPage || 0;
-      const total = context.bound.totalPages || 0;
-      const newPage = Math.min(current + parseInt(pages), total);
-      engine.updateMetadata('currentPage', newPage, context.file.path);
-      const percentage = Math.round((newPage/total)*100);
-      if (newPage >= total) {
-        engine.updateMetadata('finishDate', new Date().toISOString().split('T')[0], context.file.path);
-        new Notice('🎉 恭喜！书已读完！');
-      } else {
-        new Notice(`阅读进度：${percentage}%`);
-      }
-    }
+label: 更新项目进度
+actions:
+  - type: updateMetadata
+    bindTarget: project_progress
+    evaluate: true
+    value: "Math.min({project_progress} + 5, 100)"
 ```
 
----
-
-## 💰 财务管理器
-
-### 支出跟踪
-
-```meta-bind
-INPUT[text(placeholder(支出描述)):expenseDescription]
-INPUT[number(minValue(0), stepSize(0.01)):amount]
-INPUT[select(option(食物), option(交通), option(购物), option(娱乐), option(学习), option(其他)):category]
-INPUT[date:expenseDate]
-INPUT[select(option(现金), option(信用卡), option(借记卡), option(移动支付)):paymentMethod]
-INPUT[toggle:necessary]
-INPUT[textArea(placeholder(备注)):notes]
-```
-
-**支出信息：**
-- 描述：`VIEW[text:expenseDescription]`
-- 金额：¥`VIEW[text:amount]`
-- 类别：`VIEW[text:category]`
-- 日期：`VIEW[text:expenseDate]`
-- 支付方式：`VIEW[text:paymentMethod]`
-- 必要支出：`VIEW[text:necessary]`
-
-**财务分析按钮：**
-
-```meta-bind-button
-style: default
-label: 计算月度支出
-id: calculate-monthly
-action:
-  type: inlineJS
-  code: |
-    // 这里可以添加计算逻辑
-    const amount = context.bound.amount || 0;
-    new Notice(`当前支出：¥${amount}`);
-```
-
----
-
-## 🏃‍♂️ 健康追踪器
-
-### 运动记录
-
-```meta-bind
-INPUT[select(option(跑步), option(游泳), option(骑行), option(健身), option(瑜伽), option(其他)):exerciseType]
-INPUT[number(minValue(0), stepSize(5)):duration]
-INPUT[number(minValue(0)):calories]
-INPUT[date:exerciseDate]
-INPUT[slider(minValue(1), maxValue(10)):intensity]
-INPUT[textArea(placeholder(运动感受)):feelings]
-INPUT[toggle:goalMet]
-```
-
-**运动状态：**
-- 运动类型：`VIEW[text:exerciseType]`
-- 持续时间：`VIEW[text:duration]`分钟
-- 消耗卡路里：`VIEW[text:calories]`
-- 强度：`VIEW[text:intensity]`/10
-- 目标达成：`VIEW[text:goalMet]`
-
+### 健康记录操作
 ```meta-bind-button
 style: primary
-label: 记录今日运动
-id: log-exercise
-action:
-  type: inlineJS
-  code: |
-    engine.updateMetadata('exerciseDate', new Date().toISOString().split('T')[0], context.file.path);
-    new Notice('运动记录已保存！');
+label: 记录运动
+actions:
+  - type: updateMetadata
+    bindTarget: exercise_minutes
+    evaluate: true
+    value: "{exercise_minutes} + 30"
 ```
 
----
-
-## 🎨 创意项目管理
-
-### 设计项目跟踪
-
-```meta-bind
-INPUT[text(placeholder(项目名称)):designProject]
-INPUT[select(option(Logo设计), option(网页设计), option(插画), option(品牌设计), option(UI/UX)):designType]
-INPUT[text(placeholder(客户名称)):clientName]
-INPUT[date:deadline]
-INPUT[multiSelect(option(概念), option(草图), option(初稿), option(修订), option(完稿)):completedStages]
-INPUT[number(minValue(0)):revisionCount]
-INPUT[slider(minValue(1), maxValue(5)):clientSatisfaction]
-INPUT[toggle:delivered]
-```
-
-**项目状态：**
-- 项目：`VIEW[text:designProject]`
-- 类型：`VIEW[text:designType]`
-- 客户：`VIEW[text:clientName]`
-- 截止日期：`VIEW[text:deadline]`
-- 已完成阶段：`VIEW[text:completedStages]`
-- 修订次数：`VIEW[text:revisionCount]`
-- 客户满意度：`VIEW[text:clientSatisfaction]`/5
-- 已交付：`VIEW[text:delivered]`
-
-这些实际应用场景展示了Meta Bind如何帮助您管理生活和工作的各个方面，提高效率和组织能力。您可以根据自己的需求调整和定制这些模板。 
+这些模板展示了Meta Bind在实际生活和工作中的强大应用潜力，你可以根据自己的需求进行修改和扩展。 

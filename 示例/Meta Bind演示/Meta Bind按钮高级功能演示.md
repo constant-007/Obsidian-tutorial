@@ -1,346 +1,250 @@
+---
+counter: 0
+task_status: "pending"
+current_date: ""
+notes_content: ""
+---
+
 # Meta Bind按钮高级功能演示
 
-本文件展示Meta Bind插件中按钮的各种高级功能和应用场景。
+按钮是Meta Bind插件的高级功能，可以执行各种操作，从简单的数值更新到复杂的JavaScript脚本。
 
-## 基础按钮示例
+## 1. 基础按钮示例
 
-### 简单命令按钮
+### 计数器按钮
+当前计数：`VIEW[{counter}][text]`
+
 ```meta-bind-button
 style: primary
-label: 打开命令面板
-id: open-command-palette
-action:
-  type: command
-  command: command-palette:open
-```
-
-### 更新元数据按钮
-```meta-bind-button
-style: default
-label: 标记为已完成
-id: mark-completed
-action:
-  type: updateMetadata
-  bindTarget: completed
-  evaluate: false
-  value: true
-```
-
-### 重置数据按钮
-```meta-bind-button
-style: destructive
-label: 重置所有数据
-id: reset-all
-action:
-  type: updateMetadata
-  bindTarget: progress
-  evaluate: false
-  value: 0
-```
-
-## 多动作按钮
-
-### 完成任务并记录时间
-```meta-bind-button
-style: primary
-label: 完成任务
-id: complete-task-with-time
+label: 增加计数
 actions:
   - type: updateMetadata
-    bindTarget: completed
-    evaluate: false
-    value: true
-  - type: updateMetadata
-    bindTarget: completedTime
-    evaluate: false
-    value: "{{date:YYYY-MM-DD HH:mm}}"
-  - type: updateMetadata
-    bindTarget: status
-    evaluate: false
-    value: "已完成"
+    bindTarget: counter
+    evaluate: true
+    value: "{counter} + 1"
 ```
 
-### 创建新笔记按钮
+```meta-bind-button
+style: destructive
+label: 重置计数
+actions:
+  - type: updateMetadata
+    bindTarget: counter
+    evaluate: false
+    value: 0
+```
+
+## 2. 状态切换按钮
+
+当前状态：`VIEW[{task_status}][text]`
+
+```meta-bind-button
+style: default
+label: 切换状态
+actions:
+  - type: updateMetadata
+    bindTarget: task_status
+    evaluate: true
+    value: "{task_status} == 'pending' ? 'completed' : 'pending'"
+```
+
+## 3. 日期时间按钮
+
+当前日期：`VIEW[{current_date}][text]`
+
+```meta-bind-button
+style: primary
+label: 设置当前日期
+actions:
+  - type: updateMetadata
+    bindTarget: current_date
+    evaluate: true
+    value: "moment().format('YYYY-MM-DD')"
+```
+
+## 4. 文本插入按钮
+
+```meta-bind-button
+style: default
+label: 插入时间戳
+actions:
+  - type: insertIntoNote
+    value: "⏰ {{date:YYYY-MM-DD HH:mm:ss}}"
+```
+
+```meta-bind-button
+style: primary  
+label: 插入分隔线
+actions:
+  - type: insertIntoNote
+    value: "\n---\n"
+```
+
+## 5. 多步骤按钮
+
+```meta-bind-button
+style: primary
+label: 完整任务流程
+actions:
+  - type: updateMetadata
+    bindTarget: task_status
+    evaluate: false
+    value: "in_progress"
+  - type: sleep
+    ms: 1000
+  - type: updateMetadata
+    bindTarget: current_date
+    evaluate: true
+    value: "new Date().toISOString().split('T')[0]"
+  - type: insertIntoNote
+    value: "\n✅ 任务已开始处理\n"
+```
+
+## 6. 条件执行按钮
+
+```meta-bind-button
+style: primary
+label: 条件操作
+actions:
+  - type: updateMetadata
+    bindTarget: notes_content
+    evaluate: true
+    value: "{counter} > 5 ? '计数器已超过5' : '计数器还没超过5'"
+```
+
+## 7. 创建笔记按钮
+
 ```meta-bind-button
 style: primary
 label: 创建每日笔记
-id: create-daily-note
-action:
-  type: createNote
-  folderPath: "Daily Notes"
-  fileName: "{{date:YYYY-MM-DD}} - Daily Note"
-  openNote: true
-  content: |
-    # {{date:YYYY-MM-DD}} 每日笔记
-    
-    ## 今日目标
-    - [ ] 
-    - [ ] 
-    - [ ] 
-    
-    ## 重要事项
-    
-    ## 学习记录
-    
-    ## 反思总结
-```
-
-## JavaScript 按钮
-
-### 计算BMI
-```meta-bind-button
-style: default
-label: 计算BMI
-id: calculate-bmi
-action:
-  type: inlineJS
-  code: |
-    const weight = context.bound.weight || 0;
-    const height = context.bound.height || 0;
-    if (weight > 0 && height > 0) {
-      const bmi = weight / ((height / 100) ** 2);
-      const status = bmi < 18.5 ? '偏瘦' : 
-                     bmi < 25 ? '正常' : 
-                     bmi < 30 ? '超重' : '肥胖';
-      engine.updateMetadata('bmi', bmi.toFixed(1), context.file.path);
-      engine.updateMetadata('bmiStatus', status, context.file.path);
-      new Notice(`BMI: ${bmi.toFixed(1)} (${status})`);
-    } else {
-      new Notice('请先输入体重和身高！');
-    }
-```
-
-### 生成随机密码
-```meta-bind-button
-style: default
-label: 生成随机密码
-id: generate-password
-action:
-  type: inlineJS
-  code: |
-    const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*';
-    let password = '';
-    for (let i = 0; i < 12; i++) {
-      password += chars.charAt(Math.floor(Math.random() * chars.length));
-    }
-    engine.updateMetadata('generatedPassword', password, context.file.path);
-    navigator.clipboard.writeText(password);
-    new Notice('密码已生成并复制到剪贴板！');
-```
-
-## 条件按钮
-
-### 根据进度显示不同按钮
-```meta-bind-button
-style: primary
-label: 开始任务
-id: start-task
-hidden: "progress > 0"
-action:
-  type: updateMetadata
-  bindTarget: progress
-  evaluate: false
-  value: 10
-```
-
-```meta-bind-button
-style: default
-label: 继续任务
-id: continue-task
-hidden: "progress == 0 || progress >= 100"
-action:
-  type: inlineJS
-  code: |
-    const currentProgress = context.bound.progress || 0;
-    const newProgress = Math.min(currentProgress + 10, 100);
-    engine.updateMetadata('progress', newProgress, context.file.path);
-    new Notice(`进度更新为 ${newProgress}%`);
-```
-
-```meta-bind-button
-style: primary
-label: 任务完成
-id: finish-task
-hidden: "progress < 100"
-action:
-  type: updateMetadata
-  bindTarget: completed
-  evaluate: false
-  value: true
-```
-
-## 文本处理按钮
-
-### 正则替换按钮
-```meta-bind-button
-style: default
-label: 格式化电话号码
-id: format-phone
-action:
-  type: regexpReplaceInNote
-  regexp: "(\d{3})(\d{4})(\d{4})"
-  replacement: "$1-$2-$3"
-```
-
-### 插入模板按钮
-```meta-bind-button
-style: primary
-label: 插入会议记录模板
-id: insert-meeting-template
-action:
-  type: insertIntoNote
-  content: |
-    ## 会议记录 - {{date:YYYY-MM-DD}}
-    
-    **会议时间**: {{date:YYYY-MM-DD HH:mm}}
-    **参会人员**: 
-    **会议主题**: 
-    
-    ### 讨论要点
-    1. 
-    2. 
-    3. 
-    
-    ### 决定事项
-    - [ ] 
-    - [ ] 
-    
-    ### 下次会议
-    **时间**: 
-    **议题**: 
-```
-
-## 文件操作按钮
-
-### 打开相关文件按钮
-```meta-bind-button
-style: default
-label: 打开项目文档
-id: open-project-doc
-action:
-  type: open
-  link: "Projects/Project Documentation.md"
-  newTab: true
-```
-
-### 运行外部脚本按钮
-```meta-bind-button
-style: primary
-label: 备份笔记
-id: backup-notes
-action:
-  type: jsFile
-  file: "Scripts/backup-script.js"
-```
-
-## 延时和睡眠按钮
-
-### 延时提醒按钮
-```meta-bind-button
-style: default
-label: 5分钟后提醒
-id: delayed-reminder
 actions:
-  - type: sleep
-    ms: 300000
+  - type: createNote
+    folder: "每日笔记"
+    fileName: "{{date:YYYY-MM-DD}}-日记"
+    content: |
+      # {{date:YYYY-MM-DD}} 日记
+      
+      ## 今日计划
+      - [ ] 
+      
+      ## 今日总结
+      
+      
+      ## 明日计划
+      - [ ] 
+    openNote: true
+```
+
+## 8. 命令执行按钮
+
+```meta-bind-button
+style: default
+label: 打开命令面板
+actions:
+  - type: command
+    command: "command-palette:open"
+```
+
+```meta-bind-button
+style: primary
+label: 切换主题
+actions:
+  - type: command
+    command: "theme:use-dark"
+```
+
+## 9. JavaScript按钮（需要启用JS）
+
+```meta-bind-button
+style: primary
+label: JavaScript示例
+actions:
   - type: inlineJS
     code: |
-      new Notice('提醒：时间到了！', 5000);
+      // 获取当前时间并更新metadata
+      const now = new Date();
+      const timeString = now.toLocaleTimeString();
+      
+      // 更新元数据
+      context.metadata.current_date = timeString;
+      
+      // 显示通知
+      new Notice(`时间已更新为: ${timeString}`);
+      
+      return "JavaScript执行完成";
 ```
 
-## 实际应用示例
-
-### 学习进度跟踪器
-
-输入字段：
-```meta-bind
-INPUT[text(placeholder(课程名称)):courseName]
-INPUT[number(minValue(0), maxValue(100)):progress]
-INPUT[toggle:completed]
-```
-
-控制按钮：
-```meta-bind-button
-style: primary
-label: 增加进度 (+10%)
-id: increase-progress
-action:
-  type: inlineJS
-  code: |
-    const current = context.bound.progress || 0;
-    const newProgress = Math.min(current + 10, 100);
-    engine.updateMetadata('progress', newProgress, context.file.path);
-    if (newProgress >= 100) {
-      engine.updateMetadata('completed', true, context.file.path);
-      new Notice('恭喜！课程已完成！');
-    }
-```
+## 10. 文件操作按钮
 
 ```meta-bind-button
-style: destructive
-label: 重置进度
-id: reset-progress
-action:
-  type: inlineJS
-  code: |
-    engine.updateMetadata('progress', 0, context.file.path);
-    engine.updateMetadata('completed', false, context.file.path);
-    new Notice('进度已重置');
+style: default
+label: 打开设置
+actions:
+  - type: open
+    link: "设置"
+    newTab: false
 ```
 
-### 任务管理器
+## 11. 替换文本按钮
 
 ```meta-bind-button
 style: primary
-label: 创建新任务
-id: create-new-task
-action:
-  type: createNote
-  folderPath: "Tasks"
-  fileName: "任务 - {{date:YYYY-MM-DD-HHmm}}"
-  openNote: true
-  content: |
-    ---
-    type: task
-    status: 待办
-    priority: 中
-    created: {{date:YYYY-MM-DD}}
-    ---
-    
-    # 任务详情
-    
-    ## 描述
-    
-    
-    ## 子任务
-    - [ ] 
-    - [ ] 
-    
-    ## 备注
+label: 替换示例文本
+actions:
+  - type: replaceInNote
+    fromLine: 0
+    toLine: -1
+    replacement: "这是新的内容"
+    templater: false
 ```
 
-## 内联按钮调用
+## 12. 按钮组示例
 
-使用上面定义的按钮：
+```meta-bind-button
+style: primary
+label: 任务管理
+actions:
+  - type: updateMetadata
+    bindTarget: task_status
+    evaluate: false
+    value: "pending"
+```
 
-- 基础操作：`BUTTON[mark-completed]` `BUTTON[reset-all]`
-- 数据计算：`BUTTON[calculate-bmi]` `BUTTON[generate-password]`
-- 进度管理：`BUTTON[start-task]` `BUTTON[continue-task]` `BUTTON[finish-task]`
-- 文件操作：`BUTTON[create-daily-note]` `BUTTON[insert-meeting-template]`
+```meta-bind-button
+style: default
+label: 开始任务
+actions:
+  - type: updateMetadata
+    bindTarget: task_status
+    evaluate: false
+    value: "in_progress"
+```
 
-## 按钮组合
+```meta-bind-button
+style: primary
+label: 完成任务
+actions:
+  - type: updateMetadata
+    bindTarget: task_status
+    evaluate: false
+    value: "completed"
+```
 
-多个按钮组合使用：`BUTTON[increase-progress, reset-progress]`
+## 使用技巧
 
-任务管理组合：`BUTTON[create-new-task, open-project-doc]`
+1. **按钮样式**：
+   - `primary`：主要按钮（蓝色）
+   - `default`：默认按钮（灰色）
+   - `destructive`：危险按钮（红色）
 
-## 最佳实践
+2. **evaluate参数**：
+   - `true`：将value作为表达式计算
+   - `false`：将value作为字面值使用
 
-1. **使用有意义的ID**：为每个按钮设置清晰的标识符
-2. **合理设置样式**：根据按钮功能选择合适的样式（primary、default、destructive、plain）
-3. **添加条件显示**：使用 `hidden` 属性根据条件显示/隐藏按钮
-4. **组合多个动作**：使用 `actions` 数组执行多个操作
-5. **错误处理**：在JavaScript代码中添加适当的错误检查
-6. **用户反馈**：使用 `Notice` 给用户及时反馈
+3. **组合操作**：按钮可以执行多个连续操作，使用`sleep`添加延迟
 
-这些示例展示了Meta Bind按钮的强大功能，可以自动化各种任务，提高工作效率。 
+4. **错误处理**：复杂操作建议分步骤执行，便于调试
+
+5. **性能考虑**：避免在JavaScript中执行耗时操作
+
+这些按钮演示了Meta Bind的强大功能，可以根据实际需求进行定制和扩展。 

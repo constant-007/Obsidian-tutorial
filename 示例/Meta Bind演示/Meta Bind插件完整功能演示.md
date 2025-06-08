@@ -1,9 +1,20 @@
 ---
 progress: 0
+username: ""
+email: ""
+age: 25
+completed: false
+priority: "medium"
+tags: []
+rating: 3
+date: "2024-01-01"
+notes: ""
+project_progress: 50
 ---
+
 # Meta Bind插件完整功能演示
 
-Meta Bind插件是Obsidian中最强大的元数据绑定和交互式表单插件之一，可以将笔记变成动态的、可互动的文档。
+Meta Bind 是一个强大的 Obsidian 插件，允许你创建动态的输入字段和视图字段，与笔记的元数据（frontmatter）进行绑定。
 
 ## 📋 目录
 
@@ -22,17 +33,19 @@ Meta Bind插件是Obsidian中最强大的元数据绑定和交互式表单插件
 
 ## 基础输入字段
 
-### 简单文本输入
-`INPUT[text:title]`
+### 文本输入
+姓名：`INPUT[text:username]`
 
-### 多行文本输入
-`INPUT[textArea:description]`
+邮箱：`INPUT[text:email]`
 
 ### 数字输入
-`INPUT[number:age]`
+年龄：`INPUT[number:age]`
 
 ### 切换开关
-`INPUT[toggle:completed]`
+任务完成：`INPUT[toggle:completed]`
+
+### 下拉选择
+优先级：`INPUT[inlineSelect(option(low), option(medium), option(high)):priority]`
 
 ---
 
@@ -136,16 +149,16 @@ action:
 ## VIEW字段显示
 
 ### 显示文本值
-当前标题：`VIEW[text:title]`
+当前用户名：`VIEW[{username}][text]`
 
 ### 显示进度（计算）
-进度状态：`VIEW[math:progress > 80 ? "接近完成" : progress > 50 ? "进行中" : "刚开始"]`
+进度状态：`VIEW[{project_progress} / 100][math]`
 
 ### 显示列表
-当前标签：`VIEW[text:tags]`
+当前标签：`VIEW[{tags}][text]`
 
 ### 隐藏条件显示
-`VIEW[text(hidden(completed != true)):未完成提示][这个任务还没有完成！]`
+`VIEW[{completed} ? "✅ 已完成" : "⏳ 进行中"][text]`
 
 ---
 
