@@ -1,12 +1,28 @@
 {
   "recentFiles": [
     {
-      "basename": "2025-06-07",
-      "path": "日历/2025-06-07.md"
+      "basename": "Reminder：闹钟提醒",
+      "path": "Obsidian设置/Community plugins/Reminder：闹钟提醒.md"
     },
     {
-      "basename": "2025-06-08",
-      "path": "日历/2025-06-08.md"
+      "basename": "Pasted image 20250607111301",
+      "path": "Attachment/Pasted image 20250607111301.png"
+    },
+    {
+      "basename": "Pasted image 20250607111426",
+      "path": "Attachment/Pasted image 20250607111426.png"
+    },
+    {
+      "basename": "Pasted image 20250505211930",
+      "path": "Attachment/Pasted image 20250505211930.png"
+    },
+    {
+      "basename": "Pasted image 20250505204528",
+      "path": "Attachment/Pasted image 20250505204528.png"
+    },
+    {
+      "basename": "Pasted image 20250505163831",
+      "path": "Attachment/Pasted image 20250505163831.png"
     },
     {
       "basename": "Copilot：AI辅助创作",
@@ -19,10 +35,6 @@
     {
       "basename": "Excute code：执行代码！",
       "path": "Obsidian设置/Community plugins/Excute code：执行代码！.md"
-    },
-    {
-      "basename": "Reminder：闹钟提醒",
-      "path": "Obsidian设置/Community plugins/Reminder：闹钟提醒.md"
     },
     {
       "basename": "Remember cursor position：一定要装！",
@@ -187,18 +199,6 @@
     {
       "basename": "项目管理看板示例",
       "path": "示例/Kanban演示/项目管理看板示例.md"
-    },
-    {
-      "basename": "README",
-      "path": "示例/DataView演示/README.md"
-    },
-    {
-      "basename": "2305.14314v1",
-      "path": "Attachment/2305.14314v1.pdf"
-    },
-    {
-      "basename": "Sheet Plus：编辑excel表格",
-      "path": "Obsidian设置/Community plugins/Sheet Plus：编辑excel表格.md"
     }
   ],
   "omittedPaths": [],
