@@ -1,6 +1,14 @@
 {
   "recentFiles": [
     {
+      "basename": "Meta Bind",
+      "path": "Obsidian设置/Community plugins/Meta Bind.md"
+    },
+    {
+      "basename": "DB Folder",
+      "path": "Obsidian设置/Community plugins/DB Folder.md"
+    },
+    {
       "basename": "团队协作看板",
       "path": "示例/Kanban演示/团队协作看板.md"
     },
@@ -71,10 +79,6 @@
     {
       "basename": "Pandoc：导出工具",
       "path": "Obsidian设置/Community plugins/Pandoc：导出工具.md"
-    },
-    {
-      "basename": "DB Folder",
-      "path": "Obsidian设置/Community plugins/DB Folder.md"
     },
     {
       "basename": "Excalidraw：手写笔记爱好者福音",
