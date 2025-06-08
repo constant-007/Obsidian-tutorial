@@ -11,15 +11,10 @@
             "id": "7cd54f13f1e97450",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Obsidian设置/Community plugins/Annotator：对PDF做标注.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Annotator：对PDF做标注"
+              "title": "New tab"
             }
           }
         ]
@@ -158,8 +153,8 @@
         "state": {
           "type": "git-view",
           "state": {},
-          "icon": "git-pull-request",
-          "title": "Source Control"
+          "icon": "lucide-file",
+          "title": "Plugin no longer active"
         }
       },
       {
@@ -178,7 +173,6 @@
         "state": {
           "type": "outgoing-link",
           "state": {
-            "file": "Obsidian设置/Community plugins/Annotator：对PDF做标注.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           },
@@ -214,16 +208,10 @@
       "darlal-switcher-plus:Open Symbols for the active editor": false,
       "obsidian-excalidraw-plugin:New drawing": false,
       "obsidian-git:Open Git source control": false,
-      "quickadd:QuickAdd": false,
-      "templater-obsidian:Templater": false,
-      "obsidian-kanban:Create new board": false,
-      "homepage:Open homepage": false,
-      "sheet-plus:Create excel file": false,
-      "copilot:Open Copilot Chat": false,
-      "dbfolder:Create a new database table": false
+      "quickadd:QuickAdd": false
     }
   },
-  "active": "462611115f3f6aa5",
+  "active": "123ecaa8da5e3a70",
   "lastOpenFiles": [
     "草稿.md",
     "/Excalidraw/Drawing 2025-04-28 22.28.40.excalidraw.md",

@@ -1,10 +1,6 @@
 {
   "recentFiles": [
     {
-      "basename": "Annotator：对PDF做标注",
-      "path": "Obsidian设置/Community plugins/Annotator：对PDF做标注.md"
-    },
-    {
       "basename": "Excute code：执行代码！",
       "path": "Obsidian设置/Community plugins/Excute code：执行代码！.md"
     },
@@ -59,6 +55,10 @@
     {
       "basename": "Advanced Table：高级表格",
       "path": "Obsidian设置/Community plugins/Advanced Table：高级表格.md"
+    },
+    {
+      "basename": "Annotator：对PDF做标注",
+      "path": "Obsidian设置/Community plugins/Annotator：对PDF做标注.md"
     },
     {
       "basename": "Buttons：自动化工具之一",
