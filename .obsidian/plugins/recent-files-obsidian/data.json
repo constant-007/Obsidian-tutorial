@@ -1,6 +1,30 @@
 {
   "recentFiles": [
     {
+      "basename": "团队协作看板",
+      "path": "示例/Kanban演示/团队协作看板.md"
+    },
+    {
+      "basename": "项目管理看板示例",
+      "path": "示例/Kanban演示/项目管理看板示例.md"
+    },
+    {
+      "basename": "学习计划看板",
+      "path": "示例/Kanban演示/学习计划看板.md"
+    },
+    {
+      "basename": "README",
+      "path": "示例/Kanban演示/README.md"
+    },
+    {
+      "basename": "Kanban插件功能说明",
+      "path": "示例/Kanban演示/Kanban插件功能说明.md"
+    },
+    {
+      "basename": "生活事务管理",
+      "path": "示例/Kanban演示/生活事务管理.md"
+    },
+    {
       "basename": "Pasted image 20250607110354",
       "path": "Attachment/Pasted image 20250607110354.png"
     },
@@ -51,22 +75,6 @@
     {
       "basename": "DB Folder",
       "path": "Obsidian设置/Community plugins/DB Folder.md"
-    },
-    {
-      "basename": "团队协作看板",
-      "path": "示例/Kanban演示/团队协作看板.md"
-    },
-    {
-      "basename": "UI设计师-王明",
-      "path": "示例/Kanban演示/UI设计师-王明.md"
-    },
-    {
-      "basename": "README",
-      "path": "示例/Kanban演示/README.md"
-    },
-    {
-      "basename": "Kanban插件功能说明",
-      "path": "示例/Kanban演示/Kanban插件功能说明.md"
     },
     {
       "basename": "Excalidraw：手写笔记爱好者福音",
@@ -173,14 +181,6 @@
       "path": "示例/Outliner演示.md"
     },
     {
-      "basename": "学习计划看板",
-      "path": "示例/Kanban演示/学习计划看板.md"
-    },
-    {
-      "basename": "生活事务管理",
-      "path": "示例/Kanban演示/生活事务管理.md"
-    },
-    {
       "basename": "Untitled",
       "path": "Canvas/Untitled.canvas"
     },
@@ -195,10 +195,6 @@
     {
       "basename": "Admonition插件演示",
       "path": "示例/Admonition插件演示.md"
-    },
-    {
-      "basename": "homepage",
-      "path": "示例/homepage.md"
     }
   ],
   "omittedPaths": [],
