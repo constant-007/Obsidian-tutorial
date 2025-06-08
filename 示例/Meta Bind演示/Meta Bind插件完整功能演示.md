@@ -1,15 +1,91 @@
 ---
 progress: 0
-username: ""
-email: ""
+username: "用户名"
+email: "test@example.com"
 age: 25
-completed: false
+completed: true
 priority: "medium"
 tags: []
 rating: 3
 date: "2024-01-01"
 notes: ""
 project_progress: 50
+name: ""
+textWithDefault: ""
+detailedNotes: ""
+status: "待办"
+category: "项目"
+dueDate: ""
+reminderTime: ""
+meetingTime: ""
+eventDate: ""
+score: 0
+completion: 0
+styledInput: ""
+styledSelect: ""
+nameWithTitle: ""
+importantFlag: false
+
+# 项目管理相关
+projectTitle: ""
+projectDesc: ""
+projectStatus: "计划中"
+startDate: ""
+endDate: ""
+projectProgress: 0
+projectManager: ""
+teamMembers: []
+budget: 0
+riskLevel: "中"
+mainRisks: ""
+projectTags: []
+
+# 任务管理相关
+taskTitle: ""
+taskType: "日常任务"
+taskPriority: "中"
+estimatedHours: 0
+actualHours: 0
+taskCompleted: false
+taskCompletion: 0
+completionTime: ""
+taskReflection: ""
+
+# 学习管理相关
+courseName: ""
+instructor: ""
+platform: "其他"
+chapterProgress: 0
+masteryLevel: "初学"
+difficulty: 1
+studyHours: 0
+keyConcepts: []
+keyPoints: ""
+questions: ""
+nextReview: ""
+reviewCount: 0
+needsReview: false
+reviewFocus: ""
+
+# 读书记录相关
+bookTitle: ""
+author: ""
+bookType: "其他"
+bookRating: 3
+
+# 习惯追踪相关
+habitName: ""
+targetDays: 30
+currentStreak: 0
+todayCompleted: false
+
+# 电影记录相关
+movieTitle: ""
+director: ""
+movieGenre: []
+watchDate: ""
+personalRating: 5
+movieReview: ""
 ---
 
 # Meta Bind插件完整功能演示
@@ -52,7 +128,7 @@ Meta Bind 是一个强大的 Obsidian 插件，允许你创建动态的输入字
 ## 文本输入与文本区域
 
 ### 带占位符的文本输入
-`INPUT[text(placeholder(请输入您的姓名)):name]`
+`INPUT[text(placeholder(Enter your name)):name]`
 
 ### 带默认值的文本输入
 `INPUT[text(defaultValue(默认文本)):textWithDefault]`
@@ -61,23 +137,27 @@ Meta Bind 是一个强大的 Obsidian 插件，允许你创建动态的输入字
 `INPUT[textArea:notes]`
 
 ### 带占位符的文本区域
-`INPUT[textArea(placeholder(在此输入您的笔记...)):detailedNotes]`
+`INPUT[textArea(placeholder(Enter your notes here)):detailedNotes]`
 
 ---
 
 ## 选择器与下拉菜单
 
 ### 简单下拉选择
-`INPUT[select(option(低), option(中), option(高)):priority]`
+`INPUT[inlineSelect(option(低), option(中), option(高)):priority]`
 
 ### 内联选择器（更紧凑）
 `INPUT[inlineSelect(option(待办), option(进行中), option(已完成)):status]`
 
 ### 多选框
-`INPUT[multiSelect(option(工作), option(学习), option(生活), option(娱乐)):tags]`
+在代码块中使用：
+
+```meta-bind
+INPUT[multiSelect(option(工作), option(学习), option(生活), option(娱乐)):tags]
+```
 
 ### 列表选择器
-`INPUT[list(option(项目), option(任务), option(笔记), option(想法)):category]`
+`INPUT[inlineListSuggester(option(项目), option(任务), option(笔记), option(想法)):category]`
 
 ---
 
@@ -123,42 +203,43 @@ Meta Bind 是一个强大的 Obsidian 插件，允许你创建动态的输入字
 ```meta-bind-button
 style: primary
 label: 完成任务
-id: complete-task
-action:
-  type: updateMetadata
-  bindTarget: completed
-  evaluate: false
-  value: true
+actions:
+  - type: updateMetadata
+    bindTarget: completed
+    evaluate: false
+    value: true
 ```
 
 ```meta-bind-button
 style: destructive
 label: 重置进度
-id: reset-progress
-action:
-  type: updateMetadata
-  bindTarget: progress
-  evaluate: false
-  value: 0
+actions:
+  - type: updateMetadata
+    bindTarget: progress
+    evaluate: false
+    value: 0
 ```
-
-内联按钮调用：`BUTTON[complete-task]` `BUTTON[reset-progress]`
 
 ---
 
 ## VIEW字段显示
 
 ### 显示文本值
-当前用户名：`VIEW[{username}][text]`
+当前用户名：`VIEW[{username}]`
 
-### 显示进度（计算）
-进度状态：`VIEW[{project_progress} / 100][math]`
+当前年龄：`VIEW[{age}]`
 
-### 显示列表
-当前标签：`VIEW[{tags}][text]`
+完成状态：`VIEW[{completed}]`
 
-### 隐藏条件显示
-`VIEW[{completed} ? "✅ 已完成" : "⏳ 进行中"][text]`
+### 数学计算
+进度百分比：`VIEW[{project_progress} / 100]`
+
+年龄加10：`VIEW[{age} + 10]`
+
+### 条件显示
+任务状态：`VIEW[{completed} ? "✅ 已完成" : "⏳ 进行中"]`
+
+优先级显示：`VIEW[{priority} == "high" ? "🔴 高" : ({priority} == "medium" ? "🟡 中" : "🟢 低")]`
 
 ---
 
@@ -181,7 +262,7 @@ action:
 `INPUT[text(class(fancy-input)):styledInput]`
 
 ### 自定义样式的下拉选择
-`INPUT[select(class(custom-select), option(选项1), option(选项2), option(选项3)):styledSelect]`
+`INPUT[inlineSelect(class(custom-select), option(选项1), option(选项2), option(选项3)):styledSelect]`
 
 ### 带标题的输入字段
 `INPUT[text(title(请输入您的姓名)):nameWithTitle]`
@@ -196,78 +277,78 @@ action:
 ### 项目管理表单
 
 ```meta-bind
-INPUT[text(placeholder(输入项目名称)):projectTitle]
-INPUT[textArea(placeholder(描述项目详情)):projectDesc]
-INPUT[select(option(计划中), option(进行中), option(测试中), option(已完成), option(已暂停)):projectStatus]
+INPUT[text(placeholder(Project Name)):projectTitle]
+INPUT[textArea(placeholder(Project Description)):projectDesc]
+INPUT[inlineSelect(option(计划中), option(进行中), option(测试中), option(已完成), option(已暂停)):projectStatus]
 INPUT[date:startDate]
 INPUT[date:endDate]
 INPUT[slider(minValue(0), maxValue(100), stepSize(5)):projectProgress]
 INPUT[text:projectManager]
 INPUT[multiSelect(option(张三), option(李四), option(王五), option(赵六), option(孙七)):teamMembers]
 INPUT[number(minValue(0)):budget]
-INPUT[list(option(低), option(中), option(高), option(极高)):riskLevel]
-INPUT[textArea(placeholder(描述项目主要风险)):mainRisks]
+INPUT[inlineListSuggester(option(低), option(中), option(高), option(极高)):riskLevel]
+INPUT[textArea(placeholder(Main Project Risks)):mainRisks]
 INPUT[multiSelect(option(Web开发), option(移动应用), option(数据分析), option(机器学习), option(UI设计), option(测试), option(部署)):projectTags]
 ```
 
 #### 显示项目信息
-- 项目名称：`VIEW[text:projectTitle]`
-- 项目状态：`VIEW[text:projectStatus]`
-- 完成进度：`VIEW[text:projectProgress]`%
-- 团队成员：`VIEW[text:teamMembers]`
-- 项目标签：`VIEW[text:projectTags]`
+- 项目名称：`VIEW[{projectTitle}]`
+- 项目状态：`VIEW[{projectStatus}]`
+- 完成进度：`VIEW[{projectProgress}]`%
+- 团队成员：`VIEW[{teamMembers}]`
+- 项目标签：`VIEW[{projectTags}]`
 
 ### 个人任务跟踪器
 
 ```meta-bind
-INPUT[text(placeholder(输入任务标题)):taskTitle]
-INPUT[select(option(日常任务), option(工作任务), option(学习任务), option(个人事务)):taskType]
-INPUT[list(option(低), option(中), option(高), option(紧急)):taskPriority]
+INPUT[text(placeholder(Task Title)):taskTitle]
+INPUT[inlineSelect(option(日常任务), option(工作任务), option(学习任务), option(个人事务)):taskType]
+INPUT[inlineListSuggester(option(低), option(中), option(高), option(紧急)):taskPriority]
 INPUT[number(minValue(0.5), maxValue(24), stepSize(0.5)):estimatedHours]
 INPUT[number(minValue(0), stepSize(0.25)):actualHours]
 INPUT[toggle:taskCompleted]
 INPUT[slider(minValue(0), maxValue(100), stepSize(10)):taskCompletion]
 INPUT[dateTime:completionTime]
-INPUT[textArea(placeholder(记录完成任务的心得和改进建议)):taskReflection]
+INPUT[textArea(placeholder(Task reflection and improvements)):taskReflection]
 ```
 
 #### 任务信息显示
-- 任务标题：`VIEW[text:taskTitle]`
-- 任务类型：`VIEW[text:taskType]`
-- 优先级：`VIEW[text:taskPriority]`
-- 预计用时：`VIEW[text:estimatedHours]` 小时
-- 实际用时：`VIEW[text:actualHours]` 小时
-- 完成状态：`VIEW[text:taskCompleted]`
-- 完成度：`VIEW[text:taskCompletion]`%
+- 任务标题：`VIEW[{taskTitle}]`
+- 任务类型：`VIEW[{taskType}]`
+- 优先级：`VIEW[{taskPriority}]`
+- 预计用时：`VIEW[{estimatedHours}]` 小时
+- 实际用时：`VIEW[{actualHours}]` 小时
+- 完成状态：`VIEW[{taskCompleted}]`
+- 完成度：`VIEW[{taskCompletion}]`%
 
 ### 学习笔记管理
 
 ```meta-bind
-INPUT[text(placeholder(输入课程名称)):courseName]
-INPUT[text(placeholder(讲师姓名)):instructor]
-INPUT[select(option(Coursera), option(edX), option(Udemy), option(YouTube), option(线下课程), option(其他)):platform]
+INPUT[text(placeholder(Course Name)):courseName]
+INPUT[text(placeholder(Instructor)):instructor]
+INPUT[inlineSelect(option(Coursera), option(edX), option(Udemy), option(YouTube), option(线下课程), option(其他)):platform]
 INPUT[slider(minValue(0), maxValue(100), stepSize(5)):chapterProgress]
-INPUT[list(option(初学), option(理解), option(熟练), option(精通)):masteryLevel]
+INPUT[inlineListSuggester(option(初学), option(理解), option(熟练), option(精通)):masteryLevel]
 INPUT[slider(minValue(1), maxValue(5), stepSize(1)):difficulty]
 INPUT[number(minValue(0), stepSize(0.5)):studyHours]
 INPUT[multiSelect(option(理论基础), option(实践应用), option(案例分析), option(项目实战)):keyConcepts]
-INPUT[textArea(placeholder(记录重要的知识点)):keyPoints]
-INPUT[textArea(placeholder(记录学习中的疑问)):questions]
+INPUT[textArea(placeholder(Key Points)):keyPoints]
+INPUT[textArea(placeholder(Questions)):questions]
 INPUT[date:nextReview]
 INPUT[number(minValue(0)):reviewCount]
 INPUT[toggle:needsReview]
-INPUT[textArea(placeholder(记录需要重点复习的内容)):reviewFocus]
+INPUT[textArea(placeholder(Review Focus)):reviewFocus]
 ```
 
 #### 学习信息显示
-- 课程名称：`VIEW[text:courseName]`
-- 讲师：`VIEW[text:instructor]`
-- 学习平台：`VIEW[text:platform]`
-- 章节进度：`VIEW[text:chapterProgress]`%
-- 掌握程度：`VIEW[text:masteryLevel]`
-- 难度评价：`VIEW[text:difficulty]`⭐
-- 学习时长：`VIEW[text:studyHours]` 小时
-- 需要复习：`VIEW[text:needsReview]`
+- 课程名称：`VIEW[{courseName}]`
+- 讲师：`VIEW[{instructor}]`
+- 学习平台：`VIEW[{platform}]`
+- 章节进度：`VIEW[{chapterProgress}]`%
+- 掌握程度：`VIEW[{masteryLevel}]`
+- 难度评价：`VIEW[{difficulty}]`⭐
+- 学习时长：`VIEW[{studyHours}]` 小时
+- 需要复习：`VIEW[{needsReview}]`
 
 ---
 
@@ -275,47 +356,47 @@ INPUT[textArea(placeholder(记录需要重点复习的内容)):reviewFocus]
 
 ### 读书笔记评分系统
 ```meta-bind
-INPUT[text(placeholder(书名)):bookTitle]
-INPUT[text(placeholder(作者)):author]
-INPUT[select(option(小说), option(科技), option(历史), option(传记), option(自助), option(其他)):bookType]
+INPUT[text(placeholder(Book Title)):bookTitle]
+INPUT[text(placeholder(Author)):author]
+INPUT[inlineSelect(option(小说), option(科技), option(历史), option(传记), option(自助), option(其他)):bookType]
 INPUT[slider(minValue(1), maxValue(5), stepSize(0.5)):bookRating]
 ```
 
-- 书名：`VIEW[text:bookTitle]`
-- 作者：`VIEW[text:author]`
-- 类型：`VIEW[text:bookType]`
-- 评分：`VIEW[text:bookRating]`⭐
-- 推荐指数：`VIEW[math:bookRating >= 4.5 ? "强烈推荐" : bookRating >= 3.5 ? "推荐" : bookRating >= 2.5 ? "一般" : "不推荐"]`
+- 书名：`VIEW[{bookTitle}]`
+- 作者：`VIEW[{author}]`
+- 类型：`VIEW[{bookType}]`
+- 评分：`VIEW[{bookRating}]`⭐
+- 推荐指数：`VIEW[{bookRating} >= 4.5 ? "强烈推荐" : ({bookRating} >= 3.5 ? "推荐" : ({bookRating} >= 2.5 ? "一般" : "不推荐"))]`
 
 ### 习惯追踪器
 ```meta-bind
-INPUT[text(placeholder(习惯名称)):habitName]
+INPUT[text(placeholder(Habit Name)):habitName]
 INPUT[number(minValue(1), maxValue(365)):targetDays]
 INPUT[number(minValue(0)):currentStreak]
 INPUT[toggle:todayCompleted]
 ```
 
-- 习惯名称：`VIEW[text:habitName]`
-- 目标天数：`VIEW[text:targetDays]`
-- 已坚持：`VIEW[text:currentStreak]`天
-- 完成率：`VIEW[math:Math.round((currentStreak/targetDays)*100)]`%
-- 今日完成：`VIEW[text:todayCompleted]`
+- 习惯名称：`VIEW[{habitName}]`
+- 目标天数：`VIEW[{targetDays}]`
+- 已坚持：`VIEW[{currentStreak}]`天
+- 完成率：`VIEW[{currentStreak}/{targetDays}*100]`%
+- 今日完成：`VIEW[{todayCompleted}]`
 
 ### 电影观看记录
 ```meta-bind
-INPUT[text(placeholder(电影名称)):movieTitle]
-INPUT[text(placeholder(导演)):director]
+INPUT[text(placeholder(Movie Title)):movieTitle]
+INPUT[text(placeholder(Director)):director]
 INPUT[multiSelect(option(动作), option(喜剧), option(剧情), option(科幻), option(恐怖), option(爱情), option(悬疑), option(动画)):movieGenre]
 INPUT[date:watchDate]
 INPUT[slider(minValue(1), maxValue(10), stepSize(0.5)):personalRating]
-INPUT[textArea(placeholder(分享您的观后感)):movieReview]
+INPUT[textArea(placeholder(Share your thoughts)):movieReview]
 ```
 
-- 电影名称：`VIEW[text:movieTitle]`
-- 导演：`VIEW[text:director]`
-- 类型：`VIEW[text:movieGenre]`
-- 观看日期：`VIEW[text:watchDate]`
-- 个人评分：`VIEW[text:personalRating]`/10
+- 电影名称：`VIEW[{movieTitle}]`
+- 导演：`VIEW[{director}]`
+- 类型：`VIEW[{movieGenre}]`
+- 观看日期：`VIEW[{watchDate}]`
+- 个人评分：`VIEW[{personalRating}]`/10
 
 ---
 

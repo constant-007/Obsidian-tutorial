@@ -12,7 +12,7 @@ notes_content: ""
 ## 1. 基础按钮示例
 
 ### 计数器按钮
-当前计数：`VIEW[{counter}][text]`
+当前计数：`VIEW[{counter}]`
 
 ```meta-bind-button
 style: primary
@@ -36,7 +36,7 @@ actions:
 
 ## 2. 状态切换按钮
 
-当前状态：`VIEW[{task_status}][text]`
+当前状态：`VIEW[{task_status}]`
 
 ```meta-bind-button
 style: default
@@ -50,7 +50,7 @@ actions:
 
 ## 3. 日期时间按钮
 
-当前日期：`VIEW[{current_date}][text]`
+当前日期：`VIEW[{current_date}]`
 
 ```meta-bind-button
 style: primary

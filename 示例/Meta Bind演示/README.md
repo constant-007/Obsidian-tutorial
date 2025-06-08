@@ -45,16 +45,15 @@ INPUT[fieldType(arguments):bindTarget]
 
 ### VIEW字段语法
 ```
-VIEW[{bindTarget}]                    // 默认显示（math类型）
-VIEW[{bindTarget}][text]              // 文本显示
-VIEW[{bindTarget}][math]              // 数学计算
-VIEW[{bindTarget}][math:writeTarget]  // 计算并保存结果
+VIEW[{bindTarget}]                    // 显示属性值
+VIEW[expression]                      // 数学表达式或计算
+VIEW[{a} * {b}:writeTarget]          // 计算并保存结果到writeTarget
 ```
 
 **示例：**
-- 显示文本：`VIEW[{username}][text]`
+- 显示文本：`VIEW[{username}]`
 - 数学计算：`VIEW[{value1} + {value2}]`
-- 条件显示：`VIEW[{completed} ? "完成" : "未完成"][text]`
+- 条件显示：`VIEW[{completed} ? "完成" : "未完成"]`
 
 ### 按钮语法
 ```
