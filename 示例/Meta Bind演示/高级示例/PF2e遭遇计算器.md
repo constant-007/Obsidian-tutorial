@@ -14,11 +14,11 @@ enemy:
     level: 3
     count: 2
     variant: -1
-  - name: test
+  - name: 测试
     level: 5
     count: 1
     variant: 0
-test:
+测试:
   - a
   - b
   - c

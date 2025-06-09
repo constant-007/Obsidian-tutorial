@@ -5,7 +5,7 @@ result: "**4300** km"
 n1clone: 100
 cssclasses:
   - aa
-  - test-class
+  - 测试-类
 ---
 
 ### JavaScript 查看字段
@@ -35,7 +35,7 @@ return context.bound.n1;
 {number1} as n1
 save to {cssclasses}
 ---
-const CLASS = 'test-class';
+const CLASS = '测试-类';
 
 let classes = new Set(context.metadata.frontmatter.cssclasses ?? []);
 

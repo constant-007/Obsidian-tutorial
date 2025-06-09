@@ -1,8 +1,68 @@
 {
   "recentFiles": [
     {
+      "basename": "列表",
+      "path": "示例/Meta Bind演示/输入字段/列表.md"
+    },
+    {
+      "basename": "内联选择",
+      "path": "示例/Meta Bind演示/输入字段/内联选择.md"
+    },
+    {
+      "basename": "数字",
+      "path": "示例/Meta Bind演示/输入字段/数字.md"
+    },
+    {
+      "basename": "开关",
+      "path": "示例/Meta Bind演示/输入字段/开关.md"
+    },
+    {
+      "basename": "建议器",
+      "path": "示例/Meta Bind演示/输入字段/建议器.md"
+    },
+    {
+      "basename": "图片建议器",
+      "path": "示例/Meta Bind演示/输入字段/图片建议器.md"
+    },
+    {
       "basename": "笔记内导航",
       "path": "示例/Meta Bind演示/按钮/笔记内导航.md"
+    },
+    {
+      "basename": "img_flower",
+      "path": "示例/Meta Bind演示/Other/Images/img_flower.webp"
+    },
+    {
+      "basename": "avatar",
+      "path": "Attachment/avatar.jpg"
+    },
+    {
+      "basename": "img_butterfly",
+      "path": "示例/Meta Bind演示/Other/Images/img_butterfly.webp"
+    },
+    {
+      "basename": "Pasted image 20250505205321",
+      "path": "Attachment/Pasted image 20250505205321.png"
+    },
+    {
+      "basename": "进度条",
+      "path": "示例/Meta Bind演示/输入字段/进度条.md"
+    },
+    {
+      "basename": "选择和多选",
+      "path": "示例/Meta Bind演示/输入字段/选择和多选.md"
+    },
+    {
+      "basename": "PF2e DC计算器",
+      "path": "示例/Meta Bind演示/高级示例/PF2e DC计算器.md"
+    },
+    {
+      "basename": "DnD 5e旅行计算器",
+      "path": "示例/Meta Bind演示/高级示例/DnD 5e旅行计算器.md"
+    },
+    {
+      "basename": "DnD 5e属性值和调整值",
+      "path": "示例/Meta Bind演示/高级示例/DnD 5e属性值和调整值.md"
     },
     {
       "basename": "高级用例",
@@ -33,32 +93,12 @@
       "path": "示例/Meta Bind演示/README.md"
     },
     {
-      "basename": "建议器",
-      "path": "示例/Meta Bind演示/输入字段/建议器.md"
-    },
-    {
-      "basename": "数字",
-      "path": "示例/Meta Bind演示/输入字段/数字.md"
-    },
-    {
-      "basename": "进度条",
-      "path": "示例/Meta Bind演示/输入字段/进度条.md"
-    },
-    {
-      "basename": "选择和多选",
-      "path": "示例/Meta Bind演示/输入字段/选择和多选.md"
-    },
-    {
       "basename": "编辑器",
       "path": "示例/Meta Bind演示/输入字段/编辑器.md"
     },
     {
       "basename": "文本",
       "path": "示例/Meta Bind演示/输入字段/文本.md"
-    },
-    {
-      "basename": "开关",
-      "path": "示例/Meta Bind演示/输入字段/开关.md"
     },
     {
       "basename": "JS视图字段",
@@ -83,18 +123,6 @@
     {
       "basename": "Templater按钮",
       "path": "示例/Meta Bind演示/按钮/Templater按钮.md"
-    },
-    {
-      "basename": "内联选择",
-      "path": "示例/Meta Bind演示/输入字段/内联选择.md"
-    },
-    {
-      "basename": "列表",
-      "path": "示例/Meta Bind演示/输入字段/列表.md"
-    },
-    {
-      "basename": "图片建议器",
-      "path": "示例/Meta Bind演示/输入字段/图片建议器.md"
     },
     {
       "basename": "Pandoc：导出工具",
@@ -159,46 +187,6 @@
     {
       "basename": "Reminder：闹钟提醒",
       "path": "Obsidian设置/Community plugins/Reminder：闹钟提醒.md"
-    },
-    {
-      "basename": "Pasted image 20250607111301",
-      "path": "Attachment/Pasted image 20250607111301.png"
-    },
-    {
-      "basename": "Pasted image 20250607111426",
-      "path": "Attachment/Pasted image 20250607111426.png"
-    },
-    {
-      "basename": "Pasted image 20250505211930",
-      "path": "Attachment/Pasted image 20250505211930.png"
-    },
-    {
-      "basename": "Pasted image 20250505204528",
-      "path": "Attachment/Pasted image 20250505204528.png"
-    },
-    {
-      "basename": "Pasted image 20250505163831",
-      "path": "Attachment/Pasted image 20250505163831.png"
-    },
-    {
-      "basename": "Copilot：AI辅助创作",
-      "path": "Obsidian设置/Community plugins/Copilot：AI辅助创作.md"
-    },
-    {
-      "basename": "Annotator：对PDF做标注",
-      "path": "Obsidian设置/Community plugins/Annotator：对PDF做标注.md"
-    },
-    {
-      "basename": "Excute code：执行代码！",
-      "path": "Obsidian设置/Community plugins/Excute code：执行代码！.md"
-    },
-    {
-      "basename": "Excalidraw：手写笔记爱好者福音",
-      "path": "Obsidian设置/Community plugins/Excalidraw：手写笔记爱好者福音.md"
-    },
-    {
-      "basename": "Linter：自动规范笔记（没啥用）",
-      "path": "Obsidian设置/Community plugins/Linter：自动规范笔记（没啥用）.md"
     }
   ],
   "omittedPaths": [],
