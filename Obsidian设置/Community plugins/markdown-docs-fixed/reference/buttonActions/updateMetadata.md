@@ -1,0 +1,117 @@
+---
+title: Update Metadata
+description: Update Metadata button action reference.
+---
+
+The update metadata action allows you to update a specific property specified via a [Bind Target](/obsidian-meta-bind-plugin-docs/guides/bindtargets).
+This property can be any valid [Bind Target](/obsidian-meta-bind-plugin-docs/guides/bindtargets) such as the frontmatter of a file.
+
+```ts
+interface UpdateMetadataButtonAction {
+	type: 'updateMetadata';
+	bindTarget: string; // the bind target of the property to update
+	evaluate: boolean; // whether to treat the value as a JavaScript expression
+	value: string; // the value to set the property to or the JavaScript expression to evaluate
+}
+```
+
+If `evaluate` is set to `true`, the value is treated as a JavaScript expression and evaluated.
+The current value of the property is available in the expression as `x`.
+
+Other properties can be reference using `getMetadata(bindTarget)` where `bindTarget` is a [Bind Target](/obsidian-meta-bind-plugin-docs/guides/bindtargets) string.
+
+:::tip[Prevent YAML and Validation Errors]
+
+Make sure to use quotes around your JavaScript expressions to avoid accidentally creating invalid YAML.
+
+:::
+
+:::note[Requires JavaScript to be Enabled]
+
+When trying to use the `evaluate` option to run JavaScript expressions, make sure you have the following:
+
+1. Enabled **JavaScript** in the Meta Bind settings.
+
+:::
+
+#### Example
+
+This button group allows you to increment, decrement, and reset a counter stored in the frontmatter of the current file.
+
+````custom_markdown {7-10,19-22,31-34} "BUTTON[count-decrement, count-reset, count-increment]"
+```meta-bind-button
+label: "+1"
+hidden: true
+id: "count-increment"
+style: default
+actions:
+  - type: updateMetadata
+    bindTarget: count
+    evaluate: true
+    value: "x + 1"
+```
+
+```meta-bind-button
+label: "-1"
+hidden: true
+id: "count-decrement"
+style: default
+actions:
+  - type: updateMetadata
+    bindTarget: count
+    evaluate: true
+    value: "x - 1"
+```
+
+```meta-bind-button
+label: "Reset"
+hidden: true
+id: "count-reset"
+style: default
+actions:
+  - type: updateMetadata
+    bindTarget: count
+    evaluate: false
+    value: 0
+```
+
+`BUTTON[count-decrement, count-reset, count-increment]` `VIEW[{count}]`
+````
+
+This is a simple health tracker for e.g. a TTRPG.
+
+````custom_markdown
+---
+health: 35
+max_health: 50
+damage: 5
+---
+
+```meta-bind-button
+label: "Deal"
+style: destructive
+hidden: true
+id: "deal-damage"
+actions:
+  - type: updateMetadata
+    bindTarget: health
+    evaluate: true
+    value: "x - getMetadata('damage')"
+```
+
+```meta-bind-button
+label: "Reset"
+style: primary
+hidden: true
+id: "reset-health"
+actions:
+  - type: updateMetadata
+    bindTarget: health
+    evaluate: true
+    value: "getMetadata('max_health')"
+```
+
+Health: `VIEW[{health}][text]` `BUTTON[reset-health]`
+
+Damage: `INPUT[number:damage]` `BUTTON[deal-damage]`
+````

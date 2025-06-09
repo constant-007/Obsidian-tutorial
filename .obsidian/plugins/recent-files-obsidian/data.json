@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "Health Tracker",
+      "path": "示例/Meta Bind演示/Advanced Examples/Health Tracker.md"
+    },
+    {
       "basename": "PF2e DC Calcualtor",
       "path": "示例/Meta Bind演示/Advanced Examples/PF2e DC Calcualtor.md"
     },
@@ -11,10 +15,6 @@
     {
       "basename": "PF2e Travel Calculator",
       "path": "示例/Meta Bind演示/Advanced Examples/PF2e Travel Calculator.md"
-    },
-    {
-      "basename": "Health Tracker",
-      "path": "示例/Meta Bind演示/Advanced Examples/Health Tracker.md"
     },
     {
       "basename": "DnD 5e Travel Calculator",

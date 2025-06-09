@@ -1,0 +1,48 @@
+---
+title: Run JavaScript File
+description: Run JavaScript File button action reference.
+---
+
+The run JavaScript file action runs a JavaScript file.
+
+:::note
+This feature requires the that you have the following:
+
+1. [JS Engine](https://github.com/mProjectsCode/obsidian-js-engine-plugin) installed and enabled.
+2. Enabled **JavaScript** in the Meta Bind settings.
+   :::
+
+```ts
+interface JSButtonAction {
+	type: 'js';
+	file: string; // the path to the JavaScript file to run, relative to the vault root
+	args?: Record<string, unknown>; // optional arguments to pass to the script (available in the script as `context.args`)
+}
+```
+
+The button configuration is available as a **read only** variable in the script as `context.buttonConfig`.
+Additional information about the button is available in the `context.buttonContext` object.
+See [Button Context](/obsidian-meta-bind-plugin-docs/api/interfaces/buttoncontext/) for more information.
+The args is passed to the script as `context.args`.
+
+### Example
+
+````custom_markdown {5-6}
+```meta-bind-button
+style: primary
+label: Run JavaScript File
+action:
+  type: js
+  file: someScript.js
+  args:
+    greeting: "Meta Bind User"
+```
+````
+
+With the following `someScript.js` file in the vault root.
+
+```js title="someScript.js"
+console.log('Hello ${context.args.greeting}!');
+```
+
+You should see the string `Hello Meta Bind User!` printed to the console, when you click the button.

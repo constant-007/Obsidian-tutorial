@@ -1,0 +1,69 @@
+---
+title: Styling and CSS
+description: How to style Meta Bind with CSS.
+---
+
+
+
+
+To style various Meta Bind elements you need to write custom [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS).
+The easiest way to load custom CSS into Obsidian is with a [CSS snippet](https://help.obsidian.md/Extending+Obsidian/CSS+snippets).
+
+### Input Field Styling Example
+
+Let's say we want to color specific progress bars red. For this we can utilize the  argument.
+
+First we create our progress bar with the class argument. In this case we name our special class `red-progress-bar`.
+
+```meta-bind
+INPUT[progressBar(class(red-progress-bar)):someProperty]
+```
+
+Then we create our [CSS snippet](https://help.obsidian.md/Extending+Obsidian/CSS+snippets) with a selector for a progress bar with the class `red-progress-bar`.
+Then we target the progress bar progress element and set the background color to red.
+
+```css title="snippet.css" ".red-progress-bar"
+.mb-input-type-progressBar.red-progress-bar .mb-progress-bar-progress {
+	background: var(--color-red);
+}
+```
+
+In some cases you might need higher [specificity](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity) to override existing styles. In this case you can use the `!important` flag.
+
+```css title="snippet.css" ".red-progress-bar"
+.mb-input-type-progressBar.red-progress-bar .mb-progress-bar-progress {
+	background: var(--color-red) !important;
+}
+```
+
+### Button Styling Example
+
+If you want to change the style of a specific button, you can specify a CSS class for the button and then target it with a CSS snippet.
+
+First we create a button and specify a custom class, in this case `green-button`.
+
+```yaml
+style: primary
+label: Open Meta Bind FAQ
+class: green-button
+action:
+  type: command
+  command: obsidian-meta-bind-plugin:open-faq
+```
+
+Then we create our [CSS snippet](https://help.obsidian.md/Extending+Obsidian/CSS+snippets) with a selector for a Meta Bind button with the class `green-button`.
+Then we target the button element itself and set it's color to green.
+
+```css title="snippet.css" ".green-button"
+.mb-button.green-button > button {
+	color: var(--color-green);
+}
+```
+
+In some cases you might need higher [specificity](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity) to override existing styles. In this case you can use the `!important` flag.
+
+```css title="snippet.css" ".green-button"
+.mb-button.green-button > button {
+	color: var(--color-green) !important;
+}
+```

@@ -1,0 +1,44 @@
+---
+title: Run Inline JavaScript
+description: Inline JS button action reference.
+---
+
+The inline JS action runs the code provided using the JS Engine plugin.
+
+:::note
+This feature requires the that you have the following:
+
+1. [JS Engine](https://github.com/mProjectsCode/obsidian-js-engine-plugin) installed and enabled.
+2. Enabled **JavaScript** in the Meta Bind settings.
+   :::
+
+```ts
+interface InlineJSButtonAction {
+	type: 'inlineJS';
+	code: string; // the code to run
+}
+```
+
+The button configuration is available as a **read only** variable in the script as `context.buttonConfig`.
+Additional information about the button is available in the `context.buttonContext` object.
+See [Button Context](/obsidian-meta-bind-plugin-docs/api/interfaces/buttoncontext/) for more information.
+
+:::tip[Multiline Strings]
+
+Using [YAML multiline strings](https://yaml-multiline.info/), you can write multiline JavaScript code.
+
+:::
+
+### Example
+
+This button will log `Hello World!` to the console.
+
+````custom_markdown {5-6}
+```meta-bind-button
+style: primary
+label: Greet the World
+action:
+  type: inlineJS
+  code: "console.log('Hello World!');"
+```
+````

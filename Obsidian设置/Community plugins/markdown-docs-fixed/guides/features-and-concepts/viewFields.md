@@ -1,0 +1,203 @@
+---
+title: View Fields
+description: A tutorial for Meta Bind View Fields.
+---
+
+
+
+
+
+View Fields are a powerful way to reactively display your metadata in your notes.
+They can bind to multiple frontmatter fields and the view field update as soon as the value of the frontmatter fields change, much like dataview inline queries, but with instant updates.
+View fields can even do computations and save their computed value back to the frontmatter.
+
+## Creating View Fields
+
+Imagine we have a note which we use to plan an upcoming hiking trip.
+In the frontmatter we already created a field that tracks the distance in kilometers of the trip.
+And we created an input field to change the distance from within our note.
+It looks something like this.
+
+```custom_markdown
+Distance: `INPUT[number:distance]` km
+```
+
+But now we want to, for our american friends, know how long that is in freedom units.
+This is where view fields come in.
+
+```custom_markdown "VIEW[{distance}]"
+Distance: `INPUT[number:distance]` km
+Distance in freedom units: `VIEW[{distance}]` miles
+```
+
+This will display the distance and change when we change the value using the input field above, but we are still missing the conversion.
+At this point mathjs becomes useful. With it, we can simply convert the km into miles.
+
+```custom_markdown "VIEW[number({distance} km, miles)]"
+Distance: `INPUT[number:distance]` km
+Distance in freedom units: `VIEW[number({distance} km, miles)]` miles
+```
+
+To make it a bit nicer to view, we can also round the number to two decimal places. And the displayed value still changes instantly when we change the distance using the input field.
+
+```custom_markdown "VIEW[round(number({distance} km, miles), 2)]"
+Distance: `INPUT[number:distance]` km
+Distance in freedom units: `VIEW[round(number({distance} km, miles), 2)]` miles
+```
+
+The references to the frontmatter in the curly brackets follow the same [Bind Target](/obsidian-meta-bind-plugin-docs/guides/bindtargets) rules as the bind target for input fields.
+So if for some reason you don't want to persist the value to the frontmatter, you can use the `memory` storage type.
+
+```custom_markdown "memory^distance"
+Distance: `INPUT[number:memory^distance]` km
+Distance in freedom units: `VIEW[round(number({memory^distance} km, miles), 2)]` miles
+```
+
+## View Field Types
+
+You can also specify a view field type. The default (if you don't specify any) is .
+
+Specifying a view field type is done like so.
+
+```meta-bind
+VIEW[content][viewFieldType]
+```
+
+This means the following two examples are equivalent. Both calculate `a` times `b`.
+
+```meta-bind
+VIEW[{a} * {b}]
+VIEW[{a} * {b}][math]
+```
+
+## Arguments
+
+View fields, like input fields, support arguments to further customize them.
+The syntax for them is also the same, meaning they are specified in parentheses behind the view field type.
+
+If for example you want your  view field to render markdown instead of plain text,
+you can add the  argument like this.
+
+```meta-bind
+VIEW[**{someText}**][text(renderMarkdown)]
+```
+
+This will render the text stored in the `someText` frontmatter property as markdown.
+
+## Saving the Value
+
+You can save the value computed by a view field back to a frontmatter property by specifying a "write-to" bind target. See [Bind Targets](/obsidian-meta-bind-plugin-docs/guides/bindtargets).
+
+Let's say you want to compute a value `c` that has the value of `a * b`, in other words you want to compute `a * b` and save the result to `c`. This can be done by specifying `c` as the "write-to" bind target of the view field like so.
+
+```meta-bind ":c"
+VIEW[{a} * {b}][math:c]
+```
+
+### Circular Dependencies
+
+Of course you can abuse this and create circular dependencies that cause Obsidian to crash by doing something like the following example.
+
+```meta-bind
+VIEW[{a}][math:b]
+VIEW[{b} + 1][math:a]
+```
+
+Or like this.
+
+```meta-bind
+VIEW[{a} + 1][math:a]
+```
+
+Meta Bind **will detect** these dependency loops and **will prevent** you accidentally locking yourself out of Obsidian and your notes.
+
+### Limitations
+
+View fields will only work if you have the note, in which they are located, open.
+
+Let's say you have two notes, `NoteA` and `NoteB`.
+
+`NoteA` looks like this.
+
+```custom_markdown title="NoteA.md"
+---
+someInputValue: 1
+someComputedValue: 2
+---
+
+Input: `INPUT[number:someComputedValue]`
+Computed Value: `VIEW[{someInputValue} * 2][math:someComputedValue]`
+```
+
+And let's say you want to also change and read the values of `NoteA` in `NoteB`.
+
+So `NoteB` looks like this.
+
+```custom_markdown title="NoteB.md"
+Input: `INPUT[number:NoteA#someComputedValue]`
+Computed Value: `VIEW[{NoteA#someComputedValue}]`
+```
+
+If you have both notes open the view field in `NoteB` will update as expected, when you change the input value using the input field.
+But if you close `NoteA` (so that only `NoteB` is open), then the view field will no longer update, since the view field that does the computation is in `NoteA` and that note is no longer loaded.
+
+## JS View Fields
+
+You can create View Fields powered by JavaScript as well.
+Those can only be created as code blocks and **not inline**.
+By default, JS View Fields are disabled, as they can pose a security risk.
+
+:::note
+This feature requires the that you have the following:
+
+1. [JS Engine](https://github.com/mProjectsCode/obsidian-js-engine-plugin) installed and enabled.
+2. Enabled **JavaScript** in the Meta Bind settings.
+   :::
+
+JS View Fields consist of two sections, separated by `---`.
+The first section contains [Bind Targets](/obsidian-meta-bind-plugin-docs/guides/bindtargets) and other configuration.
+The second section contains the JavaScript code.
+
+When rendered, the JS view field displays the value returned in the JavaScript section just as [JS Engine](https://github.com/mProjectsCode/obsidian-js-engine-plugin) would.
+This means you can do things like rendering markdown.
+
+The same variables and APIs that are [available in JS Engine](https://github.com/mProjectsCode/obsidian-js-engine-plugin#api-docs) code blocks are also available in JS view fields.
+The bound variables are available in the `context.bound` object.
+
+The JS View Field will automatically update when one of the bound variables of the bind target sections changes.
+
+### Examples
+
+````custom_markdown
+```meta-bind-js-view
+{bind_target} as var1
+{other_note#bind_target} as var2
+---
+return `${context.bound.var1 * context.bound.var2} km`;
+```
+````
+
+The following example will save it's value to another [Bind Targets](/obsidian-meta-bind-plugin-docs/guides/bindtargets).
+
+````custom_markdown {4}
+```meta-bind-js-view
+{bind_target} as var1
+{other_note#bind_target} as var2
+save to {other_bind_target}
+---
+return `${context.bound.var1 * context.bound.var2} km`;
+```
+````
+
+The following JS View Field will additionally be hidden.
+
+````custom_markdown {5}
+```meta-bind-js-view
+{bind_target} as var1
+{other_note#bind_target} as var2
+save to {other_bind_target}
+hidden
+---
+return `${context.bound.var1 * context.bound.var2} km`;
+```
+````
