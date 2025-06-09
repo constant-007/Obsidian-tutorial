@@ -1,6 +1,38 @@
 {
   "recentFiles": [
     {
+      "basename": "建议器",
+      "path": "示例/Meta Bind演示/输入字段/建议器.md"
+    },
+    {
+      "basename": "开关",
+      "path": "示例/Meta Bind演示/输入字段/开关.md"
+    },
+    {
+      "basename": "数字",
+      "path": "示例/Meta Bind演示/输入字段/数字.md"
+    },
+    {
+      "basename": "文本",
+      "path": "示例/Meta Bind演示/输入字段/文本.md"
+    },
+    {
+      "basename": "滑块",
+      "path": "示例/Meta Bind演示/输入字段/滑块.md"
+    },
+    {
+      "basename": "编辑器",
+      "path": "示例/Meta Bind演示/输入字段/编辑器.md"
+    },
+    {
+      "basename": "选择和多选",
+      "path": "示例/Meta Bind演示/输入字段/选择和多选.md"
+    },
+    {
+      "basename": "进度条",
+      "path": "示例/Meta Bind演示/输入字段/进度条.md"
+    },
+    {
       "basename": "列表",
       "path": "示例/Meta Bind演示/输入字段/列表.md"
     },
@@ -9,24 +41,108 @@
       "path": "示例/Meta Bind演示/输入字段/内联选择.md"
     },
     {
-      "basename": "数字",
-      "path": "示例/Meta Bind演示/输入字段/数字.md"
+      "basename": "视图字段",
+      "path": "示例/Meta Bind演示/视图字段/视图字段.md"
     },
     {
-      "basename": "开关",
-      "path": "示例/Meta Bind演示/输入字段/开关.md"
+      "basename": "其他笔记",
+      "path": "示例/Meta Bind演示/视图字段/其他笔记.md"
     },
     {
-      "basename": "建议器",
-      "path": "示例/Meta Bind演示/输入字段/建议器.md"
+      "basename": "JS视图字段",
+      "path": "示例/Meta Bind演示/视图字段/JS视图字段.md"
     },
     {
-      "basename": "图片建议器",
-      "path": "示例/Meta Bind演示/输入字段/图片建议器.md"
+      "basename": "打招呼命令",
+      "path": "示例/Meta Bind演示/模板/templater/打招呼命令.md"
+    },
+    {
+      "basename": "Templater模板",
+      "path": "示例/Meta Bind演示/模板/templater/Templater模板.md"
+    },
+    {
+      "basename": "测试模板",
+      "path": "示例/Meta Bind演示/模板/测试模板.md"
+    },
+    {
+      "basename": "其他模板",
+      "path": "示例/Meta Bind演示/模板/其他模板.md"
+    },
+    {
+      "basename": "替代元数据存储",
+      "path": "示例/Meta Bind演示/替代元数据存储/替代元数据存储.md"
+    },
+    {
+      "basename": "其他笔记",
+      "path": "示例/Meta Bind演示/替代元数据存储/其他笔记.md"
     },
     {
       "basename": "笔记内导航",
       "path": "示例/Meta Bind演示/按钮/笔记内导航.md"
+    },
+    {
+      "basename": "替换按钮",
+      "path": "示例/Meta Bind演示/按钮/替换按钮.md"
+    },
+    {
+      "basename": "按钮示例",
+      "path": "示例/Meta Bind演示/按钮/按钮示例.md"
+    },
+    {
+      "basename": "Templater按钮",
+      "path": "示例/Meta Bind演示/按钮/Templater按钮.md"
+    },
+    {
+      "basename": "带标注的示例笔记",
+      "path": "示例/Meta Bind演示/Other/示例笔记/带标注的示例笔记.md"
+    },
+    {
+      "basename": "带嵌入的示例笔记",
+      "path": "示例/Meta Bind演示/Other/示例笔记/带嵌入的示例笔记.md"
+    },
+    {
+      "basename": "带图片的示例笔记",
+      "path": "示例/Meta Bind演示/Other/示例笔记/带图片的示例笔记.md"
+    },
+    {
+      "basename": "PF2e旅行计算器",
+      "path": "示例/Meta Bind演示/高级示例/PF2e旅行计算器.md"
+    },
+    {
+      "basename": "PF2e DC计算器",
+      "path": "示例/Meta Bind演示/高级示例/PF2e DC计算器.md"
+    },
+    {
+      "basename": "活动追踪器",
+      "path": "示例/Meta Bind演示/高级示例/活动追踪器.md"
+    },
+    {
+      "basename": "健康追踪器",
+      "path": "示例/Meta Bind演示/高级示例/健康追踪器.md"
+    },
+    {
+      "basename": "使用JS引擎处理复杂功能",
+      "path": "示例/Meta Bind演示/高级示例/使用JS引擎处理复杂功能.md"
+    },
+    {
+      "basename": "其他笔记",
+      "path": "示例/Meta Bind演示/其他笔记.md"
+    },
+    {
+      "basename": "示例",
+      "path": "示例/Meta Bind演示/示例.md"
+    },
+    {
+      "basename": "README",
+      "path": "示例/Meta Bind演示/README.md"
+    },
+    {
+      "basename": "Meta Bind API 接口",
+      "path": "示例/Meta Bind演示/Meta Bind API 接口.md"
+    },
+    {
+      "basename": "图片建议器",
+      "path": "示例/Meta Bind演示/输入字段/图片建议器.md"
     },
     {
       "basename": "img_flower",
@@ -45,18 +161,6 @@
       "path": "Attachment/Pasted image 20250505205321.png"
     },
     {
-      "basename": "进度条",
-      "path": "示例/Meta Bind演示/输入字段/进度条.md"
-    },
-    {
-      "basename": "选择和多选",
-      "path": "示例/Meta Bind演示/输入字段/选择和多选.md"
-    },
-    {
-      "basename": "PF2e DC计算器",
-      "path": "示例/Meta Bind演示/高级示例/PF2e DC计算器.md"
-    },
-    {
       "basename": "DnD 5e旅行计算器",
       "path": "示例/Meta Bind演示/高级示例/DnD 5e旅行计算器.md"
     },
@@ -69,60 +173,8 @@
       "path": "示例/Meta Bind演示/高级用例.md"
     },
     {
-      "basename": "示例",
-      "path": "示例/Meta Bind演示/示例.md"
-    },
-    {
       "basename": "嵌入示例",
       "path": "示例/Meta Bind演示/嵌入示例.md"
-    },
-    {
-      "basename": "其他笔记",
-      "path": "示例/Meta Bind演示/其他笔记.md"
-    },
-    {
-      "basename": "Meta Bind API 接口",
-      "path": "示例/Meta Bind演示/Meta Bind API 接口.md"
-    },
-    {
-      "basename": "O_O 2024 Checklist",
-      "path": "示例/Meta Bind演示/O_O 2024 Checklist.md"
-    },
-    {
-      "basename": "README",
-      "path": "示例/Meta Bind演示/README.md"
-    },
-    {
-      "basename": "编辑器",
-      "path": "示例/Meta Bind演示/输入字段/编辑器.md"
-    },
-    {
-      "basename": "文本",
-      "path": "示例/Meta Bind演示/输入字段/文本.md"
-    },
-    {
-      "basename": "JS视图字段",
-      "path": "示例/Meta Bind演示/视图字段/JS视图字段.md"
-    },
-    {
-      "basename": "其他笔记",
-      "path": "示例/Meta Bind演示/视图字段/其他笔记.md"
-    },
-    {
-      "basename": "替代元数据存储",
-      "path": "示例/Meta Bind演示/替代元数据存储/替代元数据存储.md"
-    },
-    {
-      "basename": "其他笔记",
-      "path": "示例/Meta Bind演示/替代元数据存储/其他笔记.md"
-    },
-    {
-      "basename": "按钮示例",
-      "path": "示例/Meta Bind演示/按钮/按钮示例.md"
-    },
-    {
-      "basename": "Templater按钮",
-      "path": "示例/Meta Bind演示/按钮/Templater按钮.md"
     },
     {
       "basename": "Pandoc：导出工具",
@@ -147,46 +199,6 @@
     {
       "basename": "README",
       "path": "示例/DataView演示/README.md"
-    },
-    {
-      "basename": "DB Folder",
-      "path": "Obsidian设置/Community plugins/DB Folder.md"
-    },
-    {
-      "basename": "Meta Bind",
-      "path": "Obsidian设置/Community plugins/Meta Bind.md"
-    },
-    {
-      "basename": "团队协作看板",
-      "path": "示例/Kanban演示/团队协作看板.md"
-    },
-    {
-      "basename": "项目管理看板示例",
-      "path": "示例/Kanban演示/项目管理看板示例.md"
-    },
-    {
-      "basename": "学习计划看板",
-      "path": "示例/Kanban演示/学习计划看板.md"
-    },
-    {
-      "basename": "README",
-      "path": "示例/Kanban演示/README.md"
-    },
-    {
-      "basename": "Kanban插件功能说明",
-      "path": "示例/Kanban演示/Kanban插件功能说明.md"
-    },
-    {
-      "basename": "生活事务管理",
-      "path": "示例/Kanban演示/生活事务管理.md"
-    },
-    {
-      "basename": "Pasted image 20250607110354",
-      "path": "Attachment/Pasted image 20250607110354.png"
-    },
-    {
-      "basename": "Reminder：闹钟提醒",
-      "path": "Obsidian设置/Community plugins/Reminder：闹钟提醒.md"
     }
   ],
   "omittedPaths": [],
