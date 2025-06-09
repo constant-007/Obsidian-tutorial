@@ -1,10 +1,12 @@
-This input is bound to a global in memory cache.
+### 其他笔记 - 替代存储演示
+
+这个输入字段绑定到全局内存缓存。
 
 `INPUT[text:globalMemory^test]`
 
 `VIEW[{globalMemory^test} 123][text:globalMemory^test123]`
 
-This input is bound to a per file in memory cache.
+这个输入字段绑定到单文件内存缓存。
 
 `INPUT[text:memory^test]`
 

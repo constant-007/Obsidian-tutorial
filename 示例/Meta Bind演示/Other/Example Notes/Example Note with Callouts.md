@@ -2,10 +2,12 @@
 tags: example-note
 ---
 
-This is an example note with callouts.
+# 带标注的示例笔记
+
+这是一个带标注的示例笔记。
 
 >[!INFO]
->This is an info.
+>这是一个信息标注。
 
 >[!Danger]
->This is danerous.
+>这是危险提示。

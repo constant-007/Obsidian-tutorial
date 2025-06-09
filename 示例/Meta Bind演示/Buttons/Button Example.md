@@ -210,7 +210,7 @@ actions:
 ```
 
 ```meta-bind-button
-label: Inline Js
+label: 内联 JS
 icon: "file-code"
 hidden: false
 class: ""
@@ -224,7 +224,7 @@ actions:
 ```
 
 
-### Modifying Front-matter
+### 修改前置元数据
 
 ```meta-bind-button
 label: "+1"
@@ -253,7 +253,7 @@ actions:
 ```
 
 ```meta-bind-button
-label: "Reset"
+label: "重置"
 hidden: true
 id: "count-reset"
 style: default
@@ -265,10 +265,10 @@ actions:
 
 ```
 
-Count: `BUTTON[count-decrement, count-reset, count-increment]` `VIEW[{count}]`
+计数: `BUTTON[count-decrement, count-reset, count-increment]` `VIEW[{count}]`
 
 ```meta-bind-button
-label: "Add count to count2"
+label: "将计数添加到计数2"
 hidden: false
 style: default
 actions:
@@ -279,10 +279,10 @@ actions:
 
 ```
 
-Count2: `VIEW[{count2}]`
+计数2: `VIEW[{count2}]`
 
 ```meta-bind-button
-label: Add Current Time to List
+label: 添加当前时间到列表
 hidden: false
 class: ""
 tooltip: ""
@@ -296,11 +296,11 @@ actions:
 
 ```
 
-## Button Templates
+## 按钮模板
 
 `BUTTON[test-id]`
 
-## Invalid Buttons
+## 无效按钮
 
 ```meta-bind-button
 label: Test

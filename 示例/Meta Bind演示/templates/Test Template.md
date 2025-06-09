@@ -2,11 +2,13 @@
 foo: barssadad
 ---
 
-This comes from [[Test Template]].
+### 测试模板
 
-Completed: `INPUT[toggle:completed]`
+这来自 [[Test Template]]。
 
-[[Test Template]] embeds [[Other Template]].
+完成状态: `INPUT[toggle:completed]`
+
+[[Test Template]] 嵌入了 [[Other Template]]。
 
 ```meta-bind-embed
 [[Other Template]]

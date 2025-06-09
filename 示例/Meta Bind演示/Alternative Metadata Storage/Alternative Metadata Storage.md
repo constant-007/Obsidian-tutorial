@@ -1,5 +1,6 @@
+### 替代元数据存储
 
-These two inputs are bound to a global in memory cache.
+这两个输入字段绑定到全局内存缓存。
 
 `INPUT[text:globalMemory^test]`
 
@@ -7,7 +8,7 @@ These two inputs are bound to a global in memory cache.
 
 `VIEW[{globalMemory^test123}456][text]`
 
-These two inputs are bound to a per file in memory cache.
+这两个输入字段绑定到单文件内存缓存。
 
 `INPUT[text:memory^test]`
 

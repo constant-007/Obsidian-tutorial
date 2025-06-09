@@ -12,12 +12,13 @@ proficiency:
   deception: 0.5
 ---
 
-This example calculates a DnD character's ability modifiers from the ability scores and displays it all in a list.
+### D&D 5e 属性分数和调整值计算器
 
-The modifiers are stored in `memory` and not in the frontmatter. This reduces clutter but requires some hidden fields that calculate the values while the fields in the list just format the value to always contain a `+/-` sign.
+这个示例从属性分数计算 D&D 角色的属性调整值，并在列表中显示所有内容。
 
+调整值存储在 `memory` 中而不是前置元数据中。这减少了混乱，但需要一些隐藏字段来计算值，而列表中的字段只是格式化值以始终包含 `+/-` 符号。
 
-## Character ability scores
+## 角色属性分数
 
 ```meta-bind
 VIEW[ floor(({STR} - 10) / 2) ][math(hidden):memory^STR_mod]
@@ -45,14 +46,14 @@ VIEW[ floor(({CHR} - 10) / 2) ][math(hidden):memory^CHR_mod]
 - WIS: `VIEW[**{WIS}**][text(renderMarkdown)]` (`VIEW[ concat(isPositive({memory^WIS_mod}) ? '+' : '', string({memory^WIS_mod})) ][math]`)
 - CHR: `VIEW[**{CHR}**][text(renderMarkdown)]` (`VIEW[ concat(isPositive({memory^CHR_mod}) ? '+' : '', string({memory^CHR_mod})) ][math]`)
 
-## Skill modifiers
+## 技能调整值
 
-If we want to calculate the skill modifiers for a character, while also taking into account it's proficiency, we can leverage the `inlineSelect` Input to map the proficiency types to numerical values while still having a nice, editable interface.
-We can additionally style the input depending on the currently selected value, to get helpful visual indicators.
+如果我们想要计算角色的技能调整值，同时考虑到它的 proficiency，我们可以利用 `inlineSelect` 输入将 proficiency 类型映射到数值，同时仍然拥有一个良好的、可编辑的界面。
+我们还可以根据当前选择的值为输入设置样式，以获得有用的视觉指示器。
 
-#### Here you can see an example of how it could work
+#### 这里你可以看到它如何工作的示例
 
-First we need to set the proficiency modifier: `INPUT[number:PROF_mod]`
+首先我们需要设置 proficiency modifier: `INPUT[number:PROF_mod]`
 
 `INPUT[inlineSelect(option(0,not proficienct), option(0.5,half proficienct), option(1,proficient), option(2,experties), defaultValue(0), class(dnd5e-skill-prof)):proficiency.acrobatics]` Acrobatics (DEX) `VIEW[floor({proficiency.acrobatics}*{PROF_mod})+{memory^DEX_mod}]`
 `INPUT[inlineSelect(option(0,not proficienct), option(0.5,half proficienct), option(1,proficient), option(2,experties), defaultValue(0), class(dnd5e-skill-prof)):proficiency.arcana]` Arcana (INT) `VIEW[floor({proficiency.arcana}*{PROF_mod})+{memory^INT_mod}]`

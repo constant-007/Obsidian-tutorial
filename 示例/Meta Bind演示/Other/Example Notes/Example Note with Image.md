@@ -2,6 +2,8 @@
 tags: example-note
 ---
 
-This is an example note with an image.
+# 带图片的示例笔记
+
+这是一个带图片的示例笔记。
 
 ![[img_flower.webp]]

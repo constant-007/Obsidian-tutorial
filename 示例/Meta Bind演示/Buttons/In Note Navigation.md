@@ -1,11 +1,11 @@
-## 这是顶部的标题
+## This is a Heading at the Top
 
 ```meta-bind-button
 label: 滚动到中间
 style: default
 actions:
   - type: open
-    link: "[[#这是中间的标题]]"
+    link: "[[#This is a Heading in the Middle]]"
     newTab: false
 
 ```
@@ -15,7 +15,7 @@ label: 滚动到底部
 style: default
 actions:
   - type: open
-    link: "[[#这是底部的标题]]"
+    link: "[[#This is a Heading at the Bottom]]"
     newTab: false
 
 ```
@@ -42,7 +42,7 @@ actions:
 
 文本
 
-## 这是中间的标题
+## This is a Heading in the Middle
 
 一些
 
@@ -68,7 +68,7 @@ actions:
 
 文本
 
-## 这是底部的标题
+## This is a Heading at the Bottom
 
 
 某个部分

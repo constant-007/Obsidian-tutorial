@@ -1,16 +1,36 @@
 {
   "recentFiles": [
     {
+      "basename": "In Note Navigation",
+      "path": "示例/Meta Bind演示/Buttons/In Note Navigation.md"
+    },
+    {
       "basename": "Button Example",
       "path": "示例/Meta Bind演示/Buttons/Button Example.md"
     },
     {
-      "basename": "Using JS Engine for Complex things",
-      "path": "示例/Meta Bind演示/Advanced Examples/Using JS Engine for Complex things.md"
+      "basename": "Templater Buttons",
+      "path": "示例/Meta Bind演示/Buttons/Templater Buttons.md"
+    },
+    {
+      "basename": "Replace Buttons",
+      "path": "示例/Meta Bind演示/Buttons/Replace Buttons.md"
+    },
+    {
+      "basename": "Other Note",
+      "path": "示例/Meta Bind演示/Alternative Metadata Storage/Other Note.md"
+    },
+    {
+      "basename": "Alternative Metadata Storage",
+      "path": "示例/Meta Bind演示/Alternative Metadata Storage/Alternative Metadata Storage.md"
     },
     {
       "basename": "PF2e Travel Calculator",
       "path": "示例/Meta Bind演示/Advanced Examples/PF2e Travel Calculator.md"
+    },
+    {
+      "basename": "PF2e DC Calcualtor",
+      "path": "示例/Meta Bind演示/Advanced Examples/PF2e DC Calcualtor.md"
     },
     {
       "basename": "DnD 5e Travel Calculator",
@@ -21,8 +41,12 @@
       "path": "示例/Meta Bind演示/Advanced Examples/Activity Tracker.md"
     },
     {
-      "basename": "PF2e DC Calcualtor",
-      "path": "示例/Meta Bind演示/Advanced Examples/PF2e DC Calcualtor.md"
+      "basename": "DnD 5e Ability Scores and Modifiers",
+      "path": "示例/Meta Bind演示/Advanced Examples/DnD 5e Ability Scores and Modifiers.md"
+    },
+    {
+      "basename": "Using JS Engine for Complex things",
+      "path": "示例/Meta Bind演示/Advanced Examples/Using JS Engine for Complex things.md"
     },
     {
       "basename": "Health Tracker",
@@ -31,10 +55,6 @@
     {
       "basename": "PF2e Encounter Calculator",
       "path": "示例/Meta Bind演示/Advanced Examples/PF2e Encounter Calculator.md"
-    },
-    {
-      "basename": "DnD 5e Ability Scores and Modifiers",
-      "path": "示例/Meta Bind演示/Advanced Examples/DnD 5e Ability Scores and Modifiers.md"
     },
     {
       "basename": "Remember cursor position：一定要装！",
@@ -63,14 +83,6 @@
     {
       "basename": "Date and Time",
       "path": "示例/Meta Bind演示/Input Fields/Date and Time.md"
-    },
-    {
-      "basename": "Other Note",
-      "path": "示例/Meta Bind演示/Alternative Metadata Storage/Other Note.md"
-    },
-    {
-      "basename": "Alternative Metadata Storage",
-      "path": "示例/Meta Bind演示/Alternative Metadata Storage/Alternative Metadata Storage.md"
     },
     {
       "basename": "Files and links",

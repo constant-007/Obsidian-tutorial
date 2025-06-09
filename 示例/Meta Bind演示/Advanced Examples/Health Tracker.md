@@ -4,8 +4,10 @@ max_health: 50
 damage: 5
 ---
 
+### 健康追踪器
+
 ```meta-bind-button
-label: "Deal"
+label: "造成伤害"
 style: destructive
 hidden: true
 id: "deal-damage"
@@ -17,7 +19,7 @@ actions:
 ```
 
 ```meta-bind-button
-label: "Reset"
+label: "重置"
 style: primary
 hidden: true
 id: "reset-health"
@@ -28,6 +30,6 @@ actions:
     value: getMetadata('max_health')
 ```
 
-Health: `VIEW[{health}][text]` `BUTTON[reset-health]`
+生命值: `VIEW[{health}][text]` `BUTTON[reset-health]`
 
-Damage: `INPUT[number:damage]` `BUTTON[deal-damage]`
+伤害: `INPUT[number:damage]` `BUTTON[deal-damage]`

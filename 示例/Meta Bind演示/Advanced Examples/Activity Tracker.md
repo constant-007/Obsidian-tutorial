@@ -10,17 +10,19 @@ activities:
     status: +
 ---
 
+### 活动追踪器
+
 ```js-engine
 const mb = engine.getPlugin('obsidian-meta-bind-plugin').api;
 
 const tableOptions = {
 	bindTarget: mb.createBindTarget('frontmatter', context.file.path, ['activities']),
-	tableHead: ['From', 'To', 'Activity', 'Status'],
+	tableHead: ['开始时间', '结束时间', '活动', '状态'],
 	columns: [
 		'INPUT[time:scope^from]',
 		'INPUT[time:scope^to]',
 		'INPUT[inlineSelect(option(youtube), option(sudying), option(linch)):scope^activity]',
-		'INPUT[inlineSelect(option(-, unproductive), option(0, normal), option(+, productive)):scope^status]',
+		'INPUT[inlineSelect(option(-, 无意义), option(0, 正常), option(+, 有意义)):scope^status]',
 	],
 };
 
