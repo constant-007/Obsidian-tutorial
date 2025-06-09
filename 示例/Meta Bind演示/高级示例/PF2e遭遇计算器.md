@@ -42,7 +42,7 @@ const tableOptions = {
 	columns: [
 		'INPUT[text:scope^name]',
 		'INPUT[number(class(meta-bind-small-width)):scope^level]',
-		'INPUT[inlineSelect(option(-1, weak), option(0, normal), option(1, elite)):scope^variant]',
+		'INPUT[inlineSelect(option(-1, 弱小), option(0, 普通), option(1, 精英)):scope^variant]',
 		'INPUT[number(class(meta-bind-small-width)):scope^count]',
 	],
 };
