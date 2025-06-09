@@ -1,6 +1,50 @@
 {
   "recentFiles": [
     {
+      "basename": "笔记内导航",
+      "path": "示例/Meta Bind演示/按钮/笔记内导航.md"
+    },
+    {
+      "basename": "高级用例",
+      "path": "示例/Meta Bind演示/高级用例.md"
+    },
+    {
+      "basename": "示例",
+      "path": "示例/Meta Bind演示/示例.md"
+    },
+    {
+      "basename": "嵌入示例",
+      "path": "示例/Meta Bind演示/嵌入示例.md"
+    },
+    {
+      "basename": "其他笔记",
+      "path": "示例/Meta Bind演示/其他笔记.md"
+    },
+    {
+      "basename": "Meta Bind API 接口",
+      "path": "示例/Meta Bind演示/Meta Bind API 接口.md"
+    },
+    {
+      "basename": "O_O 2024 Checklist",
+      "path": "示例/Meta Bind演示/O_O 2024 Checklist.md"
+    },
+    {
+      "basename": "README",
+      "path": "示例/Meta Bind演示/README.md"
+    },
+    {
+      "basename": "建议器",
+      "path": "示例/Meta Bind演示/输入字段/建议器.md"
+    },
+    {
+      "basename": "数字",
+      "path": "示例/Meta Bind演示/输入字段/数字.md"
+    },
+    {
+      "basename": "进度条",
+      "path": "示例/Meta Bind演示/输入字段/进度条.md"
+    },
+    {
       "basename": "选择和多选",
       "path": "示例/Meta Bind演示/输入字段/选择和多选.md"
     },
@@ -33,10 +77,6 @@
       "path": "示例/Meta Bind演示/替代元数据存储/其他笔记.md"
     },
     {
-      "basename": "笔记内导航",
-      "path": "示例/Meta Bind演示/按钮/笔记内导航.md"
-    },
-    {
       "basename": "按钮示例",
       "path": "示例/Meta Bind演示/按钮/按钮示例.md"
     },
@@ -55,10 +95,6 @@
     {
       "basename": "图片建议器",
       "path": "示例/Meta Bind演示/输入字段/图片建议器.md"
-    },
-    {
-      "basename": "建议器",
-      "path": "示例/Meta Bind演示/输入字段/建议器.md"
     },
     {
       "basename": "Pandoc：导出工具",
@@ -163,22 +199,6 @@
     {
       "basename": "Linter：自动规范笔记（没啥用）",
       "path": "Obsidian设置/Community plugins/Linter：自动规范笔记（没啥用）.md"
-    },
-    {
-      "basename": "Templater：模板+自动化",
-      "path": "Obsidian设置/Community plugins/Templater：模板+自动化.md"
-    },
-    {
-      "basename": "Advanced Table：高级表格",
-      "path": "Obsidian设置/Community plugins/Advanced Table：高级表格.md"
-    },
-    {
-      "basename": "Buttons：自动化工具之一",
-      "path": "Obsidian设置/Community plugins/Buttons：自动化工具之一.md"
-    },
-    {
-      "basename": "Calendar：日历视图",
-      "path": "Obsidian设置/Community plugins/Calendar：日历视图.md"
     }
   ],
   "omittedPaths": [],
