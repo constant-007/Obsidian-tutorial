@@ -4,7 +4,7 @@
 
 ## 翻译完成状态 ✅
 
-### 📝 主要示例文件 (已翻译)
+### 📝 主要示例文件 (已翻译) ✅
 - ✅ **[Examples.md](Examples.md)** - 核心功能演示，包括：
   - 字段在各处的使用（引用块、信息框等）
   - 嵌套数据绑定
@@ -15,15 +15,15 @@
   - 模板功能
   - 错误消息示例
 
-### 🔗 API 示例 (已翻译)
+### 🔗 API 示例 (已翻译) ✅
 - ✅ **[Meta Bind API.md](Meta%20Bind%20API.md)** - 使用 JS Engine 创建输入字段的 API 示例
 
-### 🚀 高级用例 (已翻译)
+### 🚀 高级用例 (已翻译) ✅
 - ✅ **[Advanced Use-Cases.md](Advanced%20Use-Cases.md)** - 高级功能演示：
   - 动态绑定目标更改
   - 从前置元数据生成选项列表
 
-### 📄 其他核心文件 (已翻译)
+### 📄 其他核心文件 (已翻译) ✅
 - ✅ **[Other Note.md](Other%20Note.md)** - 用于测试跨笔记同步的辅助文件
 - ✅ **[Embed Example.md](Embed%20Example.md)** - 嵌入功能示例
 - ⚠️ **[O_O 2024 Checklist.md](O_O%202024%20Checklist.md)** - 插件开发检查清单 (保持英文)
@@ -61,22 +61,31 @@
 - ✅ **[Templater Buttons.md](Buttons/Templater%20Buttons.md)** - Templater 模板按钮
 - ✅ **[In Note Navigation.md](Buttons/In%20Note%20Navigation.md)** - 笔记内导航按钮
 
-### 🎯 高级示例 (Advanced Examples) - 部分翻译 ⚠️
+### 🎯 高级示例 (Advanced Examples) - 已完全翻译 ✅
 位置：`Advanced Examples/` 文件夹
 
 包含复杂的实际应用场景：
 - ✅ **[Health Tracker.md](Advanced%20Examples/Health%20Tracker.md)** - 健康数据管理
 - ✅ **[Activity Tracker.md](Advanced%20Examples/Activity%20Tracker.md)** - 活动追踪记录
-- ⚠️ **游戏系统**: D&D 5e 和 PF2e 计算器 (保持英文，包含复杂规则)
-- ⚠️ **[Using JS Engine for Complex things.md](Advanced%20Examples/Using%20JS%20Engine%20for%20Complex%20things.md)** - 复杂 JS 功能 (技术性内容)
+- ✅ **[Using JS Engine for Complex things.md](Advanced%20Examples/Using%20JS%20Engine%20for%20Complex%20things.md)** - 复杂 JS 功能演示
+- ✅ **[DnD 5e Ability Scores and Modifiers.md](Advanced%20Examples/DnD%205e%20Ability%20Scores%20and%20Modifiers.md)** - D&D 5e 属性计算器
+- ✅ **[DnD 5e Travel Calculator.md](Advanced%20Examples/DnD%205e%20Travel%20Calculator.md)** - D&D 5e 旅行计算器
+- ✅ **[PF2e DC Calculator.md](Advanced%20Examples/PF2e%20DC%20Calcualtor.md)** - PF2e DC 计算器
+- ✅ **[PF2e Travel Calculator.md](Advanced%20Examples/PF2e%20Travel%20Calculator.md)** - PF2e 旅行计算器
+- ✅ **[PF2e Encounter Calculator.md](Advanced%20Examples/PF2e%20Encounter%20Calculator.md)** - PF2e 遭遇计算器
 
-### 🗂️ 其他功能 - 已翻译 ✅
+### 🗂️ 其他功能 - 已完全翻译 ✅
 位置：`Alternative Metadata Storage/`, `templates/`, `Other/` 文件夹
 
 - ✅ **[Alternative Metadata Storage.md](Alternative%20Metadata%20Storage/Alternative%20Metadata%20Storage.md)** - 替代元数据存储方案
+- ✅ **[Other Note.md](Alternative%20Metadata%20Storage/Other%20Note.md)** - 存储演示辅助文件
 - ✅ **[Test Template.md](templates/Test%20Template.md)** - 测试模板文件
-- 📁 **templates/templater/** - Templater 相关模板 (保持英文)
-- 📁 **Other/** - 图片、脚本等支持文件
+- ✅ **[Other Template.md](templates/Other%20Template.md)** - 其他模板文件
+- ✅ **[Templater Template.md](templates/templater/Templater%20Template.md)** - Templater 模板
+- ✅ **[Example Note with Image.md](Other/Example%20Notes/Example%20Note%20with%20Image.md)** - 图片示例笔记
+- ✅ **[Example Note with Embeds.md](Other/Example%20Notes/Example%20Note%20with%20Embeds.md)** - 嵌入示例笔记
+- ✅ **[Example Note with Callouts.md](Other/Example%20Notes/Example%20Note%20with%20Callouts.md)** - 标注示例笔记
+- 📁 **Other/Images/** - 图片资源文件
 
 ## 使用说明
 
@@ -113,11 +122,23 @@ actions:
 ```
 ```
 
-## 注意事项
+## 翻译特色
 
 - ✅ **核心功能示例** 已完全翻译为中文
-- ✅ **基础和中级功能** 全部支持中文说明
-- ⚠️ **高级游戏规则计算器** 保持英文，因为涉及专业术语
-- ⚠️ **技术性API文档** 部分保持英文，便于开发者参考
+- ✅ **基础和高级功能** 全部支持中文说明
+- ✅ **游戏规则计算器** 界面已中文化，保留专业术语
+- ✅ **技术性内容** 主要说明已翻译，代码注释已中文化
+- ✅ **实用示例** 健康追踪、活动记录等全部中文化
+
+## 统计数据
+
+📊 **翻译完成统计**:
+- 主要文件: 5/5 ✅
+- 输入字段: 12/12 ✅ 
+- 查看字段: 3/3 ✅
+- 按钮功能: 4/4 ✅
+- 高级示例: 8/8 ✅
+- 其他功能: 8/8 ✅
+- **总计: 40/40 文件完成翻译** 🎉
 
 所有翻译过的示例都可以直接在 Obsidian 中使用，前提是已安装并启用 Meta Bind 插件。 

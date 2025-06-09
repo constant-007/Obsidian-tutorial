@@ -3,9 +3,11 @@ playerLevel: 10
 spellLevel: 5
 ---
 
-### DC by Proficiency
+### PF2e DC 计算器
 
-| Proficiency | DC  |
+### 按熟练度的 DC
+
+| 熟练度 | DC  |
 | ----------- | --- |
 | Untrained   | 10  |
 | Trained     | 15  |
@@ -13,9 +15,9 @@ spellLevel: 5
 | Master      | 30  |
 | Legendary   | 40  |
 
-### DC Adjustments
+### DC 调整
 
-| Difficulty      | Adjustment |
+| 难度      | 调整 |
 | --------------- | ---------- |
 | Incredibly Easy | -10        |
 | Very Easy       | -5         |
@@ -25,11 +27,11 @@ spellLevel: 5
 | Very Hard       | +5         |
 | Incredibly Hard | +10        |
 
-### DC Calculator
+### DC 计算器
 
-DC Level: `INPUT[number:playerLevel]`
+DC 等级: `INPUT[number:playerLevel]`
 
-| Difficulty               | DC                                                                                                                   |
+| 难度               | DC                                                                                                                   |
 | ------------------------ | -------------------------------------------------------------------------------------------------------------------- |
 | Incredibly Easy          | `VIEW[{memory^baseDC} - 10]`                                                                                         |
 | Very Easy                | `VIEW[{memory^baseDC} - 5]`                                                                                          |
@@ -39,9 +41,9 @@ DC Level: `INPUT[number:playerLevel]`
 | Very Hard (Rare)         | `VIEW[{memory^baseDC} + 5]`                                                                                          |
 | Incredibly Hard (Unique) | `VIEW[{memory^baseDC} + 10]`                                                                                         |
 
-Spell Level: `INPUT[number:spellLevel]`
+法术等级: `INPUT[number:spellLevel]`
 
-| Spell Rarity | DC                                                                                             |
+| 法术稀有度 | DC                                                                                             |
 | ------------ | ---------------------------------------------------------------------------------------------- |
 | Normal       | `VIEW[(({spellLevel} * 2 - 1) + 14 + floor(({spellLevel} * 2 - 1) / 3))][:memory^baseSpellDC]` |
 | Uncommon     | `VIEW[{memory^baseSpellDC} + 2]`                                                               |

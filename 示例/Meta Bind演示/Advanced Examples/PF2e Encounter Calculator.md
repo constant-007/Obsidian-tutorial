@@ -24,19 +24,21 @@ test:
   - c
 ---
 
-### Party Info
+### PF2e 遭遇计算器
 
-Players: `INPUT[number:playerCount]`
-Player Level: `INPUT[number:playerLevel]`
+### 队伍信息
 
-### Enemies
+玩家数量: `INPUT[number:playerCount]`
+玩家等级: `INPUT[number:playerLevel]`
+
+### 敌人
 
 ```js-engine
 const mb = engine.getPlugin('obsidian-meta-bind-plugin').api;
 
 const tableOptions = {
 	bindTarget: mb.createBindTarget('frontmatter', context.file.path, ['enemy']),
-	tableHead: ['Name', 'Level', 'Variant', 'Count'],
+	tableHead: ['名称', '等级', '变体', '数量'],
 	columns: [
 		'INPUT[text:scope^name]',
 		'INPUT[number(class(meta-bind-small-width)):scope^level]',
@@ -50,7 +52,7 @@ const mountable = mb.createTableMountable(context.file.path, tableOptions);
 mb.wrapInMDRC(mountable, container, component);
 ```
 
-### Encounter Stats
+### 遭遇统计
 
 ```meta-bind-js-view
 {enemy} and children as enemies
@@ -101,10 +103,10 @@ function calculateTotalXP() {
 	return acc;
 }
 
-return engine.markdown.create(`Encounter XP: **${calculateTotalXP()}**`);
+return engine.markdown.create(`遭遇 XP: **${calculateTotalXP()}**`);
 ```
 
-> [!info] XP Reference
+> [!info] XP 参考表
 > 
 > | Trivial                    | Low                        | Moderate                   | Severe                     | Extreme                    |
 > | -------------------------- | -------------------------- | -------------------------- | -------------------------- | -------------------------- |
