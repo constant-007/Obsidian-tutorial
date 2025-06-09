@@ -5,18 +5,18 @@ prev: false
 title: "ButtonConfig"
 ---
 
-Defined in: [packages/core/src/config/ButtonConfig.ts:151](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/config/ButtonConfig.ts#L151)
+定义位置: [packages/core/src/config/ButtonConfig.ts:151](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/config/ButtonConfig.ts#L151)
 
-## Properties
+## 属性
 
 ### action?
 
 > `optional` **action**: [`ButtonAction`](/obsidian-meta-bind-plugin-docs/api/type-aliases/buttonaction/)
 
-Defined in: [packages/core/src/config/ButtonConfig.ts:193](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/config/ButtonConfig.ts#L193)
+定义位置: [packages/core/src/config/ButtonConfig.ts:193](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/config/ButtonConfig.ts#L193)
 
-A single action to run when the button is clicked
-Mutually exclusive with `actions`
+按钮被点击时要运行的单个动作
+与 `actions` 属性互斥
 
 ***
 
@@ -24,10 +24,10 @@ Mutually exclusive with `actions`
 
 > `optional` **actions**: [`ButtonAction`](/obsidian-meta-bind-plugin-docs/api/type-aliases/buttonaction/)[]
 
-Defined in: [packages/core/src/config/ButtonConfig.ts:198](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/config/ButtonConfig.ts#L198)
+定义位置: [packages/core/src/config/ButtonConfig.ts:198](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/config/ButtonConfig.ts#L198)
 
-Multiple actions to run when the button is clicked
-Mutually exclusive with `action`
+按钮被点击时要运行的多个动作
+与 `action` 属性互斥
 
 ***
 
@@ -35,10 +35,10 @@ Mutually exclusive with `action`
 
 > `optional` **backgroundImage**: `string`
 
-Defined in: [packages/core/src/config/ButtonConfig.ts:176](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/config/ButtonConfig.ts#L176)
+定义位置: [packages/core/src/config/ButtonConfig.ts:176](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/config/ButtonConfig.ts#L176)
 
-Optional background image to add to the button,
-needed since you can't load images from the vault via pure CSS
+可选的背景图片添加到按钮上，
+由于无法通过纯 CSS 从库中加载图片，因此需要此属性
 
 ***
 
@@ -46,9 +46,9 @@ needed since you can't load images from the vault via pure CSS
 
 > `optional` **class**: `string`
 
-Defined in: [packages/core/src/config/ButtonConfig.ts:167](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/config/ButtonConfig.ts#L167)
+定义位置: [packages/core/src/config/ButtonConfig.ts:167](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/config/ButtonConfig.ts#L167)
 
-Optional CSS class to add to the button
+可选的 CSS 类名添加到按钮上
 
 ***
 
@@ -56,9 +56,9 @@ Optional CSS class to add to the button
 
 > `optional` **cssStyle**: `string`
 
-Defined in: [packages/core/src/config/ButtonConfig.ts:171](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/config/ButtonConfig.ts#L171)
+定义位置: [packages/core/src/config/ButtonConfig.ts:171](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/config/ButtonConfig.ts#L171)
 
-Optional CSS styles to add to the button
+可选的 CSS 样式添加到按钮上
 
 ***
 
@@ -66,9 +66,9 @@ Optional CSS styles to add to the button
 
 > `optional` **hidden**: `boolean`
 
-Defined in: [packages/core/src/config/ButtonConfig.ts:188](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/config/ButtonConfig.ts#L188)
+定义位置: [packages/core/src/config/ButtonConfig.ts:188](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/config/ButtonConfig.ts#L188)
 
-Whether the button is hidden
+按钮是否隐藏
 
 ***
 
@@ -76,9 +76,9 @@ Whether the button is hidden
 
 > `optional` **icon**: `string`
 
-Defined in: [packages/core/src/config/ButtonConfig.ts:159](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/config/ButtonConfig.ts#L159)
+定义位置: [packages/core/src/config/ButtonConfig.ts:159](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/config/ButtonConfig.ts#L159)
 
-Optional icon to display in front of the label
+可选的图标显示在标签前面
 
 ***
 
@@ -86,9 +86,9 @@ Optional icon to display in front of the label
 
 > `optional` **id**: `string`
 
-Defined in: [packages/core/src/config/ButtonConfig.ts:184](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/config/ButtonConfig.ts#L184)
+定义位置: [packages/core/src/config/ButtonConfig.ts:184](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/config/ButtonConfig.ts#L184)
 
-Optional ID for use in inline buttons
+可选的 ID，用于内联按钮
 
 ***
 
@@ -96,9 +96,9 @@ Optional ID for use in inline buttons
 
 > **label**: `string`
 
-Defined in: [packages/core/src/config/ButtonConfig.ts:155](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/config/ButtonConfig.ts#L155)
+定义位置: [packages/core/src/config/ButtonConfig.ts:155](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/config/ButtonConfig.ts#L155)
 
-The text displayed on the button
+显示在按钮上的文本
 
 ***
 
@@ -106,9 +106,9 @@ The text displayed on the button
 
 > **style**: [`ButtonStyleType`](/obsidian-meta-bind-plugin-docs/api/enumerations/buttonstyletype/)
 
-Defined in: [packages/core/src/config/ButtonConfig.ts:163](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/config/ButtonConfig.ts#L163)
+定义位置: [packages/core/src/config/ButtonConfig.ts:163](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/config/ButtonConfig.ts#L163)
 
-The style of the button
+按钮的样式
 
 ***
 
@@ -116,6 +116,6 @@ The style of the button
 
 > `optional` **tooltip**: `string`
 
-Defined in: [packages/core/src/config/ButtonConfig.ts:180](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/config/ButtonConfig.ts#L180)
+定义位置: [packages/core/src/config/ButtonConfig.ts:180](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/config/ButtonConfig.ts#L180)
 
-Optional tooltip to display when hovering over the button
+鼠标悬停在按钮上时显示的可选工具提示

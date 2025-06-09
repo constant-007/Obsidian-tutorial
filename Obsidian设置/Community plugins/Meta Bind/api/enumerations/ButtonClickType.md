@@ -5,17 +5,17 @@ prev: false
 title: "ButtonClickType"
 ---
 
-Defined in: [packages/core/src/config/ButtonConfig.ts:238](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/config/ButtonConfig.ts#L238)
+定义位置: [packages/core/src/config/ButtonConfig.ts:238](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/config/ButtonConfig.ts#L238)
 
-## Enumeration Members
+## 枚举成员
 
 <table>
 <thead>
 <tr>
-<th>Enumeration Member</th>
-<th>Value</th>
-<th>Description</th>
-<th>Defined in</th>
+<th>枚举成员</th>
+<th>值</th>
+<th>描述</th>
+<th>定义位置</th>
 </tr>
 </thead>
 <tbody>
@@ -32,7 +32,7 @@ Defined in: [packages/core/src/config/ButtonConfig.ts:238](https://github.com/mP
 </td>
 <td>
 
-The user used the left mouse button to click the button
+用户使用鼠标左键点击按钮
 
 </td>
 <td>
@@ -54,7 +54,7 @@ The user used the left mouse button to click the button
 </td>
 <td>
 
-The user used the middle mouse button (also known as scroll wheel click) to click the button
+用户使用鼠标中键（也称为滚轮点击）点击按钮
 
 </td>
 <td>

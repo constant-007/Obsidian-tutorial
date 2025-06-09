@@ -1,26 +1,23 @@
 ---
-title: Styling and CSS
-description: How to style Meta Bind with CSS.
+title: 样式和 CSS
+description: 如何使用 CSS 样式化 Meta Bind。
 ---
 
+要样式化各种 Meta Bind 元素，您需要编写自定义 [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)。
+将自定义 CSS 加载到 Obsidian 的最简单方法是使用 [CSS 片段](https://help.obsidian.md/Extending+Obsidian/CSS+snippets)。
 
+### 输入字段样式示例
 
+假设我们想要将特定的进度条着色为红色。为此我们可以利用 class 参数。
 
-To style various Meta Bind elements you need to write custom [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS).
-The easiest way to load custom CSS into Obsidian is with a [CSS snippet](https://help.obsidian.md/Extending+Obsidian/CSS+snippets).
-
-### Input Field Styling Example
-
-Let's say we want to color specific progress bars red. For this we can utilize the  argument.
-
-First we create our progress bar with the class argument. In this case we name our special class `red-progress-bar`.
+首先我们创建带有 class 参数的进度条。在这个例子中，我们将特殊类命名为 `red-progress-bar`。
 
 ```meta-bind
 INPUT[progressBar(class(red-progress-bar)):someProperty]
 ```
 
-Then we create our [CSS snippet](https://help.obsidian.md/Extending+Obsidian/CSS+snippets) with a selector for a progress bar with the class `red-progress-bar`.
-Then we target the progress bar progress element and set the background color to red.
+然后我们创建 [CSS 片段](https://help.obsidian.md/Extending+Obsidian/CSS+snippets)，使用选择器选择带有 `red-progress-bar` 类的进度条。
+然后我们定位进度条的进度元素并将背景颜色设置为红色。
 
 ```css title="snippet.css" ".red-progress-bar"
 .mb-input-type-progressBar.red-progress-bar .mb-progress-bar-progress {
@@ -28,7 +25,7 @@ Then we target the progress bar progress element and set the background color to
 }
 ```
 
-In some cases you might need higher [specificity](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity) to override existing styles. In this case you can use the `!important` flag.
+在某些情况下，您可能需要更高的[特异性](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity)来覆盖现有样式。在这种情况下，您可以使用 `!important` 标志。
 
 ```css title="snippet.css" ".red-progress-bar"
 .mb-input-type-progressBar.red-progress-bar .mb-progress-bar-progress {
@@ -36,11 +33,11 @@ In some cases you might need higher [specificity](https://developer.mozilla.org/
 }
 ```
 
-### Button Styling Example
+### 按钮样式示例
 
-If you want to change the style of a specific button, you can specify a CSS class for the button and then target it with a CSS snippet.
+如果您想更改特定按钮的样式，可以为按钮指定 CSS 类，然后使用 CSS 片段定位它。
 
-First we create a button and specify a custom class, in this case `green-button`.
+首先我们创建一个按钮并指定自定义类，在这个例子中是 `green-button`。
 
 ```yaml
 style: primary
@@ -51,8 +48,8 @@ action:
   command: obsidian-meta-bind-plugin:open-faq
 ```
 
-Then we create our [CSS snippet](https://help.obsidian.md/Extending+Obsidian/CSS+snippets) with a selector for a Meta Bind button with the class `green-button`.
-Then we target the button element itself and set it's color to green.
+然后我们创建 [CSS 片段](https://help.obsidian.md/Extending+Obsidian/CSS+snippets)，使用选择器选择带有 `green-button` 类的 Meta Bind 按钮。
+然后我们定位按钮元素本身并将其颜色设置为绿色。
 
 ```css title="snippet.css" ".green-button"
 .mb-button.green-button > button {
@@ -60,7 +57,7 @@ Then we target the button element itself and set it's color to green.
 }
 ```
 
-In some cases you might need higher [specificity](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity) to override existing styles. In this case you can use the `!important` flag.
+在某些情况下，您可能需要更高的[特异性](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity)来覆盖现有样式。在这种情况下，您可以使用 `!important` 标志。
 
 ```css title="snippet.css" ".green-button"
 .mb-button.green-button > button {

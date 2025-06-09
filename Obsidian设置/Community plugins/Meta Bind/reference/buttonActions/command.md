@@ -3,18 +3,18 @@ title: Command
 description: Command button action reference.
 ---
 
-The command action runs an obsidian command. The id of a command can be found using the `Meta Bind: Select and copy command id` command.
+**命令** 动作运行一个 Obsidian 命令。命令的 ID 可以使用 `Meta Bind: Select and copy command id` 命令找到。
 
 ```ts
 interface CommandButtonAction {
 	type: 'command';
-	command: string; // the id of the command to run
+	command: string; // 要运行的命令的 ID
 }
 ```
 
-### Example
+### 示例
 
-This button opens the Meta Bind FAQ page in obsidian.
+此按钮在 Obsidian 中打开 Meta Bind FAQ 页面。
 
 ````custom_markdown {5-6}
 ```meta-bind-button

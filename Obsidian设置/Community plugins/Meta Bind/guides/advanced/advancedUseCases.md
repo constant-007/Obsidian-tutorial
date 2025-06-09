@@ -1,32 +1,32 @@
 ---
-title: Advanced Use-Cases
-description: A collection of more advanced use-cases.
+title: 高级用例
+description: 更高级用例的集合。
 ---
 
-If you are willing to dip your toes into the world of [JavaScript](https://developer.mozilla.org/en-US/docs/Learn/JavaScript), you can do quite a few interesting things with Meta Bind.
+如果您愿意涉足 [JavaScript](https://developer.mozilla.org/en-US/docs/Learn/JavaScript) 的世界，您可以使用 Meta Bind 做很多有趣的事情。
 
 :::note
-The following examples assume that you have:
+以下示例假设您拥有：
 
-1. [JS Engine](https://github.com/mProjectsCode/obsidian-js-engine-plugin) installed and enabled.
-2. Enabled **JavaScript** in the Meta Bind settings.
-   :::
-
-:::caution
-I would recommend that you are familiar with JavaScript before attempting to use these examples.
-If you are not careful, you can easily create infinite loops or other performance issues.
+1. 安装并启用 [JS Engine](https://github.com/mProjectsCode/obsidian-js-engine-plugin)。
+2. 在 Meta Bind 设置中启用 **JavaScript**。
 :::
 
-## Performance Considerations
+:::caution
+我建议您在尝试使用这些示例之前熟悉 JavaScript。
+如果您不小心，很容易创建无限循环或其他性能问题。
+:::
 
-Dynamically creating input or view fields with JavaScript can have a performance impact, especially if you are doing it all over your notes.
+## 性能考虑
 
-## Dynamic Bind Targets with JavaScript
+使用 JavaScript 动态创建输入或视图字段可能会对性能产生影响，特别是如果您在整个笔记中都这样做。
 
-You can use JavaScript to dynamically change a bind target based on another bind targets value.
+## 使用 JavaScript 的动态绑定目标
 
-This example demonstrates how to use a select input to change the bind target of a number input.
-The select input is bound to the `index` variable, and the number input is constructed to be bound to the `list[index]` variable.
+您可以使用 JavaScript 根据另一个绑定目标的值动态更改绑定目标。
+
+此示例演示如何使用选择输入来更改数字输入的绑定目标。
+选择输入绑定到 `index` 变量，数字输入构造为绑定到 `list[index]` 变量。
 
 ````custom_markdown
 ---
@@ -37,7 +37,7 @@ list:
 index: 0
 ---
 
-Index: `INPUT[inlineSelect(option(0), option(1), option(2)):index]`
+索引：`INPUT[inlineSelect(option(0), option(1), option(2)):index]`
 
 ```meta-bind-js-view
 {index} as index
@@ -47,9 +47,9 @@ return engine.markdown.create(str)
 ```
 ````
 
-## Dynamic Options for Select Inputs
+## 选择输入的动态选项
 
-You can also use JavaScript to dynamically change the options of a select input.
+您也可以使用 JavaScript 动态更改选择输入的选项。
 
 ````custom_markdown
 ---
@@ -60,7 +60,7 @@ options:
 selected: 1
 ---
 
-Options: `INPUT[inlineList:options]`
+选项：`INPUT[inlineList:options]`
 
 ```meta-bind-js-view
 {options} as options
@@ -71,6 +71,6 @@ return engine.markdown.create(str);
 ```
 ````
 
-## Additional Examples
+## 其他示例
 
-There are additional advanced examples available in the GitHub Repository [here](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/tree/release/exampleVault/Advanced%20Examples). Have another one? Please submit a pull request.
+GitHub 仓库[这里](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/tree/release/exampleVault/Advanced%20Examples)有其他高级示例。有另一个？请提交拉取请求。

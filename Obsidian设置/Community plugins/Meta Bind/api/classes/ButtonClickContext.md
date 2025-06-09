@@ -5,25 +5,25 @@ prev: false
 title: "ButtonClickContext"
 ---
 
-Defined in: [packages/core/src/config/ButtonConfig.ts:210](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/config/ButtonConfig.ts#L210)
+定义位置: [packages/core/src/config/ButtonConfig.ts:210](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/config/ButtonConfig.ts#L210)
 
-Provides information about the button click event.
+提供关于按钮点击事件的信息。
 
-## Constructors
+## 构造函数
 
 ### Constructor
 
 > **new ButtonClickContext**(`type`, `shiftKey`, `ctrlKey`, `altKey`): `ButtonClickContext`
 
-Defined in: [packages/core/src/config/ButtonConfig.ts:216](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/config/ButtonConfig.ts#L216)
+定义位置: [packages/core/src/config/ButtonConfig.ts:216](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/config/ButtonConfig.ts#L216)
 
-#### Parameters
+#### 参数
 
 <table>
 <thead>
 <tr>
-<th>Parameter</th>
-<th>Type</th>
+<th>参数</th>
+<th>类型</th>
 </tr>
 </thead>
 <tbody>
@@ -78,17 +78,17 @@ Defined in: [packages/core/src/config/ButtonConfig.ts:216](https://github.com/mP
 </tbody>
 </table>
 
-#### Returns
+#### 返回
 
 `ButtonClickContext`
 
-## Properties
+## 属性
 
 ### altKey
 
 > **altKey**: `boolean`
 
-Defined in: [packages/core/src/config/ButtonConfig.ts:214](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/config/ButtonConfig.ts#L214)
+定义位置: [packages/core/src/config/ButtonConfig.ts:214](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/config/ButtonConfig.ts#L214)
 
 ***
 
@@ -96,7 +96,7 @@ Defined in: [packages/core/src/config/ButtonConfig.ts:214](https://github.com/mP
 
 > **ctrlKey**: `boolean`
 
-Defined in: [packages/core/src/config/ButtonConfig.ts:213](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/config/ButtonConfig.ts#L213)
+定义位置: [packages/core/src/config/ButtonConfig.ts:213](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/config/ButtonConfig.ts#L213)
 
 ***
 
@@ -104,7 +104,7 @@ Defined in: [packages/core/src/config/ButtonConfig.ts:213](https://github.com/mP
 
 > **shiftKey**: `boolean`
 
-Defined in: [packages/core/src/config/ButtonConfig.ts:212](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/config/ButtonConfig.ts#L212)
+定义位置: [packages/core/src/config/ButtonConfig.ts:212](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/config/ButtonConfig.ts#L212)
 
 ***
 
@@ -112,20 +112,20 @@ Defined in: [packages/core/src/config/ButtonConfig.ts:212](https://github.com/mP
 
 > **type**: [`ButtonClickType`](/obsidian-meta-bind-plugin-docs/api/enumerations/buttonclicktype/)
 
-Defined in: [packages/core/src/config/ButtonConfig.ts:211](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/config/ButtonConfig.ts#L211)
+定义位置: [packages/core/src/config/ButtonConfig.ts:211](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/config/ButtonConfig.ts#L211)
 
-## Methods
+## 方法
 
 ### openInNewTab()
 
 > **openInNewTab**(): `boolean`
 
-Defined in: [packages/core/src/config/ButtonConfig.ts:233](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/config/ButtonConfig.ts#L233)
+定义位置: [packages/core/src/config/ButtonConfig.ts:233](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/config/ButtonConfig.ts#L233)
 
-Whether the click should cause a link to open in a new tab.
-Only applicable when the click is on a link.
+点击是否应该导致链接在新标签页中打开。
+仅在点击链接时适用。
 
-#### Returns
+#### 返回
 
 `boolean`
 
@@ -135,15 +135,15 @@ Only applicable when the click is on a link.
 
 > `static` **fromMouseEvent**(`event`, `type`): `ButtonClickContext`
 
-Defined in: [packages/core/src/config/ButtonConfig.ts:223](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/config/ButtonConfig.ts#L223)
+定义位置: [packages/core/src/config/ButtonConfig.ts:223](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/config/ButtonConfig.ts#L223)
 
-#### Parameters
+#### 参数
 
 <table>
 <thead>
 <tr>
-<th>Parameter</th>
-<th>Type</th>
+<th>参数</th>
+<th>类型</th>
 </tr>
 </thead>
 <tbody>
@@ -174,6 +174,6 @@ Defined in: [packages/core/src/config/ButtonConfig.ts:223](https://github.com/mP
 </tbody>
 </table>
 
-#### Returns
+#### 返回
 
 `ButtonClickContext`

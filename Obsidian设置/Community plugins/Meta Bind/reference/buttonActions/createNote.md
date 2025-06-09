@@ -3,25 +3,25 @@ title: Create Note
 description: Create Note button action reference.
 ---
 
-The _create note_ action creates a new empty note in the specified location.
+**创建笔记** 动作在指定位置创建一个新的空白笔记。
 
 ```ts
 interface CreateNoteButtonAction {
 	type: 'createNote';
-	fileName: string; // the name of the new note
-	folderPath?: string; // the folder path where the note should be created, if not specified the note will be created in the root of the vault
-	openNote?: boolean; // if true, the note will be opened after creation
-	openIfAlreadyExists?: boolean; // whether to open the note if it already exists instead of creating a new one with an incremented name
+	fileName: string; // 新笔记的名称
+	folderPath?: string; // 创建笔记的文件夹路径，如果未指定则在库的根目录创建
+	openNote?: boolean; // 如果为 true，创建后将打开笔记
+	openIfAlreadyExists?: boolean; // 如果笔记已存在，是否打开现有笔记而不是创建带递增编号的新笔记
 }
 ```
 
-When a note with the same name already exists in the specified location, the note will be created with a running number appended to the name.
-For example, if a note with the name `Note` already exists, the new note will be named `Note 1`.
+当指定位置已存在同名笔记时，将创建一个附加递增编号的笔记。
+例如，如果名为 `Note` 的笔记已存在，新笔记将命名为 `Note 1`。
 
-### Example
+### 示例
 
-This button will create a new note named `New Note` in the `My Folder` folder.
-If a note with the same name already exists, the new note will be named `New Note 1`.
+此按钮将在 `My Folder` 文件夹中创建一个名为 `New Note` 的新笔记。
+如果同名笔记已存在，新笔记将命名为 `New Note 1`。
 
 ````custom_markdown {5-8}
 ```meta-bind-button

@@ -1,6 +1,42 @@
 {
   "recentFiles": [
     {
+      "basename": "installation",
+      "path": "Obsidian设置/Community plugins/Meta Bind/guides/installation.md"
+    },
+    {
+      "basename": "obsidianPublish",
+      "path": "Obsidian设置/Community plugins/Meta Bind/guides/obsidianPublish.md"
+    },
+    {
+      "basename": "examples",
+      "path": "Obsidian设置/Community plugins/Meta Bind/guides/examples.md"
+    },
+    {
+      "basename": "advancedUseCases",
+      "path": "Obsidian设置/Community plugins/Meta Bind/guides/advanced/advancedUseCases.md"
+    },
+    {
+      "basename": "customMathJS",
+      "path": "Obsidian设置/Community plugins/Meta Bind/guides/advanced/customMathJS.md"
+    },
+    {
+      "basename": "api",
+      "path": "Obsidian设置/Community plugins/Meta Bind/guides/advanced/api.md"
+    },
+    {
+      "basename": "ButtonClickType",
+      "path": "Obsidian设置/Community plugins/Meta Bind/api/enumerations/ButtonClickType.md"
+    },
+    {
+      "basename": "FieldMountable",
+      "path": "Obsidian设置/Community plugins/Meta Bind/api/classes/FieldMountable.md"
+    },
+    {
+      "basename": "ButtonClickContext",
+      "path": "Obsidian设置/Community plugins/Meta Bind/api/classes/ButtonClickContext.md"
+    },
+    {
       "basename": "编辑器",
       "path": "示例/Meta Bind演示/输入字段/编辑器.md"
     },
@@ -163,42 +199,6 @@
     {
       "basename": "Pasted image 20250505205321",
       "path": "Attachment/Pasted image 20250505205321.png"
-    },
-    {
-      "basename": "DnD 5e旅行计算器",
-      "path": "示例/Meta Bind演示/高级示例/DnD 5e旅行计算器.md"
-    },
-    {
-      "basename": "DnD 5e属性值和调整值",
-      "path": "示例/Meta Bind演示/高级示例/DnD 5e属性值和调整值.md"
-    },
-    {
-      "basename": "高级用例",
-      "path": "示例/Meta Bind演示/高级用例.md"
-    },
-    {
-      "basename": "嵌入示例",
-      "path": "示例/Meta Bind演示/嵌入示例.md"
-    },
-    {
-      "basename": "Pandoc：导出工具",
-      "path": "Obsidian设置/Community plugins/Pandoc：导出工具.md"
-    },
-    {
-      "basename": "Remember cursor position：一定要装！",
-      "path": "Obsidian设置/Community plugins/Remember cursor position：一定要装！.md"
-    },
-    {
-      "basename": "Meta Bind按钮高级功能演示",
-      "path": "示例/Meta Bind演示/Meta Bind按钮高级功能演示.md"
-    },
-    {
-      "basename": "Files and links",
-      "path": "Obsidian设置/Files and links.md"
-    },
-    {
-      "basename": "Hotkeys",
-      "path": "Obsidian设置/Hotkeys.md"
     }
   ],
   "omittedPaths": [],

@@ -1,18 +1,18 @@
 ---
-title: Obsidian Publish Support
-description: A tutorial for setting up Meta Bind to work in publish.
+title: Obsidian Publish 支持
+description: 设置 Meta Bind 在 Publish 中工作的教程。
 ---
 
 :::danger
 
-I am currently waiting for the Obsidian Team to deliver on promised improvements to the Obsidian Publish API.
-Until then, Meta Binds publish support will be broken.
+我目前正在等待 Obsidian 团队兑现对 Obsidian Publish API 改进的承诺。
+在此之前，Meta Bind 的发布支持将被破坏。
 
-Use at your own risk. I do not accept issues and feature requests for publish specific issues at this point in time.
+使用风险自负。我目前不接受针对发布特定问题的问题和功能请求。
 
 :::
 
-This guide assumes that you already have Obsidian Publish set up with a custom domain, so that you can use a `publish.js` file.
+本指南假设您已经设置了 Obsidian Publish 和自定义域名，以便您可以使用 `publish.js` 文件。
 
-To get meta bind working in Obsidian Publish, you need to copy the contents of [this file](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/master/PublishLoad.js) into your `publish.js` file.
-For the correct appearance, you need to copy [this file](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/master/styles.css) into your `publish.css` file.
+要让 Meta Bind 在 Obsidian Publish 中工作，您需要将[此文件](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/master/PublishLoad.js)的内容复制到您的 `publish.js` 文件中。
+为了正确的外观，您需要将[此文件](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/master/styles.css)复制到您的 `publish.css` 文件中。
