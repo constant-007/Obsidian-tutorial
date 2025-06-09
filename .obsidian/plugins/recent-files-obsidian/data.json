@@ -1,16 +1,12 @@
 {
   "recentFiles": [
     {
-      "basename": "Health Tracker",
-      "path": "示例/Meta Bind演示/Advanced Examples/Health Tracker.md"
+      "basename": "Button Example",
+      "path": "示例/Meta Bind演示/Buttons/Button Example.md"
     },
     {
-      "basename": "PF2e DC Calcualtor",
-      "path": "示例/Meta Bind演示/Advanced Examples/PF2e DC Calcualtor.md"
-    },
-    {
-      "basename": "PF2e Encounter Calculator",
-      "path": "示例/Meta Bind演示/Advanced Examples/PF2e Encounter Calculator.md"
+      "basename": "Using JS Engine for Complex things",
+      "path": "示例/Meta Bind演示/Advanced Examples/Using JS Engine for Complex things.md"
     },
     {
       "basename": "PF2e Travel Calculator",
@@ -21,12 +17,24 @@
       "path": "示例/Meta Bind演示/Advanced Examples/DnD 5e Travel Calculator.md"
     },
     {
-      "basename": "DnD 5e Ability Scores and Modifiers",
-      "path": "示例/Meta Bind演示/Advanced Examples/DnD 5e Ability Scores and Modifiers.md"
-    },
-    {
       "basename": "Activity Tracker",
       "path": "示例/Meta Bind演示/Advanced Examples/Activity Tracker.md"
+    },
+    {
+      "basename": "PF2e DC Calcualtor",
+      "path": "示例/Meta Bind演示/Advanced Examples/PF2e DC Calcualtor.md"
+    },
+    {
+      "basename": "Health Tracker",
+      "path": "示例/Meta Bind演示/Advanced Examples/Health Tracker.md"
+    },
+    {
+      "basename": "PF2e Encounter Calculator",
+      "path": "示例/Meta Bind演示/Advanced Examples/PF2e Encounter Calculator.md"
+    },
+    {
+      "basename": "DnD 5e Ability Scores and Modifiers",
+      "path": "示例/Meta Bind演示/Advanced Examples/DnD 5e Ability Scores and Modifiers.md"
     },
     {
       "basename": "Remember cursor position：一定要装！",
@@ -57,20 +65,12 @@
       "path": "示例/Meta Bind演示/Input Fields/Date and Time.md"
     },
     {
-      "basename": "Button Example",
-      "path": "示例/Meta Bind演示/Buttons/Button Example.md"
-    },
-    {
       "basename": "Other Note",
       "path": "示例/Meta Bind演示/Alternative Metadata Storage/Other Note.md"
     },
     {
       "basename": "Alternative Metadata Storage",
       "path": "示例/Meta Bind演示/Alternative Metadata Storage/Alternative Metadata Storage.md"
-    },
-    {
-      "basename": "Using JS Engine for Complex things",
-      "path": "示例/Meta Bind演示/Advanced Examples/Using JS Engine for Complex things.md"
     },
     {
       "basename": "Files and links",

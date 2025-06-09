@@ -10,11 +10,11 @@ multi-select:
 text: this is some text
 ---
 
-## This is another note
-This note is to test syncing to another note.
+## 这是另一个笔记
+这个笔记用于测试与另一个笔记的同步。
 
-### Select
-Select
+### 选择器
+选择器
 ```meta-bind
 INPUT[
 	select(
@@ -26,10 +26,10 @@ INPUT[
 ]
 ```
 
-Select with title
+带标题的选择器
 ```meta-bind
 INPUT[select(
-title(select with title),
+title(带标题的选择器),
 option(option a),
 option(option b),
 option(option c),

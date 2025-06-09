@@ -58,6 +58,8 @@ editor2: |-
   asd
 ---
 
+### 编辑器
+
 ```meta-bind
 INPUT[editor(showcase):editor]
 ```

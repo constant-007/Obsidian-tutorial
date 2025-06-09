@@ -1,6 +1,7 @@
+### Templater 按钮
 
 ```meta-bind-button
-label: Insert Text
+label: 插入文本
 hidden: false
 class: ""
 tooltip: ""
@@ -13,7 +14,7 @@ action:
 ```
 
 ```meta-bind-button
-label: Insert Text
+label: 插入文本
 hidden: false
 class: ""
 tooltip: ""

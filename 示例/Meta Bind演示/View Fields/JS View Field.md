@@ -7,6 +7,9 @@ cssclasses:
   - aa
   - test-class
 ---
+
+### JavaScript 查看字段
+
 `INPUT[number:number1]`
 `INPUT[number:number2]`
 
@@ -26,7 +29,7 @@ hidden
 return context.bound.n1;
 ```
 
-You can also dynamically add CSS classes to your note this way.
+你也可以通过这种方式动态地为你的笔记添加 CSS 类。
 
 ```meta-bind-js-view
 {number1} as n1
@@ -45,7 +48,7 @@ if (context.bound.n1 >= 100) {
 return [...classes.values()];
 ```
 
-## Other Note
+## 其他笔记
 
 ```meta-bind-js-view
 {Other Note#text} as text

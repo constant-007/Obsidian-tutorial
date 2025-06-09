@@ -5,19 +5,19 @@ slider3: 227
 slider4: 0.1
 ---
 
-### Simple Slider
+### 简单滑块
 
 ```meta-bind
 INPUT[slider(showcase):slider1]
 ```
 
-### Slider with Labels
+### 带标签的滑块
 
 ```meta-bind
 INPUT[slider(addLabels, showcase):slider1]
 ```
 
-### Slider with Custom Min Max Values
+### 自定义最小最大值的滑块
 
 ```meta-bind
 INPUT[slider(addLabels, minValue(-20), maxValue(20), showcase):slider2]
@@ -27,7 +27,7 @@ INPUT[slider(addLabels, minValue(-20), maxValue(20), showcase):slider2]
 INPUT[slider(addLabels, minValue(0), maxValue(1000), showcase):slider3]
 ```
 
-### Slider with Custom Step Size
+### 自定义步长的滑块
 
 ```meta-bind
 INPUT[slider(addLabels, minValue(0), maxValue(10), stepSize(0.1), showcase):slider4]

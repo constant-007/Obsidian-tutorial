@@ -14,7 +14,7 @@ multiSelect3:
 select2: 
 ---
 
-### Select
+### 选择器
 
 ```meta-bind
 INPUT[select(
@@ -45,7 +45,7 @@ showcase
 ):select3]
 ```
 
-### Multi Select
+### 多选器
 
 ```meta-bind
 INPUT[multiSelect(

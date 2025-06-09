@@ -5,7 +5,7 @@ fileSuggest2: "[[Example Note with Embeds]]"
 fileSuggest3: Example Note with Embeds
 ---
 
-### Simple Suggester
+### 简单建议器
 
 ```meta-bind
 INPUT[suggester(
@@ -26,9 +26,9 @@ showcase
 ):suggest]
 ```
 
-### Suggester with Dataview
+### 与 Dataview 配合的建议器
 
-Note, that this will error, if dataview is not enabled. 
+注意，如果未启用 dataview，这将报错。
 
 `INPUT[suggester(optionQuery(#example-note)):fileSuggest]`
 

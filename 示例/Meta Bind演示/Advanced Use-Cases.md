@@ -11,11 +11,11 @@ options:
 selected: 1
 ---
 
-## Changing the Bind Target
+## 更改绑定目标
 
-The `index` determines the element of the `list` array that the number input field binds to.
+`index` 决定数字输入字段绑定到 `list` 数组的哪个元素。
 
-Index: `INPUT[inlineSelect(option(0), option(1), option(2)):index]`
+索引: `INPUT[inlineSelect(option(0), option(1), option(2)):index]`
 
 ```meta-bind-js-view
 {index} as index
@@ -24,7 +24,7 @@ const str = `\`INPUT[number:list[${context.bound.index}]]\``;
 return engine.markdown.create(str)
 ```
 
-## Generating a list of Options from Front-matter
+## 从前置元数据生成选项列表
 
 `INPUT[inlineList:options]`
 

@@ -17,9 +17,9 @@ number2: 10
 time: 
 ---
 
-## Fields Work Everywhere
+## 字段在各处都能工作
 
-Input and view fields work in the top level and in 
+输入字段和查看字段在顶层和嵌套中都能工作
 
 > `INPUT[slider(addLabels, minValue(1), maxValue(10)):slider1]`
 
@@ -31,35 +31,35 @@ Input and view fields work in the top level and in
 > INPUT[slider(addLabels, minValue(1), maxValue(10)):slider1]
 > ```
 
-## Nested data
+## 嵌套数据
 
-Input fields work with nested front-matter.
+输入字段支持嵌套的前置元数据。
 
 `INPUT[text(showcase):nested["object"]]`
 
 `INPUT[inlineSelect(option(0, 'don\'t do this'), option(1, 'do this \\'), showcase):inlineSelect]`
 
-## String Escaping
+## 字符串转义
 
-Certain characters need escaping.
+某些字符需要转义。
 
 ```meta-bind
 INPUT[inlineSelect(option(0, 'don\'t do this'), option(1, 'do this \\'), showcase):inlineSelect]
 ```
 
-## Unicode
+## Unicode 支持
 
-Meta Bind supports Unicode characters.
+Meta Bind 支持 Unicode 字符。
 
 ```meta-bind
 INPUT[text:こんにちは]
 ```
 
-## Binding to Another Note
+## 绑定到另一个笔记
 
-Meta Bind supports binding to front-matter of a different note.
+Meta Bind 支持绑定到不同笔记的前置元数据。
 
-Text area to a different note.
+绑定到不同笔记的文本区域。
 ```meta-bind
 INPUT[textArea(
 title(text area),
@@ -68,7 +68,7 @@ class(meta-bind-high)
 ):other note#title]
 ```
 
-A select to a different note.
+绑定到不同笔记的选择器。
 ```meta-bind
 INPUT[select(
 option(option a),
@@ -78,7 +78,7 @@ option(option d)
 ):other note#select]
 ```
 
-A multi select to a different note.
+绑定到不同笔记的多选器。
 ```meta-bind
 INPUT[multiSelect(
 title(A multi select input),
@@ -89,29 +89,29 @@ option(option d)
 ):other note#multi-select]
 ```
 
-## Inline Input Fields
+## 内联输入字段
 
-Inline input fields should not cause line breaks.
+内联输入字段不应该造成换行。
 
 Lorem ipsum dolor sit amet, `INPUT[date():other note#date]` consectetur adipiscing elit. Pellentesque sit amet porttitor arcu. Quisque scelerisque dolor augue, et posuere nulla bibendum nec. `INPUT[date():other note#date]` Curabitur sed rhoncus nisl. Maecenas nisi justo, viverra vel tempus vel, hendrerit at metus. `INPUT[datePicker():other note#date]` asdasd asdasdasd
 
 
-| test                                  | table                                       |     |
+| 测试                                  | 表格                                        |     |
 | ------------------------------------- | ------------------------------------------- | --- |
 | `INPUT[datePicker():other note#date]` | `VIEW[{other note#date}][text]`             |     |
 | `INPUT[number:number1]`               | `VIEW[{slider1} * {number1}][math:number2]` |     |
 
-## Templates
+## 模板
 
-For input fields, templates can be set in the plugin settings
+对于输入字段，可以在插件设置中设置模板
 
-- `INPUT[][toggle:toggle1]` empty template
-- `INPUT[nonExistantTemplate][toggle:toggle1]` unknown template
+- `INPUT[][toggle:toggle1]` 空模板
+- `INPUT[nonExistantTemplate][toggle:toggle1]` 未知模板
 - `INPUT[toggleTemplate][]`
 
-## Error Messages
+## 错误消息
 
-There are a lot of different error messages and they are clickable
+有很多不同的错误消息，它们都是可点击的
 
 - `INPUT[text():meta bind/nonExistantFile#title]`
 - `INPUT[slider(nonExistantArgument)]`
@@ -123,7 +123,7 @@ There are a lot of different error messages and they are clickable
 
 Lorem ipsum dolor sit amet, `INPUT[text():meta bind/nonExistantFile#title]` consectetur adipiscing elit. Pellentesque sit amet porttitor arcu. Quisque scelerisque dolor augue, et posuere nulla bibendum nec. `INPUT[slider(nonExistantArgument)]` Curabitur sed rhoncus nisl. Maecenas nisi justo, viverra vel tempus vel, hendrerit at metus. `INPUT[select(option(option a),option(option b),option(option c),option(option d)):select]` asdasd asdasdasd
 
-Code block error
+代码块错误
 
 ```meta-bind
 INPUT[slider(nonExistantArgument)]

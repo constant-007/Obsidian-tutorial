@@ -1,11 +1,11 @@
-### Two buttons that replace the same text
+### 两个替换相同文本的按钮
 
 other
 text
 tada
 
 ```meta-bind-button
-label: Replace in Note
+label: 在笔记中替换
 hidden: false
 class: ""
 tooltip: ""
@@ -19,7 +19,7 @@ action:
 ```
 
 ```meta-bind-button
-label: Replace Other in Note
+label: 在笔记中替换其他
 hidden: false
 class: ""
 tooltip: ""
@@ -32,12 +32,12 @@ action:
   replacement: "other\ntext\ntada"
 ```
 
-### Inserting text into the file
+### 在文件中插入文本
 
-Insert below this line:
+在此行下方插入:
 
 ```meta-bind-button
-label: Insert Text
+label: 插入文本
 hidden: false
 class: ""
 tooltip: ""
@@ -50,7 +50,7 @@ action:
 ```
 
 ```meta-bind-button
-label: Remove inserted lines
+label: 移除插入的行
 hidden: false
 class: ""
 tooltip: ""
@@ -62,10 +62,10 @@ action:
   replacement: "Insert below this line:\n"
 ```
 
-### A button replacing itself
+### 替换自身的按钮
 
 ```meta-bind-button
-label: Replace Self
+label: 替换自身
 hidden: false
 class: ""
 tooltip: ""
@@ -76,10 +76,10 @@ action:
   replacement: "i am no longer a button\n\nnice"
 ```
 
-### A button reconstructing the button above with regexp replacement
+### 使用正则表达式重新创建上面按钮的按钮
 
 ```meta-bind-button
-label: Recreate Button with Regexp
+label: 用正则表达式重新创建按钮
 hidden: false
 class: ""
 tooltip: ""
@@ -90,7 +90,7 @@ action:
   regexp: "i am no longer a button\\s+nice\n"
   replacement: |
     ```meta-bind-button
-    label: Replace Self
+    label: 替换自身
     hidden: false
     class: ""
     tooltip: ""

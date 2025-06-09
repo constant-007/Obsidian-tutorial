@@ -1,5 +1,5 @@
 ---
-health: 50
+health: 40
 max_health: 50
 damage: 5
 ---

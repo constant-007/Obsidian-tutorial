@@ -23,7 +23,7 @@ list6:
   - ""
 ---
 
-### List
+### 列表
 
 ```meta-bind
 INPUT[list(showcase):list]
@@ -35,7 +35,7 @@ INPUT[list(showcase):list]
 INPUT[list(showcase, multiLine):list]
 ```
 
-### List Suggester
+### 列表建议器
 
 ```meta-bind
 INPUT[listSuggester(optionQuery(#example-note), showcase):list2]
@@ -49,21 +49,21 @@ INPUT[listSuggester(optionQuery(#example-note), useLinks(false), showcase):list3
 
 `VIEW[{list3}][link]`
 
-### Inline List
+### 内联列表
 
-Some text: `INPUT[inlineList:list5]` some more text
+一些文本: `INPUT[inlineList:list5]` 更多文本
 
-### Inline List Suggester
+### 内联列表建议器
 
 ```meta-bind
 INPUT[inlineListSuggester(optionQuery(#example-note), option(something, other), useLinks(false), showcase):list4]
 ```
 
-Some text: `INPUT[inlineListSuggester(optionQuery(#example-note), option(something, other), useLinks(false)):list4]` some more text
+一些文本: `INPUT[inlineListSuggester(optionQuery(#example-note), option(something, other), useLinks(false)):list4]` 更多文本
 
 `INPUT[inlineListSuggester(optionQuery(#example-note), option(something, other), allowOther):list5]` 
 
-### Null Values
+### 空值
 
 ```meta-bind
 INPUT[list(showcase):list6]

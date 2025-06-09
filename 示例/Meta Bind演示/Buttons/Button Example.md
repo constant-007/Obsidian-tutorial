@@ -5,7 +5,7 @@ someList:
   - 1709918700548
 count2: 0
 ---
-Meta Bind is getting Buttons
+Meta Bind 现在支持按钮了
 
 text `BUTTON[docs-button]` text
 text `BUTTON[docs-button, docs, open-button]` text
@@ -14,32 +14,32 @@ text `BUTTON[docs-button, docs, open-button]` text
 BUTTON[docs-button]
 ```
 
-With a custom class and a CSS snippet we can change the button to be green.
+通过自定义类和 CSS 片段，我们可以将按钮改为绿色。
 
 ```meta-bind-button
 style: primary
-label: Open Meta Bind Playground
+label: 打开 Meta Bind 工作台
 class: green-button
 action:
   type: command
   command: obsidian-meta-bind-plugin:open-playground
 ```
 
-Custom templater commands
+自定义 templater 命令
 
 ```meta-bind-button
 style: default
-label: "Run a templater file"
+label: "运行 templater 文件"
 actions:
   - type: runTemplaterFile
     templateFile: "templates/templater/Say Hello Command.md"
 ```
 
-And custom JS buttons as well
+以及自定义 JS 按钮
 
 ```meta-bind-button
 style: default
-label: Run Custom JS
+label: 运行自定义 JS
 action:
   type: js
   file: testJsFile.js
@@ -47,13 +47,13 @@ action:
     greeting: "Meta Bind User"
 ```
 
-And open internal and external links
+打开内部和外部链接
 
 ```meta-bind-button
 style: primary
 id: open-button
 hidden: true
-label: Open File
+label: 打开文件
 action:
   type: open
   link: "[[View Fields/Other Note|Other Note]]"
@@ -63,7 +63,7 @@ action:
 style: primary
 id: open-tab-button
 hidden: true
-label: Open File new Tab
+label: 在新标签页打开文件
 action:
   type: open
   newTab: true
@@ -74,7 +74,7 @@ action:
 style: default
 id: docs-button
 hidden: true
-label: Open External Link
+label: 打开外部链接
 action:
   type: open
   link: https://www.moritzjung.dev/obsidian-meta-bind-plugin-docs/
@@ -82,10 +82,10 @@ action:
 
 text `BUTTON[docs-button, open-button, open-tab-button]` text
 
-And switch between light and dark mode
+在亮色和暗色模式之间切换
 
 ```meta-bind-button
-label: Switch to Light Mode
+label: 切换到亮色模式
 hidden: false
 id: ""
 style: destructive
@@ -95,7 +95,7 @@ actions:
 ```
 
 ```meta-bind-button
-label: Switch to Dark Mode
+label: 切换到暗色模式
 hidden: false
 id: ""
 style: primary
@@ -105,10 +105,10 @@ actions:
 
 ```
 
-And multiple things
+执行多个操作
 
 ```meta-bind-button
-label: This is a button
+label: 这是一个按钮
 class: test-class
 hidden: false
 id: ""
@@ -122,12 +122,12 @@ actions:
 ```
 
 
-## Button Types
+## 按钮类型
 
 ```meta-bind-button
-label: Input
+label: 输入
 hidden: false
-tooltip: "Open command palette and then search for 'help'"
+tooltip: "打开命令面板然后搜索 'help'"
 id: ""
 style: default
 actions:
@@ -151,7 +151,7 @@ actions:
 ```
 
 ```meta-bind-button
-label: Sleep
+label: 延迟
 hidden: false
 id: ""
 style: default
@@ -166,7 +166,7 @@ actions:
 ```
 
 ```meta-bind-button
-label: Show PF2e Examples with Delay
+label: 延迟显示 PF2e 示例
 hidden: false
 id: ""
 style: default
@@ -181,7 +181,7 @@ actions:
 ```
 
 ```meta-bind-button
-label: Test
+label: 测试
 hidden: false
 id: ""
 style: default
@@ -194,7 +194,7 @@ actions:
 ```
 
 ```meta-bind-button
-label: Create new Note
+label: 创建新笔记
 hidden: false
 class: ""
 tooltip: ""

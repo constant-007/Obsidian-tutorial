@@ -4,6 +4,8 @@ number2: 123
 number3: 
 ---
 
+### 数字输入
+
 ```meta-bind
 INPUT[number(showcase):number]
 ```

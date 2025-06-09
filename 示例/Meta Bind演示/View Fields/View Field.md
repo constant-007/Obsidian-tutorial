@@ -28,42 +28,42 @@ remoteImage: https://picsum.photos/200/300
 `INPUT[number:number2]`
 `INPUT[text:unit]`
 
-Number one is: `VIEW[{number1}][math(class(mod-warning))]` units
-Number two is: `VIEW[{number2}]` units
+数字一是: `VIEW[{number1}][math(class(mod-warning))]` 单位
+数字二是: `VIEW[{number2}]` 单位
 
-Combined: `VIEW[{number1} * {number2}]` cm equals `VIEW[{number2} * {number1} cm to {unit}]`
+组合: `VIEW[{number1} * {number2}]` cm 等于 `VIEW[{number2} * {number1} cm to {unit}]`
 
-## Other Note
+## 其他笔记
 
 `INPUT[text:Other Note#text]`
 
 `VIEW[{Other Note#text}]`
 
-## Distance Example
+## 距离示例
 
-Distance: `INPUT[number:distance]` km
-Distance in freedom units: `VIEW[number({distance} km, miles)]` miles
-Distance in freedom units: `VIEW[round(number({distance} km, miles), 2)]` miles
+距离: `INPUT[number:distance]` km
+以自由单位表示的距离: `VIEW[number({distance} km, miles)]` miles
+以自由单位表示的距离: `VIEW[round(number({distance} km, miles), 2)]` miles
 
-## Text Example
+## 文本示例
 
-Text: `VIEW[**{distance}**][text]`
+文本: `VIEW[**{distance}**][text]`
 Markdown: `VIEW[**{distance}**][text(renderMarkdown)]`
-Hidden: `VIEW[**{distance}**][text(hidden):computed]`
-Display Computed: `VIEW[{computed}][text()]`
-Display Computed as Markdown: `VIEW[{computed}][text(renderMarkdown)]`
-Loop Error: `VIEW[**{computed}**][text():distance]`
-Self Loop Error: `VIEW[**{computed}**][text():computed]`
+隐藏: `VIEW[**{distance}**][text(hidden):computed]`
+显示计算值: `VIEW[{computed}][text()]`
+显示计算值为 Markdown: `VIEW[{computed}][text(renderMarkdown)]`
+循环错误: `VIEW[**{computed}**][text():distance]`
+自循环错误: `VIEW[**{computed}**][text():computed]`
 
-## Links
+## 链接
 
 `INPUT[suggester(optionQuery(#example-note), useLinks(false)):file]`
-link with render markdown: `VIEW[\[\[{file}|link\]\]][text(renderMarkdown)]`
-link with link view field: `VIEW[{file}|this is a link][link]`
+带有渲染 markdown 的链接: `VIEW[\[\[{file}|link\]\]][text(renderMarkdown)]`
+带有链接查看字段的链接: `VIEW[{file}|this is a link][link]`
 
-## Images
+## 图片
 
-A single image works
+单个图片可以正常工作
 
 ```meta-bind
 INPUT[imageSuggester(optionQuery("Other/Images")):image]
@@ -71,7 +71,7 @@ INPUT[imageSuggester(optionQuery("Other/Images")):image]
 
 `VIEW[{image}][image]`
 
-View fields can also display a list of images.
+查看字段也可以显示图片列表。
 
 ```meta-bind
 INPUT[imageListSuggester(optionQuery("Other/Images")):images]
@@ -79,17 +79,17 @@ INPUT[imageListSuggester(optionQuery("Other/Images")):images]
 
 `VIEW[{images}][image]`
 
-Both markdown link types are supported.
+两种 markdown 链接类型都被支持。
 
 `VIEW[{otherImages}][image]`
 
-External images work as well.
+外部图片也可以正常工作。
 
 `VIEW[{remoteImage}][image]`
 
-## Arrays and Objects
+## 数组和对象
 
-Plain Text:
+纯文本:
 `VIEW[{list}][text]`
 `VIEW[{object}][text]`
 
@@ -97,8 +97,8 @@ Markdown:
 `VIEW[**{list}**][text(renderMarkdown)]`
 `VIEW[**{object}**][text(renderMarkdown)]`
 
-Null:
+空值:
 `VIEW[{someUnknownValue}][text]`
 
-Input: `INPUT[number:someInputValue]`
-Computed Value: `VIEW[{someInputValue} * 2][math:someComputedValue]`
+输入: `INPUT[number:someInputValue]`
+计算值: `VIEW[{someInputValue} * 2][math:someComputedValue]`

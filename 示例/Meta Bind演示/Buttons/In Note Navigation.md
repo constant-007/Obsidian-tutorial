@@ -1,27 +1,27 @@
-## This is a Heading at the Top
+## 这是顶部的标题
 
 ```meta-bind-button
-label: Scroll to Middle
+label: 滚动到中间
 style: default
 actions:
   - type: open
-    link: "[[#This is a Heading in the Middle]]"
+    link: "[[#这是中间的标题]]"
     newTab: false
 
 ```
 
 ```meta-bind-button
-label: Scroll to Bottom
+label: 滚动到底部
 style: default
 actions:
   - type: open
-    link: "[[#This is a Heading at the Bottom]]"
+    link: "[[#这是底部的标题]]"
     newTab: false
 
 ```
 
 ```meta-bind-button
-label: Scroll to Labeled Section
+label: 滚动到标记部分
 style: default
 actions:
   - type: open
@@ -30,58 +30,46 @@ actions:
 
 ```
 
-some
+一些
 
-very
+很长的
 
-long
+文本
 
-text
+一些
 
-some
+很长的
 
-very
+文本
 
-long
+## 这是中间的标题
 
-text
+一些
 
-## This is a Heading in the Middle
+很长的
 
-some
+文本
 
-very
+一些
 
-long
+很长的
 
-text
+文本
 
-some
+一些
 
-very
+很长的
 
-long
+文本
 
-text
+一些
 
-some
+很长的
 
-very
+文本
 
-long
-
-text
-
-some
-
-very
-
-long
-
-text
-
-## This is a Heading at the Bottom
+## 这是底部的标题
 
 
-Some Secion
+某个部分
 ^section-1

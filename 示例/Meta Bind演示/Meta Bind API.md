@@ -2,11 +2,11 @@
 select: b
 ---
 
-## Creating an Input Field with JS Engine
+## 使用 JS Engine 创建输入字段
 
-JS Engine can be found [here](https://github.com/mProjectsCode/obsidian-js-engine-plugin).
+JS Engine 可以在[这里](https://github.com/mProjectsCode/obsidian-js-engine-plugin)找到。
 
-**Code**
+**代码**
 ```js
 const mb = engine.getPlugin('obsidian-meta-bind-plugin').api;
 
@@ -19,7 +19,7 @@ const arguments = options.map(x => ({
 
 arguments.push({
 	name: 'title',
-	value: ['I was created using JS Engine and the Meta Bind API'],
+	value: ['我是使用 JS Engine 和 Meta Bind API 创建的'],
 });
 
 const bindTarget = mb.parseBindTarget('select', context.file.path);
@@ -36,7 +36,7 @@ const mountable = mb.createInputFieldMountable(context.file.path, {
 mb.wrapInMDRC(mountable, container, component);
 ```
 
-**Resulting Input Field**
+**生成的输入字段**
 ```js-engine
 const mb = engine.getPlugin('obsidian-meta-bind-plugin').api;
 
@@ -49,7 +49,7 @@ const arguments = options.map(x => ({
 
 arguments.push({
 	name: 'title',
-	value: ['I was created using JS Engine and the Meta Bind API'],
+	value: ['我是使用 JS Engine 和 Meta Bind API 创建的'],
 });
 
 const bindTarget = mb.parseBindTarget('select', context.file.path);

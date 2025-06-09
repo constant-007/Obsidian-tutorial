@@ -5,6 +5,8 @@ select3: 2 hours
 select4:
 ---
 
+### 内联选择器
+
 ```meta-bind
 INPUT[inlineSelect(option(a), option(b), showcase):select]
 ```

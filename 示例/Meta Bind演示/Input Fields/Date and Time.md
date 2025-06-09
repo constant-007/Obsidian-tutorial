@@ -5,12 +5,12 @@ date1: 2024-03-07
 dateTime: 2024-03-13T15:07
 ---
 
-### Date
+### 日期
 ```meta-bind
 INPUT[date(showcase):date1]
 ```
 
-### Date Picker
+### 日期选择器
 
 ```meta-bind
 INPUT[datePicker(showcase):date2]
@@ -20,13 +20,13 @@ INPUT[datePicker(showcase):date2]
 INPUT[datePicker(showcase, defaultValue(null)):date3]
 ```
 
-### Time
+### 时间
 ```meta-bind
 INPUT[time(showcase):time]
 ```
 
 
-### Date Time
+### 日期时间
 ```meta-bind
 INPUT[dateTime(showcase):dateTime]
 ```

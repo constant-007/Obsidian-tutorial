@@ -3,7 +3,7 @@ text: alnsdksdnfknfnjksdbfhj
 textArea: textArea
 ---
 
-### Text
+### 文本
 
 ```meta-bind
 INPUT[text(showcase):text]
@@ -13,7 +13,7 @@ INPUT[text(showcase):text]
 INPUT[text(showcase, limit(10)):text]
 ```
 
-### Text Area
+### 文本区域
 
 ```meta-bind
 INPUT[textArea(showcase, class(meta-bind-full-width), class(meta-bind-high)):textArea]

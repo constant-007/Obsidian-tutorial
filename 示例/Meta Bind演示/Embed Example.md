@@ -3,13 +3,13 @@ completed: false
 select: a
 ---
 
-Test Hello
+测试 你好
 
 ```meta-bind-embed
 [[Test Template]]
 ```
 
-test
+测试
 
 ```meta-bind-embed
 [[Non Existent Note]]
