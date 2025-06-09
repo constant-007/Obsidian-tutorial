@@ -1,37 +1,37 @@
 ---
-title: Meta Bind Embed
-description: A tutorial for the Meta Bind Embed.
+title: Meta Bind 嵌入
+description: Meta Bind 嵌入教程。
 ---
 
-Meta Bind Embeds are a way to embed a note inside another note, which works a bit differently than the normal Obsidian embeds.
+Meta Bind 嵌入是一种在另一个笔记中嵌入笔记的方法，其工作方式与普通的 Obsidian 嵌入略有不同。
 
-Together with Meta Binds other features, they allow you to build dynamic templates.
-The major disadvantage with a traditional template based approach is that modifications to the templates don't automatically apply to all notes created using that template.
-Meta Bind Embeds on the other hand propagate changes to the "template" to all notes embedding it instantly, since the "template" file is read every time the note renders and not just once when the note is created.
+与 Meta Bind 的其他功能结合使用，它们允许您构建动态模板。
+传统基于模板的方法的主要缺点是对模板的修改不会自动应用到使用该模板创建的所有笔记中。
+另一方面，Meta Bind 嵌入会将对"模板"的更改立即传播到所有嵌入它的笔记中，因为"模板"文件在每次笔记渲染时都会被读取，而不是仅在创建笔记时读取一次。
 
-## Differences to Obsidian Embeds
+## 与 Obsidian 嵌入的区别
 
-Let's say you have a note called `Note A` that you want to embed in `Note B`.
+假设您有一个名为`Note A`的笔记，您想将其嵌入到`Note B`中。
 
-Using the normal Obsidian embeds, you would write `![[Note A]]` in `Note B`.
-This embeds the note, but it's not seamless.
-The content of `Note A` still thinks it's part of `Note A` and not `NoteB`.
-This means any widgets like [Input Fields](/obsidian-meta-bind-plugin-docs/guides/inputfields) in the embed will bind to and change the frontmatter of `Note A` instead of `Note B`.
+使用普通的 Obsidian 嵌入，您会在`Note B`中写`![[Note A]]`。
+这会嵌入笔记，但它不是无缝的。
+`Note A`的内容仍然认为它是`Note A`的一部分，而不是`NoteB`的一部分。
+这意味着嵌入中的任何小组件，如[输入字段](/obsidian-meta-bind-plugin-docs/guides/inputfields)，将绑定到并更改`Note A`的前置元数据，而不是`Note B`的。
 
-This is where Meta Bind Embeds come in.
-They seamlessly embed `Note A` and make it think it is a part of `Note B`.
-Meaning any [Input Fields](/obsidian-meta-bind-plugin-docs/guides/inputfields) in the embed will bind to `Note B` and not `Note A`.
-And this even extends to markdown decorations added by other plugins.
+这就是 Meta Bind 嵌入的用武之地。
+它们无缝地嵌入`Note A`并使其认为它是`Note B`的一部分。
+意味着嵌入中的任何[输入字段](/obsidian-meta-bind-plugin-docs/guides/inputfields)将绑定到`Note B`而不是`Note A`。
+这甚至延伸到其他插件添加的 markdown 装饰。
 
-## Syntax
+## 语法
 
-Meta Bind Embeds are created using a code block with the language `meta-bind-embed`.
-The content of the code block is a single link to the note you want to embed.
+Meta Bind 嵌入使用语言为`meta-bind-embed`的代码块创建。
+代码块的内容是指向您要嵌入的笔记的单个链接。
 
-The following example embeds `Note A` in `Note B`.
+以下示例在`Note B`中嵌入`Note A`。
 
 ````md
-This is Note B.
+这是 Note B。
 
 ```meta-bind-embed
 [[Note A]]

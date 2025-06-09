@@ -1,37 +1,37 @@
 ---
-title: Bind Targets
-description: A tutorial for Meta Bind's Bind Targets.
+title: 绑定目标
+description: Meta Bind 绑定目标教程。
 ---
 
-Bind Targets are a core concept of Meta Bind.
-They are a text based way to point the plugin at a specific frontmatter property.
-This tutorial will teach you how to use them.
+绑定目标是 Meta Bind 的核心概念。
+它们是基于文本的方式，用于将插件指向特定的前置元数据属性。
+本教程将教您如何使用它们。
 
-:::caution[Limitations]
-Bind targets are **static**, meaning that they can not be changed after they have been created.
+:::caution[限制]
+绑定目标是**静态的**，意味着它们在创建后无法更改。
 
-This means that you can **not** have a property that controls where a bind target points to, without using JavaScript. See [Advanced Examples](/obsidian-meta-bind-plugin-docs/guides/advancedusecases/).
+这意味着您**不能**拥有一个控制绑定目标指向何处的属性，除非使用 JavaScript。请参阅[高级示例](/obsidian-meta-bind-plugin-docs/guides/advancedusecases/)。
 :::
 
-## Syntax
+## 语法
 
-Bind Targets consist of three parts.
+绑定目标由三个部分组成。
 
 ```meta-bind
 storageType^storagePath#property
 ```
 
-The `storageType` and `storagePath` can be omitted, causing them to default to their default values.
+`storageType`和`storagePath`可以省略，导致它们默认为其默认值。
 
-The following bind target will always use the default storage type `frontmatter`,
-meaning it points to a frontmatter property.
+以下绑定目标将始终使用默认存储类型`frontmatter`，
+意味着它指向前置元数据属性。
 
 ```meta-bind
 storagePath#property
 ```
 
-The following bind targets will always use the containing file as the storage path.
-Containing file means the file the bind target or field, that the bind target is part of, is in.
+以下绑定目标将始终使用包含文件作为存储路径。
+包含文件意味着绑定目标或字段所在的文件，即绑定目标是其一部分的文件。
 
 ```meta-bind
 property
@@ -39,9 +39,9 @@ property
 storageType^property
 ```
 
-### Default Values Example
+### 默认值示例
 
-This means that the following bind targets are **equivalent**, assuming the current file is `Test Note`.
+这意味着以下绑定目标是**等效的**，假设当前文件是`Test Note`。
 
 ```meta-bind
 property
@@ -49,82 +49,82 @@ property
 frontmatter^Test Note#property
 ```
 
-### 1. The Storage Type
+### 1. 存储类型
 
-The storage type tells the plugin where the storage path is pointing to.
-There are four different storage types.
-The default is `frontmatter` and will be used if you don't specify a storage type.
+存储类型告诉插件存储路径指向哪里。
+有四种不同的存储类型。
+默认值是`frontmatter`，如果您不指定存储类型，将使用它。
 
-| Storage Type            | Description                                                                    |
-| ----------------------- | ------------------------------------------------------------------------------ |
-| `frontmatter` (default) | The storage path points to a file and the property to a frontmatter field.     |
-| `memory`                | The storage path points to a file and the property to an in-memory field.      |
-| `globalMemory`          | The storage path is not allowed and the property points to an in-memory field. |
-| `scope`                 | The storage path is not allowed and the property extends another bind target.  |
+| 存储类型                | 描述                                                      |
+| ----------------------- | --------------------------------------------------------- |
+| `frontmatter`（默认）   | 存储路径指向文件，属性指向前置元数据字段。                 |
+| `memory`                | 存储路径指向文件，属性指向内存字段。                       |
+| `globalMemory`          | 不允许存储路径，属性指向内存字段。                         |
+| `scope`                 | 不允许存储路径，属性扩展另一个绑定目标。                   |
 
 #### `frontmatter`
 
-This refers the Obsidian's frontmatter which is a YAML block at the top of a file.
+这指的是 Obsidian 的前置元数据，它是文件顶部的 YAML 块。
 
 #### `memory`
 
-Memory is an in-memory storage that is **scoped** but not saved to any file.
-This means that values you write to a file path in the cache **will be lost** when nothing uses said file path for a while, or you restart Obsidian.
+内存是一个**作用域**的内存存储，但不保存到任何文件。
+这意味着您写入缓存中文件路径的值将在没有任何内容使用该文件路径一段时间后**丢失**，或者您重启 Obsidian 时丢失。
 
 #### `globalMemory`
 
-Global Memory is an in-memory storage that is **not scoped** and not saved to any file.
-Global Memory is shared between all notes and **will be lost** when you restart Obsidian.
+全局内存是一个**非作用域**的内存存储，不保存到任何文件。
+全局内存在所有笔记之间共享，并且在您重启 Obsidian 时**将丢失**。
 
-### 2. The Storage Path
+### 2. 存储路径
 
-The storage path usually points to a file.
-If omitted, it defaults to the containing file.
-Containing file means the file the bind target or field, that the bind target is part of, is in.
+存储路径通常指向文件。
+如果省略，默认为包含文件。
+包含文件意味着绑定目标或字段所在的文件，即绑定目标是其一部分的文件。
 
-#### Example
+#### 示例
 
-Let's imagine we are in a note called `Overview` and we want our toggle not to change this note's completion status, but the status of our task note called `Task A`.
-This is also possible. We just need to tell the plugin to change `completed` in note `Task A`. We do this by binding to `Task A#completed` (`file_name#frontmatter_field`).
+让我们想象一下，我们在一个名为`Overview`的笔记中，我们希望我们的切换开关不改变这个笔记的完成状态，而是改变我们名为`Task A`的任务笔记的状态。
+这也是可能的。我们只需要告诉插件在笔记`Task A`中更改`completed`。我们通过绑定到`Task A#completed`（`file_name#frontmatter_field`）来做到这一点。
 
-The input field declaration now looks like this.
+输入字段声明现在看起来像这样。
 
 ```meta-bind "Task A#completed"
 INPUT[toggle:Task A#completed]
 ```
 
-If you have multiple notes with the same name, simply specifying the name will not be enough, as the plugin can't figure out which one you are referring to.
-In that case you need to specify the full path relative to the vault root.
+如果您有多个同名的笔记，仅指定名称是不够的，因为插件无法确定您指的是哪一个。
+在这种情况下，您需要指定相对于库根目录的完整路径。
 
 ```meta-bind "path/to/Task A#completed"
 INPUT[toggle:path/to/Task A#completed]
 ```
 
-### 3. The Property
+### 3. 属性
 
-The property is the name of the field you want to bind to.
-For the default storage type `frontmatter`, this is the name of the frontmatter property.
+属性是您要绑定到的字段的名称。
+对于默认存储类型`frontmatter`，这是前置元数据属性的名称。
 
-#### Properties with Spaces and Nested Properties
+#### 带空格的属性和嵌套属性
 
-The plugin uses JavaScript-like syntax to access the frontmatter.
-This means that in order to bind to a frontmatter field with special characters such as spaces,
-you need to use JavaScript's bracket syntax.
+插件使用类似 JavaScript 的语法来访问前置元数据。
+这意味着为了绑定到带有特殊字符（如空格）的前置元数据字段，
+您需要使用 JavaScript 的方括号语法。
 
-This will **not** work.
+这将**不**起作用。
 
 ```meta-bind "is completed"
 INPUT[toggle:is completed]
 ```
 
-But this will.
+但这将起作用。
 
 ```meta-bind '["is completed"]'
 INPUT[toggle:["is completed"]]
 ```
 
-To access nested frontmatter fields, you can use a simple `.` or bracket syntax.
-The following two examples are **equivalent**.
+要访问嵌套的前置元数据字段，您可以使用简单的`.`或方括号语法。
+以下两个示例是**等效的**。
 
 ```meta-bind "this.is.nested"
 INPUT[toggle:this.is.nested]

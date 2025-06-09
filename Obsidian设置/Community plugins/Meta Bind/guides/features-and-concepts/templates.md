@@ -1,35 +1,35 @@
 ---
-title: Input Field Templates
-description: A tutorial for Meta Bind Input Field Templates.
+title: 输入字段模板
+description: Meta Bind 输入字段模板教程。
 ---
 
-Templates allow you to reuse input fields across your vault.
-You can specify them in the plugins settings.
+模板允许您在整个库中重用输入字段。
+您可以在插件设置中指定它们。
 
-## Using Templates
+## 使用模板
 
-First, we need to create a template in the plugin settings.
-Let's create a template for a slider as follows.
+首先，我们需要在插件设置中创建一个模板。
+让我们创建一个滑块模板，如下所示。
 
-| Template Name    | Template String                                       |
-| ---------------- | ----------------------------------------------------- |
-| `sliderTemplate` | `INPUT[slider(addLabels, minValue(0), maxValue(10))]` |
+| 模板名称         | 模板字符串                                                |
+| ---------------- | --------------------------------------------------------- |
+| `sliderTemplate` | `INPUT[slider(addLabels, minValue(0), maxValue(10))]`    |
 
-Notice that the template is **not** bound to any metadata.
+注意模板**没有**绑定到任何元数据。
 
-To use the template, we open a note and write the following.
+要使用模板，我们打开一个笔记并编写以下内容。
 
 ```meta-bind
 INPUT[templateName][overrides]
 ```
 
-Here, `overrides` may consist of an input field type, arguments and a bind target.
-It can also be empty if you don't want to override anything from the template.
+这里，`overrides`可能包含输入字段类型、参数和绑定目标。
+如果您不想覆盖模板中的任何内容，它也可以为空。
 
-For example, if we want to use the `sliderTemplate` for some `rating` we have in frontmatter, we would write:
+例如，如果我们想为前置元数据中的某个`rating`使用`sliderTemplate`，我们会写：
 
 ```meta-bind
 INPUT[sliderTemplate][:rating]
 ```
 
-We have set `templateName` to `sliderTemplate` (telling meta-bind to use the template we created earlier), and in the `overrides` we bind the input field to the frontmatter property `rating`.
+我们将`templateName`设置为`sliderTemplate`（告诉 meta-bind 使用我们之前创建的模板），在`overrides`中我们将输入字段绑定到前置元数据属性`rating`。

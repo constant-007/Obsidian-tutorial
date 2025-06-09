@@ -1,17 +1,17 @@
 ---
-title: Input Fields
-description: A tutorial for Meta Bind Input Fields.
+title: 输入字段
+description: Meta Bind 输入字段教程。
 ---
 
-Input fields allow you to create input fields for your notes metadata and interact with them in live preview and reading mode.
-A bit like Obsidians properties UI, but not just at the top of your note.
+输入字段允许您为笔记的元数据创建输入字段，并在实时预览和阅读模式下与它们交互。
+有点像 Obsidian 的属性 UI，但不仅仅在笔记的顶部。
 
-### Creating Input Fields
+### 创建输入字段
 
-There are two ways of creating an input field in your note.
+在笔记中创建输入字段有两种方式。
 
-The first is using an **inline** code block, like this `INPUT[inputType]`.
-The second one is using a **code block** with meta-bind as the language, something like this.
+第一种是使用**内联**代码块，如 `INPUT[inputType]`。
+第二种是使用以 meta-bind 为语言的**代码块**，类似这样：
 
 ````custom_markdown
 ```meta-bind
@@ -19,55 +19,55 @@ INPUT[inputType]
 ```
 ````
 
-Where `inputType` is a valid input field type, like `toggle`.
+其中 `inputType` 是有效的输入字段类型，如 `toggle`。
 
-## Binding to Metadata
+## 绑定到元数据
 
 :::tip
-You can find an in depth guide on bind targets and what is possible [here](/obsidian-meta-bind-plugin-docs/guides/bindtargets).
+您可以在[这里](/obsidian-meta-bind-plugin-docs/guides/bindtargets)找到关于绑定目标和可能用法的深入指南。
 :::
 
-Input fields can and should be bound to metadata fields, so properties in your frontmatter.
-This is achieved by adding the bind target behind the input type, separated by a colon.
+输入字段可以且应该绑定到元数据字段，即前置元数据中的属性。
+这通过在输入类型后面添加绑定目标来实现，用冒号分隔。
 
-In this example we will build a toggle that toggles the notes completion status by switching the `completed` front-mater field between `true` and `false`.
+在这个例子中，我们将构建一个切换开关，通过在 `true` 和 `false` 之间切换 `completed` 前置元数据字段来切换笔记的完成状态。
 
-First, we create a toggle.
+首先，我们创建一个切换开关。
 
 ```meta-bind
 INPUT[toggle]
 ```
 
-Then we tell it to bind to the `completed` frontmatter field using a [Bind Target](/obsidian-meta-bind-plugin-docs/guides/bindtargets).
+然后我们告诉它使用[绑定目标](/obsidian-meta-bind-plugin-docs/guides/bindtargets)绑定到 `completed` 前置元数据字段。
 
 ```meta-bind ":completed"
 INPUT[toggle:completed]
 ```
 
-And our input field is working. The toggle will change the frontmatter and when the frontmatter changes, the toggle changes.
+我们的输入字段就开始工作了。切换开关会改变前置元数据，当前置元数据改变时，切换开关也会改变。
 
-Of course you can utilize the full functionality of [Bind Targets](/obsidian-meta-bind-plugin-docs/guides/bindtargets) with input field. E.g. the following is possible.
+当然，您可以在输入字段中利用[绑定目标](/obsidian-meta-bind-plugin-docs/guides/bindtargets)的全部功能。例如，以下是可能的：
 
 ```meta-bind ":memory^completed"
 INPUT[toggle:memory^completed]
 ```
 
 :::note
-Specifying a bind target is optional, but recommended.
+指定绑定目标是可选的，但建议这样做。
 
-If you don't specify a bind target, the input field will not preserve its state when you reopen the note or restart Obsidian, since the input field has nowhere to store its data.
+如果您不指定绑定目标，输入字段在您重新打开笔记或重启 Obsidian 时将不会保持其状态，因为输入字段没有地方存储其数据。
 :::
 
-An input field will only write to it's bound value when it's interacted with.
-This means for example, that an input field does not automatically, on load, create it's bound property when that property does not yet exist.
+输入字段只有在与其交互时才会写入其绑定值。
+这意味着例如，输入字段不会在加载时自动创建其绑定属性（当该属性尚不存在时）。
 
-## Arguments
+## 参数
 
-Some input types support arguments to further customize them.
-Arguments are specified in parentheses behind the input type.
+某些输入类型支持参数来进一步自定义它们。
+参数在输入类型后面的括号中指定。
 
-Let's say we want to create a dropdown select where you can choose between different ratings. For this we will use the `inlineSelect` input field.
-To add options to the dropdown select we will use the `option(name)` argument.
+假设我们想创建一个下拉选择框，您可以在其中选择不同的评分。为此我们将使用 `inlineSelect` 输入字段。
+要向下拉选择框添加选项，我们将使用 `option(name)` 参数。
 
 ```meta-bind
 INPUT[inlineSelect(
@@ -79,9 +79,9 @@ INPUT[inlineSelect(
 ):rating]
 ```
 
-Now we can see four options in the dropdown.
+现在我们可以在下拉框中看到四个选项。
 
-If we want numeric values to represent the rating in our frontmatter, we can pass two values to `option(value, name)`.`value` will be the value written to the frontmatter and `name` will be the value displayed in the dropdown select.
+如果我们希望在前置元数据中用数值来表示评分，我们可以向 `option(value, name)` 传递两个值。`value` 将是写入前置元数据的值，`name` 将是在下拉选择框中显示的值。
 
 ```meta-bind
 INPUT[inlineSelect(
@@ -93,7 +93,7 @@ INPUT[inlineSelect(
 ):rating]
 ```
 
-We can also include commas in our value names by surrounding them with single quotes. Note that only single quotes are supported, double quotes will not work.
+我们也可以通过用单引号包围来在值名称中包含逗号。注意只支持单引号，双引号不起作用。
 
 ```meta-bind
 INPUT[inlineSelect(
@@ -102,7 +102,7 @@ INPUT[inlineSelect(
 ):rating]
 ```
 
-Such strings also support escaping using a backslash. To have a single backslash in the name you can use a double backslash `\\`.
+这样的字符串也支持使用反斜杠转义。要在名称中包含单个反斜杠，您可以使用双反斜杠 `\\`。
 
 ```meta-bind
 INPUT[inlineSelect(

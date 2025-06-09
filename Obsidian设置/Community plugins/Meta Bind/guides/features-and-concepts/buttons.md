@@ -1,25 +1,25 @@
 ---
-title: Buttons
-description: A tutorial for buttons, a spiritual successor the the buttons plugin.
+title: 按钮
+description: 按钮教程，buttons 插件的精神继承者。
 ---
 
-Button are well... Buttons, inside your notes.
-They can be configured to do a variety of things, like opening a file, running a command, or even running a JavaScript file.
+按钮就是...按钮，在您的笔记内。
+它们可以配置为执行各种操作，如打开文件、运行命令，甚至运行 JavaScript 文件。
 
 :::note
-A list of button actions, their required properties, and examples can be found in the sidebar under `Reference -> Button Actions`.
+按钮动作的列表、其必需属性和示例可以在侧边栏的`参考 -> 按钮动作`下找到。
 :::
 
-## Creating a button
+## 创建按钮
 
 :::tip
-Buttons can be easily created using the `Open Button Builder` command.
+可以使用`Open Button Builder`命令轻松创建按钮。
 :::
 
-To create a button, you need to create a code block with the language set to `meta-bind-button`.
-The inside of the code block belongs the configuration in YAML format for the button.
+要创建按钮，您需要创建一个语言设置为`meta-bind-button`的代码块。
+代码块内部属于按钮的 YAML 格式配置。
 
-The following example button displays `Meta Bind Help` and opens the meta bind FAQ page.
+以下示例按钮显示`Meta Bind Help`并打开 meta bind FAQ 页面。
 
 ````custom_markdown
 ```meta-bind-button
@@ -31,20 +31,20 @@ action:
 ```
 ````
 
-## Inline Buttons
+## 内联按钮
 
-Inline buttons are buttons that are displayed inline with the text.
-They are created using inline code blocks starting with `BUTTON`.
-Inline buttons must reference a button code block defined elsewhere in the **same note** via matching ids.
+内联按钮是与文本内联显示的按钮。
+它们使用以`BUTTON`开头的内联代码块创建。
+内联按钮必须通过匹配的 id 引用在**同一笔记**中其他地方定义的按钮代码块。
 
-Buttons declared in the plugin's settings under `Button Templates` can be referenced by inline buttons in every note.
+在插件设置的`Button Templates`下声明的按钮可以被每个笔记中的内联按钮引用。
 
-The following example button inline button references the code block button with the `help-button` id below it.
-By referencing the button code block, the inline button will have the same configuration as the code block button.
-The code block button can be hidden by setting the `hidden` YAML property to `true`.
+以下示例内联按钮引用下面带有`help-button` id 的代码块按钮。
+通过引用按钮代码块，内联按钮将具有与代码块按钮相同的配置。
+可以通过将`hidden` YAML 属性设置为`true`来隐藏代码块按钮。
 
 ````custom_markdown "BUTTON[help-button]" {6}
-Meta Bind has an in plugin help page. `BUTTON[help-button]` Isn't that cool?
+Meta Bind 有一个插件内帮助页面。`BUTTON[help-button]` 这不是很酷吗？
 
 ```meta-bind-button
 style: primary
@@ -56,15 +56,15 @@ action:
 ```
 ````
 
-## Button Groups
+## 按钮组
 
-Inline buttons can display multiple buttons in a row.
-For this, multiple button ids separated by commas need to be passed to the `BUTTON` inline code block.
+内联按钮可以在一行中显示多个按钮。
+为此，需要将用逗号分隔的多个按钮 id 传递给`BUTTON`内联代码块。
 
-The following example displays a button group of two buttons.
+以下示例显示了两个按钮的按钮组。
 
 ````custom_markdown "BUTTON[light-mode, dark-mode]" {6-7, 16-17}
-Theme Switcher: `BUTTON[light-mode, dark-mode]`
+主题切换器：`BUTTON[light-mode, dark-mode]`
 
 ```meta-bind-button
 style: destructive
@@ -87,50 +87,50 @@ actions:
 ```
 ````
 
-## Button Configuration
+## 按钮配置
 
-### Button Properties
+### 按钮属性
 
-The YAML configuration of a button must adhere to the following TypeScript interface.
+按钮的 YAML 配置必须遵循以下 TypeScript 接口。
 
 ```ts
 interface ButtonConfig {
-	// Required fields:
-	// The text displayed on the button.
+	// 必需字段：
+	// 按钮上显示的文本。
 	label: string;
-	// The style of the button.
+	// 按钮的样式。
 	style: 'default' | 'primary' | 'destructive' | 'plain';
 
-	// Optional fields:
-	// An optional lucide icon to display on the button.
+	// 可选字段：
+	// 在按钮上显示的可选 lucide 图标。
 	icon?: string;
-	// Optional CSS classes to add to the button. Multiple classes can be separated by spaces.
+	// 要添加到按钮的可选 CSS 类。多个类可以用空格分隔。
 	class?: string;
-	// Optional CSS inline stiles to apply to the button.
+	// 应用于按钮的可选 CSS 内联样式。
 	cssStyle?: string;
-	// Optional path to a background image for the button.
+	// 按钮背景图像的可选路径。
 	backgroundImage?: string;
-	// Optional tooltip to display when hovering over the button. If not set, the label is used.
+	// 悬停在按钮上时显示的可选工具提示。如果未设置，则使用标签。
 	tooltip?: string;
-	// The optional id of the button, used for referencing the button in inline buttons.
+	// 按钮的可选 id，用于在内联按钮中引用按钮。
 	id?: string;
-	// Whether this button should be hidden, useful when only using the button in inline buttons.
+	// 是否应隐藏此按钮，在仅在内联按钮中使用按钮时很有用。
 	hidden?: boolean;
 
-	// Button Actions:
-	// The action to perform when the button is clicked.
+	// 按钮动作：
+	// 单击按钮时要执行的动作。
 	action?: ButtonAction;
-	// Optionally multiple actions can be performed when the button is clicked.
+	// 可选择地，可以在单击按钮时执行多个动作。
 	actions?: ButtonAction[];
 }
 ```
 
-`action` and `actions` are mutually exclusive, meaning that only one of them can be used.
+`action`和`actions`是互斥的，意味着只能使用其中一个。
 
-For examples of how to style buttons with CSS classes, see the [`Styling and CSS`](/obsidian-meta-bind-plugin-docs/guides/stylingandcss/#button-styling-example) page.
+有关如何使用 CSS 类设置按钮样式的示例，请参阅[`样式和 CSS`](/obsidian-meta-bind-plugin-docs/guides/stylingandcss/#button-styling-example)页面。
 
-## Button Actions
+## 按钮动作
 
-Button actions can require multiple properties depending on the type of action, but every action has a `type` property, by which it is identified.
+按钮动作可能需要多个属性，具体取决于动作类型，但每个动作都有一个`type`属性，通过它来识别。
 
-A list of button actions and their required properties can be found in the sidebar under `Reference -> Button Actions`.
+按钮动作及其必需属性的列表可以在侧边栏的`参考 -> 按钮动作`下找到。

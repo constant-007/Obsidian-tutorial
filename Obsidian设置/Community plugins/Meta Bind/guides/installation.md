@@ -1,31 +1,31 @@
 ---
-title: Installation
-description: How to install Meta Bind.
+title: 安装指南
+description: 如何安装 Meta Bind 插件。
 ---
 
-The easiest way to install the plugin is through Obsidian's plugin browser.
+安装插件最简单的方法是通过 Obsidian 的插件浏览器。
 
-[Here is a quick link to it.](https://obsidian.md/plugins?search=meta%20bind)
+[这里是快速链接。](https://obsidian.md/plugins?search=meta%20bind)
 
-## Canary Builds
+## 金丝雀版本（Canary Builds）
 
 :::caution
-Canary builds are not intended for the normal user. They are intended for testing and previewing new features.
+金丝雀版本不是为普通用户准备的。它们用于测试和预览新功能。
 
-If you are not sure if you should use canary builds, you probably shouldn't.
+如果您不确定是否应该使用金丝雀版本，那么您可能不应该使用。
 :::
 
-Canary builds are builds containing under development features. They are not guaranteed to be stable.
-Canary build might contain new features that are **not yet ready** and therefore might not work as expected or break.
-These feature previews may introduce **breaking changes without warning**.
-There is no changelog for canary builds.
+金丝雀版本是包含开发中功能的构建版本。它们不保证稳定。
+金丝雀版本可能包含**尚未准备好**的新功能，因此可能无法按预期工作或出现故障。
+这些功能预览可能会**毫无警告地引入破坏性更改**。
+金丝雀版本没有更新日志。
 
-If you don't know if you are using a canary build, you can look at the version number in the Obsidian settings.
-Canary builds have a version number ending in `-canary` plus a timestamp, e.g. `0.9.0-canary.20231129T131457`.
+如果您不知道自己是否在使用金丝雀版本，可以在 Obsidian 设置中查看版本号。
+金丝雀版本的版本号以 `-canary` 加时间戳结尾，例如 `0.9.0-canary.20231129T131457`。
 
-Canary builds can be installed using BRAT by following the steps outlined below.
+可以按照以下步骤使用 BRAT 安装金丝雀版本。
 
-1. Install and enable the BRAT plugin
-2. Run the BRAT: Plugins: Add a beta plugin for testing command
-3. Enter https://github.com/mProjectsCode/obsidian-meta-bind-plugin into the text field
-4. Click on Add Plugin
+1. 安装并启用 BRAT 插件
+2. 运行 BRAT: Plugins: Add a beta plugin for testing 命令
+3. 在文本字段中输入 https://github.com/mProjectsCode/obsidian-meta-bind-plugin
+4. 点击 Add Plugin

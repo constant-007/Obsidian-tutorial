@@ -1,22 +1,22 @@
 ---
-title: Examples
-description: Where can examples be found?
+title: 示例教程
+description: 在哪里可以找到示例？
 ---
 
-There are two places where you can look for examples.
+有两个地方可以查找示例。
 
-## Playground
+## 演示场（Playground）
 
-The first place to look for examples is the playground that is build into the plugin.
-It can be opened from the plugins settings, or with the `Meta Bind: Open playground` command.
-There you will find an interactive list of all input and view fields to play around with.
+查找示例的第一个地方是插件内置的演示场。
+可以从插件设置中打开，或者使用 `Meta Bind: Open playground` 命令。
+在那里您会找到所有输入和视图字段的交互式列表，可以进行试验。
 
-## Example Vault
+## 示例库
 
-The [GitHub repository](https://github.com/mProjectsCode/obsidian-meta-bind-plugin) of the plugin contains an example vault.
-The example vault is used for testing and is always up-to-date with the **latest development version** of the plugin,
-but you will need to install the plugin yourself or build it via the `bun run dev` command, run from the root of the repo.
-This means that **not everything in the example vault necessarily works in the current release version of the plugin**.
-If you want to view the example vault for a specific release, you can find it by looking at the release on GitHub.
-There you will find a link that takes you to the corresponding tag for that release.
-From there you can download the example vault for that release.
+插件的 [GitHub 仓库](https://github.com/mProjectsCode/obsidian-meta-bind-plugin) 包含一个示例库。
+示例库用于测试，始终与插件的**最新开发版本**保持同步，
+但您需要自己安装插件或通过在仓库根目录运行 `bun run dev` 命令来构建它。
+这意味着**示例库中的所有内容不一定都在插件的当前发布版本中工作**。
+如果您想查看特定发布版本的示例库，可以在 GitHub 上查找该发布版本。
+在那里您会找到一个链接，该链接会带您到该发布版本对应的标签。
+从那里您可以下载该发布版本的示例库。
