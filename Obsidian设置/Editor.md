@@ -1,8 +1,8 @@
 >[!SUMMARY] 目录
->    - [[Editor#顶部|顶部]]
->    - [[Editor#Display|Display]]
->    - [[Editor#Behavior|Behavior]]
->    - [[Editor#Advanced|Advanced]]
+>    - [[Obsidian设置/Editor#顶部|顶部]]
+>    - [[Obsidian设置/Editor#Display|Display]]
+>    - [[Obsidian设置/Editor#Behavior|Behavior]]
+>    - [[Obsidian设置/Editor#Advanced|Advanced]]
 ## 顶部
 ![](Pasted%20image%2020250505223758.png)
 

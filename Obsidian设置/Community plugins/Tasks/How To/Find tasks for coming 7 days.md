@@ -84,4 +84,4 @@ publish: true
 相关文档章节：
 
 - 一些示例写在[[Filters#Searching for dates|过滤器文档的日期部分]]。
-- 也许更有用的是[[Examples|查询示例页面]]中基于日期的示例。
+- 也许更有用的是[[示例/Meta Bind演示/Examples|查询示例页面]]中基于日期的示例。

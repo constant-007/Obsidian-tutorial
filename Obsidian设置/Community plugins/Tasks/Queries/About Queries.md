@@ -51,7 +51,7 @@ aliases:
   - 让Tasks显示您的查询是如何解释的，以便您可以检查您的指令。
 - [[Comments|注释]]
   - 为您未来的自己写笔记，解释您的查询。
-- [[Examples|示例]]
+- [[Obsidian设置/Community plugins/Tasks/Queries/Examples|示例]]
   - 一些更常用的搜索指令的选择。
 
 ### 搜索任务 - 重用指令

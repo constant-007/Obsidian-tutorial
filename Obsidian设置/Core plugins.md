@@ -234,7 +234,7 @@ Notion也有类似的页面版本历史功能，但如果不是会员，好像�
 
 将来自其他应用的 Markdown 转换为 Obsidian 格式。这个插件主要用于帮助你导入和清理从其他笔记软件（如 Roam Research, Bear, Zettelkasten 系统等）迁移过来的 Markdown 文件。它会尝试修复一些不兼容的 Markdown 语法或将其转换为 Obsidian 更偏好的格式，例如处理特定的链接格式或标签格式
 
-这个稍微和[[Editor#1. Convert pasted HTML to Markdown|convert pasted HTML to markdown]]有些重复，具体区别可参考对这一项的详细解释：
+这个稍微和[[Obsidian设置/Editor#1. Convert pasted HTML to Markdown|convert pasted HTML to markdown]]有些重复，具体区别可参考对这一项的详细解释：
 
 
 > [!info]- Format converter详细解释
@@ -360,7 +360,7 @@ Notion也有类似的页面版本历史功能，但如果不是会员，好像�
 ![[Pasted image 20250510134331.png]]
 ## 14. Properties view
 
-属性视图。这个插件提供了一个专门的界面（通常在右侧边栏）来集中查看和编辑当前笔记的“属性”（[[Editor#Properties in document|Properties]]）。笔记属性就是笔记的元数据，通常以 YAML frontmatter 的形式写在笔记的最顶部（由 `---` 包裹），或者通过 Obsidian 的属性编辑界面添加。这些属性可以是标签、别名、创建日期、作者，或者任何你自定义的键值对信息（例如 `status: ongoing`，`priority: high`）。属性视图使得管理这些结构化数据更加方便直观
+属性视图。这个插件提供了一个专门的界面（通常在右侧边栏）来集中查看和编辑当前笔记的“属性”（[[Obsidian设置/Editor#Properties in document|Properties]]）。笔记属性就是笔记的元数据，通常以 YAML frontmatter 的形式写在笔记的最顶部（由 `---` 包裹），或者通过 Obsidian 的属性编辑界面添加。这些属性可以是标签、别名、创建日期、作者，或者任何你自定义的键值对信息（例如 `status: ongoing`，`priority: high`）。属性视图使得管理这些结构化数据更加方便直观
 
 可以通过Ctrl + p[[Hotkeys|快捷键]]调出命令面板[[Core plugins#4. Command palette|Command palette]]，然后输入Properties view来调出这个插件支持的操作
 
