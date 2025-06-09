@@ -3,23 +3,23 @@ title: Insert Into Note
 description: Insert Into Note button action reference.
 ---
 
-This action inserts plain text or a Templater template at a specified line number into the note of the button.
+此动作在按钮所在笔记的指定行号处插入纯文本或Templater模板。
 
 ```ts
 interface InsertIntoNoteButtonAction {
 	type: 'insertIntoNote';
-	line: number; // the line number to insert the text at
-	value: string; // the text to insert or the path to the Templater template
-	templater?: boolean; // if true, the value is a path to a Templater template
+	line: number; // 插入文本的行号
+	value: string; // 要插入的文本或Templater模板的路径
+	templater?: boolean; // 如果为true，值是Templater模板的路径
 }
 ```
 
-If `templater` is `true`, the `value` field is treated as a path to a Templater template.
-If `templater` is `false` or not specified, the `value` field is treated as plain text.
+如果 `templater` 为 `true`，`value` 字段被视为Templater模板的路径。
+如果 `templater` 为 `false` 或未指定，`value` 字段被视为纯文本。
 
-### Example
+### 示例
 
-This button inserts the text "Hello, world!" at line 3 of the note.
+此按钮在笔记的第3行插入文本 "Hello, world!"。
 
 ````custom_markdown {5-8}
 ```meta-bind-button

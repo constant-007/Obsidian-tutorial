@@ -5,17 +5,19 @@ prev: false
 title: "ButtonStyleType"
 ---
 
-Defined in: [packages/core/src/config/ButtonConfig.ts:3](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/config/ButtonConfig.ts#L3)
+定义位置: [packages/core/src/config/ButtonConfig.ts:3](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/config/ButtonConfig.ts#L3)
 
-## Enumeration Members
+按钮样式类型枚举，定义了可用的按钮外观样式。
+
+## 枚举成员
 
 <table>
 <thead>
 <tr>
-<th>Enumeration Member</th>
-<th>Value</th>
-<th>Description</th>
-<th>Defined in</th>
+<th>枚举成员</th>
+<th>值</th>
+<th>描述</th>
+<th>定义位置</th>
 </tr>
 </thead>
 <tbody>
@@ -32,7 +34,7 @@ Defined in: [packages/core/src/config/ButtonConfig.ts:3](https://github.com/mPro
 </td>
 <td>
 
-Default grey button
+默认灰色按钮
 
 </td>
 <td>
@@ -54,7 +56,7 @@ Default grey button
 </td>
 <td>
 
-Red button for destructive actions
+红色按钮，用于危险操作
 
 </td>
 <td>
@@ -76,7 +78,7 @@ Red button for destructive actions
 </td>
 <td>
 
-Plain button with no background
+无背景的纯文本按钮
 
 </td>
 <td>
@@ -98,7 +100,7 @@ Plain button with no background
 </td>
 <td>
 
-Primary button in the accent color
+主要按钮，使用强调色
 
 </td>
 <td>

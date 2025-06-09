@@ -152,10 +152,45 @@
 | **输入字段参数** | ✅ 完成 | 100% |
 | **视图字段参考** | ✅ 完成 | 100% |
 | **视图字段参数** | ✅ 完成 | 100% |
-| **按钮动作参考** | 🔄 部分 | 15% |
-| **API枚举** | 🔄 部分 | 20% |
-| **API类** | 🔄 部分 | 20% |
-| **API接口** | 🔄 部分 | 2% |
+| **按钮动作参考** | 🔄 进行中 | 55% |
+| **API枚举** | 🔄 进行中 | 60% |
+| **API类** | 🔄 进行中 | 40% |
+| **API接口** | 🔄 进行中 | 5% |
+
+### 📈 最新翻译进展 (第二轮)
+
+#### ✅ 新完成的按钮动作 (+3个，共9个)
+- [replaceInNote](reference/buttonActions/replaceInNote.md) - 替换笔记中的指定行范围
+- [runJavaScript](reference/buttonActions/runJavaScript.md) - 运行JavaScript文件
+- [sleep](reference/buttonActions/sleep.md) - 延时等待
+- [replaceSelf](reference/buttonActions/replaceSelf.md) - 替换按钮本身
+
+#### ✅ 新完成的API枚举 (+2个，共6个)
+- [ButtonStyleType](api/enumerations/ButtonStyleType.md) - 按钮样式类型 (默认、主要、危险、纯文本)
+- [FieldType](api/enumerations/FieldType.md) - 字段类型 (输入、视图、按钮、嵌入等)
+
+#### ✅ 新完成的API接口 (+1个，共2个)
+- [InputFieldDeclaration](api/interfaces/InputFieldDeclaration.md) - 输入字段声明接口
+
+### 📋 已完成的按钮动作列表 (9/17个)
+1. **command** - 执行Obsidian命令
+2. **createNote** - 创建新笔记
+3. **inlineJS** - 运行内联JavaScript代码
+4. **updateMetadata** - 更新元数据
+5. **open** - 打开文件或链接
+6. **insertIntoNote** - 插入内容到笔记
+7. **replaceInNote** - 替换笔记中的指定行范围
+8. **runJavaScript** - 运行JavaScript文件
+9. **sleep** - 延时等待
+10. **replaceSelf** - 替换按钮本身
+
+### 📋 已完成的API枚举列表 (6/10个)
+1. **ButtonActionType** - 按钮动作类型
+2. **ButtonClickType** - 按钮点击类型
+3. **BindTargetStorageType** - 绑定目标存储类型
+4. **ViewFieldType** - 视图字段类型
+5. **ButtonStyleType** - 按钮样式类型
+6. **FieldType** - 字段类型
 
 ## 🎯 主要特色
 

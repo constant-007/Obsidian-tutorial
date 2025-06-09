@@ -5,16 +5,19 @@ prev: false
 title: "ViewFieldType"
 ---
 
-Defined in: [packages/core/src/config/FieldConfigs.ts:518](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/config/FieldConfigs.ts#L518)
+定义位置: [packages/core/src/config/FieldConfigs.ts:518](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/config/FieldConfigs.ts#L518)
 
-## Enumeration Members
+视图字段类型枚举，定义了可用的视图字段类型。
+
+## 枚举成员
 
 <table>
 <thead>
 <tr>
-<th>Enumeration Member</th>
-<th>Value</th>
-<th>Defined in</th>
+<th>枚举成员</th>
+<th>值</th>
+<th>描述</th>
+<th>定义位置</th>
 </tr>
 </thead>
 <tbody>
@@ -27,6 +30,11 @@ Defined in: [packages/core/src/config/FieldConfigs.ts:518](https://github.com/mP
 <td>
 
 `"image"`
+
+</td>
+<td>
+
+显示图像的视图字段
 
 </td>
 <td>
@@ -48,6 +56,11 @@ Defined in: [packages/core/src/config/FieldConfigs.ts:518](https://github.com/mP
 </td>
 <td>
 
+无效的视图字段类型
+
+</td>
+<td>
+
 [packages/core/src/config/FieldConfigs.ts:524](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/config/FieldConfigs.ts#L524)
 
 </td>
@@ -61,6 +74,11 @@ Defined in: [packages/core/src/config/FieldConfigs.ts:518](https://github.com/mP
 <td>
 
 `"link"`
+
+</td>
+<td>
+
+显示可点击链接的视图字段
 
 </td>
 <td>
@@ -82,6 +100,11 @@ Defined in: [packages/core/src/config/FieldConfigs.ts:518](https://github.com/mP
 </td>
 <td>
 
+显示数学表达式和计算的视图字段
+
+</td>
+<td>
+
 [packages/core/src/config/FieldConfigs.ts:519](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/config/FieldConfigs.ts#L519)
 
 </td>
@@ -95,6 +118,11 @@ Defined in: [packages/core/src/config/FieldConfigs.ts:518](https://github.com/mP
 <td>
 
 `"text"`
+
+</td>
+<td>
+
+显示文本内容的视图字段
 
 </td>
 <td>

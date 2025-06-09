@@ -3,21 +3,21 @@ title: Replace Self
 description: Replace Self button action reference.
 ---
 
-This button action replaces the button with either plain text or a Templater template.
+此按钮动作用纯文本或Templater模板替换按钮本身。
 
-This only works with buttons in blocks, so this action will not work with inline buttons which are not inside a `meta-bind` block.
+这仅适用于代码块中的按钮，因此此动作不适用于不在 `meta-bind` 代码块内的内联按钮。
 
 ```ts
 interface ReplaceSelfButtonAction {
 	type: 'replaceSelf';
-	replacement: string; // the string or the path to the Templater template to replace the button with
-	templater?: boolean; // if true, the replacement is a Templater template
+	replacement: string; // 用于替换按钮的字符串或Templater模板路径
+	templater?: boolean; // 如果为true，替换内容是Templater模板
 }
 ```
 
-### Example
+### 示例
 
-This button will replace itself with the text `i am no longer a button :(` when clicked.
+此按钮在点击时将自己替换为文本 `i am no longer a button :(`。
 
 ````custom_markdown {5-6}
 ```meta-bind-button

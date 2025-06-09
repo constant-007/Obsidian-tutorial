@@ -3,29 +3,29 @@ title: Run JavaScript File
 description: Run JavaScript File button action reference.
 ---
 
-The run JavaScript file action runs a JavaScript file.
+**运行JavaScript文件** 动作执行一个JavaScript文件。
 
 :::note
-This feature requires the that you have the following:
+此功能需要满足以下条件：
 
-1. [JS Engine](https://github.com/mProjectsCode/obsidian-js-engine-plugin) installed and enabled.
-2. Enabled **JavaScript** in the Meta Bind settings.
+1. 安装并启用 [JS Engine](https://github.com/mProjectsCode/obsidian-js-engine-plugin) 插件。
+2. 在Meta Bind设置中启用 **JavaScript**。
    :::
 
 ```ts
 interface JSButtonAction {
 	type: 'js';
-	file: string; // the path to the JavaScript file to run, relative to the vault root
-	args?: Record<string, unknown>; // optional arguments to pass to the script (available in the script as `context.args`)
+	file: string; // 要运行的JavaScript文件路径，相对于库根目录
+	args?: Record<string, unknown>; // 传递给脚本的可选参数 (在脚本中可通过 `context.args` 访问)
 }
 ```
 
-The button configuration is available as a **read only** variable in the script as `context.buttonConfig`.
-Additional information about the button is available in the `context.buttonContext` object.
-See [Button Context](/obsidian-meta-bind-plugin-docs/api/interfaces/buttoncontext/) for more information.
-The args is passed to the script as `context.args`.
+按钮配置在脚本中作为 **只读** 变量 `context.buttonConfig` 可用。
+关于按钮的其他信息可在 `context.buttonContext` 对象中获取。
+更多信息请参见 [Button Context](/obsidian-meta-bind-plugin-docs/api/interfaces/buttoncontext/)。
+参数通过 `context.args` 传递给脚本。
 
-### Example
+### 示例
 
 ````custom_markdown {5-6}
 ```meta-bind-button
@@ -39,10 +39,10 @@ action:
 ```
 ````
 
-With the following `someScript.js` file in the vault root.
+在库根目录下有以下 `someScript.js` 文件。
 
 ```js title="someScript.js"
 console.log('Hello ${context.args.greeting}!');
 ```
 
-You should see the string `Hello Meta Bind User!` printed to the console, when you click the button.
+当您点击按钮时，应该会在控制台看到打印的字符串 `Hello Meta Bind User!`。

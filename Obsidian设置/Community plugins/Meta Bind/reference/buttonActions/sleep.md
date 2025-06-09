@@ -3,18 +3,18 @@ title: Sleep
 description: Sleep button action reference.
 ---
 
-The sleep action waits for a specified amount of time.
+**延时** 动作等待指定的时间。
 
 ```ts
 interface SleepButtonAction {
 	type: 'sleep';
-	ms: number; // the time to wait in milliseconds
+	ms: number; // 等待时间，以毫秒为单位
 }
 ```
 
-### Example
+### 示例
 
-This button will open the command palette, wait for 1 second, and then type `help` into the search bar.
+此按钮将打开命令面板，等待1秒，然后在搜索框中输入 `help`。
 
 ````custom_markdown {7-8}
 ```meta-bind-button
