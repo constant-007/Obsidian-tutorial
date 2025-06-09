@@ -42,8 +42,8 @@ remoteImage: https://picsum.photos/200/300
 ## 距离示例
 
 距离: `INPUT[number:distance]` km
-以自由单位表示的距离: `VIEW[number({distance} km, miles)]` miles
-以自由单位表示的距离: `VIEW[round(number({distance} km, miles), 2)]` miles
+以自由单位表示的距离: `VIEW[number({distance} km, miles)]` 英里
+以自由单位表示的距离: `VIEW[round(number({distance} km, miles), 2)]` 英里
 
 ## 文本示例
 

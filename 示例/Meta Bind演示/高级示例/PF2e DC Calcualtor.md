@@ -43,10 +43,10 @@ DC 等级: `INPUT[number:playerLevel]`
 
 法术等级: `INPUT[number:spellLevel]`
 
-| 法术稀有度 | DC                                                                                             |
-| ------------ | ---------------------------------------------------------------------------------------------- |
-| Normal       | `VIEW[(({spellLevel} * 2 - 1) + 14 + floor(({spellLevel} * 2 - 1) / 3))][:memory^baseSpellDC]` |
-| Uncommon     | `VIEW[{memory^baseSpellDC} + 2]`                                                               |
-| Rare         | `VIEW[{memory^baseSpellDC} + 5]`                                                               |
-| Unique       | `VIEW[{memory^baseSpellDC} + 10]`                                                              |
+| 法术稀有度    | DC                                                                                             |
+| -------- | ---------------------------------------------------------------------------------------------- |
+| Normal   | `VIEW[(({spellLevel} * 2 - 1) + 14 + floor(({spellLevel} * 2 - 1) / 3))][:memory^baseSpellDC]` |
+| Uncommon | `VIEW[{memory^baseSpellDC} + 2]`                                                               |
+| Rare     | `VIEW[{memory^baseSpellDC} + 5]`                                                               |
+| Unique   | `VIEW[{memory^baseSpellDC} + 10]`                                                              |
 

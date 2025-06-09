@@ -1,60 +1,8 @@
 {
   "recentFiles": [
     {
-      "basename": "In Note Navigation",
-      "path": "示例/Meta Bind演示/Buttons/In Note Navigation.md"
-    },
-    {
-      "basename": "Button Example",
-      "path": "示例/Meta Bind演示/Buttons/Button Example.md"
-    },
-    {
-      "basename": "Templater Buttons",
-      "path": "示例/Meta Bind演示/Buttons/Templater Buttons.md"
-    },
-    {
-      "basename": "Replace Buttons",
-      "path": "示例/Meta Bind演示/Buttons/Replace Buttons.md"
-    },
-    {
-      "basename": "Other Note",
-      "path": "示例/Meta Bind演示/Alternative Metadata Storage/Other Note.md"
-    },
-    {
-      "basename": "Alternative Metadata Storage",
-      "path": "示例/Meta Bind演示/Alternative Metadata Storage/Alternative Metadata Storage.md"
-    },
-    {
-      "basename": "PF2e Travel Calculator",
-      "path": "示例/Meta Bind演示/Advanced Examples/PF2e Travel Calculator.md"
-    },
-    {
-      "basename": "PF2e DC Calcualtor",
-      "path": "示例/Meta Bind演示/Advanced Examples/PF2e DC Calcualtor.md"
-    },
-    {
-      "basename": "DnD 5e Travel Calculator",
-      "path": "示例/Meta Bind演示/Advanced Examples/DnD 5e Travel Calculator.md"
-    },
-    {
-      "basename": "Activity Tracker",
-      "path": "示例/Meta Bind演示/Advanced Examples/Activity Tracker.md"
-    },
-    {
-      "basename": "DnD 5e Ability Scores and Modifiers",
-      "path": "示例/Meta Bind演示/Advanced Examples/DnD 5e Ability Scores and Modifiers.md"
-    },
-    {
-      "basename": "Using JS Engine for Complex things",
-      "path": "示例/Meta Bind演示/Advanced Examples/Using JS Engine for Complex things.md"
-    },
-    {
-      "basename": "Health Tracker",
-      "path": "示例/Meta Bind演示/Advanced Examples/Health Tracker.md"
-    },
-    {
-      "basename": "PF2e Encounter Calculator",
-      "path": "示例/Meta Bind演示/Advanced Examples/PF2e Encounter Calculator.md"
+      "basename": "Pandoc：导出工具",
+      "path": "Obsidian设置/Community plugins/Pandoc：导出工具.md"
     },
     {
       "basename": "Remember cursor position：一定要装！",
@@ -63,26 +11,6 @@
     {
       "basename": "Meta Bind按钮高级功能演示",
       "path": "示例/Meta Bind演示/Meta Bind按钮高级功能演示.md"
-    },
-    {
-      "basename": "Slider",
-      "path": "示例/Meta Bind演示/Input Fields/Slider.md"
-    },
-    {
-      "basename": "Suggester",
-      "path": "示例/Meta Bind演示/Input Fields/Suggester.md"
-    },
-    {
-      "basename": "Image Suggester",
-      "path": "示例/Meta Bind演示/Input Fields/Image Suggester.md"
-    },
-    {
-      "basename": "Editor",
-      "path": "示例/Meta Bind演示/Input Fields/Editor.md"
-    },
-    {
-      "basename": "Date and Time",
-      "path": "示例/Meta Bind演示/Input Fields/Date and Time.md"
     },
     {
       "basename": "Files and links",
@@ -167,10 +95,6 @@
     {
       "basename": "Excute code：执行代码！",
       "path": "Obsidian设置/Community plugins/Excute code：执行代码！.md"
-    },
-    {
-      "basename": "Pandoc：导出工具",
-      "path": "Obsidian设置/Community plugins/Pandoc：导出工具.md"
     },
     {
       "basename": "Excalidraw：手写笔记爱好者福音",
