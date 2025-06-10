@@ -1,15 +1,15 @@
 ---
-playerCount: 6
-playerLevel: 4
+playerCount: 7
+playerLevel: 8
 enemy:
   - name: Somthing
-    level: 2
+    level: 88
     count: 2
-    variant: 0
+    variant: 1
   - name: Some other thing
     level: 2
     count: 1
-    variant: 0
+    variant: 1
   - name: dragon
     level: 3
     count: 2

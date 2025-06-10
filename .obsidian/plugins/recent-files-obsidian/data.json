@@ -1,176 +1,76 @@
 {
   "recentFiles": [
     {
-      "basename": "NotePosition",
-      "path": "Obsidian设置/Community plugins/Meta Bind/api/classes/NotePosition.md"
+      "basename": "图片建议器",
+      "path": "示例/Meta Bind演示/输入字段/图片建议器.md"
     },
     {
-      "basename": "FieldType",
-      "path": "Obsidian设置/Community plugins/Meta Bind/api/enumerations/FieldType.md"
+      "basename": "列表",
+      "path": "示例/Meta Bind演示/输入字段/列表.md"
     },
     {
-      "basename": "ButtonClickType",
-      "path": "Obsidian设置/Community plugins/Meta Bind/api/enumerations/ButtonClickType.md"
+      "basename": "内联选择",
+      "path": "示例/Meta Bind演示/输入字段/内联选择.md"
     },
     {
-      "basename": "BindTargetStorageType",
-      "path": "Obsidian设置/Community plugins/Meta Bind/api/enumerations/BindTargetStorageType.md"
+      "basename": "建议器",
+      "path": "示例/Meta Bind演示/输入字段/建议器.md"
     },
     {
-      "basename": "InlineFieldType",
-      "path": "Obsidian设置/Community plugins/Meta Bind/api/type-aliases/InlineFieldType.md"
+      "basename": "开关",
+      "path": "示例/Meta Bind演示/输入字段/开关.md"
     },
     {
-      "basename": "ButtonAction",
-      "path": "Obsidian设置/Community plugins/Meta Bind/api/type-aliases/ButtonAction.md"
-    },
-    {
-      "basename": "ViewFieldDeclaration",
-      "path": "Obsidian设置/Community plugins/Meta Bind/api/interfaces/ViewFieldDeclaration.md"
-    },
-    {
-      "basename": "ButtonConfig",
-      "path": "Obsidian设置/Community plugins/Meta Bind/api/interfaces/ButtonConfig.md"
-    },
-    {
-      "basename": "BindTargetDeclaration",
-      "path": "Obsidian设置/Community plugins/Meta Bind/api/interfaces/BindTargetDeclaration.md"
-    },
-    {
-      "basename": "SimpleFieldArgument",
-      "path": "Obsidian设置/Community plugins/Meta Bind/api/interfaces/SimpleFieldArgument.md"
-    },
-    {
-      "basename": "PartialUnvalidatedInputFieldDeclaration",
-      "path": "Obsidian设置/Community plugins/Meta Bind/api/interfaces/PartialUnvalidatedInputFieldDeclaration.md"
-    },
-    {
-      "basename": "PartialUnvalidatedViewFieldDeclaration",
-      "path": "Obsidian设置/Community plugins/Meta Bind/api/interfaces/PartialUnvalidatedViewFieldDeclaration.md"
-    },
-    {
-      "basename": "FieldDeclaration",
-      "path": "Obsidian设置/Community plugins/Meta Bind/api/interfaces/FieldDeclaration.md"
-    },
-    {
-      "basename": "ComponentLike",
-      "path": "Obsidian设置/Community plugins/Meta Bind/api/interfaces/ComponentLike.md"
-    },
-    {
-      "basename": "InputFieldType",
-      "path": "Obsidian设置/Community plugins/Meta Bind/api/enumerations/InputFieldType.md"
-    },
-    {
-      "basename": "ButtonClickContext",
-      "path": "Obsidian设置/Community plugins/Meta Bind/api/classes/ButtonClickContext.md"
-    },
-    {
-      "basename": "FieldMountable",
-      "path": "Obsidian设置/Community plugins/Meta Bind/api/classes/FieldMountable.md"
-    },
-    {
-      "basename": "Mountable",
-      "path": "Obsidian设置/Community plugins/Meta Bind/api/classes/Mountable.md"
-    },
-    {
-      "basename": "ButtonStyleType",
-      "path": "Obsidian设置/Community plugins/Meta Bind/api/enumerations/ButtonStyleType.md"
-    },
-    {
-      "basename": "README",
-      "path": "Obsidian设置/Community plugins/Meta Bind/api/README.md"
-    },
-    {
-      "basename": "EMBED_MAX_DEPTH",
-      "path": "Obsidian设置/Community plugins/Meta Bind/api/variables/EMBED_MAX_DEPTH.md"
-    },
-    {
-      "basename": "UpdateMetadataButtonAction",
-      "path": "Obsidian设置/Community plugins/Meta Bind/api/interfaces/UpdateMetadataButtonAction.md"
-    },
-    {
-      "basename": "UnvalidatedViewFieldDeclaration",
-      "path": "Obsidian设置/Community plugins/Meta Bind/api/interfaces/UnvalidatedViewFieldDeclaration.md"
-    },
-    {
-      "basename": "UnvalidatedInputFieldDeclaration",
-      "path": "Obsidian设置/Community plugins/Meta Bind/api/interfaces/UnvalidatedInputFieldDeclaration.md"
-    },
-    {
-      "basename": "UnvalidatedJsViewFieldDeclaration",
-      "path": "Obsidian设置/Community plugins/Meta Bind/api/interfaces/UnvalidatedJsViewFieldDeclaration.md"
-    },
-    {
-      "basename": "UnvalidatedPropAccess",
-      "path": "Obsidian设置/Community plugins/Meta Bind/api/interfaces/UnvalidatedPropAccess.md"
-    },
-    {
-      "basename": "ViewFieldOptions",
-      "path": "Obsidian设置/Community plugins/Meta Bind/api/interfaces/ViewFieldOptions.md"
-    },
-    {
-      "basename": "UnvalidatedFieldArgument",
-      "path": "Obsidian设置/Community plugins/Meta Bind/api/interfaces/UnvalidatedFieldArgument.md"
-    },
-    {
-      "basename": "SleepButtonAction",
-      "path": "Obsidian设置/Community plugins/Meta Bind/api/interfaces/SleepButtonAction.md"
-    },
-    {
-      "basename": "FieldOptionMap",
-      "path": "Obsidian设置/Community plugins/Meta Bind/api/interfaces/FieldOptionMap.md"
-    },
-    {
-      "basename": "EmbedOptions",
-      "path": "Obsidian设置/Community plugins/Meta Bind/api/interfaces/EmbedOptions.md"
-    },
-    {
-      "basename": "ButtonDeclaration",
-      "path": "Obsidian设置/Community plugins/Meta Bind/api/interfaces/ButtonDeclaration.md"
-    },
-    {
-      "basename": "ButtonActionMap",
-      "path": "Obsidian设置/Community plugins/Meta Bind/api/interfaces/ButtonActionMap.md"
-    },
-    {
-      "basename": "ViewFieldType",
-      "path": "Obsidian设置/Community plugins/Meta Bind/api/enumerations/ViewFieldType.md"
-    },
-    {
-      "basename": "ViewFieldArgumentType",
-      "path": "Obsidian设置/Community plugins/Meta Bind/api/enumerations/ViewFieldArgumentType.md"
-    },
-    {
-      "basename": "RenderChildType",
-      "path": "Obsidian设置/Community plugins/Meta Bind/api/enumerations/RenderChildType.md"
-    },
-    {
-      "basename": "InputFieldArgumentType",
-      "path": "Obsidian设置/Community plugins/Meta Bind/api/enumerations/InputFieldArgumentType.md"
-    },
-    {
-      "basename": "ButtonActionType",
-      "path": "Obsidian设置/Community plugins/Meta Bind/api/enumerations/ButtonActionType.md"
+      "basename": "数字",
+      "path": "示例/Meta Bind演示/输入字段/数字.md"
     },
     {
       "basename": "编辑器",
       "path": "示例/Meta Bind演示/输入字段/编辑器.md"
     },
     {
-      "basename": "图片建议器",
-      "path": "示例/Meta Bind演示/输入字段/图片建议器.md"
-    },
-    {
       "basename": "日期和时间",
       "path": "示例/Meta Bind演示/输入字段/日期和时间.md"
     },
     {
-      "basename": "文本",
-      "path": "示例/Meta Bind演示/输入字段/文本.md"
+      "basename": "高级用例",
+      "path": "示例/Meta Bind演示/高级用例.md"
     },
     {
-      "basename": "数字",
-      "path": "示例/Meta Bind演示/输入字段/数字.md"
+      "basename": "示例",
+      "path": "示例/Meta Bind演示/示例.md"
+    },
+    {
+      "basename": "嵌入示例",
+      "path": "示例/Meta Bind演示/嵌入示例.md"
+    },
+    {
+      "basename": "其他笔记",
+      "path": "示例/Meta Bind演示/其他笔记.md"
+    },
+    {
+      "basename": "活动追踪器",
+      "path": "示例/Meta Bind演示/高级示例/活动追踪器.md"
+    },
+    {
+      "basename": "健康追踪器",
+      "path": "示例/Meta Bind演示/高级示例/健康追踪器.md"
+    },
+    {
+      "basename": "PF2e遭遇计算器",
+      "path": "示例/Meta Bind演示/高级示例/PF2e遭遇计算器.md"
+    },
+    {
+      "basename": "使用JS引擎处理复杂功能",
+      "path": "示例/Meta Bind演示/高级示例/使用JS引擎处理复杂功能.md"
+    },
+    {
+      "basename": "Meta Bind API 接口",
+      "path": "示例/Meta Bind演示/Meta Bind API 接口.md"
+    },
+    {
+      "basename": "文本",
+      "path": "示例/Meta Bind演示/输入字段/文本.md"
     },
     {
       "basename": "滑块",
