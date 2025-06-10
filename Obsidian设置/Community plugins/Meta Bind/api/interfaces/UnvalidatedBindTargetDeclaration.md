@@ -5,15 +5,19 @@ prev: false
 title: "UnvalidatedBindTargetDeclaration"
 ---
 
-Defined in: [packages/core/src/parsers/bindTargetParser/BindTargetDeclaration.ts:12](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/parsers/bindTargetParser/BindTargetDeclaration.ts#L12)
+定义位置: [packages/core/src/parsers/bindTargetParser/BindTargetDeclaration.ts:12](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/parsers/bindTargetParser/BindTargetDeclaration.ts#L12)
 
-## Properties
+未验证绑定目标声明接口，定义绑定目标的原始配置信息。
+
+## 属性
 
 ### listenToChildren
 
 > **listenToChildren**: `boolean`
 
-Defined in: [packages/core/src/parsers/bindTargetParser/BindTargetDeclaration.ts:16](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/parsers/bindTargetParser/BindTargetDeclaration.ts#L16)
+定义位置: [packages/core/src/parsers/bindTargetParser/BindTargetDeclaration.ts:16](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/parsers/bindTargetParser/BindTargetDeclaration.ts#L16)
+
+是否监听子元素的变化。
 
 ***
 
@@ -21,7 +25,9 @@ Defined in: [packages/core/src/parsers/bindTargetParser/BindTargetDeclaration.ts
 
 > `optional` **storagePath**: `ParsingResultNode`
 
-Defined in: [packages/core/src/parsers/bindTargetParser/BindTargetDeclaration.ts:14](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/parsers/bindTargetParser/BindTargetDeclaration.ts#L14)
+定义位置: [packages/core/src/parsers/bindTargetParser/BindTargetDeclaration.ts:14](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/parsers/bindTargetParser/BindTargetDeclaration.ts#L14)
+
+可选的存储路径解析结果节点。
 
 ***
 
@@ -29,7 +35,9 @@ Defined in: [packages/core/src/parsers/bindTargetParser/BindTargetDeclaration.ts
 
 > **storageProp**: [`UnvalidatedPropAccess`](/obsidian-meta-bind-plugin-docs/api/interfaces/unvalidatedpropaccess/)[]
 
-Defined in: [packages/core/src/parsers/bindTargetParser/BindTargetDeclaration.ts:15](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/parsers/bindTargetParser/BindTargetDeclaration.ts#L15)
+定义位置: [packages/core/src/parsers/bindTargetParser/BindTargetDeclaration.ts:15](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/parsers/bindTargetParser/BindTargetDeclaration.ts#L15)
+
+未验证属性访问数组，定义属性的访问路径。
 
 ***
 
@@ -37,4 +45,6 @@ Defined in: [packages/core/src/parsers/bindTargetParser/BindTargetDeclaration.ts
 
 > `optional` **storageType**: `ParsingResultNode`
 
-Defined in: [packages/core/src/parsers/bindTargetParser/BindTargetDeclaration.ts:13](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/parsers/bindTargetParser/BindTargetDeclaration.ts#L13)
+定义位置: [packages/core/src/parsers/bindTargetParser/BindTargetDeclaration.ts:13](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/parsers/bindTargetParser/BindTargetDeclaration.ts#L13)
+
+可选的存储类型解析结果节点。

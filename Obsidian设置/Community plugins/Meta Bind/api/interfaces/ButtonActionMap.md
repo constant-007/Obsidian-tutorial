@@ -5,17 +5,19 @@ prev: false
 title: "ButtonActionMap"
 ---
 
-Defined in: [packages/core/src/config/ButtonConfig.ts:132](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/config/ButtonConfig.ts#L132)
+定义位置: [packages/core/src/config/ButtonConfig.ts:132](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/config/ButtonConfig.ts#L132)
 
-Maps action types to their respective action interfaces.
+按钮动作映射接口，将动作类型映射到其对应的动作接口。
 
-## Properties
+## 属性
 
 ### command
 
 > **command**: [`CommandButtonAction`](/obsidian-meta-bind-plugin-docs/api/interfaces/commandbuttonaction/)
 
-Defined in: [packages/core/src/config/ButtonConfig.ts:133](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/config/ButtonConfig.ts#L133)
+定义位置: [packages/core/src/config/ButtonConfig.ts:133](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/config/ButtonConfig.ts#L133)
+
+命令按钮动作，用于执行Obsidian命令。
 
 ***
 
@@ -23,7 +25,9 @@ Defined in: [packages/core/src/config/ButtonConfig.ts:133](https://github.com/mP
 
 > **createNote**: [`CreateNoteButtonAction`](/obsidian-meta-bind-plugin-docs/api/interfaces/createnotebuttonaction/)
 
-Defined in: [packages/core/src/config/ButtonConfig.ts:140](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/config/ButtonConfig.ts#L140)
+定义位置: [packages/core/src/config/ButtonConfig.ts:140](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/config/ButtonConfig.ts#L140)
+
+创建笔记按钮动作，用于创建新的笔记文件。
 
 ***
 
@@ -31,7 +35,9 @@ Defined in: [packages/core/src/config/ButtonConfig.ts:140](https://github.com/mP
 
 > **inlineJS**: [`InlineJSButtonAction`](/obsidian-meta-bind-plugin-docs/api/interfaces/inlinejsbuttonaction/)
 
-Defined in: [packages/core/src/config/ButtonConfig.ts:145](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/config/ButtonConfig.ts#L145)
+定义位置: [packages/core/src/config/ButtonConfig.ts:145](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/config/ButtonConfig.ts#L145)
+
+内联JavaScript按钮动作，用于执行内联JavaScript代码。
 
 ***
 
@@ -39,7 +45,9 @@ Defined in: [packages/core/src/config/ButtonConfig.ts:145](https://github.com/mP
 
 > **input**: [`InputButtonAction`](/obsidian-meta-bind-plugin-docs/api/interfaces/inputbuttonaction/)
 
-Defined in: [packages/core/src/config/ButtonConfig.ts:136](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/config/ButtonConfig.ts#L136)
+定义位置: [packages/core/src/config/ButtonConfig.ts:136](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/config/ButtonConfig.ts#L136)
+
+输入按钮动作，用于在当前焦点元素中插入文本。
 
 ***
 
@@ -47,7 +55,9 @@ Defined in: [packages/core/src/config/ButtonConfig.ts:136](https://github.com/mP
 
 > **insertIntoNote**: [`InsertIntoNoteButtonAction`](/obsidian-meta-bind-plugin-docs/api/interfaces/insertintonotebuttonaction/)
 
-Defined in: [packages/core/src/config/ButtonConfig.ts:144](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/config/ButtonConfig.ts#L144)
+定义位置: [packages/core/src/config/ButtonConfig.ts:144](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/config/ButtonConfig.ts#L144)
+
+插入到笔记按钮动作，用于在笔记的指定行插入内容。
 
 ***
 
@@ -55,7 +65,9 @@ Defined in: [packages/core/src/config/ButtonConfig.ts:144](https://github.com/mP
 
 > **js**: [`JSButtonAction`](/obsidian-meta-bind-plugin-docs/api/interfaces/jsbuttonaction/)
 
-Defined in: [packages/core/src/config/ButtonConfig.ts:134](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/config/ButtonConfig.ts#L134)
+定义位置: [packages/core/src/config/ButtonConfig.ts:134](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/config/ButtonConfig.ts#L134)
+
+JavaScript文件按钮动作，用于执行外部JavaScript文件。
 
 ***
 
@@ -63,7 +75,9 @@ Defined in: [packages/core/src/config/ButtonConfig.ts:134](https://github.com/mP
 
 > **open**: [`OpenButtonAction`](/obsidian-meta-bind-plugin-docs/api/interfaces/openbuttonaction/)
 
-Defined in: [packages/core/src/config/ButtonConfig.ts:135](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/config/ButtonConfig.ts#L135)
+定义位置: [packages/core/src/config/ButtonConfig.ts:135](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/config/ButtonConfig.ts#L135)
+
+打开按钮动作，用于打开文件或URL链接。
 
 ***
 
@@ -71,7 +85,9 @@ Defined in: [packages/core/src/config/ButtonConfig.ts:135](https://github.com/mP
 
 > **regexpReplaceInNote**: [`RegexpReplaceInNoteButtonAction`](/obsidian-meta-bind-plugin-docs/api/interfaces/regexpreplaceinnotebuttonaction/)
 
-Defined in: [packages/core/src/config/ButtonConfig.ts:143](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/config/ButtonConfig.ts#L143)
+定义位置: [packages/core/src/config/ButtonConfig.ts:143](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/config/ButtonConfig.ts#L143)
+
+正则表达式替换笔记内容按钮动作，用于使用正则表达式替换笔记中的内容。
 
 ***
 
@@ -79,7 +95,9 @@ Defined in: [packages/core/src/config/ButtonConfig.ts:143](https://github.com/mP
 
 > **replaceInNote**: [`ReplaceInNoteButtonAction`](/obsidian-meta-bind-plugin-docs/api/interfaces/replaceinnotebuttonaction/)
 
-Defined in: [packages/core/src/config/ButtonConfig.ts:141](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/config/ButtonConfig.ts#L141)
+定义位置: [packages/core/src/config/ButtonConfig.ts:141](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/config/ButtonConfig.ts#L141)
+
+替换笔记内容按钮动作，用于替换笔记中指定行范围的内容。
 
 ***
 
@@ -87,7 +105,9 @@ Defined in: [packages/core/src/config/ButtonConfig.ts:141](https://github.com/mP
 
 > **replaceSelf**: [`ReplaceSelfButtonAction`](/obsidian-meta-bind-plugin-docs/api/interfaces/replaceselfbuttonaction/)
 
-Defined in: [packages/core/src/config/ButtonConfig.ts:142](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/config/ButtonConfig.ts#L142)
+定义位置: [packages/core/src/config/ButtonConfig.ts:142](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/config/ButtonConfig.ts#L142)
+
+替换自身按钮动作，用于将按钮自身替换为指定内容。
 
 ***
 
@@ -95,7 +115,9 @@ Defined in: [packages/core/src/config/ButtonConfig.ts:142](https://github.com/mP
 
 > **runTemplaterFile**: [`RunTemplaterFileButtonAction`](/obsidian-meta-bind-plugin-docs/api/interfaces/runtemplaterfilebuttonaction/)
 
-Defined in: [packages/core/src/config/ButtonConfig.ts:146](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/config/ButtonConfig.ts#L146)
+定义位置: [packages/core/src/config/ButtonConfig.ts:146](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/config/ButtonConfig.ts#L146)
+
+运行Templater文件按钮动作，用于执行Templater模板文件。
 
 ***
 
@@ -103,7 +125,9 @@ Defined in: [packages/core/src/config/ButtonConfig.ts:146](https://github.com/mP
 
 > **sleep**: [`SleepButtonAction`](/obsidian-meta-bind-plugin-docs/api/interfaces/sleepbuttonaction/)
 
-Defined in: [packages/core/src/config/ButtonConfig.ts:137](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/config/ButtonConfig.ts#L137)
+定义位置: [packages/core/src/config/ButtonConfig.ts:137](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/config/ButtonConfig.ts#L137)
+
+延时按钮动作，用于在动作序列中添加延迟。
 
 ***
 
@@ -111,7 +135,9 @@ Defined in: [packages/core/src/config/ButtonConfig.ts:137](https://github.com/mP
 
 > **templaterCreateNote**: [`TemplaterCreateNoteButtonAction`](/obsidian-meta-bind-plugin-docs/api/interfaces/templatercreatenotebuttonaction/)
 
-Defined in: [packages/core/src/config/ButtonConfig.ts:138](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/config/ButtonConfig.ts#L138)
+定义位置: [packages/core/src/config/ButtonConfig.ts:138](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/config/ButtonConfig.ts#L138)
+
+Templater创建笔记按钮动作，用于通过Templater模板创建新笔记。
 
 ***
 
@@ -119,4 +145,6 @@ Defined in: [packages/core/src/config/ButtonConfig.ts:138](https://github.com/mP
 
 > **updateMetadata**: [`UpdateMetadataButtonAction`](/obsidian-meta-bind-plugin-docs/api/interfaces/updatemetadatabuttonaction/)
 
-Defined in: [packages/core/src/config/ButtonConfig.ts:139](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/config/ButtonConfig.ts#L139)
+定义位置: [packages/core/src/config/ButtonConfig.ts:139](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/config/ButtonConfig.ts#L139)
+
+更新元数据按钮动作，用于修改笔记的元数据。

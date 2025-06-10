@@ -5,19 +5,23 @@ prev: false
 title: "PartialUnvalidatedInputFieldDeclaration"
 ---
 
-Defined in: [packages/core/src/parsers/inputFieldParser/InputFieldDeclaration.ts:20](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/parsers/inputFieldParser/InputFieldDeclaration.ts#L20)
+定义位置: [packages/core/src/parsers/inputFieldParser/InputFieldDeclaration.ts:20](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/parsers/inputFieldParser/InputFieldDeclaration.ts#L20)
 
-## Extended by
+部分未验证输入字段声明接口，包含输入字段的基本配置属性。
+
+## 被扩展
 
 - [`UnvalidatedInputFieldDeclaration`](/obsidian-meta-bind-plugin-docs/api/interfaces/unvalidatedinputfielddeclaration/)
 
-## Properties
+## 属性
 
 ### arguments
 
 > **arguments**: [`UnvalidatedFieldArgument`](/obsidian-meta-bind-plugin-docs/api/interfaces/unvalidatedfieldargument/)[]
 
-Defined in: [packages/core/src/parsers/inputFieldParser/InputFieldDeclaration.ts:24](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/parsers/inputFieldParser/InputFieldDeclaration.ts#L24)
+定义位置: [packages/core/src/parsers/inputFieldParser/InputFieldDeclaration.ts:24](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/parsers/inputFieldParser/InputFieldDeclaration.ts#L24)
+
+未验证的字段参数数组。
 
 ***
 
@@ -25,7 +29,9 @@ Defined in: [packages/core/src/parsers/inputFieldParser/InputFieldDeclaration.ts
 
 > `optional` **bindTarget**: [`UnvalidatedBindTargetDeclaration`](/obsidian-meta-bind-plugin-docs/api/interfaces/unvalidatedbindtargetdeclaration/)
 
-Defined in: [packages/core/src/parsers/inputFieldParser/InputFieldDeclaration.ts:23](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/parsers/inputFieldParser/InputFieldDeclaration.ts#L23)
+定义位置: [packages/core/src/parsers/inputFieldParser/InputFieldDeclaration.ts:23](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/parsers/inputFieldParser/InputFieldDeclaration.ts#L23)
+
+可选的未验证绑定目标声明。
 
 ***
 
@@ -33,7 +39,9 @@ Defined in: [packages/core/src/parsers/inputFieldParser/InputFieldDeclaration.ts
 
 > `optional` **inputFieldType**: `ParsingResultNode`
 
-Defined in: [packages/core/src/parsers/inputFieldParser/InputFieldDeclaration.ts:21](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/parsers/inputFieldParser/InputFieldDeclaration.ts#L21)
+定义位置: [packages/core/src/parsers/inputFieldParser/InputFieldDeclaration.ts:21](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/parsers/inputFieldParser/InputFieldDeclaration.ts#L21)
+
+可选的输入字段类型解析结果节点。
 
 ***
 
@@ -41,4 +49,6 @@ Defined in: [packages/core/src/parsers/inputFieldParser/InputFieldDeclaration.ts
 
 > `optional` **templateName**: `ParsingResultNode`
 
-Defined in: [packages/core/src/parsers/inputFieldParser/InputFieldDeclaration.ts:22](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/parsers/inputFieldParser/InputFieldDeclaration.ts#L22)
+定义位置: [packages/core/src/parsers/inputFieldParser/InputFieldDeclaration.ts:22](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/parsers/inputFieldParser/InputFieldDeclaration.ts#L22)
+
+可选的模板名称解析结果节点。

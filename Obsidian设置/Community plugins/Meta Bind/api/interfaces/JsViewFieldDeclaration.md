@@ -5,19 +5,23 @@ prev: false
 title: "JsViewFieldDeclaration"
 ---
 
-Defined in: [packages/core/src/parsers/viewFieldParser/ViewFieldDeclaration.ts:41](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/parsers/viewFieldParser/ViewFieldDeclaration.ts#L41)
+定义位置: [packages/core/src/parsers/viewFieldParser/ViewFieldDeclaration.ts:41](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/parsers/viewFieldParser/ViewFieldDeclaration.ts#L41)
 
-## Extends
+JavaScript视图字段声明接口，扩展了基础字段声明，用于定义JavaScript视图字段的完整配置。
+
+## 继承
 
 - [`FieldDeclaration`](/obsidian-meta-bind-plugin-docs/api/interfaces/fielddeclaration/)
 
-## Properties
+## 属性
 
 ### bindTargetMappings
 
 > **bindTargetMappings**: [`JsViewFieldBindTargetMapping`](/obsidian-meta-bind-plugin-docs/api/interfaces/jsviewfieldbindtargetmapping/)[]
 
-Defined in: [packages/core/src/parsers/viewFieldParser/ViewFieldDeclaration.ts:42](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/parsers/viewFieldParser/ViewFieldDeclaration.ts#L42)
+定义位置: [packages/core/src/parsers/viewFieldParser/ViewFieldDeclaration.ts:42](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/parsers/viewFieldParser/ViewFieldDeclaration.ts#L42)
+
+JavaScript视图字段绑定目标映射数组，定义变量与绑定目标之间的映射关系。
 
 ***
 
@@ -25,7 +29,9 @@ Defined in: [packages/core/src/parsers/viewFieldParser/ViewFieldDeclaration.ts:4
 
 > **code**: `string`
 
-Defined in: [packages/core/src/parsers/viewFieldParser/ViewFieldDeclaration.ts:45](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/parsers/viewFieldParser/ViewFieldDeclaration.ts#L45)
+定义位置: [packages/core/src/parsers/viewFieldParser/ViewFieldDeclaration.ts:45](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/parsers/viewFieldParser/ViewFieldDeclaration.ts#L45)
+
+要执行的JavaScript代码字符串。
 
 ***
 
@@ -33,9 +39,11 @@ Defined in: [packages/core/src/parsers/viewFieldParser/ViewFieldDeclaration.ts:4
 
 > `optional` **declarationString**: `string`
 
-Defined in: [packages/core/src/parsers/FieldDeclaration.ts:5](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/parsers/FieldDeclaration.ts#L5)
+定义位置: [packages/core/src/parsers/FieldDeclaration.ts:5](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/parsers/FieldDeclaration.ts#L5)
 
-#### Inherited from
+字段的声明字符串（可选）。
+
+#### 继承自
 
 [`FieldDeclaration`](/obsidian-meta-bind-plugin-docs/api/interfaces/fielddeclaration/).[`declarationString`](/obsidian-meta-bind-plugin-docs/api/interfaces/fielddeclaration/#declarationstring)
 
@@ -45,9 +53,11 @@ Defined in: [packages/core/src/parsers/FieldDeclaration.ts:5](https://github.com
 
 > **errorCollection**: `ErrorCollection`
 
-Defined in: [packages/core/src/parsers/FieldDeclaration.ts:6](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/parsers/FieldDeclaration.ts#L6)
+定义位置: [packages/core/src/parsers/FieldDeclaration.ts:6](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/parsers/FieldDeclaration.ts#L6)
 
-#### Inherited from
+错误收集器，用于存储字段解析过程中的错误信息。
+
+#### 继承自
 
 [`FieldDeclaration`](/obsidian-meta-bind-plugin-docs/api/interfaces/fielddeclaration/).[`errorCollection`](/obsidian-meta-bind-plugin-docs/api/interfaces/fielddeclaration/#errorcollection)
 
@@ -57,7 +67,9 @@ Defined in: [packages/core/src/parsers/FieldDeclaration.ts:6](https://github.com
 
 > **hidden**: `boolean`
 
-Defined in: [packages/core/src/parsers/viewFieldParser/ViewFieldDeclaration.ts:44](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/parsers/viewFieldParser/ViewFieldDeclaration.ts#L44)
+定义位置: [packages/core/src/parsers/viewFieldParser/ViewFieldDeclaration.ts:44](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/parsers/viewFieldParser/ViewFieldDeclaration.ts#L44)
+
+布尔值，指示字段是否为隐藏状态。
 
 ***
 
@@ -65,4 +77,6 @@ Defined in: [packages/core/src/parsers/viewFieldParser/ViewFieldDeclaration.ts:4
 
 > `optional` **writeToBindTarget**: [`BindTargetDeclaration`](/obsidian-meta-bind-plugin-docs/api/interfaces/bindtargetdeclaration/)
 
-Defined in: [packages/core/src/parsers/viewFieldParser/ViewFieldDeclaration.ts:43](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/parsers/viewFieldParser/ViewFieldDeclaration.ts#L43)
+定义位置: [packages/core/src/parsers/viewFieldParser/ViewFieldDeclaration.ts:43](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/parsers/viewFieldParser/ViewFieldDeclaration.ts#L43)
+
+可选的写入绑定目标，用于将JavaScript视图字段的输出写入指定位置。
