@@ -1,33 +1,33 @@
 ---
-title: RegExp Replace In Note
-description: RegExp Replace In Note button action reference.
+title: 正则表达式替换笔记内容 (RegExp Replace In Note)
+description: 正则表达式替换笔记内容按钮动作参考文档。
 ---
 
-This button action allows you to do a search and replace on the entire note where the button is in.
+此按钮动作允许您对按钮所在的整个笔记进行搜索和替换。
 
 ```ts
 interface RegexpReplaceInNoteButtonAction {
 	type: 'replaceInNote';
-	regexp: string; // the regular expression to search for
-	regexpFlags?: string; // the regexp flags for the regular expression, defaults to `g` if omitted
-	replacement: string; // the replacement text
+	regexp: string; // 要搜索的正则表达式
+	regexpFlags?: string; // 正则表达式标志，如果省略默认为 `g`
+	replacement: string; // 替换文本
 }
 ```
 
-You can use `$1`, `$2`, etc. in the replacement text to reference the matched groups in the regular expression.
+您可以在替换文本中使用 `$1`、`$2` 等来引用正则表达式中匹配的分组。
 
-### Example
+### 示例
 
-This example replaces every `TODO: ...` line with `TODO: ... - Done`.
+此示例将每个 `TODO: ...` 行替换为 `TODO: ... - 已完成`。
 
 ````custom_markdown {5-7}
 ```meta-bind-button
 style: primary
-label: RexExp Replace In Note
+label: 正则表达式替换笔记内容
 action:
   type: "regexpReplaceInNote"
   regexp: "^(TODO: .*)$"
   regexpFlags: "gm"
-  replacement: "$1 - Done"
+  replacement: "$1 - 已完成"
 ```
 ````

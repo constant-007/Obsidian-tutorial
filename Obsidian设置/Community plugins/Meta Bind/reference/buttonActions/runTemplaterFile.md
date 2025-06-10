@@ -1,36 +1,36 @@
 ---
-title: Run Templater File
-description: Run Templater File button action reference.
+title: 运行Templater文件 (Run Templater File)
+description: 运行Templater文件按钮动作参考文档。
 ---
 
-Executes all [Templater](https://github.com/SilentVoid13/Templater) templates within a single file.
+执行单个文件中的所有 [Templater](https://github.com/SilentVoid13/Templater) 模板。
 
 ```ts
 interface RunTemplaterFileButtonAction {
 	type: 'runTemplaterFile';
-	templateFile: string; // the path to the template file, relative to the vault root
+	templateFile: string; // 模板文件的路径，相对于库根目录
 }
 ```
 
-### Examples
+### 示例
 
-#### Banner Notice
+#### 横幅通知
 
-This will display a banner with the title of the file you are in.
+这将显示一个包含您当前所在文件标题的横幅。
 
-##### Button
+##### 按钮
 
 ````custom_markdown {5-8}
 ```meta-bind-button
 style: primary
-label: Say Filename
+label: 显示文件名
 actions:
   - type: runTemplaterFile
     templateFile: "templates/Notice.md"
 ```
 ````
 
-##### File (Notice.md)
+##### 文件 (Notice.md)
 
 ```js
 
