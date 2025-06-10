@@ -5,15 +5,19 @@ prev: false
 title: "FieldOptionMap"
 ---
 
-Defined in: [packages/core/src/config/APIConfigs.ts:84](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/config/APIConfigs.ts#L84)
+定义位置: [packages/core/src/config/APIConfigs.ts:84](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/config/APIConfigs.ts#L84)
 
-## Properties
+字段选项映射接口，定义不同字段类型对应的选项配置。
+
+## 属性
 
 ### BUTTON
 
 > **BUTTON**: [`ButtonOptions`](/obsidian-meta-bind-plugin-docs/api/interfaces/buttonoptions/)
 
-Defined in: [packages/core/src/config/APIConfigs.ts:90](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/config/APIConfigs.ts#L90)
+定义位置: [packages/core/src/config/APIConfigs.ts:90](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/config/APIConfigs.ts#L90)
+
+按钮字段的选项配置。
 
 ***
 
@@ -21,7 +25,9 @@ Defined in: [packages/core/src/config/APIConfigs.ts:90](https://github.com/mProj
 
 > **BUTTON\_GROUP**: [`ButtonGroupOptions`](/obsidian-meta-bind-plugin-docs/api/interfaces/buttongroupoptions/)
 
-Defined in: [packages/core/src/config/APIConfigs.ts:89](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/config/APIConfigs.ts#L89)
+定义位置: [packages/core/src/config/APIConfigs.ts:89](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/config/APIConfigs.ts#L89)
+
+按钮组字段的选项配置。
 
 ***
 
@@ -29,7 +35,9 @@ Defined in: [packages/core/src/config/APIConfigs.ts:89](https://github.com/mProj
 
 > **EMBED**: [`EmbedOptions`](/obsidian-meta-bind-plugin-docs/api/interfaces/embedoptions/)
 
-Defined in: [packages/core/src/config/APIConfigs.ts:91](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/config/APIConfigs.ts#L91)
+定义位置: [packages/core/src/config/APIConfigs.ts:91](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/config/APIConfigs.ts#L91)
+
+嵌入字段的选项配置。
 
 ***
 
@@ -37,7 +45,9 @@ Defined in: [packages/core/src/config/APIConfigs.ts:91](https://github.com/mProj
 
 > **EXCLUDED**: `undefined`
 
-Defined in: [packages/core/src/config/APIConfigs.ts:92](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/config/APIConfigs.ts#L92)
+定义位置: [packages/core/src/config/APIConfigs.ts:92](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/config/APIConfigs.ts#L92)
+
+排除字段，无选项配置。
 
 ***
 
@@ -45,7 +55,9 @@ Defined in: [packages/core/src/config/APIConfigs.ts:92](https://github.com/mProj
 
 > **INPUT**: [`InputFieldOptions`](/obsidian-meta-bind-plugin-docs/api/interfaces/inputfieldoptions/)
 
-Defined in: [packages/core/src/config/APIConfigs.ts:85](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/config/APIConfigs.ts#L85)
+定义位置: [packages/core/src/config/APIConfigs.ts:85](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/config/APIConfigs.ts#L85)
+
+输入字段的选项配置。
 
 ***
 
@@ -53,7 +65,9 @@ Defined in: [packages/core/src/config/APIConfigs.ts:85](https://github.com/mProj
 
 > **JS\_VIEW**: [`JsViewFieldOptions`](/obsidian-meta-bind-plugin-docs/api/interfaces/jsviewfieldoptions/)
 
-Defined in: [packages/core/src/config/APIConfigs.ts:87](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/config/APIConfigs.ts#L87)
+定义位置: [packages/core/src/config/APIConfigs.ts:87](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/config/APIConfigs.ts#L87)
+
+JavaScript视图字段的选项配置。
 
 ***
 
@@ -61,7 +75,9 @@ Defined in: [packages/core/src/config/APIConfigs.ts:87](https://github.com/mProj
 
 > **TABLE**: [`TableOptions`](/obsidian-meta-bind-plugin-docs/api/interfaces/tableoptions/)
 
-Defined in: [packages/core/src/config/APIConfigs.ts:88](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/config/APIConfigs.ts#L88)
+定义位置: [packages/core/src/config/APIConfigs.ts:88](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/config/APIConfigs.ts#L88)
+
+表格字段的选项配置。
 
 ***
 
@@ -69,4 +85,6 @@ Defined in: [packages/core/src/config/APIConfigs.ts:88](https://github.com/mProj
 
 > **VIEW**: [`ViewFieldOptions`](/obsidian-meta-bind-plugin-docs/api/interfaces/viewfieldoptions/)
 
-Defined in: [packages/core/src/config/APIConfigs.ts:86](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/config/APIConfigs.ts#L86)
+定义位置: [packages/core/src/config/APIConfigs.ts:86](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/config/APIConfigs.ts#L86)
+
+视图字段的选项配置。

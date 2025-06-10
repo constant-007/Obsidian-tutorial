@@ -5,15 +5,19 @@ prev: false
 title: "SimpleViewFieldDeclaration"
 ---
 
-Defined in: [packages/core/src/parsers/viewFieldParser/ViewFieldDeclaration.ts:30](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/parsers/viewFieldParser/ViewFieldDeclaration.ts#L30)
+定义位置: [packages/core/src/parsers/viewFieldParser/ViewFieldDeclaration.ts:30](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/parsers/viewFieldParser/ViewFieldDeclaration.ts#L30)
 
-## Properties
+简单视图字段声明接口，定义视图字段的基本配置。
+
+## 属性
 
 ### arguments?
 
 > `optional` **arguments**: [`SimpleFieldArgument`](/obsidian-meta-bind-plugin-docs/api/interfaces/simplefieldargument/)[]
 
-Defined in: [packages/core/src/parsers/viewFieldParser/ViewFieldDeclaration.ts:33](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/parsers/viewFieldParser/ViewFieldDeclaration.ts#L33)
+定义位置: [packages/core/src/parsers/viewFieldParser/ViewFieldDeclaration.ts:33](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/parsers/viewFieldParser/ViewFieldDeclaration.ts#L33)
+
+可选的字段参数数组。
 
 ***
 
@@ -21,7 +25,9 @@ Defined in: [packages/core/src/parsers/viewFieldParser/ViewFieldDeclaration.ts:3
 
 > `optional` **templateDeclaration**: (`string` \| [`BindTargetDeclaration`](/obsidian-meta-bind-plugin-docs/api/interfaces/bindtargetdeclaration/))[]
 
-Defined in: [packages/core/src/parsers/viewFieldParser/ViewFieldDeclaration.ts:32](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/parsers/viewFieldParser/ViewFieldDeclaration.ts#L32)
+定义位置: [packages/core/src/parsers/viewFieldParser/ViewFieldDeclaration.ts:32](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/parsers/viewFieldParser/ViewFieldDeclaration.ts#L32)
+
+可选的模板声明数组，包含字符串和绑定目标声明。
 
 ***
 
@@ -29,7 +35,9 @@ Defined in: [packages/core/src/parsers/viewFieldParser/ViewFieldDeclaration.ts:3
 
 > `optional` **viewFieldType**: `string`
 
-Defined in: [packages/core/src/parsers/viewFieldParser/ViewFieldDeclaration.ts:31](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/parsers/viewFieldParser/ViewFieldDeclaration.ts#L31)
+定义位置: [packages/core/src/parsers/viewFieldParser/ViewFieldDeclaration.ts:31](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/parsers/viewFieldParser/ViewFieldDeclaration.ts#L31)
+
+可选的视图字段类型字符串。
 
 ***
 
@@ -37,4 +45,6 @@ Defined in: [packages/core/src/parsers/viewFieldParser/ViewFieldDeclaration.ts:3
 
 > `optional` **writeToBindTarget**: [`BindTargetDeclaration`](/obsidian-meta-bind-plugin-docs/api/interfaces/bindtargetdeclaration/)
 
-Defined in: [packages/core/src/parsers/viewFieldParser/ViewFieldDeclaration.ts:34](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/parsers/viewFieldParser/ViewFieldDeclaration.ts#L34)
+定义位置: [packages/core/src/parsers/viewFieldParser/ViewFieldDeclaration.ts:34](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/parsers/viewFieldParser/ViewFieldDeclaration.ts#L34)
+
+可选的写入绑定目标，用于将输出写入指定位置。
