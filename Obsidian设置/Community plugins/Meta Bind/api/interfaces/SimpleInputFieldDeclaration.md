@@ -5,15 +5,19 @@ prev: false
 title: "SimpleInputFieldDeclaration"
 ---
 
-Defined in: [packages/core/src/parsers/inputFieldParser/InputFieldDeclaration.ts:29](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/parsers/inputFieldParser/InputFieldDeclaration.ts#L29)
+定义位置: [packages/core/src/parsers/inputFieldParser/InputFieldDeclaration.ts:29](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/parsers/inputFieldParser/InputFieldDeclaration.ts#L29)
 
-## Properties
+简单输入字段声明接口，定义输入字段的基本配置。
+
+## 属性
 
 ### arguments?
 
 > `optional` **arguments**: [`SimpleFieldArgument`](/obsidian-meta-bind-plugin-docs/api/interfaces/simplefieldargument/)[]
 
-Defined in: [packages/core/src/parsers/inputFieldParser/InputFieldDeclaration.ts:33](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/parsers/inputFieldParser/InputFieldDeclaration.ts#L33)
+定义位置: [packages/core/src/parsers/inputFieldParser/InputFieldDeclaration.ts:33](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/parsers/inputFieldParser/InputFieldDeclaration.ts#L33)
+
+可选的字段参数数组。
 
 ***
 
@@ -21,7 +25,9 @@ Defined in: [packages/core/src/parsers/inputFieldParser/InputFieldDeclaration.ts
 
 > `optional` **bindTarget**: [`BindTargetDeclaration`](/obsidian-meta-bind-plugin-docs/api/interfaces/bindtargetdeclaration/)
 
-Defined in: [packages/core/src/parsers/inputFieldParser/InputFieldDeclaration.ts:32](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/parsers/inputFieldParser/InputFieldDeclaration.ts#L32)
+定义位置: [packages/core/src/parsers/inputFieldParser/InputFieldDeclaration.ts:32](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/parsers/inputFieldParser/InputFieldDeclaration.ts#L32)
+
+可选的绑定目标声明。
 
 ***
 
@@ -29,7 +35,9 @@ Defined in: [packages/core/src/parsers/inputFieldParser/InputFieldDeclaration.ts
 
 > `optional` **inputFieldType**: [`InputFieldType`](/obsidian-meta-bind-plugin-docs/api/enumerations/inputfieldtype/)
 
-Defined in: [packages/core/src/parsers/inputFieldParser/InputFieldDeclaration.ts:30](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/parsers/inputFieldParser/InputFieldDeclaration.ts#L30)
+定义位置: [packages/core/src/parsers/inputFieldParser/InputFieldDeclaration.ts:30](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/parsers/inputFieldParser/InputFieldDeclaration.ts#L30)
+
+可选的输入字段类型。
 
 ***
 
@@ -37,4 +45,6 @@ Defined in: [packages/core/src/parsers/inputFieldParser/InputFieldDeclaration.ts
 
 > `optional` **templateName**: `string`
 
-Defined in: [packages/core/src/parsers/inputFieldParser/InputFieldDeclaration.ts:31](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/parsers/inputFieldParser/InputFieldDeclaration.ts#L31)
+定义位置: [packages/core/src/parsers/inputFieldParser/InputFieldDeclaration.ts:31](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/parsers/inputFieldParser/InputFieldDeclaration.ts#L31)
+
+可选的模板名称。

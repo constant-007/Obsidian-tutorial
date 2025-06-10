@@ -5,15 +5,19 @@ prev: false
 title: "CreateNoteButtonAction"
 ---
 
-Defined in: [packages/core/src/config/ButtonConfig.ts:87](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/config/ButtonConfig.ts#L87)
+定义位置: [packages/core/src/config/ButtonConfig.ts:87](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/config/ButtonConfig.ts#L87)
 
-## Properties
+创建笔记按钮动作接口，用于创建新的笔记文件。
+
+## 属性
 
 ### fileName
 
 > **fileName**: `string`
 
-Defined in: [packages/core/src/config/ButtonConfig.ts:90](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/config/ButtonConfig.ts#L90)
+定义位置: [packages/core/src/config/ButtonConfig.ts:90](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/config/ButtonConfig.ts#L90)
+
+要创建的笔记文件名。
 
 ***
 
@@ -21,7 +25,9 @@ Defined in: [packages/core/src/config/ButtonConfig.ts:90](https://github.com/mPr
 
 > `optional` **folderPath**: `string`
 
-Defined in: [packages/core/src/config/ButtonConfig.ts:89](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/config/ButtonConfig.ts#L89)
+定义位置: [packages/core/src/config/ButtonConfig.ts:89](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/config/ButtonConfig.ts#L89)
+
+可选的文件夹路径，指定笔记创建位置。
 
 ***
 
@@ -29,7 +35,9 @@ Defined in: [packages/core/src/config/ButtonConfig.ts:89](https://github.com/mPr
 
 > `optional` **openIfAlreadyExists**: `boolean`
 
-Defined in: [packages/core/src/config/ButtonConfig.ts:92](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/config/ButtonConfig.ts#L92)
+定义位置: [packages/core/src/config/ButtonConfig.ts:92](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/config/ButtonConfig.ts#L92)
+
+可选，如果笔记已存在是否打开现有笔记。
 
 ***
 
@@ -37,7 +45,9 @@ Defined in: [packages/core/src/config/ButtonConfig.ts:92](https://github.com/mPr
 
 > `optional` **openNote**: `boolean`
 
-Defined in: [packages/core/src/config/ButtonConfig.ts:91](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/config/ButtonConfig.ts#L91)
+定义位置: [packages/core/src/config/ButtonConfig.ts:91](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/config/ButtonConfig.ts#L91)
+
+可选，是否在创建后打开新笔记。
 
 ***
 
@@ -45,4 +55,6 @@ Defined in: [packages/core/src/config/ButtonConfig.ts:91](https://github.com/mPr
 
 > **type**: [`CREATE_NOTE`](/obsidian-meta-bind-plugin-docs/api/enumerations/buttonactiontype/#create_note)
 
-Defined in: [packages/core/src/config/ButtonConfig.ts:88](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/config/ButtonConfig.ts#L88)
+定义位置: [packages/core/src/config/ButtonConfig.ts:88](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/config/ButtonConfig.ts#L88)
+
+按钮动作类型，固定为CREATE_NOTE。
