@@ -5,16 +5,19 @@ prev: false
 title: "InputFieldArgumentType"
 ---
 
-Defined in: [packages/core/src/config/FieldConfigs.ts:49](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/config/FieldConfigs.ts#L49)
+定义位置: [packages/core/src/config/FieldConfigs.ts:49](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/config/FieldConfigs.ts#L49)
 
-## Enumeration Members
+输入字段参数类型枚举，定义了输入字段可用的参数类型。
+
+## 枚举成员
 
 <table>
 <thead>
 <tr>
-<th>Enumeration Member</th>
-<th>Value</th>
-<th>Defined in</th>
+<th>枚举成员</th>
+<th>值</th>
+<th>描述</th>
+<th>定义位置</th>
 </tr>
 </thead>
 <tbody>
@@ -27,6 +30,11 @@ Defined in: [packages/core/src/config/FieldConfigs.ts:49](https://github.com/mPr
 <td>
 
 `"addLabels"`
+
+</td>
+<td>
+
+添加标签参数
 
 </td>
 <td>
@@ -48,6 +56,11 @@ Defined in: [packages/core/src/config/FieldConfigs.ts:49](https://github.com/mPr
 </td>
 <td>
 
+允许其他值参数
+
+</td>
+<td>
+
 [packages/core/src/config/FieldConfigs.ts:66](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/config/FieldConfigs.ts#L66)
 
 </td>
@@ -61,6 +74,11 @@ Defined in: [packages/core/src/config/FieldConfigs.ts:49](https://github.com/mPr
 <td>
 
 `"class"`
+
+</td>
+<td>
+
+CSS 类名参数
 
 </td>
 <td>
@@ -82,6 +100,11 @@ Defined in: [packages/core/src/config/FieldConfigs.ts:49](https://github.com/mPr
 </td>
 <td>
 
+默认值参数
+
+</td>
+<td>
+
 [packages/core/src/config/FieldConfigs.ts:61](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/config/FieldConfigs.ts#L61)
 
 </td>
@@ -95,6 +118,11 @@ Defined in: [packages/core/src/config/FieldConfigs.ts:49](https://github.com/mPr
 <td>
 
 `"invalid"`
+
+</td>
+<td>
+
+无效参数类型
 
 </td>
 <td>
@@ -116,6 +144,11 @@ Defined in: [packages/core/src/config/FieldConfigs.ts:49](https://github.com/mPr
 </td>
 <td>
 
+限制参数
+
+</td>
+<td>
+
 [packages/core/src/config/FieldConfigs.ts:64](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/config/FieldConfigs.ts#L64)
 
 </td>
@@ -129,6 +162,11 @@ Defined in: [packages/core/src/config/FieldConfigs.ts:49](https://github.com/mPr
 <td>
 
 `"maxValue"`
+
+</td>
+<td>
+
+最大值参数
 
 </td>
 <td>
@@ -150,6 +188,11 @@ Defined in: [packages/core/src/config/FieldConfigs.ts:49](https://github.com/mPr
 </td>
 <td>
 
+最小值参数
+
+</td>
+<td>
+
 [packages/core/src/config/FieldConfigs.ts:52](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/config/FieldConfigs.ts#L52)
 
 </td>
@@ -163,6 +206,11 @@ Defined in: [packages/core/src/config/FieldConfigs.ts:49](https://github.com/mPr
 <td>
 
 `"multiLine"`
+
+</td>
+<td>
+
+多行输入参数
 
 </td>
 <td>
@@ -184,6 +232,11 @@ Defined in: [packages/core/src/config/FieldConfigs.ts:49](https://github.com/mPr
 </td>
 <td>
 
+关闭值参数
+
+</td>
+<td>
+
 [packages/core/src/config/FieldConfigs.ts:60](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/config/FieldConfigs.ts#L60)
 
 </td>
@@ -197,6 +250,11 @@ Defined in: [packages/core/src/config/FieldConfigs.ts:49](https://github.com/mPr
 <td>
 
 `"onValue"`
+
+</td>
+<td>
+
+开启值参数
 
 </td>
 <td>
@@ -218,7 +276,12 @@ Defined in: [packages/core/src/config/FieldConfigs.ts:49](https://github.com/mPr
 </td>
 <td>
 
-[packages/core/src/config/FieldConfigs.ts:55](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/config/FieldConfigs.ts#L55)
+选项参数
+
+</td>
+<td>
+
+[packages/core/src/config/FieldConfigs.ts:54](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/config/FieldConfigs.ts#L54)
 
 </td>
 </tr>
@@ -235,7 +298,12 @@ Defined in: [packages/core/src/config/FieldConfigs.ts:49](https://github.com/mPr
 </td>
 <td>
 
-[packages/core/src/config/FieldConfigs.ts:57](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/config/FieldConfigs.ts#L57)
+选项查询参数
+
+</td>
+<td>
+
+[packages/core/src/config/FieldConfigs.ts:55](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/config/FieldConfigs.ts#L55)
 
 </td>
 </tr>
@@ -252,24 +320,34 @@ Defined in: [packages/core/src/config/FieldConfigs.ts:49](https://github.com/mPr
 </td>
 <td>
 
-[packages/core/src/config/FieldConfigs.ts:62](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/config/FieldConfigs.ts#L62)
+占位符参数
+
+</td>
+<td>
+
+[packages/core/src/config/FieldConfigs.ts:56](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/config/FieldConfigs.ts#L56)
 
 </td>
 </tr>
 <tr>
 <td>
 
-<a id="showcase"></a> `SHOWCASE`
+<a id="show_value"></a> `SHOW_VALUE`
 
 </td>
 <td>
 
-`"showcase"`
+`"showValue"`
 
 </td>
 <td>
 
-[packages/core/src/config/FieldConfigs.ts:58](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/config/FieldConfigs.ts#L58)
+显示值参数
+
+</td>
+<td>
+
+[packages/core/src/config/FieldConfigs.ts:57](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/config/FieldConfigs.ts#L57)
 
 </td>
 </tr>
@@ -286,7 +364,12 @@ Defined in: [packages/core/src/config/FieldConfigs.ts:49](https://github.com/mPr
 </td>
 <td>
 
-[packages/core/src/config/FieldConfigs.ts:54](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/config/FieldConfigs.ts#L54)
+步长大小参数
+
+</td>
+<td>
+
+[packages/core/src/config/FieldConfigs.ts:58](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/config/FieldConfigs.ts#L58)
 
 </td>
 </tr>
@@ -303,7 +386,12 @@ Defined in: [packages/core/src/config/FieldConfigs.ts:49](https://github.com/mPr
 </td>
 <td>
 
-[packages/core/src/config/FieldConfigs.ts:56](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/config/FieldConfigs.ts#L56)
+标题参数
+
+</td>
+<td>
+
+[packages/core/src/config/FieldConfigs.ts:62](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/config/FieldConfigs.ts#L62)
 
 </td>
 </tr>
@@ -320,7 +408,34 @@ Defined in: [packages/core/src/config/FieldConfigs.ts:49](https://github.com/mPr
 </td>
 <td>
 
+使用链接参数
+
+</td>
+<td>
+
 [packages/core/src/config/FieldConfigs.ts:63](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/config/FieldConfigs.ts#L63)
+
+</td>
+</tr>
+<tr>
+<td>
+
+<a id="use_suggested_values"></a> `USE_SUGGESTED_VALUES`
+
+</td>
+<td>
+
+`"useSuggestedValues"`
+
+</td>
+<td>
+
+使用建议值参数
+
+</td>
+<td>
+
+[packages/core/src/config/FieldConfigs.ts:67](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/config/FieldConfigs.ts#L67)
 
 </td>
 </tr>

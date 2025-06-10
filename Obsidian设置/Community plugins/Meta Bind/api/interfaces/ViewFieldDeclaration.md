@@ -5,19 +5,23 @@ prev: false
 title: "ViewFieldDeclaration"
 ---
 
-Defined in: [packages/core/src/parsers/viewFieldParser/ViewFieldDeclaration.ts:14](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/parsers/viewFieldParser/ViewFieldDeclaration.ts#L14)
+定义位置: [packages/core/src/parsers/viewFieldParser/ViewFieldDeclaration.ts:14](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/parsers/viewFieldParser/ViewFieldDeclaration.ts#L14)
 
-## Extends
+视图字段声明接口，扩展了基础字段声明，用于定义视图字段的属性和行为。
 
-- [`FieldDeclaration`](/obsidian-meta-bind-plugin-docs/api/interfaces/fielddeclaration/)
+## 继承
 
-## Properties
+- [`FieldDeclaration`](/obsidian-meta-bind-plugin-docs/api/interfaces/fielddeclaration/) - 基础字段声明
+
+## 属性
 
 ### argumentContainer
 
 > **argumentContainer**: `ViewFieldArgumentContainer`
 
-Defined in: [packages/core/src/parsers/viewFieldParser/ViewFieldDeclaration.ts:17](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/parsers/viewFieldParser/ViewFieldDeclaration.ts#L17)
+定义位置: [packages/core/src/parsers/viewFieldParser/ViewFieldDeclaration.ts:17](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/parsers/viewFieldParser/ViewFieldDeclaration.ts#L17)
+
+视图字段参数容器，包含字段的配置参数
 
 ***
 
@@ -25,9 +29,11 @@ Defined in: [packages/core/src/parsers/viewFieldParser/ViewFieldDeclaration.ts:1
 
 > `optional` **declarationString**: `string`
 
-Defined in: [packages/core/src/parsers/FieldDeclaration.ts:5](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/parsers/FieldDeclaration.ts#L5)
+定义位置: [packages/core/src/parsers/FieldDeclaration.ts:5](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/parsers/FieldDeclaration.ts#L5)
 
-#### Inherited from
+字段的声明字符串（可选）
+
+#### 继承自
 
 [`FieldDeclaration`](/obsidian-meta-bind-plugin-docs/api/interfaces/fielddeclaration/).[`declarationString`](/obsidian-meta-bind-plugin-docs/api/interfaces/fielddeclaration/#declarationstring)
 
@@ -37,9 +43,11 @@ Defined in: [packages/core/src/parsers/FieldDeclaration.ts:5](https://github.com
 
 > **errorCollection**: `ErrorCollection`
 
-Defined in: [packages/core/src/parsers/FieldDeclaration.ts:6](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/parsers/FieldDeclaration.ts#L6)
+定义位置: [packages/core/src/parsers/FieldDeclaration.ts:6](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/parsers/FieldDeclaration.ts#L6)
 
-#### Inherited from
+错误收集器，用于存储字段解析过程中的错误信息
+
+#### 继承自
 
 [`FieldDeclaration`](/obsidian-meta-bind-plugin-docs/api/interfaces/fielddeclaration/).[`errorCollection`](/obsidian-meta-bind-plugin-docs/api/interfaces/fielddeclaration/#errorcollection)
 
@@ -49,7 +57,9 @@ Defined in: [packages/core/src/parsers/FieldDeclaration.ts:6](https://github.com
 
 > **templateDeclaration**: (`string` \| [`BindTargetDeclaration`](/obsidian-meta-bind-plugin-docs/api/interfaces/bindtargetdeclaration/))[]
 
-Defined in: [packages/core/src/parsers/viewFieldParser/ViewFieldDeclaration.ts:15](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/parsers/viewFieldParser/ViewFieldDeclaration.ts#L15)
+定义位置: [packages/core/src/parsers/viewFieldParser/ViewFieldDeclaration.ts:15](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/parsers/viewFieldParser/ViewFieldDeclaration.ts#L15)
+
+模板声明数组，包含字符串和绑定目标声明的组合
 
 ***
 
@@ -57,7 +67,9 @@ Defined in: [packages/core/src/parsers/viewFieldParser/ViewFieldDeclaration.ts:1
 
 > **viewFieldType**: [`ViewFieldType`](/obsidian-meta-bind-plugin-docs/api/enumerations/viewfieldtype/)
 
-Defined in: [packages/core/src/parsers/viewFieldParser/ViewFieldDeclaration.ts:16](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/parsers/viewFieldParser/ViewFieldDeclaration.ts#L16)
+定义位置: [packages/core/src/parsers/viewFieldParser/ViewFieldDeclaration.ts:16](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/parsers/viewFieldParser/ViewFieldDeclaration.ts#L16)
+
+视图字段类型，指定字段的显示方式
 
 ***
 
@@ -65,4 +77,6 @@ Defined in: [packages/core/src/parsers/viewFieldParser/ViewFieldDeclaration.ts:1
 
 > `optional` **writeToBindTarget**: [`BindTargetDeclaration`](/obsidian-meta-bind-plugin-docs/api/interfaces/bindtargetdeclaration/)
 
-Defined in: [packages/core/src/parsers/viewFieldParser/ViewFieldDeclaration.ts:18](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/parsers/viewFieldParser/ViewFieldDeclaration.ts#L18)
+定义位置: [packages/core/src/parsers/viewFieldParser/ViewFieldDeclaration.ts:18](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/parsers/viewFieldParser/ViewFieldDeclaration.ts#L18)
+
+可选的写入绑定目标，用于将视图字段的输出写入指定位置

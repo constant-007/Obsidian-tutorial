@@ -5,16 +5,19 @@ prev: false
 title: "ViewFieldArgumentType"
 ---
 
-Defined in: [packages/core/src/config/FieldConfigs.ts:527](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/config/FieldConfigs.ts#L527)
+定义位置: [packages/core/src/config/FieldConfigs.ts:527](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/config/FieldConfigs.ts#L527)
 
-## Enumeration Members
+视图字段参数类型枚举，定义了视图字段可用的参数类型。
+
+## 枚举成员
 
 <table>
 <thead>
 <tr>
-<th>Enumeration Member</th>
-<th>Value</th>
-<th>Defined in</th>
+<th>枚举成员</th>
+<th>值</th>
+<th>描述</th>
+<th>定义位置</th>
 </tr>
 </thead>
 <tbody>
@@ -27,6 +30,11 @@ Defined in: [packages/core/src/config/FieldConfigs.ts:527](https://github.com/mP
 <td>
 
 `"class"`
+
+</td>
+<td>
+
+CSS 类名参数
 
 </td>
 <td>
@@ -48,6 +56,11 @@ Defined in: [packages/core/src/config/FieldConfigs.ts:527](https://github.com/mP
 </td>
 <td>
 
+隐藏字段参数
+
+</td>
+<td>
+
 [packages/core/src/config/FieldConfigs.ts:529](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/config/FieldConfigs.ts#L529)
 
 </td>
@@ -65,6 +78,11 @@ Defined in: [packages/core/src/config/FieldConfigs.ts:527](https://github.com/mP
 </td>
 <td>
 
+无效参数类型
+
+</td>
+<td>
+
 [packages/core/src/config/FieldConfigs.ts:532](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/config/FieldConfigs.ts#L532)
 
 </td>
@@ -78,6 +96,11 @@ Defined in: [packages/core/src/config/FieldConfigs.ts:527](https://github.com/mP
 <td>
 
 `"renderMarkdown"`
+
+</td>
+<td>
+
+渲染Markdown参数
 
 </td>
 <td>

@@ -5,16 +5,19 @@ prev: false
 title: "RenderChildType"
 ---
 
-Defined in: [packages/core/src/config/APIConfigs.ts:12](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/config/APIConfigs.ts#L12)
+定义位置: [packages/core/src/config/APIConfigs.ts:12](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/config/APIConfigs.ts#L12)
 
-## Enumeration Members
+渲染子元素类型枚举，定义了字段的渲染方式。
+
+## 枚举成员
 
 <table>
 <thead>
 <tr>
-<th>Enumeration Member</th>
-<th>Value</th>
-<th>Defined in</th>
+<th>枚举成员</th>
+<th>值</th>
+<th>描述</th>
+<th>定义位置</th>
 </tr>
 </thead>
 <tbody>
@@ -27,6 +30,11 @@ Defined in: [packages/core/src/config/APIConfigs.ts:12](https://github.com/mProj
 <td>
 
 `"block"`
+
+</td>
+<td>
+
+块级渲染，独占一行
 
 </td>
 <td>
@@ -44,6 +52,11 @@ Defined in: [packages/core/src/config/APIConfigs.ts:12](https://github.com/mProj
 <td>
 
 `"inline"`
+
+</td>
+<td>
+
+内联渲染，与文本同行
 
 </td>
 <td>
