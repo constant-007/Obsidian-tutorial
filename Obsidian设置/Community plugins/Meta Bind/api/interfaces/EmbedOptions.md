@@ -5,15 +5,19 @@ prev: false
 title: "EmbedOptions"
 ---
 
-Defined in: [packages/core/src/config/APIConfigs.ts:79](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/config/APIConfigs.ts#L79)
+定义位置: [packages/core/src/config/APIConfigs.ts:79](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/config/APIConfigs.ts#L79)
 
-## Properties
+嵌入选项接口，定义内容嵌入的配置。
+
+## 属性
 
 ### content
 
 > **content**: `string`
 
-Defined in: [packages/core/src/config/APIConfigs.ts:81](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/config/APIConfigs.ts#L81)
+定义位置: [packages/core/src/config/APIConfigs.ts:81](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/config/APIConfigs.ts#L81)
+
+要嵌入的内容字符串。
 
 ***
 
@@ -21,4 +25,6 @@ Defined in: [packages/core/src/config/APIConfigs.ts:81](https://github.com/mProj
 
 > **depth**: `number`
 
-Defined in: [packages/core/src/config/APIConfigs.ts:80](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/config/APIConfigs.ts#L80)
+定义位置: [packages/core/src/config/APIConfigs.ts:80](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/config/APIConfigs.ts#L80)
+
+嵌入深度限制。
