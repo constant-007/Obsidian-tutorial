@@ -5,29 +5,29 @@ prev: false
 title: "ObsAPI"
 ---
 
-Defined in: [packages/obsidian/src/ObsAPI.ts:38](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/obsidian/src/ObsAPI.ts#L38)
+定义位置: [packages/obsidian/src/ObsAPI.ts:38](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/obsidian/src/ObsAPI.ts#L38)
 
-Meta Bind API for Obsidian.
+用于 Obsidian 的 Meta Bind API。
 
-## Extends
+## 继承
 
 - `API`\<`ObsComponents`\>
 
-## Constructors
+## 构造函数
 
 ### Constructor
 
 > **new ObsAPI**(`mb`): `ObsAPI`
 
-Defined in: [packages/obsidian/src/ObsAPI.ts:42](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/obsidian/src/ObsAPI.ts#L42)
+定义位置: [packages/obsidian/src/ObsAPI.ts:42](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/obsidian/src/ObsAPI.ts#L42)
 
-#### Parameters
+#### 参数
 
 <table>
 <thead>
 <tr>
-<th>Parameter</th>
-<th>Type</th>
+<th>参数</th>
+<th>类型</th>
 </tr>
 </thead>
 <tbody>
@@ -46,46 +46,46 @@ Defined in: [packages/obsidian/src/ObsAPI.ts:42](https://github.com/mProjectsCod
 </tbody>
 </table>
 
-#### Returns
+#### 返回值
 
 `ObsAPI`
 
-#### Overrides
+#### 重写
 
 `API<ObsComponents>.constructor`
 
-## Properties
+## 属性
 
 ### mb
 
 > `readonly` **mb**: `MetaBind`\<`ObsComponents`\>
 
-Defined in: [packages/core/src/api/API.ts:63](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/api/API.ts#L63)
+定义位置: [packages/core/src/api/API.ts:63](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/api/API.ts#L63)
 
-#### Inherited from
+#### 继承自
 
 `API.mb`
 
-## Methods
+## 方法
 
 ### constructMDRCWidget()
 
 > **constructMDRCWidget**(`inlineFieldType`, `content`, `filePath`, `component`): `MarkdownRenderChildWidget`
 
-Defined in: [packages/obsidian/src/ObsAPI.ts:88](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/obsidian/src/ObsAPI.ts#L88)
+定义位置: [packages/obsidian/src/ObsAPI.ts:88](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/obsidian/src/ObsAPI.ts#L88)
 
-Creates a CM6 widget from a given widget type.
+从给定的小组件类型创建 CM6 小组件。
 
-This is only useful for use in a CodeMirror plugin.
+这仅对在 CodeMirror 插件中使用有用。
 
-#### Parameters
+#### 参数
 
 <table>
 <thead>
 <tr>
-<th>Parameter</th>
-<th>Type</th>
-<th>Description</th>
+<th>参数</th>
+<th>类型</th>
+<th>描述</th>
 </tr>
 </thead>
 <tbody>
@@ -102,6 +102,8 @@ This is only useful for use in a CodeMirror plugin.
 </td>
 <td>
 
+内联字段类型
+
 </td>
 </tr>
 <tr>
@@ -116,6 +118,8 @@ This is only useful for use in a CodeMirror plugin.
 
 </td>
 <td>
+
+内容
 
 </td>
 </tr>
@@ -132,6 +136,8 @@ This is only useful for use in a CodeMirror plugin.
 </td>
 <td>
 
+文件路径
+
 </td>
 </tr>
 <tr>
@@ -147,12 +153,14 @@ This is only useful for use in a CodeMirror plugin.
 </td>
 <td>
 
+组件
+
 </td>
 </tr>
 </tbody>
 </table>
 
-#### Returns
+#### 返回值
 
 `MarkdownRenderChildWidget`
 
@@ -162,19 +170,19 @@ This is only useful for use in a CodeMirror plugin.
 
 > **createBindTarget**(`storageType`, `storagePath`, `property`, `listenToChildren`): [`BindTargetDeclaration`](/obsidian-meta-bind-plugin-docs/api/interfaces/bindtargetdeclaration/)
 
-Defined in: [packages/core/src/api/API.ts:591](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/api/API.ts#L591)
+定义位置: [packages/core/src/api/API.ts:591](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/api/API.ts#L591)
 
-Creates a bind target declaration.
+创建绑定目标声明。
 
-#### Parameters
+#### 参数
 
 <table>
 <thead>
 <tr>
-<th>Parameter</th>
-<th>Type</th>
-<th>Default value</th>
-<th>Description</th>
+<th>参数</th>
+<th>类型</th>
+<th>默认值</th>
+<th>描述</th>
 </tr>
 </thead>
 <tbody>
@@ -196,7 +204,7 @@ Creates a bind target declaration.
 </td>
 <td>
 
-the storage type (also named metadata source sometimes)
+存储类型（有时也称为元数据源）
 
 </td>
 </tr>
@@ -218,7 +226,7 @@ the storage type (also named metadata source sometimes)
 </td>
 <td>
 
-the storage path (usually the file path)
+存储路径
 
 </td>
 </tr>
@@ -230,7 +238,7 @@ the storage path (usually the file path)
 </td>
 <td>
 
-`string`[]
+`string`
 
 </td>
 <td>
@@ -240,7 +248,7 @@ the storage path (usually the file path)
 </td>
 <td>
 
-the property access path as an array. E.g. for the path `cache.a.b.c`, the array would be `['a', 'b', 'c']`.
+属性名
 
 </td>
 </tr>
@@ -262,42 +270,59 @@ the property access path as an array. E.g. for the path `cache.a.b.c`, the array
 </td>
 <td>
 
-whether to listen to children, only relevant for arrays and objects
+是否监听子元素变化
 
 </td>
 </tr>
 </tbody>
 </table>
 
-#### Returns
+#### 返回值
 
 [`BindTargetDeclaration`](/obsidian-meta-bind-plugin-docs/api/interfaces/bindtargetdeclaration/)
 
-#### Inherited from
+#### 继承自
 
 `API.createBindTarget`
 
 ***
 
-### createButtonGroupMountable()
+### createButton()
 
-> **createButtonGroupMountable**(`filePath`, `options`): `ButtonGroupMountable`
+> **createButton**(`config`, `filePath`, `position`?): [`FieldMountable`](/obsidian-meta-bind-plugin-docs/api/classes/fieldmountable/)
 
-Defined in: [packages/core/src/api/API.ts:386](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/api/API.ts#L386)
+定义位置: [packages/core/src/api/API.ts:405](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/api/API.ts#L405)
 
-Creates a button group from an options object.
+创建按钮。
 
-#### Parameters
+#### 参数
 
 <table>
 <thead>
 <tr>
-<th>Parameter</th>
-<th>Type</th>
-<th>Description</th>
+<th>参数</th>
+<th>类型</th>
+<th>描述</th>
 </tr>
 </thead>
 <tbody>
+<tr>
+<td>
+
+`config`
+
+</td>
+<td>
+
+[`ButtonConfig`](/obsidian-meta-bind-plugin-docs/api/interfaces/buttonconfig/)
+
+</td>
+<td>
+
+按钮配置
+
+</td>
+</tr>
 <tr>
 <td>
 
@@ -311,7 +336,73 @@ Creates a button group from an options object.
 </td>
 <td>
 
-the file path that the field is located in or an empty string
+文件路径
+
+</td>
+</tr>
+<tr>
+<td>
+
+`position`?
+
+</td>
+<td>
+
+[`NotePosition`](/obsidian-meta-bind-plugin-docs/api/classes/noteposition/)
+
+</td>
+<td>
+
+位置（可选）
+
+</td>
+</tr>
+</tbody>
+</table>
+
+#### 返回值
+
+[`FieldMountable`](/obsidian-meta-bind-plugin-docs/api/classes/fieldmountable/)
+
+#### 继承自
+
+`API.createButton`
+
+***
+
+### createButtonGroup()
+
+> **createButtonGroup**(`configs`, `options`, `filePath`, `position`?): [`FieldMountable`](/obsidian-meta-bind-plugin-docs/api/classes/fieldmountable/)
+
+定义位置: [packages/core/src/api/API.ts:415](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/api/API.ts#L415)
+
+创建按钮组。
+
+#### 参数
+
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+
+`configs`
+
+</td>
+<td>
+
+[`ButtonConfig`](/obsidian-meta-bind-plugin-docs/api/interfaces/buttonconfig/)[]
+
+</td>
+<td>
+
+按钮配置数组
 
 </td>
 </tr>
@@ -328,40 +419,10 @@ the file path that the field is located in or an empty string
 </td>
 <td>
 
+按钮组选项
+
 </td>
 </tr>
-</tbody>
-</table>
-
-#### Returns
-
-`ButtonGroupMountable`
-
-#### Inherited from
-
-`API.createButtonGroupMountable`
-
-***
-
-### createButtonMountable()
-
-> **createButtonMountable**(`filePath`, `options`): `ButtonMountable`
-
-Defined in: [packages/core/src/api/API.ts:423](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/api/API.ts#L423)
-
-Creates a button from an options object.
-
-#### Parameters
-
-<table>
-<thead>
-<tr>
-<th>Parameter</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
 <tr>
 <td>
 
@@ -375,209 +436,156 @@ Creates a button from an options object.
 </td>
 <td>
 
-the file path that the field is located in or an empty string
+文件路径
 
 </td>
 </tr>
 <tr>
 <td>
 
-`options`
+`position`?
 
 </td>
 <td>
 
-[`ButtonOptions`](/obsidian-meta-bind-plugin-docs/api/interfaces/buttonoptions/)
+[`NotePosition`](/obsidian-meta-bind-plugin-docs/api/classes/noteposition/)
 
 </td>
 <td>
+
+位置（可选）
 
 </td>
 </tr>
 </tbody>
 </table>
 
-#### Returns
+#### 返回值
 
-`ButtonMountable`
+[`FieldMountable`](/obsidian-meta-bind-plugin-docs/api/classes/fieldmountable/)
 
-#### Inherited from
+#### 继承自
 
-`API.createButtonMountable`
+`API.createButtonGroup`
 
 ***
 
-### createEmbedMountable()
+### createExcludeBindTarget()
 
-> **createEmbedMountable**(`filePath`, `options`): `EmbedMountable`
+> **createExcludeBindTarget**(`bindTarget`, ...`properties`): [`BindTargetDeclaration`](/obsidian-meta-bind-plugin-docs/api/interfaces/bindtargetdeclaration/)
 
-Defined in: [packages/core/src/api/API.ts:453](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/api/API.ts#L453)
+定义位置: [packages/core/src/api/API.ts:602](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/api/API.ts#L602)
 
-Creates a meta bind embed fields from an options object.
+创建排除绑定目标声明。
 
-#### Parameters
+#### 参数
 
 <table>
 <thead>
 <tr>
-<th>Parameter</th>
-<th>Type</th>
-<th>Description</th>
+<th>参数</th>
+<th>类型</th>
+<th>描述</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
 
-`filePath`
+`bindTarget`
 
 </td>
 <td>
 
-`string`
+[`BindTargetDeclaration`](/obsidian-meta-bind-plugin-docs/api/interfaces/bindtargetdeclaration/)
 
 </td>
 <td>
 
-the file path that the field is located in or an empty string
+基础绑定目标
 
 </td>
 </tr>
 <tr>
 <td>
 
-`options`
+...`properties`
 
 </td>
 <td>
 
-[`EmbedOptions`](/obsidian-meta-bind-plugin-docs/api/interfaces/embedoptions/)
+`string`[]
 
 </td>
 <td>
+
+要排除的属性
 
 </td>
 </tr>
 </tbody>
 </table>
 
-#### Returns
+#### 返回值
 
-`EmbedMountable`
+[`BindTargetDeclaration`](/obsidian-meta-bind-plugin-docs/api/interfaces/bindtargetdeclaration/)
 
-#### Inherited from
+#### 继承自
 
-`API.createEmbedMountable`
-
-***
-
-### createExcludedMountable()
-
-> **createExcludedMountable**(`filePath`): `ExcludedMountable`
-
-Defined in: [packages/core/src/api/API.ts:474](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/api/API.ts#L474)
-
-Creates an excluded notification mountable for the excluded folders setting.
-
-#### Parameters
-
-<table>
-<thead>
-<tr>
-<th>Parameter</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-
-`filePath`
-
-</td>
-<td>
-
-`string`
-
-</td>
-<td>
-
-the file path that the field is located in or an empty string
-
-</td>
-</tr>
-</tbody>
-</table>
-
-#### Returns
-
-`ExcludedMountable`
-
-#### Inherited from
-
-`API.createExcludedMountable`
+`API.createExcludeBindTarget`
 
 ***
 
 ### createField()
 
-> **createField**\<`Type`\>(`type`, `filePath`, `options`, `honorExcludedSetting`): [`FieldMountable`](/obsidian-meta-bind-plugin-docs/api/classes/fieldmountable/)
+> **createField**(`field`, `bindTarget`, `filePath`, `position`?): [`FieldMountable`](/obsidian-meta-bind-plugin-docs/api/classes/fieldmountable/)
 
-Defined in: [packages/core/src/api/API.ts:77](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/api/API.ts#L77)
+定义位置: [packages/core/src/api/API.ts:347](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/api/API.ts#L347)
 
-Creates a field of a given type.
+创建字段。
 
-#### Type Parameters
+#### 参数
 
 <table>
 <thead>
 <tr>
-<th>Type Parameter</th>
+<th>参数</th>
+<th>类型</th>
+<th>描述</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
 
-`Type` *extends* [`FieldType`](/obsidian-meta-bind-plugin-docs/api/enumerations/fieldtype/)
+`field`
+
+</td>
+<td>
+
+[`FieldDeclaration`](/obsidian-meta-bind-plugin-docs/api/interfaces/fielddeclaration/)
+
+</td>
+<td>
+
+字段声明
 
 </td>
 </tr>
-</tbody>
-</table>
-
-#### Parameters
-
-<table>
-<thead>
-<tr>
-<th>Parameter</th>
-<th>Type</th>
-<th>Default value</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
 <tr>
 <td>
 
-`type`
+`bindTarget`
 
 </td>
 <td>
 
-`Type`
+[`BindTargetDeclaration`](/obsidian-meta-bind-plugin-docs/api/interfaces/bindtargetdeclaration/)
 
 </td>
 <td>
 
-`undefined`
-
-</td>
-<td>
-
-the type of the field
+绑定目标
 
 </td>
 </tr>
@@ -594,95 +602,63 @@ the type of the field
 </td>
 <td>
 
-`undefined`
-
-</td>
-<td>
-
-the file path that the field is located in, or an empty string if it is not in a file
+文件路径
 
 </td>
 </tr>
 <tr>
 <td>
 
-`options`
+`position`?
 
 </td>
 <td>
 
-[`FieldOptionMap`](/obsidian-meta-bind-plugin-docs/api/interfaces/fieldoptionmap/)\[`Type`\]
+[`NotePosition`](/obsidian-meta-bind-plugin-docs/api/classes/noteposition/)
 
 </td>
 <td>
 
-`undefined`
-
-</td>
-<td>
-
-</td>
-</tr>
-<tr>
-<td>
-
-`honorExcludedSetting`
-
-</td>
-<td>
-
-`boolean`
-
-</td>
-<td>
-
-`true`
-
-</td>
-<td>
-
-whether to honor the excluded folders settings for this field
+位置（可选）
 
 </td>
 </tr>
 </tbody>
 </table>
 
-#### Returns
+#### 返回值
 
 [`FieldMountable`](/obsidian-meta-bind-plugin-docs/api/classes/fieldmountable/)
 
-#### Inherited from
+#### 继承自
 
 `API.createField`
 
 ***
 
-### createInlineFieldFromString()
+### createFieldArgument()
 
-> **createInlineFieldFromString**(`fieldString`, `filePath`, `scope`, `renderChildType`, `position?`, `honorExcludedSetting?`): [`FieldMountable`](/obsidian-meta-bind-plugin-docs/api/classes/fieldmountable/)
+> **createFieldArgument**(`name`, `value`): [`SimpleFieldArgument`](/obsidian-meta-bind-plugin-docs/api/interfaces/simplefieldargument/)
 
-Defined in: [packages/core/src/api/API.ts:137](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/api/API.ts#L137)
+定义位置: [packages/core/src/api/API.ts:670](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/api/API.ts#L670)
 
-Creates an inline field from a string.
-Will throw an error if the string is not a valid declaration.
+创建字段参数。
 
-#### Parameters
+#### 参数
 
 <table>
 <thead>
 <tr>
-<th>Parameter</th>
-<th>Type</th>
-<th>Default value</th>
-<th>Description</th>
+<th>参数</th>
+<th>类型</th>
+<th>描述</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
 
-`fieldString`
+`name`
 
 </td>
 <td>
@@ -692,554 +668,10 @@ Will throw an error if the string is not a valid declaration.
 </td>
 <td>
 
-`undefined`
-
-</td>
-<td>
-
-the declaration string of the field
+参数名
 
 </td>
 </tr>
-<tr>
-<td>
-
-`filePath`
-
-</td>
-<td>
-
-`string`
-
-</td>
-<td>
-
-`undefined`
-
-</td>
-<td>
-
-the file path that the field is located in
-
-</td>
-</tr>
-<tr>
-<td>
-
-`scope`
-
-</td>
-<td>
-
-`undefined` \| `BindTargetScope`
-
-</td>
-<td>
-
-`undefined`
-
-</td>
-<td>
-
-optional bind target scope
-
-</td>
-</tr>
-<tr>
-<td>
-
-`renderChildType`
-
-</td>
-<td>
-
-[`RenderChildType`](/obsidian-meta-bind-plugin-docs/api/enumerations/renderchildtype/)
-
-</td>
-<td>
-
-`RenderChildType.INLINE`
-
-</td>
-<td>
-
-the render child type, default INLINE
-
-</td>
-</tr>
-<tr>
-<td>
-
-`position?`
-
-</td>
-<td>
-
-[`NotePosition`](/obsidian-meta-bind-plugin-docs/api/classes/noteposition/)
-
-</td>
-<td>
-
-`undefined`
-
-</td>
-<td>
-
-an optional note position
-
-</td>
-</tr>
-<tr>
-<td>
-
-`honorExcludedSetting?`
-
-</td>
-<td>
-
-`boolean`
-
-</td>
-<td>
-
-`true`
-
-</td>
-<td>
-
-whether to honor the excluded folders settings for this field
-
-</td>
-</tr>
-</tbody>
-</table>
-
-#### Returns
-
-[`FieldMountable`](/obsidian-meta-bind-plugin-docs/api/classes/fieldmountable/)
-
-#### Inherited from
-
-`API.createInlineFieldFromString`
-
-***
-
-### createInlineFieldOfTypeFromString()
-
-> **createInlineFieldOfTypeFromString**(`type`, `declaration`, `filePath`, `scope`, `renderChildType`, `position?`, `honorExcludedSetting?`): [`FieldMountable`](/obsidian-meta-bind-plugin-docs/api/classes/fieldmountable/)
-
-Defined in: [packages/core/src/api/API.ts:194](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/api/API.ts#L194)
-
-Creates an inline field of a given type and string.
-Will throw an error if the string is not a valid inline field type.
-
-#### Parameters
-
-<table>
-<thead>
-<tr>
-<th>Parameter</th>
-<th>Type</th>
-<th>Default value</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-
-`type`
-
-</td>
-<td>
-
-[`InlineFieldType`](/obsidian-meta-bind-plugin-docs/api/type-aliases/inlinefieldtype/)
-
-</td>
-<td>
-
-`undefined`
-
-</td>
-<td>
-
-the field type
-
-</td>
-</tr>
-<tr>
-<td>
-
-`declaration`
-
-</td>
-<td>
-
-`string`
-
-</td>
-<td>
-
-`undefined`
-
-</td>
-<td>
-
-the declaration string of the field
-
-</td>
-</tr>
-<tr>
-<td>
-
-`filePath`
-
-</td>
-<td>
-
-`string`
-
-</td>
-<td>
-
-`undefined`
-
-</td>
-<td>
-
-the file path that the field is located in
-
-</td>
-</tr>
-<tr>
-<td>
-
-`scope`
-
-</td>
-<td>
-
-`undefined` \| `BindTargetScope`
-
-</td>
-<td>
-
-`undefined`
-
-</td>
-<td>
-
-optional bind target scope
-
-</td>
-</tr>
-<tr>
-<td>
-
-`renderChildType`
-
-</td>
-<td>
-
-[`RenderChildType`](/obsidian-meta-bind-plugin-docs/api/enumerations/renderchildtype/)
-
-</td>
-<td>
-
-`RenderChildType.INLINE`
-
-</td>
-<td>
-
-the render child type, default INLINE
-
-</td>
-</tr>
-<tr>
-<td>
-
-`position?`
-
-</td>
-<td>
-
-[`NotePosition`](/obsidian-meta-bind-plugin-docs/api/classes/noteposition/)
-
-</td>
-<td>
-
-`undefined`
-
-</td>
-<td>
-
-an optional note position
-
-</td>
-</tr>
-<tr>
-<td>
-
-`honorExcludedSetting?`
-
-</td>
-<td>
-
-`boolean`
-
-</td>
-<td>
-
-`true`
-
-</td>
-<td>
-
-whether to honor the excluded folders settings for this field
-
-</td>
-</tr>
-</tbody>
-</table>
-
-#### Returns
-
-[`FieldMountable`](/obsidian-meta-bind-plugin-docs/api/classes/fieldmountable/)
-
-#### Inherited from
-
-`API.createInlineFieldOfTypeFromString`
-
-***
-
-### createInputFieldMountable()
-
-> **createInputFieldMountable**(`filePath`, `options`): `InputFieldMountable`
-
-Defined in: [packages/core/src/api/API.ts:265](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/api/API.ts#L265)
-
-Creates an input field from an options object.
-
-#### Parameters
-
-<table>
-<thead>
-<tr>
-<th>Parameter</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-
-`filePath`
-
-</td>
-<td>
-
-`string`
-
-</td>
-<td>
-
-the file path that the field is located in or an empty string
-
-</td>
-</tr>
-<tr>
-<td>
-
-`options`
-
-</td>
-<td>
-
-[`InputFieldOptions`](/obsidian-meta-bind-plugin-docs/api/interfaces/inputfieldoptions/)
-
-</td>
-<td>
-
-</td>
-</tr>
-</tbody>
-</table>
-
-#### Returns
-
-`InputFieldMountable`
-
-#### Inherited from
-
-`API.createInputFieldMountable`
-
-***
-
-### createJsViewFieldMountable()
-
-> **createJsViewFieldMountable**(`filePath`, `options`): `JsViewFieldMountable`
-
-Defined in: [packages/core/src/api/API.ts:333](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/api/API.ts#L333)
-
-Creates a JS view field from an options object.
-
-#### Parameters
-
-<table>
-<thead>
-<tr>
-<th>Parameter</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-
-`filePath`
-
-</td>
-<td>
-
-`string`
-
-</td>
-<td>
-
-the file path that the field is located in or an empty string
-
-</td>
-</tr>
-<tr>
-<td>
-
-`options`
-
-</td>
-<td>
-
-[`JsViewFieldOptions`](/obsidian-meta-bind-plugin-docs/api/interfaces/jsviewfieldoptions/)
-
-</td>
-<td>
-
-</td>
-</tr>
-</tbody>
-</table>
-
-#### Returns
-
-`JsViewFieldMountable`
-
-#### Inherited from
-
-`API.createJsViewFieldMountable`
-
-***
-
-### createNotePosition()
-
-> **createNotePosition**(`lineStart`, `lineEnd`): [`NotePosition`](/obsidian-meta-bind-plugin-docs/api/classes/noteposition/)
-
-Defined in: [packages/core/src/api/API.ts:783](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/api/API.ts#L783)
-
-Creates a note position from a line start and line end number.
-
-#### Parameters
-
-<table>
-<thead>
-<tr>
-<th>Parameter</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-
-`lineStart`
-
-</td>
-<td>
-
-`number`
-
-</td>
-<td>
-
-</td>
-</tr>
-<tr>
-<td>
-
-`lineEnd`
-
-</td>
-<td>
-
-`number`
-
-</td>
-<td>
-
-</td>
-</tr>
-</tbody>
-</table>
-
-#### Returns
-
-[`NotePosition`](/obsidian-meta-bind-plugin-docs/api/classes/noteposition/)
-
-#### Inherited from
-
-`API.createNotePosition`
-
-***
-
-### createSignal()
-
-> **createSignal**\<`T`\>(`value`): `Signal`\<`T`\>
-
-Defined in: [packages/core/src/api/API.ts:579](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/api/API.ts#L579)
-
-Creates a signal.
-
-#### Type Parameters
-
-<table>
-<thead>
-<tr>
-<th>Type Parameter</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-
-`T`
-
-</td>
-</tr>
-</tbody>
-</table>
-
-#### Parameters
-
-<table>
-<thead>
-<tr>
-<th>Parameter</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
 <tr>
 <td>
 
@@ -1248,45 +680,345 @@ Creates a signal.
 </td>
 <td>
 
-`T`
+`unknown`
 
 </td>
 <td>
+
+参数值
 
 </td>
 </tr>
 </tbody>
 </table>
 
-#### Returns
+#### 返回值
 
-`Signal`\<`T`\>
+[`SimpleFieldArgument`](/obsidian-meta-bind-plugin-docs/api/interfaces/simplefieldargument/)
 
-#### Inherited from
+#### 继承自
 
-`API.createSignal`
+`API.createFieldArgument`
 
 ***
 
-### createTableMountable()
+### createIncludeBindTarget()
 
-> **createTableMountable**(`filePath`, `options`): `TableMountable`
+> **createIncludeBindTarget**(`bindTarget`, ...`properties`): [`BindTargetDeclaration`](/obsidian-meta-bind-plugin-docs/api/interfaces/bindtargetdeclaration/)
 
-Defined in: [packages/core/src/api/API.ts:363](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/api/API.ts#L363)
+定义位置: [packages/core/src/api/API.ts:613](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/api/API.ts#L613)
 
-Creates a table from an options object.
+创建包含绑定目标声明。
 
-#### Parameters
+#### 参数
 
 <table>
 <thead>
 <tr>
-<th>Parameter</th>
-<th>Type</th>
-<th>Description</th>
+<th>参数</th>
+<th>类型</th>
+<th>描述</th>
 </tr>
 </thead>
 <tbody>
+<tr>
+<td>
+
+`bindTarget`
+
+</td>
+<td>
+
+[`BindTargetDeclaration`](/obsidian-meta-bind-plugin-docs/api/interfaces/bindtargetdeclaration/)
+
+</td>
+<td>
+
+基础绑定目标
+
+</td>
+</tr>
+<tr>
+<td>
+
+...`properties`
+
+</td>
+<td>
+
+`string`[]
+
+</td>
+<td>
+
+要包含的属性
+
+</td>
+</tr>
+</tbody>
+</table>
+
+#### 返回值
+
+[`BindTargetDeclaration`](/obsidian-meta-bind-plugin-docs/api/interfaces/bindtargetdeclaration/)
+
+#### 继承自
+
+`API.createIncludeBindTarget`
+
+***
+
+### createInputFieldDeclaration()
+
+> **createInputFieldDeclaration**(`inputFieldType`, ...`args`): [`SimpleInputFieldDeclaration`](/obsidian-meta-bind-plugin-docs/api/interfaces/simpleinputfielddeclaration/)
+
+定义位置: [packages/core/src/api/API.ts:624](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/api/API.ts#L624)
+
+创建输入字段声明。
+
+#### 参数
+
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+
+`inputFieldType`
+
+</td>
+<td>
+
+[`InputFieldType`](/obsidian-meta-bind-plugin-docs/api/enumerations/inputfieldtype/)
+
+</td>
+<td>
+
+输入字段类型
+
+</td>
+</tr>
+<tr>
+<td>
+
+...`args`
+
+</td>
+<td>
+
+[`SimpleFieldArgument`](/obsidian-meta-bind-plugin-docs/api/interfaces/simplefieldargument/)[]
+
+</td>
+<td>
+
+字段参数
+
+</td>
+</tr>
+</tbody>
+</table>
+
+#### 返回值
+
+[`SimpleInputFieldDeclaration`](/obsidian-meta-bind-plugin-docs/api/interfaces/simpleinputfielddeclaration/)
+
+#### 继承自
+
+`API.createInputFieldDeclaration`
+
+***
+
+### createJsViewFieldDeclaration()
+
+> **createJsViewFieldDeclaration**(`code`, `bindTarget`?, ...`args`): [`SimpleJsViewFieldDeclaration`](/obsidian-meta-bind-plugin-docs/api/interfaces/simplejsviewfielddeclaration/)
+
+定义位置: [packages/core/src/api/API.ts:656](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/api/API.ts#L656)
+
+创建 JavaScript 视图字段声明。
+
+#### 参数
+
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+
+`code`
+
+</td>
+<td>
+
+`string`
+
+</td>
+<td>
+
+JavaScript 代码
+
+</td>
+</tr>
+<tr>
+<td>
+
+`bindTarget`?
+
+</td>
+<td>
+
+[`SimpleJsViewFieldBindTargetMapping`](/obsidian-meta-bind-plugin-docs/api/interfaces/simplejsviewfieldbindtargetmapping/)
+
+</td>
+<td>
+
+绑定目标映射（可选）
+
+</td>
+</tr>
+<tr>
+<td>
+
+...`args`
+
+</td>
+<td>
+
+[`SimpleFieldArgument`](/obsidian-meta-bind-plugin-docs/api/interfaces/simplefieldargument/)[]
+
+</td>
+<td>
+
+字段参数
+
+</td>
+</tr>
+</tbody>
+</table>
+
+#### 返回值
+
+[`SimpleJsViewFieldDeclaration`](/obsidian-meta-bind-plugin-docs/api/interfaces/simplejsviewfielddeclaration/)
+
+#### 继承自
+
+`API.createJsViewFieldDeclaration`
+
+***
+
+### createViewFieldDeclaration()
+
+> **createViewFieldDeclaration**(`viewFieldType`, ...`args`): [`SimpleViewFieldDeclaration`](/obsidian-meta-bind-plugin-docs/api/interfaces/simpleviewfielddeclaration/)
+
+定义位置: [packages/core/src/api/API.ts:635](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/api/API.ts#L635)
+
+创建视图字段声明。
+
+#### 参数
+
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+
+`viewFieldType`
+
+</td>
+<td>
+
+[`ViewFieldType`](/obsidian-meta-bind-plugin-docs/api/enumerations/viewfieldtype/)
+
+</td>
+<td>
+
+视图字段类型
+
+</td>
+</tr>
+<tr>
+<td>
+
+...`args`
+
+</td>
+<td>
+
+[`SimpleFieldArgument`](/obsidian-meta-bind-plugin-docs/api/interfaces/simplefieldargument/)[]
+
+</td>
+<td>
+
+字段参数
+
+</td>
+</tr>
+</tbody>
+</table>
+
+#### 返回值
+
+[`SimpleViewFieldDeclaration`](/obsidian-meta-bind-plugin-docs/api/interfaces/simpleviewfielddeclaration/)
+
+#### 继承自
+
+`API.createViewFieldDeclaration`
+
+***
+
+### getBindTargetScope()
+
+> **getBindTargetScope**(`bindTarget`, `filePath`): [`Scope`](/obsidian-meta-bind-plugin-docs/api/type-aliases/scope/)
+
+定义位置: [packages/core/src/api/API.ts:516](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/api/API.ts#L516)
+
+获取绑定目标的作用域。
+
+#### 参数
+
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+
+`bindTarget`
+
+</td>
+<td>
+
+[`BindTargetDeclaration`](/obsidian-meta-bind-plugin-docs/api/interfaces/bindtargetdeclaration/)
+
+</td>
+<td>
+
+绑定目标
+
+</td>
+</tr>
 <tr>
 <td>
 
@@ -1300,57 +1032,59 @@ Creates a table from an options object.
 </td>
 <td>
 
-the file path that the field is located in or an empty string
-
-</td>
-</tr>
-<tr>
-<td>
-
-`options`
-
-</td>
-<td>
-
-[`TableOptions`](/obsidian-meta-bind-plugin-docs/api/interfaces/tableoptions/)
-
-</td>
-<td>
+文件路径
 
 </td>
 </tr>
 </tbody>
 </table>
 
-#### Returns
+#### 返回值
 
-`TableMountable`
+[`Scope`](/obsidian-meta-bind-plugin-docs/api/type-aliases/scope/)
 
-#### Inherited from
+#### 继承自
 
-`API.createTableMountable`
+`API.getBindTargetScope`
 
 ***
 
-### createViewFieldMountable()
+### getBindTargetValue()
 
-> **createViewFieldMountable**(`filePath`, `options`): `ViewFieldMountable`
+> **getBindTargetValue**(`bindTarget`, `filePath`): `unknown`
 
-Defined in: [packages/core/src/api/API.ts:299](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/api/API.ts#L299)
+定义位置: [packages/core/src/api/API.ts:498](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/api/API.ts#L498)
 
-Creates a view field from an options object.
+获取绑定目标的值。
 
-#### Parameters
+#### 参数
 
 <table>
 <thead>
 <tr>
-<th>Parameter</th>
-<th>Type</th>
-<th>Description</th>
+<th>参数</th>
+<th>类型</th>
+<th>描述</th>
 </tr>
 </thead>
 <tbody>
+<tr>
+<td>
+
+`bindTarget`
+
+</td>
+<td>
+
+[`BindTargetDeclaration`](/obsidian-meta-bind-plugin-docs/api/interfaces/bindtargetdeclaration/)
+
+</td>
+<td>
+
+绑定目标
+
+</td>
+</tr>
 <tr>
 <td>
 
@@ -1364,344 +1098,123 @@ Creates a view field from an options object.
 </td>
 <td>
 
-the file path that the field is located in or an empty string
-
-</td>
-</tr>
-<tr>
-<td>
-
-`options`
-
-</td>
-<td>
-
-[`ViewFieldOptions`](/obsidian-meta-bind-plugin-docs/api/interfaces/viewfieldoptions/)
-
-</td>
-<td>
+文件路径
 
 </td>
 </tr>
 </tbody>
 </table>
 
-#### Returns
+#### 返回值
 
-`ViewFieldMountable`
+`unknown`
 
-#### Inherited from
+#### 继承自
 
-`API.createViewFieldMountable`
+`API.getBindTargetValue`
 
 ***
 
-### getInlineFieldDeclarationPrefix()
+### getButtonActionRunner()
 
-> **getInlineFieldDeclarationPrefix**(`fieldType`): `string`
+> **getButtonActionRunner**(): `ButtonActionRunner`\<`ObsComponents`\>
 
-Defined in: [packages/core/src/api/API.ts:493](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/api/API.ts#L493)
+定义位置: [packages/core/src/api/API.ts:544](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/api/API.ts#L544)
 
-Gets the prefix of a given widget type. (e.g. INPUT or VIEW).
+获取按钮动作运行器。
 
-#### Parameters
+#### 返回值
 
-<table>
-<thead>
-<tr>
-<th>Parameter</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
+`ButtonActionRunner`\<`ObsComponents`\>
 
-`fieldType`
+#### 继承自
 
-</td>
-<td>
-
-[`FieldType`](/obsidian-meta-bind-plugin-docs/api/enumerations/fieldtype/)
-
-</td>
-<td>
-
-</td>
-</tr>
-</tbody>
-</table>
-
-#### Returns
-
-`string`
-
-#### Inherited from
-
-`API.getInlineFieldDeclarationPrefix`
+`API.getButtonActionRunner`
 
 ***
 
 ### getMetadata()
 
-> **getMetadata**(`bindTarget`): `unknown`
+> **getMetadata**(`filePath`): `unknown`
 
-Defined in: [packages/core/src/api/API.ts:685](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/api/API.ts#L685)
+定义位置: [packages/core/src/api/API.ts:480](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/api/API.ts#L480)
 
-Reads a property from meta binds metadata cache.
-If the value is not present in the cache, it will check the underlying source. E.g. Obsidians metadata cache.
+获取文件的元数据。
 
-#### Parameters
+#### 参数
 
 <table>
 <thead>
 <tr>
-<th>Parameter</th>
-<th>Type</th>
-<th>Description</th>
+<th>参数</th>
+<th>类型</th>
+<th>描述</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
 
-`bindTarget`
+`filePath`
 
 </td>
 <td>
 
-[`BindTargetDeclaration`](/obsidian-meta-bind-plugin-docs/api/interfaces/bindtargetdeclaration/)
+`string`
 
 </td>
 <td>
+
+文件路径
 
 </td>
 </tr>
 </tbody>
 </table>
 
-#### Returns
+#### 返回值
 
 `unknown`
 
-#### Example
-
-```ts
-// Assumes you use the JS Engine plugin to run this.
-const mb = engine.getPlugin("obsidian-meta-bind-plugin").api;
-const bindTarget = mb.parseBindTarget("property", context.file.path);
-const value = mb.getMetadata(bindTarget);
-```
-
-#### Inherited from
+#### 继承自
 
 `API.getMetadata`
 
 ***
 
-### isInlineFieldDeclaration()
+### isInlineFieldAtPosition()
 
-> **isInlineFieldDeclaration**(`fieldType`, `str`): `boolean`
+> **isInlineFieldAtPosition**(`position`, `filePath`): `boolean`
 
-Defined in: [packages/core/src/api/API.ts:524](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/api/API.ts#L524)
+定义位置: [packages/core/src/api/API.ts:325](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/api/API.ts#L325)
 
-Checks if a string is a declaration of a given widget type.
+检查指定位置是否有内联字段。
 
-#### Parameters
+#### 参数
 
 <table>
 <thead>
 <tr>
-<th>Parameter</th>
-<th>Type</th>
-<th>Description</th>
+<th>参数</th>
+<th>类型</th>
+<th>描述</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
 
-`fieldType`
+`position`
 
 </td>
 <td>
 
-[`FieldType`](/obsidian-meta-bind-plugin-docs/api/enumerations/fieldtype/)
+[`NotePosition`](/obsidian-meta-bind-plugin-docs/api/classes/noteposition/)
 
 </td>
 <td>
 
-</td>
-</tr>
-<tr>
-<td>
-
-`str`
-
-</td>
-<td>
-
-`string`
-
-</td>
-<td>
-
-the declaration string
-
-</td>
-</tr>
-</tbody>
-</table>
-
-#### Returns
-
-`boolean`
-
-#### Inherited from
-
-`API.isInlineFieldDeclaration`
-
-***
-
-### isInlineFieldDeclarationAndGetType()
-
-> **isInlineFieldDeclarationAndGetType**(`str`): `undefined` \| [`InlineFieldType`](/obsidian-meta-bind-plugin-docs/api/type-aliases/inlinefieldtype/)
-
-Defined in: [packages/core/src/api/API.ts:547](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/api/API.ts#L547)
-
-Checks if a string is any declaration. If yes, it returns the widget type, otherwise undefined.
-
-#### Parameters
-
-<table>
-<thead>
-<tr>
-<th>Parameter</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-
-`str`
-
-</td>
-<td>
-
-`string`
-
-</td>
-<td>
-
-the declaration string
-
-</td>
-</tr>
-</tbody>
-</table>
-
-#### Returns
-
-`undefined` \| [`InlineFieldType`](/obsidian-meta-bind-plugin-docs/api/type-aliases/inlinefieldtype/)
-
-#### Inherited from
-
-`API.isInlineFieldDeclarationAndGetType`
-
-***
-
-### mathJSImport()
-
-> **mathJSImport**(`object`, `options?`): `void`
-
-Defined in: [packages/core/src/api/API.ts:805](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/api/API.ts#L805)
-
-Import new definitions into the internal mathJS instance.
-For details on how to use, see https://mathjs.org/docs/reference/functions/import.html
-
-#### Parameters
-
-<table>
-<thead>
-<tr>
-<th>Parameter</th>
-<th>Type</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-
-`object`
-
-</td>
-<td>
-
-`ImportObject` \| `ImportObject`[]
-
-</td>
-</tr>
-<tr>
-<td>
-
-`options?`
-
-</td>
-<td>
-
-`ImportOptions`
-
-</td>
-</tr>
-</tbody>
-</table>
-
-#### Returns
-
-`void`
-
-#### Inherited from
-
-`API.mathJSImport`
-
-***
-
-### parseBindTarget()
-
-> **parseBindTarget**(`declarationString`, `filePath`, `scope?`): [`BindTargetDeclaration`](/obsidian-meta-bind-plugin-docs/api/interfaces/bindtargetdeclaration/)
-
-Defined in: [packages/core/src/api/API.ts:627](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/api/API.ts#L627)
-
-Parses a bind target declaration from a string.
-
-#### Parameters
-
-<table>
-<thead>
-<tr>
-<th>Parameter</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-
-`declarationString`
-
-</td>
-<td>
-
-`string`
-
-</td>
-<td>
-
-the string to parse
+位置
 
 </td>
 </tr>
@@ -1718,137 +1231,137 @@ the string to parse
 </td>
 <td>
 
-the file path that this bind target is relative to
-
-</td>
-</tr>
-<tr>
-<td>
-
-`scope?`
-
-</td>
-<td>
-
-`BindTargetScope`
-
-</td>
-<td>
-
-optional bind target scope
+文件路径
 
 </td>
 </tr>
 </tbody>
 </table>
 
-#### Returns
+#### 返回值
 
-[`BindTargetDeclaration`](/obsidian-meta-bind-plugin-docs/api/interfaces/bindtargetdeclaration/)
+`boolean`
 
-#### Inherited from
+#### 继承自
 
-`API.parseBindTarget`
+`API.isInlineFieldAtPosition`
 
 ***
 
-### reactiveMetadata()
+### parseBindTarget()
 
-> **reactiveMetadata**(`bindTargets`, `lifecycleHook`, `callback`): `ReactiveComponent`
+> **parseBindTarget**(`bindTargetString`): [`BindTargetDeclaration`](/obsidian-meta-bind-plugin-docs/api/interfaces/bindtargetdeclaration/)
 
-Defined in: [packages/obsidian/src/ObsAPI.ts:114](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/obsidian/src/ObsAPI.ts#L114)
+定义位置: [packages/core/src/api/API.ts:679](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/api/API.ts#L679)
 
-Creates a JS Engine reactive component that will re-render when the given bind targets change.
+解析绑定目标字符串。
 
-This requires JS Engine to be installed and enabled!
-
-#### Parameters
+#### 参数
 
 <table>
 <thead>
 <tr>
-<th>Parameter</th>
-<th>Type</th>
-<th>Description</th>
+<th>参数</th>
+<th>类型</th>
+<th>描述</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
 
-`bindTargets`
+`bindTargetString`
 
 </td>
 <td>
 
-[`BindTargetDeclaration`](/obsidian-meta-bind-plugin-docs/api/interfaces/bindtargetdeclaration/)[]
+`string`
 
 </td>
 <td>
 
-the bind targets to listen to
-
-</td>
-</tr>
-<tr>
-<td>
-
-`lifecycleHook`
-
-</td>
-<td>
-
-`LifecycleHook`
-
-</td>
-<td>
-
-a [Component](https://docs.obsidian.md/Reference/TypeScript+API/Component)
-
-</td>
-</tr>
-<tr>
-<td>
-
-`callback`
-
-</td>
-<td>
-
-(...`values`) => [`Promise`](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise)\<`unknown`\>
-
-</td>
-<td>
-
-the callback to call with all the values of the bind targets when one of them changes. What ever this callback returns will be rendered by the reactive component.
+绑定目标字符串
 
 </td>
 </tr>
 </tbody>
 </table>
 
-#### Returns
+#### 返回值
 
-`ReactiveComponent`
+[`BindTargetDeclaration`](/obsidian-meta-bind-plugin-docs/api/interfaces/bindtargetdeclaration/)
+
+#### 继承自
+
+`API.parseBindTarget`
 
 ***
 
-### setMetadata()
+### parseInlineFieldFromString()
 
-> **setMetadata**(`bindTarget`, `value`): `void`
+> **parseInlineFieldFromString**(`inlineField`): [`ParsingResult`](/obsidian-meta-bind-plugin-docs/api/type-aliases/parsingresult/)
 
-Defined in: [packages/core/src/api/API.ts:660](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/api/API.ts#L660)
+定义位置: [packages/core/src/api/API.ts:314](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/api/API.ts#L314)
 
-Sets a property in meta binds metadata cache.
+从字符串解析内联字段。
 
-#### Parameters
+#### 参数
 
 <table>
 <thead>
 <tr>
-<th>Parameter</th>
-<th>Type</th>
-<th>Description</th>
+<th>参数</th>
+<th>类型</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+
+`inlineField`
+
+</td>
+<td>
+
+`string`
+
+</td>
+<td>
+
+内联字段字符串
+
+</td>
+</tr>
+</tbody>
+</table>
+
+#### 返回值
+
+[`ParsingResult`](/obsidian-meta-bind-plugin-docs/api/type-aliases/parsingresult/)
+
+#### 继承自
+
+`API.parseInlineFieldFromString`
+
+***
+
+### reactiveComponent()
+
+> **reactiveComponent**(`bindTarget`, `filePath`, `renderFunction`): [`Mountable`](/obsidian-meta-bind-plugin-docs/api/classes/mountable/)
+
+定义位置: [packages/core/src/api/API.ts:426](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/api/API.ts#L426)
+
+创建响应式组件。
+
+#### 参数
+
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>描述</th>
 </tr>
 </thead>
 <tbody>
@@ -1864,6 +1377,223 @@ Sets a property in meta binds metadata cache.
 
 </td>
 <td>
+
+绑定目标
+
+</td>
+</tr>
+<tr>
+<td>
+
+`filePath`
+
+</td>
+<td>
+
+`string`
+
+</td>
+<td>
+
+文件路径
+
+</td>
+</tr>
+<tr>
+<td>
+
+`renderFunction`
+
+</td>
+<td>
+
+(`value`: `unknown`, `element`: `HTMLElement`) =\> `void`
+
+</td>
+<td>
+
+渲染函数
+
+</td>
+</tr>
+</tbody>
+</table>
+
+#### 返回值
+
+[`Mountable`](/obsidian-meta-bind-plugin-docs/api/classes/mountable/)
+
+#### 继承自
+
+`API.reactiveComponent`
+
+***
+
+### reactiveComponentV2()
+
+> **reactiveComponentV2**(`renderFunction`): [`Mountable`](/obsidian-meta-bind-plugin-docs/api/classes/mountable/)
+
+定义位置: [packages/core/src/api/API.ts:438](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/api/API.ts#L438)
+
+创建响应式组件（V2版本）。
+
+#### 参数
+
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+
+`renderFunction`
+
+</td>
+<td>
+
+(`context`: `ContextService`) =\> `void`
+
+</td>
+<td>
+
+渲染函数
+
+</td>
+</tr>
+</tbody>
+</table>
+
+#### 返回值
+
+[`Mountable`](/obsidian-meta-bind-plugin-docs/api/classes/mountable/)
+
+#### 继承自
+
+`API.reactiveComponentV2`
+
+***
+
+### runJavaScript()
+
+> **runJavaScript**(`code`, `filePath`, `contextName`?): `Promise`\<`unknown`\>
+
+定义位置: [packages/core/src/api/API.ts:553](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/api/API.ts#L553)
+
+运行 JavaScript 代码。
+
+#### 参数
+
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+
+`code`
+
+</td>
+<td>
+
+`string`
+
+</td>
+<td>
+
+JavaScript 代码
+
+</td>
+</tr>
+<tr>
+<td>
+
+`filePath`
+
+</td>
+<td>
+
+`string`
+
+</td>
+<td>
+
+文件路径
+
+</td>
+</tr>
+<tr>
+<td>
+
+`contextName`?
+
+</td>
+<td>
+
+`string`
+
+</td>
+<td>
+
+上下文名称（可选）
+
+</td>
+</tr>
+</tbody>
+</table>
+
+#### 返回值
+
+`Promise`\<`unknown`\>
+
+#### 继承自
+
+`API.runJavaScript`
+
+***
+
+### setBindTargetValue()
+
+> **setBindTargetValue**(`bindTarget`, `value`, `filePath`): `void`
+
+定义位置: [packages/core/src/api/API.ts:507](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/api/API.ts#L507)
+
+设置绑定目标的值。
+
+#### 参数
+
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+
+`bindTarget`
+
+</td>
+<td>
+
+[`BindTargetDeclaration`](/obsidian-meta-bind-plugin-docs/api/interfaces/bindtargetdeclaration/)
+
+</td>
+<td>
+
+绑定目标
 
 </td>
 </tr>
@@ -1880,53 +1610,122 @@ Sets a property in meta binds metadata cache.
 </td>
 <td>
 
+要设置的值
+
+</td>
+</tr>
+<tr>
+<td>
+
+`filePath`
+
+</td>
+<td>
+
+`string`
+
+</td>
+<td>
+
+文件路径
+
 </td>
 </tr>
 </tbody>
 </table>
 
-#### Returns
+#### 返回值
 
 `void`
 
-#### Example
+#### 继承自
 
-```ts
-// Assumes you use the JS Engine plugin to run this.
-const mb = engine.getPlugin("obsidian-meta-bind-plugin").api;
-const bindTarget = mb.parseBindTarget("property", context.file.path);
-mb.setMetadata(bindTarget, "some value");
-```
+`API.setBindTargetValue`
 
-#### Inherited from
+***
+
+### setMetadata()
+
+> **setMetadata**(`filePath`, `value`): `void`
+
+定义位置: [packages/core/src/api/API.ts:489](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/api/API.ts#L489)
+
+设置文件的元数据。
+
+#### 参数
+
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+
+`filePath`
+
+</td>
+<td>
+
+`string`
+
+</td>
+<td>
+
+文件路径
+
+</td>
+</tr>
+<tr>
+<td>
+
+`value`
+
+</td>
+<td>
+
+`unknown`
+
+</td>
+<td>
+
+要设置的值
+
+</td>
+</tr>
+</tbody>
+</table>
+
+#### 返回值
+
+`void`
+
+#### 继承自
 
 `API.setMetadata`
 
 ***
 
-### subscribeToMetadata()
+### subscribeToBindTarget()
 
-> **subscribeToMetadata**(`bindTarget`, `lifecycleHook`, `callback`): `void`
+> **subscribeToBindTarget**(`bindTarget`, `filePath`, `callback`): `ListenerFunction`
 
-Defined in: [packages/core/src/api/API.ts:743](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/api/API.ts#L743)
+定义位置: [packages/core/src/api/API.ts:530](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/api/API.ts#L530)
 
-Subscribes to a property in meta binds metadata cache.
-This expects some sort of lifecycle hook to be passed in.
-This method will register a callback to the lifecycle hook.
-To unsubscribe the subscription, the callback registered to the lifecycle hook must be called.
-In the context of Obsidian, you should pass a `Component` instance as the lifecycle hook and
-make sure to unload the component when you are done using the metadata subscription.
+订阅绑定目标的变化。
 
-NOT UNSUBSCRIBING WILL LEAD TO MEMORY LEAKS.
-
-#### Parameters
+#### 参数
 
 <table>
 <thead>
 <tr>
-<th>Parameter</th>
-<th>Type</th>
-<th>Description</th>
+<th>参数</th>
+<th>类型</th>
+<th>描述</th>
 </tr>
 </thead>
 <tbody>
@@ -1943,22 +1742,24 @@ NOT UNSUBSCRIBING WILL LEAD TO MEMORY LEAKS.
 </td>
 <td>
 
+绑定目标
+
 </td>
 </tr>
 <tr>
 <td>
 
-`lifecycleHook`
+`filePath`
 
 </td>
 <td>
 
-`LifecycleHook`
+`string`
 
 </td>
 <td>
 
-In Obsidian this is an instance of the Component class. The subscription will be automatically unsubscribed when the component is unloaded.
+文件路径
 
 </td>
 </tr>
@@ -1970,123 +1771,196 @@ In Obsidian this is an instance of the Component class. The subscription will be
 </td>
 <td>
 
-(`value`) => `void`
+(`value`: `unknown`) =\> `void`
 
 </td>
 <td>
+
+回调函数
 
 </td>
 </tr>
 </tbody>
 </table>
 
-#### Returns
+#### 返回值
 
-`void`
+`ListenerFunction`
 
-#### Inherited from
+#### 继承自
 
-`API.subscribeToMetadata`
+`API.subscribeToBindTarget`
 
 ***
 
-### updateMetadata()
+### unloadInlineField()
 
-> **updateMetadata**(`bindTarget`, `updateFn`): `void`
+> **unloadInlineField**(`position`, `filePath`): `void`
 
-Defined in: [packages/core/src/api/API.ts:712](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/api/API.ts#L712)
+定义位置: [packages/core/src/api/API.ts:336](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/api/API.ts#L336)
 
-Updates a property in meta binds metadata cache.
+卸载指定位置的内联字段。
 
-#### Parameters
+#### 参数
 
 <table>
 <thead>
 <tr>
-<th>Parameter</th>
-<th>Type</th>
-<th>Description</th>
+<th>参数</th>
+<th>类型</th>
+<th>描述</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
 
-`bindTarget`
+`position`
 
 </td>
 <td>
 
-[`BindTargetDeclaration`](/obsidian-meta-bind-plugin-docs/api/interfaces/bindtargetdeclaration/)
+[`NotePosition`](/obsidian-meta-bind-plugin-docs/api/classes/noteposition/)
 
 </td>
 <td>
+
+位置
 
 </td>
 </tr>
 <tr>
 <td>
 
-`updateFn`
+`filePath`
 
 </td>
 <td>
 
-(`value`) => `unknown`
+`string`
 
 </td>
 <td>
 
-a function that takes the current value and returns the new value
+文件路径
 
 </td>
 </tr>
 </tbody>
 </table>
 
-#### Returns
+#### 返回值
 
 `void`
 
-#### Example
+#### 继承自
 
-```ts
-// Assumes you use the JS Engine plugin to run this.
-const mb = engine.getPlugin("obsidian-meta-bind-plugin").api;
-const bindTarget = mb.parseBindTarget("property", context.file.path);
-mb.updateMetadata(bindTarget, (value) => {
-    return value + 1;
-});
-```
+`API.unloadInlineField`
 
-#### Inherited from
+***
 
-`API.updateMetadata`
+### updateInlineFieldsInFile()
+
+> **updateInlineFieldsInFile**(`filePath`): `void`
+
+定义位置: [packages/core/src/api/API.ts:394](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/core/src/api/API.ts#L394)
+
+更新文件中的所有内联字段。
+
+#### 参数
+
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+
+`filePath`
+
+</td>
+<td>
+
+`string`
+
+</td>
+<td>
+
+文件路径
+
+</td>
+</tr>
+</tbody>
+</table>
+
+#### 返回值
+
+`void`
+
+#### 继承自
+
+`API.updateInlineFieldsInFile`
 
 ***
 
 ### wrapInMDRC()
 
-> **wrapInMDRC**(`mountable`, `containerEl`, `component`): `MountableMDRC`
+> **wrapInMDRC**(`filePath`, `component`, `mountable`): `MarkdownRenderChild`
 
-Defined in: [packages/obsidian/src/ObsAPI.ts:58](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/obsidian/src/ObsAPI.ts#L58)
+定义位置: [packages/obsidian/src/ObsAPI.ts:125](https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/6e87907d27dd07b6437b63c980b11d2bfef62599/packages/obsidian/src/ObsAPI.ts#L125)
 
-Wraps any mountable in a [MarkdownRenderChild](https://docs.obsidian.md/Reference/TypeScript+API/MarkdownRenderChild)
-and adds it as a child to the passed in [ComponentLike](/obsidian-meta-bind-plugin-docs/api/interfaces/componentlike/).
+将可挂载对象包装在 MarkdownRenderChild 中。
 
-A [ComponentLike](/obsidian-meta-bind-plugin-docs/api/interfaces/componentlike/) is either a [Component](https://docs.obsidian.md/Reference/TypeScript+API/Component) or a [MarkdownPostProcessorContext](https://docs.obsidian.md/Reference/TypeScript+API/MarkdownPostProcessorContext)
-
-#### Parameters
+#### 参数
 
 <table>
 <thead>
 <tr>
-<th>Parameter</th>
-<th>Type</th>
-<th>Description</th>
+<th>参数</th>
+<th>类型</th>
+<th>描述</th>
 </tr>
 </thead>
 <tbody>
+<tr>
+<td>
+
+`filePath`
+
+</td>
+<td>
+
+`string`
+
+</td>
+<td>
+
+文件路径
+
+</td>
+</tr>
+<tr>
+<td>
+
+`component`
+
+</td>
+<td>
+
+`Component`
+
+</td>
+<td>
+
+组件
+
+</td>
+</tr>
 <tr>
 <td>
 
@@ -2100,47 +1974,14 @@ A [ComponentLike](/obsidian-meta-bind-plugin-docs/api/interfaces/componentlike/)
 </td>
 <td>
 
-the mountable to wrap in a [MarkdownRenderChild](https://docs.obsidian.md/Reference/TypeScript+API/MarkdownRenderChild)
-
-</td>
-</tr>
-<tr>
-<td>
-
-`containerEl`
-
-</td>
-<td>
-
-[`HTMLElement`](https://developer.mozilla.org/docs/Web/API/HTMLElement)
-
-</td>
-<td>
-
-the element to mount the [MarkdownRenderChild](https://docs.obsidian.md/Reference/TypeScript+API/MarkdownRenderChild) to
-
-</td>
-</tr>
-<tr>
-<td>
-
-`component`
-
-</td>
-<td>
-
-[`ComponentLike`](/obsidian-meta-bind-plugin-docs/api/interfaces/componentlike/)
-
-</td>
-<td>
-
-the [ComponentLike](/obsidian-meta-bind-plugin-docs/api/interfaces/componentlike/) to register the [MarkdownRenderChild](https://docs.obsidian.md/Reference/TypeScript+API/MarkdownRenderChild) to
+可挂载对象
 
 </td>
 </tr>
 </tbody>
 </table>
 
-#### Returns
+#### 返回值
 
-`MountableMDRC`
+`MarkdownRenderChild`
+

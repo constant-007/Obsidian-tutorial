@@ -10,7 +10,7 @@ description: 更高级用例的集合。
 
 1. 安装并启用 [JS Engine](https://github.com/mProjectsCode/obsidian-js-engine-plugin)。
 2. 在 Meta Bind 设置中启用 **JavaScript**。
-:::
+   :::
 
 :::caution
 我建议您在尝试使用这些示例之前熟悉 JavaScript。

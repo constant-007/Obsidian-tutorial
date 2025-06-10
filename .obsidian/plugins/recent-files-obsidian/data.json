@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "ButtonClickContext",
+      "path": "Obsidian设置/Community plugins/Meta Bind/api/classes/ButtonClickContext.md"
+    },
+    {
       "basename": "installation",
       "path": "Obsidian设置/Community plugins/Meta Bind/guides/installation.md"
     },
@@ -31,10 +35,6 @@
     {
       "basename": "FieldMountable",
       "path": "Obsidian设置/Community plugins/Meta Bind/api/classes/FieldMountable.md"
-    },
-    {
-      "basename": "ButtonClickContext",
-      "path": "Obsidian设置/Community plugins/Meta Bind/api/classes/ButtonClickContext.md"
     },
     {
       "basename": "编辑器",
