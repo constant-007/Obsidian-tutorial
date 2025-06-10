@@ -1,6 +1,6 @@
 ---
-title: Open
-description: Open button action reference.
+title: 打开 (Open)
+description: 打开按钮动作参考文档。
 ---
 
 **打开** 动作打开文件或URL。
@@ -20,7 +20,7 @@ interface OpenButtonAction {
 ````custom_markdown {5-6}
 ```meta-bind-button
 style: primary
-label: Open Meta Bind Docs
+label: 打开Meta Bind文档
 action:
   type: open
   link: https://www.moritzjung.dev/obsidian-meta-bind-plugin-docs/

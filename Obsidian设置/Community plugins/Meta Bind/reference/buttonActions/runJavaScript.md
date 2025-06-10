@@ -1,6 +1,6 @@
 ---
-title: Run JavaScript File
-description: Run JavaScript File button action reference.
+title: 运行JavaScript文件 (Run JavaScript File)
+description: 运行JavaScript文件按钮动作参考文档。
 ---
 
 **运行JavaScript文件** 动作执行一个JavaScript文件。
@@ -30,12 +30,12 @@ interface JSButtonAction {
 ````custom_markdown {5-6}
 ```meta-bind-button
 style: primary
-label: Run JavaScript File
+label: 运行JavaScript文件
 action:
   type: js
   file: someScript.js
   args:
-    greeting: "Meta Bind User"
+    greeting: "Meta Bind用户"
 ```
 ````
 
@@ -45,4 +45,4 @@ action:
 console.log('Hello ${context.args.greeting}!');
 ```
 
-当您点击按钮时，应该会在控制台看到打印的字符串 `Hello Meta Bind User!`。
+当您点击按钮时，应该会在控制台看到打印的字符串 `Hello Meta Bind用户!`。

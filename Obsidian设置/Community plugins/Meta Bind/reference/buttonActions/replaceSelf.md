@@ -1,6 +1,6 @@
 ---
-title: Replace Self
-description: Replace Self button action reference.
+title: 替换自身 (Replace Self)
+description: 替换自身按钮动作参考文档。
 ---
 
 此按钮动作用纯文本或Templater模板替换按钮本身。
@@ -17,14 +17,14 @@ interface ReplaceSelfButtonAction {
 
 ### 示例
 
-此按钮在点击时将自己替换为文本 `i am no longer a button :(`。
+此按钮在点击时将自己替换为文本 `我不再是按钮了 :(`。
 
 ````custom_markdown {5-6}
 ```meta-bind-button
 style: primary
-label: Replace Self
+label: 替换自身
 action:
   type: "replaceSelf"
-  replacement: "i am no longer a button :("
+  replacement: "我不再是按钮了 :("
 ```
 ````

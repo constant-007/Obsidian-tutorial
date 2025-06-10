@@ -1,6 +1,6 @@
 ---
-title: Replace In Note
-description: Replace In Note button action reference.
+title: 替换笔记内容 (Replace In Note)
+description: 替换笔记内容按钮动作参考文档。
 ---
 
 此按钮动作允许您用新文本或Templater模板替换当前笔记中的指定行范围。
@@ -23,19 +23,19 @@ interface ReplaceInNoteButtonAction {
 此示例将当前笔记的第3-5行替换为以下文本。
 
 ```markdown
-some
-text
-wow
+一些
+文本
+内容
 ```
 
 ````custom_markdown {5-8}
 ```meta-bind-button
 style: primary
-label: Replace in Note
+label: 替换笔记内容
 action:
   type: "replaceInNote"
   fromLine: 3
   toLine: 5
-  replacement: "some\ntext\nwow"
+  replacement: "一些\n文本\n内容"
 ```
 ````

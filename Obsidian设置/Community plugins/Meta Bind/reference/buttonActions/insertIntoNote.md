@@ -1,6 +1,6 @@
 ---
-title: Insert Into Note
-description: Insert Into Note button action reference.
+title: 插入到笔记 (Insert Into Note)
+description: 插入到笔记按钮动作参考文档。
 ---
 
 此动作在按钮所在笔记的指定行号处插入纯文本或Templater模板。
@@ -24,7 +24,7 @@ interface InsertIntoNoteButtonAction {
 ````custom_markdown {5-8}
 ```meta-bind-button
 style: primary
-label: Insert Into Note
+label: 插入到笔记
 action:
   type: insertIntoNote
   line: 3
