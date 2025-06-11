@@ -1,6 +1,42 @@
 {
   "recentFiles": [
     {
+      "basename": "替换按钮",
+      "path": "示例/Meta Bind演示/按钮/替换按钮.md"
+    },
+    {
+      "basename": "笔记内导航",
+      "path": "示例/Meta Bind演示/按钮/笔记内导航.md"
+    },
+    {
+      "basename": "带标注的示例笔记",
+      "path": "示例/Meta Bind演示/Other/示例笔记/带标注的示例笔记.md"
+    },
+    {
+      "basename": "带嵌入的示例笔记",
+      "path": "示例/Meta Bind演示/Other/示例笔记/带嵌入的示例笔记.md"
+    },
+    {
+      "basename": "带图片的示例笔记",
+      "path": "示例/Meta Bind演示/Other/示例笔记/带图片的示例笔记.md"
+    },
+    {
+      "basename": "DB Folder：制作Notion数据库",
+      "path": "Obsidian设置/Community plugins/DB Folder：制作Notion数据库.md"
+    },
+    {
+      "basename": "Editing Toolbar：像Word一样编辑笔记",
+      "path": "Obsidian设置/Community plugins/Editing Toolbar：像Word一样编辑笔记.md"
+    },
+    {
+      "basename": "Untitled",
+      "path": "Obsidian设置/Community plugins/Untitled.md"
+    },
+    {
+      "basename": "Advanced Table：高级表格",
+      "path": "Obsidian设置/Community plugins/Advanced Table：高级表格.md"
+    },
+    {
       "basename": "数字",
       "path": "示例/Meta Bind演示/输入字段/数字.md"
     },
