@@ -98,6 +98,38 @@ const predefinedOptions = {
 // 数值类型的列
 const numberColumns = ["estimate_hours", "actual_hours", "progress"];
 
+// Meta Bind 字段创建函数 - 修复版本
+function createMetaBindSelect(filePath, property, currentValue, options) {
+    const bindTarget = `${filePath}#${property}`;
+    
+    // 创建选项字符串
+    const optionsArray = options.map(opt => `option("${opt}", "${opt}")`);
+    const optionsStr = optionsArray.join(', ');
+    
+    // 返回正确的Meta Bind语法（不用反引号包裹）
+    return `INPUT[select(${optionsStr}):${bindTarget}]`;
+}
+
+function createMetaBindNumber(filePath, property, currentValue) {
+    const bindTarget = `${filePath}#${property}`;
+    return `INPUT[number:${bindTarget}]`;
+}
+
+function createMetaBindSlider(filePath, property, currentValue) {
+    const bindTarget = `${filePath}#${property}`;
+    return `INPUT[slider(minValue(0), maxValue(100), stepSize(5)):${bindTarget}]`;
+}
+
+function createMetaBindDate(filePath, property, currentValue) {
+    const bindTarget = `${filePath}#${property}`;
+    return `INPUT[date:${bindTarget}]`;
+}
+
+function createMetaBindText(filePath, property, currentValue) {
+    const bindTarget = `${filePath}#${property}`;
+    return `INPUT[text:${bindTarget}]`;
+}
+
 // 定义列设置 - Meta Bind 增强版
 const columns = [
     {
@@ -171,38 +203,6 @@ const columns = [
         editable: false
     }
 ];
-
-// Meta Bind 字段创建函数
-function createMetaBindSelect(filePath, property, currentValue, options) {
-    // 移除文件扩展名和路径，只保留文件名作为唯一标识
-    const fileName = filePath.split('/').pop().replace('.md', '');
-    const bindTarget = `${filePath}#${property}`;
-    
-    // 创建选项字符串
-    const optionsStr = options.map(opt => `"${opt}"`).join(', ');
-    
-    return `\`INPUT[select(option("${options[0]}", "${options[0]}"), option("${options[1]}", "${options[1]}"), option("${options[2]}", "${options[2]}")${options.length > 3 ? `, option("${options[3]}", "${options[3]}")` : ''}):${bindTarget}]\``;
-}
-
-function createMetaBindNumber(filePath, property, currentValue) {
-    const bindTarget = `${filePath}#${property}`;
-    return `\`INPUT[number:${bindTarget}]\``;
-}
-
-function createMetaBindSlider(filePath, property, currentValue) {
-    const bindTarget = `${filePath}#${property}`;
-    return `\`INPUT[slider(minValue(0), maxValue(100), stepSize(5)):${bindTarget}]\``;
-}
-
-function createMetaBindDate(filePath, property, currentValue) {
-    const bindTarget = `${filePath}#${property}`;
-    return `\`INPUT[date:${bindTarget}]\``;
-}
-
-function createMetaBindText(filePath, property, currentValue) {
-    const bindTarget = `${filePath}#${property}`;
-    return `\`INPUT[text:${bindTarget}]\``;
-}
 
 // 创建筛选控件
 const container = this.container;
