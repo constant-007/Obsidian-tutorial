@@ -1,0 +1,31 @@
+﻿MCP Course Subtitles Download Report (Final)
+Generated: 06/11/2025 21:39:50
+
+Total lessons attempted: 11
+Successful downloads: Microsoft.PowerShell.Commands.GenericMeasureInfo.Count
+Failed downloads: Microsoft.PowerShell.Commands.GenericMeasureInfo.Count
+
+Details:
+
+Lesson Status  FileSize Timestamps ValidVTT FirstTimestamp                LastTimestamp SampleText    
+------ ------  -------- ---------- -------- --------------                ------------- ----------    
+L1     Success    13469        148     True 00:00:02.043 --> 00:00:03.253               In this fir...
+L2     Success    25944        291     True 00:00:01.960 --> 00:00:04.963               MCP is base...
+L3     Success    14295        159     True 00:00:02.043 --> 00:00:04.045               Now it's ti...
+L4     Success    14443        161     True 00:00:02.043 --> 00:00:04.587               You'll now ...
+L5     Success    14228        160     True 00:00:01.918 --> 00:00:03.712               With your M...
+L6     Success    20409        229     True 00:00:01.918 --> 00:00:05.588               In the prev...
+L7     Success    19525        220     True 00:00:02.210 --> 00:00:03.003               So far, you...
+L8     Success    10866        121     True 00:00:02.043 --> 00:00:05.463               The MCP ser...
+L9     Success    13150        154     True 00:00:02.043 --> 00:00:04.546               Your AI app...
+L10    Failed         0          0    False N/A                           N/A           N/A           
+L11    Failed         0          0    False N/A                           N/A           N/A           
+
+
+
+
+Notes:
+- These are the CORRECT WebVTT subtitle files that match the video content
+- No decoding needed - server now returns proper WebVTT format
+- Files are saved in UTF-8 encoding for compatibility
+
