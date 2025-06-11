@@ -1,32 +1,56 @@
 {
   "recentFiles": [
     {
-      "basename": "项目管理总视图-MetaBind编辑版",
-      "path": "示例/DataView演示/项目管理总视图-MetaBind编辑版.md"
+      "basename": "DB Folder：制作Notion数据库",
+      "path": "Obsidian设置/Community plugins/DB Folder：制作Notion数据库.md"
     },
     {
       "basename": "Meta Bind",
       "path": "Obsidian设置/Community plugins/Meta Bind.md"
     },
     {
-      "basename": "Advanced Table：高级表格",
-      "path": "Obsidian设置/Community plugins/Advanced Table：高级表格.md"
+      "basename": "其他笔记",
+      "path": "示例/Meta Bind演示/视图字段/其他笔记.md"
     },
     {
-      "basename": "项目管理总视图",
-      "path": "示例/DataView演示/项目管理总视图.md"
+      "basename": "测试模板",
+      "path": "示例/Meta Bind演示/模板/测试模板.md"
     },
     {
-      "basename": "替换按钮",
-      "path": "示例/Meta Bind演示/按钮/替换按钮.md"
+      "basename": "打招呼命令",
+      "path": "示例/Meta Bind演示/模板/templater/打招呼命令.md"
+    },
+    {
+      "basename": "其他模板",
+      "path": "示例/Meta Bind演示/模板/其他模板.md"
+    },
+    {
+      "basename": "Templater模板",
+      "path": "示例/Meta Bind演示/模板/templater/Templater模板.md"
+    },
+    {
+      "basename": "替代元数据存储",
+      "path": "示例/Meta Bind演示/替代元数据存储/替代元数据存储.md"
+    },
+    {
+      "basename": "其他笔记",
+      "path": "示例/Meta Bind演示/替代元数据存储/其他笔记.md"
     },
     {
       "basename": "笔记内导航",
       "path": "示例/Meta Bind演示/按钮/笔记内导航.md"
     },
     {
-      "basename": "带标注的示例笔记",
-      "path": "示例/Meta Bind演示/Other/示例笔记/带标注的示例笔记.md"
+      "basename": "替换按钮",
+      "path": "示例/Meta Bind演示/按钮/替换按钮.md"
+    },
+    {
+      "basename": "按钮示例",
+      "path": "示例/Meta Bind演示/按钮/按钮示例.md"
+    },
+    {
+      "basename": "Templater按钮",
+      "path": "示例/Meta Bind演示/按钮/Templater按钮.md"
     },
     {
       "basename": "带嵌入的示例笔记",
@@ -37,8 +61,16 @@
       "path": "示例/Meta Bind演示/Other/示例笔记/带图片的示例笔记.md"
     },
     {
-      "basename": "DB Folder：制作Notion数据库",
-      "path": "Obsidian设置/Community plugins/DB Folder：制作Notion数据库.md"
+      "basename": "Advanced Table：高级表格",
+      "path": "Obsidian设置/Community plugins/Advanced Table：高级表格.md"
+    },
+    {
+      "basename": "项目管理总视图",
+      "path": "示例/DataView演示/项目管理总视图.md"
+    },
+    {
+      "basename": "带标注的示例笔记",
+      "path": "示例/Meta Bind演示/Other/示例笔记/带标注的示例笔记.md"
     },
     {
       "basename": "Editing Toolbar：像Word一样编辑笔记",
