@@ -1,8 +1,32 @@
 {
   "recentFiles": [
     {
+      "basename": "Easy Typing：规范化 + 打字辅助",
+      "path": "Obsidian设置/Community plugins/Easy Typing：规范化 + 打字辅助.md"
+    },
+    {
+      "basename": "Editing Toolbar：像Word一样编辑笔记",
+      "path": "Obsidian设置/Community plugins/Editing Toolbar：像Word一样编辑笔记.md"
+    },
+    {
       "basename": "DB Folder：制作Notion数据库",
       "path": "Obsidian设置/Community plugins/DB Folder：制作Notion数据库.md"
+    },
+    {
+      "basename": "QuickAdd：自动化法宝",
+      "path": "Obsidian设置/Community plugins/QuickAdd：自动化法宝.md"
+    },
+    {
+      "basename": "Remember cursor position：一定要装！",
+      "path": "Obsidian设置/Community plugins/Remember cursor position：一定要装！.md"
+    },
+    {
+      "basename": "Pandoc：导出工具",
+      "path": "Obsidian设置/Community plugins/Pandoc：导出工具.md"
+    },
+    {
+      "basename": "Excute code：执行代码！",
+      "path": "Obsidian设置/Community plugins/Excute code：执行代码！.md"
     },
     {
       "basename": "移动应用开发数据库",
@@ -19,10 +43,6 @@
     {
       "basename": "测试",
       "path": "示例/DB Folder演示/CSV导入数据库示例/图书管理CSV导入示例/测试.md"
-    },
-    {
-      "basename": "Easy Typing：规范化 + 打字辅助",
-      "path": "Obsidian设置/Community plugins/Easy Typing：规范化 + 打字辅助.md"
     },
     {
       "basename": "移动应用开发",
@@ -75,10 +95,6 @@
     {
       "basename": "JavaScript基础",
       "path": "示例/DB Folder演示/🎓 学习记录数据库/JavaScript基础.md"
-    },
-    {
-      "basename": "QuickAdd：自动化法宝",
-      "path": "Obsidian设置/Community plugins/QuickAdd：自动化法宝.md"
     },
     {
       "basename": "Linter：自动规范笔记",
@@ -153,10 +169,6 @@
       "path": "Obsidian设置/Community plugins/Importer：导入文件.md"
     },
     {
-      "basename": "Excute code：执行代码！",
-      "path": "Obsidian设置/Community plugins/Excute code：执行代码！.md"
-    },
-    {
       "basename": "Advanced Table：高级表格",
       "path": "Obsidian设置/Community plugins/Advanced Table：高级表格.md"
     },
@@ -187,14 +199,6 @@
     {
       "basename": "带嵌入的示例笔记",
       "path": "示例/Meta Bind演示/Other/示例笔记/带嵌入的示例笔记.md"
-    },
-    {
-      "basename": "带图片的示例笔记",
-      "path": "示例/Meta Bind演示/Other/示例笔记/带图片的示例笔记.md"
-    },
-    {
-      "basename": "项目管理总视图",
-      "path": "示例/DataView演示/项目管理总视图.md"
     }
   ],
   "omittedPaths": [],
