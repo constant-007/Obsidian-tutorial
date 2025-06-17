@@ -1,6 +1,38 @@
 {
   "recentFiles": [
     {
+      "basename": "homepage",
+      "path": "示例/homepage.md"
+    },
+    {
+      "basename": "自定义脚本示例",
+      "path": "示例/Quick Add演示/自定义脚本示例.md"
+    },
+    {
+      "basename": "读书笔记模板",
+      "path": "示例/Quick Add演示/读书笔记模板.md"
+    },
+    {
+      "basename": "会议记录模板",
+      "path": "示例/Quick Add演示/会议记录模板.md"
+    },
+    {
+      "basename": "README",
+      "path": "示例/Quick Add演示/README.md"
+    },
+    {
+      "basename": "日记模板示例",
+      "path": "示例/Quick Add演示/日记模板示例.md"
+    },
+    {
+      "basename": "快速捕获想法",
+      "path": "示例/Quick Add演示/快速捕获想法.md"
+    },
+    {
+      "basename": "待办事项快速添加",
+      "path": "示例/Quick Add演示/待办事项快速添加.md"
+    },
+    {
       "basename": "Banners：添加横幅背景",
       "path": "Obsidian设置/Community plugins/Banners：添加横幅背景.md"
     },
@@ -167,38 +199,6 @@
     {
       "basename": "Sheet Plus：编辑excel表格",
       "path": "Obsidian设置/Community plugins/Sheet Plus：编辑excel表格.md"
-    },
-    {
-      "basename": "Importer：导入文件",
-      "path": "Obsidian设置/Community plugins/Importer：导入文件.md"
-    },
-    {
-      "basename": "Advanced Table：高级表格",
-      "path": "Obsidian设置/Community plugins/Advanced Table：高级表格.md"
-    },
-    {
-      "basename": "测试模板",
-      "path": "示例/Meta Bind演示/模板/测试模板.md"
-    },
-    {
-      "basename": "其他笔记",
-      "path": "示例/Meta Bind演示/替代元数据存储/其他笔记.md"
-    },
-    {
-      "basename": "笔记内导航",
-      "path": "示例/Meta Bind演示/按钮/笔记内导航.md"
-    },
-    {
-      "basename": "替换按钮",
-      "path": "示例/Meta Bind演示/按钮/替换按钮.md"
-    },
-    {
-      "basename": "按钮示例",
-      "path": "示例/Meta Bind演示/按钮/按钮示例.md"
-    },
-    {
-      "basename": "Templater按钮",
-      "path": "示例/Meta Bind演示/按钮/Templater按钮.md"
     }
   ],
   "omittedPaths": [],
