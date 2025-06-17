@@ -4,6 +4,18 @@
 
 另外，使用 Dataview 自己写代码或者用 AI 写代码可以更自由地控制数据库视图结构。我一开始就是在 Obsidian 中使用 Dataview 完成数据库的构建，虽然后来发现 DB Floder，就算它能正常工作我想我也不太会用它，如果你是小白，前期到可以用 DB Folder 过渡一下
 
+## 使用方法
+
+可以按 Ctrl+P 调出 [[Core plugins#4. Command palette|Command Platte]]，然后输入"DB"，在命令面板中选择对应指令。也可以在侧边 [[Appearance|Ribbon]] 中，点击 DB Folder 的快捷键创建数据库
+
+![[Pasted image 20250617194826.png]]
+
+点击后，会弹出 DB Folder 的交互面板
+
+![[Pasted image 20250617194946.png]]
+
+第一个输入框填写数据库名称，第二个下拉框用来选择源数据的位置，如果选择“Current folder”，要确保源笔记与所选数据库位置（就是下方第三个输入框）一样。选择好数据源和数据库位置后，点击"Submit"就可以创建数据库
+
 ## 设置项解释
 
 ![[Pasted image 20250607110758.png]]
