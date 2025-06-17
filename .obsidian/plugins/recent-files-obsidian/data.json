@@ -1,6 +1,14 @@
 {
   "recentFiles": [
     {
+      "basename": "Banners：添加横幅背景",
+      "path": "Obsidian设置/Community plugins/Banners：添加横幅背景.md"
+    },
+    {
+      "basename": "Remember cursor position：一定要装！",
+      "path": "Obsidian设置/Community plugins/Remember cursor position：一定要装！.md"
+    },
+    {
       "basename": "Easy Typing：规范化 + 打字辅助",
       "path": "Obsidian设置/Community plugins/Easy Typing：规范化 + 打字辅助.md"
     },
@@ -15,10 +23,6 @@
     {
       "basename": "QuickAdd：自动化法宝",
       "path": "Obsidian设置/Community plugins/QuickAdd：自动化法宝.md"
-    },
-    {
-      "basename": "Remember cursor position：一定要装！",
-      "path": "Obsidian设置/Community plugins/Remember cursor position：一定要装！.md"
     },
     {
       "basename": "Pandoc：导出工具",
@@ -195,10 +199,6 @@
     {
       "basename": "Templater按钮",
       "path": "示例/Meta Bind演示/按钮/Templater按钮.md"
-    },
-    {
-      "basename": "带嵌入的示例笔记",
-      "path": "示例/Meta Bind演示/Other/示例笔记/带嵌入的示例笔记.md"
     }
   ],
   "omittedPaths": [],
