@@ -1,8 +1,28 @@
 {
   "recentFiles": [
     {
+      "basename": "Easy Typing：规范化 + 打字辅助",
+      "path": "Obsidian设置/Community plugins/Easy Typing：规范化 + 打字辅助.md"
+    },
+    {
+      "basename": "DB Folder：制作Notion数据库",
+      "path": "Obsidian设置/Community plugins/DB Folder：制作Notion数据库.md"
+    },
+    {
+      "basename": "移动应用开发数据库",
+      "path": "示例/DB Folder演示/💼 项目任务数据库/移动应用开发数据库.md"
+    },
+    {
+      "basename": "移动应用开发",
+      "path": "示例/DB Folder演示/💼 项目任务数据库/移动应用开发.md"
+    },
+    {
       "basename": "图书管理数据库",
       "path": "示例/DB Folder演示/📚 图书管理数据库/图书管理数据库.md"
+    },
+    {
+      "basename": "活着",
+      "path": "示例/DB Folder演示/📚 图书管理数据库/活着.md"
     },
     {
       "basename": "百年孤独",
@@ -11,10 +31,6 @@
     {
       "basename": "三体",
       "path": "示例/DB Folder演示/📚 图书管理数据库/三体.md"
-    },
-    {
-      "basename": "活着",
-      "path": "示例/DB Folder演示/📚 图书管理数据库/活着.md"
     },
     {
       "basename": "README",
@@ -55,10 +71,6 @@
     {
       "basename": "QuickAdd：自动化法宝",
       "path": "Obsidian设置/Community plugins/QuickAdd：自动化法宝.md"
-    },
-    {
-      "basename": "DB Folder：制作Notion数据库",
-      "path": "Obsidian设置/Community plugins/DB Folder：制作Notion数据库.md"
     },
     {
       "basename": "Meta Bind：自动修改属性",
@@ -129,10 +141,6 @@
       "path": "Obsidian设置/Community plugins/Templater：模板+自动化.md"
     },
     {
-      "basename": "Untitled",
-      "path": "Obsidian设置/Community plugins/Untitled.md"
-    },
-    {
       "basename": "Sheet Plus：编辑excel表格",
       "path": "Obsidian设置/Community plugins/Sheet Plus：编辑excel表格.md"
     },
@@ -191,14 +199,6 @@
     {
       "basename": "Editing Toolbar：像Word一样编辑笔记",
       "path": "Obsidian设置/Community plugins/Editing Toolbar：像Word一样编辑笔记.md"
-    },
-    {
-      "basename": "数字",
-      "path": "示例/Meta Bind演示/输入字段/数字.md"
-    },
-    {
-      "basename": "开关",
-      "path": "示例/Meta Bind演示/输入字段/开关.md"
     }
   ],
   "omittedPaths": [],
