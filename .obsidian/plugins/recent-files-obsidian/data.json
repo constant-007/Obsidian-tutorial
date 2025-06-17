@@ -5,16 +5,20 @@
       "path": "Obsidian设置/Community plugins/DB Folder：制作Notion数据库.md"
     },
     {
+      "basename": "移动应用开发数据库",
+      "path": "示例/DB Folder演示/💼 项目任务数据库/移动应用开发数据库.md"
+    },
+    {
+      "basename": "Meta Bind：自动修改属性",
+      "path": "Obsidian设置/Community plugins/Meta Bind：自动修改属性.md"
+    },
+    {
       "basename": "README",
       "path": "示例/DB Folder演示/README.md"
     },
     {
       "basename": "测试",
       "path": "示例/DB Folder演示/CSV导入数据库示例/图书管理CSV导入示例/测试.md"
-    },
-    {
-      "basename": "移动应用开发数据库",
-      "path": "示例/DB Folder演示/💼 项目任务数据库/移动应用开发数据库.md"
     },
     {
       "basename": "Easy Typing：规范化 + 打字辅助",
@@ -75,10 +79,6 @@
     {
       "basename": "QuickAdd：自动化法宝",
       "path": "Obsidian设置/Community plugins/QuickAdd：自动化法宝.md"
-    },
-    {
-      "basename": "Meta Bind：自动修改属性",
-      "path": "Obsidian设置/Community plugins/Meta Bind：自动修改属性.md"
     },
     {
       "basename": "Linter：自动规范笔记",
