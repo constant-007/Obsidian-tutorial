@@ -18,21 +18,19 @@ Execute Code 插件的主要特点：
 ### Python 示例
 
 ```python
-# -*- coding: utf-8 -*-
-# 基本计算和输出
+
 print("Python Code Execution Demo")
 print("=" * 30)
 
-# 数学计算
 result = 2 ** 10
 print(f"2^10 = {result}")
 
-# 列表操作
+
 numbers = [1, 2, 3, 4, 5]
 squared = [x**2 for x in numbers]
 print(f"Squared list: {squared}")
 
-# 字符串处理
+
 text = "Hello Obsidian!"
 print(f"Reversed: {text[::-1]}")
 ```

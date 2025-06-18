@@ -1,6 +1,34 @@
 {
   "recentFiles": [
     {
+      "basename": "DB Folder：制作Notion数据库",
+      "path": "Obsidian设置/Community plugins/DB Folder：制作Notion数据库.md"
+    },
+    {
+      "basename": "Easy Typing：规范化 + 打字辅助",
+      "path": "Obsidian设置/Community plugins/Easy Typing：规范化 + 打字辅助.md"
+    },
+    {
+      "basename": "移动应用开发数据库",
+      "path": "示例/DB Folder演示/💼 项目任务数据库/移动应用开发数据库.md"
+    },
+    {
+      "basename": "Excute code：执行代码！",
+      "path": "Obsidian设置/Community plugins/Excute code：执行代码！.md"
+    },
+    {
+      "basename": "Excalidraw：手写笔记爱好者福音",
+      "path": "Obsidian设置/Community plugins/Excalidraw：手写笔记爱好者福音.md"
+    },
+    {
+      "basename": "Editing Toolbar：像Word一样编辑笔记",
+      "path": "Obsidian设置/Community plugins/Editing Toolbar：像Word一样编辑笔记.md"
+    },
+    {
+      "basename": "Remember cursor position：一定要装！",
+      "path": "Obsidian设置/Community plugins/Remember cursor position：一定要装！.md"
+    },
+    {
       "basename": "homepage",
       "path": "示例/homepage.md"
     },
@@ -37,36 +65,12 @@
       "path": "Obsidian设置/Community plugins/Banners：添加横幅背景.md"
     },
     {
-      "basename": "Remember cursor position：一定要装！",
-      "path": "Obsidian设置/Community plugins/Remember cursor position：一定要装！.md"
-    },
-    {
-      "basename": "Easy Typing：规范化 + 打字辅助",
-      "path": "Obsidian设置/Community plugins/Easy Typing：规范化 + 打字辅助.md"
-    },
-    {
-      "basename": "Editing Toolbar：像Word一样编辑笔记",
-      "path": "Obsidian设置/Community plugins/Editing Toolbar：像Word一样编辑笔记.md"
-    },
-    {
-      "basename": "DB Folder：制作Notion数据库",
-      "path": "Obsidian设置/Community plugins/DB Folder：制作Notion数据库.md"
-    },
-    {
       "basename": "QuickAdd：自动化法宝",
       "path": "Obsidian设置/Community plugins/QuickAdd：自动化法宝.md"
     },
     {
       "basename": "Pandoc：导出工具",
       "path": "Obsidian设置/Community plugins/Pandoc：导出工具.md"
-    },
-    {
-      "basename": "Excute code：执行代码！",
-      "path": "Obsidian设置/Community plugins/Excute code：执行代码！.md"
-    },
-    {
-      "basename": "移动应用开发数据库",
-      "path": "示例/DB Folder演示/💼 项目任务数据库/移动应用开发数据库.md"
     },
     {
       "basename": "Meta Bind：自动修改属性",
@@ -195,10 +199,6 @@
     {
       "basename": "Templater：模板+自动化",
       "path": "Obsidian设置/Community plugins/Templater：模板+自动化.md"
-    },
-    {
-      "basename": "Sheet Plus：编辑excel表格",
-      "path": "Obsidian设置/Community plugins/Sheet Plus：编辑excel表格.md"
     }
   ],
   "omittedPaths": [],
