@@ -1,6 +1,26 @@
 {
   "recentFiles": [
     {
+      "basename": "会议记录模板",
+      "path": "示例/Quick Add演示/会议记录模板.md"
+    },
+    {
+      "basename": "README",
+      "path": "示例/Quick Add演示/README.md"
+    },
+    {
+      "basename": "会议记录模板",
+      "path": "Templates/会议记录模板.md"
+    },
+    {
+      "basename": "目录",
+      "path": "Templates/目录.md"
+    },
+    {
+      "basename": "QuickAdd：自动化法宝",
+      "path": "Obsidian设置/Community plugins/QuickAdd：自动化法宝.md"
+    },
+    {
       "basename": "Charts：制作图表",
       "path": "Obsidian设置/Community plugins/Charts：制作图表.md"
     },
@@ -47,10 +67,6 @@
     {
       "basename": "README",
       "path": "README.md"
-    },
-    {
-      "basename": "目录",
-      "path": "Templates/目录.md"
     },
     {
       "basename": "YouTube",
@@ -101,14 +117,6 @@
       "path": "示例/Quick Add演示/读书笔记模板.md"
     },
     {
-      "basename": "会议记录模板",
-      "path": "示例/Quick Add演示/会议记录模板.md"
-    },
-    {
-      "basename": "README",
-      "path": "示例/Quick Add演示/README.md"
-    },
-    {
       "basename": "日记模板示例",
       "path": "示例/Quick Add演示/日记模板示例.md"
     },
@@ -123,10 +131,6 @@
     {
       "basename": "Banners：添加横幅背景",
       "path": "Obsidian设置/Community plugins/Banners：添加横幅背景.md"
-    },
-    {
-      "basename": "QuickAdd：自动化法宝",
-      "path": "Obsidian设置/Community plugins/QuickAdd：自动化法宝.md"
     },
     {
       "basename": "Pandoc：导出工具",
@@ -195,10 +199,6 @@
     {
       "basename": "JavaScript基础",
       "path": "示例/DB Folder演示/🎓 学习记录数据库/JavaScript基础.md"
-    },
-    {
-      "basename": "Linter：自动规范笔记",
-      "path": "Obsidian设置/Community plugins/Linter：自动规范笔记.md"
     }
   ],
   "omittedPaths": [],
