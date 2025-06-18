@@ -38,6 +38,7 @@
   "obsidian-linter",
   "homepage",
   "obsidian-view-mode-by-frontmatter",
+  "execute-code",
   "highlightr-plugin",
   "toggle-readable-line-length",
   "sheet-plus",
@@ -46,8 +47,5 @@
   "dbfolder",
   "js-engine",
   "easy-typing-obsidian",
-  "obsidian-emoji-toolbar",
-  "code-emitter",
-  "obsidian-advanced-uri",
-  "url-into-selection"
+  "obsidian-projects"
 ]
