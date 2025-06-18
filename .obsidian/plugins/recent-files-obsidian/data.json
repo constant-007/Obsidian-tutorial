@@ -1,12 +1,52 @@
 {
   "recentFiles": [
     {
+      "basename": "自定义脚本示例",
+      "path": "示例/Quick Add演示/自定义脚本示例.md"
+    },
+    {
+      "basename": "快速捕获想法",
+      "path": "示例/Quick Add演示/快速捕获想法.md"
+    },
+    {
       "basename": "会议记录模板",
       "path": "示例/Quick Add演示/会议记录模板.md"
     },
     {
       "basename": "README",
       "path": "示例/Quick Add演示/README.md"
+    },
+    {
+      "basename": "待办事项快速添加",
+      "path": "示例/Quick Add演示/待办事项快速添加.md"
+    },
+    {
+      "basename": "日记模板示例",
+      "path": "示例/Quick Add演示/日记模板示例.md"
+    },
+    {
+      "basename": "README",
+      "path": "README.md"
+    },
+    {
+      "basename": "Code Emitter：执行代码！",
+      "path": "Obsidian设置/Community plugins/Code Emitter：执行代码！.md"
+    },
+    {
+      "basename": "Easy Typing：规范化 + 打字辅助",
+      "path": "Obsidian设置/Community plugins/Easy Typing：规范化 + 打字辅助.md"
+    },
+    {
+      "basename": "Excalidraw：手写笔记爱好者福音",
+      "path": "Obsidian设置/Community plugins/Excalidraw：手写笔记爱好者福音.md"
+    },
+    {
+      "basename": "Editing Toolbar：像Word一样编辑笔记",
+      "path": "Obsidian设置/Community plugins/Editing Toolbar：像Word一样编辑笔记.md"
+    },
+    {
+      "basename": "Charts：制作图表",
+      "path": "Obsidian设置/Community plugins/Charts：制作图表.md"
     },
     {
       "basename": "会议记录模板",
@@ -21,20 +61,12 @@
       "path": "Obsidian设置/Community plugins/QuickAdd：自动化法宝.md"
     },
     {
-      "basename": "Charts：制作图表",
-      "path": "Obsidian设置/Community plugins/Charts：制作图表.md"
-    },
-    {
       "basename": "Advanced URI",
       "path": "Obsidian设置/Community plugins/Advanced URI.md"
     },
     {
       "basename": "Tag Wrangler：管理标签",
       "path": "Obsidian设置/Community plugins/Tag Wrangler：管理标签.md"
-    },
-    {
-      "basename": "Code Emitter：执行代码！",
-      "path": "Obsidian设置/Community plugins/Code Emitter：执行代码！.md"
     },
     {
       "basename": "Copilot：AI辅助创作",
@@ -65,10 +97,6 @@
       "path": "Obsidian设置/HotKeys.md"
     },
     {
-      "basename": "README",
-      "path": "README.md"
-    },
-    {
       "basename": "YouTube",
       "path": "Templates/YouTube.md"
     },
@@ -85,20 +113,8 @@
       "path": "Obsidian设置/Community plugins/DB Folder：制作Notion数据库.md"
     },
     {
-      "basename": "Easy Typing：规范化 + 打字辅助",
-      "path": "Obsidian设置/Community plugins/Easy Typing：规范化 + 打字辅助.md"
-    },
-    {
       "basename": "移动应用开发数据库",
       "path": "示例/DB Folder演示/💼 项目任务数据库/移动应用开发数据库.md"
-    },
-    {
-      "basename": "Excalidraw：手写笔记爱好者福音",
-      "path": "Obsidian设置/Community plugins/Excalidraw：手写笔记爱好者福音.md"
-    },
-    {
-      "basename": "Editing Toolbar：像Word一样编辑笔记",
-      "path": "Obsidian设置/Community plugins/Editing Toolbar：像Word一样编辑笔记.md"
     },
     {
       "basename": "Remember cursor position：一定要装！",
@@ -109,24 +125,8 @@
       "path": "示例/homepage.md"
     },
     {
-      "basename": "自定义脚本示例",
-      "path": "示例/Quick Add演示/自定义脚本示例.md"
-    },
-    {
       "basename": "读书笔记模板",
       "path": "示例/Quick Add演示/读书笔记模板.md"
-    },
-    {
-      "basename": "日记模板示例",
-      "path": "示例/Quick Add演示/日记模板示例.md"
-    },
-    {
-      "basename": "快速捕获想法",
-      "path": "示例/Quick Add演示/快速捕获想法.md"
-    },
-    {
-      "basename": "待办事项快速添加",
-      "path": "示例/Quick Add演示/待办事项快速添加.md"
     },
     {
       "basename": "Banners：添加横幅背景",
@@ -195,10 +195,6 @@
     {
       "basename": "Python数据分析",
       "path": "示例/DB Folder演示/🎓 学习记录数据库/Python数据分析.md"
-    },
-    {
-      "basename": "JavaScript基础",
-      "path": "示例/DB Folder演示/🎓 学习记录数据库/JavaScript基础.md"
     }
   ],
   "omittedPaths": [],
