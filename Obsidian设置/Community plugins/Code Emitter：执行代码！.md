@@ -1,5 +1,5 @@
 ```ad-note
-这插件似乎在Windows上执行python代码有问题，下面python代码如果运行报错是正常的，等待项目作者修复吧
+本来想写Excute Code 那个插件的，它下载量更多一些，但后来发现Excute Code 执行Python时有bug，就换成了Code Emitter
 ```
 
 ## 🚀 插件概述
@@ -10,6 +10,8 @@ Execute Code 插件的主要特点：
 - 📊 **结果显示**：直接在笔记中显示执行结果
 - 🔧 **环境配置**：可自定义执行环境
 - 📁 **代码管理**：组织和重用代码片段
+
+非常适合用语制作技术教程文档，或者在学习某一门编程语言时在 Obsidian 中编写代码并立即看到结果，形成高效学习闭环
 
 ---
 
@@ -63,29 +65,6 @@ console.log(`斐波那契数列前10项:`);
 for (let i = 0; i < 10; i++) {
     console.log(`F(${i}) = ${fibonacci(i)}`);
 }
-```
-
-### Shell 脚本示例
-
-```bash
-#!/bin/bash
-# Shell 脚本演示
-
-echo "🐚 Shell 脚本执行演示"
-echo "========================"
-
-# 系统信息
-echo "当前目录: $(pwd)"
-echo "当前用户: $(whoami)"
-echo "当前时间: $(date)"
-
-# 文件操作演示（安全的临时操作）
-echo "创建临时文件演示:"
-temp_file="/tmp/obsidian_demo.txt"
-echo "Hello from Obsidian Execute Code!" > "$temp_file"
-echo "文件内容: $(cat $temp_file)"
-rm "$temp_file"
-echo "临时文件已清理"
 ```
 
 ---

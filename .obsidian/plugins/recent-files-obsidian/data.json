@@ -1,6 +1,66 @@
 {
   "recentFiles": [
     {
+      "basename": "Advanced URI",
+      "path": "Obsidian设置/Community plugins/Advanced URI.md"
+    },
+    {
+      "basename": "Tag Wrangler：管理标签",
+      "path": "Obsidian设置/Community plugins/Tag Wrangler：管理标签.md"
+    },
+    {
+      "basename": "Code Emitter：执行代码！",
+      "path": "Obsidian设置/Community plugins/Code Emitter：执行代码！.md"
+    },
+    {
+      "basename": "Copilot：AI辅助创作",
+      "path": "Obsidian设置/Community plugins/Copilot：AI辅助创作.md"
+    },
+    {
+      "basename": "Appearance",
+      "path": "Obsidian设置/Appearance.md"
+    },
+    {
+      "basename": "Editor",
+      "path": "Obsidian设置/Editor.md"
+    },
+    {
+      "basename": "Core plugins",
+      "path": "Obsidian设置/Core plugins.md"
+    },
+    {
+      "basename": "Files and links",
+      "path": "Obsidian设置/Files and links.md"
+    },
+    {
+      "basename": "General",
+      "path": "Obsidian设置/General.md"
+    },
+    {
+      "basename": "HotKeys",
+      "path": "Obsidian设置/HotKeys.md"
+    },
+    {
+      "basename": "README",
+      "path": "README.md"
+    },
+    {
+      "basename": "目录",
+      "path": "Templates/目录.md"
+    },
+    {
+      "basename": "YouTube",
+      "path": "Templates/YouTube.md"
+    },
+    {
+      "basename": "URL",
+      "path": "Templates/URL.md"
+    },
+    {
+      "basename": "Excel 2025-06-02 14.21.30.univer",
+      "path": "Excel/Excel 2025-06-02 14.21.30.univer.md"
+    },
+    {
       "basename": "DB Folder：制作Notion数据库",
       "path": "Obsidian设置/Community plugins/DB Folder：制作Notion数据库.md"
     },
@@ -11,10 +71,6 @@
     {
       "basename": "移动应用开发数据库",
       "path": "示例/DB Folder演示/💼 项目任务数据库/移动应用开发数据库.md"
-    },
-    {
-      "basename": "Excute code：执行代码！",
-      "path": "Obsidian设置/Community plugins/Excute code：执行代码！.md"
     },
     {
       "basename": "Excalidraw：手写笔记爱好者福音",
@@ -143,62 +199,6 @@
     {
       "basename": "Kanban：创建看板视图",
       "path": "Obsidian设置/Community plugins/Kanban：创建看板视图.md"
-    },
-    {
-      "basename": "Meta Bind API 接口",
-      "path": "示例/Meta Bind演示/Meta Bind API 接口.md"
-    },
-    {
-      "basename": "替代元数据存储",
-      "path": "示例/Meta Bind演示/替代元数据存储/替代元数据存储.md"
-    },
-    {
-      "basename": "打招呼命令",
-      "path": "示例/Meta Bind演示/模板/templater/打招呼命令.md"
-    },
-    {
-      "basename": "其他模板",
-      "path": "示例/Meta Bind演示/模板/其他模板.md"
-    },
-    {
-      "basename": "其他笔记",
-      "path": "示例/Meta Bind演示/视图字段/其他笔记.md"
-    },
-    {
-      "basename": "视图字段",
-      "path": "示例/Meta Bind演示/视图字段/视图字段.md"
-    },
-    {
-      "basename": "Templater模板",
-      "path": "示例/Meta Bind演示/模板/templater/Templater模板.md"
-    },
-    {
-      "basename": "Editor",
-      "path": "Obsidian设置/Editor.md"
-    },
-    {
-      "basename": "About Getting Started",
-      "path": "Obsidian设置/Community plugins/Tasks/Getting Started/About Getting Started.md"
-    },
-    {
-      "basename": "Custom Grouping",
-      "path": "Obsidian设置/Community plugins/Tasks/Scripting/Custom Grouping.md"
-    },
-    {
-      "basename": "Remotely Save：同步",
-      "path": "Obsidian设置/Community plugins/Remotely Save：同步.md"
-    },
-    {
-      "basename": "Style Settings：管理主题",
-      "path": "Obsidian设置/Community plugins/Style Settings：管理主题.md"
-    },
-    {
-      "basename": "Tag Wrangler：管理标签",
-      "path": "Obsidian设置/Community plugins/Tag Wrangler：管理标签.md"
-    },
-    {
-      "basename": "Templater：模板+自动化",
-      "path": "Obsidian设置/Community plugins/Templater：模板+自动化.md"
     }
   ],
   "omittedPaths": [],
