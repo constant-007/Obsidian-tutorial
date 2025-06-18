@@ -1,6 +1,14 @@
 {
   "recentFiles": [
     {
+      "basename": "QuickAdd：自动化工具",
+      "path": "Obsidian设置/Community plugins/QuickAdd：自动化工具.md"
+    },
+    {
+      "basename": "待办事项快速添加",
+      "path": "示例/Quick Add演示/待办事项快速添加.md"
+    },
+    {
       "basename": "自定义脚本示例",
       "path": "示例/Quick Add演示/自定义脚本示例.md"
     },
@@ -15,10 +23,6 @@
     {
       "basename": "README",
       "path": "示例/Quick Add演示/README.md"
-    },
-    {
-      "basename": "待办事项快速添加",
-      "path": "示例/Quick Add演示/待办事项快速添加.md"
     },
     {
       "basename": "日记模板示例",
@@ -55,10 +59,6 @@
     {
       "basename": "目录",
       "path": "Templates/目录.md"
-    },
-    {
-      "basename": "QuickAdd：自动化法宝",
-      "path": "Obsidian设置/Community plugins/QuickAdd：自动化法宝.md"
     },
     {
       "basename": "Advanced URI",
