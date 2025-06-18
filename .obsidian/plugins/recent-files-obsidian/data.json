@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "Charts：制作图表",
+      "path": "Obsidian设置/Community plugins/Charts：制作图表.md"
+    },
+    {
       "basename": "Advanced URI",
       "path": "Obsidian设置/Community plugins/Advanced URI.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "Linter：自动规范笔记",
       "path": "Obsidian设置/Community plugins/Linter：自动规范笔记.md"
-    },
-    {
-      "basename": "Kanban：创建看板视图",
-      "path": "Obsidian设置/Community plugins/Kanban：创建看板视图.md"
     }
   ],
   "omittedPaths": [],
