@@ -1,6 +1,22 @@
 {
   "recentFiles": [
     {
+      "basename": "目录",
+      "path": "Templates/目录.md"
+    },
+    {
+      "basename": "README",
+      "path": "示例/Projects演示/README.md"
+    },
+    {
+      "basename": "个人任务管理看板",
+      "path": "示例/Projects演示/1-个人任务管理项目/个人任务管理看板.md"
+    },
+    {
+      "basename": "健身计划执行",
+      "path": "示例/Projects演示/1-个人任务管理项目/任务数据/健身计划执行.md"
+    },
+    {
       "basename": "QuickAdd：自动化工具",
       "path": "Obsidian设置/Community plugins/QuickAdd：自动化工具.md"
     },
@@ -55,10 +71,6 @@
     {
       "basename": "会议记录模板",
       "path": "Templates/会议记录模板.md"
-    },
-    {
-      "basename": "目录",
-      "path": "Templates/目录.md"
     },
     {
       "basename": "Advanced URI",
@@ -187,14 +199,6 @@
     {
       "basename": "李四",
       "path": "示例/DB Folder演示/👥 联系人数据库/李四.md"
-    },
-    {
-      "basename": "赵六",
-      "path": "示例/DB Folder演示/👥 联系人数据库/赵六.md"
-    },
-    {
-      "basename": "Python数据分析",
-      "path": "示例/DB Folder演示/🎓 学习记录数据库/Python数据分析.md"
     }
   ],
   "omittedPaths": [],
