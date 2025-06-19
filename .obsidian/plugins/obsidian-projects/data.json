@@ -2,15 +2,7 @@
   "version": 2,
   "projects": [
     {
-      "fieldConfig": {
-        "Status": {
-          "options": [
-            "In Progress",
-            "Not Started"
-          ],
-          "richText": true
-        }
-      },
+      "fieldConfig": {},
       "defaultName": "",
       "templates": [],
       "excludedNotes": [],
@@ -18,59 +10,14 @@
       "dataSource": {
         "kind": "folder",
         "config": {
-          "path": "CSV笔记",
+          "path": "示例/Projects演示/5-生活管理项目/生活数据",
           "recursive": false
         }
       },
       "newNotesFolder": "",
       "views": [
         {
-          "config": {
-            "fieldConfig": {
-              "path": {
-                "hide": true
-              },
-              "Created_time": {
-                "hide": true
-              },
-              "cssclasses": {
-                "hide": true
-              },
-              "Last_edited_time": {
-                "hide": true
-              },
-              "备注_1": {
-                "hide": true
-              }
-            },
-            "orderFields": [
-              "name",
-              "URL",
-              "Clicks",
-              "CTR",
-              "Impressions",
-              "Position",
-              "Status",
-              "下载数",
-              "下载转化率",
-              "主关键词",
-              "优化优先级",
-              "优化前指标",
-              "优化动作",
-              "优化后指标",
-              "优化指标",
-              "优化目标",
-              "会话数",
-              "其他重要变体",
-              "备注",
-              "备注_1",
-              "总搜索量",
-              "时间安排",
-              "每次会话的平均互动时长_秒_",
-              "类别",
-              "跳出率"
-            ]
-          },
+          "config": {},
           "filter": {
             "conjunction": "and",
             "conditions": []
@@ -81,13 +28,48 @@
           "sort": {
             "criteria": []
           },
-          "id": "5d017cc4-2e96-4e58-817c-440f0634b7c3",
+          "id": "784eb80b-1822-466b-9784-287676800372",
           "name": "Table",
           "type": "table"
         }
       ],
-      "id": "d84bcaf1-a0ed-4294-9160-6124109152d3",
-      "name": "优化"
+      "id": "3fe3b2f6-71e9-4489-805a-7af4ce0ea376",
+      "name": "生活管理"
+    },
+    {
+      "fieldConfig": {},
+      "defaultName": "",
+      "templates": [],
+      "excludedNotes": [],
+      "isDefault": false,
+      "dataSource": {
+        "kind": "folder",
+        "config": {
+          "path": "示例/Projects演示/2-团队项目管理",
+          "recursive": false
+        }
+      },
+      "newNotesFolder": "",
+      "views": [
+        {
+          "config": {},
+          "filter": {
+            "conjunction": "and",
+            "conditions": []
+          },
+          "colors": {
+            "conditions": []
+          },
+          "sort": {
+            "criteria": []
+          },
+          "id": "abe0e8fb-b585-4cbc-91eb-f16ebe4144a3",
+          "name": "Table",
+          "type": "table"
+        }
+      ],
+      "id": "6cfc1cbd-f6fb-4781-9d73-ea7d120f5a0c",
+      "name": "项目管理"
     }
   ],
   "archives": [
