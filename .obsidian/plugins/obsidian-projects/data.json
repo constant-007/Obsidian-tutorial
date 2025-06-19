@@ -2,7 +2,15 @@
   "version": 2,
   "projects": [
     {
-      "fieldConfig": {},
+      "fieldConfig": {
+        "优先级": {
+          "options": [
+            "高",
+            "中",
+            "低"
+          ]
+        }
+      },
       "defaultName": "",
       "templates": [],
       "excludedNotes": [],
