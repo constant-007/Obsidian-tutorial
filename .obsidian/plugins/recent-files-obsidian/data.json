@@ -1,6 +1,54 @@
 {
   "recentFiles": [
     {
+      "basename": "Files and links",
+      "path": "Obsidian设置/Files and links.md"
+    },
+    {
+      "basename": "计算时间范围",
+      "path": "Templates/计算时间范围.md"
+    },
+    {
+      "basename": "README",
+      "path": "README.md"
+    },
+    {
+      "basename": "列表",
+      "path": "示例/Meta Bind演示/输入字段/列表.md"
+    },
+    {
+      "basename": "机器学习课程",
+      "path": "示例/Projects演示/4-学习研究项目/学习数据/机器学习课程.md"
+    },
+    {
+      "basename": "README",
+      "path": "示例/DataView演示/README.md"
+    },
+    {
+      "basename": "Outliner演示",
+      "path": "示例/Outliner演示.md"
+    },
+    {
+      "basename": "homepage",
+      "path": "示例/homepage.md"
+    },
+    {
+      "basename": "Admonition插件演示",
+      "path": "示例/Admonition插件演示.md"
+    },
+    {
+      "basename": "变为纯文本",
+      "path": "Templates/变为纯文本.md"
+    },
+    {
+      "basename": "项目管理总视图",
+      "path": "示例/DataView演示/项目管理总视图.md"
+    },
+    {
+      "basename": "YouTube",
+      "path": "Templates/YouTube.md"
+    },
+    {
       "basename": "习惯养成",
       "path": "示例/Projects演示/5-生活管理项目/生活数据/习惯养成.md"
     },
@@ -69,10 +117,6 @@
       "path": "示例/Quick Add演示/日记模板示例.md"
     },
     {
-      "basename": "README",
-      "path": "README.md"
-    },
-    {
       "basename": "Code Emitter：执行代码！",
       "path": "Obsidian设置/Community plugins/Code Emitter：执行代码！.md"
     },
@@ -121,22 +165,6 @@
       "path": "Obsidian设置/Core plugins.md"
     },
     {
-      "basename": "Files and links",
-      "path": "Obsidian设置/Files and links.md"
-    },
-    {
-      "basename": "General",
-      "path": "Obsidian设置/General.md"
-    },
-    {
-      "basename": "HotKeys",
-      "path": "Obsidian设置/HotKeys.md"
-    },
-    {
-      "basename": "YouTube",
-      "path": "Templates/YouTube.md"
-    },
-    {
       "basename": "URL",
       "path": "Templates/URL.md"
     },
@@ -157,44 +185,12 @@
       "path": "Obsidian设置/Community plugins/Remember cursor position：一定要装！.md"
     },
     {
-      "basename": "homepage",
-      "path": "示例/homepage.md"
-    },
-    {
       "basename": "读书笔记模板",
       "path": "示例/Quick Add演示/读书笔记模板.md"
     },
     {
       "basename": "Banners：添加横幅背景",
       "path": "Obsidian设置/Community plugins/Banners：添加横幅背景.md"
-    },
-    {
-      "basename": "Pandoc：导出工具",
-      "path": "Obsidian设置/Community plugins/Pandoc：导出工具.md"
-    },
-    {
-      "basename": "Meta Bind：自动修改属性",
-      "path": "Obsidian设置/Community plugins/Meta Bind：自动修改属性.md"
-    },
-    {
-      "basename": "README",
-      "path": "示例/DB Folder演示/README.md"
-    },
-    {
-      "basename": "测试",
-      "path": "示例/DB Folder演示/CSV导入数据库示例/图书管理CSV导入示例/测试.md"
-    },
-    {
-      "basename": "移动应用开发",
-      "path": "示例/DB Folder演示/💼 项目任务数据库/移动应用开发.md"
-    },
-    {
-      "basename": "图书管理数据库",
-      "path": "示例/DB Folder演示/📚 图书管理数据库/图书管理数据库.md"
-    },
-    {
-      "basename": "活着",
-      "path": "示例/DB Folder演示/📚 图书管理数据库/活着.md"
     }
   ],
   "omittedPaths": [],
