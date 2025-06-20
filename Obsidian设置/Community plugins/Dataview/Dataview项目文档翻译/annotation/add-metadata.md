@@ -92,14 +92,14 @@ This will not show the key.
 
 假设您在一个笔记中使用了上面内联字段的所有示例，那么以下元数据将对您可用：
 
-| 元数据键 | 清理后的元数据键 | 值 | 值的数据类型 |
-| ----------- | ------------------------|----------- | ----------- |
-| `Basic Field` | `basic-field`  | Some random Value | 文本 |
-| `Bold Field` | `bold-field`  | Nice! | 文本 |
-| `rating` | - | 9 | 数字 |
-| `mood` | - | acceptable | 文本 |
-| `due` | - | 2022-04-05的日期对象 | 日期 |
-| `longKeyIDontNeedWhenReading` | `longkeyidontneedwhenreading` | key | 文本 |
+| 元数据键                          | 清理后的元数据键                      | 值                 | 值的数据类型 |
+| ----------------------------- | ----------------------------- | ----------------- | ------ |
+| `Basic Field`                 | `basic-field`                 | Some random Value | 文本     |
+| `Bold Field`                  | `bold-field`                  | Nice!             | 文本     |
+| `rating`                      | -                             | 9                 | 数字     |
+| `mood`                        | -                             | acceptable        | 文本     |
+| `due`                         | -                             | 2022-04-05的日期对象   | 日期     |
+| `longKeyIDontNeedWhenReading` | `longkeyidontneedwhenreading` | key               | 文本     |
 
 如您在表格中所见，如果您在元数据键名称中使用**空格或大写字母**，dataview将为您提供该键的**清理版本**。
 
