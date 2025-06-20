@@ -1,6 +1,14 @@
 {
   "recentFiles": [
     {
+      "basename": "add-metadata",
+      "path": "Obsidian设置/Community plugins/Dataview/Dataview项目文档翻译/annotation/add-metadata.md"
+    },
+    {
+      "basename": "DB Folder：制作Notion数据库",
+      "path": "Obsidian设置/Community plugins/DB Folder：制作Notion数据库.md"
+    },
+    {
       "basename": "README",
       "path": "README.md"
     },
@@ -31,10 +39,6 @@
     {
       "basename": "Git：同步",
       "path": "Obsidian设置/Community plugins/Git：同步.md"
-    },
-    {
-      "basename": "add-metadata",
-      "path": "Obsidian设置/Community plugins/Dataview/Dataview项目文档翻译/annotation/add-metadata.md"
     },
     {
       "basename": "计算时间范围",
@@ -171,14 +175,6 @@
     {
       "basename": "Tag Wrangler：管理标签",
       "path": "Obsidian设置/Community plugins/Tag Wrangler：管理标签.md"
-    },
-    {
-      "basename": "Copilot：AI辅助创作",
-      "path": "Obsidian设置/Community plugins/Copilot：AI辅助创作.md"
-    },
-    {
-      "basename": "DB Folder：制作Notion数据库",
-      "path": "Obsidian设置/Community plugins/DB Folder：制作Notion数据库.md"
     },
     {
       "basename": "移动应用开发数据库",
