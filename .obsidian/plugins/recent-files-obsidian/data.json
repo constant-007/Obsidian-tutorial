@@ -1,12 +1,28 @@
 {
   "recentFiles": [
     {
+      "basename": "metadata-tasks",
+      "path": "Obsidian设置/Community plugins/Dataview/Dataview项目文档翻译/annotation/metadata-tasks.md"
+    },
+    {
       "basename": "metadata-pages",
       "path": "Obsidian设置/Community plugins/Dataview/Dataview项目文档翻译/annotation/metadata-pages.md"
     },
     {
       "basename": "add-metadata",
       "path": "Obsidian设置/Community plugins/Dataview/Dataview项目文档翻译/annotation/add-metadata.md"
+    },
+    {
+      "basename": "code-examples",
+      "path": "Obsidian设置/Community plugins/Dataview/Dataview项目文档翻译/api/code-examples.md"
+    },
+    {
+      "basename": "types-of-metadata",
+      "path": "Obsidian设置/Community plugins/Dataview/Dataview项目文档翻译/annotation/types-of-metadata.md"
+    },
+    {
+      "basename": "Advanced Table：高级表格",
+      "path": "Obsidian设置/Community plugins/Advanced Table：高级表格.md"
     },
     {
       "basename": "DB Folder：制作Notion数据库",
@@ -183,18 +199,6 @@
     {
       "basename": "移动应用开发数据库",
       "path": "示例/DB Folder演示/💼 项目任务数据库/移动应用开发数据库.md"
-    },
-    {
-      "basename": "Remember cursor position：一定要装！",
-      "path": "Obsidian设置/Community plugins/Remember cursor position：一定要装！.md"
-    },
-    {
-      "basename": "读书笔记模板",
-      "path": "示例/Quick Add演示/读书笔记模板.md"
-    },
-    {
-      "basename": "Banners：添加横幅背景",
-      "path": "Obsidian设置/Community plugins/Banners：添加横幅背景.md"
     }
   ],
   "omittedPaths": [],
