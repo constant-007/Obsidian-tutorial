@@ -1,20 +1,36 @@
 {
   "recentFiles": [
     {
-      "basename": "Homepage：建立精美主页",
-      "path": "Obsidian设置/Community plugins/Homepage：建立精美主页.md"
+      "basename": "Git：同步",
+      "path": "Obsidian设置/Community plugins/Git：同步.md"
+    },
+    {
+      "basename": "Remember cursor position：一定要装！",
+      "path": "Obsidian设置/Community plugins/Remember cursor position：一定要装！.md"
+    },
+    {
+      "basename": "Sheet Plus：编辑excel表格",
+      "path": "Obsidian设置/Community plugins/Sheet Plus：编辑excel表格.md"
+    },
+    {
+      "basename": "Admonition：标出注意事项",
+      "path": "Obsidian设置/Community plugins/Admonition：标出注意事项.md"
+    },
+    {
+      "basename": "DB Folder：制作Notion数据库",
+      "path": "Obsidian设置/Community plugins/DB Folder：制作Notion数据库.md"
     },
     {
       "basename": "homepage",
       "path": "示例/homepage.md"
     },
     {
-      "basename": "产品需求文档编写",
-      "path": "示例/DataView演示/任务数据/产品需求文档编写.md"
+      "basename": "Kanban：创建看板视图",
+      "path": "Obsidian设置/Community plugins/Kanban：创建看板视图.md"
     },
     {
-      "basename": "Git：同步",
-      "path": "Obsidian设置/Community plugins/Git：同步.md"
+      "basename": "产品需求文档编写",
+      "path": "示例/DataView演示/任务数据/产品需求文档编写.md"
     },
     {
       "basename": "Pasted image 20250607110758",
@@ -103,10 +119,6 @@
     {
       "basename": "Advanced Table：高级表格",
       "path": "Obsidian设置/Community plugins/Advanced Table：高级表格.md"
-    },
-    {
-      "basename": "DB Folder：制作Notion数据库",
-      "path": "Obsidian设置/Community plugins/DB Folder：制作Notion数据库.md"
     },
     {
       "basename": "README",
