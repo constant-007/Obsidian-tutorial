@@ -1,6 +1,82 @@
 {
   "recentFiles": [
     {
+      "basename": "Git：同步",
+      "path": "Obsidian设置/Community plugins/Git：同步.md"
+    },
+    {
+      "basename": "Linter：自动规范笔记",
+      "path": "Obsidian设置/Community plugins/Linter：自动规范笔记.md"
+    },
+    {
+      "basename": "Pasted image 20250607110758",
+      "path": "Attachment/Pasted image 20250607110758.png"
+    },
+    {
+      "basename": "Pasted image 20250617205926",
+      "path": "Attachment/Pasted image 20250617205926.png"
+    },
+    {
+      "basename": "Pasted image 20250617213633",
+      "path": "Attachment/Pasted image 20250617213633.png"
+    },
+    {
+      "basename": "Pasted image 20250617213713",
+      "path": "Attachment/Pasted image 20250617213713.png"
+    },
+    {
+      "basename": "Pasted image 20250617213749",
+      "path": "Attachment/Pasted image 20250617213749.png"
+    },
+    {
+      "basename": "Pasted image 20250617213847",
+      "path": "Attachment/Pasted image 20250617213847.png"
+    },
+    {
+      "basename": "Pasted image 20250506220512",
+      "path": "Attachment/Pasted image 20250506220512.png"
+    },
+    {
+      "basename": "2305.14314v1",
+      "path": "Attachment/2305.14314v1.pdf"
+    },
+    {
+      "basename": "Pasted image 20250505222124",
+      "path": "Attachment/Pasted image 20250505222124.png"
+    },
+    {
+      "basename": "Pasted image 20250505211930",
+      "path": "Attachment/Pasted image 20250505211930.png"
+    },
+    {
+      "basename": "Pasted image 20250505204528",
+      "path": "Attachment/Pasted image 20250505204528.png"
+    },
+    {
+      "basename": "Pasted image 20250505163831",
+      "path": "Attachment/Pasted image 20250505163831.png"
+    },
+    {
+      "basename": "Untitled",
+      "path": "Canvas/Untitled.canvas"
+    },
+    {
+      "basename": "homepage",
+      "path": "示例/homepage.md"
+    },
+    {
+      "basename": "项目管理总视图",
+      "path": "示例/DataView演示/项目管理总视图.md"
+    },
+    {
+      "basename": "Dataview插件综述",
+      "path": "Obsidian设置/Community plugins/Dataview/Dataview插件综述.md"
+    },
+    {
+      "basename": "types-of-metadata",
+      "path": "Obsidian设置/Community plugins/Dataview/Dataview项目文档翻译/annotation/types-of-metadata.md"
+    },
+    {
       "basename": "metadata-tasks",
       "path": "Obsidian设置/Community plugins/Dataview/Dataview项目文档翻译/annotation/metadata-tasks.md"
     },
@@ -13,12 +89,12 @@
       "path": "Obsidian设置/Community plugins/Dataview/Dataview项目文档翻译/annotation/add-metadata.md"
     },
     {
-      "basename": "code-examples",
-      "path": "Obsidian设置/Community plugins/Dataview/Dataview项目文档翻译/api/code-examples.md"
+      "basename": "query-types",
+      "path": "Obsidian设置/Community plugins/Dataview/Dataview项目文档翻译/queries/query-types.md"
     },
     {
-      "basename": "types-of-metadata",
-      "path": "Obsidian设置/Community plugins/Dataview/Dataview项目文档翻译/annotation/types-of-metadata.md"
+      "basename": "code-examples",
+      "path": "Obsidian设置/Community plugins/Dataview/Dataview项目文档翻译/api/code-examples.md"
     },
     {
       "basename": "Advanced Table：高级表格",
@@ -31,10 +107,6 @@
     {
       "basename": "README",
       "path": "README.md"
-    },
-    {
-      "basename": "homepage",
-      "path": "示例/homepage.md"
     },
     {
       "basename": "Excel 2025-06-02 14.21.30.univer",
@@ -55,10 +127,6 @@
     {
       "basename": "Homepage：建立精美主页",
       "path": "Obsidian设置/Community plugins/Homepage：建立精美主页.md"
-    },
-    {
-      "basename": "Git：同步",
-      "path": "Obsidian设置/Community plugins/Git：同步.md"
     },
     {
       "basename": "计算时间范围",
@@ -87,10 +155,6 @@
     {
       "basename": "变为纯文本",
       "path": "Templates/变为纯文本.md"
-    },
-    {
-      "basename": "项目管理总视图",
-      "path": "示例/DataView演示/项目管理总视图.md"
     },
     {
       "basename": "YouTube",
@@ -135,70 +199,6 @@
     {
       "basename": "健身计划执行",
       "path": "示例/Projects演示/1-个人任务管理项目/任务数据/健身计划执行.md"
-    },
-    {
-      "basename": "QuickAdd：自动化工具",
-      "path": "Obsidian设置/Community plugins/QuickAdd：自动化工具.md"
-    },
-    {
-      "basename": "待办事项快速添加",
-      "path": "示例/Quick Add演示/待办事项快速添加.md"
-    },
-    {
-      "basename": "自定义脚本示例",
-      "path": "示例/Quick Add演示/自定义脚本示例.md"
-    },
-    {
-      "basename": "快速捕获想法",
-      "path": "示例/Quick Add演示/快速捕获想法.md"
-    },
-    {
-      "basename": "会议记录模板",
-      "path": "示例/Quick Add演示/会议记录模板.md"
-    },
-    {
-      "basename": "README",
-      "path": "示例/Quick Add演示/README.md"
-    },
-    {
-      "basename": "日记模板示例",
-      "path": "示例/Quick Add演示/日记模板示例.md"
-    },
-    {
-      "basename": "Code Emitter：执行代码！",
-      "path": "Obsidian设置/Community plugins/Code Emitter：执行代码！.md"
-    },
-    {
-      "basename": "Easy Typing：规范化 + 打字辅助",
-      "path": "Obsidian设置/Community plugins/Easy Typing：规范化 + 打字辅助.md"
-    },
-    {
-      "basename": "Excalidraw：手写笔记爱好者福音",
-      "path": "Obsidian设置/Community plugins/Excalidraw：手写笔记爱好者福音.md"
-    },
-    {
-      "basename": "Editing Toolbar：像Word一样编辑笔记",
-      "path": "Obsidian设置/Community plugins/Editing Toolbar：像Word一样编辑笔记.md"
-    },
-    {
-      "basename": "Charts：制作图表",
-      "path": "Obsidian设置/Community plugins/Charts：制作图表.md"
-    },
-    {
-      "basename": "会议记录模板",
-      "path": "Templates/会议记录模板.md"
-    },
-    {
-      "basename": "Advanced URI",
-      "path": "Obsidian设置/Community plugins/Advanced URI.md"
-    },
-    {
-      "basename": "Tag Wrangler：管理标签",
-      "path": "Obsidian设置/Community plugins/Tag Wrangler：管理标签.md"
-    },
-    {
-      "basename": "移动应用开发数据库",
-      "path": "示例/DB Folder演示/💼 项目任务数据库/移动应用开发数据库.md"
     }
   ],
   "omittedPaths": [],
