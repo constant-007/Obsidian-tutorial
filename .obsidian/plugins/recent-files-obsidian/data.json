@@ -1,12 +1,20 @@
 {
   "recentFiles": [
     {
-      "basename": "Git：同步",
-      "path": "Obsidian设置/Community plugins/Git：同步.md"
+      "basename": "homepage",
+      "path": "示例/homepage.md"
     },
     {
-      "basename": "Linter：自动规范笔记",
-      "path": "Obsidian设置/Community plugins/Linter：自动规范笔记.md"
+      "basename": "Homepage：建立精美主页",
+      "path": "Obsidian设置/Community plugins/Homepage：建立精美主页.md"
+    },
+    {
+      "basename": "产品需求文档编写",
+      "path": "示例/DataView演示/任务数据/产品需求文档编写.md"
+    },
+    {
+      "basename": "Git：同步",
+      "path": "Obsidian设置/Community plugins/Git：同步.md"
     },
     {
       "basename": "Pasted image 20250607110758",
@@ -61,10 +69,6 @@
       "path": "Canvas/Untitled.canvas"
     },
     {
-      "basename": "homepage",
-      "path": "示例/homepage.md"
-    },
-    {
       "basename": "项目管理总视图",
       "path": "示例/DataView演示/项目管理总视图.md"
     },
@@ -117,16 +121,8 @@
       "path": "Templates/URL.md"
     },
     {
-      "basename": "Style Settings：管理主题",
-      "path": "Obsidian设置/Community plugins/Style Settings：管理主题.md"
-    },
-    {
       "basename": "Highlighter：高亮笔记内容",
       "path": "Obsidian设置/Community plugins/Highlighter：高亮笔记内容.md"
-    },
-    {
-      "basename": "Homepage：建立精美主页",
-      "path": "Obsidian设置/Community plugins/Homepage：建立精美主页.md"
     },
     {
       "basename": "计算时间范围",
@@ -143,10 +139,6 @@
     {
       "basename": "README",
       "path": "示例/DataView演示/README.md"
-    },
-    {
-      "basename": "Outliner演示",
-      "path": "示例/Outliner演示.md"
     },
     {
       "basename": "Admonition插件演示",
@@ -191,14 +183,6 @@
     {
       "basename": "目录",
       "path": "Templates/目录.md"
-    },
-    {
-      "basename": "个人任务管理看板",
-      "path": "示例/Projects演示/1-个人任务管理项目/个人任务管理看板.md"
-    },
-    {
-      "basename": "健身计划执行",
-      "path": "示例/Projects演示/1-个人任务管理项目/任务数据/健身计划执行.md"
     }
   ],
   "omittedPaths": [],
